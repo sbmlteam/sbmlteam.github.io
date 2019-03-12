@@ -3,7 +3,7 @@
 
 # Color theme.
 #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `cupcake`.
-color_theme = "default"
+color_theme = "sbml"
 # Enable users to switch between day and night mode?
 day_night = true
 
@@ -12,7 +12,7 @@ day_night = true
 font = "default"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = ""
+description = "SBML Home Page"
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
 sharing_image = ""
@@ -39,8 +39,7 @@ math = true
 #   Anonymize IP in Google Analytics (if enabled)
 privacy_pack = true
 
-# Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
-#   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+# Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format ) #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
 date_format = "2006-01-02"
 #   Examples: "3:04 pm" or "15:04"
 time_format = "15:04"
@@ -98,7 +97,7 @@ zoom = 15
 # Load CSS and JS plugins
 #   E.g. To load `/assets/css/custom.css`, set `plugins_css = ["custom"]`.
 #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
-plugins_css = []
+plugins_css = ["sbml-bootstrap-extras", "sbml-colors"]
 plugins_js  = []
 
 ############################
@@ -158,3 +157,9 @@ sharing = true
     api_key = ""
     index_name = ""
     show_logo = false
+
+##########################
+# SBML.org features
+##########################
+
+badge = "Official-sbml-supported-70.jpg"
