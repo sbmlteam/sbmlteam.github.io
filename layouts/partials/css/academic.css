@@ -114,7 +114,7 @@ h4, h5, h6 {
 
 a,
 h3.article-title a:hover {
-  color: {{ .Get "link" }};
+  color: {{ .Get "link_hover" }};
   text-decoration: none;
   transition: color 0.6s ease;
 }
@@ -1450,7 +1450,7 @@ img.site-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
+  width: 80px;
 }
 
 
@@ -1659,7 +1659,7 @@ nav#navbar-main li.nav-item {
 }
 
 .navbar-brand img {
-  max-height: 50px;
+  max-height: 45px;
 }
 
 .navbar-light .navbar-toggler .icon-bar {
