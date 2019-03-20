@@ -10,8 +10,13 @@
 ## user, it's necessary to use setcap on the hugo binary (our approach) or
 ## create a redirection via iptables.  However, that means the hugo binary can't
 ## write to /var/log and /var/run unless separate subdirectories are precreated.
-## Here's the sequence I used on an CentOS 7.6 system:
+## In addition, if you run hugo as non-root and you have it write to ../site,
+## it needs to have permissions to this directory, so make sure to chown and
+## chgrp this entire repository clone on your destination system.
 ##
+## Here's the complete sequence I used on a CentOS 7.6 system:
+##
+##  sudo chown -R hugo.hugo ..
 ##  setcap 'cap_net_bind_service=+ep' /usr/local/bin/hugo
 ##  useradd -M hugo
 ##  sudo mkdir /var/log/hugo /var/run/hugo
@@ -21,7 +26,7 @@
 
 # Make sure we're NOT running as root.
 
-if (( EUID != 0 )); then
+if (( EUID == 0 )); then
    echo "This script must not be run as root."
    exit 1
 fi
