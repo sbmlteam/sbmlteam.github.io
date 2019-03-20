@@ -14,14 +14,16 @@
 ## it needs to have permissions to this directory, so make sure to chown and
 ## chgrp this entire repository clone on your destination system.
 ##
-## Here's the complete sequence I used on a CentOS 7.6 system:
+## Here's the complete sequence I used on a CentOS 7.6 system, assuming that
+## the name of the hugo account is "hugo".
 ##
+##  sudo useradd -M hugo
 ##  sudo chown -R hugo.hugo ..
-##  setcap 'cap_net_bind_service=+ep' /usr/local/bin/hugo
-##  useradd -M hugo
+##  sudo setcap 'cap_net_bind_service=+ep' /usr/local/bin/hugo
 ##  sudo mkdir /var/log/hugo /var/run/hugo
 ##  sudo chown hugo /var/log/hugo /var/run/hugo
 ##  sudo chgrp hugo /var/log/hugo /var/run/hugo
+##
 ## ============================================================================
 
 # Make sure we're NOT running as root.
