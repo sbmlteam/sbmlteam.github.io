@@ -54,19 +54,10 @@ b, strong {
   color: #111111;
 }
 
-.dark b, .dark strong {
-  color: #ffffff;
-}
-
 /* Body text */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-}
-
-.dark p,
-.dark div.col {
-  color: #ccc;
 }
 
 /* Lists */
@@ -205,11 +196,6 @@ hr {
   margin-bottom: 1rem;
   background: #333;
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
-
-.dark hr {
-  background: #ddd;
-  background-image: linear-gradient(to right, #333, #ccc, #333);
 }
 
 /* Quotes */
@@ -2206,13 +2192,22 @@ body.dark,
   box-shadow: 0 0 0 .2rem {{ .Get "primary_dark" }};
 }
 
+.dark b, .dark strong {
+  color: #ffffff;
+}
+
+.dark p,
+.dark div.col {
+  color: #ccc;
+}
+
 .dark h1,
 .dark h2,
 .dark h3,
 .dark h4,
 .dark h5,
 .dark h6 {
-  color: rgb(152, 166, 173);
+  color: #ffffff;
 }
 
 .dark pre,
@@ -2337,4 +2332,9 @@ body.dark,
 .dark .btn-primary,
 .dark .btn.btn-primary.active {
   color: initial;
+}
+
+.dark hr {
+  background: #ddd;
+  background-image: linear-gradient(to right, #333, #ccc, #333);
 }
