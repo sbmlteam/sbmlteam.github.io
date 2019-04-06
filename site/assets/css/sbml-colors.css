@@ -5,3 +5,11 @@
 a:visited {
   color: #83c4e6;
 }
+
+/* The next definition is for fontawesome icons. */
+
+i[class ^= "fa-"],
+a i[class ^= "fa-"],
+a:visited i[class ^= "fa-"] {
+  color: #84c5e2;
+}
