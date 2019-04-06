@@ -45,19 +45,19 @@ SBML is formally defined in the specification documents. Additional helpful expl
 </div>
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <i class="fa-copy far fa-4x sbml-blue"></i>
+    <a href="publications>"<i class="fa-copy far fa-4x sbml-blue"></i></a>
   </div>
   <div class="col">
-    <strong>SBML Publications</strong><br>
+    <a href="publications"><strong>SBML Publications</strong></a><br>
     This section lists published papers and chapters describing SBML and core SBML-supporting software tools.
   </div>
 </div>
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <i class="fa-palette far fa-4x sbml-blue"></i>
+    <a href="logos"><i class="fa-palette far fa-4x sbml-blue"></i></a>
   </div>
   <div class="col">
-    <strong>SBML Logos</strong><br>
+    <a href="logos"><strong>SBML Logos</strong></a><br>
     Get your official SBML logos here! Use them on websites, posters, software—anywhere you want to publicize your support of SBML.
   </div>
 </div>
