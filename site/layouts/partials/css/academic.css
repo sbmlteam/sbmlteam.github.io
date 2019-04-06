@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  height: 100%; 
+  height: 100%;
   font-family: inherit;
   font-size: 1rem;
   line-height: inherit;
@@ -248,6 +248,12 @@ small,
 .responsive-wrap iframe {
   max-width: 100%;
 }
+
+#page-container {
+  position: relative;
+  min-height: 96vh;
+}
+
 
 /*************************************************
  *  Search.
@@ -493,8 +499,7 @@ a[data-fancybox] img {
 .home-section {
   background-color: {{ .Get "home_section_odd" }};
   padding: 110px 0 110px 0;
-  animation: intro 0.3s both;
-  animation-delay: 0.15s;
+  padding-bottom: 3em;
 }
 
 .home-section:first-of-type {
@@ -516,9 +521,11 @@ a[data-fancybox] img {
 @media screen and (max-width: 768px) {
   .home-section {
     padding: 60px 0 60px 0;
+    padding-bottom: 3em;
   }
   .home-section:first-of-type {
     padding-top: 40px;
+    padding-bottom: 3em;
   }
 }
 
@@ -1390,50 +1397,47 @@ article .article-metadata {
  *  Footer
  **************************************************/
 
-.footer {
-  clear: both; 
+#footer {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 0;
+  bottom: 0.25em;
   height: 3em; 
-  padding: 0;
+  clear: both; 
+  margin-left: auto auto;
+  line-height: 3em;
+  vertical-align: middle;
+  width: 100%;
+  border: 1px dotted #ccc;
 }
 
 @media screen and (min-width: 576px) {
-  .footer {
-    max-width: 540px;
+  #footer {
+    max-width: 520px;
   }
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    min-width: 720px;
+  #footer {
+    min-width: 700px;
   }
 }
 @media screen and (min-width: 992px) {
-  .footer {
-    min-width: 960px;
+  #footer {
+    min-width: 940px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer {
-    min-width: 1140px;
+  #footer {
+    min-width: 1120px;
   }
 }
 
-.footer p {
+#footer p {
   font-size: 0.8rem;
   text-align: center;
   color: #bbb;
 }
 
-p.footer a  {
+p#footer a  {
   color: #aaf;
-}
-
-p.powered-by {
-  float: right;
-  width: 45%;
 }
 
 p.site-info {
@@ -1444,13 +1448,16 @@ p.site-info {
 
 p.site-logo {
   float: left;
+  width: 10%;
 }
 
 img.site-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80px;
+  display: inline;
+}
+
+p.site-powered-by {
+  float: right;
+  width: 45%;
 }
 
 
