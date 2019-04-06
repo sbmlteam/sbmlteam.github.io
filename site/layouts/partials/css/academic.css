@@ -54,10 +54,19 @@ b, strong {
   color: #111111;
 }
 
+.dark b, .dark strong {
+  color: #ffffff;
+}
+
 /* Body text */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+.dark p,
+.dark div.col {
+  color: #ccc;
 }
 
 /* Lists */
