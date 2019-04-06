@@ -1,4 +1,4 @@
-+++
++++ # -*- mode: html -*-
 widget = ""   # Do not modify this line!
 active = true # Activate this widget? true/false
 weight = 0    # Order that this section will appear in.
@@ -9,7 +9,7 @@ Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a 
 <hr>
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <i class="fa-question-circle fas fa-4x sbml-blue"></i>
+    <i class="fa-question-circle fas fa-4x"></i>
   </div>
   <div class="col">
     <strong>What exactly <em>is</em> SBML?</strong><br>
@@ -22,12 +22,12 @@ Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a 
     Many software tools and databases support SBML directly.  You don't write in SBML yourself&mdash;your software does it for you.  The <a href="facilities/showcase">SBML Showcase</a> can yelp you find SBML-compatible software, and the <a href="https://biomodels.net">BioModels Database</a> can help you find published models in SBML format.
   </div>
   <div class="col-3 text-center">
-    <i class="fa-laptop-code fas fa-4x sbml-blue"></i>
+    <i class="fa-laptop-code fas fa-4x"></i>
   </div>
 </div>
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <i class="fa-book fas fa-4x sbml-blue"></i>
+    <i class="fa-book fas fa-4x"></i>
   </div>
   <div class="col">
     <strong>Where do you get more information?</strong><br>
@@ -40,12 +40,12 @@ Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a 
     If you're developing software for biological modeling, simulation, visualization, databasing, or other purposes, libraries such as <a href="software/libsbml">libSBML</a> and <a href="software/jsbml">JSBML</a> can help you support SBML. Make sure to read the <a href="documents/specifications">SBML specifications</a>, and ask questions in the relevant <a href="community/forums">discussion groups</a>!
   </div>
   <div class="col-3 text-center">
-    <i class="fa-code-branch fas fa-4x sbml-blue"></i>
+    <i class="fa-code-branch fas fa-4x"></i>
   </div>
 </div>
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <i class="fa-users fas fa-4x sbml-blue"></i>
+    <i class="fa-users fas fa-4x"></i>
   </div>
   <div class="col">
     <strong>Who's involved in SBML?</strong><br>
