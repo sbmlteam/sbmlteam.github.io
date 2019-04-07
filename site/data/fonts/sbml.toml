@@ -1,0 +1,23 @@
+# ============================================================================
+# File name   : sbml.toml
+# Description : SBML theme font definitions for Hugo Academic
+# Author(s)   : Michael Hucka <mhucka@caltech.edu>
+# Organization: California Institute of Technology
+# Date created: 2019-04-06
+# ============================================================================
+
+# Font style metadata
+name = "sbml"
+
+# Optional Google font URL
+google_fonts = "Heebo:400,400italic,500,500italic,700|Roboto:400,400italic,500,500italic,700|IBM+Plex+Mono:400,400italic,500,500italic"
+
+# Font families
+heading_font = "Heebo"
+body_font = "Roboto"
+nav_font = "Roboto"
+mono_font = "IBM Plex Mono"
+
+# Font size
+font_size = "18"
+font_size_small = "16"
