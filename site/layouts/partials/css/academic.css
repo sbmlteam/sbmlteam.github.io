@@ -52,6 +52,7 @@ body {
 
 b, strong {
   color: #111111;
+  font-weight: 500;
 }
 
 /* Body text */
@@ -63,6 +64,10 @@ p {
 /* Lists */
 ul, ol, dl {
   margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul li, ol li, dl li {
   margin-bottom: 1rem;
 }
 
@@ -190,7 +195,7 @@ pre {
   border: 0;
   border-radius: 4px;
   font-size: 0.85rem;
-  width: 95%;
+  width: 96%;
   margin: auto auto 1rem auto;
   padding: 0.25rem !important;
 }
@@ -217,6 +222,7 @@ hr {
 
 /* Quotes */
 blockquote {
+  font-style: italic;
   padding: .5rem 1rem;
   margin: .8rem 0;
   color: #7a7a7a;
@@ -1875,12 +1881,6 @@ table table {
 table > tbody > tr:nth-child(odd) > td,
 table > tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9;
-}
-
-/* Table Hover */
-table > tbody > tr:hover > td,
-table > tbody > tr:hover > th {
-  background-color: #e5e5e5;
 }
 
 /*************************************************
