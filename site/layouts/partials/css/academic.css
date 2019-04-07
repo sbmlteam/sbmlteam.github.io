@@ -27,13 +27,13 @@ body {
   line-height: inherit;
   color: #666666;
   background-color: {{ .Get "background" }};
-  margin-top: 70px; /* Offset body content by navbar height. */
+  margin-top: 60px; /* Offset body content by navbar height. */
   padding-top: 0;
   counter-reset: captions;
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
   body {
-    margin-top: 50px; /* Offset body content by navbar height. */
+    margin-top: 55px; /* Offset body content by navbar height. */
   }
 }
 
@@ -179,7 +179,6 @@ figcaption h4 {
 pre,
 code {
   font-family: '{{ .Get "mono_font" }}', monospace;
-  color: #c7254e;
   word-break: normal;
 }
 
@@ -188,6 +187,7 @@ table pre, table code {
 }
 
 pre {
+  border: 0;
   border-radius: 4px;
   font-size: 0.85rem;
   width: 95%;
@@ -319,25 +319,25 @@ body > .container {
 }
 
 .search-results > .container {
-  padding-top: 70px;  /* Navbar height. */
+  padding-top: 75px;  /* Navbar height. */
 }
 @media screen and (max-width: 1200px) {
   .search-results > .container {
-    padding-top: 50px;  /* Navbar height. */
+    padding-top: 55px;  /* Navbar height. */
   }
 }
 
 .search-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 70px;  /* Navbar height. */
+  top: 60px;  /* Navbar height. */
   background-color: {{ .Get "background" }};
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 @media screen and (max-width: 1200px) {
   .search-header {
-    top: 50px;  /* Navbar height. */
+    top: 55px;  /* Navbar height. */
   }
 }
 
@@ -1622,7 +1622,7 @@ a.badge:hover {
  **************************************************/
 
 .navbar {
-  min-height: 70px !important;
+  min-height: 75px !important;
 }
 
 .navbar-light {
@@ -1679,7 +1679,7 @@ nav#navbar-main li.nav-item {
 .navbar-brand,
 .navbar-nav li.nav-item a.nav-link {
   height: inherit;
-  line-height: 50px;
+  line-height: 55px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -1744,7 +1744,7 @@ nav#navbar-main li.nav-item {
 
 @media screen and (max-width: 1200px) {
   .navbar {
-    min-height: 50px !important;
+    min-height: 55px !important;
   }
 
   .navbar-brand,
