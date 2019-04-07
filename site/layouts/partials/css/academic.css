@@ -101,16 +101,23 @@ h1 {
 h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 h3 {
-  font-weight: 700;
+  font-weight: 400;
+  font-style: oblique;
   margin-top: 1.5rem;
   font-size: 1.25rem;
 }
 h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 400;
+  font-style: oblique;
   margin-top: 1rem;
   font-size: 1rem;
+}
+
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+  font-size: 1.25rem;
 }
 
 a,
@@ -173,20 +180,30 @@ pre,
 code {
   font-family: '{{ .Get "mono_font" }}', monospace;
   color: #c7254e;
-  background-color: #f9f2f4;
+  word-break: normal;
+}
+
+table pre, table code {
+  font-size: 0.85rem;
 }
 
 pre {
-  margin: 0 0 1rem 0;
-  background-color: rgb(248, 248, 248); /* Match default highlight theme. */
-  border-color: rgb(248, 248, 248);
-  font-size: 0.7rem;
   border-radius: 4px;
+  font-size: 0.85rem;
+  width: 95%;
+  margin: auto auto 1rem auto;
+  padding: 0.25rem !important;
 }
 
 pre code {
   white-space: pre; /* Override Bootstrap to preserve line breaks in code. */
   overflow-x: auto;
+}
+
+code {
+  font-size: 0.9rem;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 hr {
@@ -255,6 +272,7 @@ small,
 #page-container {
   position: relative;
   min-height: 96vh;
+  padding-bottom: 3rem;
 }
 
 
@@ -1406,6 +1424,10 @@ article .article-metadata {
   border: 1px dotted #ccc;
 }
 
+#footer-section {
+
+}
+
 @media screen and (min-width: 576px) {
   #footer {
     max-width: 520px;
@@ -1800,10 +1822,12 @@ nav#navbar-main li.nav-item {
  **************************************************/
 
 table {
-  width: 100%;
+  width: 95%;
   max-width: 100%;
-  margin-bottom: 1rem;
   font-size: 0.93rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
 }
 
 table > thead > tr > th,
@@ -1814,8 +1838,7 @@ table > tbody > tr > td,
 table > tfoot > tr > td {
   padding: 8px;
   line-height: 1.43;
-  vertical-align: top;
-  border-top: 1px solid #ddd;
+  vertical-align: baseline;
 }
 
 table > thead > tr > th {
@@ -1830,6 +1853,14 @@ table > caption + thead > tr:first-child > td,
 table > colgroup + thead > tr:first-child > td,
 table > thead:first-child > tr:first-child > td {
   border-top: 0;
+}
+
+table thead {
+  border-top: 2px solid #aaa;
+}
+
+table tr:last-child {
+  border-bottom: 2px solid #aaa;
 }
 
 table > tbody + tbody {
