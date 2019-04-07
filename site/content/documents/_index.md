@@ -9,6 +9,15 @@ SBML is formally defined in the specification documents. Additional helpful expl
 
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
+    <a href="what-is-sbml"><i class="fa-question fas fa-4x"></i></a>
+  </div>
+  <div class="col">
+    <a href="what-is-sbml"><strong>What is SBML?</strong></a><br>
+    It may still not be clear what SBML is. Here is a basic introduction tries to describe and contextualize it in jargon-free way.
+  </div>
+</div>
+<div class="row row-big-gutter align-items-center">
+  <div class="col-3 text-center">
     <a href="specificatons"><i class="fa-book fas fa-4x"></i></a>
   </div>
   <div class="col">
