@@ -2369,3 +2369,13 @@ body.dark,
   background: #ddd;
   background-image: linear-gradient(to right, #333, #ccc, #333);
 }
+
+
+/*************************************************
+ *  Extra SBML things
+ **************************************************/
+
+.rounded-corners {
+  border: 1px solid #dedede;
+  border-radius: 0.5rem;
+}
