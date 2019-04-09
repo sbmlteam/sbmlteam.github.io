@@ -12,7 +12,7 @@ html {
   font-family: '{{ .Get "body_font" }}', sans-serif;
   font-size: {{ .Get "font_size_small" }}px;
   color: #555555;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 @media screen and (min-width: 58em) {
   html {
@@ -58,17 +58,21 @@ b, strong {
 /* Body text */
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Lists */
 ul, ol, dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 ul li, ol li, dl li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#page-container li:first-child {
+  margin-top: 0.5rem;
 }
 
 /* Navigation bar text */
