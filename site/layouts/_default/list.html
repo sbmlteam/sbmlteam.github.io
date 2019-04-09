@@ -7,10 +7,10 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 
-{{ partial "page_header.html" . }}
-
 <div id="page-container">
-  <div foo class="universal-wrapper">
+  <div class="container">
+    {{ partial "page_header.html" . }}
+
     {{ with .Content }}
     <div class="article-style" itemprop="articleBody">{{ . }}</div>
     {{ end }}
