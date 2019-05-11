@@ -13,7 +13,7 @@ Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a 
   </div>
   <div class="col">
     <strong>What exactly <em>is</em> SBML?</strong><br>
-    SBML is a machine-readable format for describing models in biology.  Think of it as being a little like HTML, but for mathematical models instead of web pages.  It's independent of any particular software tool and not limited to any particular field of the life sciences.
+    SBML is a machine-readable format for describing models in biology.  Think of it as being a little like HTML, but for [mathematical models instead of web pages](documents/what-is-sbml/).  It's independent of any particular software tool and not limited to any particular field of the life sciences.
   </div>
 </div>
 <div class="row row-big-gutter align-items-center">
