@@ -22,9 +22,9 @@
 ehthumbs.db
 Thumbs.db
 
+
 # Emacs-specific things to ignore:
 # .............................................................................
-
 *~
 .#*
 .git/COMMIT_EDITMSG
@@ -54,7 +54,7 @@ __pycache__
 # Project-specific things to ignore:
 # .............................................................................
 
-public/
 .idea/
 site/resources/_gen
+site/public/
 *.pid
