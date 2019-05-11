@@ -2423,3 +2423,22 @@ a i[class ^= "fa-"],
 a:visited i[class ^= "fa-"] {
   text-align: center;
 }
+
+/* For img that are screenshots */
+img.screenshot {
+  margin: 1rem auto;
+  width: 90%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+}
+
+table.no-borders thead {
+  border-top: none;
+}
+
+table.no-borders tr:last-child {
+  border-bottom: none;
+}
+
+table.tight-spacing td {
+  padding: 4px;
+}
