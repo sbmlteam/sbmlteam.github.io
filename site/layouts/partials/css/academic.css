@@ -2409,8 +2409,45 @@ body.dark,
 
 
 /*************************************************
+ * Extra things for use with Bootstrap 3 in SBML.org
+ * The following information resources help understand what Bootstrap provides:
+ * https://getbootstrap.com/docs/4.1/layout/grid/
+ **************************************************/
+
+.row.row-gutter {
+  margin-bottom: 15px;
+}
+
+.row.row-big-gutter {
+  margin-bottom: 30px;
+}
+
+
+/*************************************************
  *  Extra SBML things
  **************************************************/
+
+.sbml-blue {
+  color: #84c5e2;
+}
+
+a:visited {
+  color: #83c4e6;
+}
+
+/* The next definition is for fontawesome icons. */
+
+i[class ^= "fa-"],
+a i[class ^= "fa-"],
+a:visited i[class ^= "fa-"] {
+  color: #84c5e2;
+  text-shadow: 1px 2px 2px #cfcfcf;
+}
+
+code, pre, .hljs {
+  color: #000000;
+  background-color: #eeeeee;
+}
 
 .rounded-corners {
   border: 1px solid #dedede;
@@ -2431,6 +2468,11 @@ img.screenshot {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
 }
 
+table {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 table.no-borders thead {
   border-top: none;
 }
@@ -2441,4 +2483,44 @@ table.no-borders tr:last-child {
 
 table.tight-spacing td {
   padding: 4px;
+  line-height: 1.3;
+}
+
+table.middle-aligned td {
+  vertical-align: middle;
+}
+
+table.no-striping > tbody > tr:nth-child(odd) > td,
+table.no-striping > tbody > tr:nth-child(odd) > th {
+  background-color: transparent;
+}
+
+.dark table.no-striping > tbody > tr:nth-child(odd) > td,
+.dark table.no-striping > tbody > tr:nth-child(odd) > th {
+  background-color: transparent;
+}
+
+a > b, a > strong {
+  color: {{ .Get "link" }};
+}
+
+.dark a {
+  color: {{ .Get "link" }};
+}
+
+.dark .article-title a {
+  color: #ccc;
+}
+
+.dark a > b, .dark a > strong {
+  font-weight: 500;
+  color: {{ .Get "link" }};
+}
+
+.article-date {
+  display: block;
+  float: right;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #aaa;
 }
