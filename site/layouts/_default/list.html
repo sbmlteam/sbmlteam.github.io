@@ -18,7 +18,8 @@
     {{ $paginator := .Paginate .Data.Pages }}
     {{ range $paginator.Pages }}
     <div>
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="article-date">{{ .Date.Format "2 Jan 2006" }}</span></h2>
       <div class="article-style">
         {{ if .Params.summary }}
         {{ .Params.summary | plainify | emojify }}
