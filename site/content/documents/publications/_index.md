@@ -151,6 +151,19 @@ The papers and chapters in this section describe SBML and SBML packages in gener
 
 <table class="no-borders no-striping middle-aligned tight-spacing">
   <tr>
+    <td><a target="_blank" href="https://academic.oup.com/bioinformatics/article/32/12/1905/1743777"><i class="fa-file-pdf fas fa-2x"></i></a></td>
+    <td><a target="_blank" href="https://academic.oup.com/bioinformatics/article/32/12/1905/1743777"><strong>MOCCASIN: converting MATLAB ODE models to SBML</strong></a></td>
+  </tr><tr><td></td>
+    <td><em>Authors</em>: Gómez, H. F., Hucka, M. Keating, S. M., Nudelman G., Iber, D., and Sealfon, S. C.  </td>
+  </tr><tr><td></td>
+    <td><em>Publication</em>: Bioinformatics, 32(12): 1905–1906, 2016.</td>
+  </tr><tr><td></td>
+    <td><em>Summary</em>: Description of MOCCASIN, a Python-based converter of certain types of MATLAB programs.  Does not require MATLAB to run.</td>
+  </tr><tr>
+</table>
+
+<table class="no-borders no-striping middle-aligned tight-spacing">
+  <tr>
     <td><a target="_blank" href="https://academic.oup.com/bioinformatics/article/31/20/3383/195580"><i class="fa-file-pdf fas fa-2x"></i></a></td>
     <td><a target="_blank" href="https://academic.oup.com/bioinformatics/article/31/20/3383/195580"><strong>JSBML 1.0: providing a smorgasbord of options to encode systems biology models</strong></a></td>
   </tr><tr><td></td>
@@ -206,6 +219,6 @@ The papers and chapters in this section describe SBML and SBML packages in gener
   </tr><tr><td></td>
     <td><em>Publication</em>: Paper in Bioinformatics, 22: 1275-1277, 2006.</td>
   </tr><tr><td></td>
-    <td><em>Summary</em>: Description of the SBMLToolbox, a tool to help use SBML in MATLAB. </td>
+    <td width="100%"><em>Summary</em>: Description of the SBMLToolbox, a tool to help use SBML in MATLAB.</td>
   </tr><tr>
 </table>
