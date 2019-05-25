@@ -1,16 +1,23 @@
-+++
++++ # -*- mode: markdown -*-
+#=====================================================================
+# File:    news/_index.md
+# Summary: This file defines the content of the /news page.
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 title = "News"
 widget = ""
+#=====================================================================
 +++
 
-Here you will find news about both the SBML project itself (including new developments in SBML and upcoming events such as Forum Meetings), as well as broader news of the SBML-using community.
+Here you will find news about the SBML project (including new developments in SBML and upcoming events such as Forum Meetings), as well as broader news of the SBML-using community.
 
 <!-- Note to site maintainers: the content of this page consists of
-     2 columns. The left column is auto-filled from the content of the
-     files located in this directory (/content/news/).  The template
-     that defines the content shown on the news front page is 
-     layouts/_default/list.html.  The right-hand column is filled in
-     by the twitter widget embedded below.
+     2 columns.
+
+     The left column is auto-filled from the content of the files
+     located in this directory (/content/news/).  The template that
+     defines the content shown on this page is layouts/_default/list.html.
+
+     The right-hand column is filled in by the twitter widget embedded below.
 -->
 
 <div style="float: right; display: block; margin: 0.5rem auto auto 2rem; border-left: 1px solid #ddd; padding-left: 1rem" class="col-6">
