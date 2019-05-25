@@ -1,5 +1,6 @@
 +++
 title   = "COMBINE 2019"
+authors = ["Mike Hucka"]
 date    = 2019-05-21
 summary = "The tenth annual COMBINE forum will be organized by Martin Golebiewski at HITS in Heidelberg (Germany) from 15 to 19 July 2019."
 +++

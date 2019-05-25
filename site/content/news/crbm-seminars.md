@@ -1,5 +1,6 @@
 +++
 title   = "Interactive Workshop to Explore New Modeling Software"
+authors = ["Mike Hucka"]
 date    = 2019-05-01
 summary = "The Center for Reproducible Biomedical Modeling will host an interactive workshop this summer on modeling software."
 +++

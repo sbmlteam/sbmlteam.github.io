@@ -1,5 +1,6 @@
 +++
 title   = "Redesigned SBML.org"
+authors = ["Mike Hucka"]
 date    = 2019-05-12
 summary = "SBML.org has been completely redesigned from the ground up!  A site refresh long in the making has finally been completed."
 +++

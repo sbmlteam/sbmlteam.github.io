@@ -1,5 +1,6 @@
 +++
 title   = "CellDesigner 4.4.2 released"
+authors = ["Mike Hucka"]
 date    = 2019-05-19
 summary = "A new version of CellDesigner, a popular software package for biological modeling, has been released"
 +++
