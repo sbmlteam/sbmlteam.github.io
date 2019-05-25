@@ -2530,8 +2530,9 @@ a > b, a > strong {
   color: {{ .Get "link" }};
 }
 
-.article-date {
-  display: block;
+/* This is for the date next to news items on /news */
+h2 span.article-date {
+  display: inline-block;
   float: right;
   font-size: 0.8rem;
   margin-top: 0.5rem;
