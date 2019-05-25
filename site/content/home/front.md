@@ -1,7 +1,20 @@
-+++ # -*- mode: html -*-
-widget = ""   # Do not modify this line!
-active = true # Activate this widget? true/false
-weight = 0    # Order that this section will appear in.
++++ # -*- mode: markdown -*-
+#=====================================================================
+# File:    home/front.md
+# Summary: This file defines the front page text that appears as the
+#          first (top) section of the front page.
+#
+# Notes: do not define the variable "title" here, because we use the 
+# normal Hugo Academic list template and a definitio for title will
+# end up putting new (and unwanted) title text on the page.
+#
+# This page definition makes heavy use of raw HTML in-between
+# Markdown-formatted text.  In Emacs, I often switch to html syntax
+# mode manually when editing this page.
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+active = true
+weight = 1
+#=====================================================================
 +++
 
 Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a free and open data format for computational systems biology that's used by thousands of people worldwide.  Here you can find out more about SBML, compatible software, upcoming events, and more.
@@ -55,7 +68,3 @@ Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a 
 <hr>
 
 No matter how you use SBML, we invite you to sign up for news updates via either the [RSS news feed](/news/index.xml) for SBML.org, the [@sbmlnews Twitter feed](https://twitter.com/sbmlnews), or the very low-volume [sbml-announce](https://groups.google.com/forum/#!forum/sbml-announce) mailing list.
-
-<!-- 
-and get involved with SBML's continuing evolution. You can also call attention to your project's support of SBML by displaying the <a href="documents/logl">SBML logo</a>.
--->
