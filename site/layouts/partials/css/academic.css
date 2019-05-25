@@ -71,6 +71,10 @@ ul li, ol li, dl li {
   margin-bottom: 0.6rem;
 }
 
+.dark ul li, .dark ol li, .dark dl li {
+  color: #ddd;
+}
+
 #page-container li:first-child {
   margin-top: 0.6rem;
 }
