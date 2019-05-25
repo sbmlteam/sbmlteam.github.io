@@ -1,8 +1,8 @@
 +++ # -*- mode: html -*-
-######################################################################
+#=====================================================================
 title = "Elaborations and Clarifications"
 date  = 2019-04-06
-######################################################################
+#=====================================================================
 +++
 
 Some issues are the topics of frequent questions and discussions, and merit longer elaboration than the shorter answers in the [SBML FAQ](../faq). We try to gather explanations in this section. The contents here will continue to grow over time. If you have suggestions or requests for items to be added, please don't hesitate to [open an issue in the tracker](https://github.com/sbmlteam/sbml-org-website/issues) or contact the [SBML Editors](mailto:sbml-editors@googlegroups.com) directly.

@@ -1,8 +1,8 @@
 +++ # -*- mode: html -*-
-######################################################################
+#=====================================================================
 title = "Frequently Asked Questions (and Answers)"
 date  = 2019-04-07
-######################################################################
+#=====================================================================
 +++
 
 This Frequently Asked Questions (FAQ) document answers to some frequent questions about the Systems Biology Markup Language (SBML).  This is a non-normative document that does not _define_ any aspect of SBML; rather, it is intended to provide additional information in an easily accessible and readable form.
