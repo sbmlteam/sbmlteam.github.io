@@ -23,7 +23,7 @@ The stylized "SB" insignia, as well as the letters "SBML" used in the context of
 
 Please make sure to read the section above titled _Policy for using the logos_ before using these logos on your website, in your software, or otherwise displaying the logos publicly.  In addition, when used on web pages, we request that you link each use of the icon to the URL https://www.sbml.org if possible and practical.
 
-<center>
+<center style="margin-top: 2rem; margin-bottom: 2rem">
 <a href="sbml-logos.zip"><i class="fa-file-archive fas fa-3x" style="padding-right: 1rem"></i>Download icons as one archive file in ZIP format.</a>
 </center>
 
