@@ -532,12 +532,12 @@ a[data-fancybox] img {
 
 .home-section {
   background-color: {{ .Get "home_section_odd" }};
-  padding: 110px 0 110px 0;
-  padding-bottom: 3em;
+  padding: 1rem 0 1rem 0;
+  padding-bottom: 1rem;
 }
 
 .home-section:first-of-type {
-  padding-top: 40px;
+  padding-top: 2em;
 }
 
 .home-section:nth-of-type(even) {
@@ -554,12 +554,9 @@ a[data-fancybox] img {
 
 @media screen and (max-width: 768px) {
   .home-section {
-    padding: 50px 0 60px 0;
-    padding-bottom: 3em;
   }
   .home-section:first-of-type {
     padding-top: 20px;
-    padding-bottom: 3em;
   }
 }
 
@@ -1313,6 +1310,7 @@ article .article-metadata {
 
 .card {
   margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   background: #fff;
@@ -1345,12 +1343,13 @@ article .article-metadata {
 }
 
 .card .card-text {
-  padding: 0.75rem 1rem 0.75rem;
+  padding: 0.5rem 1rem 0.5rem;
 }
 
 .card .card-text p {
   color: rgba(0,0,0,0.54);
-  font-size: 0.75rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem 1rem;
 }
 
 .dark .card-text p {
@@ -1402,6 +1401,20 @@ article .article-metadata {
 .card:hover .card-image.hover-overlay:after {
   opacity: 0.6;
 }
+
+.card .panel-body {
+  font-size: 0.9rem;
+}
+
+.card .post-meta {
+  color: #aaa;
+}
+
+.row .card {
+  margin-left: 0.75rem;
+  max-width: 31% !important;
+}
+
 
 /*************************************************
  *  Contact
@@ -2523,4 +2536,8 @@ a > b, a > strong {
   font-size: 0.8rem;
   margin-top: 0.5rem;
   color: #aaa;
+}
+
+#news h3 {
+  font-style: normal;
 }
