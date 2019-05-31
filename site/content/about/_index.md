@@ -15,17 +15,17 @@ SBML is the result of many people's efforts over many years, and the support of 
   <div class="col-4 text-center">
     <i class="fa-globe fas fa-4x"  style="margin-bottom: 1rem"></i>
     <br>
-    <a href="">Contributors</a> &ndash; The many contributors to SBML development.
+    <a href="contributors">Contributors</a> &ndash; The many contributors to SBML development.
   </div>
   <div class="col-4 text-center">
     <i class="fa-hands-helping fas fa-4x"  style="margin-bottom: 1rem"></i>
     <br>
-    <a href="/about/core">SBML Editors & Core Developers</a> &ndash; The SBML Editors, the Scientific Advisory Board, and the SBML Team.
+    <a href="core">SBML Editors & Core Developers</a> &ndash; The SBML Editors, the Scientific Advisory Board, and the SBML Team.
   </div>
   <div class="col-4 text-center">
     <i class="fa-university fas fa-4x"  style="margin-bottom: 1rem"></i>
     <br>
-    <a href="/about/funding">Funding and support</a> &ndash; The SBML Funded Partners and other supporting institutions and agencies.
+    <a href="funding">Funding and support</a> &ndash; The SBML Funded Partners and other supporting institutions and agencies.
   </div>
 </div>
 
