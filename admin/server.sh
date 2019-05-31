@@ -33,52 +33,82 @@ if (( EUID == 0 )); then
    exit 1
 fi
 
-# Get our configuration variables.
+# Get our configuration variables and utilities.
 
 source config.cfg
+source utilities.sh
 
 # .............................................................................
 # The rest below is generic and probably does not need to be changed.
 
-RETVAL=0
-
 case "$1" in
     start)
+        check_log_file
+
         cd "$SITE_ROOT"
-        $HUGO server --bind=$SITE_IP --baseURL=$SITE_URL --port $SITE_PORT > $HUGO_LOGFILE 2>&1 &
+        if [ -z $SITE_URL ]; then
+            $HUGO server > $HUGO_LOGFILE 2>&1 &
+        else
+            $HUGO server --bind=$SITE_IP --baseURL=$SITE_URL --port $SITE_PORT > $HUGO_LOGFILE 2>&1 &
+        fi
         RETVAL=$?
         PID=`echo $!`
-        echo "PID=$PID"
         if [ -z $PID ]; then
-            printf "%s\n" "Unable to start process"
+            echo "Unable to start hugo process." >&2
         else
             echo $PID > $HUGO_PIDFILE
-            printf "server started successfully with PID $PID\n"
+            echo "Server started successfully with PID $PID." >&2
         fi
+        exit $RETVAL
         ;;
+
     stop)
+        if [ ! -e $HUGO_PIDFILE ]; then
+            echo "PID file $HUGO_PIDFILE does not exist." >&2
+            exit 2
+        fi
         PID=`cat $HUGO_PIDFILE`
         if ! kill -TERM  $PID> /dev/null 2>&1 ; then
             # We don't want to start killing processes by name, because the
             # user might have more than one server running.  Just give up.
-            if [ -n `ps -p$PID -o pid=` ]; then
-                echo "Could not terminate process $PID" >&2
+            if ps -p $PID > /dev/null 2>&1 ; then
+                echo "Could not terminate process $PID." >&2
+                exit 1
             else
-                echo "Process $PID no longer exists" >&2
+                echo "Process $PID no longer exists." >&2
+                exit 1
             fi
+        else
+            echo "Process $PID killed." >&2
+            exit 0
         fi
-        RETVAL=$?
         ;;
+
     restart)
         $0 stop
+        echo "Pausing for 2 s." >&2
         sleep 2
+        echo "Restarting server." >&2
         $0 start
-        RETVAL=$?
+        exit $?
+        ;;
+
+    status)
+        if [ ! -e $HUGO_PIDFILE ]; then
+            echo "PID file $HUGO_PIDFILE does not exist." >&2
+            exit 2
+        fi
+        PID=`cat $HUGO_PIDFILE`
+        if ps -p $PID > /dev/null 2>&1 ; then
+            echo "Hugo process $PID running." >&2
+            exit 0
+        else
+            echo "Process $PID no longer exists." >&2
+            exit 1
+        fi
         ;;
     *)
-        echo "Usage: $0 {start|stop|restart}" >&2
+        echo "Usage: $0 {start|stop|restart|status}." >&2
         exit 3
         ;;
 esac
-
-exit $RETVAL
