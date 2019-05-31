@@ -59,6 +59,7 @@ case "$1" in
             echo $PID > $HUGO_PIDFILE
             echo "Server started successfully with PID $PID." >&2
         fi
+        echo "Log file is $HUGO_LOGFILE" >&2
         exit $RETVAL
         ;;
 
