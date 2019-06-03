@@ -17,7 +17,7 @@ date  = 2019-04-06
 
 SBML is formally defined in the specification documents. Additional helpful explanations on selected topics may be found in the <a href="elaborations">Elaborations and Clarifications</a>, and answers to more general questions may be found in the <a href="faq">Frequently Asked Questions (FAQ)</a> section.
 
-<div class="row row-big-gutter align-items-center">
+<div class="row row-big-gutter align-items-center" style="margin-top: 1rem">
   <div class="col-3 text-center">
     <a href="what-is-sbml"><i class="fa-question fas fa-4x"></i></a>
   </div>
