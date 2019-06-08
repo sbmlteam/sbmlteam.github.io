@@ -20,7 +20,7 @@ The following is an attempt to credit everyone (other than the SBML Team) who ha
 <th width="300rem"><p>Person(s)</p></th>
 <th><p>Group</p></th>
 <th><p>Topic</p></th>
-<th width="120rem"><p>First publicized</p></th>
+<th width="160rem"><p>First publicized</p></th>
 </tr>
 </thead>
 <tbody>
@@ -28,128 +28,128 @@ The following is an attempt to credit everyone (other than the SBML Team) who ha
 <td><p>Daniel Lucio, James Schaff, John Wagner</p></td>
 <td><p><a href="http://www.nrcam.uchc.edu/">Virtual Cell Team</a>, Univ. of Connecticut Health Center, USA</p></td>
 <td><p>Representing spatial geometry</p></td>
-<td><p><a href="Events/Workshops/The_3rd_Workshop_on_Software_Platforms_for_Systems_Biology" title="wikilink">3rd Forum</a></p></td>
+<td><p>3rd SBML Forum</p></td>
 </tr>
 <tr class="even">
 <td><p>Eric Mjolsness, Bruce Shapiro</p></td>
 <td><p><a href="http://ml.jpl.nasa.gov/">Machine Learning Systems</a>, NASA Jet Propulsion Lab, USA</p></td>
 <td><p>Support for arrays</p></td>
-<td><p><a href="Events/Workshops/The_3rd_Workshop_on_Software_Platforms_for_Systems_Biology" title="wikilink">3rd Forum</a></p></td>
+<td><p>3rd SBML Forum</p></td>
 </tr>
 <tr class="odd">
 <td><p>Martin Ginkel, Jörg Stelling</p></td>
 <td><p><a href="http://www.mpi-magdeburg.mpg.de/research/groups/sb/">Gilles group</a>, MPI Magdeburg, Germany</p></td>
 <td><p>Modularity of models</p></td>
-<td><p><a href="Events/Workshops/The_3rd_Workshop_on_Software_Platforms_for_Systems_Biology" title="wikilink">3rd Forum</a></p></td>
+<td><p>3rd SBML Forum</p></td>
 </tr>
 <tr class="even">
 <td><p>Nicolas Le Novère, Tom Shimizu</p></td>
 <td><p><a href="http://www.pdn.cam.ac.uk/groups/comp-cell/">Bray Group</a>, University of Cambridge, UK</p></td>
 <td><p>Multistate molecules &amp; complex species</p></td>
-<td><p><a href="Events/Workshops/The_3rd_Workshop_on_Software_Platforms_for_Systems_Biology" title="wikilink">3rd Forum</a></p></td>
+<td><p>3rd SBML Forum</p></td>
 </tr>
 <tr class="odd">
 <td><p>Igor Goryanin, Hugh Spence</p></td>
 <td><p><a href="http://www.gsk.com/">GlaxoSmithKline</a>, UK</p></td>
 <td><p>Miscellaneous SBML extensions proposal</p></td>
-<td><p><a href="Events/Workshops/The_3rd_Workshop_on_Software_Platforms_for_Systems_Biology" title="wikilink">3rd Forum</a></p></td>
+<td><p>3rd SBML Forum</p></td>
 </tr>
 <tr class="even">
 <td><p>Naoki Tanimura, Maki Nakayama, Yuichiro Inagaki, Takayuki Saito, Akira Funahashi</p></td>
 <td><p><a href="http://sbi.jp">Systems Biology Institute</a>, Japan</p></td>
 <td><p>Representation of graphical diagrams</p></td>
-<td><p><a href="Events/Workshops/The_5th_Workshop_on_Software_Platforms_for_Systems_Biology" title="wikilink">5th Forum</a></p></td>
+<td><p>5th SBML Forum</p></td>
 </tr>
 <tr class="odd">
 <td><p>Sven Sahle, Ralph Gauges, Ursula Rost, Katja Wegner</p></td>
 <td><p><a href="http://www.eml-research.de/">EML Research gGmbH</a>, Germany</p></td>
 <td><p>Diagram layout</p></td>
-<td><p><a href="Events/Workshops/The_8th_SBML_Forum_Meeting" title="wikilink">8th Forum</a></p></td>
+<td><p>8th SBML Forum</p></td>
 </tr>
 <tr class="even">
 <td><p>Claudine Chaouiya, Elisabeth Remy, Denis Thieffry</p></td>
 <td><p><a href="http://iml.univ-mrs.fr/">LGPD/IBDM/IML</a>, France</p></td>
 <td><p>Logical regulatory networks</p></td>
-<td><p><a href="Events/Workshops/The_9th_SBML_Forum_Meeting" title="wikilink">9th Forum</a></p></td>
+<td><p>9th SBML Forum</p></td>
 </tr>
 <tr class="odd">
 <td><p>Michael Blinov</p></td>
 <td><p><a href="http://www-t10.lanl.gov/">T-10 group</a>, Los Alamos National Laboratory, USA</p></td>
 <td><p>Rule-based models</p></td>
-<td><p><a href="Events/Workshops/The_9th_SBML_Forum_Meeting" title="wikilink">9th Forum</a></p></td>
+<td><p>9th SBML Forum</p></td>
 </tr>
 <tr class="even">
 <td><p>Colin Gillespie, Darren Wilkinson, Richard Boys, Carole Proctor, Daryl Shanley, Tom Kirkwood, Stuart Moodie, Maciej Swat</p></td>
 <td><p><a href="http://www.basis.ncl.ac.uk/team.html">BASIS Group</a>, Newcastle University, UK,<br />
 <a href="http://www.ebi.ac.uk/compneur-srv/">Comp. Neuroscience Group</a> EMBL-EBI, UK</p></td>
 <td><p>Distributions</p></td>
-<td><p><a href="https://groups.google.com/d/msg/sbml-discuss/110VGZ5ssn8/DdqUAWxdZGkJ">May '05</a></p></td>
+<td><p>May '05</p></td>
 </tr>
 <tr class="odd">
 <td><p>Frank Bergmann</p></td>
 <td><p><a href="http://sys-bio.org/">Sauro Group</a>, Keck Graduate Institute, USA</p></td>
 <td><p>Render extension</p></td>
-<td><p><a href="Events/Workshops/The_10th_SBML_Forum_Meeting" title="wikilink">10th Forum</a></p></td>
+<td><p>10th SBML Forum</p></td>
 </tr>
 <tr class="even">
 <td><p>Karthik Raman</p></td>
 <td><p><a href="http://www.iisc.ernet.in/">Indian Institute of Science</a>, India</p></td>
 <td><p>Flux balance models</p></td>
-<td><p><a href="Events/Workshops/The_11th_SBML_Forum_Meeting" title="wikilink">11th Forum</a></p></td>
+<td><p>11th SBML Forum</p></td>
 </tr>
 <tr class="odd">
 <td><p>Ranjit Randhawa, Cliff Shaffer</p></td>
 <td><p><a href="http://jigcell.biol.vt.edu">JigCell Group</a>, Virginia Tech, USA</p></td>
 <td><p>Model composition</p></td>
-<td><p><a href="http://www.icsb-2006.org/program/postersF.htm#F1Network">ICSB 2006</a></p></td>
+<td><p>ICSB 2006</p></td>
 </tr>
 <tr class="even">
 <td><p>Stefan Hoops</p></td>
 <td><p><a href="http://www.copasi.org">COPASI Team</a>,, Virginia Bioinformatics Institute, USA</p></td>
 <td><p>Hierarchical model composition</p></td>
-<td><p><a href="Events/Workshops/The_12th_SBML_Forum_Meeting" title="wikilink">12th Forum</a></p></td>
+<td><p>12th SBML Forum</p></td>
 </tr>
 <tr class="odd">
 <td><p>Anika Oellrich, Nicolas Le Novère</p></td>
 <td><p><a href="http://www.ebi.ac.uk/compneur-srv/">Comp. Neuroscience Group</a>, EMBL-EBI, UK</p></td>
 <td><p>Multicomponent &amp; multistate species</p></td>
-<td><p><a href="Events/Workshops/The_13th_SBML_Forum_Meeting" title="wikilink">13th Forum</a></p></td>
+<td><p>13th SBML Forum</p></td>
 </tr>
 <tr class="even">
 <td><p>Duncan Berenguier, Nicolas Le Novère, Martijn van Iersel, Claudine Chaouiya</p></td>
 <td><p><a href="http://www.ebi.ac.uk/compneur-srv/">Comp. Neuroscience Group</a>, EMBL-EBI, UK, and <a href="http://www.igc.gulbenkian.pt/">Inst. Gulbenkian de Ciência</a>, Oeiras, Portugal</p></td>
 <td><p>Qualitative models</p></td>
-<td><p><a href="Events/Workshops/The_13th_SBML_Forum_Meeting" title="wikilink">13th Forum</a></p></td>
+<td><p>13th SBML Forum</p></td>
 </tr>
 <tr class="odd">
 <td><p>Frank Bergmann, Brett Olivier</p></td>
 <td><p><a href="http://sys-bio.org">Univ. of Washington</a> and <a href="http://www.bio.vu.nl/microb/research/cellenvir.html">VU University Amsterdam</a>, USA and The Netherlands</p></td>
 <td><p>Flux Balance</p></td>
-<td><p><a href="Events/Workshops/The_14th_SBML_Forum_Meeting" title="wikilink"> 14th Forum</a></p></td>
+<td><p>14th SBML Forum</p></td>
 </tr>
 <tr class="even">
 <td><p>Dagmar Waltemath, Neil Swainston, Allyson Lister</p></td>
 <td><p><a href="http://www.sbi.uni-rostock.de">University of Rostock</a>, <a href="http://www.mcisb.org">University of Manchester</a> and <a href="http://www.ncl.ac.uk/computing/">Newcastle University</a>, Germany and the UK</p></td>
 <td><p>Annotations</p></td>
-<td><p><a href="Events/Other_Events/Annotation_package_workshop_2010">2010 workshop</a></p></td>
+<td><p>2010 workshop</p></td>
 </tr>
 <tr class="odd">
 <td><p>Chris Myers</p></td>
 <td><p><a href="http://shang.elen.utah.edu">University of Utah</a>, USA</p></td>
 <td><p>(1) Arrays and (2) dynamical structures</p></td>
-<td><p><a href="http://co.mbine.org/events/COMBINE_2011">COMBINE 2011</a></p></td>
+<td><p>COMBINE 2011</p></td>
 </tr>
 <tr class="even">
 <td><p>Fengkai Zhang</p></td>
 <td><p><a href="https://www.niaid.nih.gov/LabsAndResources/labs/aboutlabs/lsb/Pages/simmuneproject.aspx">Simmune Group, NIH NIAID</a>, USA</p></td>
 <td><p>Restarted effort for multicomponent &amp; multistate species</p></td>
-<td><p><a href="http://co.mbine.org/events/COMBINE_2012">COMBINE 2012</a></p></td>
+<td><p>COMBINE 2012</p></td>
 </tr>
 <tr class="odd">
 <td><p>Harold Goméz</p></td>
 <td><p><a href="http://www.bu.edu/computationalimmunology/people/harold-gomez/">Laboratory of Computational Immunology, Boston University</a>, USA</p></td>
 <td><p>Restarted effort for dynamic processes</p></td>
-<td><p><a href="http://co.mbine.org/events/HARMONY_2014">HARMONY 2014</a></p></td>
+<td><p>HARMONY 2014</p></td>
 </tr>
 </tbody>
 </table>
