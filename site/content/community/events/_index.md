@@ -16,6 +16,7 @@ The _<b>CO</b>mputational <b>M</b>odeling in <b>BI</b>ology <b>NE</b>twork_ (COM
 
 | Date(s)           | Event                                                   | Event type  | Location                                                     |
 |-------------------|---------------------------------------------------------|-------------|--------------------------------------------------------------|
+| Jul. 15–19, 2019	| [COMBINE 2019](http://co.mbine.org/events/COMBINE_2019) | Forum		| Heidelberg Institute for Theoretical Studies, Heidelberg, DE |
 | Mar. 25–29, 2019	| [HARMONY 2019](http://co.mbine.org/events/HARMONY_2019) | Hackathon	| Caltech, Pasadena, CA, US							   		   |
 | Oct. 8–12, 2018	| [COMBINE 2018](http://co.mbine.org/events/COMBINE_2018) | Forum		| Boston University, Boston, MA, US							   |
 | Jun. 18–22, 2018	| [HARMONY 2018](http://co.mbine.org/events/HARMONY_2018) | Hackathon	| Oxford University, UK										   |
