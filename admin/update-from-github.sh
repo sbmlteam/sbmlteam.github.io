@@ -34,8 +34,10 @@ PATH=/usr/local/bin:/opt/local/bin:/bin:/usr/bin
 
 REPO="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-# Update remote info.  (For some reason, "git remote update" doesn't
-# accept a --quiet argument.)
+# Get info about the remote origin.  The echo to /dev/null is because "git
+# remote update" doesn't accept a --quiet argument.
+
+echo "===== ${0##*/} started at $(/bin/date '+%G-%m-%d:%H%M') ====="
 
 cd $REPO
 git remote update > /dev/null
@@ -47,16 +49,19 @@ LOCAL=$(git rev-parse @{0})
 REMOTE=$(git rev-parse "$UPSTREAM")
 BASE=$(git merge-base @{0} "$UPSTREAM")
 
+RETVAL=0
 if [ $LOCAL = $REMOTE ]; then
-    # echo "Up-to-date"
-    exit 0
+    echo "Up-to-date"
 elif [ $LOCAL = $BASE ]; then
     # echo "Need to pull"
     git stash
     git pull --rebase origin master
+    RETVAL=$?
 elif [ $REMOTE = $BASE ]; then
-    # echo "Need to push"
-    exit 0
+    echo "Need to push"
 else
     echo "Diverged"
 fi
+
+echo "===== ${0##*/} stopped at $(/bin/date '+%G-%m-%d:%H%M') ====="
+exit $RETVAL
