@@ -21,7 +21,7 @@ SBML continues to improve and evolve thanks to the involvement of a vibrant and 
 </div>
 <div class="row row-big-gutter align-items-center" style="margin-top: 1rem">
   <div class="col-3 text-center">
-    <a href="events"><i class="fa-people-carry far fa-4x"></i></a>
+    <a href="events"><i class="fa-people-carry fas fa-4x"></i></a>
   </div>
   <div class="col">
     <a href="events"><strong>Workshop and meetings</strong></a><br>
