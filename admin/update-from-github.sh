@@ -15,6 +15,8 @@
 # the protocol used to create the initial git clone must be https instead of
 # git (or else you will get permission denied errors when this script runs).
 #
+# Don't forget to clone with --recursive!
+#
 # This is intended to be run from cron or a similar system daemon control
 # system (e.g., Jenkins).  Here's an example of a cron entry:
 #
