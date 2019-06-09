@@ -12,7 +12,7 @@ SBML continues to improve and evolve thanks to the involvement of a vibrant and 
 
 <div class="row row-big-gutter align-items-center" style="margin-top: 1rem">
   <div class="col-3 text-center">
-    <a href="forums"><i class="fa-comments far fa-4x"></i></a>
+    <a href="forums"><i class="fa-comments fas fa-4x"></i></a>
   </div>
   <div class="col">
     <a href="forums"><strong>Discussion forums</strong></a><br>
@@ -39,7 +39,7 @@ Announcements by the SBML community also have their own area on this site—visi
 </div>
 <div class="row row-big-gutter align-items-center" style="margin-top: 1rem">
   <div class="col-3 text-center">
-    <a href="showcase"><i class="fa-heart far fa-4x"></i></a>
+    <a href="showcase"><i class="fa-heart fas fa-4x"></i></a>
   </div>
   <div class="col">
     <a href="news"><strong>SBML Showcase</strong></a><br>

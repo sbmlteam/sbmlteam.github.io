@@ -19,7 +19,7 @@ SBML is formally defined in the specification documents. Additional helpful expl
 
 <div class="row row-big-gutter align-items-center" style="margin-top: 1rem">
   <div class="col-3 text-center">
-    <a href="what-is-sbml"><i class="fa-question fas fa-4x"></i></a>
+    <a href="what-is-sbml"><i class="fa-info-circle fas fa-4x"></i></a>
   </div>
   <div class="col">
     <a href="what-is-sbml"><strong>What is SBML?</strong></a><br>
@@ -37,7 +37,7 @@ SBML is formally defined in the specification documents. Additional helpful expl
 </div>
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <a href="elaborations"><i class="fa-puzzle-piece far fa-4x"></i></a>
+    <a href="elaborations"><i class="fas fa-puzzle-piece fa-4x"></i></a>
   </div>
   <div class="col">
     <a href="elaborations"><strong>Elaborations and Clarifications</strong></a><br>
@@ -46,7 +46,7 @@ SBML is formally defined in the specification documents. Additional helpful expl
 </div>
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <a href="faq"><i class="fa-info-circle far fa-4x"></i></a>
+    <a href="faq"><i class="fa-question-circle fas fa-4x"></i></a>
   </div>
   <div class="col">
     <a href="faq"><strong>FAQ (Frequently Asked Questions)</strong></a><br>
@@ -55,7 +55,7 @@ SBML is formally defined in the specification documents. Additional helpful expl
 </div>
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <a href="process"><i class="fa-balance-scale far fa-4x"></i></a>
+    <a href="process"><i class="fa-balance-scale fas fa-4x"></i></a>
   </div>
   <div class="col">
     <a href="process"><strong>SBML Development Process</strong></a><br>
@@ -64,7 +64,7 @@ SBML is formally defined in the specification documents. Additional helpful expl
 </div>
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <a href="publications"><i class="fa-copy far fa-4x"></i></a>
+    <a href="publications"><i class="fa-copy fas fa-4x"></i></a>
   </div>
   <div class="col">
     <a href="publications"><strong>SBML Publications</strong></a><br>
@@ -73,7 +73,7 @@ SBML is formally defined in the specification documents. Additional helpful expl
 </div>
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <a href="logos"><i class="fa-palette far fa-4x"></i></a>
+    <a href="logos"><i class="fa-palette fas fa-4x"></i></a>
   </div>
   <div class="col">
     <a href="logos"><strong>SBML Logos</strong></a><br>

@@ -22,7 +22,7 @@ Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a 
 <hr style="margin-top: 1rem">
 <div class="row row-big-gutter align-items-center">
   <div class="col-3 text-center">
-    <i class="fa-question-circle fas fa-4x"></i>
+    <i class="fa-info-circle fas fa-4x"></i>
   </div>
   <div class="col">
     <strong>What <em>is</em> SBML?</strong><br>
