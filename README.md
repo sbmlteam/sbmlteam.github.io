@@ -12,6 +12,7 @@ Repostitory for source files for refreshed SBML.org website 2019.
 
 This is the repository for the completely redesigned SBML.org website, created during 2018&ndash;2019.
 
+<p align="center"><img width="60%" src=".graphics/clarification.svg"></p>
 
 ✺ Installation instructions
 ---------------------------
