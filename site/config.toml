@@ -1,8 +1,35 @@
-# =============================================================================
-# This file is formatted using TOML syntax.
-# =============================================================================
+## ============================================================================
+## File name   : config.toml
+## Description : Hugo site configuration file for sbml.org
+## Author(s)   : Michael Hucka <mhucka@caltech.edu>
+## Organization: California Institute of Technology
+## Date created: 2019-03-19
+##
+## Notes about this file
+## ~~~~~~~~~~~~~~~~~~~~~
+##
+## This config.toml is at the top level of the site.  I moved config.toml to
+## the top level after getting rid of the Academic theme's cofnig/_default
+## directory where it was originally located along with two other config
+## files (params.toml, menus.toml).  I found the differences between the
+## variables set in params.toml and those in config.toml to be completely
+## incomprehensible -- they *all* seemed like site configuration variables,
+## as far as I could understand them -- so I merged the contents of
+## params.toml and config.toml into this config.toml.  Further, since our
+## menus.toml ended up quite small, I put its contents in here (config.toml)
+## as well.  Section headings in this file try to help nagivation and
+## understanding.
+##
+## The config/_default directory originally used by the Academic theme
+## example site is not used for this site (there was no point after the
+## changes above), which IMHO has the advantage of further simplifying things
+## and reducing the number of things that future maintainers need to wade
+## through to understand the site.
+##
+## ============================================================================
 
-# General configuration variables
+
+# General configuration variables for Hugo and the Hugo Academic theme. 
 # .............................................................................
 
 # Title of the site
@@ -24,23 +51,21 @@ theme = "academic"
 # Get last modified date for content from Git?
 enableGitInfo = true
 
-# Default language to use (if you setup multilingual support)
-defaultContentLanguage = "en"
-hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean languages.
-defaultContentLanguageInSubdir = false
+# Enable Emoji emoticons support for page content.
+enableEmoji = true
+
+# Files to be ignored by Hugo.
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.#"]
 
 paginate = 10  # Number of items per page in paginated lists.
-enableEmoji = true
+
 footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.#"]
-preserveTaxonomyNames = true
 
 [outputs]
   home = [ "HTML", "CSS", "JSON" ]
   section = [ "HTML", "RSS" ]
 
 # Configure BlackFriday Markdown rendering.
-#   See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
 [blackfriday]
   hrefTargetBlank = true  # `true` opens external links in a new tab.
   angledQuotes = false
@@ -53,17 +78,85 @@ preserveTaxonomyNames = true
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+  
+
+# Theme options.
+# .............................................................................
+# These are variables in the Academic theme for Hugo, and some additional
+# ones for our SBML.org customizations.
 
+[params]
+  color_theme = "sbml"
+  font = "sbml"
+  
+  # Enable users to switch between day and night mode?
+  day_night = true
+  
+  # Description for social sharing and search engines. If undefined,
+  # superuser role is used in place.
+  description = "SBML Home Page"
+  
+  # Default image for social sharing and search engines. Place image in
+  # `static/img/` folder and specify image name here.
+  sharing_image = ""
+  
+  # Twitter username (without @). Used when a vistor shares your site on Twitter.
+  twitter = "@sbmlnews"
+  
+  # Diplay a logo in navigation bar rather than title (optional).  To enable,
+  # place an image in `static/img/` and reference its filename below. To
+  # disable, set the value to "".
+  logo = "sbml-logo.svg"
+  
+  # Enable global source code highlighting? true/false
+  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
+  highlight = true
+  highlight_languages = ["xml"]
+  highlight_style = "solarized-dark"  
+  
+  # Enable global LaTeX math rendering?
+  # If false, you can enable it locally on a per page basis.
+  math = true
+  
+  # Privacy pack
+  #   Show a cookie consent message to visitors
+  #   Anonymize IP in Google Analytics (if enabled)
+  privacy_pack = true
+  
+  # Date and time format
+  # Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+  date_format = "2006-01-02"
+  #   Examples: "3:04 pm" or "15:04"
+  time_format = "15:04"
+  
+  # Load CSS and JS plugins
+  #   E.g. To load `/assets/css/custom.css`, set `plugins_css = ["custom"]`.
+  #   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
+  plugins_css = []
+  plugins_js  = []
 
+  # Search.
+  [search]
+    # Search provider:
+    #   0: No search engine
+    #   1: Academic (built-in)
+    #   2: Algolia (https://www.algolia.com)
+    engine = 1
+  
+  ##########################
+  # SBML.org features
+  ##########################
+  
+  badge = "Official-sbml-supported-70.jpg"
+
+
 # Menu (navigation) configuration
 # .............................................................................
+# Note: the ordering of the section names in the nav bar is *not* set by the
+# order of the items in the list below; the weight parameter defines the
+# order that the links will appear in.
 
 [menu]
-
-# To link a homepage widget, specify the URL as a hash `#` followed by
-# the filename of the desired widget in your `content/home/` folder.
-# The weight parameter defines the order that the links will appear in.
-
   [[menu.main]]
     name = "News"
     url = "news"
@@ -98,171 +191,3 @@ preserveTaxonomyNames = true
     name = "About"
     url = "about"
     weight = 7
-  
-
-# Site parameters
-# .............................................................................
-
-[params]
-
-# Color theme.
-color_theme = "sbml"
-
-# Font style.
-font = "sbml"
-
-# Enable users to switch between day and night mode?
-day_night = true
-
-# Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "SBML Home Page"
-
-# Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = ""
-
-# Twitter username (without @). Used when a vistor shares your site on Twitter.
-twitter = "@sbmlnews"
-
-# Diplay a logo in navigation bar rather than title (optional).
-#   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
-logo = "sbml-logo.svg"
-
-# Enable global source code highlighting? true/false
-# Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
-highlight = true
-highlight_languages = ["xml"]  # Add support for highlighting additional languages
-highlight_style = "solarized-dark"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
-
-# Enable global LaTeX math rendering?
-#   If false, you can enable it locally on a per page basis.
-math = true
-
-# Privacy pack
-#   Show a cookie consent message to visitors
-#   Anonymize IP in Google Analytics (if enabled)
-privacy_pack = true
-
-# Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format ) #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-date_format = "2006-01-02"
-#   Examples: "3:04 pm" or "15:04"
-time_format = "15:04"
-
-############################
-## Contact Widget setup   ##
-############################
-
-# Enter contact details (optional). To hide a field, clear it to "".
-email = "sbml-team@googlegroups.com"
-phone = ""
-address = ""
-
-# Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
-office_hours = ""
-
-# Enter an optional link for booking appointments (e.g. calendly.com).
-appointment_url = ""
-
-# Contact links
-#   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
-contact_links = [
-  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/sbmlnews"},
-  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = ""},
-  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = ""},
-  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = ""},
-  # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
-  ]
-
-# Display a map.
-# To show your address on a map in the contact widget, you need to enter your latitude, longitude and choose
-# a map provider below.
-# To use Google Maps, set `map = 1` and enter your API key that can be obtained here:
-#   https://developers.google.com/maps/documentation/javascript/get-api-key
-# To use OpenStreetMap tiles, set `map = 2`.
-# To use OpenStreetMap on a high traffic site, set `map = 3` and enter your API key that can be obtained here:
-#   https://www.mapbox.com/studio/account/tokens
-# To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-#
-# Map provider:
-#   0: No map
-#   1: Google Maps
-#   2: OpenStreetMap (Mapnik)
-#   3: OpenStreetMap (Mapbox)
-map = 0
-map_api_key = ""
-latitude = ""
-longitude = ""
-zoom = 15
-
-############################
-## Plugins                ##
-############################
-
-# Load CSS and JS plugins
-#   E.g. To load `/assets/css/custom.css`, set `plugins_css = ["custom"]`.
-#   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
-plugins_css = []
-plugins_js  = []
-
-############################
-## Advanced options       ##
-############################
-
-# Get user avatars from Gravatar.com? (true/false)
-gravatar = false
-
-# Align the main menu to the right of the page? (true/false)
-menu_align_right = false
-
-# Show estimated reading time for posts? (true/false)
-reading_time = false
-
-# Display comment count (if commenting enabled in config.toml)? (true/false)
-comment_count = true
-
-# Display next/previous section pager? (true/false)
-section_pager = false
-
-# Enable in-built social sharing buttons? (true/false)
-sharing = false
-
-# Configuration of publication pages.
-[publications]
-  # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
-  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-  date_format = "2006-01-02"
-
-  # Citation style ("apa" or "mla")
-  citation_style = "apa"
-
-# Configuration of project pages.
-[projects]
-  # Views for associated content.
-  #   1: List
-  #   2: Compact
-  #   3: Card
-  #   4: Citation (publications only)
-  post_view = 2
-  publication_view = 2
-  talk_view = 2
-
-# Search.
-[search]
-  # Search provider:
-  #   0: No search engine
-  #   1: Academic (built-in)
-  #   2: Algolia (https://www.algolia.com)
-  engine = 1
-
-  # Configuration of Algolia search engine.
-  # Paste the values from your Algolia dashboard.
-  [search.algolia]
-    app_id = ""
-    api_key = ""
-    index_name = ""
-    show_logo = false
-
-##########################
-# SBML.org features
-##########################
-
-badge = "Official-sbml-supported-70.jpg"
