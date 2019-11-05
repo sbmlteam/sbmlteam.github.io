@@ -4,5 +4,5 @@
   {{ else if eq $type "warning" }} <i class='fa-exclamation-triangle fa fa-2x alert-{{ $type }}'></i>
   {{ else if eq $type "info" }}    <i class='fa-info                 fa fa-2x alert-{{ $type }}'></i>
   {{ end }}
-  {{ .Inner }}
+  <div class="alert-box-text">{{ .Inner | markdownify }}</div>
 </div>
