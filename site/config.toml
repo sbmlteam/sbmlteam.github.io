@@ -28,7 +28,6 @@
 ##
 ## ============================================================================
 
-
 # General configuration variables for Hugo and the Hugo Academic theme. 
 # .............................................................................
 
@@ -78,8 +77,8 @@ footnotereturnlinkcontents = "<sup>^</sup>"
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+
   
-
 # Theme options.
 # .............................................................................
 # These are variables in the Academic theme for Hugo, and some additional
@@ -143,13 +142,11 @@ footnotereturnlinkcontents = "<sup>^</sup>"
     #   2: Algolia (https://www.algolia.com)
     engine = 1
   
-  ##########################
-  # SBML.org features
-  ##########################
+  # SBML.org features ---------------------------------------------------------
   
   badge = "Official-sbml-supported-70.jpg"
 
-
+
 # Menu (navigation) configuration
 # .............................................................................
 # Note: the ordering of the section names in the nav bar is *not* set by the
