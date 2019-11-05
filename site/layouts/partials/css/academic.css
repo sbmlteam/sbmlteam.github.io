@@ -2612,21 +2612,24 @@ h2 {
 }
 
 .alert-box {
-  display: flex;
-  padding: 0.5em;
-  margin: auto 0;
+  display: table;
   border-radius: 6px; 
+  border-spacing: 0.75em;
+  border-collapse: separate;
 }
 
 .alert-box i[class ^= "fa-"],
 .alert-box a i[class ^= "fa-"],
 .alert-box a:visited i[class ^= "fa-"] {
-  margin: auto 0.5em auto 0.5em;
+  padding: 0.25em;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.alert-box p {
-  margin: auto 0;
-  margin-left: 0.25em;
+.alert-box-text {
+  display: table-cell;
+  padding: 0.5em auto;
+  vertical-align: middle;
 }
 
 .alert-box .alert-danger {
@@ -2634,7 +2637,7 @@ h2 {
 }
 
 .alert-danger {
-  background-color: #fcdbde;
+  background-color: #fef2f2;
 }
 
 .alert-box .alert-info {
@@ -2642,7 +2645,7 @@ h2 {
 }
 
 .alert-info {
-  background-color: #dff3fd;
+  background-color: #e9f4ff;
 }
 
 .alert-box .alert-warning {
@@ -2651,5 +2654,5 @@ h2 {
 
 .alert-warning {
   color: #7f6e4a;
-  background-color: #fff6d3;
+  background-color: #fffae7;
 }
