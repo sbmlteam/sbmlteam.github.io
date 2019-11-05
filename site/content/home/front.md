@@ -4,8 +4,8 @@
 # Summary: This file defines the front page text that appears as the
 #          first (top) section of the front page.
 #
-# Notes: do not define the variable "title" here, because we use the 
-# normal Hugo Academic list template and a definitio for title will
+# Notes: DO NOT define the variable "title" here, because we use the 
+# normal Hugo Academic list template and a definition for title will
 # end up putting new (and unwanted) title text on the page.
 #
 # This page definition makes heavy use of raw HTML in-between
