@@ -1,0 +1,19 @@
+{{ $side := .Get "icon-side" }}
+{{ $icon := .Get "icon" }}
+<div class="row row-big-gutter align-items-center decorated-text">
+{{ if eq $side "left" }}
+  <div class="col-2 text-center">
+    <i class="{{ $icon }} fas fa-4x"></i>
+  </div>
+  <div class="col">
+    {{ .Inner | markdownify }}
+  </div>
+{{ else }}
+  <div class="col">
+    {{ .Inner | markdownify }}
+  </div>
+  <div class="col-2 text-center">
+    <i class="{{ $icon }} fas fa-4x"></i>
+  </div>
+{{ end }}
+</div>
