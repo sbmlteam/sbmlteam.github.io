@@ -1684,7 +1684,7 @@ a.badge:hover {
  **************************************************/
 
 .navbar {
-  min-height: 75px !important;
+  min-height: 60px !important;
 }
 
 .navbar-light {
@@ -1747,27 +1747,8 @@ nav#navbar-main li.nav-item {
 .navbar-brand,
 .navbar-nav li.nav-item a.nav-link {
   height: inherit;
-  line-height: 55px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-@media screen and (min-width: 576px) {
-  .navbar {
-    height: 55px !important;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .navbar {
-    height: 60px !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .navbar {
-    height: 60px !important;
-  }
 }
 
 .navbar-brand img {
@@ -1828,8 +1809,41 @@ nav#navbar-main li.nav-item {
   background-color: transparent;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 576px) {
   .navbar {
+    height: 55px !important;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
+  .navbar {
+    height: 60px !important;
+  }
+
+  .navbar-nav {
+    line-height: 1;
+  }
+
+  .navbar ul li {
+    margin-bottom: 0;
+  }
+
+  .navbar-collapse {
+    display: block;
+    margin-top: 20rem !important;
+    padding: 1rem;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-radius: 6px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .2);
+    background-color: {{ .Get "background" }};
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px)  {
+  .navbar {
+    height: 60px !important;
     min-height: 55px !important;
   }
 
