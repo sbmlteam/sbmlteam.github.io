@@ -31,7 +31,7 @@ SBML is formally defined in the specification documents. Additional helpful expl
     <a href="specificatons"><i class="fa-book fas fa-4x"></i></a>
   </div>
   <div class="col">
-    <a href="specificatons"><strong>SBML Specifications</strong></a><br>
+    <a href="specifications"><strong>SBML Specifications</strong></a><br>
     The SBML specifications define the syntax and semantics of SBML. These documents are the definitive references for SBML.
   </div>
 </div>
