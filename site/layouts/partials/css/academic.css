@@ -87,6 +87,12 @@ ul li, ol li, dl li {
   text-rendering: optimizeLegibility;
 }
 
+.dark .navbar {
+  color: #ccc;
+  background-color: {{ .Get "dark_home_section_odd" }};
+  filter: brightness(150%);
+}
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: '{{ .Get "heading_font" }}', sans-serif;
@@ -1682,7 +1688,7 @@ a.badge:hover {
 }
 
 .navbar-light {
-  background: {{ .Get "menu_primary" }} !important;
+  background: {{ .Get "menu_primary" }};
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11)
 }
 
@@ -1712,6 +1718,12 @@ nav#navbar-main li.nav-item {
   transition: 0.2s ease;
   color: {{ .Get "menu_text" }};
   font-weight: 600;
+}
+
+.dark .navbar-nav>.nav-item>.nav-link,
+.dark .navbar-nav>.nav-item>.nav-link:focus,
+.dark .navbar-nav>.nav-item>.nav-link:hover {
+  color: #fff;
 }
 
 .navbar-light .navbar-nav>.nav-item>.nav-link:focus {
