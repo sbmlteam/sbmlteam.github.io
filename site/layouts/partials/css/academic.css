@@ -72,7 +72,7 @@ ul li, ol li, dl li {
 }
 
 .dark ul li, .dark ol li, .dark dl li {
-  color: #ddd;
+  color: #ccc;
 }
 
 #page-container li:first-child {
@@ -523,6 +523,12 @@ a[data-fancybox] img {
 
 .dark .post-nav-item a {
   color: #ddd;
+}
+
+.pagination {
+  margin-top: 5rem;
+  clear: both;
+  font-size: 200%;
 }
 
 /*************************************************
@@ -988,6 +994,10 @@ article .article-metadata {
 
 .middot-divider::after {
   content: '\00B7';
+}
+
+body.dark .article-style {
+  color: #ccc;
 }
 
 .article-style img,
@@ -2528,8 +2538,12 @@ a > b, a > strong {
   color: {{ .Get "link" }};
 }
 
+.dark .article-style {
+  color: {{ .Get "primary_dark" }};
+}
+
 .dark .article-title a {
-  color: #ccc;
+  color: {{ .Get "primary_dark" }};
 }
 
 .dark a > b, .dark a > strong {
@@ -2655,4 +2669,34 @@ h2 {
 .alert-warning {
   color: #7f6e4a;
   background-color: #fffae7;
+}
+
+.twitter-box-outer {
+  display: block; 
+  float: right; 
+  margin: 0.5rem auto auto 2rem; 
+  padding-bottom: 2rem;
+  background-color: {{ .Get "home_section_odd" }};
+}
+
+.twitter-box-inner {
+  z-index: 100;
+  padding: 0.5em;
+  border: 1px solid #ddd; 
+  border-radius: 6px;
+  background-color: {{ .Get "home_section_odd" }};
+}
+
+body.dark .twitter-box-outer {
+  background-color: {{ .Get "dark_home_section_odd" }};
+}
+
+body.dark .twitter-box-inner {
+  background-color: {{ .Get "dark_home_section_odd" }};
+}
+
+.twitter-box-heading {
+  margin-bottom: 0.5rem; 
+  padding-top: 0.25em;
+  padding-left: 0.5rem;
 }
