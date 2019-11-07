@@ -1,0 +1,23 @@
+/* ============================================================================
+   File name   : /static/css/twitter-styling.css
+   Description : CSS to style the Twitter timeline shown on /news
+   Author(s)   : Michael Hucka <mhucka@caltech.edu>
+   Organization: California Institute of Technology
+   Date created: 2019-11-06
+
+   Note #1: this style sheet is installed by /static/js/twitter-styling.js
+
+   Note #2: this style sheet does not have access to the dark mode class
+   added to the <body> tag in the overall page.  The reason is that this
+   style sheet is placed inside the <iframe> holding the Twitter widget,
+   and <iframe>'s are their own environment.  This means that we can't do
+   things like define colors based on the class "body.dark".  The approach
+   taken instead is to pick colors that are reasonable in both light and
+   dark modes.  That's not great, but easier and simpler to maintain than
+   if we had to write more JavaScript code that switched the style sheet
+   based on the dark mode toggle used by Hugo Academic.
+   ========================================================================= */
+
+body {
+  color: #888888;
+}
