@@ -59,6 +59,6 @@ This software is distributed in the hope that it will be useful, but WITHOUT ANY
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.caltech.edu">
-    <img valign="middle"  width="100" height="100" src=".graphics/caltech-round.svg">
+    <img valign="middle" height="130" src=".graphics/caltech-round.png">
   </a>
 </div>
