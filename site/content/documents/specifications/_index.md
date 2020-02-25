@@ -31,7 +31,7 @@ SBML Level 3 is a modular format.  There is a core comprising a complete format 
     schema_type="RNG"
 >}}
 
-Past Releases of SBML Level 2 are available from a separate page. 
+Past releases of SBML Level 2 are available from a separate page. 
 
 
 ### SBML Level 3 Packages
@@ -55,7 +55,7 @@ Note that the separate Levels of SBML are intended to coexist &ndash; SBML Level
     schema_type="XML"
 >}}
 
-Past Releases of SBML Level 2 are available from a separate page. 
+Past releases of SBML Level 2 are available from a separate page. 
 
 
 ## SBML Level 1
@@ -72,5 +72,5 @@ The current definition of SBML Level 1 is **Version 2**.
     schema_type="XML"
 >}}
 
-Past Releases of SBML Level 1 are available from a [separate page](all_versions_of_sbml_level_1).
+Past releases of SBML Level 1 are available from a [separate page](all_versions_of_sbml_level_1).
 
