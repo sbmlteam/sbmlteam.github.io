@@ -1,10 +1,11 @@
 +++ # -*- mode: markdown -*-
 #=====================================================================
-# File:    communit/_index.md
+# File:    community/_index.md
 # Summary: This file defines the content of the /community page.
 #---------------------------------------------------------------------
 title = "Community"
 widget = ""
+layout = "single"
 #=====================================================================
 +++
 

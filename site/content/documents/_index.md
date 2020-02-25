@@ -10,8 +10,9 @@
 # block at the beginning of the file is nevertheless not an HTML 
 # comment and you must not turn it into one or things won't work.
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-title = "Documents"
-date  = 2019-04-06
+title =  "Documents"
+date = 2019-04-06
+layout = "single"
 #=====================================================================
 +++
 

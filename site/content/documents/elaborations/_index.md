@@ -1,7 +1,8 @@
 +++ # -*- mode: html -*-
 #=====================================================================
-title = "Elaborations and Clarifications"
-date  = 2019-04-06
+title  = "Elaborations and Clarifications"
+date   = 2019-04-06
+layout = "single"
 #=====================================================================
 +++
 

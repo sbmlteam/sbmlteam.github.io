@@ -9,7 +9,7 @@
 ## ~~~~~~~~~~~~~~~~~~~~~
 ##
 ## This config.toml is at the top level of the site.  I moved config.toml to
-## the top level after getting rid of the Academic theme's cofnig/_default
+## the top level after getting rid of the Academic theme's config/_default
 ## directory where it was originally located along with two other config
 ## files (params.toml, menus.toml).  I found the differences between the
 ## variables set in params.toml and those in config.toml to be completely
@@ -56,20 +56,48 @@ enableEmoji = true
 # Files to be ignored by Hugo.
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.#"]
 
-paginate = 10  # Number of items per page in paginated lists.
+# Number of items per page in paginated lists.
+paginate = 10
 
+# The unicode character used for the "return" link in page footnotes.
 footnotereturnlinkcontents = "<sup>^</sup>"
 
+# Set the minimum version of Hugo.
+[module]
+  [module.hugoVersion]
+    min = "0.65.0"
+
+# Configure the kinds of outputs produced.
 [outputs]
   home = [ "HTML", "CSS", "JSON" ]
   section = [ "HTML", "RSS" ]
 
-# Configure BlackFriday Markdown rendering.
-[blackfriday]
-  hrefTargetBlank = true  # `true` opens external links in a new tab.
-  angledQuotes = false
-  latexDashes = true
-  extensions = ["backslashLineBreak"]
+# Configure Goldmark rendering of Markdown.
+# Note: Hugo Academic overrides the source code highlight settings
+# and putting [markup.highlight] here will do nothing.  See later
+# in the file for markup settings.
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xHTML = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
 
 # Taxonomies.
 [taxonomies]
