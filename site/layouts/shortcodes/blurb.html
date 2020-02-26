@@ -42,16 +42,12 @@ words, instead of (e.g.) "fa-book", use just "book" as the value.
     <i class="{{ $icon }} fas fa-4x"></i>
   </div>
   <div class="col">
-    {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}
-    <strong>{{ $title | markdownify }}</strong><br></a>
-    {{ if ne $link "" }}</a>{{ end }}
+    {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}<strong>{{ $title | markdownify }}</strong><br>{{ if ne $link "" }}</a>{{ end }}
     {{ .Inner | markdownify }}
   </div>
 {{ else }}
   <div class="col">
-    {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}
-    <strong>{{ $title | markdownify }}</strong><br></a>
-    {{ if ne $link "" }}</a>{{ end }}
+    {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}<strong>{{ $title | markdownify }}</strong><br>{{ if ne $link "" }}</a>{{ end }}
     {{ .Inner | markdownify }}
   </div>
   <div class="col-2 text-center">
