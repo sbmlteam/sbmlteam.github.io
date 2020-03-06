@@ -1,0 +1,42 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<div id="page-container">
+  <div class="container">
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+      {{ with .Content }}
+      <div class="article-style" itemprop="articleBody">{{ . }}</div>
+      {{ end }}
+
+      <div class="sbml-frontpage-news">
+        <h3 style="margin-top: 0">News
+          <span class="sbml-more-news-link"><a href="/news">➜ More news</a></span></h3>
+        <div class="row pack">
+          {{ range where $.Site.RegularPages "Section" "news" | first 3 }}
+          <div class="col-md-4 card">
+            <a href="{{ .Permalink }}" class="index-anchor">    
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <h4 class="panel-title pull-left" style="margin-bottom: 0">
+                    {{ .Title | truncate 25 }}
+                  </h4>
+                  <span class="post-meta pull-right">
+                    <small>{{ .Date.Format "January 2, 2006" }}</small>
+                  </span>
+                </div>
+                <div class="panel-body">{{ .Summary | truncate 120 }}</div>
+              </div>
+            </a>
+          </div>
+          {{ end }}
+        </div> 
+      </div>
+    
+    </article>
+  </div>
+
+  <section id="footer-section">
+    {{ partial "footer_container.html" . }}
+    {{ partial "footer.html" . }}
+  </section>
+</div>
