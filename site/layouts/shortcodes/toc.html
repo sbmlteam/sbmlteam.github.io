@@ -1,3 +1,16 @@
-<div id="toc" class="col-md-4 col-sm-6">
-  {{ $.Page.TableOfContents }}
+<!-- 
+  Hugo automatically creates a table of contents from the document
+  Markdown structure and stores it in .TableOfContents. The HTML
+  it produces is hardwired (in Hugo) to be a <nav> element with id 
+  TableOfContents.  See https://gohugo.io/content-management/toc/.
+  In order to add a title, we have to wrap everything in another
+  div so that we can control the placement of the title relative
+  to the nav element.
+-->
+
+<div class="toc col-md-4">
+  <div class="toc-border">
+    <span class="toc-title">{{ i18n "table_of_contents" }}</span>
+    {{ $.Page.TableOfContents }}
+  </div>
 </div>
