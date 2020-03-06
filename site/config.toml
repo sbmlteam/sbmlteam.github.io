@@ -99,13 +99,6 @@ footnotereturnlinkcontents = "<sup>^</sup>"
     endLevel = 4
     ordered = false
 
-# Taxonomies.
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  publication_type = "publication_types"
-  author = "authors"
-
   
 # Theme options.
 # .............................................................................
@@ -178,8 +171,8 @@ footnotereturnlinkcontents = "<sup>^</sup>"
 # Menu (navigation) configuration
 # .............................................................................
 # Note: the ordering of the section names in the nav bar is *not* set by the
-# order of the items in the list below; the weight parameter defines the
-# order that the links will appear in.
+# order of the items in the list below: instead, it is the weight parameter
+# that defines the order in which the links will appear.
 
 [menu]
   [[menu.main]]
