@@ -11,7 +11,7 @@ The SBML specification documents are the normative definitions for the SBML form
 
 The _Levels_ of SBML represent stratifications of functionality and complexity in SBML.  Major architectural changes are made from Level to Level.  Within a given SBML Level, minor revisions to SBML are termed _Versions_ and constitute changes within a Level to correct, adjust and refine features. Additionally, to cope with occasional minor editorial changes that may be needed, SBML specification come with _Release_ numbers within Versions.
 
-Please notify the [SBML Editors](mailto:sbml-editors@googlegroups.com) of problems and other issues in the documents, or any topics, using the issue trackers for each specification.
+Please inform the [SBML Editors](mailto:sbml-editors@googlegroups.com) of problems and other issues in the documents, or any topics, using the issue trackers for each specification.
 
 
 ## SBML Level 3

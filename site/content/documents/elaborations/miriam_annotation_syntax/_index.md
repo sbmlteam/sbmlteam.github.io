@@ -6,6 +6,8 @@ layout = "single"
 ######################################################################
 +++
 
+{{< toc >}}
+
 The following is an attempt to clarify some issues in the SBML annotation scheme defined since SBML Level&nbsp;2.  The fact that the scheme uses RDF, but not _all_ RDF, has been a source of confusion.  The use of a very restricted subset of RDF is intended to let software developers avoid having to implement full-on RDF parsing, but at the same time, understanding what can and cannot be put into SBML Level&nbsp;2 merits elaboration.  We discuss these issues here and provide guidelines for how to encode certain kinds of information that SBML developers have requested.
 
 ## What is allowed inside <code>rdf:Description</code> in SBML Level 2 and Level 3?
