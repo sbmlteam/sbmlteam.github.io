@@ -1,7 +1,8 @@
 +++ # -*- mode: html -*-
 ######################################################################
-title = "The syntax of 'metaid' values in SBML"
-date  = 2019-04-06
+title  = "The syntax of 'metaid' values in SBML"
+date   = 2019-04-06
+layout = "single"
 ######################################################################
 +++
 

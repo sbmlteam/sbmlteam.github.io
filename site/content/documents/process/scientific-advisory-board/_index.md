@@ -1,7 +1,8 @@
 +++ # -*- mode: markdown -*-
 ######################################################################
-title = "SBML Scientific Advisory Board"
-date  = 2019-05-10
+title  = "SBML Scientific Advisory Board"
+date   = 2019-05-10
+layout = "single"
 ######################################################################
 +++
 

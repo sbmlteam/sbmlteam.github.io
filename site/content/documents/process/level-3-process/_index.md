@@ -1,7 +1,8 @@
 +++ # -*- mode: markdown -*-
 ######################################################################
-title = "SBML Development Process for SBML Level 3"
-date  = 2019-05-10
+title  = "SBML Development Process for SBML Level 3"
+date   = 2019-05-10
+layout = "single"
 ######################################################################
 +++
 

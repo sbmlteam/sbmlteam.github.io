@@ -3,6 +3,7 @@
 active: true
 title: "All Versions of SBML Level 1"
 date: 2019-11-04
+layout: "single"
 #=====================================================================
 ---
 

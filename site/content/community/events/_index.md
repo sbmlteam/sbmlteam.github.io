@@ -3,7 +3,7 @@
 # File:    community/events/_index.md
 # Summary: This file defines the content of /community/events/
 #---------------------------------------------------------------------
-title = "Events"
+title  = "Events"
 widget = ""
 layout = "single"
 #=====================================================================

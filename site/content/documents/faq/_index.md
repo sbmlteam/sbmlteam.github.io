@@ -1,7 +1,8 @@
 +++ # -*- mode: html -*-
 #=====================================================================
-title = "Frequently Asked Questions (and Answers)"
-date  = 2019-04-07
+title  = "Frequently Asked Questions (and Answers)"
+date   = 2019-04-07
+layout = "single"
 #=====================================================================
 +++
 

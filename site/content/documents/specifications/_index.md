@@ -3,6 +3,7 @@
 active: true
 title: "SBML Specifications"
 date: 2019-10-21
+layout: "single"
 #=====================================================================
 ---
 

@@ -1,7 +1,8 @@
 +++ # -*- mode: html -*-
 #=====================================================================
-title = "Essential publications about SBML"
-date  = 2019-04-06
+title  = "Essential publications about SBML"
+date   = 2019-04-06
+layout = "single"
 #=====================================================================
 +++
 

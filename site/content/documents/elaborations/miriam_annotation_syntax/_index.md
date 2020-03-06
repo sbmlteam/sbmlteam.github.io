@@ -1,7 +1,8 @@
 +++ # -*- mode: html -*-
 ######################################################################
-title = "About annotations in SBML Level 2 and Level 3"
-date  = 2019-04-06
+title  = "About annotations in SBML Level 2 and Level 3"
+date   = 2019-04-06
+layout = "single"
 ######################################################################
 +++
 

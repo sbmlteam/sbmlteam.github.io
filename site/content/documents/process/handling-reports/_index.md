@@ -1,7 +1,8 @@
 +++ # -*- mode: markdown -*-
 ######################################################################
-title = "SBML Editors' process for handling issue reports"
-date  = 2019-04-07
+title  = "SBML Editors' process for handling issue reports"
+date   = 2019-04-07
+layout = "single"
 ######################################################################
 +++
 
