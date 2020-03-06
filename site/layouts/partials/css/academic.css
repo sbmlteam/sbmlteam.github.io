@@ -1484,6 +1484,7 @@ body.dark .article-style {
   vertical-align: middle;
   width: 100%;
   border-top: 1px dotted #bbb;
+  background: white;
 }
 
 #footer-section {
@@ -2649,6 +2650,13 @@ h2 span.article-date {
 
 .sbml-frontpage-news {
   margin-top: 2em !important;
+}
+
+.sbml-more-news-link {
+  float: right;
+  font-size: smaller;
+  font-style: oblique;
+  color: #aaa;
 }
 
 h2 {
