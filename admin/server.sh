@@ -41,15 +41,17 @@ source utilities.sh
 # .............................................................................
 # The rest below is generic and probably does not need to be changed.
 
+HUGO_SERVER_ARGS="$HUGO_ARGS --cacheDir $HUGO_CACHEDIR --destination $HUGO_OUTPUTDIR"
+
 case "$1" in
     start)
         check_log_file
 
         cd "$SITE_ROOT"
         if [ -z $SITE_URL ]; then
-            $HUGO server > $HUGO_LOGFILE 2>&1 &
+            $HUGO server $HUGO_SERVER_ARGS > $HUGO_LOGFILE 2>&1 &
         else
-            $HUGO server --bind=$SITE_IP --baseURL=$SITE_URL --port $SITE_PORT > $HUGO_LOGFILE 2>&1 &
+            $HUGO server $HUGO_SERVER_ARGS --bind=$SITE_IP --baseURL=$SITE_URL --port $SITE_PORT > $HUGO_LOGFILE 2>&1 &
         fi
         RETVAL=$?
         PID=`echo $!`
