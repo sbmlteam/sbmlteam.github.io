@@ -62,6 +62,10 @@ paginate = 10
 # The unicode character used for the "return" link in page footnotes.
 footnotereturnlinkcontents = "<sup>^</sup>"
 
+# I find it annoying to see the default "resources" directory created
+# in the same place as the files I write.  This hides it a little.
+resourceDir = ".resources/"
+
 # Set the minimum version of Hugo.
 [module]
   [module.hugoVersion]
