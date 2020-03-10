@@ -7,7 +7,7 @@ layout: "single"
 #=====================================================================
 ---
 
-The SBML specification documents are the normative definitions for the SBML format.
+{{< toc >}}
 
 The _Levels_ of SBML represent stratifications of functionality and complexity in SBML.  Major architectural changes are made from Level to Level.  Within a given SBML Level, minor revisions to SBML are termed _Versions_ and constitute changes within a Level to correct, adjust and refine features. Additionally, to cope with occasional minor editorial changes that may be needed, SBML specification come with _Release_ numbers within Versions.
 
@@ -22,22 +22,20 @@ _SBML Level 3_ is the highest Level of SBML and constitutes the most comprehensi
 
 SBML Level 3 is a modular format.  There is a core comprising a complete format that can be used alone, and optional Level 3 _Packages_ that can be layered on top of the core to provide additional features and syntactic constructs.
 
-{{< specification level="3" version="2" release="2" date="29 March 2019"
-    spec_title="The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 2 Core"
-    spec_authors="Michael Hucka, Frank T. Bergmann, Claudine Chaouiya, Andreas Dräger, Stefan Hoops, Sarah M. Keating, Matthias König, Nicolas Le Novère, Chris J. Myers, Brett G. Olivier, Sven Sahle, James C. Schaff, Rahuman Sheriff, Lucian P. Smith, Dagmar Waltemath, Darren J. Wilkinson, and Fengkai Zhang"
-    pdf_url="/documents/specifications/sbml-level-3/version-2/core/release-2/sbml-level-3-version-2-release-2-core.pdf"
-    errata_url=""
-    issues_url=""
-    schema_url=""
-    schema_type="RNG"
->}}
+{{< sbml-spec-box package="core" level="3" version="2" release="2" >}}
 
 Past releases of SBML Level 2 are available from a separate page. 
 
 
 ### SBML Level 3 Packages
 
+SBML Level 3 Core is best at representing reaction-based models. SBML Level&nbsp;3 _Packages_ extend the Core with constructs suited to other model types including constraint-based models, reaction-diffusion models, logical network models, rule-based models, and more.  The following diagram illustrates the Level&nbsp;3 Packages that have been defined or are in development as of March 2020.
 
+<img width="95%" src="sbml-level-3-packages.svg">
+
+A Level&nbsp;3 Package can augment the Core by extending existing elements, adding new elements, and adjusting the meaning or scope of elements.  A model expressed in SBML Level&nbsp;3 format can declare which packages it uses in order to guide its interpretation by software applications.  If a software tool detects the presence of packages that it does not support, it may inform users if it cannot work with the model.
+
+{{< sbml-packages-table >}}
 
 
 ## SBML Level 2
@@ -46,15 +44,7 @@ The current definition of SBML Level 1 is **Version 5**.  Unlike Level&nbsp;3, S
 
 Note that the separate Levels of SBML are intended to coexist &ndash; SBML Level&nbsp;3 does not render Level&nbsp;2 obsolete. Software tools that cannot support higher levels can go on using lower levels; tools that can read higher levels are assured of also being able to interpret models defined in the lower levels.  Level&nbsp;2-compatible models and software tools still continue to be used.
 
-{{< specification level="2" version="5" release="1" date="3 August 2015"
-    spec_title="Systems Biology Markup Language (SBML) Level 2: Structures and Facilities for Model Definitions"
-    spec_authors="Michael Hucka, Frank T. Bergmann, Andreas Dräger, Stefan Hoops, Sarah M. Keating, Nicolas Le Novère, Chris J. Myers, Brett G. Olivier, Sven Sahle, James C. Schaff, Lucian P. Smith, Dagmar Waltemath, and Darren J. Wilkinson"
-    pdf_url="/documents/specifications/sbml-level-2/version-5/sbml-level-2-version-5-rel-1.pdf"
-    errata_url=""
-    issues_url=""
-    schema_url=""
-    schema_type="XML"
->}}
+{{< sbml-spec-box package="core" level="2" version="5" release="1" >}}
 
 Past releases of SBML Level 2 are available from a separate page. 
 
@@ -63,15 +53,7 @@ Past releases of SBML Level 2 are available from a separate page.
 
 The current definition of SBML Level 1 is **Version 2**.
 
-{{< specification level="1" version="2" release="1" date="28 August 2003"
-    spec_title="Systems Biology Markup Language (SBML) Level 1: Structures and Facilities for Basic Model Definitions"
-    spec_authors="Michael Hucka, Andrew Finney, Herbert Sauro, and Hamid Bolouri"
-    pdf_url="/documents/specifications/sbml-level-1/version-2/sbml-level-1-version-2.pdf"
-    errata_url=""
-    issues_url=""
-    schema_url=""
-    schema_type="XML"
->}}
+{{< sbml-spec-box package="core" level="1" version="2" release="1" >}}
 
 Past releases of SBML Level 1 are available from a [separate page](all_versions_of_sbml_level_1).
 
