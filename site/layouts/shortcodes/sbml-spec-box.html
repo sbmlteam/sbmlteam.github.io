@@ -1,0 +1,99 @@
+<!-- ==========================================================================
+File name   : /layouts/shortcodes/sbml-spec-box.html
+Description : Shortcode for creating a box describing a given spec in detail
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology
+Date created: 2020-03-09
+
+This shortcode expects to be called with arguments like in this example:
+
+  sbml-spec-box  package="core"  level="3"  version="2"  release="2"
+
+The code below is tightly coupled to the structure of the data subdirectory
+/data/SBML/specs/.  In that subdirectory, there are nested subdirectories for
+every SBML Core and Package specification:
+
+     ├── comp
+     │   └── level3
+     │       └── version1
+     │           ├── release1.toml
+     │           ├── release2.toml
+     │           └── release3.toml
+     ├── core
+     │   ├── level1
+     │   ├── level2
+     │   │   ├── version1
+     │   │   │   └── release1.toml
+     │   │   ├── version2
+     │   │   │   └── release1.toml
+     │   │   ├── version3
+     │   │   │   ├── release1.toml
+     │   │   │   └── release2.toml
+     │   │   ├── version4
+     │   │   │   └── release1.toml
+     │   │   └── version5
+     │   │       └── release1.toml
+     │   └── level3
+     │       ├── version1
+     │       └── version2
+     │           ├── release1.toml
+     │           └── release2.toml
+     ...
+
+The TOML files at the leaves of the directory tree contain data about each
+specification.  The parameters for this Hugo shortcode are converted to 
+subdirectory names, which are then used with the Hugo "index" function to
+read the appropriate .toml data file.
+=========================================================================== -->
+
+<!-- Assign arguments to internal variables. -->
+{{ $package := ( .Get "package" ) }}
+{{ $level   := ( .Get "level" ) }}
+{{ $version := ( .Get "version" ) }}
+{{ $release := ( .Get "release" ) }}
+
+<!-- Convert argument values like "3" into "level3", for use below. -->
+{{ $level_key    := print "level"   $level }}
+{{ $version_key  := print "version" $version }}
+{{ $release_key  := print "release" $release }}
+
+<!-- Get array of all level/version/release data for this package. -->
+{{ $package_data := index .Site.Data.SBML.specs $package }}
+
+<!-- Drill down to get the entry for the desired release. -->
+{{ $all_versions := ( index $package_data $level_key ) }}
+{{ $all_releases := ( index $all_versions $version_key ) }}
+{{ $spec         := ( index $all_releases $release_key ) }}
+
+<div class="sbml-spec-box">
+  <div class="sbml-spec-tag">Specification</div>
+  <div class="sbml-spec-title">{{ $spec.title }}</div>
+  <div class="sbml-spec-authors">{{ $spec.authors }}.</div>
+  <div class="sbml-spec-description">
+    This is <strong>Release {{ $spec.release }}</strong> of the specification
+    for SBML Level {{ $spec.level }} Version {{ $spec.version }}, made
+    available on {{ $spec.date }}.  Note: the schema only captures the
+    basic syntax of the format.  Semantics and correct usage are
+    <strong>not</strong> captured by the schema and can only be understood 
+    by reading the specification.
+  </div>
+
+  <div class="sbml-spec-link-box">
+    <span class="sbml-spec-link">
+      <a target="_blank" href='{{ .Get "pdf_url"}}'><i class="fa-file-pdf fas fa-2x"></i><br>
+        Specification</a>
+    </span>
+    <span class="sbml-spec-link">
+      <a target="_blank" href='{{ .Get "errata_url"}}'><i class="fa-file-alt fas fa-2x"></i><br>
+        Errata</a>
+    </span>
+    <span class="sbml-spec-link">
+      <a target="_blank" href='{{ .Get "issues_url"}}'><i class="fa-file-invoice fas fa-2x"></i><br>
+        Report issue</a>
+    </span>
+    <span class="sbml-spec-link">
+      <a target="_blank" href='{{ .Get "schema_url"}}'><i class="fa-file-code fas fa-2x"></i><br>
+        {{ $spec.schema_type }} schema</a>
+    </span>
+  </div>
+</div>
