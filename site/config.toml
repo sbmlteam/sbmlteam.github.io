@@ -53,8 +53,12 @@ enableGitInfo = true
 # Enable Emoji emoticons support for page content.
 enableEmoji = true
 
+# Enable inline shortcodes.
+enableInlineShortcodes = true
+
 # Files to be ignored by Hugo.
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.#"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.#",
+               "README.txt", "README.md"]
 
 # Number of items per page in paginated lists.
 paginate = 10
