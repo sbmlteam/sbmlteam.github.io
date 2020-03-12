@@ -2043,8 +2043,10 @@ div.alert a {
 }
 
 .toc {
+  max-width: 34%;
+  min-width: 25%;
   z-index: 100;
-  display: inline-block;
+  display: block;
   float: right;
   font-size: smaller;
   background-color: {{ .Get "background" }};
@@ -2061,7 +2063,7 @@ div.alert a {
   border-collapse: separate;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .toc-title {
@@ -2069,6 +2071,16 @@ div.alert a {
   font-style: oblique;
   text-align: center;
   text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.toc-contents {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#TableOfContents {
 }
 
 #TableOfContents ul {
