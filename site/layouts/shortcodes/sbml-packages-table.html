@@ -11,7 +11,7 @@ this purpose (the "SBML Level 3 Package Status" spreadsheet).  The URL of the
 spreadsheet is kept in the data file /data/urls.json in our site structure.
 =========================================================================== -->
 
-{{ $spreadsheet_url := index .Site.Data.SBML.urls.SBMLPackageSpreadsheet }}
+{{ $spreadsheet_url := index .Site.Data.SBML "PackageSpreadsheetURL" }}
 {{ $download_url    := print $spreadsheet_url "/export?format=tsv" }}
 {{ $tsv             := getCSV "	" $download_url }}
 
@@ -28,11 +28,16 @@ spreadsheet is kept in the data file /data/urls.json in our site structure.
     {{ $label       := index $column 0 }}
     {{ $description := index $column 2 }}
     {{ $status      := index $column 4 }}
+    {{ $details_pg  := print "/documents/specifications/sbml-level-3/" $label }}
 
     <!-- Iterate over rows, skipping empty rows & retired packages. -->
     {{ if and (ne $label "") (not (in $status "Retired")) }}
       <tr>
-        <td class="sbml-ptable-col-name">{{ $name }}</td>
+        <td class="sbml-ptable-col-name">
+          <span class="sbml-ptable-page-link">
+            <a target="_blank" href="{{ $details_pg }}">{{ $name }}</a>
+          </span>
+        </td>
         <td class="sbml-ptable-col-label">{{ $label }}</td>
         <td class="sbml-ptable-col-description">{{ $description }}</td>
         {{ if in $status "Draft" }}

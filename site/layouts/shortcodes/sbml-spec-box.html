@@ -10,8 +10,10 @@ This shortcode expects to be called with arguments like in this example:
   sbml-spec-box  package="core"  level="3"  version="2"  release="2"
 
 The code below is tightly coupled to the structure of the data subdirectory
-/data/SBML/specs/.  In that subdirectory, there are nested subdirectories for
-every SBML Core and Package specification:
+/data/SBML/specs/.  In Hugo, the /data directory is like a mini hierarchical
+database, and the values are accessible by using "index" and dotted notation
+to traverse paths.  In our /data subdirectory, there are nested subdirectories
+for every SBML Core and Package specification.  Here's a portion:
 
      ├── comp
      │   └── level3
@@ -47,53 +49,90 @@ read the appropriate .toml data file.
 =========================================================================== -->
 
 <!-- Assign arguments to internal variables. -->
-{{ $package := ( .Get "package" ) }}
-{{ $level   := ( .Get "level" ) }}
-{{ $version := ( .Get "version" ) }}
-{{ $release := ( .Get "release" ) }}
+{{ $package  := ( .Get "package" ) }}
+{{ $level    := ( .Get "level" ) }}
+{{ $version  := ( .Get "version" ) }}
+{{ $release  := ( .Get "release" ) }}
+{{ $revision := ( .Get "revision" ) }}
 
 <!-- Convert argument values like "3" into "level3", for use below. -->
 {{ $level_key    := print "level"   $level }}
 {{ $version_key  := print "version" $version }}
 {{ $release_key  := print "release" $release }}
+{{ $revision_key := print "revision" $revision }}
 
 <!-- Get array of all level/version/release data for this package. -->
 {{ $package_data := index .Site.Data.SBML.specs $package }}
 
-<!-- Drill down to get the entry for the desired release. -->
-{{ $all_versions := ( index $package_data $level_key ) }}
-{{ $all_releases := ( index $all_versions $version_key ) }}
-{{ $spec         := ( index $all_releases $release_key ) }}
+<!-- Initialize some variables. (I'm not actually sure why I get runtime errors
+     about undefined variables unless these are set to something.  The if-then 
+     conditional right below this has no exit: one of the cases must be true 
+     and the values of the variables must be set.  Yet without setting $spec 
+     to something here, accessing it in the HTML code below produces errors.  
+     I'm stumped but I don't have more time to figure out what's really going
+     on.  Let's just set them to something and more along.) -->
+{{ $spec := "" }}
+{{ $rel_text := "" }}
 
+<!-- Drill down to get the entry for the desired release (or in the case
+     of SBML Level 2 Version 1, the revision, as it was known then). -->
+{{ $all_versions := ( index $package_data $level_key ) }}
+{{ if ne $revision "" }}
+  {{ $all_revisions := ( index $all_versions $version_key ) }}
+  {{ $spec = ( index $all_revisions $revision_key ) }}
+  {{ $rel_text = print "Revision " $spec.revision }}
+{{ else if eq $release "none" }}
+  {{ $spec = ( index $all_versions $version_key ) }}
+  {{ $rel_text = "" }}
+{{ else }}
+  {{ $all_releases  := ( index $all_versions $version_key ) }}
+  {{ $spec = ( index $all_releases $release_key ) }}
+  {{ $rel_text = print "Release " $spec.release }}
+{{ end }}
+
+<!-- Finally, generate the output that is put on the page. -->
 <div class="sbml-spec-box">
   <div class="sbml-spec-tag">Specification</div>
   <div class="sbml-spec-title">{{ $spec.title }}</div>
-  <div class="sbml-spec-authors">{{ $spec.authors }}.</div>
+  <div class="sbml-spec-authors">
+    <span class="sbml-spec-authors-label">Authors: </span>
+    {{ $spec.authors }}.
+  </div>
   <div class="sbml-spec-description">
-    This is <strong>Release {{ $spec.release }}</strong> of the specification
-    for SBML Level {{ $spec.level }} Version {{ $spec.version }}, made
-    available on {{ $spec.date }}.  Note: the schema only captures the
-    basic syntax of the format.  Semantics and correct usage are
-    <strong>not</strong> captured by the schema and can only be understood 
-    by reading the specification.
+    This is {{ if ne $rel_text "" }}<strong>{{ $rel_text }}</strong> of {{ end }}
+    the specification for SBML Level {{ $spec.level }} 
+    Version {{ $spec.version }}, made available on {{ $spec.date }}.  
   </div>
 
   <div class="sbml-spec-link-box">
     <span class="sbml-spec-link">
-      <a target="_blank" href='{{ .Get "pdf_url"}}'><i class="fa-file-pdf fas fa-2x"></i><br>
+      <a target="_blank" href="{{ $spec.pdf_main }}"><i class="fa-file-pdf fas fa-2x"></i><br>
         Specification</a>
     </span>
     <span class="sbml-spec-link">
-      <a target="_blank" href='{{ .Get "errata_url"}}'><i class="fa-file-alt fas fa-2x"></i><br>
-        Errata</a>
+      <a target="_blank" href="{{ $spec.publication }}"><i class="fa-file-pdf fas fa-2x"></i><br>
+        Publication</a>
     </span>
     <span class="sbml-spec-link">
-      <a target="_blank" href='{{ .Get "issues_url"}}'><i class="fa-file-invoice fas fa-2x"></i><br>
-        Report issue</a>
+      <a target="_blank" href="{{ $spec.errata }}"><i class="fa-file-alt fas fa-2x"></i><br>
+        Known issues</a>
     </span>
     <span class="sbml-spec-link">
-      <a target="_blank" href='{{ .Get "schema_url"}}'><i class="fa-file-code fas fa-2x"></i><br>
+      <a target="_blank" href="{{ $spec.schema }}"><i class="fa-file-code fas fa-2x"></i><br>
         {{ $spec.schema_type }} schema</a>
     </span>
   </div>
+
+  {{ if and (isset $spec "citation") (ne $spec.citation "") }}
+    <div class="sbml-spec-citation-box">
+      <span class="sbml-spec-citation-label">How to cite the publication: </span>
+      {{ $spec.citation | markdownify }}
+      <span class="sbml-spec-citation-link">
+        <a target="_blank" href="{{ $spec.cite_bibtex }}"><i class="fa-file-download fas fa-1x"></i> BibTeX</a>
+      </span>
+      <span class="sbml-spec-citation-link">
+        <a target="_blank" href="{{ $spec.cite_ris }}"><i class="fa-file-download fas fa-1x"></i> RIS</a>
+      </span>
+    </div>
+  {{ end }}
 </div>

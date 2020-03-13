@@ -2455,13 +2455,13 @@ h2 span.article-date {
   margin: 0.3em auto 0.3em 0;
 }
 
-.sbml-spec-authors::before {
-  content: "Authors: ";
-  display: none;
+.sbml-spec-authors {
+  color: #5f99a7;
 }
 
-.sbml-spec-authors {
-  color: #bd8b67;
+.sbml-spec-authors-label {
+  font-style: italic;
+  color: #999;
 }
 
 .sbml-spec-description {
@@ -2483,6 +2483,21 @@ h2 span.article-date {
 .sbml-spec-link-box {
   vertical-align: top;
   text-align: center;
+}
+
+.sbml-spec-citation-box {
+  color: #bd8b67;
+  vertical-align: top;
+  text-align: left;
+}
+
+.sbml-spec-citation-label {
+  font-style: italic;
+  color: #999;
+}
+
+.sbml-spec-citation-link {
+  margin-left: 0.5rem;
 }
 
 .sbml-package-table td {
@@ -2507,7 +2522,7 @@ h2 span.article-date {
 }
 
 .sbml-spec-status-final {
-  color: green;
+  color: #5f99a7;
   font-weight: bold;
 }
 

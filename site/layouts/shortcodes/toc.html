@@ -8,9 +8,11 @@
   to the nav element.
 -->
 
-<div class="toc col-md-4">
+<div class="toc">
   <div class="toc-border">
     <span class="toc-title">{{ i18n "table_of_contents" }}</span>
-    {{ $.Page.TableOfContents }}
+    <div class="toc-contents">
+      {{ $.Page.TableOfContents }}
+    </div>
   </div>
 </div>

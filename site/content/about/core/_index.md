@@ -9,6 +9,8 @@ layout = "single"
 #=====================================================================
 +++
 
+{{< toc >}}
+
 This page lists individuals and groups who have (or have had) specific roles, but this short list is not meant to diminish the contributions of the broader community of people and companies developing software systems that use SBML. People's involvements also change over time, and we try to keep this page updated to stay current with the SBML community.
 
 ## SBML Editors, Coordinator, and Secretary
