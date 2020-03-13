@@ -1,0 +1,50 @@
+TY  - JOUR
+TI  - The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 2 Core
+AU  - Hucka, Michael
+AU  - Bergmann, Frank T
+AU  - Dräger, Andreas
+AU  - Hoops, Stefan
+AU  - Keating, Sarah M
+AU  - Le Novère, Nicolas
+AU  - Myers, Chris J
+AU  - Olivier, Brett G
+AU  - Sahle, Sven
+AU  - Schaff, James C
+AU  - Smith, Lucian P
+AU  - Waltemath, Dagmar
+AU  - Wilkinson, Darren J
+T2  - J. Integr. Bioinform.
+AB  - Computational models can help researchers to interpret data, understand
+biological functions, and make quantitative predictions. The Systems
+Biology Markup Language (SBML) is a file format for representing
+computational models in a declarative form that different software systems
+can exchange. SBML is oriented towards describing biological processes of
+the sort common in research on a number of topics, including metabolic
+pathways, cell signaling pathways, and many others. By supporting SBML as
+an input/output format, different tools can all operate on an identical
+representation of a model, removing opportunities for translation errors
+and assuring a common starting point for analyses and simulations. This
+document provides the specification for Version 2 of SBML Level 3 Core.
+The specification defines the data structures prescribed by SBML, their
+encoding in XML (the eXtensible Markup Language), validation rules that
+determine the validity of an SBML document, and examples of models in SBML
+form. The design of Version 2 differs from Version 1 principally in
+allowing new MathML constructs, making more child elements optional, and
+adding identifiers to all SBML elements instead of only selected elements.
+Other materials and software are available from the SBML project website
+at http://sbml.org/.
+DA  - 2018/03/09/
+PY  - 2018
+DO  - 10.1515/jib-2017-0081
+VL  - 15
+IS  - 1
+SN  - 1613-4516
+UR  - http://dx.doi.org/10.1515/jib-2017-0081
+KW  - SBML
+KW  - systems biology
+KW  - mypubs
+KW  - computational biology
+KW  - modeling
+KW  - standards
+ER  - 
+
