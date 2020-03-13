@@ -1010,8 +1010,6 @@ body.dark .article-style {
 .article-style video {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   padding: 0;
 }
 
@@ -2608,4 +2606,8 @@ body.dark .twitter-box-inner {
 
 .decorated-text:first-of-type {
   margin-top: 1.25em;
+}
+
+.no-padding {
+  padding: 0 !important;
 }
