@@ -1,0 +1,49 @@
+{{ $download := .Get "download" }}
+{{ $website  := .Get "website" }}
+{{ $changes  := .Get "changes" }}
+{{ $tracker  := .Get "tracker" }}
+{{ $forum    := .Get "forum" }}
+{{ $docs     := .Get "docs" }}
+{{ $repo     := .Get "repo" }}
+
+<div class="sbml-software-links-box">
+  {{ if ne $website "" }}
+  <span class="sbml-software-link">
+     <a target="_blank" href="{{ $website }}"><i class="fa-home fas fa-2x"></i><br>Website</a>
+  </span>
+  {{ end }}
+  {{ if ne $download "" }}
+  <span class="sbml-software-link">
+    <a target="_blank" href="{{ $download }}"><i class="fa-download fas fa-2x"></i><br>Download</a>
+  </span>
+  {{ end }}
+  {{ if ne $changes "" }}
+  <span class="sbml-software-link">
+    <a target="_blank" href="{{ $changes }}"><i class="fa-file-alt far fa-2x"></i><br>Recent changes</a>
+  </span>
+  {{ end }}
+  {{ if ne $tracker "" }}
+  <span class="sbml-software-link">
+    <a target="_blank" href="{{ $tracker }}"><i class="fa-bug fas fa-2x"></i><br>Issue tracker</a>
+  </span>
+  {{ end }}
+  {{ if ne $forum "" }}
+  <span class="sbml-software-link">
+    <a target="_blank" href="{{ $forum }}"><i class="fa-comments fas fa-2x"></i><br>Discussions</a>
+  </span>
+  {{ end }}
+  {{ if ne $docs "" }}
+  <span class="sbml-software-link">
+    <a target="_blank" href="{{ $docs }}"><i class="fa-comments fas fa-2x"></i><br>Documentation</a>
+  </span>
+  {{ end }}
+  {{ if ne $repo "" }}
+  <span class="sbml-software-link">
+    {{ if in $repo "sourceforge" }}
+    <a target="_blank" href="{{ $repo }}"><span class="sourceforge-icon"></span><br>Source code</a>
+    {{ else }}
+    <a target="_blank" href="{{ $repo }}"><i class="fa-github fab fa-2x"></i><br>Source code</a>
+    {{ end }}
+  </span>
+  {{ end }}
+</div>
