@@ -1,4 +1,4 @@
-{{ $type := .Get "type" }}
+{{ $type := .Get "type" | default "notice"}}
 <div class='alert-box alert-{{ $type }}'>
   {{ if      eq $type "danger" }}  <i class='fa-hand-paper           fa fa-2x alert-{{ $type }}'></i>
   {{ else if eq $type "warning" }} <i class='fa-exclamation-triangle fa fa-2x alert-{{ $type }}'></i>
