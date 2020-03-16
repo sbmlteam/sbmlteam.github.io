@@ -1,0 +1,53 @@
+{{/* This is like single.html, but sets the variable "static_source"
+     before loading the partial file page_header.html.  The code in
+     our custom page_header.html then turns off some things.  The
+     result is that static pages look a little better when embedded
+     in sbml.org.  -- 2020-03-15 <mhucka@caltech.edu>
+*/}}
+
+{{ partial "header_static.html" . }}
+{{ partial "navbar.html" . }}
+
+<div id="page-container">
+  <div class="container">
+    {{ partial "page_header.html" (dict "Page" . "static_source" 1) }}
+
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+      {{ with .Content }}
+      <div class="article-style" itemprop="articleBody">{{ . }}</div>
+      {{ end }}
+  
+      {{ partial "tags.html" . }}
+  
+      {{ if ne .Type "page" }}
+        {{ partial "page_author.html" . }}
+        {{ $related := .Site.RegularPages.Related . | first 5 }}
+        {{ with $related }}
+        <div class="article-widget">
+          <div class="hr-light"></div>
+          <h3>{{ i18n "related" }}</h3>
+          <ul>
+            {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      {{ end }}
+  
+      {{ if .Site.Params.section_pager }}
+      <div class="article-widget">
+        {{ partial "section_pager.html" . }}
+      </div>
+      {{ end }}
+  
+      {{ partial "comments.html" . }}
+  
+    </article>
+  </div>
+  <section id="footer-section">
+    {{ partial "footer_container.html" . }}
+    {{ partial "footer.html" . }}
+  </section>
+</div>
+
