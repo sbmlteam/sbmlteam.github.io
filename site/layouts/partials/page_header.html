@@ -1,35 +1,39 @@
-{{ $page := . }}
+{{ $page := $.Page }}
+{{ $static_source := 0 }}
+{{ if isset . "static_source" }}
+  {{ $static_source = 1 }}
+{{ end }}
 {{ $featured := ($page.Resources.ByType "image").GetMatch "*featured*" }}
-{{ $anchor := $page.Params.image.focal_point | default "Smart" }}
+{{ $anchor := $.Params.image.focal_point | default "Smart" }}
 
 {{/* Set default titles for node pages */}}
-{{ $title := .Title }}
-{{ if and (not $title) .IsNode }}
-  {{ if eq .Type "post" }}
+{{ $title := $page.Title }}
+{{ if and (not $title) $page.IsNode }}
+  {{ if eq $page.Type "post" }}
     {{ $title = i18n "posts" }}
-  {{ else if eq .Type "talk" }}
+  {{ else if eq $page.Type "talk" }}
     {{ $title = i18n "talks" }}
-  {{ else if eq .Type "publication" }}
+  {{ else if eq $page.Type "publication" }}
     {{ $title = i18n "publications" }}
   {{end}}
 {{end}}
 
 {{/* Header image */}}
-{{ if and .Params.header.image (not (and $featured (not .Params.image.preview_only))) }}
+{{ if and $.Params.header.image (not (and $featured (not $.Params.image.preview_only))) }}
 <div class="article-header">
-  {{ $img_src := urls.Parse .Params.header.image }}
+  {{ $img_src := urls.Parse $.Params.header.image }}
   {{ if $img_src.Scheme }}
-  <img src="{{ .Params.header.image }}" class="article-banner" itemprop="image" alt="">
+  <img src="{{ $.Params.header.image }}" class="article-banner" itemprop="image" alt="">
   {{ else }}
-  <img src="{{ (printf "/img/%s" .Params.header.image) | relURL }}" class="article-banner" itemprop="image" alt="">
+  <img src="{{ (printf "/img/%s" $.Params.header.image) | relURL }}" class="article-banner" itemprop="image" alt="">
   {{ end }}
 
-  {{ with .Params.header.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
+  {{ with $.Params.header.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
 </div>
 {{end}}
 
 {{/* Featured image */}}
-{{ if and $featured (not .Params.image.preview_only) }}
+{{ if and $featured (not $.Params.image.preview_only) }}
 {{ $image := $featured.Resize "800x" }}
 <div class="article-header d-xl-none">
   <div class="featured-image" style="background-image: url('{{ $image.RelPermalink }}');"></div>
@@ -43,7 +47,7 @@
       <div class="split-header-content">
         <h1 itemprop="name">{{ $title }}</h1>
 
-        {{ with $page.Params.subtitle }}
+        {{ with $.Params.subtitle }}
         <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
         {{end}}
 
@@ -66,7 +70,7 @@
 <div class="article-container d-xl-none">
   <h1 itemprop="name">{{ $title }}</h1>
 
-  {{ with $page.Params.subtitle }}
+  {{ with $.Params.subtitle }}
   <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
   {{end}}
 
@@ -76,14 +80,16 @@
 {{else}}
   {{/* Case when page has no image */}}
 
+  {{ if ne $static_source 1 }}
   <h1 itemprop="name">{{ $title }}</h1>
-
-  {{ with $page.Params.subtitle }}
-  <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
-  {{end}}
-
-  {{ if not .IsNode }}
-    {{ partial "page_metadata" (dict "content" $page "is_list" 0 "share" true) }}
-    {{ partial "page_links_div.html" $page }}
-  {{end}}
+  
+    {{ with $.Params.subtitle }}
+    <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
+    {{end}}
+  
+    {{ if not .IsNode }}
+      {{ partial "page_metadata" (dict "content" $page "is_list" 0 "share" true) }}
+      {{ partial "page_links_div.html" $page }}
+    {{end}}
+  {{ end }}
 {{end}}
