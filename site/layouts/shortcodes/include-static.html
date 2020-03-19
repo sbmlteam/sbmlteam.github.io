@@ -1,3 +1,0 @@
-{{ $file := .Get "file" }}
-{{ $fullpath := print "/static/" $file }}
-{{ readFile $fullpath | safeHTML }}
