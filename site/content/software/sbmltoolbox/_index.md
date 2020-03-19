@@ -1,18 +1,17 @@
---- # -*- mode: markdown -*-
++++
 #=====================================================================
-active: true
-title: "SBMLToolbox"
-date: 2020-03-13
-layout: "single"
+title  = "SBMLToolbox"
+date   = 2020-03-13
+layout = "single"
 #=====================================================================
----
++++
 
 {{< software-icon file="/img/sbmltoolbox-logo.png" >}}
 
 SBMLToolbox is built on top of [libSBML](/software/libsbml) and provides a set of basic functions allowing SBML models to be used in both [MATLAB](https://www.mathworks.com/products/matlab.html) and [Octave](https://www.gnu.org/software/octave/). SBMLToolbox provides functions for creating and validating models; and manipulating and simulating these models using ordinary differential equation solvers. It is written by [Sarah M. Keating](https://github.com/skeating) and made available under [LGPL](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html) terms.
 
 {{< software-links download="https://sourceforge.net/projects/sbml/files/SBMLToolbox/" changes="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/SBMLToolbox/NEWS.txt" tracker="https://sourceforge.net/tracker/?group_id=71971&atid=1050048"
-docs="api-docs"
+docs="sbmltoolbox-docs"
 repo="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/SBMLToolbox/" >}}
 
 
