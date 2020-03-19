@@ -29,11 +29,11 @@ test cases
 
 [libSBML](/software/libsbml) and [JSBML](/software/jsbml) include some format conversion capabilities, particularly between SBML Levels/Versions.  The SBML Project has also developed software for converting other formats to/from SBML.
 
-{{% blurb title="MOCCASIN" image="/img/moccasin.svg" link="moccasin" %}}
+{{% blurb title="MOCCASIN" image="/img/moccasin-logo.svg" link="moccasin" %}}
 Written in [Python](https://www.python.org) and made freely available under [LGPL](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html) terms, MOCCASIN can read certain forms of <nobr>ODE-based</nobr> models written in [MATLAB](https://www.mathworks.com/products/matlab.html) and translate them into SBML format. It does not use or need [MATLAB](https://www.mathworks.com/products/matlab.html) itself.  It offers both a GUI and a command-line interface.
 {{% /blurb %}}
 
-{{% blurb title="SBMLToolbox" image="" link="sbmltoolbox" %}}
+{{% blurb title="SBMLToolbox" image="/img/sbmltoolbox-logo.png" link="sbmltoolbox" %}}
 SBMLToolbox is an open-source tool that provides a set of basic functions allowing SBML models to be used in both [MATLAB](https://www.mathworks.com/products/matlab.html) and [Octave](https://www.gnu.org/software/octave/).  It provides functions for creating and validating models; and manipulating and simulating these models using ordinary differential equation solvers.
 {{% /blurb %}}
 
@@ -49,6 +49,6 @@ The Systems Biology Format Converter (SBFC) is both a framework and an online se
 
 The SBML Project does not itself produce models; our efforts are more directed towards developing infrastructure for modeling. However, our alliances and related projects _do_ produce models.
 
-{{% blurb title="BioModels Database" image="/img/biomodels.png" link="https://www.ebi.ac.uk/biomodels" %}}
+{{% blurb title="BioModels Database" image="/img/biomodels-logo.png" link="https://www.ebi.ac.uk/biomodels" %}}
   An open and free database of models curated by humans, [BioModels Database](https://www.ebi.ac.uk/biomodels/) allows biologists to store, search and retrieve published mathematical models of biological interests. Models are annotated and linked to relevant data resources, such as publications, databases of compounds and pathways, controlled vocabularies, and more.
 {{% /blurb %}}
