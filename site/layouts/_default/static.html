@@ -1,11 +1,20 @@
-{{/* This is like single.html, but sets the variable "static_source"
-     before loading the partial file page_header.html.  The code in
-     our custom page_header.html then turns off some things.  The
-     result is that static pages look a little better when embedded
-     in sbml.org.  -- 2020-03-15 <mhucka@caltech.edu>
-*/}}
+{{/* ==========================================================================
+File name   : static.html
+Description : Layout for pages that are wrappers around static pages
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology Date created: 2020-03-15
 
-{{ partial "header_static.html" . }}
+This is based on single.html.  It has two differences: (1) it reads the
+variable "source" from the file that references this layout, and (2) it sets
+the variable "static_source" before loading the partial file
+page_header.html.  The value of "source" is read to create the content
+displayed in the page, and the code in our custom "page_header.html" uses the
+flag "static_source" to adjust its behavior to suit the use of static HTML.
+========================================================================== */}}
+
+{{ $file := .Param "source" }}
+
+{{ partial "header.html" (dict "Page" . "static_source" 1) }}
 {{ partial "navbar.html" . }}
 
 <div id="page-container">
@@ -13,8 +22,12 @@
     {{ partial "page_header.html" (dict "Page" . "static_source" 1) }}
 
     <article class="article" itemscope itemtype="http://schema.org/Article">
-      {{ with .Content }}
-      <div class="article-style" itemprop="articleBody">{{ . }}</div>
+      {{ if ne $file "" }}
+      <div class="article-style" itemprop="articleBody">
+        {{ $fullpath := print "/static/" $file }}
+        {{/* Filter out any CSS imports that be in the static files. */}}
+        {{ readFile $fullpath | replaceRE "@import" "" | safeHTML}}
+      </div>
       {{ end }}
   
       {{ partial "tags.html" . }}
