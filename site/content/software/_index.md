@@ -13,7 +13,11 @@ The SBML Team produces software libraries and some specific software tools for w
 
 libsbml
 
-jsbml
+{{% blurb title="JSBML" image="/img/jsbml-logo.png" link="jsbml" %}}
+JSBML is a pure Java library for reading, writing, and manipulating SBML.  It maps all SBML elements to a flexible and extended object hierarchy in Java.  JSBML is an alternative to the mixed Java/native code-based interface provided in [libSBML](/software/libsbml).
+{{% /blurb %}}
+
+
 
 deviser
 
