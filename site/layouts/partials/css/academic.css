@@ -2077,6 +2077,11 @@ div.alert a {
 }
 
 #TableOfContents ul {
+  padding-inline-start: 0;
+  margin-bottom: 0;
+}
+
+#TableOfContents ul li {
   display: none;
 }
 
@@ -2654,19 +2659,17 @@ body.dark .twitter-box-inner {
 
 @media screen and (min-width: 992px) {
   .sbml-software-link {
-    margin: 0.75rem 1.75rem 0.5rem 1.75rem;
+    margin: 0.75rem 1.5rem 0.5rem 1.5rem;
   }
 }
 
 .sbml-software-icon img {
-  width: 10%;
-  max-width: 5rem;
   margin: auto 1rem;
 }
 
 .sourceforge-icon:before {
   content: url("/img/sourceforge-logo.png");
-  transform: translate(22px, -7px) scale(0.14);
+  transform: translate(-7px, -8px) scale(0.14);
   width: 14px;
   height: 14px;
   display: block;
