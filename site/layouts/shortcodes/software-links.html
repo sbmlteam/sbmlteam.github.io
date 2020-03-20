@@ -19,7 +19,17 @@
   {{ end }}
   {{ if ne $changes "" }}
   <span class="sbml-software-link">
-    <a target="_blank" href="{{ $changes }}"><i class="fa-file-alt far fa-2x"></i><br>Recent changes</a>
+    <a target="_blank" href="{{ $changes }}"><i class="fa-file-alt far fa-2x"></i><br>News</a>
+  </span>
+  {{ end }}
+  {{ if ne $docs "" }}
+  <span class="sbml-software-link">
+    <a target="_blank" href="{{ $docs }}"><i class="fa-book-open fas fa-2x"></i><br>Documentation</a>
+  </span>
+  {{ end }}
+  {{ if ne $forum "" }}
+  <span class="sbml-software-link">
+    <a target="_blank" href="{{ $forum }}"><i class="fa-comments fas fa-2x"></i><br>Forum</a>
   </span>
   {{ end }}
   {{ if ne $tracker "" }}
@@ -27,20 +37,10 @@
     <a target="_blank" href="{{ $tracker }}"><i class="fa-bug fas fa-2x"></i><br>Issue tracker</a>
   </span>
   {{ end }}
-  {{ if ne $forum "" }}
-  <span class="sbml-software-link">
-    <a target="_blank" href="{{ $forum }}"><i class="fa-comments fas fa-2x"></i><br>Discussions</a>
-  </span>
-  {{ end }}
-  {{ if ne $docs "" }}
-  <span class="sbml-software-link">
-    <a target="_blank" href="{{ $docs }}"><i class="fa-comments fas fa-2x"></i><br>Documentation</a>
-  </span>
-  {{ end }}
   {{ if ne $repo "" }}
   <span class="sbml-software-link">
     {{ if in $repo "sourceforge" }}
-    <a target="_blank" href="{{ $repo }}"><span class="sourceforge-icon"></span><br>Source code</a>
+    <a target="_blank" href="{{ $repo }}"><span class="sourceforge-icon"></span><br>Code</a>
     {{ else }}
     <a target="_blank" href="{{ $repo }}"><i class="fa-github fab fa-2x"></i><br>Source code</a>
     {{ end }}
