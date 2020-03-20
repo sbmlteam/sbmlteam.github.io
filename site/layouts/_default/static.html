@@ -1,8 +1,9 @@
-{{/* ==========================================================================
+<!-- ==========================================================================
 File name   : static.html
 Description : Layout for pages that are wrappers around static pages
 Author(s)   : Michael Hucka <mhucka@caltech.edu>
-Organization: California Institute of Technology Date created: 2020-03-15
+Organization: California Institute of Technology 
+Date created: 2020-03-15
 
 This is based on single.html.  It has two differences: (1) it reads the
 variable "source" from the file that references this layout, and (2) it sets
@@ -10,7 +11,7 @@ the variable "static_source" before loading the partial file
 page_header.html.  The value of "source" is read to create the content
 displayed in the page, and the code in our custom "page_header.html" uses the
 flag "static_source" to adjust its behavior to suit the use of static HTML.
-========================================================================== */}}
+========================================================================== -->
 
 {{ $file := .Param "source" }}
 
