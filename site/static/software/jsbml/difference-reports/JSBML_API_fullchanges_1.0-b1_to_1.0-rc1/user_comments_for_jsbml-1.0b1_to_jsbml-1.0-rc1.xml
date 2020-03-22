@@ -1,0 +1,4195 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<comments
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation='comments.xsd'
+  name="jsbml-1.0b1_to_jsbml-1.0-rc1"
+  jdversion="1.1.1">
+
+<!-- This file contains comments for a JDiff report. -->
+<!-- It is used only in generating the report, and does not need to ship with the final report. -->
+
+<!-- The id attribute in an identifier element identifies the change as noted in the report. -->
+<!-- An id has the form package[.class[.[ctor|method|field].signature]], where [] indicates optional text. -->
+<!-- A comment element can have multiple identifier elements, which will -->
+<!-- will cause the same text to appear at each place in the report, but -->
+<!-- will be converted to separate comments when the comments file is used. -->
+<!-- HTML tags in the text field will appear in the report. -->
+<!-- You also need to close p HTML elements, used for paragraphs - see the top-level documentation. -->
+<comment>
+  <identifier id="org.sbml.jsbml"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ASTNode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ASTNode.formulaToString_added(org.sbml.jsbml.ASTNode, org.sbml.jsbml.util.compilers.FormulaCompiler)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ASTNode.isVector_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ASTNode.parseFormula_changed(java.lang.String, org.sbml.jsbml.text.parser.IFormulaParser)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ASTNode.toFormula_added(org.sbml.jsbml.util.compilers.FormulaCompiler)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractNamedSBase.setId_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.addPlugin_added(java.lang.String, org.sbml.jsbml.ext.SBasePlugin)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.filterCVTerms_added(org.sbml.jsbml.CVTerm.Qualifier, boolean, java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.firePropertyChange_changed(java.lang.String, java.lang.Object, java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getAllowsChildren_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getAllowsChildren_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getAllowsChildren_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getChildAt_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getChildAt_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getChildAt_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getChildCount_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getChildCount_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getChildCount_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getExtensionCount_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.getIdManager_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.removeCVTerm_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.removeCVTerm_added(org.sbml.jsbml.CVTerm)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.unregisterChild_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractSBase.unregister_removed(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractTreeNode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractTreeNode.addAllChangeListeners_added(java.util.Collection&lt;org.sbml.jsbml.util.TreeNodeChangeListener&gt;, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractTreeNode.getNumChildren_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractTreeNode.removeAllTreeNodeChangeListeners_added(boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.AbstractTreeNode.setParent_changed(javax.swing.tree.TreeNode)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Annotation"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Annotation.removeCVTerm_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Annotation.removeCVTerm_added(org.sbml.jsbml.CVTerm)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.CVTerm"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.CVTerm.filterResources_added(java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.CVTerm.filterResources_added(java.util.regex.Pattern[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.CVTerm.filterResources_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.CVTerm.removeFromParent_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.CVTerm.removeResource_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Compartment"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Compartment.containsUndeclaredUnits_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Compartment.getUnitsInstance_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Compartment.getUnits_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Event"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Event.getEventAssignment_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Event.removeEventAssignment_added(org.sbml.jsbml.EventAssignment)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.KineticLaw"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.KineticLaw.accept_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.KineticLaw.register_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.KineticLaw.unregister_changed(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.LocalParameter"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Model"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Model.accept_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Model.register_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Model.setAreaUnits_added(org.sbml.jsbml.Unit.Kind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Model.setExtentUnits_added(org.sbml.jsbml.Unit.Kind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Model.setLengthUnits_added(org.sbml.jsbml.Unit.Kind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Model.setSubstanceUnits_added(org.sbml.jsbml.Unit.Kind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Model.setTimeUnits_added(org.sbml.jsbml.Unit.Kind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Model.setVolumeUnits_added(org.sbml.jsbml.Unit.Kind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Model.unregister_changed(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.PropertyUndefinedError"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.PropertyUndefinedError.PROPERTY_UNDEFINED_EXCEPTION_MSG"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.PropertyUndefinedError.PROPERTY_UNDEFINED_EXCEPTION_MSG_SBASE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.PropertyUndefinedError.PROPERTY_UNDEFINED_EXCEPTION_MSG_TREE_NODE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.PropertyUndefinedError.ctor_added(java.lang.String, javax.swing.tree.TreeNode)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBMLDocument"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBMLDocument.isPackageEnabledOrDisabled_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBMLDocument.metaIds_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.Term"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.Term.getTerm_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.Triple"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.Triple.getTriple_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.getActivator_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.getProcess_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.getSideProduct_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.getSideSubstrate_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.isAssociation_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.isDissociation_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.isProcess_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBO.main_added(java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBase"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBase.addPlugin_added(java.lang.String, org.sbml.jsbml.ext.SBasePlugin)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBase.filterCVTerms_added(org.sbml.jsbml.CVTerm.Qualifier, boolean, java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBase.getExtensionCount_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBase.removeCVTerm_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBase.removeCVTerm_added(org.sbml.jsbml.CVTerm)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBase.unregisterChild_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SBase.unregister_removed(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Species"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Species.containsUndeclaredUnits_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SpeciesReference"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.SpeciesReference.toString_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Unit"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.Unit.initDefaults_added(int, int, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.UnitDefinition"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.UnitDefinition.BASE_UNIT_SUFFIX"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.AbstractSBasePlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.AbstractSBasePlugin.clone_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.AbstractSBasePlugin.fireNodeAddedEvent_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.AbstractSBasePlugin.fireNodeRemovedEvent_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.AbstractSBasePlugin.firePropertyChange_changed(java.lang.String, java.lang.Object, java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.AbstractSBasePlugin.removeFromParent_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.AbstractSBasePlugin.setExtendedSBase_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.arrays"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.arrays.compiler"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.arrays.flattening"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.arrays.test"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.arrays.util"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.arrays.validator"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.arrays.validator.constraints"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompModelPlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompModelPlugin.accept_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompModelPlugin.getNumPorts_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompModelPlugin.getNumSubmodels_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompModelPlugin.getPort_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompModelPlugin.getPort_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompModelPlugin.getSubmodel_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompModelPlugin.getSubmodel_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompModelPlugin.register_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompModelPlugin.unregister_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBMLDocumentPlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBMLDocumentPlugin.getExternalModelDefinition_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBMLDocumentPlugin.getExternalModelDefinition_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBMLDocumentPlugin.getModelDefinition_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBMLDocumentPlugin.getModelDefinition_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBMLDocumentPlugin.getNumExternalModelDefinitions_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBMLDocumentPlugin.getNumModelDefinitions_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBasePlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBasePlugin.getNumReplacedElements_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBasePlugin.getReplacedElement_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.CompSBasePlugin.getReplacedElement_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.ModelDefinition"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.ModelDefinition.clone_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.Port"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.ReplacedBy"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.comp.ReplacedBy.removeFromParent_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FBCModelPlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FBCModelPlugin.getFluxBoundCount_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FBCModelPlugin.getNumFluxBound_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FBCModelPlugin.getNumObjective_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FBCModelPlugin.getObjectiveCount_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FBCModelPlugin.setNotesKeyToUserObject_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FBCWritingTest"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FluxBound"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FluxBound.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FluxBound.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FluxObjective"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FluxObjective.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.FluxObjective.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.ListOfObjectives"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.ListOfObjectives.clone_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.Objective"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.Objective.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.Objective.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.fbc.test"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Group"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Group.createMemberWithIdRef_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Group.createMemberWithIdRef_added(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Group.createMemberWithMetaIdRef_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Group.createMemberWithMetaIdRef_added(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Group.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Group.getMemberConstraintCount_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Group.getNumMemberConstraints_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Group.getNumMembers_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Group.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.GroupsModelPlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.GroupsModelPlugin.createGroup_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.GroupsModelPlugin.createGroup_added(java.lang.String, java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.GroupsModelPlugin.createGroup_removed(java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.GroupsModelPlugin.getNumGroups_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.ListOfMemberConstraint"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.ListOfMemberConstraint.clone_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.ListOfMemberConstraint.equals_added(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Member"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Member.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.Member.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.MemberConstraint"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.MemberConstraint.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.MemberConstraint.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.TestL3groups"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.groups.test"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.BasePoint1"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.BasePoint2"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.BoundingBox"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.BoundingBox.createPosition_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.BoundingBox.createPosition_changed(double, double, double)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.CubicBezier"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.CubicBezier.removeBasePoint1_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.CubicBezier.removeBasePoint2_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.CurveSegment"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.CurveSegment.isIdMandatory_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.CurveSegment.removeEnd_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.CurveSegment.removeStart_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.End"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.addReferenceGlyph_added(org.sbml.jsbml.ext.layout.ReferenceGlyph)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.addSpeciesReferenceGlyph_removed(org.sbml.jsbml.ext.layout.ReferenceGlyph)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.createGeneralGlyph_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.createGeneralGlyph_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.createReferenceGlyphForList_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.createReferenceGlyphForList_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.createReferenceGlyph_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.createSpeciesReferenceGlyph_removed(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.removeGeneralGlyph_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.removeGeneralGlyph_added(org.sbml.jsbml.ext.layout.GraphicalObject)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.setListOfReferenceGlyph_added(org.sbml.jsbml.ListOf&lt;org.sbml.jsbml.ext.layout.ReferenceGlyph&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.GeneralGlyph.setListOfSpeciesReferencesGlyph_removed(org.sbml.jsbml.ListOf&lt;org.sbml.jsbml.ext.layout.ReferenceGlyph&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.addAdditionalGraphicalObject_added(org.sbml.jsbml.ext.layout.GraphicalObject)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.getNumCompartmentGlyphs_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.getNumReactionGlyphs_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.getNumSpeciesGlyphs_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.getNumTextGlyphs_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeCompartmentGlyph_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeCompartmentGlyph_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeCompartmentGlyph_added(org.sbml.jsbml.ext.layout.CompartmentGlyph)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeGeneralGlyph_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeGeneralGlyph_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeGeneralGlyph_added(org.sbml.jsbml.ext.layout.GeneralGlyph)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeReactionGlyph_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeReactionGlyph_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeReactionGlyph_added(org.sbml.jsbml.ext.layout.ReactionGlyph)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeSingletons_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeSpeciesGlyph_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeSpeciesGlyph_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeSpeciesGlyph_added(org.sbml.jsbml.ext.layout.SpeciesGlyph)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeTextGlyph_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeTextGlyph_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Layout.removeTextGlyph_added(org.sbml.jsbml.ext.layout.TextGlyph)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.LayoutConstants"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.LayoutConstants.all_L3_namespaces"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.LayoutExtentionTest"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.LayoutModelPlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.LayoutModelPlugin.getNumLayouts_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.LayoutModelPlugin.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.LayoutTest"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.LineSegment"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.LineSegment.toString_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Point"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Point.getElementName_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Point.x_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Point.y_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Point.z_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Position"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.ReactionGlyph"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.ReactionGlyph.getSpeciesReferenceGlyph_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.ReactionGlyph.unsetListOfSpeciesReferencesGlyph_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.Start"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.TestL3Layout"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.TestSpeciesReferenceGlyphCurve"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.TextGlyph"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.TextGlyph.unsetGraphicalObject_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.layout.test"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.BuildToyModelTest"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.addQualitativeSpecies_changed(org.sbml.jsbml.ext.qual.QualitativeSpecies)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.addSpecies_changed(org.sbml.jsbml.ext.qual.QualitativeSpecies)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.addTransition_changed(org.sbml.jsbml.ext.qual.Transition)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.clone_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.containsQualitativeSpecies_changed(org.sbml.jsbml.ext.qual.QualitativeSpecies)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getAllowsChildren_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getChildAt_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getChildCount_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getElementNamespace_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getListOfQualitativeSpecies_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getListOfTransitions_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getModel_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getPackageName_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getParentSBMLObject_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getParent_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getPrefix_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.getURI_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.isSetListOfQualitativeSpecies_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.isSetListOfTransitions_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.readAttribute_changed(java.lang.String, java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.removeQualitativeSpecies_changed(org.sbml.jsbml.ext.qual.QualitativeSpecies)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.removeTransition_changed(org.sbml.jsbml.ext.qual.Transition)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.setListOfQualitativeSpecies_changed(org.sbml.jsbml.ListOf&lt;org.sbml.jsbml.ext.qual.QualitativeSpecies&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.setListOfTransitions_changed(org.sbml.jsbml.ListOf&lt;org.sbml.jsbml.ext.qual.Transition&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.unsetListOfQualitativeSpecies_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.unsetListOfTransitions_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualModelPlugin.writeXMLAttributes_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.createQualitativeSpecies_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.createQualitativeSpecies_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.createQualitativeSpecies_removed(java.lang.String, java.lang.String, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.createQualitativeSpecies_removed(java.lang.String, java.lang.String, org.sbml.jsbml.Species)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.createQualitativeSpecies_removed(java.lang.String, org.sbml.jsbml.Compartment)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.createTransition_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.createTransition_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.createTransition_removed(java.lang.String, org.sbml.jsbml.ext.qual.Input, org.sbml.jsbml.ext.qual.Output)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.ctor_added(org.sbml.jsbml.ext.qual.QualModelPlugin)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.ctor_changed(org.sbml.jsbml.Model)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.ctor_removed(org.sbml.jsbml.ext.qual.QualitativeModel)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.getQualitativeSpecies_removed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.getQualitativeSpecies_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.getTransition_removed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.QualitativeModel.getTransition_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.qual.test"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.AbstractRenderPlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.ColorDefinition"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.ColorDefinition.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.ColorDefinition.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Curve"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Ellipse"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Ellipse.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Ellipse.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GlobalRenderInformation"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GlobalRenderInformation.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GlobalRenderInformation.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GradientBase"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GradientBase.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GradientBase.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GradientStop"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GradientStop.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GradientStop.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive1D"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive1D.ctor_added(int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive1D.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive1D.getStrokeWidth_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive1D.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive1D.setStrokeWidth_changed(java.lang.Double)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive1D.strokeWidth"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive2D"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive2D.FillRule"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive2D.ctor_added(int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive2D.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.GraphicalPrimitive2D.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Group"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Image"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Image.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Image.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LineEnding"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LineEnding.getGroup_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LineEnding.setGroup_changed(org.sbml.jsbml.ext.render.RenderGroup)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LinearGradient"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LinearGradient.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LinearGradient.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalRenderInformation"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalRenderInformation.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalRenderInformation.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalStyle"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalStyle.ctor_added(int, int, org.sbml.jsbml.ext.render.RenderGroup)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalStyle.ctor_added(java.lang.String, int, int, org.sbml.jsbml.ext.render.RenderGroup)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalStyle.ctor_added(org.sbml.jsbml.ext.render.RenderGroup)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalStyle.ctor_removed(int, int, org.sbml.jsbml.ext.render.Group)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalStyle.ctor_removed(java.lang.String, int, int, org.sbml.jsbml.ext.render.Group)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalStyle.ctor_removed(org.sbml.jsbml.ext.render.Group)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalStyle.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalStyle.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.LocalStyle.toString_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.RenderCurve"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.RenderGroup"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.RenderInformationBase"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.RenderInformationBase.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.RenderInformationBase.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.RenderWriteTest"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.ctor_added(int, int, org.sbml.jsbml.ext.render.RenderGroup)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.ctor_added(java.lang.String, int, int, org.sbml.jsbml.ext.render.RenderGroup)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.ctor_added(org.sbml.jsbml.ext.render.RenderGroup)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.ctor_removed(int, int, org.sbml.jsbml.ext.render.Group)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.ctor_removed(java.lang.String, int, int, org.sbml.jsbml.ext.render.Group)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.ctor_removed(org.sbml.jsbml.ext.render.Group)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.getChildAt_changed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.getGroup_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.group"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Style.setGroup_changed(org.sbml.jsbml.ext.render.RenderGroup)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Transformation"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Transformation.ctor_added(int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Transformation.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Transformation.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Transformation2D"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.Transformation2D.ctor_added(int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.render.test"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient.ctor_added(int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient.ctor_added(java.lang.String, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient.getCoordinate_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient.isSetCoordinate_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient.readAttribute_changed(java.lang.String, java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient.setCoordinate_added(org.sbml.jsbml.ext.spatial.CoordinateKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient.unsetCoordinate_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AdvectionCoefficient.writeXMLAttributes_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AnalyticGeometry"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AnalyticGeometry.removeAnalyticVolume_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AnalyticVolume"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AnalyticVolume.FunctionKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AnalyticVolume.FunctionType"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AnalyticVolume.getFunctionType_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.AnalyticVolume.setFunctionType_changed(org.sbml.jsbml.ext.spatial.AnalyticVolume.FunctionKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.BoundaryCondition"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.BoundaryCondition.BoundaryKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.BoundaryCondition.Type"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.BoundaryCondition.getType_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.BoundaryCondition.setType_changed(org.sbml.jsbml.ext.spatial.BoundaryCondition.BoundaryKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGPrimitive"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGPrimitive.PrimitiveKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGPrimitive.getPrimitiveType_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGPrimitive.setPrimitiveType_added(org.sbml.jsbml.ext.spatial.CSGPrimitive.PrimitiveKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.OperationType"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.SetOperation"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.getComplementA_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.getComplementB_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.getOperationType_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.isSetComplementA_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.isSetComplementB_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.removeCSGNode_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.setComplementA_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.setComplementB_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.setOperationType_changed(org.sbml.jsbml.ext.spatial.CSGSetOperator.SetOperation)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.unsetComplementA_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CSGSetOperator.unsetComplementB_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Coefficient"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.getBoundaryMaximum_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.getBoundaryMinimum_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.getComponentType_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.getCoordinateIndex_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.getMaximum_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.getMinimum_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.getType_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.isSetBoundaryMaximum_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.isSetBoundaryMinimum_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.isSetComponentType_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.isSetCoordinateIndex_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.isSetMaximum_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.isSetMinimum_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.isSetType_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.setBoundaryMaximum_added(org.sbml.jsbml.ext.spatial.Boundary)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.setBoundaryMinimum_added(org.sbml.jsbml.ext.spatial.Boundary)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.setComponentType_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.setCoordinateIndex_removed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.setMaximum_removed(org.sbml.jsbml.ext.spatial.Boundary)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.setMinimum_removed(org.sbml.jsbml.ext.spatial.Boundary)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.setType_added(org.sbml.jsbml.ext.spatial.CoordinateKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.unsetBoundaryMaximum_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.unsetBoundaryMinimum_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.unsetComponentType_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.unsetCoordinateIndex_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.unsetMaximum_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.unsetMinimum_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateComponent.unsetType_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.CoordinateReference"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.DiffusionKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.ctor_added(int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.ctor_added(java.lang.String, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.getCoordinateReference1_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.getCoordinateReference2_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.getDiffusionKind_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.isSetCoordinateReference1_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.isSetCoordinateReference2_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.isSetDiffusionKind_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.readAttribute_changed(java.lang.String, java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.setCoordinateReference1_added(org.sbml.jsbml.ext.spatial.CoordinateKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.setCoordinateReference2_added(org.sbml.jsbml.ext.spatial.CoordinateKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.setDiffusionKind_added(org.sbml.jsbml.ext.spatial.DiffusionCoefficient.DiffusionKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.unsetCoordinateReference1_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.unsetCoordinateReference2_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.unsetDiffusionKind_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DiffusionCoefficient.writeXMLAttributes_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DomainType"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DomainType.getSpatialDimension_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DomainType.getSpatialDimensions_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DomainType.isSetSpatialDimension_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DomainType.isSetSpatialDimensions_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DomainType.setSpatialDimension_removed(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.DomainType.setSpatialDimensions_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.GeometryKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.addSampledField_added(org.sbml.jsbml.ext.spatial.SampledField)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.createMixedGeometry_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.createMixedGeometry_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.createSampledField_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.createSampledField_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.ctor_added(java.lang.String, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.getCoordinateSystem_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.getListOfSampledFields_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.isSetListOfSampledFields_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.removeAdjacentDomain_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.removeCoordinateComponent_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.removeDomainType_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.removeDomain_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.removeGeometryDefinition_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.removeSampledField_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.removeSampledField_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.removeSampledField_added(org.sbml.jsbml.ext.spatial.SampledField)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.setCoordinateSystem_changed(org.sbml.jsbml.ext.spatial.Geometry.GeometryKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.setListOfSampledFields_added(org.sbml.jsbml.ListOf&lt;org.sbml.jsbml.ext.spatial.SampledField&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.Geometry.unsetListOfSampledFields_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.GeometryDefinition"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.GeometryDefinition.getIsActive_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.GeometryDefinition.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.GeometryDefinition.isActive_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.GeometryDefinition.isSetIsActive_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.GeometryDefinition.readAttribute_changed(java.lang.String, java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.GeometryDefinition.setIsActive_added(boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.GeometryDefinition.unsetIsActive_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.GeometryDefinition.writeXMLAttributes_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.MixedGeometry"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.OrdinalMapping"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParameterType"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParameterType.getVariableInstance_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParameterType.getVariable_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParameterType.isSetSpatialRef_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParameterType.isSetVariable_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParameterType.setVariable_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParametricObject"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParametricObject.PolygonKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParametricObject.getDomainType_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParametricObject.getDomain_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParametricObject.getPolygonType_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParametricObject.isSetDomainType_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParametricObject.isSetDomain_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParametricObject.setDomainType_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParametricObject.setDomain_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.ParametricObject.setPolygonType_added(org.sbml.jsbml.ext.spatial.ParametricObject.PolygonKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.CompressionKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.DataKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.InterpolationKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.ctor_added(int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.ctor_added(java.lang.String, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.getCompression_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.getDataString_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.getDataType_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.getData_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.getEncoding_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.getImageData_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.getInterpolationType_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.getInterpolation_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.isSetCompression_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.isSetData_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.isSetEncoding_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.isSetImageData_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.isSetInterpolationType_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.isSetInterpolation_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.setCompression_added(org.sbml.jsbml.ext.spatial.SampledField.CompressionKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.setDataType_changed(org.sbml.jsbml.ext.spatial.SampledField.DataKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.setData_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.setData_added(org.sbml.jsbml.xml.XMLNode)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.setEncoding_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.setImageData_removed(org.sbml.jsbml.ext.spatial.ImageData)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.setInterpolationType_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.setInterpolation_added(org.sbml.jsbml.ext.spatial.SampledField.InterpolationKind)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.unsetCompression_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.unsetData_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.unsetEncoding_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.unsetImageData_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.unsetInterpolationType_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledField.unsetInterpolation_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledFieldGeometry"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledFieldGeometry.getSampledField_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledFieldGeometry.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledFieldGeometry.readAttribute_changed(java.lang.String, java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledFieldGeometry.removeSampledVolume_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledFieldGeometry.setSampledField_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SampledFieldGeometry.writeXMLAttributes_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.complementA"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.complementB"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.compression"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.coordinate"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.coordinateIndex"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.coordinateReference1"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.coordinateReference2"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.data"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.diffusionKind"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.interpolation"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.interpolationType"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.isActive"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.spatialDimension"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialConstants.spatialDimensions"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialModelPlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialModelPlugin.accept_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialModelPlugin.register_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialModelPlugin.unregister_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialSpeciesPlugin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialSpeciesPlugin.coefficientCheck_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.ext.spatial.SpatialTest"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.math.test"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.test.sbml"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.test.sbml.TestCVTerms"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.test.sbml.TestCVTerms.setUp_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.test.sbml.TestCVTerms.test_CVTerm_removeResources_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.test.sbml.TestSBase"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParser"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParser.stringToType"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserConstants"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserConstants.LEFT_BRACES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserConstants.LEFT_BRACKET"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserConstants.RIGHT_BRACES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserConstants.RIGHT_BRACKET"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserLL3"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserLL3.setCaseSensitive_added(boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserLL3Constants"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserLL3Constants.LEFT_BRACES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserLL3Constants.LEFT_BRACKET"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserLL3Constants.RIGHT_BRACES"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserLL3Constants.RIGHT_BRACKET"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserLL3Constants.SLPITTER"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.FormulaParserLL3Constants.SPLITTER"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.IFormulaParser"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.IFormulaParser.parse_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.ParseException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.text.parser.ParseException.ctor_added(java.lang.Throwable)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.IdManager"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ListOfWithName"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ListOfWithName.clone_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ListOfWithName.ctor_added(org.sbml.jsbml.util.ListOfWithName&lt;? extends org.sbml.jsbml.SBase&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ListOfWithName.ctor_removed(org.sbml.jsbml.util.ListOfWithName&lt;T&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ModelBuilder"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.Pair"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeChangeEvent"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeChangeEvent.addCVTerm"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeChangeEvent.annotationNameSpaces"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeChangeEvent.base"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeChangeEvent.history"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeChangeEvent.nonRDFAnnotation"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeChangeEvent.numBvars"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeChangeEvent.numPiece"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeChangeEvent.removeCVTerm"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeChangeEvent.userObject"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeWithChangeSupport"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeWithChangeSupport.addAllChangeListeners_added(java.util.Collection&lt;org.sbml.jsbml.util.TreeNodeChangeListener&gt;, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.TreeNodeWithChangeSupport.removeAllTreeNodeChangeListeners_added(boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ValuePair"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ValuePair.clone_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ValuePair.equals_removed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ValuePair.hashCode_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ValuePair.of_added(L extends java.lang.Comparable&lt;? super L&gt;, V extends java.lang.Comparable&lt;? super V&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ValuePair.toString_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.ValuePair.valuePairOf_added(L extends java.lang.Comparable&lt;? super L&gt;, V extends java.lang.Comparable&lt;? super V&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.ASTNodeCompiler"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.ASTNodeCompiler.vector_added(java.util.List&lt;org.sbml.jsbml.ASTNode&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FindUnitsCompiler"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FindUnitsCompiler.vector_added(java.util.List&lt;org.sbml.jsbml.ASTNode&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FormulaCompiler"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FormulaCompiler.checkBrackets_added(org.sbml.jsbml.ASTNode)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FormulaCompiler.checkDenominatorBrackets_added(org.sbml.jsbml.ASTNode)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FormulaCompiler.lambdaBody_added(java.util.List&lt;org.sbml.jsbml.ASTNode&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FormulaCompiler.logicalOperation_added(java.lang.String, java.util.List&lt;org.sbml.jsbml.ASTNode&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FormulaCompiler.relation_added(org.sbml.jsbml.ASTNode, java.lang.String, org.sbml.jsbml.ASTNode)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FormulaCompiler.selector_added(java.lang.Object[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FormulaCompiler.vector_added(java.lang.Object[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FormulaCompiler.vector_added(java.util.List&lt;org.sbml.jsbml.ASTNode&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.FormulaCompilerLibSBML"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.LaTeXCompiler"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.LaTeXCompiler.vector_added(java.util.List&lt;org.sbml.jsbml.ASTNode&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.MathMLCompiler"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.MathMLCompiler.vector_added(java.util.List&lt;org.sbml.jsbml.ASTNode&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.UnitsCompiler"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.util.compilers.UnitsCompiler.vector_added(java.util.List&lt;org.sbml.jsbml.ASTNode&gt;)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.XMLNode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.XMLNode.getChildElement_added(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.XMLNode.getChildElements_added(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.XMLNode.getChild_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.ArraysParser"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.ParserManager"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.ParserManager.getReadingParsers_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.ParserManager.getWritingParsers_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.ParserManager.readingParsers"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.RenderParser"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.RenderParser.createPluginFor_added(org.sbml.jsbml.SBase)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.RenderParser.getNamespaceFor_added(int, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.RenderParser.getPackageName_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.RenderParser.getPackageNamespaces_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.parsers.RenderParser.isRequired_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.test"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.test.CVTermTests"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.sbml.jsbml.xml.test.data.fbc"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+
+</comments>

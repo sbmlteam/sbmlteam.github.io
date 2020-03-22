@@ -1,0 +1,99 @@
+OK: org.sbml.jsbml.text.parser.CobraFormulaParser Class
+MISSING @SINCE TAG: org.sbml.jsbml.text.parser.CobraFormulaParserConstants Interface
+MISSING @SINCE TAG: org.sbml.jsbml.text.parser.CobraFormulaParserTokenManager Class
+OK: org.sbml.jsbml.util.CobraUtil Class
+OK: org.sbml.jsbml.CompartmentalizedSBase Interface
+OK: org.sbml.jsbml.text.parser.FormulaParserASTNode2 Class
+MISSING @SINCE TAG: org.sbml.jsbml.text.parser.FormulaParserASTNode2Constants Interface
+MISSING @SINCE TAG: org.sbml.jsbml.text.parser.FormulaParserASTNode2TokenManager Class
+OK: org.sbml.jsbml.text.parser.FormulaParserLL3ASTNode2 Class
+MISSING @SINCE TAG: org.sbml.jsbml.text.parser.FormulaParserLL3ASTNode2Constants Interface
+MISSING @SINCE TAG: org.sbml.jsbml.text.parser.FormulaParserLL3ASTNode2TokenManager Class
+OK: org.sbml.jsbml.xml.parsers.PackageUtil Class
+MISSING @SINCE TAG: org.sbml.jsbml.ext.AbstractSBasePlugin Constructor (org.sbml.jsbml.ext.SBasePlugin)
+MISSING @SINCE TAG: org.sbml.jsbml.Annotation Constructor (org.sbml.jsbml.xml.XMLNode)
+MISSING @SINCE TAG: org.sbml.jsbml.ASTNode Constructor (org.sbml.jsbml.math.ASTNode2)
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Constructor (org.sbml.jsbml.xml.XMLNode)
+MISSING @SINCE TAG: org.sbml.jsbml.LevelVersionError Constructor (org.sbml.jsbml.ext.SBasePlugin, org.sbml.jsbml.SBase)
+MISSING @SINCE TAG: org.sbml.jsbml.util.compilers.MathMLXMLStreamCompiler Constructor (java.lang.String)
+MISSING @SINCE TAG: org.sbml.jsbml.util.compilers.MathMLXMLStreamCompiler Constructor (void)
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method addNestedCVTerm(org.sbml.jsbml.CVTerm)
+NO DOC BLOCK: org.sbml.jsbml.AbstractSBase Method appendAnnotation(java.lang.String)
+NO DOC BLOCK: org.sbml.jsbml.AbstractSBase Method appendAnnotation(org.sbml.jsbml.xml.XMLNode)
+MISSING @SINCE TAG: org.sbml.jsbml.SBase Method appendAnnotation(java.lang.String)
+MISSING @SINCE TAG: org.sbml.jsbml.SBase Method appendAnnotation(org.sbml.jsbml.xml.XMLNode)
+MISSING @SINCE TAG: org.sbml.jsbml.Annotation Method appendNonRDFAnnotation(java.lang.String)
+MISSING @SINCE TAG: org.sbml.jsbml.Annotation Method appendNonRDFAnnotation(org.sbml.jsbml.xml.XMLNode)
+MISSING @SINCE TAG: org.sbml.jsbml.ASTNode Method astNodeToTree(org.sbml.jsbml.ASTNode, java.lang.String, java.lang.String)
+MISSING @SINCE TAG: org.sbml.jsbml.AbstractSBase Method checkAndSetPackageNamespaceAndVersion(org.sbml.jsbml.SBase)
+MISSING @SINCE TAG: org.sbml.jsbml.AbstractSBase Method checkAndSetPackageNamespaceAndVersion(org.sbml.jsbml.ext.SBasePlugin, org.sbml.jsbml.SBMLDocument)
+MISSING @SINCE TAG: org.sbml.jsbml.util.compilers.FormulaCompiler Method checkRelationalArgumentBrackets(org.sbml.jsbml.ASTNode)
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method createNestedCVTerm()
+MISSING @SINCE TAG: org.sbml.jsbml.SpeciesReference Method createStoichiometryMath(org.sbml.jsbml.ASTNode)
+MISSING @SINCE TAG: org.sbml.jsbml.Event Method createTrigger(org.sbml.jsbml.ASTNode)
+NO DOC BLOCK: org.sbml.jsbml.ext.AbstractSBasePlugin Method getElementNamespace()
+MISSING @SINCE TAG: org.sbml.jsbml.SBMLDocument Method getEnabledPackageNamespace(java.lang.String)
+MISSING @SINCE TAG: org.sbml.jsbml.SBMLErrorLog Method getErrorsBySeverity(org.sbml.jsbml.SBMLError.SEVERITY)
+MISSING @SINCE TAG: org.sbml.jsbml.util.SBMLtools Method getIdOrName(org.sbml.jsbml.NamedSBase)
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method getListOfNestedCVTerms()
+MISSING @SINCE TAG: org.sbml.jsbml.util.SBMLtools Method getNameOrId(org.sbml.jsbml.NamedSBase)
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method getNestedCVTerm(int)
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method getNestedCVTermCount()
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method getNumNestedCVTerms()
+NO DOC BLOCK: org.sbml.jsbml.AbstractSBase Method getPackageName()
+MISSING @SINCE TAG: org.sbml.jsbml.SBase Method getPackageName()
+NO DOC BLOCK: org.sbml.jsbml.AbstractSBase Method getPackageVersion()
+MISSING @SINCE TAG: org.sbml.jsbml.SBase Method getPackageVersion()
+NO DOC BLOCK: org.sbml.jsbml.AbstractSBase Method getURI()
+MISSING @SINCE TAG: org.sbml.jsbml.SBase Method getURI()
+MISSING @SINCE TAG: org.sbml.jsbml.Annotation Method getXMLNode()
+NO DOC BLOCK: org.sbml.jsbml.Reaction Method isCompartmentMandatory()
+NO DOC BLOCK: org.sbml.jsbml.Species Method isCompartmentMandatory()
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method isSetListOfNestedCVTerms()
+NO DOC BLOCK: org.sbml.jsbml.AbstractSBase Method isSetPackageVErsion()
+MISSING @SINCE TAG: org.sbml.jsbml.SBase Method isSetPackageVErsion()
+NO DOC BLOCK: org.sbml.jsbml.ext.AbstractSBasePlugin Method isSetPackageVersion()
+MISSING @SINCE TAG: org.sbml.jsbml.ext.SBasePlugin Method isSetPackageVersion()
+MISSING @SINCE TAG: org.sbml.jsbml.validator.SyntaxChecker Method isValidChemicalFormula(java.lang.String)
+MISSING @SINCE TAG: org.sbml.jsbml.LevelVersionError Method packageVersionMismatchMessage(org.sbml.jsbml.SBase, org.sbml.jsbml.SBase)
+MISSING @SINCE TAG: org.sbml.jsbml.LevelVersionError Method packageVersionMismatchMessage(org.sbml.jsbml.ext.SBasePlugin, org.sbml.jsbml.SBase)
+MISSING @SINCE TAG: org.sbml.jsbml.ASTNode Method piecewise(org.sbml.jsbml.MathContainer, org.sbml.jsbml.ASTNode[])
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method removeNestedCVTerm(org.sbml.jsbml.CVTerm)
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method removeNestedCVTerm(int)
+NO DOC BLOCK: org.sbml.jsbml.AbstractSBase Method setAnnotation(java.lang.String)
+NO DOC BLOCK: org.sbml.jsbml.AbstractSBase Method setAnnotation(org.sbml.jsbml.xml.XMLNode)
+MISSING @SINCE TAG: org.sbml.jsbml.SBase Method setAnnotation(java.lang.String)
+MISSING @SINCE TAG: org.sbml.jsbml.SBase Method setAnnotation(org.sbml.jsbml.xml.XMLNode)
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method setListOfNestedCVTerms(java.util.List<org.sbml.jsbml.CVTerm>)
+MISSING @SINCE TAG: org.sbml.jsbml.ext.AbstractSBasePlugin Method setNamespace(java.lang.String)
+MISSING @SINCE TAG: org.sbml.jsbml.ListOf Method setPackageName(java.lang.String)
+NO DOC BLOCK: org.sbml.jsbml.AbstractSBase Method setPackageVersion(int)
+MISSING @SINCE TAG: org.sbml.jsbml.SBase Method setPackageVersion(int)
+NO DOC BLOCK: org.sbml.jsbml.ext.AbstractSBasePlugin Method setPackageVersion(int)
+MISSING @SINCE TAG: org.sbml.jsbml.ext.SBasePlugin Method setPackageVersion(int)
+MISSING @SINCE TAG: org.sbml.jsbml.ASTNode Method setParentSBMLObject(org.sbml.jsbml.MathContainer)
+MISSING @SINCE TAG: org.sbml.jsbml.Annotation Method setXMLNode(org.sbml.jsbml.xml.XMLNode)
+MISSING @SINCE TAG: org.sbml.jsbml.xml.XMLAttributes Method size()
+MISSING @SINCE TAG: org.sbml.jsbml.ASTNode Method toASTNode2()
+MISSING @SINCE TAG: org.sbml.jsbml.ASTNode Method toSimpleString()
+NO DOC BLOCK: org.sbml.jsbml.util.SimpleTreeNodeChangeListener Method toString(java.beans.PropertyChangeEvent)
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method toXML()
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method toXMLNode()
+NO DOC BLOCK: org.sbml.jsbml.Reaction Method unsetCompartment()
+MISSING @SINCE TAG: org.sbml.jsbml.CVTerm Method unsetListOfNestedCVTerms()
+NO DOC BLOCK: org.sbml.jsbml.ext.AbstractSBasePlugin Field elementNamespace
+MISSING @SINCE TAG: org.sbml.jsbml.UnitDefinition Field EXTENT
+NO DOC BLOCK: org.sbml.jsbml.util.compilers.FormulaCompiler Field FORMULA_ARGUMENT_SEPARATOR
+MISSING @SINCE TAG: org.sbml.jsbml.ASTNode Field IMPLEMENTATION_ASTNODE2
+MISSING @SINCE TAG: org.sbml.jsbml.ASTNode Field IMPLEMENTATION_HISTORIC
+MISSING @SINCE TAG: org.sbml.jsbml.ASTNode Field IMPLEMENTATION_VERSION
+NO DOC BLOCK: org.sbml.jsbml.util.TreeNodeChangeEvent Field mathMLClass
+MISSING @SINCE TAG: org.sbml.jsbml.text.parser.FormulaParserConstants Field MODULO
+NO DOC BLOCK: org.sbml.jsbml.util.TreeNodeChangeEvent Field number
+MISSING @SINCE TAG: org.sbml.jsbml.LevelVersionError Field PACKAGE_VERSION_MISMATCH_MSG
+MISSING @SINCE TAG: org.sbml.jsbml.AbstractSBase Field packageName
+NO DOC BLOCK: org.sbml.jsbml.util.TreeNodeChangeEvent Field packageName
+NO DOC BLOCK: org.sbml.jsbml.util.TreeNodeChangeEvent Field packageVersion
+NO DOC BLOCK: org.sbml.jsbml.util.TreeNodeChangeEvent Field refId
+MISSING @SINCE TAG: org.sbml.jsbml.AbstractTreeNode Field resourceBundle
+MISSING @SINCE TAG: org.sbml.jsbml.SBMLReader Field UNKNOWN_XML_NODE
