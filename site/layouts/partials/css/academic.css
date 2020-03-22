@@ -2298,11 +2298,13 @@ body.dark,
  **************************************************/
 
 .row.row-gutter {
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
 .row.row-big-gutter {
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 
@@ -2674,4 +2676,9 @@ body.dark .twitter-box-inner {
   height: 14px;
   display: block;
   position: relative;
+}
+
+.blurb img {
+  margin-top: -0.25em;
+  margin-bottom: -0.25em;
 }
