@@ -1,11 +1,11 @@
---- # -*- mode: markdown -*-
++++
 #=====================================================================
-active: true
-title: "SBML software and models"
-date: 2020-03-12
-layout: "single"
+title  = "SBML software and models"
+date   = 2020-03-12
+layout = "single"
+active = true
 #=====================================================================
----
++++
 
 The SBML Team produces software libraries and some specific software tools for working with SBML. (Many more third-party packages also support SBML &ndash; visit the [Showcase](/showcase) to find out more about them!)
 
@@ -17,9 +17,9 @@ libsbml
 JSBML is a pure Java library for reading, writing, and manipulating SBML.  It maps all SBML elements to a flexible and extended object hierarchy in Java.  JSBML is an alternative to the mixed Java/native code-based interface provided in [libSBML](/software/libsbml).
 {{% /blurb %}}
 
-
-
-deviser
+{{% blurb title="Deviser" image="/img/deviser-logo.png" link="deviser" %}}
+SBML Level&nbsp;3 is modular, with optional _packages_ that can add features to a core.  [Deviser](https://github.com/sbmlteam/deviser) helps development of SBML Level&nbsp;3 packages by automating the generation of basic specifications, UML diagrams, and [LibSBML](http://sbml.org/Software/libSBML) plug-ins.
+{{% /blurb %}}
 
 
 ## Test suite
