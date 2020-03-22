@@ -6,62 +6,79 @@ Organization: California Institute of Technology
 Date created: 2020-03-15
 
 This is based on single.html.  It has two differences: (1) it reads the
-variable "source" from the file that references this layout, and (2) it sets
-the variable "static_source" before loading the partial file
-page_header.html.  The value of "source" is read to create the content
-displayed in the page, and the code in our custom "page_header.html" uses the
-flag "static_source" to adjust its behavior to suit the use of static HTML.
+variables "source" and "use_raw" from the file that references this layout, 
+and (2) it sets the variable "static_source" and "base_url" before loading
+the partial files header.html and page_header.html.  
+
+If the variable "use_raw" is set, then the file referenced by "static_source"
+is used directly, without wrapping it inside the site HTML -- it won't even
+get a navigation bar.  If the variable "use_raw" is not set, then the file in
+"static_source" is used as raw HTML, but it is wrapped inside the normal site
+structure.  The value of "source" is read to create the content displayed in 
+the page, and the code in our custom "page_header.html" uses the flag
+"static_source" to adjust its behavior to suit the use of static HTML.
+
+The path in "static_source" is assumed to be a path in the site /static/...
+subtree.  The leading "/static" portion of the path is removed to create the
+final <base> value.  E.g., if given "/static/software/something/1.2.3/path", 
+it will change that path to "/software/something/1.2.3/path".  (The reason 
+for doing this is that Hugo re-roots files in /static to /, and leaving
+/static in the path would cause the paths to be invalid.)
 ========================================================================== -->
 
-{{ $file := .Param "source" }}
+{{ $static_source := .Param "source" | default ""}}
+{{ $base_url := path.Dir ( replace $static_source "/static" "" ) }}
 
-{{ partial "header.html" (dict "Page" . "static_source" 1) }}
-{{ partial "navbar.html" . }}
+{{ if isset .Params "use_raw" }}
+  {{ $new_head := print "<head><base href=\"" $base_url "/\"/>" }}
+  {{ readFile $static_source | replaceRE "<head>" $new_head | safeHTML }}
+{{ else }}
+  {{ partial "header.html" (dict "Page" . "base_url" $base_url) }}
+  {{ partial "navbar.html" . }}
 
-<div id="page-container">
-  <div class="container">
-    {{ partial "page_header.html" (dict "Page" . "static_source" 1) }}
-
-    <article class="article" itemscope itemtype="http://schema.org/Article">
-      {{ if ne $file "" }}
-      <div class="article-style" itemprop="articleBody">
-        {{ $fullpath := print "/static/" $file }}
-        {{/* Filter out any CSS imports that be in the static files. */}}
-        {{ readFile $fullpath | replaceRE "@import" "" | safeHTML}}
-      </div>
-      {{ end }}
+  <div id="page-container">
+    <div class="container">
+      {{ partial "page_header.html" (dict "Page" . "static_source" $static_source) }}
   
-      {{ partial "tags.html" . }}
-  
-      {{ if ne .Type "page" }}
-        {{ partial "page_author.html" . }}
-        {{ $related := .Site.RegularPages.Related . | first 5 }}
-        {{ with $related }}
-        <div class="article-widget">
-          <div class="hr-light"></div>
-          <h3>{{ i18n "related" }}</h3>
-          <ul>
-            {{ range . }}
-            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-            {{ end }}
-          </ul>
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+        {{ if ne $static_source "" }}
+        <div class="article-style" itemprop="articleBody">
+          {{/* Filter out any CSS imports that be in the static files. */}}
+          {{ readFile $static_source | replaceRE "@import" "" | safeHTML }}
         </div>
         {{ end }}
-      {{ end }}
-  
-      {{ if .Site.Params.section_pager }}
-      <div class="article-widget">
-        {{ partial "section_pager.html" . }}
-      </div>
-      {{ end }}
-  
-      {{ partial "comments.html" . }}
-  
-    </article>
+    
+        {{ partial "tags.html" . }}
+    
+        {{ if ne .Type "page" }}
+          {{ partial "page_author.html" . }}
+          {{ $related := .Site.RegularPages.Related . | first 5 }}
+          {{ with $related }}
+          <div class="article-widget">
+            <div class="hr-light"></div>
+            <h3>{{ i18n "related" }}</h3>
+            <ul>
+              {{ range . }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+        {{ end }}
+    
+        {{ if .Site.Params.section_pager }}
+        <div class="article-widget">
+          {{ partial "section_pager.html" . }}
+        </div>
+        {{ end }}
+    
+        {{ partial "comments.html" . }}
+    
+      </article>
+    </div>
+    <section id="footer-section">
+      {{ partial "footer_container.html" . }}
+      {{ partial "footer.html" . }}
+    </section>
   </div>
-  <section id="footer-section">
-    {{ partial "footer_container.html" . }}
-    {{ partial "footer.html" . }}
-  </section>
-</div>
-
+{{ end }}
