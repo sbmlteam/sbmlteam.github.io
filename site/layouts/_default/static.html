@@ -31,7 +31,7 @@ for doing this is that Hugo re-roots files in /static to /, and leaving
 
 {{ if isset .Params "use_raw" }}
   {{ $new_head := print "<head><base href=\"" $base_url "/\"/>" }}
-  {{ readFile $static_source | replaceRE "<head>" $new_head | safeHTML }}
+  {{ readFile $static_source | replaceRE "<[hH][eE][aA][dD]>" $new_head | safeHTML }}
 {{ else }}
   {{ partial "header.html" (dict "Page" . "base_url" $base_url) }}
   {{ partial "navbar.html" . }}
