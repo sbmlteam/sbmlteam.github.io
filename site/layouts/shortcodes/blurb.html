@@ -30,17 +30,23 @@ Note that the icon name must be a Font Awesome icon name without the
 leading "fa-" part of the name.  We add the "fa-" automatically.  In other
 words, instead of (e.g.) "fa-book", use just "book" as the value.
 =========================================================================== -->
-
 {{ $title := .Get "title" }}
 {{ $icon  := .Get "icon" }}
 {{ $image := .Get "image" }}
 {{ $icon  := ( print "fa-" $icon ) }}
 {{ $side  := .Get "side" | default "left" }}
 {{ $link  := .Get "link" | default "" }}
-<div class="row row-big-gutter align-items-center decorated-text">
+
+<!-- Some icons need class "fas" and others need "fab". -->
+{{ $fas_or_fab := "fas" }}
+{{ if in $icon "github" }} 
+  {{ $fas_or_fab = "fab" }} 
+{{ end }}
+
+<div class="blurb row row-big-gutter align-items-center decorated-text">
 {{ if eq $side "left" }}
   <div class="col-2 text-center">
-    {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}{{ if ne $image "" }}<img width="100pt" src="{{ $image }}">{{ else }}<i class="{{ $icon }} fas fa-4x"></i>{{ end }}{{ if ne $link "" }}</a>{{ end }}
+    {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}{{ if ne $image "" }}<img width="100pt" src="{{ $image }}">{{ else }}<i class="{{ $icon }} {{ $fas_or_fab }} fa-4x"></i>{{ end }}{{ if ne $link "" }}</a>{{ end }}
   </div>
   <div class="col no-padding">
     {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}<strong>{{ $title | markdownify }}</strong><br>{{ if ne $link "" }}</a>{{ end }}
