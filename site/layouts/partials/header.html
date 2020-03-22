@@ -1,7 +1,20 @@
+<!-- ==========================================================================
+File name   : header.html
+Description : Header partial file for SBML.org
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology 
+Date created: 2020-03-20
+
+This is based on the Hugo Academic theme's header.html.  Its only functional
+difference is that it checks for a variable named "base_url" in the
+page context, and if found, it uses it to construct a value for the 
+<base> tag in the <head> portion of the page.
+========================================================================== -->
+
 {{ $page := $.Page }}
-{{ $static_source := 0 }}
-{{ if isset . "static_source" }}
-{{ $static_source = 1 }}
+{{ $base_url := "" }}
+{{ if isset . "base_url" }}
+  {{ $base_url = .base_url }}
 {{ end }}
 
 <!DOCTYPE html>
@@ -15,8 +28,8 @@
   {{ .Hugo.Generator }}
 
   {{/* 2020-03-15 MH: set base element so that included static pages work */}}
-  {{ if ne $static_source 0 }}
-    <base href="/{{ $page.File.Dir }}"/>
+  {{ if ne $base_url "" }}
+    <base href="{{ $base_url }}/"/>
   {{ end }}
 
   {{ $scr := $page.Scratch }}
