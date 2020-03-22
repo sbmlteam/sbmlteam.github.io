@@ -7,7 +7,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< software-icon width="15%" file="/img/jsbml-logo.png" >}}
+{{< toc >}}
 
 This page provides information on how to install JSBML, how to use the application programming interface (API), and other information.
 
@@ -24,12 +24,14 @@ Visit this page for more information about how to install and configure JSBML. I
 JSBML implements support for SBML Level 3 packages using _JSBML extensions_. This page describes how to find and install extensions for individual Level&nbsp;3 packages. This page also describes how to use add-on modules for JSBML, such as the [libSBML](/software/libsbml) compatibility module.
 {{% /blurb %}}
 
-{{% blurb title="Eclipse configuration" image="/img/eclipseide.svg" link="eclipse" %}}
+{{% blurb title="Eclipse configuration" image="/img/eclipseide-logo.svg" link="eclipse" %}}
 If you use the [Eclipse](https://www.eclipse.org) integrated development environment, this page has information about how to set it up to work with JSBML.
 {{% /blurb %}}
 
 
 ## Using JSBML
+
+The use of JSBML presumes familiarity with SBML.  If you are not familiar with SBML, a good starting point would be to read the [SBML specifications](/documents/specifications). If you have questions about SBML, you may find answers in the [SBML FAQ](/documents/faq) or asking other people in the general forum [sbml-discuss](https://groups.google.com/d/forum/sbml-discuss).
 
 {{% blurb title="JSBML User's Guide" icon="book" link="https://github.com/sbmlteam/jsbml/raw/master/doc/user_guide/User_Guide.pdf" %}}
 The JSBML User's Guide is the best introduction to using JSBML.  This guide includes a general introduction to working with SBML using JSBML and the documentation on the differences between JSBML and [libSBML](/software/libsbml).
@@ -44,10 +46,28 @@ The JSBML API documentation describes the objects and methods defined by JSBML. 
 {{% /blurb %}}
 
 
-## Differences between JSBML versions
+## Additional info for JSBML developers
 
-The following provides information about past versions of JSBML. 
+The following are resources especially relevant to JSBML developers.
 
-{{% blurb title="API difference reports" icon="not-equal" link="difference-reports" %}}
+{{% blurb title="GitHub repository for JSBML" icon="github" link="https://github.com/sbmlteam/jsbml" %}}
+This link takes you to the repository for JSBML in GitHub.
+{{% /blurb %}}
+
+{{% blurb title="API differences between releases" icon="not-equal" link="difference-reports" %}}
 These reports were generated using [JDiff](http://javadiff.sourceforge.net); they summarize the API differences between versions of JSBML.
 {{% /blurb %}}
+
+{{% blurb title="Pivotal Tracker and JSBML" image="/img/pivotaltracker-logo.svg" link="pivotal-tracker" %}}
+The JSBML team uses [Pivotal Tracker](http://pivotaltracker.com) to plan and coordinate development.  This page provides information about the conventions used by the team.
+{{% /blurb %}}
+
+{{% blurb title="Google Summer of Code projects" image="/img/gsoc-logo.svg" link="gsoc" %}}
+For several years, JSBML has been a project in the [Google Summer of Code](https://summerofcode.withgoogle.com).
+{{% /blurb %}}
+
+
+
+
+<!-- Leave this empty heading to work around a bug in TOC generation -->
+### 
