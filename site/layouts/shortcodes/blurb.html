@@ -8,41 +8,50 @@ Date created: 2019-11-06
 This is used to create rows of text with icons on pages such as the front page
 and the documents page.  By default, it has a structure like this:
 
-             The title
+             A title
    [ icon ]  The body text. This text should be a paragraph that's only a 
              few lines long.  It can be written using Markdown syntax.
 
 The icon can be placed on the right using the parameter side="right", to
 produce this layout:
 
-     The title
+     A title
      The body text. This text should be a paragraph that's only   [ icon ]
      a few lines long.  It can be written using Markdown syntax.
 
 This shortcode takes the following arguments:
 
   title: (required) Text put in bold face above the paragraph
-  icon:  (required) The name of a Font Awesome icon, minus the leading "fa-"
-  side:  (optional) Side to put the icon, "left" or "right". Default: left.
+  icon:  (optional) The name of a Font Awesome icon, minus the leading "fa-"
+  image: (optional) The path to an image in /static/img to use in place of icon 
+  side:  (optional) Side to put icon/image: "left" or "right". Default: left.
   link:  (optional) URL that will be used to make the Title a link
+  width: (optional) Explicitly set the width of
 
 Note that the icon name must be a Font Awesome icon name without the
 leading "fa-" part of the name.  We add the "fa-" automatically.  In other
 words, instead of (e.g.) "fa-book", use just "book" as the value.
+
+If a value for "image" is provided, then the "icon" parameter is ignored.
+
+The "width" parameter should be used rarely.  It's intended for rare special 
+cases.  An example is the JSBML logo, which has properties that make it look 
+visually smaller than it really is, and which therefore benefits from some
+case-by-case tweaking.
 =========================================================================== -->
 {{ $title := .Get "title" }}
 {{ $icon  := .Get "icon" }}
 {{ $image := .Get "image" }}
-{{ $icon  := ( print "fa-" $icon ) }}
-{{ $side  := .Get "side" | default "left" }}
-{{ $link  := .Get "link" | default "" }}
 {{ $width := .Get "width" | default "100pt" }}
+{{ $side  := .Get "side"  | default "left" }}
+{{ $link  := .Get "link"  | default "" }}
 
 <!-- Some icons need class "fas" and others need "fab". -->
 {{ $fas_or_fab := "fas" }}
 {{ if in $icon "github" }} 
   {{ $fas_or_fab = "fab" }} 
 {{ end }}
+{{ $icon  := ( print "fa-" $icon ) }}
 
 <div class="blurb row row-big-gutter align-items-center decorated-text">
 {{ if eq $side "left" }}
