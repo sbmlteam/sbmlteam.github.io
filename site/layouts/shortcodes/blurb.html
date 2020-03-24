@@ -36,6 +36,7 @@ words, instead of (e.g.) "fa-book", use just "book" as the value.
 {{ $icon  := ( print "fa-" $icon ) }}
 {{ $side  := .Get "side" | default "left" }}
 {{ $link  := .Get "link" | default "" }}
+{{ $width := .Get "width" | default "100pt" }}
 
 <!-- Some icons need class "fas" and others need "fab". -->
 {{ $fas_or_fab := "fas" }}
@@ -46,7 +47,7 @@ words, instead of (e.g.) "fa-book", use just "book" as the value.
 <div class="blurb row row-big-gutter align-items-center decorated-text">
 {{ if eq $side "left" }}
   <div class="col-2 text-center">
-    {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}{{ if ne $image "" }}<img width="100pt" src="{{ $image }}">{{ else }}<i class="{{ $icon }} {{ $fas_or_fab }} fa-4x"></i>{{ end }}{{ if ne $link "" }}</a>{{ end }}
+    {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}{{ if ne $image "" }}<img width="{{ $width }}" src="{{ $image }}">{{ else }}<i class="{{ $icon }} {{ $fas_or_fab }} fa-4x"></i>{{ end }}{{ if ne $link "" }}</a>{{ end }}
   </div>
   <div class="col no-padding">
     {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}<strong>{{ $title | markdownify }}</strong><br>{{ if ne $link "" }}</a>{{ end }}
@@ -58,7 +59,7 @@ words, instead of (e.g.) "fa-book", use just "book" as the value.
     {{ .Inner | markdownify }}
   </div>
   <div class="col-2 text-center">
-    {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}{{ if ne $image "" }}<img width="100pt" src="{{ $image }}">{{ else }}<i class="{{ $icon }} fas fa-4x"></i>{{ end }}{{ if ne $link "" }}</a>{{ end }}
+    {{ if ne $link "" }}<a href="{{ $link }}">{{ end }}{{ if ne $image "" }}<img width="{{ $width }}" src="{{ $image }}">{{ else }}<i class="{{ $icon }} fas fa-4x"></i>{{ end }}{{ if ne $link "" }}</a>{{ end }}
   </div>
 {{ end }}
 </div>
