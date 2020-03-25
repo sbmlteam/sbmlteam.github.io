@@ -11,22 +11,25 @@ The SBML Team produces software libraries and some specific software tools for w
 
 ## Main programming libraries and tools
 
-libsbml
+{{% blurb title="libSBML" image="/img/libsbml-logo.svg" link="libsbml" %}}
+LibSBML is a library for reading, writing, and manipulating files and
+data streams in SBML format .  It is written in C++ and C and provides APIs for C, C++, C#, Java, JavaScript, MATLAB, Octave, Perl, PHP, Python, R, and Ruby.
+{{% /blurb %}}
 
-{{% blurb title="JSBML" image="/img/jsbml-logo.png" link="jsbml" %}}
+{{% blurb title="JSBML" image="/img/jsbml-logo.png" width="105pt" link="jsbml" %}}
 JSBML is a pure Java library for reading, writing, and manipulating SBML.  It maps all SBML elements to a flexible and extended object hierarchy in Java.  JSBML is an alternative to the mixed Java/native code-based interface provided in [libSBML](/software/libsbml).
 {{% /blurb %}}
 
-{{% blurb title="Deviser" image="/img/deviser-logo.png" link="deviser" %}}
+{{% blurb title="Deviser" image="/img/deviser-logo.png" width="98pt" link="deviser" %}}
 SBML Level&nbsp;3 is modular, with optional _packages_ that can add features to a core.  [Deviser](https://github.com/sbmlteam/deviser) helps development of SBML Level&nbsp;3 packages by automating the generation of basic specifications, UML diagrams, and [LibSBML](http://sbml.org/Software/libSBML) plug-ins.
 {{% /blurb %}}
 
 
 ## Test suite
 
-sbml test suite
-
-test cases
+{{% blurb title="SBML Test Suite" image="/img/sbml-test-suite-logo.svg" link="sbml-test-suite" %}}
+The SBML Test Suite is a conformance testing system for SBML.  It can be used software implementation of SBML support.  The Test Suite consists of a collection of test models and a framework for running software through the suite.
+{{% /blurb %}}
 
 
 ## Format conversion
