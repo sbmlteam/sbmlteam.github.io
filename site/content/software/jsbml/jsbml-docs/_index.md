@@ -46,7 +46,7 @@ The JSBML API documentation describes the objects and methods defined by JSBML. 
 {{% /blurb %}}
 
 
-## Additional info for JSBML developers
+## Additional information for JSBML developers
 
 The following are resources especially relevant to JSBML developers.
 
