@@ -160,9 +160,31 @@ The following is an attempt to credit everyone (other than the SBML Team) who ha
 The SBML effort has benefitted multiple times from [Google Summer of Code](https://developers.google.com/open-source/gsoc/) and [NRNB Academy](http://nrnb.org/gsoc.html).
 
 
+### Google Summer of Code 2019
+
+In 2019, we were fortunate to have had two projects involving SBML.
+
+{{% gsoc-table %}}
+  {{< gsoc-project
+      name="Kaustubh Trivedi"
+      org="[Indian Institute of Technology Roorkee](https://www.iitr.ac.in), Uttarakhand, India"
+      title="Extending ModelPolisher to a universal annotation tool"
+      link="https://summerofcode.withgoogle.com/archive/2019/projects/5516960685621248/"
+      blog="https://kt-gsoc19.blogspot.com" 
+  >}}
+  {{< gsoc-project
+      name="Bhavye Jain"
+      org="[Indian Institute of Technology Roorkee](https://www.iitr.ac.in), Uttarakhand, India"
+      title="Validation of spatial systems biology models in Java"
+      link="https://summerofcode.withgoogle.com/archive/2019/projects/6066046165843968/"
+      blog="https://gsoc19-spatial.blogspot.com" 
+  >}}
+{{% /gsoc-table %}}
+
+
 ### Google Summer of Code 2018
 
-In 2018, we were fortunate to have another project involving SBML.
+In 2018, we were fortunate to have had another project involving SBML.
 
 {{% gsoc-table %}}
   {{< gsoc-project
@@ -177,7 +199,7 @@ In 2018, we were fortunate to have another project involving SBML.
 
 ### Google Summer of Code 2017
 
-In 2017, we were fortunate to have 2 projects involving SBML. They are
+In 2017, we were fortunate to have had 2 projects involving SBML. They are
 listed below in alphabetical order by student's last name.
 
 {{% gsoc-table %}}
@@ -200,7 +222,7 @@ listed below in alphabetical order by student's last name.
 
 ### Google Summer of Code 2016
 
-In 2016, we were fortunate to have 5 projects involving SBML. They are
+In 2016, we were fortunate to have had 5 projects involving SBML. They are
 listed below in alphabetical order by student's last name.
 
 {{% gsoc-table %}}
