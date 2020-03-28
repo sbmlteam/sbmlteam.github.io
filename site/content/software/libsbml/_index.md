@@ -8,7 +8,7 @@ layout = "single"
 
 {{< software-icon width="25%" file="/img/libsbml-logo-and-name.svg" >}}
 
-LibSBML is a programming library that helps you read, write, manipulate, translate, and validate SBML files and data streams.  The library supports all Levels and Versions of SBML.  LibSBML is written in ISO standard C++ and C and provides APIs for the languages C, C++, C#, Java, JavaScript, MATLAB, Octave, Perl, PHP, Python, R, and Ruby.  It works on Linux, Windows, and MacOS X, and has been known to work on FreeBSD and Solaris in the past.
+LibSBML is a programming library that helps you read, write, manipulate, translate, and validate SBML files and data streams.  The library supports all Levels and Versions of SBML.  LibSBML is written in ISO standard C++ and C and provides APIs for the languages C, C++, C#, Java, JavaScript, MATLAB, Perl, PHP, Python, R, and Ruby.  It works on Linux, Windows, and MacOS X, and has been known to work on FreeBSD and Solaris in the past.
 
 {{< software-links download="libsbml-docs/download-and-install" changes="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/NEWS.txt" tracker="https://sourceforge.net/p/sbml/libsbml/" docs="libsbml-docs" repo="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/" forum="https://groups.google.com/forum/#!forum/libsbml-development">}}
 
@@ -17,7 +17,7 @@ LibSBML is a programming library that helps you read, write, manipulate, transla
 
 There are many reasons to prefer libSBML over the direct use of an XML parser.  First, libSBML understands all Levels and Versions of SBML, and supports **extensions for SBML Level&nbsp;3 packages**.   Here are some additional benefits: 
 
-* **API for many languages**.  LibSBML is written in ISO C and C++ but  can be used from all the languages listed in the right-hand box. 
+* **API for many languages**.  LibSBML is written in ISO C and C++ but  can be used from many other languages.
 
 * **Object model**.  LibSBML's object model and API are designed around SBML and the operations that are commonly needed when working with SBML.
 
