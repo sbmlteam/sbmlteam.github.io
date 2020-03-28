@@ -9,9 +9,11 @@ layout = "single"
 #=====================================================================
 +++
 
+{{< toc >}}
+
 Many people have helped develop SBML as a community standard. This page lists individuals and groups who have made notable contributions to the evolution of SBML and the SBML-using community, but this short list is not meant to diminish the contributions of the broader community of people and companies developing software systems that use SBML.
 
-## SBML specifications
+## Contributors to SBML specifications
 
 The following is an attempt to credit everyone (other than the SBML Team) who has developed written proposals and/or specifications for SBML. Please notify [sbml-team@googlegroups.com](mailto:sbml-team@googlegroups.com) with notices of any omissions, so that we can make this list as accurate as possible.
 
@@ -311,8 +313,6 @@ listed in alphabetical order by student's last name.
   >}}
 {{% /gsoc-table %}}
 
-
-## SBML-related events
 
 ## SBML history
 
