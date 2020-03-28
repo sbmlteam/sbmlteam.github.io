@@ -83,4 +83,4 @@ The best way to submit a patch is via our [Sourceforge Tracker](https://sourcefo
 
 ## Funding acknowledgments
 
-We are immensely thankful to the funding agencies, particularly NIH and DARPA, that have supported the development of libSBML over the years.  Please visit our [funding acknowledgements page](libsbml-docs/funding) for more information.
+We are immensely thankful to the funding agencies, particularly NIH and DARPA, that have supported the development of libSBML over the years.  Please visit our [funding acknowledgements page](/about/funding) for more information.
