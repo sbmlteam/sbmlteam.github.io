@@ -159,38 +159,88 @@ The following is an attempt to credit everyone (other than the SBML Team) who ha
 
 The SBML effort has benefitted multiple times from [Google Summer of Code](https://developers.google.com/open-source/gsoc/) and [NRNB Academy](http://nrnb.org/gsoc.html).
 
-### Google Summer of Code 2019
 
 ### Google Summer of Code 2018
 
-In 2018, we were fortunate to have a project involving SBML.
+In 2018, we were fortunate to have another project involving SBML.
 
-| Person(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   | Organization         | Topic                                                                                             | Project blog                             |
-| ----------- | -------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| Shalin Shah | Duke University, USA | [Simulating systems biology models in Java](https://github.com/nrnb/GoogleSummerOfCode/issues/96) | [Blog](https://ssdoesgsoc.wordpress.com) |
+{{% gsoc-table %}}
+  {{< gsoc-project
+      name="Shalin Shah"
+      org="Duke University, USA"
+      title="Simulating systems biology models in Java"
+      link="https://github.com/nrnb/GoogleSummerOfCode/issues/96"
+      blog="https://ssdoesgsoc.wordpress.com" 
+  >}}
+{{% /gsoc-table %}}
+
 
 ### Google Summer of Code 2017
 
 In 2017, we were fortunate to have 2 projects involving SBML. They are
 listed below in alphabetical order by student's last name.
 
-| Person(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       | Organization                          | Topic                                                                                                                                                         | Project blog                                          |
-| --------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| Takahiro Yamada | Keio University, Japan                | [Web App for SBML Model Analysis](https://github.com/TakahiroYamada/GSOC2017_SBMLModelAnalysisWebApp)                                                         | [Blog](http://gsoc2017developwebservice.blogspot.com) |
-| Haoran Yu       | Universit of British Columbia, Canada | [Interconversion of the SBML and SBGN Modelling Languages using Semantics of Logic](https://github.com/NRNB-GSoC2017-SBML2SBGNML-Converters/SBML2SBGNML/wiki) | [Blog](https://haleyyew-gsoc.blogspot.co.uk)          |
+{{% gsoc-table %}}
+  {{< gsoc-project
+      name="Takahiro Yamada"
+      org="Keio University, Japan"
+      title="Web App for SBML Model Analysis"
+      link="https://github.com/TakahiroYamada/GSOC2017_SBMLModelAnalysisWebApp"
+      blog="http://gsoc2017developwebservice.blogspot.com"
+  >}}
+  {{< gsoc-project
+      name="Haoran Yu"
+      org="University of British Columbia, Canada"
+      title="Interconversion of the SBML and SBGN Modelling Languages using Semantics of Logic"
+      link="https://github.com/NRNB-GSoC2017-SBML2SBGNML-Converters/SBML2SBGNML/wiki"
+      blog="https://haleyyew-gsoc.blogspot.co.uk" 
+  >}}
+{{% /gsoc-table %}}
+
 
 ### Google Summer of Code 2016
 
 In 2016, we were fortunate to have 5 projects involving SBML. They are
 listed below in alphabetical order by student's last name.
 
-| Person(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         | Organization                                                                   | Topic                                                                                                                                          | Project blog                                        |
-| ----------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| Hovakim Grabski   | [Russian-Armenian University](http://international.rau.am/eng/), Armenia       | [Java support for Deviser, a code generation system for SBML libraries](https://summerofcode.withgoogle.com/projects/#5747599717957632)        | [Blog](http://hgrabski.blogspot.de)                 |
-| Kaito Li          | [Funahashi Lab](http://fun.bio.keio.ac.jp/), Keio University, Japan            | [Interconvertible Layout program for CellDesigner](https://summerofcode.withgoogle.com/projects/#5659317147533312)                             | [Blog](http://kaitoii.blogspot.jp)                  |
-| Devesh Khandelwal | Cluster Innovation Centre, University of Delhi                                 | [SBGN-ML and SBML to Escher Converter](https://summerofcode.withgoogle.com/projects/#5673997849067520)                                         | [Blog](https://devkhan.github.io/blog/)             |
-| Tramy Nguyen      | [Myers Research Group](http://www.async.ece.utah.edu), University of Utah, USA | [Interconversion between the systems biology modeling formats SBML and BioPAX](https://summerofcode.withgoogle.com/projects/#5292191496798208) | [Blog](http://www.async.ece.utah.edu/~tramyn/gsoc/) |
-| Roman Schulte     | University of Tuebingen, Tübingen, Germany                                     | [JSBML Validation System](https://summerofcode.withgoogle.com/projects/#5218407133741056)                                                      | [Blog](http://romanschulte.blogspot.de)             |
+{{% gsoc-table %}}
+  {{< gsoc-project
+      name="Hovakim Grabski"
+      org="[Russian-Armenian University](http://international.rau.am/eng/), Armenia"
+      title="Java support for Deviser, a code generation system for SBML libraries"
+      link="https://summerofcode.withgoogle.com/projects/#5747599717957632"
+      blog="http://hgrabski.blogspot.de"
+  >}}
+  {{< gsoc-project
+      name="Kaito Li"
+      org="[Funahashi Lab](http://fun.bio.keio.ac.jp/), Keio University, Japan"
+      title="Interconvertible Layout program for CellDesigner"
+      link="https://summerofcode.withgoogle.com/projects/#5659317147533312"
+      blog="http://kaitoii.blogspot.jp" 
+  >}}
+  {{< gsoc-project
+      name="Devesh Khandelwal"
+      org="Cluster Innovation Centre, University of Delhi"
+      title="SBGN-ML and SBML to Escher Converter"
+      link="https://summerofcode.withgoogle.com/projects/#5673997849067520"
+      blog="https://devkhan.github.io/blog/" 
+  >}}
+  {{< gsoc-project
+      name="Tramy Nguyen"
+      org="[Myers Research Group](http://www.async.ece.utah.edu), University of Utah, USA"
+      title="Interconversion between the systems biology modeling formats SBML and BioPAX"
+      link="https://summerofcode.withgoogle.com/projects/#5292191496798208"
+      blog="http://www.async.ece.utah.edu/~tramyn/gsoc/" 
+  >}}
+  {{< gsoc-project
+      name="Roman Schulte"
+      org="University of Tuebingen, Tübingen, Germany"
+      title="JSBML Validation System"
+      link="https://summerofcode.withgoogle.com/projects/#5218407133741056"
+      blog="http://romanschulte.blogspot.de"
+  >}}
+{{% /gsoc-table %}}
+
 
 ### NRNB Academy 2015
 
@@ -199,20 +249,46 @@ runs a year-long program similar to Google Summer of Code, and in 2015,
 we had the privilege of having a student work on an SBML-related project
 under NRNB's auspices.
 
-| Person(s)      | Organization                                                              | Topic                                                                                                            | Project blog                               |
-| -------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| Matthias König | [Charité Universitätsmedizin Berlin](https://www.charite.de/en/), Germany | [Porting cysbml to Cytoscape 3](https://docs.google.com/document/d/1a3t1EWuSqc3AOxtNoxPcZFSZqMPsKSMBLFJIS_P7Q4g) | [GitHub](https://github.com/nrnb/cy3sbml/) |
+{{% gsoc-table %}}
+  {{< gsoc-project
+      name="Matthias König"
+      org="[Charité Universitätsmedizin Berlin](https://www.charite.de/en/), Germany"
+      title="Porting cysbml to Cytoscape 3"
+      link="https://docs.google.com/document/d/1a3t1EWuSqc3AOxtNoxPcZFSZqMPsKSMBLFJIS_P7Q4g"
+      blog="https://github.com/nrnb/cy3sbml/" 
+  >}}
+{{% /gsoc-table %}}
+
 
 ### Google Summer of Code 2014
 
 In 2014, we were fortunate to have 3 SBML-related projects. They are
 listed in alphabetical order by student's last name.
 
-| Person(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            | Organization                                                                   | Topic                                                                                                                                                                                                              | Project blog                                                                      |
-| -------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| Victor Kofia         | [Bader Lab](http://baderlab.org/Members), University of Toronto, Canada        | [Redesign the implementation of mathematical formulas in JSBML](http://co.mbine.org/events/COMBINE_2014/agenda?q=system/files/victor-kofia-gsoc-jsbml-math-package.pdf)                                            | [Blog](http://kofiav.blogspot.ca/search/label/Google%20Summer%20of%20Code%202014) |
-| Ibrahim Y. Vazirabad | [Milwaukee School of Engineering](http://www.msoe.edu/), USA                   | [Improving the plug-in interface for CellDesigner](http://www.slideshare.net/yvazirabad/improving-the-plugin-interface-for-celldesigner-v22?ref=http://jsbmlcelldesigner2014.blogspot.com/2014_05_01_archive.html) | [Blog](http://jsbmlcelldesigner2014.blogspot.com/)                                |
-| Leandro Watanabe     | [Myers Research Group](http://www.async.ece.utah.edu), University of Utah, USA | [Arrays package for JSBML](http://lhwatanabe.blogspot.com/)                                                                                                                                                        | [Blog](http://lhwatanabe.blogspot.com/)                                           |
+{{% gsoc-table %}}
+  {{< gsoc-project
+      name="Victor Kofia"
+      org="[Bader Lab](http://baderlab.org/Members), University of Toronto, Canada"
+      title="Redesign the implementation of mathematical formulas in JSBML"
+      link="http://co.mbine.org/events/COMBINE_2014/agenda?q=system/files/victor-kofia-gsoc-jsbml-math-package.pdf"
+      blog="http://kofiav.blogspot.ca/search/label/Google%20Summer%20of%20Code%202014"
+  >}}
+  {{< gsoc-project
+      name="Ibrahim Y. Vazirabad"
+      org="[Milwaukee School of Engineering](http://www.msoe.edu/), USA"
+      title="Improving the plug-in interface for CellDesigner"
+      link="http://www.slideshare.net/yvazirabad/improving-the-plugin-interface-for-celldesigner-v22?ref=http://jsbmlcelldesigner2014.blogspot.com/2014_05_01_archive.html"
+      blog="http://jsbmlcelldesigner2014.blogspot.com/"
+  >}}
+  {{< gsoc-project
+      name="Leandro Watanabe"
+      org="[Myers Research Group](http://www.async.ece.utah.edu), University of Utah, USA"
+      title="Arrays package for JSBML"
+      link="http://lhwatanabe.blogspot.com/"
+      blog="http://lhwatanabe.blogspot.com"
+  >}}
+{{% /gsoc-table %}}
+
 
 ## SBML-related events
 
