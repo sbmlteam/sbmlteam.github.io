@@ -62,8 +62,8 @@ These reports were generated using [JDiff](http://javadiff.sourceforge.net); the
 The JSBML team uses [Pivotal Tracker](http://pivotaltracker.com) to plan and coordinate development.  This page provides information about the conventions used by the team.
 {{% /blurb %}}
 
-{{% blurb title="Google Summer of Code projects" image="/img/gsoc-logo.svg" link="gsoc" %}}
-For several years, JSBML has been a project in the [Google Summer of Code](https://summerofcode.withgoogle.com).
+{{% blurb title="Google Summer of Code projects" image="/img/gsoc-logo.svg" link="/about/contributors/#summer-of-code-students" %}}
+JSBML has often had developer contributions from the [Google Summer of Code](https://summerofcode.withgoogle.com) and the [NRNB Academy](http://nrnb.org/gsoc.html).  Visit the SBML.org [contributors](/about/contributors/#summer-of-code-students) page for more information about these and other summer projects.
 {{% /blurb %}}
 
 
