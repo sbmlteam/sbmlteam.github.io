@@ -6,7 +6,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< toc >}}
+{{< software-icon width="25%" file="/img/libsbml-logo-and-name.svg" >}}
 
 This page provides information on how to install libSBML, how to use the application programming interface (API), and other information.
 
@@ -26,33 +26,38 @@ If you are unable to find a ready-to-use version of libSBML for your particular 
 
 ## Using libSBML
 
-### API documentation
+LibSBML provides interfaces for a number of programming languages. The following links lead to documentation and example programs.
 
-LibSBML provides interfaces for a number of programming languages.  The following documentation covers a subset of the languages for which there is dedicated API documentation:
+{{% blurb title="LibSBML API documentation" icon="laptop-code" link="api" %}}
+Follow this link to find documentation about many of libSBML's language APIs.
+{{% /blurb %}}
 
-* [C](c-api)
-* [C++](c++-api)
-* [C#](csharp-api)
-* [Java](java-api)
-* [Python](python-api)
-* [MATLAB](matlab-api)
-
-For other languages not listed above, looking at the [C++](c++-api) documentation gives a good sense for what is availble in that language.
-
-### Example programs
-
-* [C](c-examples)
-* [C++](c++-examples)
-* [C#](csharp-examples)
-* [Java](java-examples)
-* [JavaScript](javascript-examples)
-* [Perl](perl-examples)
-* [PHP](php-examples)
-* [Python](python-examples)
-* [R](r-examples)
-* [Rub](ruby-examples)
+{{% blurb title="Example programs" icon="keyboard" link="api" %}}
+Follow this link to find example programs written in different programming languages supported by libSBML.
+{{% /blurb %}}
 
 
-### Known issues
+## Known issues
 
-A [separate page](http://sbml.org/Software/libSBML/5.18.0/docs/cpp-api/libsbml-issues.html) describes a number of known issues in libSBML and potential interactions with operating environments.
+We try to inform users of potential interactions and known problems.  Please let us know of any we missed by reporting them using the tracker.
+
+{{% blurb title="Known limitations and pitfalls" icon="exclamation-circle" link="known-pitfalls" %}}
+This page describes a number of known problems in libSBML and potential interactions with operating environments.
+{{% /blurb %}}
+
+{{% blurb title="Issue tracker" icon="bug" link="https://sourceforge.net/p/sbml/libsbml/" %}}
+The bug and issue tracker for libSBML lists pending issues and lets you report new ones.
+{{% /blurb %}}
+
+
+## Additional information for libSBML developers
+
+The following are resources especially relevant to libSBML developers.
+
+{{% blurb title="Software repository for libSBML" image="/img/sourceforge-logo.png" link="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/" %}}
+This link takes you to the repository for libSBML in SourceForge.
+{{% /blurb %}}
+
+{{% blurb title="Pivotal Tracker and libSBML" image="/img/pivotaltracker-logo.svg" link="pivotal-tracker" %}}
+The libSBML team uses [Pivotal Tracker](http://pivotaltracker.com) to plan and coordinate development.  This page provides information about the conventions used by the team.
+{{% /blurb %}}
