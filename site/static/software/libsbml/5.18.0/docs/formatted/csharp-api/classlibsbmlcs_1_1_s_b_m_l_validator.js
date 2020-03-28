@@ -1,0 +1,25 @@
+var classlibsbmlcs_1_1_s_b_m_l_validator =
+[
+    [ "SBMLValidator", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a2dcbf0ef23f0897a24daeda2733e55ca", null ],
+    [ "SBMLValidator", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a5a831c35c872805f270d59d656c8b157", null ],
+    [ "clearFailures", "classlibsbmlcs_1_1_s_b_m_l_validator.html#ae89811cf2c3fa0f601ec4b4243b1624a", null ],
+    [ "clone", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a7b1b5dd3165979b6ba75ada5b2efef21", null ],
+    [ "Dispose", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a444aba3cfc700fc8305f3d511b76ebf9", null ],
+    [ "getDocument", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a9962ccf2562e4075942e450b2760ade7", null ],
+    [ "getErrorLog", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a0b4c2592c610f991244a4f7316127389", null ],
+    [ "getFailure", "classlibsbmlcs_1_1_s_b_m_l_validator.html#adffd8ea98d6b86ff805fdfabdcf8fbc1", null ],
+    [ "getModel", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a90e643baebf069d895ec885ea52775be", null ],
+    [ "getNumFailures", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a01b43a4aa7e5b125e91417f0e27bc637", null ],
+    [ "logFailure", "classlibsbmlcs_1_1_s_b_m_l_validator.html#aed047ee967878a4308f1d67635b4f785", null ],
+    [ "setDocument", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a9a628be54a790e48d99b4556ade32ab1", null ],
+    [ "SwigDelegateSBMLValidator_0", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a74543c7511c8c5b94ec77d1f6847dc43", null ],
+    [ "SwigDelegateSBMLValidator_1", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a28b6bfb08cf21567ad477331a267c94c", null ],
+    [ "SwigDelegateSBMLValidator_2", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a2fdcbd049c22569371ca05fb0bf110e9", null ],
+    [ "SwigDelegateSBMLValidator_3", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a646e5e149e73d0b59c23751954246e60", null ],
+    [ "SwigDelegateSBMLValidator_4", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a3b6ba8dffaa4c98470ea3c3d7287c0bc", null ],
+    [ "SwigDelegateSBMLValidator_5", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a83b8a87493b9835afc2fc02e079dcbde", null ],
+    [ "validate", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a3d76bd39ea4f61956c0e218cfe13f75f", null ],
+    [ "validate", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a6ba76cda076fd7632cd9d659b308ad1e", null ],
+    [ "validate", "classlibsbmlcs_1_1_s_b_m_l_validator.html#a5dee9d784e65ca15b0d8334ee6024017", null ],
+    [ "swigCMemOwn", "classlibsbmlcs_1_1_s_b_m_l_validator.html#abf175f862ba385662340a6ee374c8be5", null ]
+];

@@ -1,0 +1,28 @@
+var classlibsbmlcs_1_1_s_b_m_l_infer_units_converter =
+[
+    [ "SBMLInferUnitsConverter", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a69251221b60861d22362373ca65623e6", null ],
+    [ "SBMLInferUnitsConverter", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a9c4761b964af1f53bfbdc8008551f67d", null ],
+    [ "clone", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#abdec6b294d54dd82cdd6e6ffba30d849", null ],
+    [ "convert", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a31af01c21f5fbe4536af6b22cf53be4a", null ],
+    [ "Dispose", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a3475430dae24a26f7a3b2972fc5fe3c0", null ],
+    [ "getDefaultProperties", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a8088846def9c32ce654b58414b53e369", null ],
+    [ "getDocument", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a75a2da36ec809617e3155be5ae1f2ff2", null ],
+    [ "getName", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a8d4e091e7686809bbb9b00c168092fb0", null ],
+    [ "getProperties", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#ac2d5d83ca324bd320a63534207cb4279", null ],
+    [ "getTargetNamespaces", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a121f8b69c6b06f296bc61167432791ce", null ],
+    [ "init", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#ae1bf43a6e77aaf6c87d52706148ba7cc", null ],
+    [ "matchesProperties", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a770d619f3ee60d70ca958cb2b34c65e2", null ],
+    [ "setDocument", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a7114a2d4210cb9e05598b5ba13f04a26", null ],
+    [ "setProperties", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a011ca864bd79ba3ac87002ef04d4f4d1", null ],
+    [ "SwigDelegateSBMLConverter_0", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a9996ee699d84626643e010fb93919d0e", null ],
+    [ "SwigDelegateSBMLConverter_1", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a776c6d0913c7fdc83d6707bd0b7e5d46", null ],
+    [ "SwigDelegateSBMLConverter_2", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a2f3c1240c897f0b7d237262d6752f03a", null ],
+    [ "SwigDelegateSBMLConverter_3", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#ae1f05763a7ab566458dafe9c03ffc6d4", null ],
+    [ "SwigDelegateSBMLConverter_4", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#ab30f28090100c20aee0b19eda157f194", null ],
+    [ "SwigDelegateSBMLConverter_5", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a6416a56fd6a6b9b3f2f1aba98d7ea34d", null ],
+    [ "SwigDelegateSBMLConverter_6", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#ad6e5fa41118f70a9a7eebbb31a412be0", null ],
+    [ "SwigDelegateSBMLConverter_7", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a28802585ff3b13ea2346839d35ae16c9", null ],
+    [ "SwigDelegateSBMLConverter_8", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#afd87af0102413c0b872574d34ac21ddb", null ],
+    [ "SwigDelegateSBMLConverter_9", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a950c8fdd91eb449bca97136f72efa677", null ],
+    [ "swigCMemOwn", "classlibsbmlcs_1_1_s_b_m_l_infer_units_converter.html#a768fe07f44d270082be29837c693a554", null ]
+];

@@ -1,0 +1,28 @@
+var class_s_b_m_l_error =
+[
+    [ "SBMLError", "class_s_b_m_l_error.html#aee0d57e09febc3d90146dfee7b11f07b", null ],
+    [ "SBMLError", "class_s_b_m_l_error.html#a0818e804ac25159012b92ad06b7db6bc", null ],
+    [ "~SBMLError", "class_s_b_m_l_error.html#a78ae94515a5a03397dbc77095edb9207", null ],
+    [ "getCategory", "class_s_b_m_l_error.html#a9d8d2c9bef75c5d4847824d7ab452ce4", null ],
+    [ "getCategoryAsString", "class_s_b_m_l_error.html#af9ab42130bc9edd371c27ba132f0e5da", null ],
+    [ "getColumn", "class_s_b_m_l_error.html#a4902146e7cc461c2e9ec8be5475a0139", null ],
+    [ "getErrorId", "class_s_b_m_l_error.html#a701ccc44d7e8a816dee2233a9e272216", null ],
+    [ "getErrorIdOffset", "class_s_b_m_l_error.html#a4a3d9d6b1638433c332493b63560607c", null ],
+    [ "getLine", "class_s_b_m_l_error.html#a778bd5f111904ba8bb9babc10bf3c38d", null ],
+    [ "getMessage", "class_s_b_m_l_error.html#a1b97c7f995ef4d685569ead0bc23dce2", null ],
+    [ "getPackage", "class_s_b_m_l_error.html#aaeddb0fa1251b13662f6dd1a4e6d2e37", null ],
+    [ "getSeverity", "class_s_b_m_l_error.html#a99b09bcccba7c1ba4440e4ea7eaa47f0", null ],
+    [ "getSeverityAsString", "class_s_b_m_l_error.html#ad42cc372d49b1921ed5d43215f8902c0", null ],
+    [ "getShortMessage", "class_s_b_m_l_error.html#a4e4746f34a84f912a2e5f10908c8f8c0", null ],
+    [ "getStandardMessage", "class_s_b_m_l_error.html#a995bbe26e213e0c6ff3369adae026a40", null ],
+    [ "isError", "class_s_b_m_l_error.html#af5a843a83aff4b2193ac56cceda8c23a", null ],
+    [ "isFatal", "class_s_b_m_l_error.html#a71f62f317005bd553ad26f661267edea", null ],
+    [ "isInfo", "class_s_b_m_l_error.html#a0e32dea9e70ce29b1320a38a6a4050f0", null ],
+    [ "isInternal", "class_s_b_m_l_error.html#ad2ed8eafc993bb2fd85f5618f1be592b", null ],
+    [ "isSystem", "class_s_b_m_l_error.html#a83111218dfe1dc7f994ac69a8badc94e", null ],
+    [ "isValid", "class_s_b_m_l_error.html#aff178f25df28eabb658cc77fbfd48a5b", null ],
+    [ "isWarning", "class_s_b_m_l_error.html#a3f2f08469b3371057f7a5cb58312ee42", null ],
+    [ "isXML", "class_s_b_m_l_error.html#a3a77f81c48658167d35a20851820f244", null ],
+    [ "setColumn", "class_s_b_m_l_error.html#a40917308c5128b7ff949da8411e2677f", null ],
+    [ "setLine", "class_s_b_m_l_error.html#af3a82d0d6366371eacdfa35aa13a8949", null ]
+];

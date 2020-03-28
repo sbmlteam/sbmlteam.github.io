@@ -1,0 +1,28 @@
+var classlibsbml_1_1_render_extension =
+[
+    [ "__init__", "classlibsbml_1_1_render_extension.html#aa0c847c845781686b0907278ff22bfea", null ],
+    [ "addL2Namespaces", "classlibsbml_1_1_render_extension.html#af09ad08fe0049aad38f16adda5b523d8", null ],
+    [ "clone", "classlibsbml_1_1_render_extension.html#ad443a71eef313f95381c80b6dc010d3d", null ],
+    [ "enableL2NamespaceForDocument", "classlibsbml_1_1_render_extension.html#a815413f88838a3e5169dd11f255442c0", null ],
+    [ "getDefaultLevel", "classlibsbml_1_1_render_extension.html#a9690ec26635198c9860e86f270df81db", null ],
+    [ "getDefaultPackageVersion", "classlibsbml_1_1_render_extension.html#a37348b3128972cb2d2bbe5321430ff58", null ],
+    [ "getDefaultVersion", "classlibsbml_1_1_render_extension.html#aa5330da62897ae007f5c2c49bce942ff", null ],
+    [ "getLevel", "classlibsbml_1_1_render_extension.html#ac0553f10d56c1864d15f9e8123d28b95", null ],
+    [ "getName", "classlibsbml_1_1_render_extension.html#ac1673137e612f34433d241601996ce53", null ],
+    [ "getNumOfSBasePlugins", "classlibsbml_1_1_render_extension.html#a0bc37866436f792469e69b385d6c9171", null ],
+    [ "getNumOfSupportedPackageURI", "classlibsbml_1_1_render_extension.html#ae55be2508772c6f7c4a79ac35067ef5b", null ],
+    [ "getPackageName", "classlibsbml_1_1_render_extension.html#aad87c622af9ea561f64e906edeef5e68", null ],
+    [ "getPackageVersion", "classlibsbml_1_1_render_extension.html#a23798489fc208868de9dfceb818f2fdf", null ],
+    [ "getSBMLExtensionNamespaces", "classlibsbml_1_1_render_extension.html#a403720b01702fbfbb8f5d7d0413294ca", null ],
+    [ "getStringFromTypeCode", "classlibsbml_1_1_render_extension.html#a3629396e2584b07d8054ad92bc68783b", null ],
+    [ "getSupportedPackageURI", "classlibsbml_1_1_render_extension.html#afa01ba96bc8eeda37c97cc31c0d12d9c", null ],
+    [ "getURI", "classlibsbml_1_1_render_extension.html#a0836b1c9ee369cf1b7f9184effd856e0", null ],
+    [ "getVersion", "classlibsbml_1_1_render_extension.html#a75cc3ecb04870663cf3271f1145ff7fd", null ],
+    [ "getXmlnsL2", "classlibsbml_1_1_render_extension.html#a672f76bd9a3ada04c8795981abfa0415", null ],
+    [ "getXmlnsL3V1V1", "classlibsbml_1_1_render_extension.html#a8f92b7d383452a4c8d9b14a97435df02", null ],
+    [ "isEnabled", "classlibsbml_1_1_render_extension.html#a334e54c9bea7469b7765bffff74a9f91", null ],
+    [ "isInUse", "classlibsbml_1_1_render_extension.html#a2ee8e01ec5835caef8aeb9b8151cf175", null ],
+    [ "isSupported", "classlibsbml_1_1_render_extension.html#a4122916f55ce9f60a562830ae15a9a11", null ],
+    [ "removeL2Namespaces", "classlibsbml_1_1_render_extension.html#aacdb453de897ee3966a1c62681e4ea2c", null ],
+    [ "setEnabled", "classlibsbml_1_1_render_extension.html#a196bc710f278b88fd578f1095fd26e5f", null ]
+];

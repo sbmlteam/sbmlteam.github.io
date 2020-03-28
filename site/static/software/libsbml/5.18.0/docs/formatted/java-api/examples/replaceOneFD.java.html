@@ -1,0 +1,321 @@
+<html>
+<HEAD>
+
+<TITLE>
+LibSBML replaceOneFD.java
+</TITLE>
+
+<META NAME="keywords" CONTENT="replaceOneFD.java, libSBML 5.18.0 Java API Reference">
+
+<link rel="stylesheet" type="text/css" href="../prettify.css">
+<script src="../prettify.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../libsbml-javadoc-stylesheet.css">
+
+<script src="../sbml.js"></script>
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="LibSBML replaceOneFD.java";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle(); prettyPrint();">
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../org/sbml/libsbml/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Use</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../org/sbml/libsbml/package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>libSBML<BR>5.18.0</B></EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?overview-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="../overview-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<script type="text/javascript" src="../sbml.js"></script><SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<hr>
+<center>
+<h1 style="padding-top: 0.5em">LibSBML replaceOneFD.java</h1>
+</center>
+
+<pre class="fragment prettyprint"><code class="language-java">
+
+/**
+ * @file    replaceOneFD.java
+ * @brief   replaces a given function definition in a specific part of the model
+ * @author  Frank Bergmann
+ *
+ * <!--------------------------------------------------------------------------
+ * This sample program is distributed under a different license than the rest
+ * of libSBML.  This program uses the open-source MIT license, as follows:
+ *
+ * Copyright (c) 2013-2018 by the California Institute of Technology
+ * (California, USA), the European Bioinformatics Institute (EMBL-EBI, UK)
+ * and the University of Heidelberg (Germany), with support from the National
+ * Institutes of Health (USA) under grant R01GM070923.  All rights reserved.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a
+ * copy of this software and associated documentation files (the "Software"),
+ * to deal in the Software without restriction, including without limitation
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ * and/or sell copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ * THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ *
+ * Neither the name of the California Institute of Technology (Caltech), nor
+ * of the European Bioinformatics Institute (EMBL-EBI), nor of the University
+ * of Heidelberg, nor the names of any contributors, may be used to endorse
+ * or promote products derived from this software without specific prior
+ * written permission.
+ * ------------------------------------------------------------------------ -->
+ */
+
+import java.lang.*;
+import java.io.*;
+import org.sbml.libsbml.*;
+
+/**
+ * This example is not something you would normally do, what you would want to do is to 
+ * call the inline function definition converter. However, if for example you would only 
+ * want to expand one function definition, you could use the methods in SBMLTransform 
+ * directly. 
+ */
+class replaceOneFD
+{
+  public static void main(String[] args)
+  {
+    if (args.length != 4)
+    {
+      System.out.println("Usage: replaceOneFD filename functionDefinitionId reactionId outfile");
+      System.exit(1);
+    }
+
+    String filename = args[0];
+    String outFile = args[3];
+    String functionDefinitionId = args[1];
+    String reactionId = args[2];
+    SBMLDocument document = libsbml.readSBML(filename);
+
+    if (document.getNumErrors(libsbml.LIBSBML_SEV_ERROR)  > 0)
+    {
+      System.out.println("The models contains errors, please correct them before continuing.");
+      document.printErrors();
+      System.exit(1);
+    }
+
+    Model model = document.getModel();
+    FunctionDefinition functionDefinition = model.getFunctionDefinition(functionDefinitionId);
+    if (functionDefinition == null)
+    {
+      System.out.println();
+      System.out.println("No functiondefinition with the given id can be found.");
+      System.exit(1);
+    }
+
+    Reaction reaction = model.getReaction(reactionId);
+    if (reaction == null)
+    {
+      System.out.println();
+      System.out.println("No reaction with the given id can be found.");
+      System.exit(1);
+    }
+
+    if (!reaction.isSetKineticLaw() || !reaction.getKineticLaw().isSetMath())
+    {
+      System.out.println();
+      System.out.println("The reaction has no math set. ");
+      System.exit(1);
+    }
+
+    // Until here it was all setup, all we needed was an ASTNode, in which we wanted to 
+    // replace calls to a function definition, with the function definitions content. 
+    //
+    SBMLTransforms.replaceFD(reaction.getKineticLaw().getMath(), functionDefinition);
+
+    // finally write to file
+    libsbml.writeSBML(document, outFile);
+
+  }
+
+  /**
+   * Loads the SWIG-generated libSBML Java module when this class is
+   * loaded, or reports a sensible diagnostic message about why it failed.
+   */
+  static
+  {
+    try
+    {
+      System.loadLibrary("sbmlj");
+      // For extra safety, check that the jar file is in the classpath.
+      Class.forName("org.sbml.libsbml.libsbml");
+    }
+    catch (UnsatisfiedLinkError e)
+    {
+      System.err.println("Error encountered while attempting to load libSBML:");
+      System.err.println("Please check the value of your "
+                         + (System.getProperty("os.name").startsWith("Mac OS")
+                            ? "DYLD_LIBRARY_PATH" : "LD_LIBRARY_PATH") +
+                         " environment variable and/or your" +
+                         " 'java.library.path' system property (depending on" +
+                         " which one you are using) to make sure it list the" +
+                         " directories needed to find the " +
+                         System.mapLibraryName("sbmlj") + " library file and" +
+                         " libraries it depends upon (e.g., the XML parser).");
+      System.exit(1);
+    }
+    catch (ClassNotFoundException e)
+    {
+      System.err.println("Error: unable to load the file 'libsbmlj.jar'." +
+                         " It is likely that your -classpath command line " +
+                         " setting or your CLASSPATH environment variable " +
+                         " do not include the file 'libsbmlj.jar'.");
+      e.printStackTrace();
+
+      System.exit(1);
+    }
+    catch (SecurityException e)
+    {
+      System.err.println("Error encountered while attempting to load libSBML:");
+      e.printStackTrace();
+      System.err.println("Could not load the libSBML library files due to a"+
+                         " security exception.\n");
+      System.exit(1);
+    }
+  }
+}
+</code></pre>
+
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../org/sbml/libsbml/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Use</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../org/sbml/libsbml/package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>libSBML<BR>5.18.0</B></EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?overview-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="../overview-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<script src="../sbml.js"></script><SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+<br>
+
+<address>
+<span class="footer">
+
+  LibSBML, an application programming interface (API) library for SBML.
+  <br><br>
+
+  <table cellpadding="0" cellspacing="0" border="0" bgcolor="white">
+    <tr>
+      <td valign="top">
+        <a href="http://www.sbml.org/">
+          <img src="../official-sbml-supported-70.png" width="80px" height="35px" hspace="10" border="0">
+        </a>
+      </td>
+      <td valign="top" class="footer" align="left">
+        <b>SBML Team</b><br>
+        <a href="http://www.sbml.org/">http://www.sbml.org/</a><br>
+        <a href="mailto:sbml-team@googlegroups.com">sbml-team@googlegroups.com</a><br><br>
+     </td>
+    </tr>
+  </table>
+  <br>
+
+</span>
+</address>

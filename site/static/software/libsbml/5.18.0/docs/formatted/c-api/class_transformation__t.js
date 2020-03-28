@@ -1,0 +1,28 @@
+var class_transformation__t =
+[
+    [ "Transformation_clone", "class_transformation__t.html#a17ad18f0d118be04518fe755a19e87d9", null ],
+    [ "Transformation_createEllipse", "class_transformation__t.html#a2586ed3b27642bd28688e0d22b2aa3ae", null ],
+    [ "Transformation_createImage", "class_transformation__t.html#afea38380e0e6e048af846b0b4adea92f", null ],
+    [ "Transformation_createLineEnding", "class_transformation__t.html#a4001ecccac857c00ac4f9a6c5c53739b", null ],
+    [ "Transformation_createPolygon", "class_transformation__t.html#ad3cc6a61aae6418a2c1071ea6262f545", null ],
+    [ "Transformation_createRectangle", "class_transformation__t.html#a59d743946e2eb490c32e5b2456cd5714", null ],
+    [ "Transformation_createRenderCurve", "class_transformation__t.html#ab686192fc799b53f739a5c1d5371cc0e", null ],
+    [ "Transformation_createRenderGroup", "class_transformation__t.html#ab0fe94a49ed662d55a11be32e9b52cfd", null ],
+    [ "Transformation_createText", "class_transformation__t.html#a5f8b11313d84157ba2247886f1229bc2", null ],
+    [ "Transformation_free", "class_transformation__t.html#ac7ea58db7f4e68e2d625e76c011e0f8e", null ],
+    [ "Transformation_getName", "class_transformation__t.html#a6c768901b1660cd587d61adc7545fbea", null ],
+    [ "Transformation_hasRequiredAttributes", "class_transformation__t.html#aefd51da166a543302d3382799c443944", null ],
+    [ "Transformation_isEllipse", "class_transformation__t.html#a8e991058ae8c824f0d09fb6960f307ba", null ],
+    [ "Transformation_isImage", "class_transformation__t.html#a1c65468bc5e9593798303b39ca991544", null ],
+    [ "Transformation_isLineEnding", "class_transformation__t.html#a9c82fea80ea9945ce39b66339121e2a0", null ],
+    [ "Transformation_isPolygon", "class_transformation__t.html#a1ec195af07116c8139157bcc7188e67b", null ],
+    [ "Transformation_isRectangle", "class_transformation__t.html#af252d5d3ab6c4739deac0d910dc196db", null ],
+    [ "Transformation_isRenderCurve", "class_transformation__t.html#aa3701a0098602640a240cb98c1c8b1d9", null ],
+    [ "Transformation_isRenderGroup", "class_transformation__t.html#a22fc65ae75b3db042b34c8861a7416ac", null ],
+    [ "Transformation_isSetName", "class_transformation__t.html#aab645010bbcd39a1a105280e478e9446", null ],
+    [ "Transformation_isSetTranform", "class_transformation__t.html#af149d7cfb9a449b54b9096a4dc2cf9bf", null ],
+    [ "Transformation_isText", "class_transformation__t.html#a6045c3e85467ed78324490d714f61387", null ],
+    [ "Transformation_setName", "class_transformation__t.html#a6fa2a79c9cab48b18b70f2037ab851cb", null ],
+    [ "Transformation_setTransform", "class_transformation__t.html#a4c30407ffae6aa888da4ad3e83051fd9", null ],
+    [ "Transformation_unsetName", "class_transformation__t.html#a9fedc4c3a1c095a056123315eb35c913", null ]
+];

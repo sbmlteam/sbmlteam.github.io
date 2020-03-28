@@ -1,0 +1,25 @@
+var class_s_base_plugin =
+[
+    [ "~SBasePlugin", "class_s_base_plugin.html#ab57f4114051b85db99c80597ebc57094", null ],
+    [ "clone", "class_s_base_plugin.html#a93f4b50c12813413be22db927b6d856a", null ],
+    [ "getAllElements", "class_s_base_plugin.html#ac06fe5377358500d4341f62b8b962835", null ],
+    [ "getElementByMetaId", "class_s_base_plugin.html#a5f80963d1f7110a07092e33b44a470ed", null ],
+    [ "getElementBySId", "class_s_base_plugin.html#a6712bfb4148805bac5d5914137be77d4", null ],
+    [ "getElementNamespace", "class_s_base_plugin.html#a57b5136e518e69d02124107291805896", null ],
+    [ "getLevel", "class_s_base_plugin.html#a2485145d5e4df65126eea4c1601c1ac5", null ],
+    [ "getPackageName", "class_s_base_plugin.html#a4336e6ff5d05641cc26a94d3db25dd07", null ],
+    [ "getPackageVersion", "class_s_base_plugin.html#a1fc2646652e7e752913bd47c400a4db4", null ],
+    [ "getParentSBMLObject", "class_s_base_plugin.html#afcf597ffa54ffed41a57a1feee7a9241", null ],
+    [ "getParentSBMLObject", "class_s_base_plugin.html#a57446458a03ff349205912c227f1f40e", null ],
+    [ "getPrefix", "class_s_base_plugin.html#a74831e74d8067b19e39783c59d09b87d", null ],
+    [ "getSBMLDocument", "class_s_base_plugin.html#a59581825576a6216ab07beceb709da81", null ],
+    [ "getSBMLDocument", "class_s_base_plugin.html#a3640e1d5329e59df598385c8a9cbc184", null ],
+    [ "getURI", "class_s_base_plugin.html#a8c31cb3a9accd31863ed3b51bc4598f5", null ],
+    [ "getVersion", "class_s_base_plugin.html#a120d462f23ede7981c191bbf85535005", null ],
+    [ "isValidTypeForList", "class_s_base_plugin.html#a0081b32259d2c78337524df924a55e88", null ],
+    [ "operator=", "class_s_base_plugin.html#afaa76c2fdca3d3760d4630038a8be84c", null ],
+    [ "renameMetaIdRefs", "class_s_base_plugin.html#a8a95d2c1e8f73cd2f44954f9bf77ddb1", null ],
+    [ "renameSIdRefs", "class_s_base_plugin.html#a75f7b44692ca306279aa1ae452fcb8c3", null ],
+    [ "renameUnitSIdRefs", "class_s_base_plugin.html#a20f21bc972f3ee724924adf058e0e9a3", null ],
+    [ "setElementNamespace", "class_s_base_plugin.html#a70257de82da9ea894348f1d601395e83", null ]
+];

@@ -1,0 +1,181 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_s_base.html" title=" SBML&#39;s SBase class, base class of most SBML objects. " alt="" coords="5,2387,67,2413"/>
+<area shape="rect" id="node2" href="$class_association.html" title=" Annotation helper class for “fbc” Version 1. " alt="" coords="172,740,263,767"/>
+<area shape="rect" id="node3" href="$class_bounding_box.html" title=" A bounding box for an item in a diagram. " alt="" coords="167,791,268,817"/>
+<area shape="rect" id="node4" href="$class_color_definition.html" title=" Definition of an identifier for an RGBA color value. " alt="" coords="163,841,272,868"/>
+<area shape="rect" id="node5" href="$class_compartment.html" title=" An SBML compartment, where species are located. " alt="" coords="166,892,269,919"/>
+<area shape="rect" id="node6" href="$class_compartment_reference.html" title=" Child of a Compartment that references a different Compartment. " alt="" coords="135,943,299,969"/>
+<area shape="rect" id="node7" href="$class_compartment_type.html" title=" A compartment type in SBML Level 2. " alt="" coords="151,993,283,1020"/>
+<area shape="rect" id="node8" href="$class_comp_base.html" title=" Convenience class for SBase&#45;derived classes. " alt="" coords="173,1044,261,1071"/>
+<area shape="rect" id="node17" href="$class_constraint.html" title=" An SBML constraint, for stating validity assumptions. " alt="" coords="176,1095,259,1121"/>
+<area shape="rect" id="node18" href="$class_curve.html" title=" A curve connecting elements in a diagram. " alt="" coords="189,1145,246,1172"/>
+<area shape="rect" id="node19" href="$class_default_term.html" title=" The default result of a Transition. " alt="" coords="169,1196,265,1223"/>
+<area shape="rect" id="node20" href="$class_default_values.html" title=" Encoding of default values. " alt="" coords="165,1247,270,1273"/>
+<area shape="rect" id="node21" href="$class_delay.html" title=" A delay on the time of execution of an SBML event. " alt="" coords="189,1297,245,1324"/>
+<area shape="rect" id="node22" href="$class_dimensions.html" title=" Spatial dimensions of a 2D or 3D shape. " alt="" coords="171,1348,263,1375"/>
+<area shape="rect" id="node23" href="$class_event.html" title=" A discontinuous SBML event. " alt="" coords="189,1399,245,1425"/>
+<area shape="rect" id="node24" href="$class_event_assignment.html" title=" An assignment to a variable by an SBML event. " alt="" coords="155,1449,280,1476"/>
+<area shape="rect" id="node25" href="$class_fbc_association.html" title=" Base class for FbcAnd, FbcOr, and GeneProductRef " alt="" coords="161,1500,273,1527"/>
+<area shape="rect" id="node29" href="$class_flux_bound.html" title=" Max or min value for a reaction flux. " alt="" coords="175,1551,260,1577"/>
+<area shape="rect" id="node30" href="$class_flux_objective.html" title=" An objective function for a flux. " alt="" coords="166,1601,269,1628"/>
+<area shape="rect" id="node31" href="$class_function_definition.html" title=" A user&#45;defined function in an SBML model. " alt="" coords="153,1652,282,1679"/>
+<area shape="rect" id="node32" href="$class_function_term.html" title=" A function term. " alt="" coords="165,1703,269,1729"/>
+<area shape="rect" id="node33" href="$class_gene_association.html" title=" Annotation helper class for “fbc” Version 1. " alt="" coords="156,1753,279,1780"/>
+<area shape="rect" id="node34" href="$class_gene_product.html" title=" Association of a gene product with a Reaction " alt="" coords="167,1804,267,1831"/>
+<area shape="rect" id="node35" href="$class_gene_product_association.html" title=" Association between gene products and reactions " alt="" coords="133,1855,302,1881"/>
+<area shape="rect" id="node36" href="$class_gradient_base.html" title=" Abstract base class for linear and radial gradients. " alt="" coords="165,1905,269,1932"/>
+<area shape="rect" id="node39" href="$class_gradient_stop.html" title=" A color at a certain location in a color gradient. " alt="" coords="167,1956,267,1983"/>
+<area shape="rect" id="node40" href="$class_graphical_object.html" title=" Base class of objects that store layouts. " alt="" coords="159,2007,276,2033"/>
+<area shape="rect" id="node48" href="$class_group.html" title=" Representation of a group of SBML components. " alt="" coords="188,2057,247,2084"/>
+<area shape="rect" id="node49" href="$class_initial_assignment.html" title=" An SBML initial assignment, evaluated once only. " alt="" coords="156,2108,279,2135"/>
+<area shape="rect" id="node50" href="$class_input.html" title=" The input to a QualitativeSpecies. " alt="" coords="191,2159,243,2185"/>
+<area shape="rect" id="node51" href="$class_in_species_type_bond.html" title=" Defines a bond within a MultiSpeciesType. " alt="" coords="147,2209,288,2236"/>
+<area shape="rect" id="node52" href="$class_kinetic_law.html" title=" The rate expression for an SBML reaction. " alt="" coords="174,2260,261,2287"/>
+<area shape="rect" id="node53" href="$class_layout.html" title=" The layout of a diagram of an SBML model. " alt="" coords="186,2311,249,2337"/>
+<area shape="rect" id="node54" href="$class_line_segment.html" title=" Representation of a line. " alt="" coords="167,2361,267,2388"/>
+<area shape="rect" id="node56" href="$class_list_of.html" title=" Parent class for libSBML&#39;s &quot;ListOfXYZ&quot; classes. " alt="" coords="189,2412,246,2439"/>
+<area shape="rect" id="node123" href="$class_member.html" title=" The Member class defines what objects are parts of a Group. " alt="" coords="182,2463,253,2489"/>
+<area shape="rect" id="node124" href="$class_model.html" title=" An SBML model. " alt="" coords="188,2513,247,2540"/>
+<area shape="rect" id="node126" href="$class_multi_species_type.html" title=" A type of Species in SBML Level 3 &quot;multi&quot; " alt="" coords="154,2564,281,2591"/>
+<area shape="rect" id="node128" href="$class_objective.html" title=" An objective function. " alt="" coords="179,2615,256,2641"/>
+<area shape="rect" id="node129" href="$class_output.html" title=" The output from a QualitativeSpecies. " alt="" coords="186,2665,249,2692"/>
+<area shape="rect" id="node130" href="$class_outward_binding_site.html" title=" Defines a outward&#45;facing binding site for a MultiSpeciesType. " alt="" coords="147,2716,287,2743"/>
+<area shape="rect" id="node131" href="$class_parameter.html" title=" An SBML parameter: a named symbol with a value. " alt="" coords="175,2767,259,2793"/>
+<area shape="rect" id="node133" href="$class_point.html" title=" Representation of a point. " alt="" coords="191,2817,243,2844"/>
+<area shape="rect" id="node134" href="$class_possible_species_feature_value.html" title=" Defines one value of a SpeciesFeature. " alt="" coords="117,2868,317,2895"/>
+<area shape="rect" id="node135" href="$class_priority.html" title=" The priority of execution of an SBML event. " alt="" coords="185,2919,249,2945"/>
+<area shape="rect" id="node136" href="$class_qualitative_species.html" title=" Extension of Species. " alt="" coords="151,2969,283,2996"/>
+<area shape="rect" id="node137" href="$class_reaction.html" title=" An SBML reaction between species in an SBML model. " alt="" coords="180,3020,255,3047"/>
+<area shape="rect" id="node139" href="$class_render_information_base.html" title=" Abstract base class for local and global rendering information. " alt="" coords="136,3071,299,3097"/>
+<area shape="rect" id="node142" href="$class_render_point.html" title=" A point with both absolute and relative values " alt="" coords="169,3121,265,3148"/>
+<area shape="rect" id="node144" href="$class_rule.html" title=" Parent class for SBML rules in libSBML. " alt="" coords="193,3172,242,3199"/>
+<area shape="rect" id="node148" href="$class_s_b_m_l_document.html" title=" Overall SBML container object. " alt="" coords="158,3223,277,3249"/>
+<area shape="rect" id="node149" href="$class_simple_species_reference.html" title=" Abstract class for references to species in reactions. " alt="" coords="131,3273,303,3300"/>
+<area shape="rect" id="node152" href="$class_species.html" title=" An SBML species – a pool of entities. " alt="" coords="183,3324,252,3351"/>
+<area shape="rect" id="node153" href="$class_species_feature.html" title=" Defines a feature of a multi Species. " alt="" coords="159,3375,275,3401"/>
+<area shape="rect" id="node154" href="$class_species_feature_type.html" title=" Defines a template for referencing SpeciesFeature objects. " alt="" coords="145,3425,290,3452"/>
+<area shape="rect" id="node155" href="$class_species_feature_value.html" title=" Defines a particular value for a SpeciesFeature. " alt="" coords="143,3476,292,3503"/>
+<area shape="rect" id="node156" href="$class_species_type.html" title=" A species type in SBML Level 2. " alt="" coords="168,3527,267,3553"/>
+<area shape="rect" id="node157" href="$class_species_type_component_index.html" title=" Identifies a component within a MultiSpeciesType. " alt="" coords="117,3577,317,3604"/>
+<area shape="rect" id="node158" href="$class_species_type_component_map_in_product.html" title=" Distinguishes between components in reactants versus products. " alt="" coords="115,3629,320,3670"/>
+<area shape="rect" id="node159" href="$class_species_type_instance.html" title=" Allows construction of structured MultiSpeciesType objects. " alt="" coords="143,3695,292,3721"/>
+<area shape="rect" id="node160" href="$class_stoichiometry_math.html" title=" Stochiometry expressions in SBML Level 2 reactions. " alt="" coords="151,3745,283,3772"/>
+<area shape="rect" id="node161" href="$class_style.html" title=" Abstract base class for local and global styles. " alt="" coords="191,3796,243,3823"/>
+<area shape="rect" id="node164" href="$class_transformation.html" title=" Implementation of a 3D transformation matrix. " alt="" coords="161,3847,273,3873"/>
+<area shape="rect" id="node176" href="$class_transition.html" title=" A transition of a QualitativeSpecies. " alt="" coords="177,3897,257,3924"/>
+<area shape="rect" id="node177" href="$class_trigger.html" title=" The trigger expression for an SBML event. " alt="" coords="185,3948,249,3975"/>
+<area shape="rect" id="node178" href="$class_unit.html" title=" A single unit referenced in an SBML unit definition. " alt="" coords="195,3999,240,4025"/>
+<area shape="rect" id="node179" href="$class_unit_definition.html" title=" A definition of a unit used in an SBML model. " alt="" coords="167,4049,268,4076"/>
+<area shape="rect" id="node9" href="$class_external_model_definition.html" title=" A reference to an externally&#45;defined model. " alt="" coords="390,5,553,32"/>
+<area shape="rect" id="node10" href="$class_s_base_ref.html" title=" Base class for references to objects. " alt="" coords="430,56,513,83"/>
+<area shape="rect" id="node16" href="$class_submodel.html" title=" A model instance inside another model. " alt="" coords="430,107,513,133"/>
+<area shape="rect" id="node11" href="$class_deletion.html" title=" Deletion of an object from a submodel. " alt="" coords="666,5,737,32"/>
+<area shape="rect" id="node12" href="$class_port.html" title=" An interface to be used in composition. " alt="" coords="678,56,725,83"/>
+<area shape="rect" id="node13" href="$class_replacing.html" title=" Convenience class. " alt="" coords="661,107,742,133"/>
+<area shape="rect" id="node14" href="$class_replaced_by.html" title=" Indicates an object replaced by another. " alt="" coords="855,81,948,108"/>
+<area shape="rect" id="node15" href="$class_replaced_element.html" title=" Indicates an object replaces another. " alt="" coords="838,132,965,159"/>
+<area shape="rect" id="node26" href="$class_fbc_and.html" title=" An “and” relationship for gene products " alt="" coords="437,157,505,184"/>
+<area shape="rect" id="node27" href="$class_fbc_or.html" title=" An “or” relationship for gene products " alt="" coords="442,208,501,235"/>
+<area shape="rect" id="node28" href="$class_gene_product_ref.html" title=" Reference to a gene product of a reaction " alt="" coords="411,259,532,285"/>
+<area shape="rect" id="node37" href="$class_linear_gradient.html" title=" Representation of a linear gradient. " alt="" coords="416,309,527,336"/>
+<area shape="rect" id="node38" href="$class_radial_gradient.html" title=" Representation of a radial gradient. " alt="" coords="416,360,527,387"/>
+<area shape="rect" id="node41" href="$class_compartment_glyph.html" title=" A glyph for an SBML compartment. " alt="" coords="403,411,540,437"/>
+<area shape="rect" id="node42" href="$class_general_glyph.html" title=" A glyph for miscellaneous items. " alt="" coords="419,461,523,488"/>
+<area shape="rect" id="node43" href="$class_reaction_glyph.html" title=" A glyph for an SBML reaction. " alt="" coords="417,512,526,539"/>
+<area shape="rect" id="node44" href="$class_reference_glyph.html" title=" Connection between an object and a glyph. " alt="" coords="412,563,531,589"/>
+<area shape="rect" id="node45" href="$class_species_glyph.html" title=" A glyph for an SBML species. " alt="" coords="419,613,523,640"/>
+<area shape="rect" id="node46" href="$class_species_reference_glyph.html" title=" A glyph for an SBML species reference. " alt="" coords="389,664,554,691"/>
+<area shape="rect" id="node47" href="$class_text_glyph.html" title=" A glyph for a text label. " alt="" coords="430,715,513,741"/>
+<area shape="rect" id="node55" href="$class_cubic_bezier.html" title=" A Cubic Bézier smooth curve. " alt="" coords="425,765,518,792"/>
+<area shape="rect" id="node57" href="$class_list_of_color_definitions.html" title=" A list of ColorDefinition objects. " alt="" coords="396,816,547,843"/>
+<area shape="rect" id="node58" href="$class_list_of_compartment_glyphs.html" title=" A list of CompartmentGlyph objects. " alt="" coords="382,867,561,893"/>
+<area shape="rect" id="node59" href="$class_list_of_compartment_references.html" title=" A list of CompartmentReference objects. " alt="" coords="369,917,574,944"/>
+<area shape="rect" id="node60" href="$class_list_of_compartments.html" title=" A list of Compartment objects. " alt="" coords="399,968,543,995"/>
+<area shape="rect" id="node61" href="$class_list_of_compartment_types.html" title=" A list of CompartmentType objects. " alt="" coords="385,1019,558,1045"/>
+<area shape="rect" id="node62" href="$class_list_of_constraints.html" title=" A list of Constraint objects. " alt="" coords="409,1069,533,1096"/>
+<area shape="rect" id="node63" href="$class_list_of_curve_elements.html" title=" A list of curve elements. " alt="" coords="397,1120,545,1147"/>
+<area shape="rect" id="node64" href="$class_list_of_deletions.html" title=" A list of Deletion objects. " alt="" coords="415,1171,527,1197"/>
+<area shape="rect" id="node65" href="$class_list_of_drawables.html" title=" A list of Transformation2D objects. " alt="" coords="411,1221,531,1248"/>
+<area shape="rect" id="node66" href="$class_list_of_event_assignments.html" title=" A list of EventAssignment objects. " alt="" coords="388,1272,555,1299"/>
+<area shape="rect" id="node67" href="$class_list_of_events.html" title=" A list of Event objects. " alt="" coords="423,1323,520,1349"/>
+<area shape="rect" id="node68" href="$class_list_of_external_model_definitions.html" title=" A list of ExternalModelDefinition objects. " alt="" coords="369,1373,573,1400"/>
+<area shape="rect" id="node69" href="$class_list_of_fbc_associations.html" title=" A list of FbcAssociation objects. " alt="" coords="395,1424,548,1451"/>
+<area shape="rect" id="node70" href="$class_list_of_flux_bounds.html" title=" A list of FluxBound objects. " alt="" coords="408,1475,535,1501"/>
+<area shape="rect" id="node71" href="$class_list_of_flux_objectives.html" title=" A list of FluxObjective objects. " alt="" coords="399,1525,543,1552"/>
+<area shape="rect" id="node72" href="$class_list_of_function_definitions.html" title=" A list of FunctionDefinition objects. " alt="" coords="386,1576,557,1603"/>
+<area shape="rect" id="node73" href="$class_list_of_function_terms.html" title=" A list of FunctionTerm objects. " alt="" coords="399,1627,544,1653"/>
+<area shape="rect" id="node74" href="$class_list_of_gene_associations.html" title=" A list of GeneAssociation objects. " alt="" coords="389,1677,553,1704"/>
+<area shape="rect" id="node75" href="$class_list_of_gene_products.html" title=" A list of GeneProduct objects. " alt="" coords="400,1728,543,1755"/>
+<area shape="rect" id="node76" href="$class_list_of_global_render_information.html" title=" A list of GlobalRenderInformation objects. " alt="" coords="369,1779,574,1805"/>
+<area shape="rect" id="node77" href="$class_list_of_global_styles.html" title=" A list of GlobalStyle objects. " alt="" coords="405,1829,537,1856"/>
+<area shape="rect" id="node78" href="$class_list_of_gradient_definitions.html" title=" A list of GradientBase objects. " alt="" coords="386,1880,557,1907"/>
+<area shape="rect" id="node79" href="$class_list_of_gradient_stops.html" title=" A list of one or more GradientStop objects. " alt="" coords="400,1931,543,1957"/>
+<area shape="rect" id="node80" href="$class_list_of_graphical_objects.html" title=" A list of GraphicalObject objects. " alt="" coords="392,1981,551,2008"/>
+<area shape="rect" id="node81" href="$class_list_of_groups.html" title=" A list of Group objects. " alt="" coords="421,2032,521,2059"/>
+<area shape="rect" id="node82" href="$class_list_of_initial_assignments.html" title=" A list of InitialAssignment objects. " alt="" coords="389,2083,553,2109"/>
+<area shape="rect" id="node83" href="$class_list_of_inputs.html" title=" A list of Input objects. " alt="" coords="425,2133,518,2160"/>
+<area shape="rect" id="node84" href="$class_list_of_in_species_type_bonds.html" title=" A list of InSpeciesTypeBond objects. " alt="" coords="380,2184,563,2211"/>
+<area shape="rect" id="node85" href="$class_list_of_layouts.html" title=" A list of Layout objects. " alt="" coords="419,2235,523,2261"/>
+<area shape="rect" id="node86" href="$class_list_of_line_endings.html" title=" A list of LineEnding objects. " alt="" coords="406,2285,537,2312"/>
+<area shape="rect" id="node87" href="$class_list_of_line_segments.html" title=" A list of LineSegment objects. " alt="" coords="400,2336,543,2363"/>
+<area shape="rect" id="node88" href="$class_list_of_local_render_information.html" title=" A list of LocalRenderInformation objects. " alt="" coords="372,2387,571,2413"/>
+<area shape="rect" id="node89" href="$class_list_of_local_styles.html" title=" A list of LocalStyle objects. " alt="" coords="409,2437,534,2464"/>
+<area shape="rect" id="node90" href="$class_list_of_members.html" title=" A list of Member objects. " alt="" coords="415,2488,527,2515"/>
+<area shape="rect" id="node91" href="$class_list_of_model_definitions.html" title=" A list of ModelDefinition objects. " alt="" coords="393,2539,549,2565"/>
+<area shape="rect" id="node92" href="$class_list_of_multi_species_types.html" title=" A list of MultiSpeciesType objects. " alt="" coords="387,2589,556,2616"/>
+<area shape="rect" id="node93" href="$class_list_of_objectives.html" title=" A list of Objective objects. " alt="" coords="412,2640,531,2667"/>
+<area shape="rect" id="node94" href="$class_list_of_outputs.html" title=" A list of Output objects. " alt="" coords="419,2691,523,2717"/>
+<area shape="rect" id="node95" href="$class_list_of_outward_binding_sites.html" title=" A list of OutwardBindingSite objects. " alt="" coords="381,2741,562,2768"/>
+<area shape="rect" id="node96" href="$class_list_of_parameters.html" title=" A list of Parameter objects. " alt="" coords="409,2792,534,2819"/>
+<area shape="rect" id="node98" href="$class_list_of_ports.html" title=" A list of Port objects. " alt="" coords="427,2843,515,2869"/>
+<area shape="rect" id="node99" href="$class_list_of_possible_species_feature_values.html" title=" A list of PossibleSpeciesFeatureValue objects. " alt="" coords="371,2894,571,2935"/>
+<area shape="rect" id="node100" href="$class_list_of_qualitative_species.html" title=" A list of QualitativeSpecies objects. " alt="" coords="388,2960,555,2987"/>
+<area shape="rect" id="node101" href="$class_list_of_reaction_glyphs.html" title=" A list of ReactionGlyph objects. " alt="" coords="396,3011,547,3037"/>
+<area shape="rect" id="node102" href="$class_list_of_reactions.html" title=" A list of Reaction objects. " alt="" coords="413,3061,529,3088"/>
+<area shape="rect" id="node103" href="$class_list_of_reference_glyphs.html" title=" A list of ReferenceGlyph objects. " alt="" coords="391,3112,551,3139"/>
+<area shape="rect" id="node104" href="$class_list_of_replaced_elements.html" title=" A list of ReplacedElement objects. " alt="" coords="387,3163,556,3189"/>
+<area shape="rect" id="node105" href="$class_list_of_rules.html" title=" A list of Rule objects. " alt="" coords="426,3213,517,3240"/>
+<area shape="rect" id="node106" href="$class_list_of_species.html" title=" A list of Species objects. " alt="" coords="419,3264,523,3291"/>
+<area shape="rect" id="node107" href="$class_list_of_species_features.html" title=" A list of SpeciesFeature objects. " alt="" coords="393,3315,550,3341"/>
+<area shape="rect" id="node108" href="$class_list_of_species_feature_types.html" title=" A list of SpeciesFeatureType objects. " alt="" coords="378,3365,565,3392"/>
+<area shape="rect" id="node109" href="$class_list_of_species_feature_values.html" title=" A list of SpeciesFeatureValue objects. " alt="" coords="376,3416,567,3443"/>
+<area shape="rect" id="node110" href="$class_list_of_species_glyphs.html" title=" A list of SpeciesGlyph objects. " alt="" coords="399,3467,544,3493"/>
+<area shape="rect" id="node111" href="$class_list_of_species_reference_glyphs.html" title=" A list of SpeciesReferenceGlyph objects. " alt="" coords="368,3517,575,3544"/>
+<area shape="rect" id="node112" href="$class_list_of_species_references.html" title=" A list of SpeciesReference objects. " alt="" coords="385,3568,557,3595"/>
+<area shape="rect" id="node113" href="$class_list_of_species_type_component_indexes.html" title=" A list of SpeciesTypeComponentIndex objects. " alt="" coords="370,3619,573,3661"/>
+<area shape="rect" id="node114" href="$class_list_of_species_type_component_map_in_products.html" title=" A list of SpeciesTypeComponentMapInProduct objects. " alt="" coords="370,3685,573,3726"/>
+<area shape="rect" id="node115" href="$class_list_of_species_type_instances.html" title=" A list of SpeciesTypeInstance objects. " alt="" coords="376,3751,567,3777"/>
+<area shape="rect" id="node116" href="$class_list_of_species_types.html" title=" A list of SpeciesType objects. " alt="" coords="401,3801,541,3828"/>
+<area shape="rect" id="node117" href="$class_list_of_submodels.html" title=" A list of Submodel objects. " alt="" coords="409,3852,533,3879"/>
+<area shape="rect" id="node118" href="$class_list_of_text_glyphs.html" title=" A list of TextGlyph objects. " alt="" coords="409,3903,533,3929"/>
+<area shape="rect" id="node119" href="$class_list_of_transitions.html" title=" A list of Transition objects. " alt="" coords="410,3953,533,3980"/>
+<area shape="rect" id="node120" href="$class_list_of_unit_definitions.html" title=" A list of UnitDefinition objects. " alt="" coords="400,4004,543,4031"/>
+<area shape="rect" id="node121" href="$class_list_of_units.html" title=" A list of Unit objects. " alt="" coords="428,4055,515,4081"/>
+<area shape="rect" id="node122" href="$class_sub_list_of_species_features.html" title=" Defines a set of SpeciesFeature objects. " alt="" coords="381,4105,561,4132"/>
+<area shape="rect" id="node97" href="$class_list_of_local_parameters.html" title=" A list of LocalParameter objects. " alt="" coords="623,2792,780,2819"/>
+<area shape="rect" id="node125" href="$class_model_definition.html" title=" A model used in model composition. " alt="" coords="415,4156,528,4183"/>
+<area shape="rect" id="node127" href="$class_binding_site_species_type.html" title=" Extension of MultiSpeciesType to define a binding site. " alt="" coords="388,4207,555,4233"/>
+<area shape="rect" id="node132" href="$class_local_parameter.html" title=" A parameter inside an SBML reaction definition. " alt="" coords="413,4257,529,4284"/>
+<area shape="rect" id="node138" href="$class_intra_species_reaction.html" title=" A subclass of Reaction for changes of an internal species bond. " alt="" coords="397,4308,546,4335"/>
+<area shape="rect" id="node140" href="$class_global_render_information.html" title=" Render information stored in a ListOfLayouts. " alt="" coords="386,4359,557,4385"/>
+<area shape="rect" id="node141" href="$class_local_render_information.html" title=" Rendering information stored in Layouts. " alt="" coords="389,4409,553,4436"/>
+<area shape="rect" id="node143" href="$class_render_cubic_bezier.html" title=" Representation of cubic Bezier curves. " alt="" coords="403,4460,540,4487"/>
+<area shape="rect" id="node145" href="$class_algebraic_rule.html" title=" An SBML algebraic rule representing 0 = f(W). " alt="" coords="419,4511,524,4537"/>
+<area shape="rect" id="node146" href="$class_assignment_rule.html" title=" An SBML assignment rule representing x = f(Y). " alt="" coords="412,4561,531,4588"/>
+<area shape="rect" id="node147" href="$class_rate_rule.html" title=" An SBML rate rule representing dx/dt = f(Y). " alt="" coords="433,4612,510,4639"/>
+<area shape="rect" id="node150" href="$class_modifier_species_reference.html" title=" A reference to an SBML modifier species. " alt="" coords="382,4663,561,4689"/>
+<area shape="rect" id="node151" href="$class_species_reference.html" title=" A reference to an SBML species in a reaction. " alt="" coords="406,4713,537,4740"/>
+<area shape="rect" id="node162" href="$class_global_style.html" title=" A style that can be associated with a layout. " alt="" coords="426,4764,517,4791"/>
+<area shape="rect" id="node163" href="$class_local_style.html" title=" Style information object used in LocalRenderInformation. " alt="" coords="429,4815,513,4841"/>
+<area shape="rect" id="node165" href="$class_transformation2_d.html" title=" Implementation of a 2D transformation matrix. " alt="" coords="407,4865,536,4892"/>
+<area shape="rect" id="node166" href="$class_graphical_primitive1_d.html" title=" Base class for graphical primitives implementing 1D attributes. " alt="" coords="628,4840,775,4867"/>
+<area shape="rect" id="node175" href="$class_image.html" title=" Representation of images. " alt="" coords="672,4891,731,4917"/>
+<area shape="rect" id="node167" href="$class_graphical_primitive2_d.html" title=" Base class for graphical primitives implementing 2D attributes. " alt="" coords="828,4789,975,4816"/>
+<area shape="rect" id="node173" href="$class_render_curve.html" title=" Representation of curves. " alt="" coords="851,4840,952,4867"/>
+<area shape="rect" id="node174" href="$class_text.html" title=" Representation of text elements. " alt="" coords="877,4891,925,4917"/>
+<area shape="rect" id="node168" href="$class_ellipse.html" title=" Graphical representation of an ellipse. " alt="" coords="1043,4688,1105,4715"/>
+<area shape="rect" id="node169" href="$class_line_ending.html" title=" Decoration element for the start and/or end of curves. " alt="" coords="1029,4739,1119,4765"/>
+<area shape="rect" id="node170" href="$class_polygon.html" title=" Representation of a Polygon " alt="" coords="1039,4789,1109,4816"/>
+<area shape="rect" id="node171" href="$class_rectangle.html" title=" Representation of a rectangle. " alt="" coords="1033,4840,1115,4867"/>
+<area shape="rect" id="node172" href="$class_render_group.html" title=" A group of graphical primitives creating a composite. " alt="" coords="1023,4891,1125,4917"/>
+</map>

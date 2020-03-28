@@ -1,0 +1,25 @@
+var _flux_objective_8cpp =
+[
+    [ "FluxObjective_clone", "_flux_objective_8cpp.html#a8c6655644a361a379e81050f4d3ec24a", null ],
+    [ "FluxObjective_create", "_flux_objective_8cpp.html#a8fa1651aee272457d4c61cc378e152b8", null ],
+    [ "FluxObjective_free", "_flux_objective_8cpp.html#a3de80ddeabd4b9a6cdccf8499134e1fe", null ],
+    [ "FluxObjective_getCoefficient", "_flux_objective_8cpp.html#afc084b07a6b4a237a03274bc4e9776a8", null ],
+    [ "FluxObjective_getId", "_flux_objective_8cpp.html#a783c0afdb10b690a1f2b3966211c3d1e", null ],
+    [ "FluxObjective_getName", "_flux_objective_8cpp.html#a99cb95fe8a90f918807be7c1436723d2", null ],
+    [ "FluxObjective_getReaction", "_flux_objective_8cpp.html#a5789d65a97b5996d692c09b90192cd19", null ],
+    [ "FluxObjective_hasRequiredAttributes", "_flux_objective_8cpp.html#a322d9a027ff0c6484c5e5b3275daed6e", null ],
+    [ "FluxObjective_isSetCoefficient", "_flux_objective_8cpp.html#aaa9b0cd7244d16f5c655c7cd112a7165", null ],
+    [ "FluxObjective_isSetId", "_flux_objective_8cpp.html#a49d9b50fb163dcfd18de84e2998f1479", null ],
+    [ "FluxObjective_isSetName", "_flux_objective_8cpp.html#a3ea4398807a60d130c49c0eda7980b3e", null ],
+    [ "FluxObjective_isSetReaction", "_flux_objective_8cpp.html#a9b989897b82d15d03467ab1153962266", null ],
+    [ "FluxObjective_setCoefficient", "_flux_objective_8cpp.html#a2c28614ff114e0f9f0aa9194cfcbe0da", null ],
+    [ "FluxObjective_setId", "_flux_objective_8cpp.html#ac474d442020b20f5358d2251d48b8008", null ],
+    [ "FluxObjective_setName", "_flux_objective_8cpp.html#a1c35144d8f016a5f563a59795a063dff", null ],
+    [ "FluxObjective_setReaction", "_flux_objective_8cpp.html#a3ef04df3fc37cafbcad1a8742e4571c0", null ],
+    [ "FluxObjective_unsetCoefficient", "_flux_objective_8cpp.html#aca22c20d7aadf69757cb201aaf0e92ed", null ],
+    [ "FluxObjective_unsetId", "_flux_objective_8cpp.html#adf7d45bc6b2b4eb48ce929d7dd15b8f4", null ],
+    [ "FluxObjective_unsetName", "_flux_objective_8cpp.html#a0eac54ce1ba69a383dd587217109d0fb", null ],
+    [ "FluxObjective_unsetReaction", "_flux_objective_8cpp.html#a797f350e1e9876eda7839223e2a06b06", null ],
+    [ "ListOfFluxObjectives_getById", "_flux_objective_8cpp.html#a5c289329582cf9006320e487f93fa942", null ],
+    [ "ListOfFluxObjectives_removeById", "_flux_objective_8cpp.html#a4c99db73ace7565fd0677f48069394e5", null ]
+];

@@ -1,0 +1,27 @@
+var class_layout_species_reference_plugin =
+[
+    [ "LayoutSpeciesReferencePlugin", "class_layout_species_reference_plugin.html#a086456897480546fd196a686d339b73b", null ],
+    [ "LayoutSpeciesReferencePlugin", "class_layout_species_reference_plugin.html#a02e2f0a8c3b50a93c32dc5bef91d5e93", null ],
+    [ "~LayoutSpeciesReferencePlugin", "class_layout_species_reference_plugin.html#a268de7053716478238e3913fd23aa1af", null ],
+    [ "clone", "class_layout_species_reference_plugin.html#a00aec01580fd3af767915d64fa86c5a1", null ],
+    [ "getAllElements", "class_layout_species_reference_plugin.html#ac06fe5377358500d4341f62b8b962835", null ],
+    [ "getElementByMetaId", "class_layout_species_reference_plugin.html#a5f80963d1f7110a07092e33b44a470ed", null ],
+    [ "getElementBySId", "class_layout_species_reference_plugin.html#a6712bfb4148805bac5d5914137be77d4", null ],
+    [ "getElementNamespace", "class_layout_species_reference_plugin.html#a57b5136e518e69d02124107291805896", null ],
+    [ "getLevel", "class_layout_species_reference_plugin.html#a2485145d5e4df65126eea4c1601c1ac5", null ],
+    [ "getPackageName", "class_layout_species_reference_plugin.html#a4336e6ff5d05641cc26a94d3db25dd07", null ],
+    [ "getPackageVersion", "class_layout_species_reference_plugin.html#a1fc2646652e7e752913bd47c400a4db4", null ],
+    [ "getParentSBMLObject", "class_layout_species_reference_plugin.html#afcf597ffa54ffed41a57a1feee7a9241", null ],
+    [ "getParentSBMLObject", "class_layout_species_reference_plugin.html#a57446458a03ff349205912c227f1f40e", null ],
+    [ "getPrefix", "class_layout_species_reference_plugin.html#a74831e74d8067b19e39783c59d09b87d", null ],
+    [ "getSBMLDocument", "class_layout_species_reference_plugin.html#a59581825576a6216ab07beceb709da81", null ],
+    [ "getSBMLDocument", "class_layout_species_reference_plugin.html#a3640e1d5329e59df598385c8a9cbc184", null ],
+    [ "getURI", "class_layout_species_reference_plugin.html#a8c31cb3a9accd31863ed3b51bc4598f5", null ],
+    [ "getVersion", "class_layout_species_reference_plugin.html#a120d462f23ede7981c191bbf85535005", null ],
+    [ "isValidTypeForList", "class_layout_species_reference_plugin.html#a0081b32259d2c78337524df924a55e88", null ],
+    [ "operator=", "class_layout_species_reference_plugin.html#ad9df3bef84378268ddae01a509e2c13d", null ],
+    [ "renameMetaIdRefs", "class_layout_species_reference_plugin.html#a8a95d2c1e8f73cd2f44954f9bf77ddb1", null ],
+    [ "renameSIdRefs", "class_layout_species_reference_plugin.html#a75f7b44692ca306279aa1ae452fcb8c3", null ],
+    [ "renameUnitSIdRefs", "class_layout_species_reference_plugin.html#a20f21bc972f3ee724924adf058e0e9a3", null ],
+    [ "setElementNamespace", "class_layout_species_reference_plugin.html#a70257de82da9ea894348f1d601395e83", null ]
+];

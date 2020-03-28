@@ -1,0 +1,25 @@
+var class_x_m_l_namespaces =
+[
+    [ "XMLNamespaces", "class_x_m_l_namespaces.html#a9dd6b091868a9a34cd453a6c8e16fd91", null ],
+    [ "~XMLNamespaces", "class_x_m_l_namespaces.html#a7da9ff263999792f50e5fd3b61a843ac", null ],
+    [ "XMLNamespaces", "class_x_m_l_namespaces.html#abdf0174c57111a5e9d0b1dfef164b87f", null ],
+    [ "add", "class_x_m_l_namespaces.html#abc9b0f95838c15db33cb7e2805bcc103", null ],
+    [ "clear", "class_x_m_l_namespaces.html#a1703233ae5039589487c67dcf9ca33ab", null ],
+    [ "clone", "class_x_m_l_namespaces.html#a56830b86cd6b77eedb29cbe115f3c27d", null ],
+    [ "containsUri", "class_x_m_l_namespaces.html#ab872918943b3faa2e91d7bde8de2c726", null ],
+    [ "getIndex", "class_x_m_l_namespaces.html#a4829892fb3e682ddfd8517a7befcf22a", null ],
+    [ "getIndexByPrefix", "class_x_m_l_namespaces.html#af0d4184e2a7cdc37ed5a47d24297b9d5", null ],
+    [ "getLength", "class_x_m_l_namespaces.html#a04d7a773c13ec392351472480c527c0f", null ],
+    [ "getNumNamespaces", "class_x_m_l_namespaces.html#a0ef929221cba7f5615c6899d26516355", null ],
+    [ "getPrefix", "class_x_m_l_namespaces.html#a410a2885bfd437a8e3aca64eb0496266", null ],
+    [ "getPrefix", "class_x_m_l_namespaces.html#a97384f6cfb069edee7bcad43f505a441", null ],
+    [ "getURI", "class_x_m_l_namespaces.html#a1f92e40e0f8dbedbea30046b4ff2ed47", null ],
+    [ "getURI", "class_x_m_l_namespaces.html#a50c3c78340a531a2503a3fafb4c08dfc", null ],
+    [ "hasNS", "class_x_m_l_namespaces.html#adb72179b8780d2414898320845cd97b9", null ],
+    [ "hasPrefix", "class_x_m_l_namespaces.html#a2e0227e17a1b3fdcf3b6188fb55c92a1", null ],
+    [ "hasURI", "class_x_m_l_namespaces.html#a51783360945301ff1b4f71e865a05e8b", null ],
+    [ "isEmpty", "class_x_m_l_namespaces.html#a413b82209c7d016cb692352dce1ab92f", null ],
+    [ "operator=", "class_x_m_l_namespaces.html#ae5d032d3be5a2acb3ddf3468c0baf187", null ],
+    [ "remove", "class_x_m_l_namespaces.html#a6aea80a61f861302467af05c0d9d447b", null ],
+    [ "remove", "class_x_m_l_namespaces.html#a166fadee1a9e53f459aa19342e2c2ba0", null ]
+];

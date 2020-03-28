@@ -1,0 +1,28 @@
+var class_species_reference_glyph__t =
+[
+    [ "SpeciesReferenceGlyph_clone", "class_species_reference_glyph__t.html#ad3334f3841990e351426ac456a3a4099", null ],
+    [ "SpeciesReferenceGlyph_create", "class_species_reference_glyph__t.html#a7bc9e3d56569d6313dac55476413c721", null ],
+    [ "SpeciesReferenceGlyph_createCubicBezier", "class_species_reference_glyph__t.html#aa16cd67a3c6f583131bfae956557acfb", null ],
+    [ "SpeciesReferenceGlyph_createFrom", "class_species_reference_glyph__t.html#a8b391fa93dc20fdf44db5dec1624f41b", null ],
+    [ "SpeciesReferenceGlyph_createLineSegment", "class_species_reference_glyph__t.html#a6b3d9d6e37b87051abc80e0ae0c89568", null ],
+    [ "SpeciesReferenceGlyph_createWith", "class_species_reference_glyph__t.html#abf55a4eaed402188af641b9219a28dff", null ],
+    [ "SpeciesReferenceGlyph_free", "class_species_reference_glyph__t.html#a0a1fee24bfa6306221fa575eb37e5e34", null ],
+    [ "SpeciesReferenceGlyph_getCurve", "class_species_reference_glyph__t.html#a52819505d1a5861423fbfb94e644b4e6", null ],
+    [ "SpeciesReferenceGlyph_getId", "class_species_reference_glyph__t.html#af5c3c6f603e16103ed882cf0f180fcb7", null ],
+    [ "SpeciesReferenceGlyph_getRole", "class_species_reference_glyph__t.html#a84d86a23fb7a8a02a1cf1e9fa1c372bb", null ],
+    [ "SpeciesReferenceGlyph_getRoleString", "class_species_reference_glyph__t.html#addfd7eb26ed04e09e68f908346ba4d43", null ],
+    [ "SpeciesReferenceGlyph_getSpeciesGlyphId", "class_species_reference_glyph__t.html#a84f247dba2a94af5cdce5febe77c1b44", null ],
+    [ "SpeciesReferenceGlyph_getSpeciesReferenceId", "class_species_reference_glyph__t.html#a9768103394a49d9500dc7e8855ff5aa6", null ],
+    [ "SpeciesReferenceGlyph_initDefaults", "class_species_reference_glyph__t.html#a3778a9d7f7a9b69f49afe55081c82072", null ],
+    [ "SpeciesReferenceGlyph_isSetCurve", "class_species_reference_glyph__t.html#ac58233d592d7adb5fd55d2ca5c41e891", null ],
+    [ "SpeciesReferenceGlyph_isSetId", "class_species_reference_glyph__t.html#a1d5bd893769c19a0e8191a9a88bd8590", null ],
+    [ "SpeciesReferenceGlyph_isSetRole", "class_species_reference_glyph__t.html#a74e5d732d8a39aef17093005727bea97", null ],
+    [ "SpeciesReferenceGlyph_isSetSpeciesGlyphId", "class_species_reference_glyph__t.html#a05bcb50b2225fe8c947d4b8ae9c9a7c5", null ],
+    [ "SpeciesReferenceGlyph_isSetSpeciesReferenceId", "class_species_reference_glyph__t.html#a9c0380e1edd43aad39bb3fd57c2ffc19", null ],
+    [ "SpeciesReferenceGlyph_setCurve", "class_species_reference_glyph__t.html#ad5cc1c2a416ae771b2af46012ab4c9a5", null ],
+    [ "SpeciesReferenceGlyph_setId", "class_species_reference_glyph__t.html#a8655a89a015fce3630e20fedfe1b576a", null ],
+    [ "SpeciesReferenceGlyph_setRole", "class_species_reference_glyph__t.html#a4e3d78bd0a58da3d79c675dfedd5e711", null ],
+    [ "SpeciesReferenceGlyph_setSpeciesGlyphId", "class_species_reference_glyph__t.html#a6ab00c34902e69cf9a73519c4e01f205", null ],
+    [ "SpeciesReferenceGlyph_setSpeciesReferenceId", "class_species_reference_glyph__t.html#aebb4a776887e2c1381a8e6e3a8080a23", null ],
+    [ "SpeciesReferenceGlyph_unsetId", "class_species_reference_glyph__t.html#a13dd0544f73fc1e4549bbbfc6131deb9", null ]
+];

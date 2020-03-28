@@ -1,0 +1,186 @@
+<html>
+<HEAD>
+
+<TITLE>
+LibSBML extensions for SBML Level 3 packages
+</TITLE>
+
+<META NAME="keywords" CONTENT="LibSBML extensions for SBML Level 3 packages, libSBML 5.18.0 Java API Reference">
+
+<link rel="stylesheet" type="text/css" href="prettify.css">
+<script src="prettify.js"></script>
+
+<link rel="stylesheet" type="text/css" href="libsbml-javadoc-stylesheet.css">
+
+<script src="sbml.js"></script>
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="LibSBML extensions for SBML Level 3 packages";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="org/sbml/libsbml/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Use</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="org/sbml/libsbml/package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>libSBML<BR>5.18.0</B></EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html?overview-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="overview-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<script type="text/javascript" src="sbml.js"></script><SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<hr>
+<center>
+<h1 style="padding-top: 0.5em">LibSBML extensions for SBML Level 3 packages</h1>
+</center>
+
+
+<p>SBML Level&nbsp;3 introduced a modular architecture, in which SBML
+Level&nbsp;3 Core is usable in its own right (much like SBML Levels&nbsp;1
+and&nbsp;2 before it), and optional SBML Level&nbsp;3 Packages add features
+to this Core. To support this architecture, libSBML is itself divided into a
+core libSBML and optional extensions. Core libSBML corresponds to the
+features of SBML Levels&nbsp;1 to&nbsp;3 Core; they are always available, and
+do not require applications to understand more than the SBML Levels&nbsp;1
+to&nbsp;3 Core specifications. By contrast, the libSBML extensions are
+separate plug-ins that each implement support for a given SBML Level&nbsp;3
+package. There is a libSBML extension that implements support for the SBML
+Level&nbsp;3 Hierarchical Model Composition package, another that implements
+support for the SBML Level&nbsp;3 Flux Balance Constraints package, and so
+on.  (Note that the SBML &ldquo;packages&rdquo; are not the same thing as
+Java packages; this is an unfortunate and potentially confusing name
+collision.  LibSBML does <em>not</em> use Java packages to implement SBML
+packages.)</p>
+
+<p> Not all possible SBML Level&nbsp;3 package specifications have been finalized
+by the SBML community at this time. The stable releases of libSBML only
+include the extensions for officially-released package specifications. The
+rest of this page lists the libSBML extension packages for SBML Level&nbsp;3
+available in the libSBML 5.18.0 Java interface.</p>
+
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="org/sbml/libsbml/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Use</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="org/sbml/libsbml/package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>libSBML<BR>5.18.0</B></EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html?overview-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="overview-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<script src="sbml.js"></script><SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+<br>
+
+<address>
+<span class="footer">
+
+  LibSBML 5.18.0, an application programming interface (API) library for SBML.
+  <br><br>
+
+  <table cellpadding="0" cellspacing="0" border="0" bgcolor="white">
+    <tr>
+      <td valign="top">
+        <a href="http://www.sbml.org/">
+          <img src="official-sbml-supported-70.png" width="80px" height="35px" hspace="10" border="0">
+        </a>
+      </td>
+      <td valign="top" class="footer" align="left">
+        <b>SBML Team</b><br>
+        <a href="http://www.sbml.org/">http://www.sbml.org/</a><br>
+        <a href="mailto:sbml-team@googlegroups.com">sbml-team@googlegroups.com</a><br><br>
+     </td>
+    </tr>
+  </table>
+  <br>
+
+</span>
+</address>

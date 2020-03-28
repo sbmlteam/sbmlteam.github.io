@@ -1,0 +1,27 @@
+var classlibsbmlcs_1_1_x_m_l_error_log =
+[
+    [ "XMLErrorLog", "classlibsbmlcs_1_1_x_m_l_error_log.html#a997ca8b1c9a4902b21a5c1c62d22d1ac", null ],
+    [ "XMLErrorLog", "classlibsbmlcs_1_1_x_m_l_error_log.html#a8da2eb2e0398ee87d5927dc77e436633", null ],
+    [ "add", "classlibsbmlcs_1_1_x_m_l_error_log.html#aa6af19c8c2c969a81634ad7a453a98f3", null ],
+    [ "add", "classlibsbmlcs_1_1_x_m_l_error_log.html#ae9b61d88e58d5e027c6a0c24e553d92d", null ],
+    [ "changeErrorSeverity", "classlibsbmlcs_1_1_x_m_l_error_log.html#a013e7777438872cd0d2e65e2470b471b", null ],
+    [ "changeErrorSeverity", "classlibsbmlcs_1_1_x_m_l_error_log.html#a2eba4dc5884dcf44a95c8eb8528589c7", null ],
+    [ "clearLog", "classlibsbmlcs_1_1_x_m_l_error_log.html#a94329e7d264b0fe3036f45a35e82abee", null ],
+    [ "contains", "classlibsbmlcs_1_1_x_m_l_error_log.html#a5805a6d3a4eb2fe71ca4013495fb4591", null ],
+    [ "Dispose", "classlibsbmlcs_1_1_x_m_l_error_log.html#a89249e420a97c4d29ac731a8a96f2632", null ],
+    [ "Equals", "classlibsbmlcs_1_1_x_m_l_error_log.html#aac435e303864bb44d12810e60fb8f5ca", null ],
+    [ "getError", "classlibsbmlcs_1_1_x_m_l_error_log.html#a03b381775313694d4fc7832034e19b3a", null ],
+    [ "GetHashCode", "classlibsbmlcs_1_1_x_m_l_error_log.html#a5521c2cfa6d2645aa21fa96c3481c060", null ],
+    [ "getNumErrors", "classlibsbmlcs_1_1_x_m_l_error_log.html#a032d565d2f48472709fc0f7913e8a96f", null ],
+    [ "getSeverityOverride", "classlibsbmlcs_1_1_x_m_l_error_log.html#a61ff5cc22c7f5c26a0806bddcb05d237", null ],
+    [ "isSeverityOverridden", "classlibsbmlcs_1_1_x_m_l_error_log.html#a1320fef310ad5d5c8df8df4c15e16286", null ],
+    [ "operator!=", "classlibsbmlcs_1_1_x_m_l_error_log.html#ae310c72fc2a9ad469b2f0af7341e8879", null ],
+    [ "operator==", "classlibsbmlcs_1_1_x_m_l_error_log.html#a766d6ba7f182c9c45efa324b322a1715", null ],
+    [ "printErrors", "classlibsbmlcs_1_1_x_m_l_error_log.html#a826dae4abfa4944217d0d50bbe911897", null ],
+    [ "printErrors", "classlibsbmlcs_1_1_x_m_l_error_log.html#a1dd215a3e1d3b6c4e3703d82fd75a242", null ],
+    [ "printErrors", "classlibsbmlcs_1_1_x_m_l_error_log.html#a5e95c72dd329e6c34020418deffa42b8", null ],
+    [ "setSeverityOverride", "classlibsbmlcs_1_1_x_m_l_error_log.html#a8bdfaca7ea8be691cd9edde3de2ae566", null ],
+    [ "toString", "classlibsbmlcs_1_1_x_m_l_error_log.html#a35b33effafdc73a2b4266efb06b89462", null ],
+    [ "unsetSeverityOverride", "classlibsbmlcs_1_1_x_m_l_error_log.html#a0300a2ba621e5b123d4a2ed75a95d121", null ],
+    [ "swigCMemOwn", "classlibsbmlcs_1_1_x_m_l_error_log.html#a6b1ae587ab90e9c1ccba699db2dac436", null ]
+];

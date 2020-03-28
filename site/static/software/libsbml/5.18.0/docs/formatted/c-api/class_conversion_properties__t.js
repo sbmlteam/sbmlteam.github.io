@@ -1,0 +1,26 @@
+var class_conversion_properties__t =
+[
+    [ "ConversionProperties_addOption", "class_conversion_properties__t.html#ae31eaeb94d5b08e01da3aeab6f0a0c11", null ],
+    [ "ConversionProperties_addOptionWithKey", "class_conversion_properties__t.html#a747a4e6e129dcf1bc3481b4fdb1716fe", null ],
+    [ "ConversionProperties_clone", "class_conversion_properties__t.html#aa96de76824df5f571c2a76f7c1340766", null ],
+    [ "ConversionProperties_create", "class_conversion_properties__t.html#a72c9b112fd195f2b9f12aa395d046f39", null ],
+    [ "ConversionProperties_createWithSBMLNamespace", "class_conversion_properties__t.html#aa55a85e9fe556c8620e6620c81a45f24", null ],
+    [ "ConversionProperties_getBoolValue", "class_conversion_properties__t.html#a2ed8b0e9f32a9a205b9f22a1eb82c8e6", null ],
+    [ "ConversionProperties_getDescription", "class_conversion_properties__t.html#a61e32e0247a5b5f60b9c74dd434b10f9", null ],
+    [ "ConversionProperties_getDoubleValue", "class_conversion_properties__t.html#a296c410b9967addda6e2f9f88dbdf32f", null ],
+    [ "ConversionProperties_getFloatValue", "class_conversion_properties__t.html#a0d020d3672446e91b9621dfcf99d759e", null ],
+    [ "ConversionProperties_getIntValue", "class_conversion_properties__t.html#adcc9c419d90591469b1d35b565477fe8", null ],
+    [ "ConversionProperties_getOption", "class_conversion_properties__t.html#a322aea4d7fe39087bd70eeb5a0f61ea7", null ],
+    [ "ConversionProperties_getTargetNamespaces", "class_conversion_properties__t.html#a949ceb83e960eb7282f87b82da38041c", null ],
+    [ "ConversionProperties_getType", "class_conversion_properties__t.html#a8c23a81abc0c7b10265e6673e1b36fd7", null ],
+    [ "ConversionProperties_getValue", "class_conversion_properties__t.html#a909947fc94d622b16fd35c8828fadcea", null ],
+    [ "ConversionProperties_hasOption", "class_conversion_properties__t.html#ac841c08e8887111f93d98d9533c2b42d", null ],
+    [ "ConversionProperties_hasTargetNamespaces", "class_conversion_properties__t.html#a7ca11e9c9acbdfef9b511c8c3c8a50c9", null ],
+    [ "ConversionProperties_removeOption", "class_conversion_properties__t.html#a5ee596a8a95128b01dc16b0d999a70e9", null ],
+    [ "ConversionProperties_setBoolValue", "class_conversion_properties__t.html#a339c077b82bfd57b914c5f36b505f322", null ],
+    [ "ConversionProperties_setDoubleValue", "class_conversion_properties__t.html#a11dfeebce26af0399c5cdf52c0f273e5", null ],
+    [ "ConversionProperties_setFloatValue", "class_conversion_properties__t.html#aeafe5e0033fed363570b525c65caa2a3", null ],
+    [ "ConversionProperties_setIntValue", "class_conversion_properties__t.html#afb32bf2c5cf5602e3b92471e8ef69cca", null ],
+    [ "ConversionProperties_setTargetNamespaces", "class_conversion_properties__t.html#a33830f6bb184f08d75cd2f9eb3719b76", null ],
+    [ "ConversionProperties_setValue", "class_conversion_properties__t.html#aaf491c3255f8eff4ba29e8ab4416b3e2", null ]
+];

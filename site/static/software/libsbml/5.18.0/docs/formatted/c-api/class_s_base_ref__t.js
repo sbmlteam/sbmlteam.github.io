@@ -1,0 +1,27 @@
+var class_s_base_ref__t =
+[
+    [ "SBaseRef_clone", "class_s_base_ref__t.html#a731f52a8e63ae5b0277c0e906b1d1537", null ],
+    [ "SBaseRef_create", "class_s_base_ref__t.html#a8707c5e5fe742d0001bce73c5827b641", null ],
+    [ "SBaseRef_free", "class_s_base_ref__t.html#acc592e0218694a240403fc8406d0d9aa", null ],
+    [ "SBaseRef_getIdRef", "class_s_base_ref__t.html#ab66b7f2620179229d7558dda129cfb62", null ],
+    [ "SBaseRef_getMetaIdRef", "class_s_base_ref__t.html#a992130fb8377ec69859c49dba12c06b1", null ],
+    [ "SBaseRef_getPortRef", "class_s_base_ref__t.html#a5110493292c2438262a59563a45f121f", null ],
+    [ "SBaseRef_getSBaseRef", "class_s_base_ref__t.html#afd69c71f9d20039313271455578074e9", null ],
+    [ "SBaseRef_getUnitRef", "class_s_base_ref__t.html#a815e75f55b0579af5eb468ce27fb2ccb", null ],
+    [ "SBaseRef_hasRequiredAttributes", "class_s_base_ref__t.html#a91c54d630eda1652c19ae3b4920a493f", null ],
+    [ "SBaseRef_isSetIdRef", "class_s_base_ref__t.html#a91aa0c93cc2f6aa00e8646963532285a", null ],
+    [ "SBaseRef_isSetMetaIdRef", "class_s_base_ref__t.html#a3a95ddbc84cdcf3e7fe51760f19f558b", null ],
+    [ "SBaseRef_isSetPortRef", "class_s_base_ref__t.html#a8b3b3fda8276f52152d46d779f25c4b9", null ],
+    [ "SBaseRef_isSetSBaseRef", "class_s_base_ref__t.html#a4fb2f8f111d693c0d94a353e4f694019", null ],
+    [ "SBaseRef_isSetUnitRef", "class_s_base_ref__t.html#ad2d9f17749844e1660c508da4cc46b7b", null ],
+    [ "SBaseRef_setIdRef", "class_s_base_ref__t.html#a0b2dc2814364d5d395cee2747491e71f", null ],
+    [ "SBaseRef_setMetaIdRef", "class_s_base_ref__t.html#a270a82ac7010b5b90588947278817796", null ],
+    [ "SBaseRef_setPortRef", "class_s_base_ref__t.html#ad461cad02cce0074b249749df9c23d8a", null ],
+    [ "SBaseRef_setSBaseRef", "class_s_base_ref__t.html#a5ce354c13098190d1c5a6a9419395e1e", null ],
+    [ "SBaseRef_setUnitRef", "class_s_base_ref__t.html#ac278f19c74affb7679dff1a4d4c97578", null ],
+    [ "SBaseRef_unsetIdRef", "class_s_base_ref__t.html#aa0194aca764f8d50e0562d1274a54550", null ],
+    [ "SBaseRef_unsetMetaIdRef", "class_s_base_ref__t.html#a0f56faa278c816a28a63d93beb3e42c4", null ],
+    [ "SBaseRef_unsetPortRef", "class_s_base_ref__t.html#a990566245437dae08f5e28d17c2cfa51", null ],
+    [ "SBaseRef_unsetSBaseRef", "class_s_base_ref__t.html#a458dac1578e173106019823e161c6d0f", null ],
+    [ "SBaseRef_unsetUnitRef", "class_s_base_ref__t.html#ad7e067964b3c73ab4c922ef7a8c315c3", null ]
+];

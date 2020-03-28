@@ -1,0 +1,27 @@
+var classlibsbmlcs_1_1_x_m_l_input_stream =
+[
+    [ "XMLInputStream", "classlibsbmlcs_1_1_x_m_l_input_stream.html#afc606b5e9b90b8a8ab9829b892d1e217", null ],
+    [ "XMLInputStream", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a9a04dcaba654141b902b7eb18b1fb762", null ],
+    [ "XMLInputStream", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a1de54acba2bff534e43b50dd064cac14", null ],
+    [ "XMLInputStream", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a7ba537c2ebb10eea99a588a1ef077f9e", null ],
+    [ "containsChild", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a17da3b206e426ed33e4e9362594003e0", null ],
+    [ "determineNumberChildren", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a19ae83ccf856229479de9f772c77cde2", null ],
+    [ "determineNumberChildren", "classlibsbmlcs_1_1_x_m_l_input_stream.html#ae44a15743c06c3e97507bc0586abc1a3", null ],
+    [ "determineNumSpecificChildren", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a4bde8beae4fde411c5437cc8cfd67642", null ],
+    [ "Dispose", "classlibsbmlcs_1_1_x_m_l_input_stream.html#ab8943da606b0ab8655a2a8912ccbb3fe", null ],
+    [ "getEncoding", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a6b484d686b3be85e1f4e1f511e9b7bfd", null ],
+    [ "getErrorLog", "classlibsbmlcs_1_1_x_m_l_input_stream.html#acada17c9b94f0035a07b711413da97cb", null ],
+    [ "getSBMLNamespaces", "classlibsbmlcs_1_1_x_m_l_input_stream.html#ab9acc327193bbd0948f4dd7d908e905d", null ],
+    [ "getVersion", "classlibsbmlcs_1_1_x_m_l_input_stream.html#aac902ff4982870a3435c075d8e26460c", null ],
+    [ "isEOF", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a783a563a4e4ea1af9dcc38809f940614", null ],
+    [ "isError", "classlibsbmlcs_1_1_x_m_l_input_stream.html#ab7d963ca44dcef105358e3c79fda5ad4", null ],
+    [ "isGood", "classlibsbmlcs_1_1_x_m_l_input_stream.html#ae99821cdd7167fc56ca1b460dddc26cc", null ],
+    [ "next", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a18f6e8558c4ccf957069a94657305a3d", null ],
+    [ "peek", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a2d5053b28533f76801e9756550b2a78a", null ],
+    [ "setErrorLog", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a0e8ba8f1cc3cb244696318f3c9f859d3", null ],
+    [ "setSBMLNamespaces", "classlibsbmlcs_1_1_x_m_l_input_stream.html#ac70ad6a2ed97ca6c8867076d8a154a72", null ],
+    [ "skipPastEnd", "classlibsbmlcs_1_1_x_m_l_input_stream.html#aa199b7f67ecea6408be8d16f48ea7592", null ],
+    [ "skipText", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a5b53162db49841f487760e3dcac8729d", null ],
+    [ "toString", "classlibsbmlcs_1_1_x_m_l_input_stream.html#a502bdf67d705feea0a36170494592883", null ],
+    [ "swigCMemOwn", "classlibsbmlcs_1_1_x_m_l_input_stream.html#aa13da3c68b13e147d720b66552d21370", null ]
+];

@@ -1,0 +1,114 @@
+<map id="SBMLConverterTypes.h" name="SBMLConverterTypes.h">
+<area shape="rect" id="node2" href="$_conversion_option_8h.html" title="Definition of ConversionOption_t, the class encapsulating conversion options. " alt="" coords="8871,721,9060,763"/>
+<area shape="rect" id="node6" href="$_conversion_properties_8h.html" title="Definition of ConversionProperties_t, the class encapsulating conversion configuration. " alt="" coords="8917,259,9107,300"/>
+<area shape="rect" id="node19" href="$_s_b_m_l_converter_8h.html" title="Definition of SBMLConverter_t, the base class for SBML conversion. " alt="" coords="8169,177,8397,203"/>
+<area shape="rect" id="node91" href="$_s_b_m_l_converter_register_8h.html" title="sbml/conversion/SBMLConverter\lRegister.h" alt="" coords="8473,169,8690,211"/>
+<area shape="rect" id="node92" href="$_s_b_m_l_converter_registry_8h.html" title="Implementation of SBMLConverterRegistry_t, a registry of available converters. " alt="" coords="3469,80,3686,121"/>
+<area shape="rect" id="node95" href="$_s_b_m_l_function_definition_converter_8h.html" title="Definition of SBMLFunctionDefinitionConverter_t, a converter replacing function definitions. " alt="" coords="7115,80,7325,121"/>
+<area shape="rect" id="node96" href="$_s_b_m_l_id_converter_8h.html" title="Definition of SBMLIdConverter_t, a converter renaming SIds. " alt="" coords="7349,87,7587,114"/>
+<area shape="rect" id="node97" href="$_s_b_m_l_infer_units_converter_8h.html" title="Definition of SBMLInferUnitsConverter_t, infers units for parameters. " alt="" coords="8526,80,8711,121"/>
+<area shape="rect" id="node98" href="$_s_b_m_l_initial_assignment_converter_8h.html" title="Definition of SBMLInitialAssignmentConverter_t, a converter inlining function definitions. " alt="" coords="7612,80,7801,121"/>
+<area shape="rect" id="node99" href="$_s_b_m_l_level1_version1_converter_8h.html" title="Definition of SBMLLevel1Version1Converter_t. " alt="" coords="7825,80,8023,121"/>
+<area shape="rect" id="node100" href="$_s_b_m_l_level_version_converter_8h.html" title="Definition of SBMLLevelVersionConverter_t, the base class for SBML conversion. " alt="" coords="10131,80,10322,121"/>
+<area shape="rect" id="node116" href="$_s_b_m_l_local_parameter_converter_8h.html" title="Definition of SBMLLocalParameterConverter_t, a converter replacing local parameters with global ones..." alt="" coords="8311,80,8502,121"/>
+<area shape="rect" id="node117" href="$_s_b_m_l_rate_of_converter_8h.html" title="Definition of SBMLRateOfConverter_t, a converter changing reactions into rate rules. " alt="" coords="9205,80,9392,121"/>
+<area shape="rect" id="node118" href="$_s_b_m_l_reaction_converter_8h.html" title="Definition of SBMLReactionConverter_t, a converter changing reactions into rate rules. " alt="" coords="9416,80,9627,121"/>
+<area shape="rect" id="node119" href="$_s_b_m_l_rule_converter_8h.html" title="Definition of SBMLRuleConverter_t, a converter sorting rules. " alt="" coords="8945,80,9130,121"/>
+<area shape="rect" id="node120" href="$_s_b_m_l_strip_package_converter_8h.html" title="Definition of SBMLStripPackageConverter_t, the base class for SBML conversion. " alt="" coords="8735,80,8921,121"/>
+<area shape="rect" id="node121" href="$_s_b_m_l_units_converter_8h.html" title="Definition of SBMLUnitsConverter_t, for converting units to SI. " alt="" coords="8047,80,8236,121"/>
+<area shape="rect" id="node3" href="$extern_8h.html" title="Definitions of LIBSBML_EXTERN and related things. " alt="" coords="3499,1213,3656,1240"/>
+<area shape="rect" id="node4" href="$libsbml-namespace_8h.html" title="Defines C++ namespace of libSBML. " alt="" coords="3502,1288,3653,1329"/>
+<area shape="rect" id="node7" href="$_s_b_m_l_namespaces_8h.html" title="SBMLNamespaces_t class to store level/version and namespace. " alt="" coords="8029,647,8208,673"/>
+<area shape="rect" id="node8" href="$_x_m_l_namespaces_8h.html" title="A list of XMLNamespace declarations (URI/prefix pairs) " alt="" coords="7816,1042,8011,1069"/>
+<area shape="rect" id="node11" href="$common_8h.html" title="Common functions and macros for C and C++. " alt="" coords="7675,960,7845,987"/>
+<area shape="rect" id="node9" href="$_x_m_l_extern_8h.html" title="Defines LIBLAX_EXTERN. " alt="" coords="8542,1131,8698,1158"/>
+<area shape="rect" id="node10" href="$operation_return_values_8h.html" title="Enumeration of values returned by operations within libSBML. " alt="" coords="5097,1124,5301,1165"/>
+<area shape="rect" id="node12" href="$libsbml-config_8h.html" title="Decides whether to #include Unix or Windows configuration variables. " alt="" coords="8035,1035,8186,1076"/>
+<area shape="rect" id="node16" href="$memory_8h.html" title="sbml/util/memory.h" alt="" coords="8363,1042,8496,1069"/>
+<area shape="rect" id="node17" href="$util_8h.html" title="Utility functions. " alt="" coords="8262,1131,8365,1158"/>
+<area shape="rect" id="node13" href="$libsbml-config-common_8h.html" title="Configuration variables. " alt="" coords="8035,1124,8186,1165"/>
+<area shape="rect" id="node14" href="$libsbml-version_8h.html" title="Define libSBML version numbers for access from client software. " alt="" coords="7715,1124,7866,1165"/>
+<area shape="rect" id="node21" href="$_s_b_m_l_types_8h.html" title="Include all SBML types in a single header file. " alt="" coords="4501,266,4638,293"/>
+<area shape="rect" id="node22" href="$_s_b_m_l_document_8h.html" title="Top&#45;level container for an SBML Model_t and associated data. " alt="" coords="4693,423,4856,449"/>
+<area shape="rect" id="node24" href="$_x_m_l_error_8h.html" title="Represents errors (and messages) encountered during an XML parse. " alt="" coords="8672,1042,8819,1069"/>
+<area shape="rect" id="node27" href="$_s_base_8h.html" title="Definition of SBase_t, the base object of all SBML objects. " alt="" coords="4173,497,4277,524"/>
+<area shape="rect" id="node32" href="$_model_history_8h.html" title="ModelHistory_t I/O. " alt="" coords="5035,729,5245,755"/>
+<area shape="rect" id="node37" href="$_date_8h.html" title="Date_t I/O. " alt="" coords="5467,811,5626,837"/>
+<area shape="rect" id="node38" href="$_model_creator_8h.html" title="ModelCreator_t I/O. " alt="" coords="5179,811,5391,837"/>
+<area shape="rect" id="node44" href="$_list_of_8h.html" title="sbml/ListOf.h" alt="" coords="3593,497,3693,524"/>
+<area shape="rect" id="node45" href="$_model_8h.html" title="Definition of Model_t. " alt="" coords="4837,885,4939,912"/>
+<area shape="rect" id="node46" href="$_function_definition_8h.html" title="Definitions of FunctionDefinition_t and ListOfFunctionDefinitions_t. " alt="" coords="5553,1042,5725,1069"/>
+<area shape="rect" id="node47" href="$_unit_kind_8h.html" title="Definition of SBML&#39;s UnitKind enumeration. " alt="" coords="8007,960,8123,987"/>
+<area shape="rect" id="node48" href="$_unit_8h.html" title="Definitions of Unit_t and ListOfUnits_t. " alt="" coords="7777,885,7866,912"/>
+<area shape="rect" id="node50" href="$_unit_definition_8h.html" title="Definitions of UnitDefinition_t and ListOfUnitDefinitions_t. " alt="" coords="5800,1042,5944,1069"/>
+<area shape="rect" id="node51" href="$_compartment_type_8h.html" title="Definitions of CompartmentType_t and ListOfCompartmentTypes_t. " alt="" coords="3832,423,4008,449"/>
+<area shape="rect" id="node52" href="$_species_type_8h.html" title="Definitions of SpeciesType_t and ListOfSpeciesType. " alt="" coords="6019,1042,6162,1069"/>
+<area shape="rect" id="node53" href="$_compartment_8h.html" title="Definitions of Compartment_t and ListOfCompartments_t. " alt="" coords="4582,497,4727,524"/>
+<area shape="rect" id="node54" href="$_species_8h.html" title="Definitions of Species_t and ListOfSpecies_t. " alt="" coords="6237,1042,6349,1069"/>
+<area shape="rect" id="node55" href="$_parameter_8h.html" title="Definitions of Parameter_t and ListOfParameters_t. " alt="" coords="3302,423,3429,449"/>
+<area shape="rect" id="node56" href="$_local_parameter_8h.html" title="Definitions of LocalParameter_t and ListOfLocalParameters_t. " alt="" coords="3479,348,3638,375"/>
+<area shape="rect" id="node57" href="$_initial_assignment_8h.html" title="Definitions of InitialAssignment_t and ListOfInitialAssignments_t. " alt="" coords="6373,1042,6539,1069"/>
+<area shape="rect" id="node58" href="$_reaction_8h.html" title="Definitions of Reaction_t and ListOfReactions_t. " alt="" coords="3843,729,3960,755"/>
+<area shape="rect" id="node59" href="$_kinetic_law_8h.html" title="Definition of KineticLaw_t. " alt="" coords="6563,1042,6693,1069"/>
+<area shape="rect" id="node60" href="$_species_reference_8h.html" title="Definitions of SpeciesReference_t and ListOfSpeciesReferences_t. " alt="" coords="6576,960,6749,987"/>
+<area shape="rect" id="node61" href="$_modifier_species_reference_8h.html" title="Definitions of ModifierSpeciesReference_t. " alt="" coords="6768,1042,6989,1069"/>
+<area shape="rect" id="node62" href="$_simple_species_reference_8h.html" title="Definitions of SimpleSpeciesReference_t. " alt="" coords="7014,1042,7229,1069"/>
+<area shape="rect" id="node63" href="$_rule_8h.html" title="Definitions of Rule_t and ListOfRules_t. " alt="" coords="7227,960,7319,987"/>
+<area shape="rect" id="node64" href="$_algebraic_rule_8h.html" title="Definitions of AlgebraicRule_t. " alt="" coords="7406,1042,7554,1069"/>
+<area shape="rect" id="node65" href="$_assignment_rule_8h.html" title="Definitions of AssignmentRule_t. " alt="" coords="7579,1042,7741,1069"/>
+<area shape="rect" id="node66" href="$_rate_rule_8h.html" title="Definitions of RateRule_t. " alt="" coords="3741,1042,3861,1069"/>
+<area shape="rect" id="node67" href="$_constraint_8h.html" title="Definitions of Constraint_t and ListOfConstraints_t. " alt="" coords="1299,1042,1424,1069"/>
+<area shape="rect" id="node68" href="$_event_8h.html" title="Definitions of Event_t and ListOfEvents_t. " alt="" coords="1448,1042,1547,1069"/>
+<area shape="rect" id="node69" href="$_event_assignment_8h.html" title="Definition of EventAssignment_t and ListOfEventAssignments_t. " alt="" coords="1571,1042,1741,1069"/>
+<area shape="rect" id="node70" href="$_delay_8h.html" title="Definition of Delay_t. " alt="" coords="1765,1042,1864,1069"/>
+<area shape="rect" id="node71" href="$_stoichiometry_math_8h.html" title="Definition of StoichiometryMath_t. " alt="" coords="1939,1042,2115,1069"/>
+<area shape="rect" id="node72" href="$_trigger_8h.html" title="Definition of Trigger_t. " alt="" coords="2139,1042,2245,1069"/>
+<area shape="rect" id="node73" href="$_priority_8h.html" title="Definition of Priority_t. " alt="" coords="2320,1042,2427,1069"/>
+<area shape="rect" id="node74" href="$_s_b_m_l_reader_8h.html" title="Reads an SBML Document into memory. " alt="" coords="2613,1042,2758,1069"/>
+<area shape="rect" id="node75" href="$_s_b_m_l_writer_8h.html" title="Writes an SBML Document to file or in&#45;memory string. " alt="" coords="2451,1042,2589,1069"/>
+<area shape="rect" id="node76" href="$_formula_parser_8h.html" title="Parses an SBML formula string into an AST. " alt="" coords="364,885,551,912"/>
+<area shape="rect" id="node81" href="$_formula_formatter_8h.html" title="Formats an AST formula tree as an SBML formula string. " alt="" coords="968,1042,1173,1069"/>
+<area shape="rect" id="node84" href="$_math_m_l_8h.html" title="Utilities for reading and writing MathML to/from text strings. " alt="" coords="3013,1042,3160,1069"/>
+<area shape="rect" id="node85" href="$_l3_parser_8h.html" title="Definition of the level 3 infix&#45;to&#45;mathml parser C functions. " alt="" coords="921,885,1073,912"/>
+<area shape="rect" id="node86" href="$_l3_parser_settings_8h.html" title="Definition of the level 3 infix&#45;to&#45;mathml parser settings. " alt="" coords="643,1042,843,1069"/>
+<area shape="rect" id="node87" href="$_l3_formula_formatter_8h.html" title="Formats an L3 AST formula tree as an SBML formula string. " alt="" coords="1151,885,1371,912"/>
+<area shape="rect" id="node88" href="$_identifier_transformer_8h.html" title="sbml/util/IdentifierTransformer.h" alt="" coords="4683,348,4893,375"/>
+<area shape="rect" id="node89" href="$_element_filter_8h.html" title="Base class of element filters. " alt="" coords="8233,348,8397,375"/>
+<area shape="rect" id="node90" href="$_callback_registry_8h.html" title="sbml/util/CallbackRegistry.h" alt="" coords="4917,348,5102,375"/>
+<area shape="rect" id="node23" href="$_s_b_m_l_error_8h.html" title="Represents SBML errors and other diagnostics. " alt="" coords="7419,572,7549,599"/>
+<area shape="rect" id="node25" href="$_s_b_m_l_error_log_8h.html" title="Stores errors (and messages) encountered while processing SBML. " alt="" coords="7446,497,7599,524"/>
+<area shape="rect" id="node43" href="$_s_b_m_l_transforms_8h.html" title="sbml/SBMLTransforms.h" alt="" coords="4751,497,4921,524"/>
+<area shape="rect" id="node26" href="$_x_m_l_error_log_8h.html" title="Stores errors (and messages) encountered while processing XML. " alt="" coords="8397,960,8566,987"/>
+<area shape="rect" id="node28" href="$_s_b_m_l_type_codes_8h.html" title="Enumeration to identify SBML objects at runtime. " alt="" coords="4097,960,4266,987"/>
+<area shape="rect" id="node29" href="$_r_d_f_annotation_8h.html" title="RDFAnnotation I/O. " alt="" coords="4542,572,4765,599"/>
+<area shape="rect" id="node33" href="$_list_8h.html" title="Simple, generic list utility class. " alt="" coords="5469,885,5576,912"/>
+<area shape="rect" id="node35" href="$_x_m_l_node_8h.html" title="Class definition of XMLNode_t, a node in an XML document tree. " alt="" coords="5107,885,5256,912"/>
+<area shape="rect" id="node39" href="$_c_v_term_8h.html" title="Definition of a CVTerm_t class for adding annotations to a Model_t. " alt="" coords="4697,960,4877,987"/>
+<area shape="rect" id="node40" href="$_syntax_checker_8h.html" title="Syntax checking functions. " alt="" coords="2782,1042,2938,1069"/>
+<area shape="rect" id="node41" href="$_s_b_m_l_constructor_exception_8h.html" title="Definition of SBMLConstructorException_t, the exception class for constructor exceptions. " alt="" coords="4035,572,4264,599"/>
+<area shape="rect" id="node42" href="$_expected_attributes_8h.html" title="Definition of ExpectedAttributes, the class allowing the specification of attributes to expect..." alt="" coords="3438,647,3615,673"/>
+<area shape="rect" id="node30" href="$_r_d_f_annotation_parser_8h.html" title="RDFAnnotationParser.h" alt="" coords="4593,647,4757,673"/>
+<area shape="rect" id="node31" href="$_x_m_l_attributes_8h.html" title="XMLAttributes_t are a list of name/value pairs for XML elements. " alt="" coords="4848,1042,5021,1069"/>
+<area shape="rect" id="node36" href="$_x_m_l_token_8h.html" title="A unit of XML syntax, either an XML element or text. " alt="" coords="5105,960,5258,987"/>
+<area shape="rect" id="node77" href="$_a_s_t_node_type_8h.html" title="Enumeration for Abstract Syntax Tree (AST). " alt="" coords="402,1131,587,1158"/>
+<area shape="rect" id="node78" href="$_stack_8h.html" title="sbml/util/Stack.h" alt="" coords="398,960,517,987"/>
+<area shape="rect" id="node79" href="$_a_s_t_node_8h.html" title="Abstract Syntax Tree (AST) for representing formula trees. " alt="" coords="919,960,1075,987"/>
+<area shape="rect" id="node80" href="$_formula_tokenizer_8h.html" title="Tokenizes an SBML formula string. " alt="" coords="312,1042,517,1069"/>
+<area shape="rect" id="node83" href="$_a_s_t_base_plugin_8h.html" title="sbml/extension/ASTBasePlugin.h" alt="" coords="764,1131,983,1158"/>
+<area shape="rect" id="node82" href="$_string_buffer_8h.html" title="sbml/util/StringBuffer.h" alt="" coords="1109,1131,1265,1158"/>
+<area shape="rect" id="node101" href="$_consistency_validator_8h.html" title="sbml/validator/Consistency\lValidator.h" alt="" coords="12133,169,12313,211"/>
+<area shape="rect" id="node102" href="$_identifier_consistency_validator_8h.html" title="sbml/validator/Identifier\lConsistencyValidator.h" alt="" coords="9110,169,9269,211"/>
+<area shape="rect" id="node103" href="$_math_m_l_consistency_validator_8h.html" title="sbml/validator/MathMLConsistency\lValidator.h" alt="" coords="9293,169,9523,211"/>
+<area shape="rect" id="node104" href="$_s_b_o_consistency_validator_8h.html" title="sbml/validator/SBOConsistency\lValidator.h" alt="" coords="9547,169,9757,211"/>
+<area shape="rect" id="node105" href="$_unit_consistency_validator_8h.html" title="sbml/validator/UnitConsistency\lValidator.h" alt="" coords="9781,169,9985,211"/>
+<area shape="rect" id="node106" href="$_overdetermined_validator_8h.html" title="sbml/validator/Overdetermined\lValidator.h" alt="" coords="10009,169,10213,211"/>
+<area shape="rect" id="node107" href="$_modeling_practice_validator_8h.html" title="sbml/validator/ModelingPractice\lValidator.h" alt="" coords="10237,169,10448,211"/>
+<area shape="rect" id="node108" href="$_l1_compatibility_validator_8h.html" title="sbml/validator/L1Compatibility\lValidator.h" alt="" coords="10473,169,10671,211"/>
+<area shape="rect" id="node109" href="$_l2v1_compatibility_validator_8h.html" title="sbml/validator/L2v1Compatibility\lValidator.h" alt="" coords="10696,169,10909,211"/>
+<area shape="rect" id="node110" href="$_l2v2_compatibility_validator_8h.html" title="sbml/validator/L2v2Compatibility\lValidator.h" alt="" coords="10933,169,11147,211"/>
+<area shape="rect" id="node111" href="$_l2v3_compatibility_validator_8h.html" title="sbml/validator/L2v3Compatibility\lValidator.h" alt="" coords="11171,169,11384,211"/>
+<area shape="rect" id="node112" href="$_l2v4_compatibility_validator_8h.html" title="sbml/validator/L2v4Compatibility\lValidator.h" alt="" coords="11408,169,11621,211"/>
+<area shape="rect" id="node113" href="$_l3v1_compatibility_validator_8h.html" title="sbml/validator/L3v1Compatibility\lValidator.h" alt="" coords="11645,169,11859,211"/>
+<area shape="rect" id="node114" href="$_internal_consistency_validator_8h.html" title="sbml/validator/InternalConsistency\lValidator.h" alt="" coords="11883,169,12109,211"/>
+<area shape="rect" id="node115" href="$_id_list_8h.html" title="sbml/util/IdList.h" alt="" coords="8917,177,9035,203"/>
+</map>

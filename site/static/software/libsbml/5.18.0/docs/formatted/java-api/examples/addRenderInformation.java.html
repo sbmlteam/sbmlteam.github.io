@@ -1,0 +1,319 @@
+<html>
+<HEAD>
+
+<TITLE>
+LibSBML addRenderInformation.java
+</TITLE>
+
+<META NAME="keywords" CONTENT="addRenderInformation.java, libSBML 5.18.0 Java API Reference">
+
+<link rel="stylesheet" type="text/css" href="../prettify.css">
+<script src="../prettify.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../libsbml-javadoc-stylesheet.css">
+
+<script src="../sbml.js"></script>
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="LibSBML addRenderInformation.java";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle(); prettyPrint();">
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../org/sbml/libsbml/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Use</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../org/sbml/libsbml/package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>libSBML<BR>5.18.0</B></EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?overview-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="../overview-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<script type="text/javascript" src="../sbml.js"></script><SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<hr>
+<center>
+<h1 style="padding-top: 0.5em">LibSBML addRenderInformation.java</h1>
+</center>
+
+<pre class="fragment prettyprint"><code class="language-java">
+
+// 
+// @file    addRenderInformation.java
+// @brief   Adds render information to the given SBML file
+// @author  Frank Bergmann
+// 
+// This file is part of libSBML.  Please visit http://sbml.org for more
+// information about SBML, and the latest version of libSBML.
+// 
+
+import org.sbml.libsbml.ColorDefinition;
+import org.sbml.libsbml.Ellipse;
+import org.sbml.libsbml.GradientStop;
+import org.sbml.libsbml.Layout;
+import org.sbml.libsbml.LayoutModelPlugin;
+import org.sbml.libsbml.LinearGradient;
+import org.sbml.libsbml.LocalRenderInformation;
+import org.sbml.libsbml.Model;
+import org.sbml.libsbml.RelAbsVector;
+import org.sbml.libsbml.RenderExtension;
+import org.sbml.libsbml.RenderLayoutPlugin;
+import org.sbml.libsbml.RenderListOfLayoutsPlugin;
+import org.sbml.libsbml.SBMLDocument;
+import org.sbml.libsbml.Style;
+import org.sbml.libsbml.libsbml;
+
+public class addRenderInformation {
+
+	public static void addRenderInformationToPlugin(RenderLayoutPlugin rPlugin) {
+
+		if (rPlugin == null) {
+
+			System.err.println("could not add render information!");
+			System.exit(4);
+		}
+
+		LocalRenderInformation rInfo = rPlugin.createLocalRenderInformation();
+		rInfo.setId("info");
+		rInfo.setName("Example Render Information");
+		rInfo.setProgramName("RenderInformation Examples");
+		rInfo.setProgramVersion("1.0");
+
+		// add some colors
+		ColorDefinition color = rInfo.createColorDefinition();
+		color.setId("black");
+		color.setColorValue("#000000");
+
+		color = rInfo.createColorDefinition();
+		color.setId("silver");
+		color.setColorValue("#c0c0c0");
+
+		color = rInfo.createColorDefinition();
+		color.setId("white");
+		color.setColorValue("#FFFFFF");
+
+		// add a linear gradient from black to white to silver
+		LinearGradient gradient = rInfo.createLinearGradientDefinition();
+		gradient.setId("simpleGradient");
+		gradient.setPoint1(new RelAbsVector(), new RelAbsVector());
+		gradient.setPoint2(new RelAbsVector(0, 100), new RelAbsVector(0, 100));
+
+		GradientStop stop = gradient.createGradientStop();
+		stop.setOffset(new RelAbsVector());
+		stop.setStopColor("white");
+
+		stop = gradient.createGradientStop();
+		stop.setOffset(new RelAbsVector(0, 100));
+		stop.setStopColor("silver");
+
+		// add a species style that represents them as ellipses with the
+		// gradient above
+		Style style = rInfo.createStyle("ellipseStyle");
+		style.getGroup().setFillColor("simpleGradient");
+		style.getGroup().setStroke("black");
+		style.getGroup().setStrokeWidth(2.0);
+		style.addType("SPECIESGLYPH");
+
+		Ellipse ellipse = style.getGroup().createEllipse();
+		ellipse.setCenter2D(new RelAbsVector(0, 50), new RelAbsVector(0, 50));
+		ellipse.setRadii(new RelAbsVector(0, 50), new RelAbsVector(0, 50));
+
+	}
+
+	public static void main(String[] args) {
+		if (args.length != 2) {
+			System.err
+					.println("usage: addRenderInformation <input file> <output file>");
+			System.err
+					.println("       Adds a render information object to the input file.");
+			System.exit(1);
+		}
+
+		String inputFile = args[0];
+		String outputFile = args[1];
+
+		SBMLDocument doc = libsbml.readSBMLFromFile(inputFile);
+		long numErrors = doc.getNumErrors();
+
+		if (numErrors > 0) {
+			System.err.println("Encountered errors while reading the file. ");
+			System.err
+					.println("Please correct the following errors and try again.");
+			doc.printErrors();
+			System.exit(2);
+		}
+
+		Model model = doc.getModel();
+
+		LayoutModelPlugin plugin = (LayoutModelPlugin) model
+				.getPlugin("layout");
+
+		if (plugin == null || plugin.getNumLayouts() == 0) {
+			System.err
+					.println("The loaded model contains no layout information, please add these first.");
+			System.exit(3);
+		}
+
+		RenderListOfLayoutsPlugin lolPlugin = (RenderListOfLayoutsPlugin) plugin
+				.getListOfLayouts().getPlugin("render");
+		if (lolPlugin != null
+				&& lolPlugin.getNumGlobalRenderInformationObjects() > 0) {
+			System.out
+					.println("The loaded model contains global Render information. ");
+		}
+
+		// add render information to the first layout
+		Layout layout = plugin.getLayout(0);
+
+		RenderLayoutPlugin rPlugin = (RenderLayoutPlugin) layout
+				.getPlugin("render");
+		if (rPlugin != null
+				&& rPlugin.getNumLocalRenderInformationObjects() > 0) {
+			System.out
+					.println("The loaded model contains local Render information. ");
+		} else {
+			String uri = (doc.getLevel() == 2 ? RenderExtension.getXmlnsL2()
+					: RenderExtension.getXmlnsL3V1V1());
+
+			// enable render package
+			doc.enablePackage(uri, "render", true);
+			doc.setPackageRequired("render", false);
+
+			rPlugin = (RenderLayoutPlugin) layout.getPlugin("render");
+
+			addRenderInformationToPlugin(rPlugin);
+
+			libsbml.writeSBMLToFile(doc, outputFile);
+
+		}
+		System.exit(0);
+	}
+}
+</code></pre>
+
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../org/sbml/libsbml/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Use</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../org/sbml/libsbml/package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>libSBML<BR>5.18.0</B></EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../index.html?overview-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="../overview-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<script src="../sbml.js"></script><SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+<br>
+
+<address>
+<span class="footer">
+
+  LibSBML, an application programming interface (API) library for SBML.
+  <br><br>
+
+  <table cellpadding="0" cellspacing="0" border="0" bgcolor="white">
+    <tr>
+      <td valign="top">
+        <a href="http://www.sbml.org/">
+          <img src="../official-sbml-supported-70.png" width="80px" height="35px" hspace="10" border="0">
+        </a>
+      </td>
+      <td valign="top" class="footer" align="left">
+        <b>SBML Team</b><br>
+        <a href="http://www.sbml.org/">http://www.sbml.org/</a><br>
+        <a href="mailto:sbml-team@googlegroups.com">sbml-team@googlegroups.com</a><br><br>
+     </td>
+    </tr>
+  </table>
+  <br>
+
+</span>
+</address>

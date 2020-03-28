@@ -1,0 +1,371 @@
+<html>
+<HEAD>
+
+<TITLE>
+Example libSBML programs in Java
+</TITLE>
+
+<META NAME="keywords" CONTENT="Example libSBML programs in Java, libSBML 5.18.0 Java API Reference">
+
+<link rel="stylesheet" type="text/css" href="prettify.css">
+<script src="prettify.js"></script>
+
+<link rel="stylesheet" type="text/css" href="libsbml-javadoc-stylesheet.css">
+
+<script src="sbml.js"></script>
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="Example libSBML programs in Java";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1 top-level"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="org/sbml/libsbml/package-summary.html"><FONT CLASS="NavBarFont1 top-level"><B>org.sbml.libsbml</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="extensions-summary.html"><FONT CLASS="NavBarFont1"><B>Level 3 Extensions</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Use</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="org/sbml/libsbml/package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>libSBML<BR>5.18.0</B></EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html?overview-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="overview-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<script type="text/javascript" src="sbml.js"></script><SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<hr>
+<center>
+<h1 style="padding-top: 0.5em">Example libSBML programs in Java</h1>
+</center>
+
+LibSBML comes with a selection of complete Java example programs.  They can
+be found in the libSBML directory named <code>examples/java</code> located at
+the top level of the libSBML distribution.  The following is a list of the
+example programs provided:
+
+<h2>Simple programs</h2>
+
+<ul>
+  <li> <a href="examples/echoSBML.java.html"><code>echoSBML.java</code></a>: Echos (and in
+    the process, pretty prints) an SBML model.</li>
+
+  <li> <a href="examples/readSBML.java.html"><code>readSBML.java</code></a>: A simple
+    command-line program that reads an SBML file and prints some statistics
+    about it.</li>
+
+  <li> <a href="examples/printSBML.java.html"><code>printSBML.java</code></a>: Prints
+    information about the top-level model in the given SBML file.</li>
+
+  <li> <a href="examples/printRegisteredPackages.java.html"><code>printRegisteredPackages.java</code></a>:
+    Prints the SBML Level 3 packages registered/installed in this copy of
+    libSBML.</li>
+
+  <li> <a href="examples/printsupported.java.html"><code>printsupported.java</code></a>:
+    Prints the supported SBML Levels and Versions for this copy of libSBML.</li>
+</ul>
+
+<h2>More advanced programs</h2>
+
+<ul>
+  <li> <a href="examples/addCVTerms.java.html"><code>addCVTerms.java</code></a>:
+    Adds controlled vocabulary terms to a species in a model.</li>
+
+  <li> <a href="examples/addCustomValidator.java.html"><code>addCustomValidator.java</code></a>:
+    Example of creating a custom validator to be called during validation.</li>
+
+  <li> <a href="examples/addModelHistory.java.html"><code>addModelHistory.java</code></a>:
+    Adds a model history to a model.</li>
+
+  <li> <a href="examples/addingEvidenceCodes_1.java.html"><code>addingEvidenceCodes_1.java</code></a>:
+    Adds controlled vocabulary terms to a reaction in a model.</li>
+
+  <li> <a href="examples/addingEvidenceCodes_2.java.html"><code>addingEvidenceCodes_2.java</code></a>:
+    Adds evidence codes to a species in a model.</li>
+
+  <li> <a href="examples/appendAnnotation.java.html"><code>appendAnnotation.java</code></a>:
+    Adds annotation strings to a model and a species.</li>
+
+  <li> <a href="examples/callExternalValidator.java.html"><code>callExternalValidator.java</code></a>:
+    Example that shows how to call an external program for validation.</li>
+
+  <li> <a href="examples/convertSBML.java.html"><code>convertSBML.java</code></a>:
+    Example demonstrating how to convert SBML documents between SBML Levels.</li>
+
+  <li> <a href="examples/createExampleSBML.java.html"><code>createExampleSBML.java</code></a>:
+    Lengthy example of creating SBML models presented in the SBML specification.</li>
+
+  <li> <a href="examples/getAllElementsWithNotes.java.html"><code>getAllElementsWithNotes.java</code></a>:
+    Demonstrates how to use the element filter class to search the model
+    for elements with specific attributes .</li>
+
+  <li> <a href="examples/printAnnotation.java.html"><code>printAnnotation.java</code></a>:
+    Prints the annotation strings for each element in a given model.</li>
+
+  <li> <a href="examples/printMath.java.html"><code>printMath.java</code></a>:
+    Prints the rule, reaction, and event formulas in a given SBML document.</li>
+
+  <li> <a href="examples/printNotes.java.html"><code>printNotes.java</code></a>:
+    Prints the notes strings for each element in a given model.</li>
+
+  <li> <a href="examples/printRegisteredPackages.java.html"><code>printRegisteredPackages.java</code></a>:
+    A command-line program that prints the package plug-ins that are
+    registered with this copy of libSBML.</li>
+
+  <li> <a href="examples/printUnits.java.html"><code>printUnits.java</code></a>:
+    A command-line program that prints information about the units 
+    of measurement used in a given SBML file.</li>
+
+  <li> <a href="examples/promoteParameters.java.html"><code>promoteParameters.java</code></a>:
+    Promote all local parameters in the model to global parameters.</li>
+
+  <li> <a href="examples/setIdFromNames.java.html"><code>setIdFromNames.java</code></a>:
+    Program that renames all SIds that also have names specified. The new
+    identifiers will be derived from the name, with all invalid characters removed.</li>
+
+  <li> <a href="examples/stripPackage.java.html"><code>stripPackage.java</code></a>:
+    Strips the given SBML Level 3 package from the given SBML file.</li>
+
+  <li> <a href="examples/translateMath.java.html"><code>translateMath.java</code></a>:
+    Translates infix formulas into MathML and vice-versa.</li>
+
+  <li> <a href="examples/unsetAnnotation.java.html"><code>unsetAnnotation.java</code></a>:
+    Unsets the annotation for each element in the given SBML file.</li>
+
+  <li> <a href="examples/unsetNotes.java.html"><code>unsetNotes.java</code></a>:
+    Unsets the notes for each element in the given SBML file.</li>
+
+  <li> <a href="examples/validateSBML.java.html"><code>validateSBML.java</code></a>:
+    Validates one or more SBML files.</li>
+
+</ul>
+
+
+<h2>Programs using SBML Level 3 packages</h2>
+
+<p> The following examples use specific libSBML plug-ins to support SBML
+Level&nbsp;3 packages.  The use of these packages requires your copy of
+libSBML to have been configured to enable the appropriate plug-in.  The
+default installation of libSBML comes with the packages below already
+enabled, but beware that if you built libSBML from source code and disabled
+one or more of these packages, then their features will not be available.
+
+
+<h3>Package: Flux Balance Constraints</h3>
+
+<p> The <a target="_blank" 
+href="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/fbc">Flux 
+Balance Constraints</a> package has the nickname &ldquo;fbc&rdquo;.  The 
+libSBML classes that implement this package are marked with the symbol
+<span class="pkg-marker pkg-color-fbc">fbc</span> in the libSBML documentation.
+
+<ul>
+
+  <li> <a href="examples/fbc_example1.java.html"><code>fbc_example1.java</code></a>:
+    Simple example of writing a model that uses the SBML Level&nbsp;3 Flux
+    Balance Constraints package.</li>
+
+  <li> <a href="examples/convertCobraToFbc.java.html"><code>convertCobraToFbc.java</code></a>:
+    Example of converting a COBRA-style SBML Level 2 model to SBML
+    Level&nbsp;3 using the Flux Balance Constraints package.</li>
+
+  <li> <a href="examples/convertFbcToCobra.java.html"><code>convertFbcToCobra.java</code></a>: 
+    Example of converting an SBML Level&nbsp;3 model using the Flux 
+    Balance Constraints package to a COBRA-style SBML Level 2 model.</li>
+
+</ul>
+
+
+<h3>Package: Groups</h3>
+
+<p> The <a target="_blank" 
+href="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/groups">Groups</a>
+package has the nickname &ldquo;groups&rdquo;.  
+The libSBML classes that implement this package are marked with 
+the symbol <span class="pkg-marker pkg-color-groups">groups</span> in 
+the libSBML documentation.
+
+<ul>
+
+  <li> <a href="examples/groups_example1.java.html"><code>groups_example1.java</code></a>:
+    Simple example of writing a model that uses the SBML Level&nbsp;3 Groups
+    package.</li>
+
+</ul>
+
+
+<h3>Package: Hierarchical Model Composition</h3>
+
+<p> The <a target="_blank" 
+href="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/comp">Hierarchical
+Model Composition</a> package has the nickname &ldquo;comp&rdquo;.  
+The libSBML classes that implement this package are marked with 
+the symbol <span class="pkg-marker pkg-color-comp">comp</span> in 
+the libSBML documentation.
+
+<ul>
+
+  <li> <a href="examples/flattenModel.java.html"><code>flattenModel.java</code></a>: 
+    Model flattening example.</li>
+
+</ul>
+
+
+<h3>Package: Layout</h3>
+
+<p> The <a target="_blank" 
+href="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/layout">Layout
+</a> package has the nickname &ldquo;layout&rdquo;.  
+The libSBML classes that implement this package are marked with 
+the symbol <span class="pkg-marker pkg-color-layout">layout</span> in 
+the libSBML documentation.
+
+<ul>
+
+  <li> <a href="examples/layout_example1.java.html"><code>layout_example1.java</code></a>:
+    An example layout.</li>
+
+  <li> <a href="examples/layout_example1_L3.java.html"><code>layout_example1_L3.java</code></a>:
+    An SBML Level&nbsp;3 example.
+
+</ul>
+
+
+<h3>Package: Qualitative Models</h3>
+
+<p> The <a target="_blank" 
+href="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/qual">Qualitative
+Models</a> package has the nickname &ldquo;qual&rdquo;.  
+The libSBML classes that implement this package are marked with 
+the symbol <span class="pkg-marker pkg-color-qual">qual</span> in 
+the libSBML documentation.
+
+<ul>
+
+  <li> <a href="examples/qual_example1.java.html"><code>qual_example1.java</code></a>:
+    An example of creating a model using SBML Level 3 Qualitative Models.</li>
+
+</ul>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1 top-level"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="org/sbml/libsbml/package-summary.html"><FONT CLASS="NavBarFont1 top-level"><B>org.sbml.libsbml</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="extensions-summary.html"><FONT CLASS="NavBarFont1"><B>Level 3 Extensions</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Use</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="org/sbml/libsbml/package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+<B>libSBML<BR>5.18.0</B></EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="index.html?overview-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="overview-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<script src="sbml.js"></script><SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+<br>
+
+<address>
+<span class="footer">
+
+  LibSBML 5.18.0, an application programming interface (API) library for SBML.
+  <br><br>
+
+  <table cellpadding="0" cellspacing="0" border="0" bgcolor="white">
+    <tr>
+      <td valign="top">
+        <a href="http://www.sbml.org/">
+          <img src="official-sbml-supported-70.png" width="80px" height="35px" hspace="10" border="0">
+        </a>
+      </td>
+      <td valign="top" class="footer" align="left">
+        <b>SBML Team</b><br>
+        <a href="http://www.sbml.org/">http://www.sbml.org/</a><br>
+        <a href="mailto:sbml-team@googlegroups.com">sbml-team@googlegroups.com</a><br><br>
+     </td>
+    </tr>
+  </table>
+  <br>
+
+</span>
+</address>

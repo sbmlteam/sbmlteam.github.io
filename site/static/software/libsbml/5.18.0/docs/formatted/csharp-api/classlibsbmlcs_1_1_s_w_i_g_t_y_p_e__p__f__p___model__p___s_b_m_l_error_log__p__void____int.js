@@ -1,0 +1,4 @@
+var classlibsbmlcs_1_1_s_w_i_g_t_y_p_e__p__f__p___model__p___s_b_m_l_error_log__p__void____int =
+[
+    [ "SWIGTYPE_p_f_p_Model_p_SBMLErrorLog_p_void__int", "classlibsbmlcs_1_1_s_w_i_g_t_y_p_e__p__f__p___model__p___s_b_m_l_error_log__p__void____int.html#a53bc5646a40944ca0d772da67bbaf975", null ]
+];

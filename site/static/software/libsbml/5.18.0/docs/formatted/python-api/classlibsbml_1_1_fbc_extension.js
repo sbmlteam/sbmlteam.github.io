@@ -1,0 +1,25 @@
+var classlibsbml_1_1_fbc_extension =
+[
+    [ "__init__", "classlibsbml_1_1_fbc_extension.html#acff5ec9cc528fbcc905829614ff52a4c", null ],
+    [ "clone", "classlibsbml_1_1_fbc_extension.html#a87eceb9e0cd7220c2f47155ec8c72752", null ],
+    [ "getDefaultLevel", "classlibsbml_1_1_fbc_extension.html#a97256572645e6509a7543832b88ec0ff", null ],
+    [ "getDefaultPackageVersion", "classlibsbml_1_1_fbc_extension.html#a994b3edbde67b2ad1689fff5e22940ee", null ],
+    [ "getDefaultVersion", "classlibsbml_1_1_fbc_extension.html#a821b8e98b73b86ab02426627f81077ee", null ],
+    [ "getLevel", "classlibsbml_1_1_fbc_extension.html#a51d8c11820410c44c37d5188d39a8c43", null ],
+    [ "getName", "classlibsbml_1_1_fbc_extension.html#a8182e4092e05f45e78cf92f0be552752", null ],
+    [ "getNumOfSBasePlugins", "classlibsbml_1_1_fbc_extension.html#a0bc37866436f792469e69b385d6c9171", null ],
+    [ "getNumOfSupportedPackageURI", "classlibsbml_1_1_fbc_extension.html#ae55be2508772c6f7c4a79ac35067ef5b", null ],
+    [ "getPackageName", "classlibsbml_1_1_fbc_extension.html#a1d6616759c6fdecdc1568058ce405037", null ],
+    [ "getPackageVersion", "classlibsbml_1_1_fbc_extension.html#aa3ee628412cba5591c620015ba675718", null ],
+    [ "getSBMLExtensionNamespaces", "classlibsbml_1_1_fbc_extension.html#a620a9e1f9a7979aabe5dabde56eebbc3", null ],
+    [ "getStringFromTypeCode", "classlibsbml_1_1_fbc_extension.html#a3d53b8b20a2868bfbc8e08f0f5d060a6", null ],
+    [ "getSupportedPackageURI", "classlibsbml_1_1_fbc_extension.html#afa01ba96bc8eeda37c97cc31c0d12d9c", null ],
+    [ "getURI", "classlibsbml_1_1_fbc_extension.html#a9639cab638ae7f57b94488c4d942fcc3", null ],
+    [ "getVersion", "classlibsbml_1_1_fbc_extension.html#a1f3c676f453b5570287e4f59792bc761", null ],
+    [ "getXmlnsL3V1V1", "classlibsbml_1_1_fbc_extension.html#abab6bcb6600b2283a0d7476d5c807bb9", null ],
+    [ "getXmlnsL3V1V2", "classlibsbml_1_1_fbc_extension.html#a76c4cf454a8a582e60fd2c4e151a0687", null ],
+    [ "isEnabled", "classlibsbml_1_1_fbc_extension.html#a334e54c9bea7469b7765bffff74a9f91", null ],
+    [ "isInUse", "classlibsbml_1_1_fbc_extension.html#a44949547bf85826f5b373f02c14d7649", null ],
+    [ "isSupported", "classlibsbml_1_1_fbc_extension.html#a4122916f55ce9f60a562830ae15a9a11", null ],
+    [ "setEnabled", "classlibsbml_1_1_fbc_extension.html#a196bc710f278b88fd578f1095fd26e5f", null ]
+];

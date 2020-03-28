@@ -1,0 +1,27 @@
+var class_reference_glyph__t =
+[
+    [ "ReferenceGlyph_clone", "class_reference_glyph__t.html#ac419003cf3b287ce861217efd62567fb", null ],
+    [ "ReferenceGlyph_create", "class_reference_glyph__t.html#aa39e96493164cf821f9db1a00d24d806", null ],
+    [ "ReferenceGlyph_createCubicBezier", "class_reference_glyph__t.html#aee8f2f4a6112da6dfc8fd5b859e787a3", null ],
+    [ "ReferenceGlyph_createFrom", "class_reference_glyph__t.html#a708dcc0cb51c1e2d054961209eaac754", null ],
+    [ "ReferenceGlyph_createLineSegment", "class_reference_glyph__t.html#a788dfefe829667cc816417e0b965cf6d", null ],
+    [ "ReferenceGlyph_createWith", "class_reference_glyph__t.html#a726a6beeb4d9907f68ef65dcdf2b722b", null ],
+    [ "ReferenceGlyph_free", "class_reference_glyph__t.html#a8419c88ba0dc6a260225f88e95eebd78", null ],
+    [ "ReferenceGlyph_getCurve", "class_reference_glyph__t.html#ab798faf7cf417dbfde474cebff7e369f", null ],
+    [ "ReferenceGlyph_getGlyphId", "class_reference_glyph__t.html#a7f5936aea8df0d4bc381ebbc5b762da6", null ],
+    [ "ReferenceGlyph_getId", "class_reference_glyph__t.html#adc9014c0221feb93dabe71e7bbb1a008", null ],
+    [ "ReferenceGlyph_getReferenceId", "class_reference_glyph__t.html#a72f279e9f256446720328fddd496f9e2", null ],
+    [ "ReferenceGlyph_getRole", "class_reference_glyph__t.html#ad6f00a14bbc8f5edcbaa17f094560746", null ],
+    [ "ReferenceGlyph_initDefaults", "class_reference_glyph__t.html#a640f2b2caa3a9d8965d6a357296c5af7", null ],
+    [ "ReferenceGlyph_isSetCurve", "class_reference_glyph__t.html#a1f0cc2d027fcbe02c45b989e3afdf894", null ],
+    [ "ReferenceGlyph_isSetGlyphId", "class_reference_glyph__t.html#a428170ac8f072f275af6c6c69b3c413f", null ],
+    [ "ReferenceGlyph_isSetId", "class_reference_glyph__t.html#af5f1af03a94be767ea31e6e69a79fd22", null ],
+    [ "ReferenceGlyph_isSetReferenceId", "class_reference_glyph__t.html#a6eb32cd24e9490a6e6782af9d2ce75e8", null ],
+    [ "ReferenceGlyph_isSetRole", "class_reference_glyph__t.html#a93b576ef7464e389ab940fbc399d1bfc", null ],
+    [ "ReferenceGlyph_setCurve", "class_reference_glyph__t.html#af30f73ff645db1a5697c2769de25d775", null ],
+    [ "ReferenceGlyph_setGlyphId", "class_reference_glyph__t.html#a2995beb47e1c2af40fc02278372ec722", null ],
+    [ "ReferenceGlyph_setId", "class_reference_glyph__t.html#a9f312938b2cbe6db31684c63fbbdb2ba", null ],
+    [ "ReferenceGlyph_setReferenceId", "class_reference_glyph__t.html#a9e95959269eb2cf3bdc1bd4942699363", null ],
+    [ "ReferenceGlyph_setRole", "class_reference_glyph__t.html#ae709729e355e2355b5408199d4e85da1", null ],
+    [ "ReferenceGlyph_unsetId", "class_reference_glyph__t.html#ace77ac5fcc605d52396267ac8734e414", null ]
+];

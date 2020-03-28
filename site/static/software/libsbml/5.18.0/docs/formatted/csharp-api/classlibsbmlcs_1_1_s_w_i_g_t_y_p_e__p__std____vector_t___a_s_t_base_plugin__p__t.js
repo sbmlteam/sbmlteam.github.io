@@ -1,0 +1,4 @@
+var classlibsbmlcs_1_1_s_w_i_g_t_y_p_e__p__std____vector_t___a_s_t_base_plugin__p__t =
+[
+    [ "SWIGTYPE_p_std__vectorT_ASTBasePlugin_p_t", "classlibsbmlcs_1_1_s_w_i_g_t_y_p_e__p__std____vector_t___a_s_t_base_plugin__p__t.html#a5bb33d2b07935dac48322424c5fcc228", null ]
+];
