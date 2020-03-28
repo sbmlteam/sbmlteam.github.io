@@ -1,0 +1,26 @@
+<!-- ==========================================================================
+File name   : /layouts/shortcodes/gsoc-table.html
+Description : Shortcode for creating a table for describing GSOC projects
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology
+Date created: 2020-03-28
+
+This is used to produce the outer <table> structure for a table describing the
+GSOC projects in a given year.  It's used on /about/contributors.  There is a 
+companion shortcode called "gsoc-project" that is used inside this shortcode to
+create a single project row in the table.
+=========================================================================== -->
+
+<table>
+  <thead>
+    <tr>
+      <th width="20%">Person</th>
+      <th width="25%">Organization</th>
+      <th width="45%">Topic</th>
+      <th width="10%">Project blog</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{ .Inner | safeHTML }}
+  </tbody>
+</table>
