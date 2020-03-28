@@ -9,10 +9,23 @@
 # data, see the subdirectories under "SBML" in this directory.
 # =============================================================================
 
+# Data for specifications -----------------------------------------------------
+
 # URL for the SBML Package Spreadsheet kept as a Google spreadsheet
 PackageSpreadsheetURL = "https://docs.google.com/spreadsheets/d/1pa01Z72t1UKrjliAXBhxjjN1nnOf00gXcfm4_pWXOxA"
 
 # This identifies the latest SBML Level 3 specification.
+[specification]
 HighestSpecLevel = "3"
 HighestSpecVersion = "2"
 HighestSpecRelease = "2"
+
+# Data for software -----------------------------------------------------------
+
+[libsbml]
+download-url = "https://sourceforge.net/projects/sbml/files/libsbml"
+latest-release = "5.18.0"
+
+[jsbml]
+download-url = "https://github.com/sbmlteam/jsbml/releases"
+latest-release = "1.4"
