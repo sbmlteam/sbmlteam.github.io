@@ -114,7 +114,7 @@ LibSBML includes methods to report the line and column number where an object or
 
 ## Sometimes, the `libsbml_wrap.cpp` files are not recreated
 
-Many of the language bindings in libSBML are created using <a target="_blank" href="http://www.swig.org">SWIG</a>, a language wrapper generator. The output of SWIG for libSBML is a file named <code>libsbml_wrap.cpp</code> in the respective language binding's subdirectory (e.g., <code>src/bindings/java</code>), sometimes in combination with other files, depending on the language in question. If you obtained your copy of libSBML as a distribution archive (e.g., from <a target="_blank" href="https://sourceforge.net/projects/sbml/files/libsbml">SourceForge</a>), this file will already be present in the distribution. If, instead, you obtained your copy of libSBML from the SVN source tree, you will need to have SWIG available on your system in order to regenerate the <code>libsbml_wrap.cpp</code> file. In both cases, all things should work fine.
+Many of the language bindings in libSBML are created using <a href="http://www.swig.org">SWIG</a>, a language wrapper generator. The output of SWIG for libSBML is a file named <code>libsbml_wrap.cpp</code> in the respective language binding's subdirectory (e.g., <code>src/bindings/java</code>), sometimes in combination with other files, depending on the language in question. If you obtained your copy of libSBML as a distribution archive (e.g., from <a href="https://sourceforge.net/projects/sbml/files/libsbml">SourceForge</a>), this file will already be present in the distribution. If, instead, you obtained your copy of libSBML from the SVN source tree, you will need to have SWIG available on your system in order to regenerate the <code>libsbml_wrap.cpp</code> file. In both cases, all things should work fine.
 
 <em>If</em> you modify the libSBML source files yourself (and in particular, files upon which the SWIG binding code depends), the makefile rules <em>should</em> always automatically cause the appropriate <code>libsbml_wrap.cpp</code> files to be recreated. However, <em>sometimes</em> the makefile rules do not regenerate the wrapper files when they should. This happens very rarely, and under conditions that the libSBML developers have had a very hard time reproducing consistently. In some versions of libSBML, it seemed to happen slightly more often under cygwin.
 
@@ -127,7 +127,7 @@ We emphasize that this problem should not affect normal users of libSBML, only t
 
 ## Some `libsbml_wrap.cpp` files produce compile-time warnings
 
-As mentioned above, many of the language bindings in libSBML are created using <a target="_blank" href="http://www.swig.org">SWIG</a>, a language wrapper generator. The output of SWIG for libSBML is a file named <code>libsbml_wrap.cpp</code> in the respective language binding's subdirectory (e.g., <code>src/bindings/java</code>).
+As mentioned above, many of the language bindings in libSBML are created using <a href="http://www.swig.org">SWIG</a>, a language wrapper generator. The output of SWIG for libSBML is a file named <code>libsbml_wrap.cpp</code> in the respective language binding's subdirectory (e.g., <code>src/bindings/java</code>).
 
 In some cases, the <code>libsbml_wrap.cpp</code> file produced by SWIG will cause compilers to issue warnings during compilation.  The following is an example from the Ruby language bindings compiled on Mac&nbsp;OS&nbsp;X 10.9 using plain <code>make</code>:
 

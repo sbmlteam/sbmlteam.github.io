@@ -106,19 +106,19 @@ read the appropriate .toml data file.
 
   <div class="sbml-spec-link-box">
     <span class="sbml-spec-link">
-      <a target="_blank" href="{{ $spec.pdf_main }}"><i class="fa-file-pdf fas fa-2x"></i><br>
+      <a href="{{ $spec.pdf_main }}"><i class="fa-file-pdf fas fa-2x"></i><br>
         Specification</a>
     </span>
     <span class="sbml-spec-link">
-      <a target="_blank" href="{{ $spec.publication }}"><i class="fa-file-pdf fas fa-2x"></i><br>
+      <a href="{{ $spec.publication }}"><i class="fa-file-pdf fas fa-2x"></i><br>
         Publication</a>
     </span>
     <span class="sbml-spec-link">
-      <a target="_blank" href="{{ $spec.errata }}"><i class="fa-file-alt fas fa-2x"></i><br>
+      <a href="{{ $spec.errata }}"><i class="fa-file-alt fas fa-2x"></i><br>
         Known issues</a>
     </span>
     <span class="sbml-spec-link">
-      <a target="_blank" href="{{ $spec.schema }}"><i class="fa-file-code fas fa-2x"></i><br>
+      <a href="{{ $spec.schema }}"><i class="fa-file-code fas fa-2x"></i><br>
         {{ $spec.schema_type }} schema</a>
     </span>
   </div>
@@ -128,10 +128,10 @@ read the appropriate .toml data file.
       <span class="sbml-spec-citation-label">How to cite the publication: </span>
       {{ $spec.citation | markdownify }}
       <span class="sbml-spec-citation-link">
-        <a target="_blank" href="{{ $spec.cite_bibtex }}"><i class="fa-file-download fas fa-1x"></i> BibTeX</a>
+        <a href="{{ $spec.cite_bibtex }}"><i class="fa-file-download fas fa-1x"></i> BibTeX</a>
       </span>
       <span class="sbml-spec-citation-link">
-        <a target="_blank" href="{{ $spec.cite_ris }}"><i class="fa-file-download fas fa-1x"></i> RIS</a>
+        <a href="{{ $spec.cite_ris }}"><i class="fa-file-download fas fa-1x"></i> RIS</a>
       </span>
     </div>
   {{ end }}

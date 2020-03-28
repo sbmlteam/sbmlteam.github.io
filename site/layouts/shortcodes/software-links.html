@@ -9,40 +9,40 @@
 <div class="sbml-software-links-box">
   {{ if ne $website "" }}
   <span class="sbml-software-link">
-     <a target="_blank" href="{{ $website }}"><i class="fa-home fas fa-2x"></i><br>Website</a>
+     <a href="{{ $website }}"><i class="fa-home fas fa-2x"></i><br>Website</a>
   </span>
   {{ end }}
   {{ if ne $download "" }}
   <span class="sbml-software-link">
-    <a target="_blank" href="{{ $download }}"><i class="fa-download fas fa-2x"></i><br>Download</a>
+    <a href="{{ $download }}"><i class="fa-download fas fa-2x"></i><br>Download</a>
   </span>
   {{ end }}
   {{ if ne $changes "" }}
   <span class="sbml-software-link">
-    <a target="_blank" href="{{ $changes }}"><i class="fa-file-alt far fa-2x"></i><br>News</a>
+    <a href="{{ $changes }}"><i class="fa-file-alt far fa-2x"></i><br>News</a>
   </span>
   {{ end }}
   {{ if ne $docs "" }}
   <span class="sbml-software-link">
-    <a target="_blank" href="{{ $docs }}"><i class="fa-book-open fas fa-2x"></i><br>Documentation</a>
+    <a href="{{ $docs }}"><i class="fa-book-open fas fa-2x"></i><br>Documentation</a>
   </span>
   {{ end }}
   {{ if ne $forum "" }}
   <span class="sbml-software-link">
-    <a target="_blank" href="{{ $forum }}"><i class="fa-comments fas fa-2x"></i><br>Forum</a>
+    <a href="{{ $forum }}"><i class="fa-comments fas fa-2x"></i><br>Forum</a>
   </span>
   {{ end }}
   {{ if ne $tracker "" }}
   <span class="sbml-software-link">
-    <a target="_blank" href="{{ $tracker }}"><i class="fa-bug fas fa-2x"></i><br>Issue tracker</a>
+    <a href="{{ $tracker }}"><i class="fa-bug fas fa-2x"></i><br>Issue tracker</a>
   </span>
   {{ end }}
   {{ if ne $repo "" }}
   <span class="sbml-software-link">
     {{ if in $repo "sourceforge" }}
-    <a target="_blank" href="{{ $repo }}"><span class="sourceforge-icon"></span><br>Code</a>
+    <a href="{{ $repo }}"><span class="sourceforge-icon"></span><br>Code</a>
     {{ else }}
-    <a target="_blank" href="{{ $repo }}"><i class="fa-github fab fa-2x"></i><br>Source code</a>
+    <a href="{{ $repo }}"><i class="fa-github fab fa-2x"></i><br>Source code</a>
     {{ end }}
   </span>
   {{ end }}
