@@ -1,0 +1,14 @@
+<!-- ==========================================================================
+File name   : /layouts/shortcodes/insert-fragment.html
+Description : Shortcode to insert a page fragment
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology
+Date created: 2020-03-28
+
+We put reusable fragments of text (in Markdown format) under the directory
+/content/_fragments/.  This shortcode is used to insert a fragment from that
+directory into other pages.
+=========================================================================== -->
+{{- $page := .Get 0 -}}
+{{- $path := print "/_fragments/" $page ".md" -}}
+{{- readFile $path | markdownify -}}
