@@ -294,14 +294,14 @@ listed in alphabetical order by student's last name.
       name="Victor Kofia"
       org="[Bader Lab](http://baderlab.org/Members), University of Toronto, Canada"
       title="Redesign the implementation of mathematical formulas in JSBML"
-      link="http://co.mbine.org/events/COMBINE_2014/agenda?q=system/files/victor-kofia-gsoc-jsbml-math-package.pdf"
+      link="http://co.mbine.org/system/files/victor-kofia-gsoc-jsbml-math-package.pdf"
       blog="http://kofiav.blogspot.ca/search/label/Google%20Summer%20of%20Code%202014"
   >}}
   {{< gsoc-project
       name="Ibrahim Y. Vazirabad"
       org="[Milwaukee School of Engineering](http://www.msoe.edu/), USA"
       title="Improving the plug-in interface for CellDesigner"
-      link="http://www.slideshare.net/yvazirabad/improving-the-plugin-interface-for-celldesigner-v22?ref=http://jsbmlcelldesigner2014.blogspot.com/2014_05_01_archive.html"
+      link="http://www.slideshare.net/yvazirabad/improving-the-plugin-interface-for-celldesigner-v22"
       blog="http://jsbmlcelldesigner2014.blogspot.com/"
   >}}
   {{< gsoc-project
