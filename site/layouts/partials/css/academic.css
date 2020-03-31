@@ -2712,3 +2712,10 @@ body.dark .twitter-box-inner {
   margin-left: -0.4em;
   margin-right: -0.1em;
 }
+
+.program-name {
+  font-family: '{{ .Get "mono_font" }}', monospace;
+  font-weight: 500;
+  letter-spacing: -0.1ex;
+
+}
