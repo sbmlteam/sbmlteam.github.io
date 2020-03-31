@@ -1,0 +1,95 @@
+<!-- ==========================================================================
+File name   : /layouts/shortcodes/latest-version.html
+Description : Shortcode to return the latest version number of software
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology
+Date created: 2020-03-28
+
+IMPORTANT: the code below is also embedded in the shortcode called
+"libsbml-example-table.html" (a necessity because Hugo doesn't provide a way 
+to call one shortcode from the implementation of another).  If you make any
+updates here, MAKE SURE TO UPDATE THE COPY IN "libsbml-example-table.html".
+
+This shortcode returns a string representing the highest version number of a
+software package under /static/software/.  It takes one argument: the name
+of the software subdirectory (e.g., "libsbml", "jsbml").  It works by looking
+under /static/software/NAME/ for directories whose names start with numbers, 
+then figuring out which one represents the highest/latest version.
+
+This is a grungy implementation because of Hugo's limited built-in functions.
+There is no function to sort using a custom comparator, so some of the natural
+ways of implementing something like this are not possible.  Instead, this uses 
+a hacky approach of converting each version string into a floating point 
+number and then sorting the list of numbers to find the highest-sorting one.
+Version numbers, however, do not sort like regular numbers because they often
+have additional components such as "rc1" or "alpha".  I couldn't think of
+any other way of handling that except to have built-in rules for recognizing
+"alpha", "beta" and "rc", and then weighting them in a way that makes the
+final numerical value sort in the desired way.
+
+Here are some examples of how this turns version strings into numbers for
+sorting purposes:
+
+   - 1.5.0alpha1 = 01005000.001
+   - 1.5.0alpha2 = 01005000.002
+   - 1.5.0beta   = 01005000.101
+   - 1.5.0beta2  = 01005000.102
+   - 1.5.0rc1    = 01005000.201
+   - 1.5.0       = 01005000.999
+
+This code will fail if something other than "beta", "alpha" and "rc" are part
+of the version string.
+=========================================================================== -->
+
+{{ $name := .Get "name" | default "libsbml" }}
+{{ $path := print "/static/software/" $name }}
+
+<!-- Collect all numbered directory names into an array. -->
+{{ $versions := slice }}
+{{ range (readDir $path) }}
+  {{ if (findRE "^(\\d+).(\\d+)(.\\d+)?" .Name) }}
+    <!-- Extract the conventional parts of the version number. The following
+         take apart strings of the form "X.Y.Ztail", where "tail" may be a
+         mix of letters, numbers, dash, period and underscore. -->
+    {{ $x    := replaceRE "\\A(\\d+).*" "$1" .Name }}
+    {{ $y    := replaceRE "\\A(?:\\d+\\.)(\\d+).*" "$1" .Name }}
+    {{ $z    := replaceRE "\\A(?:\\d+\\.\\d+\\.?)(\\d+).*" "$1" .Name }}
+    {{ $tail := replaceRE "\\A(?:\\d+\\.\\d+\\.\\d+)([-_a-zA-Z0-9.]+)?" "$1" .Name }}
+
+    <!-- The semantics of replaceRE are such that if it fails to match, it
+         returns the (entire) original string.  Need to correct that: -->
+    {{ if eq $x .Name }}    {{ $x = "0" }}   {{ end }}
+    {{ if eq $y .Name }}    {{ $y = "0" }}   {{ end }}
+    {{ if eq $z .Name }}    {{ $z = "0" }}   {{ end }}
+    {{ if eq $tail .Name }} {{ $tail = "0" }} {{ end }}
+
+    <!-- Convert the tail number into a float for use in sorting. Here I
+         see no alternative but to check for certain patterns explicitly. -->
+    {{ $number := "0" }}
+    {{ $tail = lower $tail }}
+    {{ if (findRE "\\d+" $tail) }}
+      {{ $number = replaceRE ".*(\\d+).*" "$1" $tail }}
+    {{ end }}
+    {{ $prerelease := "" }}
+    {{ if in $tail "alpha" }}
+      {{ $prerelease = printf "0%02d" (int $number) }}
+    {{ else if in $tail "beta" }}
+      {{ $prerelease = printf "1%02d" (int $number) }}
+    {{ else if in $tail "rc" }}
+      {{ $prerelease = printf "2%02d" (int $number) }}
+    {{ else }}
+      {{ $prerelease = "999" }}
+    {{ end }}
+
+    <!-- Create a floating point number from all the parts -->
+    {{ $key := printf "%02d%03d%03d.%03d" (int $x) (int $y) (int $z) (int $prerelease)}}
+
+    <!-- Finally, store the name & key in a dict, and add that to the list. -->
+    {{ $versions = $versions | append (dict "name" .Name "sortkey" $key) }}
+  {{ end }}
+{{ end }}
+
+<!-- Sort the versions and return the highest-sorted one. -->
+{{ $sorted  := sort $versions "sortkey" "asc" }}
+{{ $last   := index (last 1 $sorted) 0 }}
+{{- $last.name -}}
