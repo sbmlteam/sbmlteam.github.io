@@ -32,7 +32,7 @@ LibSBML provides interfaces for a number of programming languages. The following
 Follow this link to find documentation about many of libSBML's language APIs.
 {{% /blurb %}}
 
-{{% blurb title="Example programs" icon="keyboard" link="api" %}}
+{{% blurb title="Example programs" icon="keyboard" link="examples" %}}
 Follow this link to find example programs written in different programming languages supported by libSBML.
 {{% /blurb %}}
 
