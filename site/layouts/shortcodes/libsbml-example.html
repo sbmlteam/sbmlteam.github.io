@@ -1,0 +1,132 @@
+<!-- Get parameter values. ------------------------------------------------ -->
+
+{{ $name := .Get "name" }}
+{{ $desc := .Get "description" }}
+
+<!-- Determine the latest version of libSBML in our static directory. 
+
+     The following code is copied from our "latest-version.html" shortcode
+     because Hugo does not provide a way to call a shortcode from another
+     shortcode or to pass arguments between shortcodes within the content
+     page.  Copying the code like this is terrible for code maintenance.  
+     I tried for most of a day to find an alternative, and have given up. -->
+
+{{ $path := "/static/software/libsbml" }}
+
+<!-- Collect all numbered directory names into an array. -->
+{{ $versions := slice }}
+{{ range (readDir $path) }}
+  {{ if (findRE "^(\\d+).(\\d+)(.\\d+)?" .Name) }}
+    <!-- Extract the conventional parts of the version number. The following
+         take apart strings of the form "X.Y.Ztail", where "tail" may be a
+         mix of letters, numbers, dash, period and underscore. -->
+    {{ $x    := replaceRE "\\A(\\d+).*" "$1" .Name }}
+    {{ $y    := replaceRE "\\A(?:\\d+\\.)(\\d+).*" "$1" .Name }}
+    {{ $z    := replaceRE "\\A(?:\\d+\\.\\d+\\.?)(\\d+).*" "$1" .Name }}
+    {{ $tail := replaceRE "\\A(?:\\d+\\.\\d+\\.\\d+)([-_a-zA-Z0-9.]+)?" "$1" .Name }}
+
+    <!-- The semantics of replaceRE are such that if it fails to match, it
+         returns the (entire) original string.  Need to correct that: -->
+    {{ if eq $x .Name }}    {{ $x = "0" }}   {{ end }}
+    {{ if eq $y .Name }}    {{ $y = "0" }}   {{ end }}
+    {{ if eq $z .Name }}    {{ $z = "0" }}   {{ end }}
+    {{ if eq $tail .Name }} {{ $tail = "0" }} {{ end }}
+
+    <!-- Convert the tail number into a float for use in sorting. Here I
+         see no alternative but to check for certain patterns explicitly. -->
+    {{ $number := "0" }}
+    {{ $tail = lower $tail }}
+    {{ if (findRE "\\d+" $tail) }}
+      {{ $number = replaceRE ".*(\\d+).*" "$1" $tail }}
+    {{ end }}
+    {{ $prerelease := "" }}
+    {{ if in $tail "alpha" }}
+      {{ $prerelease = printf "0%02d" (int $number) }}
+    {{ else if in $tail "beta" }}
+      {{ $prerelease = printf "1%02d" (int $number) }}
+    {{ else if in $tail "rc" }}
+      {{ $prerelease = printf "2%02d" (int $number) }}
+    {{ else }}
+      {{ $prerelease = "999" }}
+    {{ end }}
+
+    <!-- Create a floating point number from all the parts -->
+    {{ $key := printf "%02d%03d%03d.%03d" (int $x) (int $y) (int $z) (int $prerelease)}}
+
+    <!-- Finally, store the name & key in a dict, and add that to the list. -->
+    {{ $versions = $versions | append (dict "name" .Name "sortkey" $key) }}
+  {{ end }}
+{{ end }}
+
+<!-- Sort the versions and return the highest-sorted one. -->
+{{ $sorted := sort $versions "sortkey" "asc" }}
+{{ $last   := index (last 1 $sorted) 0 }}
+{{ $latest := $last.name }}
+
+<!-- Generate the output, with links to example files. -------------------- -->
+
+{{ $c_file      := print $path "/" $latest "/examples/c/"          $name ".c" }}
+{{ $cpp_file    := print $path "/" $latest "/examples/c++/"        $name ".cpp" }}
+{{ $csharp_file := print $path "/" $latest "/examples/csharp/"     $name ".cs" }}
+{{ $java_file   := print $path "/" $latest "/examples/java/"       $name ".java" }}
+{{ $js_file     := print $path "/" $latest "/examples/javascript/" $name ".js" }}
+{{ $perl_file   := print $path "/" $latest "/examples/perl/"       $name ".pl" }}
+{{ $php_file    := print $path "/" $latest "/examples/php/"        $name ".php" }}
+{{ $python_file := print $path "/" $latest "/examples/python/"     $name ".py" }}
+{{ $r_file      := print $path "/" $latest "/examples/r/"          $name ".r" }}
+{{ $ruby_file   := print $path "/" $latest "/examples/ruby/"       $name ".rb" }}
+
+<tr>
+  <td><span class="program-name">{{- $name | markdownify -}}</span></td>
+  <td>{{- $desc | markdownify -}}</td>
+  {{- if fileExists $c_file -}}
+    <td><a href='{{ $c_file | replaceRE "/static" "" }}'>C</a></td>
+  {{- else -}}
+    <td>&mdash;</td>
+  {{- end -}}
+  {{- if fileExists $cpp_file -}}
+    <td><a href='{{ $cpp_file | replaceRE "/static" "" }}'>C++</a></td>
+  {{- else -}}
+    <td>&mdash;</td>
+  {{- end -}}
+  {{- if fileExists $csharp_file -}}
+    <td><a href='{{ $csharp_file | replaceRE "/static" "" }}'>C#</a></td>
+  {{- else -}}
+    <td>&mdash;</td>
+  {{- end -}}
+  {{- if fileExists $java_file -}}
+    <td><a href='{{ $java_file | replaceRE "/static" "" }}'>Java</a></td>
+  {{- else -}}
+    <td>&mdash;</td>
+  {{- end -}}
+  {{- if fileExists $js_file -}}
+    <td><a href='{{ $js_file | replaceRE "/static" "" }}'>JS</a></td>
+  {{- else -}}
+    <td>&mdash;</td>
+  {{- end -}}
+  {{- if fileExists $perl_file -}}
+    <td><a href='{{ $perl_file | replaceRE "/static" "" }}'>Perl</a></td>
+  {{- else -}}
+    <td>&mdash;</td>
+  {{- end -}}
+  {{- if fileExists $php_file -}}
+    <td><a href='{{ $php_file | replaceRE "/static" "" }}'>PHP</a></td>
+  {{- else -}}
+    <td>&mdash;</td>
+  {{- end -}}
+  {{- if fileExists $python_file -}}
+    <td><a href='{{ $python_file | replaceRE "/static" "" }}'>Python</a></td>
+  {{- else -}}
+    <td>&mdash;</td>
+  {{- end -}}
+  {{- if fileExists $r_file -}}
+    <td><a href='{{ $r_file | replaceRE "/static" "" }}'>R</a></td>
+  {{- else -}}
+    <td>&mdash;</td>
+  {{- end -}}
+  {{- if fileExists $ruby_file -}}
+    <td><a href='{{ $ruby_file | replaceRE "/static" "" }}'>Ruby</a></td>
+  {{- else -}}
+    <td>&mdash;</td>
+  {{- end -}}
+</tr>

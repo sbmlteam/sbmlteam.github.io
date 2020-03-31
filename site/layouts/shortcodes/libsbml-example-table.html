@@ -1,0 +1,34 @@
+<!-- ==========================================================================
+File name   : /layouts/shortcodes/libsbml-example-table.html
+Description : Shortcode for creating a table for describing libSBML examples
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology
+Date created: 2020-03-30
+
+This is used to produce the outer <table> structure for a table listing
+libSBML example programs on /software/libsbml/examples/.  There is a 
+companion shortcode called "libsbml-example" that is used inside this
+shortcode to create a single row in the table.
+=========================================================================== -->
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Name</th>
+      <th align="left">Description</th>
+      <th align="center">C</th>
+      <th align="center">C++</th>
+      <th align="center">C#</th>
+      <th align="center">Java</th>
+      <th align="center">JS</th>
+      <th align="center">Perl</th>
+      <th align="center">PHP</th>
+      <th align="center">Python</th>
+      <th align="center">R</th>
+      <th align="center">Ruby</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{ .Inner | safeHTML }}
+  </tbody>
+</table>
