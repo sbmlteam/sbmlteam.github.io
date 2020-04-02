@@ -59,9 +59,14 @@ The bug and issue tracker for libSBML lists pending issues and lets you report n
 The following are resources especially relevant to libSBML developers.
 
 {{% blurb title="Software repository for libSBML" image="/img/sourceforge-logo.png" link="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/" %}}
-This link takes you to the repository for libSBML in SourceForge.
+The libSBML code repository is currently on SourceForge.
 {{% /blurb %}}
 
 {{% blurb title="Pivotal Tracker and libSBML" image="/img/pivotaltracker-logo.svg" link="pivotal-tracker" %}}
 The libSBML team uses [Pivotal Tracker](http://pivotaltracker.com) to plan and coordinate development.  This page provides information about the conventions used by the team.
 {{% /blurb %}}
+
+{{% blurb title="Development notes and procedures" icon="clipboard" link="development" %}}
+A number of other pages describe libSBML development and the team's procedures. Note that these tend to be works in progress and may not be in a polished, finished state.
+{{% /blurb %}}
+
