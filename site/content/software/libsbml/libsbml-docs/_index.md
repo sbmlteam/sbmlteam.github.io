@@ -33,7 +33,11 @@ Follow this link to find documentation about many of libSBML's language APIs.
 {{% /blurb %}}
 
 {{% blurb title="Example programs" icon="keyboard" link="examples" %}}
-Follow this link to find example programs written in different programming languages supported by libSBML.
+Here you can find example programs written in different programming languages supported by libSBML.
+{{% /blurb %}}
+
+{{% blurb title="Tutorials" icon="chalkboard-teacher" link="tutorials" %}}
+Here we provide access to a number of presentations that deal with particular aspects of using libSBML together with same sample coding exercises (with answers). These are adapted versions of tutorials given in the past.
 {{% /blurb %}}
 
 
