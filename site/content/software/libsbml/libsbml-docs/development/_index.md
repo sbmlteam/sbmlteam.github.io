@@ -20,9 +20,9 @@ libSBML is an open-source programming library designed to help you read, write, 
 
 The following pages describe some of the libSBML Team's procedures for various aspects of libSBML development and release:
 
-* Building and testing releases of libSBML
+* [Building and testing releases of libSBML](building-and-testing)
 * [Release numbering](release-schedule/release-numbering)
-* Release procedure
+* [Release procedure](release-procedure)
 * Creating the documentation archives for libSBML releases
 * Coding conventions
 * Using SVN trunk vs branch
