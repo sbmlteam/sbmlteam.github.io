@@ -8,7 +8,7 @@ layout = "single"
 
 {{< software-icon width="25%" file="/img/libsbml-logo-and-name.svg" >}}
 
-libSBML is an open-source programming library designed to help you read, write, manipulate, translate, and validate SBML files and data streams. This page provides more detail on a number of libSBML topics, including plans for ongoing and future development.
+[LibSBML](/software/libsbml) is an open-source programming library designed to help you read, write, manipulate, translate, and validate SBML files and data streams. This page provides more detail on a number of libSBML topics, including plans for ongoing and future development.
 
 ## Development roadmaps and schedules
 
@@ -23,10 +23,10 @@ The following pages describe some of the libSBML Team's procedures for various a
 * [Building and testing releases of libSBML](building-and-testing)
 * [Release numbering](release-schedule/release-numbering)
 * [Release procedure](release-procedure)
-* Creating the documentation archives for libSBML releases
-* Coding conventions
-* Using SVN trunk vs branch
-* Notes on development cycle
+* [Creating the documentation archives for libSBML releases](creating-docs)
+* [Coding conventions](conventions)
+* [Using SVN trunk vs branch](trunk-vs-branch)
+* [Notes on development cycle](dev-cycle)
 
 
 ## Historical notes about major decisions and changes
