@@ -19,6 +19,19 @@ User and developer manuals for SBFC are also available. They can be downloaded f
 * [SBFC Developer Manual](https://sourceforge.net/p/sbfc/code/HEAD/tree/trunk/doc/sbfc_manual/sbfc_developer_manual.pdf?format=raw)
 
 
+## Please cite the paper if you use SBFC or the SBFC framework
+
+Citations are crucial to our ability to justify continued development of SBFC, as well as our academic careers. If you use SBFC and you publish papers about your software, we ask that you please cite the SBFC papers:
+
+{{% notice %}}
+Gaël Jalowicki, Nicolas Rodriguez, Martina Kutmon, Jean-Baptiste Pettit, Lu Li, Arnaud Henry, Kedar Nath Natarajan, Camille Laibe, Chris T. Evelo, and Nicolas Le&nbsp;Novère. (2011) The System Biology Format Converter. _Nature Precedings_, [https://doi.org/10.1038/npre.2011.6363.1](https://doi.org/10.1038/npre.2011.6363.1).
+{{% /notice %}}
+
+{{% notice %}}
+Martina Kutmon and Nicolas Rodriguez (2011). The System Biology Format Converter Framework. _Nature Precedings_, [https://doi.org/10.1038/npre.2011.6370.1](https://doi.org/10.1038/npre.2011.6370.1)
+{{% /notice %}}
+
+
 ## Using SBFC (either as a standalone application or a library)
 
 Download the latest copy of the SBFC distribution or a specific converter of interest from the [SBFC download page](https://sourceforge.net/projects/sbfc/files) on SourceForge. After downloading and uncompressing the package, you can put the extracted folder where you prefer. We suggest you create a folder containing the model you need to convert inside the SBFC folder.
