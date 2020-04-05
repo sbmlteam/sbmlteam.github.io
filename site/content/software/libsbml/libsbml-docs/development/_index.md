@@ -33,5 +33,5 @@ The following pages describe some of the libSBML Team's procedures for various a
 
 The following pages document some major points in libSBML's development in the past. This list is not exhaustive.
 
-* Architectural revisions 2009
-* 2009 survey about Windows installers
+* [Architectural revisions 2009](revisions-2009)
+* [2009 survey about Windows installers](installer-survey)
