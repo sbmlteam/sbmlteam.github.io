@@ -13,48 +13,48 @@ are definitions of reusable chunks to following DRY principles and
 avoid copy-pasting text throughout this page.
 ------------------------------------------------------------------ -->
 
-{{% create-chunk name="biopax" %}}
+{{% store-chunk name="biopax" %}}
 The [Biological Pathways Exchange format (BioPAX)](http://www.biopax.org) is a standard language that aims to enable integration, exchange and analysis of biological pathway data.
-{{% /create-chunk %}}
+{{% /store-chunk %}}
 
-{{% create-chunk name="cellml" %}}
+{{% store-chunk name="cellml" %}}
 [CellML](https://www.cellml.org) is a language being developed by the Auckland Bioengineering Institute to store and exchange computer-based mathematical models.
-{{% /create-chunk %}}
+{{% /store-chunk %}}
 
-{{% create-chunk name="matlab" %}}
+{{% store-chunk name="matlab" %}}
 [MATLAB<sup>&REG;</sup>](https://www.mathworks.com/products/matlab.html) is a popular interactive numerical computing environment with a [matrix-based language](https://www.mathworks.com/help/matlab/). MATLAB is used in all technical fields, including biology.
-{{% /create-chunk %}}
+{{% /store-chunk %}}
 
-{{% create-chunk name="sbtab-format" %}}
+{{% store-chunk name="sbtab-format" %}}
 [SBtab](https://www.sbtab.net) is a set of conventions for structured data tables in spreadsheets. The conventions include, for example, defined column names and a syntax for semantic annotations.
-{{% /create-chunk %}}
+{{% /store-chunk %}}
 
-{{% create-chunk name="xpp" %}}
+{{% store-chunk name="xpp" %}}
 [XPP](http://www.math.pitt.edu/~bard/xpp/xpp.html) is a tool for studying dynamical systems. Problems and procedures can be encoded in a scripting format.
-{{% /create-chunk %}}
+{{% /store-chunk %}}
 
-{{% create-chunk name="antimony" %}}
+{{% store-chunk name="antimony" %}}
   {{< cite title="SBML and CellML Translation in Antimony and JSim" authors="Smith L.P., Butterworth E., Bassingthwaighte J., Sauro H." source="_Bioinformatics_, 10.1093/bioinformatics/btt641, 2013" link="https://doi.org/10.1093/bioinformatics/btt641" summary="Description of two tools that each convert CellML and SBML models, and the challenges discovered. Both [Antimony](http://antimony.sourceforge.net) and [JSim](https://www.physiome.org/jsim/) can be used to convert between SBML and CellML, in addition to each program's native model definition languages." >}}
-{{% /create-chunk %}}
+{{% /store-chunk %}}
 
-{{% create-chunk name="sbfc" %}}
+{{% store-chunk name="sbfc" %}}
   {{< cite title="The System Biology Format Converter" authors="Gaël Jalowicki, Nicolas Rodriguez, Martina Kutmon, Jean-Baptiste Pettit, Lu Li, Arnaud Henry, Kedar Nath Natarajan, Camille Laibe, Chris T. Evelo, and Nicolas Le&nbsp;Novère." source="_Nature Precedings_, [https://doi.org/10.1038/npre.2011.6363.1](https://doi.org/10.1038/npre.2011.6363.1)" link="https://doi.org/10.1038/npre.2011.6363.1" summary="The Systems Biology Format Converter (SBFC) is written in Java and can be used as a standalone executable or as [an online service](https://www.ebi.ac.uk/biomodels/tools/converters/). The SBFC framework currently supports conversion from SBML to [BioPAX](http://www.biopax.org) Levels&nbsp;2 and&nbsp;3, [MATLAB](https://www.mathworks.com/products/matlab.html), [Octave](https://www.gnu.org/software/octave/), [XPP](http://www.math.pitt.edu/~bard/xpp/xpp.html), [Graphviz](https://www.graphviz.org), and [APM](http://apmonitor.com)." >}}
-{{% /create-chunk %}}
+{{% /store-chunk %}}
 
-{{% create-chunk name="sbmltoolbox" %}}
+{{% store-chunk name="sbmltoolbox" %}}
   {{< cite title="SBMLToolbox: an SBML toolbox for MATLAB users" authors="Keating, S. M., Bornstein, B. J., Finney, A., and Hucka M." source="_Bioinformatics_, 22(10):1275–1277" link="https://doi.org/10.1093/bioinformatics/btl111" summary="Describes [SBMLToolbox](https://github.com/sbmlteam/sbmltoolbox), a MATLAB toolbox built on top of [libSBML](/software/libsbml). It provides a set of basic functions allowing SBML models to be used in both MATLAB and [Octave](https://www.gnu.org/software/octave/)." >}}
-{{% /create-chunk %}}
+{{% /store-chunk %}}
 
-{{% create-chunk name="sbtab" %}}
+{{% store-chunk name="sbtab" %}}
   {{< cite title="SBtab: a flexible table format for data exchange in systems biology" authors="Timo Lubitz Jens Hahn, Frank T. Bergmann, Elad Noor, Edda Klipp, and Wolfram Liebermeister." source="_Bioinformatics_, 16(32), 2016" link="https://doi.org/10.1093/bioinformatics/btw179" summary="Paper introducing the format [SBtab](https://www.sbtab.net) and software to work with it, including online services at [www.sbtab.net](https://www.sbtab.net) such as a [validator](https://www.sbtab.net/sbtab/default/validator.html) and [converters](https://www.sbtab.net/sbtab/default/converter.html) for SBML, MATLAB, R, and other formats." >}}
-{{% /create-chunk %}}
+{{% /store-chunk %}}
 
 
 <!-- -----------------------------------------------------------------
  The rest of this file contains the actual content of the page.
 ------------------------------------------------------------------ -->
 
-{{< toc >}}
+{{< insert-toc >}}
 
 SBML is a lingua franca in systems biology. In order to further facilitate exchange of models, many software tools have been developed to convert between SBML and other formats. For the benefit of the SBML-using community, this page provides a list of conversion tools of which we are aware. Please contact sbml-team@googlegroups.com if we have missed any. Note that most of these tools are third-party software, and not the product of the SBML Team.
 
