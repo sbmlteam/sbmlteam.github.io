@@ -2700,7 +2700,7 @@ body.dark .twitter-box-inner {
 }
 
 .tex sub, .latex sub {
-  vertical-align: -0.025ex;
+  vertical-align: 0.1ex;
   margin-left: -0.1em;
   margin-right: -0.1em;
 }
@@ -2723,58 +2723,60 @@ body.dark .twitter-box-inner {
 
 }
 
-.pub {
+.citation {
   font-size: 0.9rem;
-  margin-left: 3em;
+  margin-left: 3.5em;
+  margin-right: 3.5em;
   margin-top: 1.25em;
   width: 90%;
 }
 
-.pub-authors {
+.citation-authors {
   display: block;
   margin-top: 0.25em;
 }
 
-.pub-authors:before {
-  content: "Authors: ";
+.citation-authors:before {
+  content: "Author(s): ";
   font-style: italic;
-  color: #8a8a8a;
+  color: #9a9a9a;
 }
 
-.pub-source {
+.citation-source {
   display: block;
   margin-top: 0.25em;
 }
 
-.pub-source:before {
-  content: "Publication: ";
+.citation-source:before {
+  content: "Source: ";
   font-style: italic;
-  color: #8a8a8a;
+  color: #9a9a9a;
 }
 
-.pub-source:after {
+.citation-source:after {
   content: ".";
 }
 
-.pub-summary {
+.citation-summary {
   display: block;
   margin-top: 0.25em;
 }
 
-.pub-summary:before {
+.citation-summary:before {
   content: "Summary: ";
   font-style: italic;
-  color: #8a8a8a;
+  color: #9a9a9a;
 }
 
-.pub-icon {
+.citation-icon {
   float: left;
   margin-left: -2em;
   padding-right: 0.5em;
   padding-bottom: 0;
   margin-top: -0.4em;
+  font-size: 110%;
 }
 
-.pub-title {
+.citation-title {
   font-weight: bold;
 }
