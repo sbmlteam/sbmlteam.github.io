@@ -6,7 +6,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< toc >}}
+{{< insert-toc >}}
 
 The following are guidelines that have generally been followed in
 libSBML code. Not every piece of code adheres to them but we are trying

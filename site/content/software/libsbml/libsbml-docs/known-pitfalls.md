@@ -6,7 +6,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< toc >}}
+{{< insert-toc >}}
 
 This section documents the following known problems, limitations, and
 possible pitfalls in using libSBML.

@@ -7,7 +7,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< toc >}}
+{{< insert-toc >}}
 
 This page provides information on how to install JSBML, how to use the application programming interface (API), and other information.
 
@@ -37,7 +37,7 @@ The use of JSBML presumes familiarity with SBML.  If you are not familiar with S
 The JSBML User's Guide is the best introduction to using JSBML.  This guide includes a general introduction to working with SBML using JSBML and the documentation on the differences between JSBML and [libSBML](/software/libsbml).
 {{% /blurb %}}
 
-{{% blurb title="Class diagram" icon="sitemap" link="https://github.com/sbmlteam/jsbml/raw/master/doc/common/img/FullTypeHierarchy.pdf" %}}
+{{% blurb title="Class diagram" icon="project-diagram" link="https://github.com/sbmlteam/jsbml/raw/master/doc/common/img/FullTypeHierarchy.pdf" %}}
 The diagram of the JSBML class hierarchy provides an overview of the object classes in JSBML.
 {{% /blurb %}}
 

@@ -7,7 +7,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< toc >}}
+{{< insert-toc >}}
 
 JSBML is written in Java.  To use it, you will need a Java Runtime Environment (JRE) 1.7 or higher installed on your computer.  To install JSBML, please follow one of the approaches described below.
 

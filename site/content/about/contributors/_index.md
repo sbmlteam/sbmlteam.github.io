@@ -9,7 +9,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< toc >}}
+{{< insert-toc >}}
 
 Many people have helped develop SBML as a community standard. This page lists individuals and groups who have made notable contributions to the evolution of SBML and the SBML-using community, but this short list is not meant to diminish the contributions of the broader community of people and companies developing software systems that use SBML.
 

@@ -6,7 +6,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< toc >}}
+{{< insert-toc >}}
 
 We provide ready-to-use installers for many operating systems and programming languages, so most users don't need to build libSBML themselves (though that's an option too!).  Please use table at right to find the appropriate instructions for your case.
 
