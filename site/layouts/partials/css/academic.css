@@ -1141,6 +1141,8 @@ body.dark .article-style {
  *  Publications
  **************************************************/
 
+/* We have our own version of pub -- MH
+
 .pub-icon {
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.81em;
@@ -1171,6 +1173,7 @@ body.dark .article-style {
   position: relative;
   overflow: hidden;
 }
+*/
 
 /*************************************************
  * Experience
@@ -2069,7 +2072,6 @@ div.alert a {
 
 .toc-contents {
   display: table;
-  margin-top: -1em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2719,4 +2721,60 @@ body.dark .twitter-box-inner {
   font-weight: 500;
   letter-spacing: -0.1ex;
 
+}
+
+.pub {
+  font-size: 0.9rem;
+  margin-left: 3em;
+  margin-top: 1.25em;
+  width: 90%;
+}
+
+.pub-authors {
+  display: block;
+  margin-top: 0.25em;
+}
+
+.pub-authors:before {
+  content: "Authors: ";
+  font-style: italic;
+  color: #8a8a8a;
+}
+
+.pub-source {
+  display: block;
+  margin-top: 0.25em;
+}
+
+.pub-source:before {
+  content: "Publication: ";
+  font-style: italic;
+  color: #8a8a8a;
+}
+
+.pub-source:after {
+  content: ".";
+}
+
+.pub-summary {
+  display: block;
+  margin-top: 0.25em;
+}
+
+.pub-summary:before {
+  content: "Summary: ";
+  font-style: italic;
+  color: #8a8a8a;
+}
+
+.pub-icon {
+  float: left;
+  margin-left: -2em;
+  padding-right: 0.5em;
+  padding-bottom: 0;
+  margin-top: -0.4em;
+}
+
+.pub-title {
+  font-weight: bold;
 }
