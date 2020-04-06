@@ -15,9 +15,9 @@ The JSBML project's aim is to provide an SBML parser and library that maps all S
 {{< software-links download="https://github.com/sbmlteam/jsbml/releases" changes="https://github.com/sbmlteam/jsbml/blob/jsbml-1.4/NEWS.md" tracker="https://github.com/sbmlteam/jsbml/issues/" docs="jsbml-docs" repo="https://github.com/sbmlteam/jsbml" forum="https://groups.google.com/forum/#!forum/jsbml-development">}}
 
 
-## Publications
+## Please cite the papers if you use JSBML
 
-Article citations are crucial to our ability to justify continued development of JSBML, as well as our academic careers. If you use JSBML, we ask that you please cite one of the following papers:
+Article citations are crucial to our ability to justify continued development of JSBML, as well as our academic careers. If you use JSBML, we ask that you **please cite one of the following papers**:
 
 {{< cite notice="true" title="JSBML 1.0: providing a smorgasbord of options to encode systems biology models" authors="Nicolas Rodriguez, Alex Thomas, Leandro Watanabe, Ibrahim Y. Vazirabad, Victor Kofia, Harold F. Gómez, Florian Mittag, Jakob Matthes, Jan Rudolph, Finja Wrzodek, Eugen Netz, Alexander Diamantikos, Johannes Eichner, Roland Keller, Clemens Wrzodek, Sebastian Fröhlich, Nathan E. Lewis, Chris J. Myers, Nicolas Le Novère, Bernhard Ø. Palsson, Michael Hucka, and Andreas Dräger." source="_Bioinformatics_, 31(20): 3383–3386, 2015" link="https://doi.org/10.1093/bioinformatics/btv341" bibtex="jsbml2015.bib" endnote="jsbml2015.ris" >}}
 
@@ -37,7 +37,7 @@ We provide Zenodo DOIs for specific releases, so that you can cite the exact ver
 
 ## Community and help
 
-There is a mailing list and web forum, [jsbml-development](https://groups.google.com/forum/#!forum/jsbml-development), devoted to discussions about JSBML.  If you're using JSBML or interested in learning more, feel free to join the group!
+There is a mailing list and web forum, [jsbml-development@googlegroups.com](https://groups.google.com/forum/#!forum/jsbml-development), devoted to discussions about JSBML.  If you're using JSBML or interested in learning more, feel free to join the group!
 
 You can also reach the main developers directly via email at [jsbml-team@googlegroups.com](jsbml-team@googlegroups.com).
 

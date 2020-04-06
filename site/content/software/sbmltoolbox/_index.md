@@ -17,8 +17,7 @@ repo="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/SBMLToolbox/" >}}
 
 ## Please cite the paper if you use SBMLToolbox
 
-Citations are crucial to our ability to justify continued development of SBMLToolbox, as well as our academic careers. If you use SBMLToolbox and you publish papers about your software, we ask that you please cite the [paper](https://academic.oup.com/bioinformatics/article/22/10/1275/237481):
-
+Citations are crucial to our ability to justify continued development of SBMLToolbox, as well as our academic careers. If you use SBMLToolbox and you publish papers about your software, we ask that you **please cite the [paper](https://academic.oup.com/bioinformatics/article/22/10/1275/237481)**:
 {{< cite notice="true" title="SBMLToolbox: an SBML toolbox for MATLAB users" authors="Keating, S. M., Bornstein, B. J., Finney, A., and Hucka M." source="_Bioinformatics_, 22(10):1275–1277, 2006" link="https://doi.org/10.1093/bioinformatics/btl111" bibtex="sbmltoolbox.bib" endnote="sbmltoolbox.ris" >}}
 
 

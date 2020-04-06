@@ -13,6 +13,13 @@ LibSBML is a programming library that helps you read, write, manipulate, transla
 {{< software-links download="libsbml-docs/download-and-install" changes="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/NEWS.txt" tracker="https://sourceforge.net/p/sbml/libsbml/" docs="libsbml-docs" repo="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/" forum="https://groups.google.com/forum/#!forum/libsbml-development">}}
 
 
+## Please cite the paper if you use libSBML
+
+Article citations are crucial to our ability to justify continued development of libSBML, as well as our academic careers.  If you use libSBML and you publish papers about your software, we ask that you **please cite the following paper**:
+
+{{< cite notice="true" title="LibSBML: An API Library for SBML" authors="Bornstein, B.&nbsp;J., Keating, S.&nbsp;M., Jouraku, A., and Hucka M." source="_Bioinformatics_,  24(6):880&ndash;881, 2008" link="https://doi.org/10.1093/bioinformatics/btn051" bibtex="libsbml.bib" endnote="libsbml.ris" >}}
+
+
 ## Features of libSBML
 
 There are many reasons to prefer libSBML over the direct use of an XML parser.  First, libSBML understands all Levels and Versions of SBML, and supports **extensions for SBML Level&nbsp;3 packages**.   Here are some additional benefits: 
@@ -28,13 +35,6 @@ There are many reasons to prefer libSBML over the direct use of an XML parser. 
 * **Portability**. The code is highly portable.  It's supported on Linux (multiple variants), Windows (native), MacOS&nbsp;X, and also runs on Solaris and FreeBSD.
 
 LibSBML is available for free under the terms of the [LGPL version 2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html) in both source-code form and precompiled binaries for a variety of systems.
-
-
-## Publications
-
-Article citations are crucial to our academic careers.  If you use libSBML and you publish papers about your software, we ask that you please cite the [libSBML paper](https://doi.org/10.1093/bioinformatics/btn051):
-
-{{< cite notice="true" title="LibSBML: An API Library for SBML" authors="Bornstein, B.&nbsp;J., Keating, S.&nbsp;M., Jouraku, A., and Hucka M." source="_Bioinformatics_,  24(6):880&ndash;881, 2008" link="https://doi.org/10.1093/bioinformatics/btn051" bibtex="libsbml.bib" endnote="libsbml.ris" >}}
 
 
 ## Software releases
@@ -70,13 +70,13 @@ LibSBML's main authors are [Sarah M. Keating](https://github.com/skeating), [Fra
 * Fengkai Zhang
 
 
-# How to contribute
+## Community and help
 
-We welcome contributions from anyone interested. It is especially useful 
-to receive patches to enable building libSBML on operating systems or 
-compilers that our outside our test matrix.
+There is a mailing list and web forum, [libsbml-development@googlegroups.com](https://groups.google.com/forum/#!forum/libsbml-development), devoted to discussions about LIBSBML.  If you're using LIBSBML or interested in learning more, feel free to join the group!
 
-The best way to submit a patch is via our [Sourceforge Tracker](https://sourceforge.net/p/sbml/libsbml/) as this provides a transparent record.  However, we are also happy to accept patches via [email](mailto:libsbml-team@googlegroups.com).
+You can also reach the main developers directly via email at [libsbml-team@googlegroups.com](libsbml-team@googlegroups.com).
+
+We welcome contributions from anyone interested. It is especially useful to receive patches to enable building libSBML on operating systems or compilers that our outside our test matrix.  The best way to submit a patch is via our [Sourceforge Tracker](https://sourceforge.net/p/sbml/libsbml/) as this provides a transparent record.  However, we are also happy to accept patches via [email](mailto:libsbml-team@googlegroups.com).
 
 
 ## Funding acknowledgments
