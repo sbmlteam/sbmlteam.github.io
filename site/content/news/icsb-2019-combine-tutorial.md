@@ -1,5 +1,5 @@
 +++
-title   = "COMBINE tutorial @ ICSB2019"
+title   = "COMBINE tutorial @ ICSB"
 authors = ["Mike Hucka"]
 date    = 2019-10-20
 summary = "The 2019 COMBINE & de.NBI Tutorial (Modelling and Simulation Tools in Systems Biology) will be held as a satellite workshop of the 20th International Conference on Systems Biology (ICSB) held in Okinawa, Japan."
