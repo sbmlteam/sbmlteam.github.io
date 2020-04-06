@@ -2724,15 +2724,25 @@ body.dark .twitter-box-inner {
 }
 
 .citation {
-  font-size: 0.9rem;
-  margin-left: 3.5em;
-  margin-right: 3.5em;
-  margin-top: 1.25em;
-  width: 90%;
+  display: block;
+  font-size: 0.9em;
+  width: 95%;
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.citation.notice {
+  padding: 0.5em;
+  padding-top: .5em;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  background-color: #f0f4f6; 
 }
 
 .citation-authors {
   display: block;
+  margin-left: 2.5em;
   margin-top: 0.25em;
 }
 
@@ -2745,6 +2755,7 @@ body.dark .twitter-box-inner {
 .citation-source {
   display: block;
   margin-top: 0.25em;
+  margin-left: 2.5em;
 }
 
 .citation-source:before {
@@ -2760,6 +2771,7 @@ body.dark .twitter-box-inner {
 .citation-summary {
   display: block;
   margin-top: 0.25em;
+  margin-left: 2.5em;
 }
 
 .citation-summary:before {
@@ -2770,13 +2782,42 @@ body.dark .twitter-box-inner {
 
 .citation-icon {
   float: left;
-  margin-left: -2em;
-  padding-right: 0.5em;
   padding-bottom: 0;
-  margin-top: -0.4em;
-  font-size: 110%;
+  font-size: 120%;
 }
 
 .citation-title {
+  display: block;
   font-weight: bold;
+  margin-left: 2.5em;
+}
+
+.citation-downloads {
+  display: block;
+  margin-top: 0.25em;
+  margin-left: 2.5em;
+}
+
+.citation-downloads:before {
+  content: "Download citation: ";
+  font-style: italic;
+  color: #9a9a9a;
+}
+
+.citation-bibtex { 
+  margin-left: 0.25em;
+  padding-left: 0.25em;
+}
+
+.citation-bibtex .fa-file-download {
+  margin-right: 0.25em;
+}
+
+.citation-endnote { 
+  margin-left: 0.25em;
+  padding-left: 0.25em;
+}
+
+.citation-endnote .fa-file-download {
+  margin-right: 0.25em;
 }
