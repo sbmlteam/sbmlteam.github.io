@@ -19,7 +19,7 @@
   {{ end }}
   {{ if ne $changes "" }}
   <span class="sbml-software-link">
-    <a href="{{ $changes }}"><i class="fa-file-alt far fa-2x"></i><br>News</a>
+    <a href="{{ $changes }}"><i class="fa-file-alt far fa-2x"></i><br>Release notes</a>
   </span>
   {{ end }}
   {{ if ne $docs "" }}
@@ -42,7 +42,7 @@
     {{ if in $repo "sourceforge" }}
     <a href="{{ $repo }}"><span class="sourceforge-icon"></span><br>Code</a>
     {{ else }}
-    <a href="{{ $repo }}"><i class="fa-github fab fa-2x"></i><br>Source code</a>
+    <a href="{{ $repo }}"><i class="fa-github fab fa-2x"></i><br>Code</a>
     {{ end }}
   </span>
   {{ end }}
