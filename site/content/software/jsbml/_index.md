@@ -19,13 +19,9 @@ The JSBML project's aim is to provide an SBML parser and library that maps all S
 
 Article citations are crucial to our ability to justify continued development of JSBML, as well as our academic careers. If you use JSBML, we ask that you please cite one of the following papers:
 
-{{% notice %}}
-Nicolas Rodriguez, Alex Thomas, Leandro Watanabe, Ibrahim Y. Vazirabad, Victor Kofia, Harold F. Gómez, Florian Mittag, Jakob Matthes, Jan Rudolph, Finja Wrzodek, Eugen Netz, Alexander Diamantikos, Johannes Eichner, Roland Keller, Clemens Wrzodek, Sebastian Fröhlich, Nathan E. Lewis, Chris J. Myers, Nicolas Le Novère, Bernhard Ø. Palsson, Michael Hucka, and Andreas Dräger. **JSBML 1.0: providing a smorgasbord of options to encode systems biology models**. _Bioinformatics_, 31(20): 3383–3386. (Freely available [directly from Bioinformatics](http://bioinformatics.oxfordjournals.org/content/31/20/3383).)
-{{% /notice %}}
+{{< cite notice="true" title="JSBML 1.0: providing a smorgasbord of options to encode systems biology models" authors="Nicolas Rodriguez, Alex Thomas, Leandro Watanabe, Ibrahim Y. Vazirabad, Victor Kofia, Harold F. Gómez, Florian Mittag, Jakob Matthes, Jan Rudolph, Finja Wrzodek, Eugen Netz, Alexander Diamantikos, Johannes Eichner, Roland Keller, Clemens Wrzodek, Sebastian Fröhlich, Nathan E. Lewis, Chris J. Myers, Nicolas Le Novère, Bernhard Ø. Palsson, Michael Hucka, and Andreas Dräger." source="_Bioinformatics_, 31(20): 3383–3386, 2015" link="https://doi.org/10.1093/bioinformatics/btv341" bibtex="jsbml2015.bib" endnote="jsbml2015.ris" >}}
 
-{{% notice %}}
-Andreas Dräger, Nicholas Rodriguez, Marine Dumousseau, Alexander Dörr, Clemens Wrzodek, Nicholas Le Novère, Andreas Zell, and Michael Hucka. **JSBML: a flexible Java library for working with SBML**. _Bioinformatics_ (2011), 27(15):2167–2168. (Freely available [directly from Bioinformatics](http://bioinformatics.oxfordjournals.org/content/27/15/2167).)
-{{% /notice %}}
+{{< cite notice="true" title="JSBML: a flexible Java library for working with SBML" authors="Andreas Dräger, Nicholas Rodriguez, Marine Dumousseau, Alexander Dörr, Clemens Wrzodek, Nicholas Le Novère, Andreas Zell, and Michael Hucka." source="_Bioinformatics_, 27(15):2167–2168, 2011" link="https://doi.org/10.1093/bioinformatics/btr361" bibtex="jsbml2011.bib" endnote="jsbml2011.ris" >}}
 
 
 ## Software releases
