@@ -11,6 +11,6 @@ The [Modelica Language](https://www.modelica.org/modelicalanguage) is a non-prop
 
 You can find out more about SBML2Modelica from the [project website](https://bitbucket.org/mclab/sbml2modelica) as well as the following 2019 paper by Maggioli, Mancini and Tronci:
 
-{{< cite title="SBML2Modelica: integrating biochemical models within open-standard simulation ecosystems" authors="F. Maggioli,  T. Mancini,  E. Tronci." source="_Bioinformatics_ btz860, https://doi.org/10.1093/bioinformatics/btz860, 2019" link="https://doi.org/10.1093/bioinformatics/btz860" >}}
+{{< reference title="SBML2Modelica: integrating biochemical models within open-standard simulation ecosystems" authors="F. Maggioli,  T. Mancini,  E. Tronci." pub="_Bioinformatics_ btz860, https://doi.org/10.1093/bioinformatics/btz860, 2019" link="https://doi.org/10.1093/bioinformatics/btz860" >}}
 
 

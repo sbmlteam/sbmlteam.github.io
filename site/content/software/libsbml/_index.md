@@ -17,7 +17,7 @@ LibSBML is a programming library that helps you read, write, manipulate, transla
 
 Article citations are crucial to our ability to justify continued development of libSBML, as well as our academic careers.  If you use libSBML and you publish papers about your software, we ask that you **please cite the following paper**:
 
-{{< cite notice="true" title="LibSBML: An API Library for SBML" authors="Bornstein, B.&nbsp;J., Keating, S.&nbsp;M., Jouraku, A., and Hucka M." source="_Bioinformatics_,  24(6):880&ndash;881, 2008" link="https://doi.org/10.1093/bioinformatics/btn051" bibtex="libsbml.bib" endnote="libsbml.ris" >}}
+{{< reference highlight="true" title="LibSBML: An API Library for SBML" authors="Bornstein, B.&nbsp;J., Keating, S.&nbsp;M., Jouraku, A., and Hucka M." pub="_Bioinformatics_,  24(6):880&ndash;881, 2008" link="https://doi.org/10.1093/bioinformatics/btn051" bibtex="libsbml.bib" endnote="libsbml.ris" >}}
 
 
 ## Features of libSBML

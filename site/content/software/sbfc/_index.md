@@ -22,7 +22,7 @@ User and developer manuals for SBFC are also available. They can be downloaded f
 
 Citations are crucial to our ability to justify continued development of SBFC, as well as our academic careers. If you use SBFC and you publish papers about your software, we ask that you **please cite the SBFC paper**:
 
-{{< cite notice="true" title="The systems biology format converter" authors="Nicolas Rodriguez, Jean-Baptiste Pettit, Piero Dalle Pezze, Lu Li, Arnaud Henry, Martijn P. van Iersel, Gael Jalowicki, Martina Kutmon, Kedar N. Natarajan, David Tolnay, Melanie I. Stefan, Chris T. Evelo & Nicolas Le Novère." source="_BMC Bioinformatics_, 17, 154" link="https://doi.org/10.1186/s12859-016-1000-2" bibtex="sbfc.bib" endnote="sbfc.ris" >}}
+{{< reference highlight="true" title="The systems biology format converter" authors="Nicolas Rodriguez, Jean-Baptiste Pettit, Piero Dalle Pezze, Lu Li, Arnaud Henry, Martijn P. van Iersel, Gael Jalowicki, Martina Kutmon, Kedar N. Natarajan, David Tolnay, Melanie I. Stefan, Chris T. Evelo & Nicolas Le Novère." pub="_BMC Bioinformatics_, 17, 154" link="https://doi.org/10.1186/s12859-016-1000-2" bibtex="sbfc.bib" endnote="sbfc.ris" >}}
 
 
 ## Using SBFC (either as a standalone application or a library)

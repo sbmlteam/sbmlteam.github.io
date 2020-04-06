@@ -17,7 +17,7 @@ _MOCCASIN_ stands for _Model ODE Converter for Creating Automated SBML INteroper
 
 Citations are crucial to our ability to justify continued development of MOCCASIN, as well as our academic careers. If you use MOCCASIN and you publish papers about your software, we ask that you please cite the [paper](http://bioinformatics.oxfordjournals.org/content/32/12/1905):
 
-{{< cite notice="true" title="MOCCASIN: converting MATLAB ODE models to SBML" authors="Harold F. Gómez, Michael Hucka, Sarah M. Keating, German Nudelman, Dagmar Iber and Stuart C. Sealfon." source="_Bioinformatics_, 32(12): 1905-1906, 2016" link="https://doi.org/10.1093/bioinformatics/btw056" bibtex="moccasin.bib" endnote="moccasin.ris" >}}
+{{< reference highlight="true" title="MOCCASIN: converting MATLAB ODE models to SBML" authors="Harold F. Gómez, Michael Hucka, Sarah M. Keating, German Nudelman, Dagmar Iber and Stuart C. Sealfon." pub="_Bioinformatics_, 32(12): 1905-1906, 2016" link="https://doi.org/10.1093/bioinformatics/btw056" bibtex="moccasin.bib" endnote="moccasin.ris" >}}
 
 
 ## DOIs for MOCCASIN releases
