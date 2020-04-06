@@ -13,9 +13,9 @@ This page lists groups that have supported and funded SBML development in a dire
 
 ## Current SBML Funded Partners
 
-The following groups are supported directly for core SBML development via the main SBML grant from the US National Institute of General Medical Sciences.
+The following groups were most recently supported directly for core SBML development via the main SBML grant from the US National Institute of General Medical Sciences.
 
-<div class="row row-big-gutter align-items-center tight-spacing" style="margin-top: -1rem">
+<div class="row row-big-gutter align-items-center tight-spacing" style="margin-top: 1rem">
   <div class="col-4 text-center">
   <img src="icons/159-primaryorangelogo100.gif">
   <strong>Hucka Group</strong><br>
@@ -40,6 +40,22 @@ The following groups are supported directly for core SBML development via the ma
   University of Tuebingen<br>
   Tübingen<br>
   Germany<br>
+  </div>
+</div>
+<div class="row row-big-gutter align-items-center tight-spacing" style="margin-top: 1rem">
+  <div class="col-6 text-center">
+    <img width="50%" src="icons/EMBL_logo.svg">
+    <strong>Hermjakob Team</strong><br>
+    EMBL European Bioinformatics Institute<br>
+    Hinxton, Cambridge<br>
+    UK
+  </div>
+  <div class="col-6 text-center">
+    <img width="40%" src="icons/babraham-logo.svg">
+    <strong>Andrews Group</strong><br>
+    Babraham Institute<br>
+    Cambridge, CB22 3AT<br>
+    UK
   </div>
 </div>
 
