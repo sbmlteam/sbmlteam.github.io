@@ -33,7 +33,7 @@ not to a paper.
   <span class="citation-icon"><a href="{{ $link }}"><i class="{{ $icon }} fa-2x"></i></a></span><span class="citation-title"><a href="{{ $link }}">{{ $title | markdownify }}</a></span>
   <span class="citation-authors">{{ $authors | markdownify }}</span>
   <span class="citation-source">{{ $source | markdownify }}</span>
-  {{ if ne $summary "" }}
+  {{- if ne $summary "" -}}
     <span class="citation-summary">{{ $summary | markdownify }}</span>    
     {{ end }}
    {{ if or (ne $bibtex "") (ne $endnote "") }}
@@ -45,5 +45,5 @@ not to a paper.
       <span class="citation-endnote"><a href="{{ $endnote }}"><i class="fa-file-download fas fa-1x"></i>EndNote</a></span>
       {{ end }}
     </div>
-  {{ end }}
+  {{- end -}}
 </div>
