@@ -34,9 +34,7 @@ LibSBML is available for free under the terms of the [LGPL version 2.1](https://
 
 Article citations are crucial to our academic careers.  If you use libSBML and you publish papers about your software, we ask that you please cite the [libSBML paper](https://doi.org/10.1093/bioinformatics/btn051):
 
-{{% notice %}}
-Bornstein, B.&nbsp;J., Keating, S.&nbsp;M., Jouraku, A., and Hucka M.  (2008) LibSBML: An API Library for SBML.  _Bioinformatics_,  24(6):880&ndash;881, [doi:10.1093/bioinformatics/btn051](https://doi.org/10.1093/bioinformatics/btn051).
-{{% /notice %}}
+{{< cite notice="true" title="LibSBML: An API Library for SBML" authors="Bornstein, B.&nbsp;J., Keating, S.&nbsp;M., Jouraku, A., and Hucka M." source="_Bioinformatics_,  24(6):880&ndash;881" link="https://doi.org/10.1093/bioinformatics/btn051" bibtex="libsbml.bib" endnote="libsbml.ris" >}}
 
 
 ## Software releases
