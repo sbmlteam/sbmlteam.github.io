@@ -13,7 +13,7 @@ This page lists published papers and chapters describing SBML, SBML packages, an
 
 ## About SBML and SBML packages
 
-The papers and chapters in this section describe SBML and SBML packages in general terms.  It is worth noting that _none of these publications is normative in the sense of defining SBML_ &ndash; these papers and chapters only provide context and perspectives about SBML and its development.  (Only the [SBML specification documents](/documents/specifications) are normative.)
+The following papers and chapters describe SBML and SBML packages in general terms, and are useful for context and general perspectives about SBML, SBML development, and related [COMBINE](https://co.mbine.org) standards.
 
 {{< cite title="Specifications of Standards in Systems and Synthetic Biology: Status and Developments in 2019" authors="Falk Schreiber, Björn Sommer, Gary D. Bader, Padraig Gleeson, Martin Golebiewski, Michael Hucka, Sarah M. Keating, Matthias König, Chris Myers, David Nickerson and Dagmar Waltemath." source="_Journal of Integrative Bioinformatics_ 16(2), 2019" link="https://doi.org/10.1515/jib-2019-0035" summary="Introduces a special issue of [COMBINE](https://co.mbine.org) standards, including SBML." >}}
 
@@ -42,9 +42,26 @@ The papers and chapters in this section describe SBML and SBML packages in gener
 {{< cite title="The Systems Biology Markup Language (SBML): A Medium for Representation and Exchange of Biochemical Network Models" authors="Hucka, Michael, Finney, Andrew, Sauro, Herbert M., Bolouri, Hamid, Doyle, John C., Kitano, Hiroaki, Arkin, Adam P., Bornstein, Benjamin J., Bray, Dennis, Cornish-Bowden, Athel, Cuellar, Autumn A., Dronov, Sergey, Gilles, Ernst Dieter, Ginkel, Martin, Gor, Victoria, Goryanin, Igor I., Hedley, Warren J., Hodgman, T. Charles, Hofmeyr, Jan-Hendrik S., Hunter, Peter J., Juty, Nick S., Kasberger, Jay L., Kremling, Andreas, Kummer, Ursula, Le Novère, Nicolas, Loew, Leslie M., Lucio, Daniel, Mendes, Pedro, Minch, Eric, Mjolsness, Eric D., Nakayama, Yoichi, Nelson, Melanie R., Nielsen, Poul F., Sakurada, Takeshi, Schaff, James C., Shapiro, Bruce E., Shimizu, Thomas S., Spence, Hugh D., Stelling, Jörg, Takahashi, Kouichi, Tomita, Masaru, Wagner, John M., Wang, Jian, and the rest of the SBML Forum." source="_Bioinformatics_, 9(4):524–531, 2003" link="https://academic.oup.com/bioinformatics/article/19/4/524/218599" summary="Original publication about SBML. It describes SBML Level&nbsp;1 Version&nbsp;2." >}}
 
 
+## About software infrastructure
+
+This section is limited to papers authored by SBML Team members specifically about [SBML infrastructure software](/software).  Many third-party groups have developed other SBML-compatible software, but these are outside of the scope of this list.
+
+{{< cite title="MOCCASIN: converting MATLAB ODE models to SBML" authors="Gómez, H. F., Hucka, M. Keating, S. M., Nudelman G., Iber, D., and Sealfon, S. C.  " source="_Bioinformatics_, 32(12): 1905–1906, 2016" link="https://academic.oup.com/bioinformatics/article/32/12/1905/1743777" summary="Description of MOCCASIN, a Python-based converter of certain types of MATLAB programs.  Does not require MATLAB to run." >}}
+
+{{< cite title="JSBML 1.0: providing a smorgasbord of options to encode systems biology models" authors="Nicolas Rodriguez, Alex Thomas, Leandro Watanabe, Ibrahim Y. Vazirabad, Victor Kofia, Harold F. Gómez, Florian Mittag, Jakob Matthes, Jan Rudolph, Finja Wrzodek, Eugen Netz, Alexander Diamantikos, Johannes Eichner, Roland Keller, Clemens Wrzodek, Sebastian Fröhlich, Nathan E. Lewis, Chris J. Myers, Nicolas Le Novère, Bernhard Ø. Palsson, Michael Hucka, and Andreas Dräger." source="_Bioinformatics_, 10.1093/bioinformatics/btv341, 2015" link="https://academic.oup.com/bioinformatics/article/31/20/3383/195580" summary="Description of the JSBML library, a tool to help support SBML in software tools written in the Java language." >}}
+
+{{< cite title="A Methodology to Annotate Systems Biology Markup Language Models with the Synthetic Biology Open Language" authors="Roehner N., Myers C.J." source="_ACS Synthetic Biology_, 10.1021/sb400066m, 2013" link="Roehner2013.pdf" summary="Description of the JSBML library, a tool to help support SBML in software tools written in the Java language." >}}
+
+{{< cite title="JSBML: a flexible Java library for working with SBML" authors="Dräger A., Rodriguez N., Dumousseau M., Dörr A., Wrzodek C., Le Novère N., Zell A., Hucka M." source="_Bioinformatics_, 27: 2167-2168, 2011" link="https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btr361" summary="Description of the JSBML library, a tool to help support SBML in software tools written in the Java language." >}}
+
+{{< cite title="LibSBML: An API Library for SBML" authors="Bornstein, B. J., Keating, S. M., Jouraku, A., and Hucka M." source="_Bioinformatics_, 24: 880-881, 2008" link="https://dx.doi.org/10.1093%2Fbioinformatics%2Fbtn051" summary="Description of the libSBML, a C++ library to help support SBML in software tools written in a variety of languages." >}}
+
+{{< cite title="SBMLToolbox: an SBML toolbox for MATLAB users" authors="Keating, S. M., Bornstein, B. J., Finney, A., and Hucka M." source="_Bioinformatics_, 22(10):1275–1277" link="https://doi.org/10.1093/bioinformatics/btl111" summary="Describes [SBMLToolbox](https://github.com/sbmlteam/sbmltoolbox), a MATLAB toolbox built on top of [libSBML](/software/libsbml). It provides a set of basic functions allowing SBML models to be used in both MATLAB and [Octave](https://www.gnu.org/software/octave/)." >}}
+
+
 ## SBML specification documents
 
-Many of the SBML specification documents do not have journal publications associated with them.  The following are the publications that do exist for the specifications that do have proper publications.
+The [SBML Specifications](/documents/specifications) are documents that exist independently of journal publications.  Prior to the year 2015, we had difficulty finding an outlet for publishing the specification documents; however, beginning in 2015, the [_Journal of Integrative Bioinformatics_](https://www.degruyter.com/view/journals/jib/jib-overview.xml) offered to publish annual special issues developed to specifications in the computational biology/bioinformatics area, and thus recent SBML specifications have been published as journal articles.
 
 {{< cite title="The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 2 Core Release 2" authors="Hucka, M., Bergmann, F. T., Chaouiya, C., Dräger, A., Hoops, S., Keating, S. M., König, M., Novère, N., Myers, C. J., Olivier, B. G., Sahle, S., Schaff, J. C., Sheriff, R., Smith, L. P., Waltemath, D., Wilkinson, D. J., and Zhang, F." source="_Journal of Integrative Bioinformatics_, 16(2), 20190021, 2019" link="https://doi.org/10.1515/jib-2019-0021" >}}
 
@@ -71,21 +88,6 @@ Many of the SBML specification documents do not have journal publications associ
 {{< cite title="The Systems Biology Markup Language (SBML) Level 3 Package: Flux Balance Constraints" authors="Olivier, B. G., and Bergmann, F. T." source="_Journal of Integrative Bioinformatics_, 12(2), 660-690, 2016" link="https://doi.org/10.1515/jib-2015-269" >}}
 
 {{< cite title="The Systems Biology Markup Language (SBML) Level 3 Package: Layout, Version 1 Core" authors="Gauges, R., Rost, U., Sahle, S., Wengler, K., and Bergmann, F. T." source="_Journal of Integrative Bioinformatics_, 12(2), 550-602, 2016" link="https://doi.org/10.1515/jib-2015-267" >}}
-
-
-## SBML software infrastructure
-
-{{< cite title="MOCCASIN: converting MATLAB ODE models to SBML" authors="Gómez, H. F., Hucka, M. Keating, S. M., Nudelman G., Iber, D., and Sealfon, S. C.  " source="_Bioinformatics_, 32(12): 1905–1906, 2016" link="https://academic.oup.com/bioinformatics/article/32/12/1905/1743777" summary="Description of MOCCASIN, a Python-based converter of certain types of MATLAB programs.  Does not require MATLAB to run." >}}
-
-{{< cite title="JSBML 1.0: providing a smorgasbord of options to encode systems biology models" authors="Nicolas Rodriguez, Alex Thomas, Leandro Watanabe, Ibrahim Y. Vazirabad, Victor Kofia, Harold F. Gómez, Florian Mittag, Jakob Matthes, Jan Rudolph, Finja Wrzodek, Eugen Netz, Alexander Diamantikos, Johannes Eichner, Roland Keller, Clemens Wrzodek, Sebastian Fröhlich, Nathan E. Lewis, Chris J. Myers, Nicolas Le Novère, Bernhard Ø. Palsson, Michael Hucka, and Andreas Dräger." source="_Bioinformatics_, 10.1093/bioinformatics/btv341, 2015" link="https://academic.oup.com/bioinformatics/article/31/20/3383/195580" summary="Description of the JSBML library, a tool to help support SBML in software tools written in the Java language." >}}
-
-{{< cite title="A Methodology to Annotate Systems Biology Markup Language Models with the Synthetic Biology Open Language" authors="Roehner N., Myers C.J." source="_ACS Synthetic Biology_, 10.1021/sb400066m, 2013" link="Roehner2013.pdf" summary="Description of the JSBML library, a tool to help support SBML in software tools written in the Java language." >}}
-
-{{< cite title="JSBML: a flexible Java library for working with SBML" authors="Dräger A., Rodriguez N., Dumousseau M., Dörr A., Wrzodek C., Le Novère N., Zell A., Hucka M." source="_Bioinformatics_, 27: 2167-2168, 2011" link="https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btr361" summary="Description of the JSBML library, a tool to help support SBML in software tools written in the Java language." >}}
-
-{{< cite title="LibSBML: An API Library for SBML" authors="Bornstein, B. J., Keating, S. M., Jouraku, A., and Hucka M." source="_Bioinformatics_, 24: 880-881, 2008" link="https://dx.doi.org/10.1093%2Fbioinformatics%2Fbtn051" summary="Description of the libSBML, a C++ library to help support SBML in software tools written in a variety of languages." >}}
-
-{{< cite title="SBMLToolbox: an SBML toolbox for MATLAB users" authors="Keating, S. M., Bornstein, B. J., Finney, A., and Hucka M." source="_Bioinformatics_, 22(10):1275–1277" link="https://doi.org/10.1093/bioinformatics/btl111" summary="Describes [SBMLToolbox](https://github.com/sbmlteam/sbmltoolbox), a MATLAB toolbox built on top of [libSBML](/software/libsbml). It provides a set of basic functions allowing SBML models to be used in both MATLAB and [Octave](https://www.gnu.org/software/octave/)." >}}
 
 
 ### <!-- Stupid hack needed to make TOC show up properly -->
