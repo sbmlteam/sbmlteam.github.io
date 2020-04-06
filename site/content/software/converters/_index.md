@@ -42,7 +42,7 @@ The [Biological Pathways Exchange format (BioPAX)](http://www.biopax.org) is a s
 {{% /store-chunk %}}
 
 {{% store-chunk name="sbmltoolbox" %}}
-  {{< cite title="SBMLToolbox: an SBML toolbox for MATLAB users" authors="Keating, S. M., Bornstein, B. J., Finney, A., and Hucka M." source="_Bioinformatics_, 22(10):1275–1277" link="https://doi.org/10.1093/bioinformatics/btl111" summary="Describes [SBMLToolbox](https://github.com/sbmlteam/sbmltoolbox), a MATLAB toolbox built on top of [libSBML](/software/libsbml). It provides a set of basic functions allowing SBML models to be used in both MATLAB and [Octave](https://www.gnu.org/software/octave/)." >}}
+  {{< cite title="SBMLToolbox: an SBML toolbox for MATLAB users" authors="Keating, S. M., Bornstein, B. J., Finney, A., and Hucka M." source="_Bioinformatics_, 22(10):1275–1277, 2006" link="https://doi.org/10.1093/bioinformatics/btl111" summary="Describes [SBMLToolbox](https://github.com/sbmlteam/sbmltoolbox), a MATLAB toolbox built on top of [libSBML](/software/libsbml). It provides a set of basic functions allowing SBML models to be used in both MATLAB and [Octave](https://www.gnu.org/software/octave/)." >}}
 {{% /store-chunk %}}
 
 {{% store-chunk name="sbtab" %}}
@@ -90,7 +90,7 @@ The [KEGG PATHWAY database](https://www.genome.jp/kegg/pathway.html) uses a form
 
 {{< insert-chunk name="matlab" >}}
 
-{{< cite title="MOCCASIN: converting MATLAB ODE models to SBML" authors="Harold F. Gómez, Michael Hucka, Sarah M. Keating, German Nudelman, Dagmar Iber and Stuart C. Sealfon." source="_Bioinformatics_ (2016), 32(12): 1905-1906" link="https://doi.org/10.1093/bioinformatics/btw056" summary="Describes [MOCCASIN](https://github.com/sbmlteam/MOCCASIN) (_Model ODE Converter for Creating Automated SBML INteroperability_), a tool written in Python that can read certain forms of <nobr>ODE-based</nobr> models written in [MATLAB](https://www.mathworks.com/products/matlab.html) and translate them into SBML format." >}}
+{{< cite title="MOCCASIN: converting MATLAB ODE models to SBML" authors="Harold F. Gómez, Michael Hucka, Sarah M. Keating, German Nudelman, Dagmar Iber and Stuart C. Sealfon." source="_Bioinformatics_, 32(12): 1905-1906, 2016" link="https://doi.org/10.1093/bioinformatics/btw056" summary="Describes [MOCCASIN](https://github.com/sbmlteam/MOCCASIN) (_Model ODE Converter for Creating Automated SBML INteroperability_), a tool written in Python that can read certain forms of <nobr>ODE-based</nobr> models written in [MATLAB](https://www.mathworks.com/products/matlab.html) and translate them into SBML format." >}}
 
 {{< insert-chunk name="sbmltoolbox" >}}
 
