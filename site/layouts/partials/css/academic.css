@@ -2747,7 +2747,7 @@ body.dark .twitter-box-inner {
 
 }
 
-.citation {
+.reference {
   display: block;
   font-size: 0.9em;
   width: 95%;
@@ -2757,7 +2757,7 @@ body.dark .twitter-box-inner {
   margin-bottom: 1.5em;
 }
 
-.citation.notice {
+.reference.highlight {
   padding: 0.5em;
   padding-top: .5em;
   margin-top: 1em;
@@ -2765,84 +2765,80 @@ body.dark .twitter-box-inner {
   background-color: #f0f4f6; 
 }
 
-.citation-authors {
+.reference-authors {
   display: block;
   margin-left: 2.5em;
   margin-top: 0.25em;
 }
 
-.citation-authors:before {
+.reference-authors:before {
   content: "Author(s): ";
   font-style: italic;
   color: #9a9a9a;
 }
 
-.citation-source {
+.reference-pub {
   display: block;
   margin-top: 0.25em;
   margin-left: 2.5em;
 }
 
-.citation-source:before {
-  content: "Source: ";
+.reference-pub:before {
+  content: "Publication: ";
   font-style: italic;
   color: #9a9a9a;
 }
 
-.citation-source:after {
-  content: ".";
-}
-
-.citation-summary {
+.reference-summary {
   display: block;
   margin-top: 0.25em;
   margin-left: 2.5em;
 }
 
-.citation-summary:before {
+.reference-summary:before {
   content: "Summary: ";
   font-style: italic;
   color: #9a9a9a;
 }
 
-.citation-icon {
+.reference-icon {
   float: left;
   padding-bottom: 0;
   font-size: 120%;
 }
 
-.citation-title {
+.reference-title {
   display: block;
   font-weight: bold;
   margin-left: 2.5em;
 }
 
-.citation-downloads {
+.reference-downloads {
   display: block;
   margin-top: 0.25em;
   margin-left: 2.5em;
 }
 
-.citation-downloads:before {
-  content: "Download citation: ";
+.reference-downloads:before {
+  content: "Download reference: ";
   font-style: italic;
   color: #9a9a9a;
 }
 
-.citation-bibtex { 
+.reference-bibtex { 
   margin-left: 0.25em;
   padding-left: 0.25em;
 }
 
-.citation-bibtex .fa-file-download {
+.reference-bibtex .fa-file-download {
   margin-right: 0.25em;
 }
 
-.citation-endnote { 
+.reference-endnote { 
   margin-left: 0.25em;
   padding-left: 0.25em;
 }
 
-.citation-endnote .fa-file-download {
+.reference-endnote .fa-file-download {
   margin-right: 0.25em;
 }
