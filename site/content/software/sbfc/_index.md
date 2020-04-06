@@ -1,6 +1,5 @@
 --- # -*- mode: markdown -*-
 #=====================================================================
-active: true
 title: "Systems Biology Format Converter (SBFC)"
 date: 2020-03-14
 layout: "single"

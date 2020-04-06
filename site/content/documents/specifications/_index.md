@@ -1,6 +1,5 @@
 --- # -*- mode: markdown -*-
 #=====================================================================
-active: true
 title: "SBML Specifications"
 date: 2019-10-21
 layout: "single"
@@ -30,7 +29,7 @@ The most recent definition of SBML Level&nbsp;3 is Version&nbsp;2.
 
 {{< sbml-spec-box package="core" level="3" version="2" release="2" >}}
 
-Past releases of SBML Level 2 are available from a [separate page](sbml-level-3). 
+Past releases of SBML Level 3 are available from a [separate page](sbml-level-3). 
 
 
 ### SBML Level 3 Packages

@@ -1,6 +1,5 @@
 --- # -*- mode: markdown -*-
 #=====================================================================
-active: true
 title: "All Versions of SBML Level 2"
 date: 2020-03-10
 layout: "single"

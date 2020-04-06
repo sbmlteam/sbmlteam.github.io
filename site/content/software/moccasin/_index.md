@@ -1,6 +1,5 @@
 --- # -*- mode: markdown -*-
 #=====================================================================
-active: true
 title: "MOCCASIN"
 date: 2020-03-12
 layout: "single"
