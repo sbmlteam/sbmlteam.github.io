@@ -22,4 +22,4 @@ This is the page for the libSBML project in [Pivotal Tracker](http://pivotaltrac
 This tracker is where we collect ideas for a future libSBML version 6.
 {{% /blurb %}}
 
-{{< insert-fragment "using-pivotal" >}}
+{{< fragment "using-pivotal" >}}

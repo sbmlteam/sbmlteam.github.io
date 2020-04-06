@@ -6,7 +6,7 @@ layout: "single"
 #=====================================================================
 ---
 
-{{< insert-toc >}}
+{{< toc >}}
 
 _Levels_ in SBML are used to manage complexity and evolution of the standard.  A _Level_ in SBML is an attempt to provide a given set of features for describing models, with higher Levels providing more powerful features.  Within a given SBML Level, minor revisions to SBML are termed _Versions_ and constitute changes within a Level to correct, adjust and refine features. Additionally, to cope with occasional minor editorial changes that may be needed, SBML specification come with _Release_ numbers within Versions.
 

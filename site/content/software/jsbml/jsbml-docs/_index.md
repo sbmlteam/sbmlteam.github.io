@@ -7,7 +7,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< insert-toc >}}
+{{< toc >}}
 
 This page provides information on how to install JSBML, how to use the application programming interface (API), and other information.
 

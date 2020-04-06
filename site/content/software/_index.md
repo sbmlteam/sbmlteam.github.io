@@ -7,7 +7,7 @@ active = true
 #=====================================================================
 +++
 
-{{< insert-toc >}}
+{{< toc >}}
 
 The SBML Team produces software libraries and some specific software tools for working with SBML. (Many more third-party packages also support SBML &ndash; visit the [Showcase](/showcase) to find out more about them!)
 

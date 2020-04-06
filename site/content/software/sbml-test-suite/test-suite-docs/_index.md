@@ -7,7 +7,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< insert-toc >}}
+{{< toc >}}
 
 This page provides information on how to install the SBML Test Suite, how to use it, and other information.
 

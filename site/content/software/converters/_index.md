@@ -54,7 +54,7 @@ The [Biological Pathways Exchange format (BioPAX)](http://www.biopax.org) is a s
  The rest of this file contains the actual content of the page.
 ------------------------------------------------------------------ -->
 
-{{< insert-toc >}}
+{{< toc >}}
 
 SBML is a lingua franca in systems biology. In order to further facilitate exchange of models, many software tools have been developed to convert between SBML and other formats. For the benefit of the SBML-using community, this page provides a list of conversion tools of which we are aware. Please contact sbml-team@googlegroups.com if we have missed any. Note that most of these tools are third-party software, and not the product of the SBML Team.
 
@@ -65,16 +65,16 @@ Also, please note that the conversion tools listed here differ in their degree o
 
 ### From BioPAX
 
-{{< insert-chunk name="biopax" >}}
+{{< chunk name="biopax" >}}
 
 {{< reference title="Qualitative translation of relations from BioPAX to SBML" authors="Büchel F, Wrzodek C, Mittag F, Dräger A, Eichner J, Rodriguez N, Le Novère N, and Zell A." pub="_Bioinformatics_, 28:2648-2653, 2012" link="https://doi.org/10.1093/bioinformatics/bts508" summary="Description of [BioPAX2SBML](http://www.cogsys.cs.uni-tuebingen.de/software/BioPAX2SBML/), a tool capable of translating BioPAX (Level&nbsp;2 and&nbsp;3) into SBML (Level&nbsp;3 Version&nbsp;1) with the SBML 'qual' package, including reactions and relations in a single model." >}}
 
 
 ### From CellML
 
-{{< insert-chunk name="cellml" >}}
+{{< chunk name="cellml" >}}
 
-{{< insert-chunk name="antimony" >}}
+{{< chunk name="antimony" >}}
 
 
 ### From KEGG
@@ -88,23 +88,23 @@ The [KEGG PATHWAY database](https://www.genome.jp/kegg/pathway.html) uses a form
 
 ### From MATLAB
 
-{{< insert-chunk name="matlab" >}}
+{{< chunk name="matlab" >}}
 
 {{< reference title="MOCCASIN: converting MATLAB ODE models to SBML" authors="Harold F. Gómez, Michael Hucka, Sarah M. Keating, German Nudelman, Dagmar Iber and Stuart C. Sealfon." pub="_Bioinformatics_, 32(12): 1905-1906, 2016" link="https://doi.org/10.1093/bioinformatics/btw056" summary="Describes [MOCCASIN](https://github.com/sbmlteam/MOCCASIN) (_Model ODE Converter for Creating Automated SBML INteroperability_), a tool written in Python that can read certain forms of <nobr>ODE-based</nobr> models written in [MATLAB](https://www.mathworks.com/products/matlab.html) and translate them into SBML format." >}}
 
-{{< insert-chunk name="sbmltoolbox" >}}
+{{< chunk name="sbmltoolbox" >}}
 
 
 ### From SBtab
 
-{{< insert-chunk name="sbtab-format" >}}
+{{< chunk name="sbtab-format" >}}
 
-{{< insert-chunk name="sbtab" >}}
+{{< chunk name="sbtab" >}}
 
 
 ### From XPP
 
-{{< insert-chunk name="xpp" >}}
+{{< chunk name="xpp" >}}
 
 {{< reference type="software" title="sbmlutils: python utilities for SBML" authors="Matthias König." pub="GitHub" link="https://github.com/matthiaskoenig/sbmlutils" summary="[sbmlutils](https://github.com/matthiaskoenig/sbmlutils) is a collection of python utilities for working with SBML models. It offers a variety of model helper functions for model creation, manipulation, and annotation, as well as interpolation functions to add experimental data to models, and file converters." >}}
 
@@ -115,28 +115,28 @@ The [KEGG PATHWAY database](https://www.genome.jp/kegg/pathway.html) uses a form
 
 The [APMonitor Modeling Language](http://apmonitor.com) is optimization software for mixed-integer and differential algebraic equations. It is coupled with large-scale solvers for linear, quadratic, nonlinear, and mixed integer programming. It is freely available through MATLAB, Python, or from a web browser interface.
 
-{{< insert-chunk name="sbfc" >}}
+{{< chunk name="sbfc" >}}
 
 
 ### To BioPAX
 
 The [Biological Pathways Exchange format (BioPAX)](http://www.biopax.org) is a standard language that aims to enable integration, exchange and analysis of biological pathway data.
 
-{{< insert-chunk name="sbfc" >}}
+{{< chunk name="sbfc" >}}
 
 
 ### To CellML
 
-{{< insert-chunk name="cellml" >}}
+{{< chunk name="cellml" >}}
 
-{{< insert-chunk name="antimony" >}}
+{{< chunk name="antimony" >}}
 
 
 ### To GraphViz DOT
 
 The [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html) is the format used by the software [Graphviz](https://www.graphviz.org) to describe network diagrams.
 
-{{< insert-chunk name="sbfc" >}}
+{{< chunk name="sbfc" >}}
 
 
 ### To LaTeX
@@ -148,11 +148,11 @@ The [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html) is the 
 
 ### To MATLAB
 
-{{< insert-chunk name="matlab" >}}
+{{< chunk name="matlab" >}}
 
-{{< insert-chunk name="sbfc" >}}
+{{< chunk name="sbfc" >}}
 
-{{< insert-chunk name="sbmltoolbox" >}}
+{{< chunk name="sbmltoolbox" >}}
 
 
 ### To Modelica
@@ -166,9 +166,9 @@ The [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html) is the 
 
 [GNU Octave](https://www.gnu.org/software/octave/) is a high-level interpreted language, primarily intended for numerical computations.  It is drop-in compatible with many MATLAB programs.
 
-{{< insert-chunk name="sbfc" >}}
+{{< chunk name="sbfc" >}}
 
-{{< insert-chunk name="sbmltoolbox" >}}
+{{< chunk name="sbmltoolbox" >}}
 
 
 ### To Python
@@ -184,18 +184,18 @@ The [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html) is the 
 
 [SBGN-ML](https://github.com/sbgn/sbgn/wiki/SBGN_ML) is an XML exchange format for [SBGN](https://sbgn.github.io), the Systems Biology Graphical Notation.
 
-{{< insert-chunk name="sbfc" >}}
+{{< chunk name="sbfc" >}}
 
 
 ### To SBTab
 
-{{< insert-chunk name="sbtab-format" >}}
+{{< chunk name="sbtab-format" >}}
 
-{{< insert-chunk name="sbtab" >}}
+{{< chunk name="sbtab" >}}
 
 
 ### To XPP
 
-{{< insert-chunk name="xpp" >}}
+{{< chunk name="xpp" >}}
 
-{{< insert-chunk name="sbfc" >}}
+{{< chunk name="sbfc" >}}

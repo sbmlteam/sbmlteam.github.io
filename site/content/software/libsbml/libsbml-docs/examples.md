@@ -6,7 +6,7 @@ layout = "single"
 #=====================================================================
 +++
 
-{{< insert-toc >}}
+{{< toc >}}
 
 The following are example programs demonstrating the use of different libSBML API calls.  The programs are available in different programming languages.  (Due to limited resources, not all programs are available in all programming languages supported by libSBML.)  Further below, you can also find examples of using [SBML Level 3 packages](/documents/specifications#sbml-level-3-packages).
 

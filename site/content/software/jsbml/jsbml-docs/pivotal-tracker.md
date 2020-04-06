@@ -17,4 +17,4 @@ The JSBML project uses [Pivotal Tracker](https://www.pivotaltracker.com/n/projec
 This is the page for the JSBML project in [Pivotal Tracker](http://pivotaltracker.com).  Developers should make sure to read the section on [Using Pivotal Tracker](#using-pivotal-tracker) below.
 {{% /blurb %}}
 
-{{< insert-fragment "using-pivotal" >}}
+{{< fragment "using-pivotal" >}}
