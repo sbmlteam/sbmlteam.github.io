@@ -6,12 +6,22 @@ layout = "single"
 #=====================================================================
 +++
 
+{{< insert-toc >}}
+
 This page lists published papers and chapters describing SBML, SBML packages, and core SBML-supporting software such as API libraries.  Information about associated standards are not included here; please see the [COMBINE website](http://co.mbine.org) and [FAIRsharing](https://fairsharing.org) for information about related standards.
 
 
-## Publications describing SBML and SBML packages
+## About SBML and SBML packages
 
 The papers and chapters in this section describe SBML and SBML packages in general terms.  It is worth noting that _none of these publications is normative in the sense of defining SBML_ &ndash; these papers and chapters only provide context and perspectives about SBML and its development.  (Only the [SBML specification documents](/documents/specifications) are normative.)
+
+{{< cite title="Specifications of Standards in Systems and Synthetic Biology: Status and Developments in 2019" authors="Falk Schreiber, Björn Sommer, Gary D. Bader, Padraig Gleeson, Martin Golebiewski, Michael Hucka, Sarah M. Keating, Matthias König, Chris Myers, David Nickerson and Dagmar Waltemath." source="_Journal of Integrative Bioinformatics_ 16(2), 2019" link="https://doi.org/10.1515/jib-2019-0035" summary="Introduces a special issue of [COMBINE](https://co.mbine.org) standards, including SBML." >}}
+
+{{< cite title="Specifications of Standards in Systems and Synthetic Biology: Status and Developments in 2017" authors="Falk Schreiber, Gary D. Bader, Padraig Gleeson, Martin Golebiewski, Michael Hucka, Sarah M. Keating, Nicolas Le Novère, Chris Myers, David Nickerson, Björn Sommer and Dagmar Waltemath." source="_Journal of Integrative Bioinformatics_ 15:1, 2018" link="https://doi.org/10.1515/jib-2018-0013" summary="Introduces a special issue of [COMBINE](https://co.mbine.org) standards, including SBML." >}}
+
+{{< cite title="Specifications of Standards in Systems and Synthetic Biology: Status and Developments in 2016" authors="Falk Schreiber, Gary D. Bader, Padraig Gleeson, Martin Golebiewski, Michael Hucka, Nicolas Le Novère, Chris Myers, David Nickerson, Björn Sommer and Dagmar Waltemath." source="_Journal of Integrative Bioinformatics_ 13:3, 2017" link="https://doi.org/10.1515/jib-2016-289" summary="Introduces a special issue of [COMBINE](https://co.mbine.org) standards, including SBML." >}}
+
+{{< cite title="Specifications of Standards in Systems and Synthetic Biology: Status and Developments" authors="Falk Schreiber, Gary D. Bader, Martin Golebiewski, Michael Hucka, Benjamin Kormeier, Nicolas Le Novère, Chris Myers, David Nickerson, Björn Sommer, Dagmar Waltemath and Stephan Weise." source="_Journal of Integrative Bioinformatics_ 12:2, 2016" link="https://doi.org/10.1515/jib-2015-258" summary="Introduces a special issue of [COMBINE](https://co.mbine.org) standards, including SBML." >}}
 
 {{< cite title="SBML Qualitative Models: a model representation format and infrastructure to foster interactions between qualitative modelling formalisms and tools" authors="Chaouiya, C., Berenguier, D., Keating, S.&nbsp;M., Naldi, A., van Iersel, M. P., Rodriguez, N., Dräger, A., Büchel, F., Cokelaer, T., Kowal, B., Wicks, B., Gonçalves, E., Dorier, J., Page, M., Monteiro, P.&nbsp;T., von Kamp, A., Xenarios, I., de Jong, H., Hucka, M., Klamt, S., Thieffry, D., Le Novère, N., Saez-Rodriguez, J., and Helikar, T." source="_BMC Systems Biology_ 7:135, 2013" link="https://bmcsystbiol.biomedcentral.com/articles/10.1186/1752-0509-7-135" summary="Describes SBML 'qual', a format for storing qualitative models such as logical model or some Petri Net models." >}}
 
@@ -31,7 +41,39 @@ The papers and chapters in this section describe SBML and SBML packages in gener
 
 {{< cite title="The Systems Biology Markup Language (SBML): A Medium for Representation and Exchange of Biochemical Network Models" authors="Hucka, Michael, Finney, Andrew, Sauro, Herbert M., Bolouri, Hamid, Doyle, John C., Kitano, Hiroaki, Arkin, Adam P., Bornstein, Benjamin J., Bray, Dennis, Cornish-Bowden, Athel, Cuellar, Autumn A., Dronov, Sergey, Gilles, Ernst Dieter, Ginkel, Martin, Gor, Victoria, Goryanin, Igor I., Hedley, Warren J., Hodgman, T. Charles, Hofmeyr, Jan-Hendrik S., Hunter, Peter J., Juty, Nick S., Kasberger, Jay L., Kremling, Andreas, Kummer, Ursula, Le Novère, Nicolas, Loew, Leslie M., Lucio, Daniel, Mendes, Pedro, Minch, Eric, Mjolsness, Eric D., Nakayama, Yoichi, Nelson, Melanie R., Nielsen, Poul F., Sakurada, Takeshi, Schaff, James C., Shapiro, Bruce E., Shimizu, Thomas S., Spence, Hugh D., Stelling, Jörg, Takahashi, Kouichi, Tomita, Masaru, Wagner, John M., Wang, Jian, and the rest of the SBML Forum." source="_Bioinformatics_, 9(4):524–531, 2003" link="https://academic.oup.com/bioinformatics/article/19/4/524/218599" summary="Original publication about SBML. It describes SBML Level&nbsp;1 Version&nbsp;2." >}}
 
-## Software infrastructure supporting SBML
+
+## SBML specification documents
+
+Many of the SBML specification documents do not have journal publications associated with them.  The following are the publications that do exist for the specifications that do have proper publications.
+
+{{< cite title="The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 2 Core Release 2" authors="Hucka, M., Bergmann, F. T., Chaouiya, C., Dräger, A., Hoops, S., Keating, S. M., König, M., Novère, N., Myers, C. J., Olivier, B. G., Sahle, S., Schaff, J. C., Sheriff, R., Smith, L. P., Waltemath, D., Wilkinson, D. J., and Zhang, F." source="_Journal of Integrative Bioinformatics_, 16(2), 20190021, 2019" link="https://doi.org/10.1515/jib-2019-0021" >}}
+
+{{< cite title="The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 1 Core" authors="Hucka, M., Bergmann, F. T., Dräger, A., Hoops, S., Keating, S. M., Le Novère, N., Myers, C. J., Olivier, B. G., Sahle, S., Schaff, J. C., Smith, L. P., Waltemath, D., & Wilkinson, D. J." source="_Journal of Integrative Bioinformatics_, 15(1), 20170080, 2017" link="https://doi.org/10.1515/jib-2017-0080" >}}
+
+{{< cite title="SBML Level 3 package: Multistate, Multicomponent and Multicompartment Species, Version 1, Release 1" authors="Zhang, F. and Meier-Schellersheim, M." source="_Journal of Integrative Bioinformatics_, 15(1), 20170077, 2017" link="https://doi.org/10.1515/jib-2017-0077" >}}
+
+{{< cite title="SBML Level 3 package: Render, Version 1, Release 1" authors="Bergmann, F. T., Keating, S. M., Gauges, R., Sahle, S., and Wengler, K." source="_Journal of Integrative Bioinformatics_, 15(1), 20170078, 2017" link="https://doi.org/10.1515/jib-2017-0078" >}}
+
+{{< cite title="SBML Level 3 Package: Flux Balance Constraints version 2" authors="Olivier, B. G. and Bergmann, F. T." source="_Journal of Integrative Bioinformatics_, 15(1), 20170082, 2017" link="https://doi.org/10.1515/jib-2017-0082" >}}
+
+{{< cite title="The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 2 Core" authors="Hucka, M., Bergmann, F. T., Dräger, A., Hoops, S., Keating, S. M., Le Novère, N., Myers, C. J., Olivier, B. G., Sahle, S., Schaff, J. C., Smith, L. P., Waltemath, D., and Wilkinson, D. J." source="_Journal of Integrative Bioinformatics_, 15(1), 20170081, 2017" link="https://doi.org/10.1515/jib-2017-0081" >}}
+
+{{< cite title="SBML Level 3 package: Groups, Version 1 Release 1" authors="Hucka, M., and Smith, L. P." source="_Journal of Integrative Bioinformatics_, 13(3), 8-29, 2017" link="https://doi.org/10.1515/jib-2016-290" >}}
+
+{{< cite title="SBML Level 3 package: Hierarchical Model Composition, Version 1 Release 3" authors="Smith, L. P., Hucka, M., Hoops, S., Finney, A., Ginkel, M., Myers, C. J., Moraru, I., and Liebermeister, W." source="_Journal of Integrative Bioinformatics_, 12(2), 603-659, 2016" link="https://doi.org/10.1515/jib-2015-268" >}}
+
+{{< cite title="SBML Level 3 package: Qualitative Models, Version 1, Release 1" authors="Chaouiya, C., Keating, S. M., Berenguier, D., Naldi, A., Thieffry, D., Iersel, M., Le Novère, N., and Helikar, T." source="_Journal of Integrative Bioinformatics_, 12(2), 691-730, 2016" link="https://doi.org/10.1515/jib-2015-270" >}}
+
+{{< cite title="The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 1 Core" authors="Hucka, M., Bergmann, F. T., Hoops, S., Keating, S. M., Sahle, S., Schaff, J. C., Smith, L. P., and Wilkinson, D. J." source="_Journal of Integrative Bioinformatics_, 12(2), 382-549, 2016" link="https://doi.org/10.1515/jib-2015-266" >}}
+
+{{< cite title="Systems Biology Markup Language (SBML) Level 2 Version 5: Structures and Facilities for Model Definitions" authors="Hucka, M., Bergmann, F. T., Dräger, A., Hoops, S., Keating, S. M., Le Novère, N., Myers, C. J., Olivier, B. G., Sahle, S., Schaff, J. C., Smith, L. P., Waltemath, D., and Wilkinson, D. J." source="_Journal of Integrative Bioinformatics_, 12(2), 731-901, 2016" link="https://doi.org/10.1515/jib-2015-271" >}}
+
+{{< cite title="The Systems Biology Markup Language (SBML) Level 3 Package: Flux Balance Constraints" authors="Olivier, B. G., and Bergmann, F. T." source="_Journal of Integrative Bioinformatics_, 12(2), 660-690, 2016" link="https://doi.org/10.1515/jib-2015-269" >}}
+
+{{< cite title="The Systems Biology Markup Language (SBML) Level 3 Package: Layout, Version 1 Core" authors="Gauges, R., Rost, U., Sahle, S., Wengler, K., and Bergmann, F. T." source="_Journal of Integrative Bioinformatics_, 12(2), 550-602, 2016" link="https://doi.org/10.1515/jib-2015-267" >}}
+
+
+## SBML software infrastructure
 
 {{< cite title="MOCCASIN: converting MATLAB ODE models to SBML" authors="Gómez, H. F., Hucka, M. Keating, S. M., Nudelman G., Iber, D., and Sealfon, S. C.  " source="_Bioinformatics_, 32(12): 1905–1906, 2016" link="https://academic.oup.com/bioinformatics/article/32/12/1905/1743777" summary="Description of MOCCASIN, a Python-based converter of certain types of MATLAB programs.  Does not require MATLAB to run." >}}
 
@@ -44,3 +86,6 @@ The papers and chapters in this section describe SBML and SBML packages in gener
 {{< cite title="LibSBML: An API Library for SBML" authors="Bornstein, B. J., Keating, S. M., Jouraku, A., and Hucka M." source="_Bioinformatics_, 24: 880-881, 2008" link="https://dx.doi.org/10.1093%2Fbioinformatics%2Fbtn051" summary="Description of the libSBML, a C++ library to help support SBML in software tools written in a variety of languages." >}}
 
 {{< cite title="SBMLToolbox: an SBML toolbox for MATLAB users" authors="Keating, S. M., Bornstein, B. J., Finney, A., and Hucka M." source="_Bioinformatics_, 22(10):1275–1277" link="https://doi.org/10.1093/bioinformatics/btl111" summary="Describes [SBMLToolbox](https://github.com/sbmlteam/sbmltoolbox), a MATLAB toolbox built on top of [libSBML](/software/libsbml). It provides a set of basic functions allowing SBML models to be used in both MATLAB and [Octave](https://www.gnu.org/software/octave/)." >}}
+
+
+### <!-- Stupid hack needed to make TOC show up properly -->
