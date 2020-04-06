@@ -1,0 +1,60 @@
+<!-- ==========================================================================
+File name   : /layouts/shortcodes/reference.html
+Description : Shortcode for writing detailed references to a paper or software
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology
+Date created: 2020-04-05
+
+This is used in places like /software/converters and /documents/publications/.
+The optional argument "type" is used to change the icon when the reference is
+not to a paper.
+=========================================================================== -->
+
+{{ $title     := .Get "title" }}
+{{ $authors   := .Get "authors" }}
+{{ $pub       := .Get "pub" }}
+{{ $link      := .Get "link" }}
+{{ $type      := .Get "type"      | default "paper" }}
+{{ $summary   := .Get "summary"   | default "" }}
+{{ $highlight := .Get "highlight" | default "false" }}
+{{ $bibtex    := .Get "bibtex"    | default "" }}
+{{ $endnote   := .Get "endnote"   | default "" }}
+
+{{ $icon    := "fa-file-pdf fas" }}
+{{ if eq $type "software" }}
+  {{ $icon = "fa-file-code fas" }}
+{{ end }}
+
+{{ if eq $highlight "true" }}
+  {{ $highlight = "highlight" }}
+{{ end }}
+
+<!-- Add periods at the ends if they are missing. -->
+{{ if ne $authors "" }}
+  {{ $authors = print (strings.TrimRight "." $authors) "." }}
+{{ end }}
+{{ if ne $summary "" }}
+  {{ $summary = print (strings.TrimRight "." $summary) "." }}
+{{ end }}
+{{ if ne $pub "" }}
+  {{ $pub = print (strings.TrimRight "." $pub) "." }}
+{{ end }}
+
+<div class="reference {{ $highlight }}">
+  <span class="reference-icon"><a href="{{ $link }}"><i class="{{ $icon }} fa-2x"></i></a></span><span class="reference-title"><a href="{{ $link }}">{{ $title | markdownify }}</a></span>
+  <span class="reference-authors">{{ $authors | markdownify }}</span>
+  <span class="reference-pub">{{ $pub | markdownify }}</span>
+  {{- if ne $summary "" -}}
+    <span class="reference-summary">{{ $summary | markdownify }}</span>    
+  {{ end }}
+  {{- if or (ne $bibtex "") (ne $endnote "") -}}
+    <div class="reference-downloads">
+      {{ if ne $bibtex "" }}
+      <span class="reference-bibtex"><a href="{{ $bibtex }}"><i class="fa-file-download fas fa-1x"></i>BibTeX</a></span>
+      {{ end }}
+      {{ if ne $endnote "" }}
+      <span class="reference-endnote"><a href="{{ $endnote }}"><i class="fa-file-download fas fa-1x"></i>EndNote</a></span>
+      {{ end }}
+    </div>
+  {{- end -}}
+</div>
