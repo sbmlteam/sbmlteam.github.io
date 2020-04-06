@@ -14,7 +14,7 @@ html {
   color: #555555;
   line-height: 1.4;
 }
-@media screen and (min-width: 58em) {
+@media screen and (min-width: 992px) {
   html {
     font-size: {{ .Get "font_size" }}px;
   }
@@ -251,7 +251,7 @@ blockquote {
 blockquote p:last-child {
   margin-bottom: 0;
 }
-@media (min-width: 30em) {
+@media (min-width: 992px) {
   blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
@@ -2637,34 +2637,36 @@ body.dark .twitter-box-inner {
 }
 
 .sbml-software-links-box {
-  width: 95%;
   vertical-align: top;
   text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
+  margin: 1rem auto 0.75rem auto;
 }
 
 .sbml-software-link {
   display: inline-block;
-  margin: 0.75rem 1rem 0.5rem 1rem;
+  margin: 0.75rem 0.25rem 0.5rem 0.25rem;
   height: 63px;
+  min-width: 10%;
 }
 
-@media screen and (min-width: 768px) {
-  .sbml-software-link {
-    margin: 0.75rem 1.25rem 0.5rem 1.25rem;
+@media screen and (min-width: 500px) {
+  .sbml-software-links-box {
+    width: 95%;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
   .sbml-software-link {
     margin: 0.75rem 0.5rem 0.5rem 0.5rem;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
   .sbml-software-link {
-    margin: 0.75rem 1.5rem 0.5rem 1.5rem;
+    margin: 0.75rem 0.75rem 0.5rem 0.75rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .sbml-software-links-box {
+    width: 100%;
   }
 }
 
@@ -2674,11 +2676,33 @@ body.dark .twitter-box-inner {
 
 .sourceforge-icon:before {
   content: url("/img/sourceforge-logo.png");
-  transform: translate(-7px, -8px) scale(0.14);
+  transform: translate(-0.1rem, -0.25rem) scale(0.12);    
   width: 14px;
   height: 14px;
   display: block;
   position: relative;
+  -webkit-filter: drop-shadow(10px 12px 6px rgba(220, 220, 220, 1));
+  filter        : drop-shadow(10px 12px 6px rgba(220, 220, 220, 1));
+  -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+  filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+}
+
+@media screen and (min-width: 768px) {
+  .sourceforge-icon:before {
+    transform: translate(0.5rem, -0.2rem) scale(0.12);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .sourceforge-icon:before {
+    transform: translate(1rem, -0.1rem) scale(0.13);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sourceforge-icon:before {
+    transform: translate(1.55rem, -0.1rem) scale(0.13);
+  }
 }
 
 .blurb img {
