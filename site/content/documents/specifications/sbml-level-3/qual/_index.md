@@ -1,0 +1,34 @@
++++
+#=====================================================================
+layout = "level3-spec"
+spec   = "qual"
+date   = 2020-04-13
+#=====================================================================
++++
+
+## Notes about this specification
+
+The "qual" specfication is considered stable and in active use.
+
+
+## Notes about LibSBML support
+
+[libSBML](/software/libSBML) implements full support for the SBML Level&nbsp;3 "qual" specificaiton.
+
+
+## Notes about JSBML support
+
+[JSBML](/software/JSBML) implements full support for the SBML Level&nbsp;3 "qual" specificaiton.
+
+
+## Notes about third-party application support
+
+Some historical developments:
+
+**2013-07-08**: The Cell Collective supports the SBML Qualitative Models package. The Cell Collective is a web-based platform for the construction, simulation, and analysis of Boolean-based models. Models published on the site can also be downloaded as SBML using the Level 3 qual format.
+
+**2012-11-29**: The latest prerelease version of BoolNet supports the SBML Qualitative Models package.
+
+**2012-08-14**: The Path2Models project and BioModels Database have created over 142,000 models using the SBML Level 3 qualitative models package.
+
+**2012-08-14**: GinSim and CellNetOpt are two software systems that implement support for the qual package. Their developers have also been involved in authoring the specification.
