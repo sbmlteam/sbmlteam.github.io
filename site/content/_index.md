@@ -1,4 +1,4 @@
-+++ # -*- mode: markdown -*-
++++
 #=====================================================================
 # File:    _index.md
 # Summary: This file defines the front page text that appears as the
