@@ -22,16 +22,16 @@ spreadsheet is kept in the data file /data/urls.json in our site structure.
     <th>Description</th>
     <th>Status</th>
   </tr>
-  {{ range $i, $column := after 1 $tsv }}
+  {{ range $i, $column := $tsv }}
     <!-- Mapping of columns in this table to columns in the spreadsheet. -->
-    {{ $name        := index $column 1 }}
     {{ $label       := index $column 0 }}
+    {{ $name        := index $column 1 }}
     {{ $description := index $column 2 }}
     {{ $status      := index $column 4 }}
     {{ $details_pg  := print "/documents/specifications/sbml-level-3/" $label }}
 
     <!-- Iterate over rows, skipping empty rows & retired packages. -->
-    {{ if and (ne $label "") (not (in $status "Retired")) }}
+    {{ if and (ne $label "") (ne $label "Label") (not (in $status "Retired")) }}
       <tr>
         <td class="sbml-ptable-col-name">
           <span class="sbml-ptable-page-link">
