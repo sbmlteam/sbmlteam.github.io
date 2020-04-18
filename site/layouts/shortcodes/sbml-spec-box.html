@@ -52,15 +52,15 @@ read the appropriate .toml data file.
 {{ $package  := ( .Get "package" ) }}
 {{ $level    := ( .Get "level" ) }}
 {{ $version  := ( .Get "version" ) }}
-{{ $release  := ( .Get "release" ) }}
-{{ $revision := ( .Get "revision" ) }}
+{{ $release  := ( .Get "release" )  | default "none" }}
+{{ $revision := ( .Get "revision" ) | default "none" }}
 
 <!-- Convert argument values like "3" into "level3", for use below. -->
-{{ $level_key    := print "level"   $level }}
-{{ $version_key  := print "version" $version }}
-{{ $release_key  := print "release" $release }}
-{{ $revision_key := print "revision" $revision }}
-
+{{ $level_key    := print "sbml-level-" $level }} 
+{{ $version_key  := print "version-"    $version }}    
+{{ $release_key  := print "release-"    $release }}    
+{{ $revision_key := print "revision-"   $revision }}
+                                                    
 <!-- Get array of all level/version/release data for this package. -->
 {{ $package_data := index .Site.Data.SBML.specs $package }}
 
@@ -77,7 +77,7 @@ read the appropriate .toml data file.
 <!-- Drill down to get the entry for the desired release (or in the case
      of SBML Level 2 Version 1, the revision, as it was known then). -->
 {{ $all_versions := ( index $package_data $level_key ) }}
-{{ if ne $revision "" }}
+{{ if and (ne $revision "") (ne $revision "none") }}
   {{ $all_revisions := ( index $all_versions $version_key ) }}
   {{ $spec = ( index $all_revisions $revision_key ) }}
   {{ $rel_text = print "Revision " $spec.revision }}
@@ -109,21 +109,31 @@ read the appropriate .toml data file.
       <a href="{{ $spec.pdf_main }}"><i class="fa-file-pdf fas fa-2x"></i><br>
         Specification</a>
     </span>
+    {{ if and $spec.publication (ne $spec.publication "none") }}
     <span class="sbml-spec-link">
       <a href="{{ $spec.publication }}"><i class="fa-file-pdf fas fa-2x"></i><br>
         Publication</a>
     </span>
+    {{ end }}
+    {{ if and $spec.issues (ne $spec.issues "none") }}
     <span class="sbml-spec-link">
-      <a href="{{ $spec.errata }}"><i class="fa-file-alt fas fa-2x"></i><br>
+      <a href="{{ $spec.issues }}"><i class="fa-clipboard-list fas fa-2x"></i><br>
         Known issues</a>
     </span>
+    {{ end }}
+    {{ if $spec.tracker }}
+    <span class="sbml-spec-link">
+      <a href="{{ $spec.tracker }}"><i class="fa-bug fas fa-2x"></i><br>
+        Report issue</a>
+    </span>
+    {{ end }}
     <span class="sbml-spec-link">
       <a href="{{ $spec.schema }}"><i class="fa-file-code fas fa-2x"></i><br>
         {{ $spec.schema_type }} schema</a>
     </span>
   </div>
 
-  {{ if and (isset $spec "citation") (ne $spec.citation "") }}
+  {{ if and $spec.publication (ne $spec.publication "none") }}
     <div class="sbml-spec-citation-box">
       <span class="sbml-spec-citation-label">How to cite the publication: </span>
       {{ $spec.citation | markdownify }}
@@ -134,5 +144,17 @@ read the appropriate .toml data file.
         <a href="{{ $spec.cite_ris }}"><i class="fa-file-download fas fa-1x"></i> RIS</a>
       </span>
     </div>
+  {{ else if $spec.citation }}
+    <div class="sbml-spec-citation-box">
+      <span class="sbml-spec-citation-label">This specification does not have a true publication associated with it. You may cite this document as follows: </span>
+      {{ $spec.citation | markdownify }}.
+      <span class="sbml-spec-citation-link">
+        <a href="{{ $spec.cite_bibtex }}"><i class="fa-file-download fas fa-1x"></i> BibTeX</a>
+      </span>
+      <span class="sbml-spec-citation-link">
+        <a href="{{ $spec.cite_ris }}"><i class="fa-file-download fas fa-1x"></i> RIS</a>
+      </span>
+    </div>
   {{ end }}
 </div>
+
