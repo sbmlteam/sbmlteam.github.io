@@ -66,7 +66,7 @@ The current definition of SBML Level 1 is **Version 2**.
 Although [XML Schemas](https://en.wikipedia.org/wiki/XML_schema) are available for SBML Level&nbsp;1, the schemas only capture the basic syntax of the format.  Semantics and correct usage are <strong>not</strong> captured by the schemas and can only be understood by reading the specification documents.
 {{% /notice %}}
 
-{{< sbml-spec-box package="core" level="1" version="2" release="1" >}}
+{{< sbml-spec-box package="core" level="1" version="2" >}}
 
 Past releases of SBML Level 1 are available from a [separate page](sbml-level-1).
 
