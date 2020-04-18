@@ -2492,6 +2492,18 @@ h2 span.article-date {
   color: #bd8b67;
   vertical-align: top;
   text-align: left;
+
+  /* The following are to allow URLs to break across lines. Obtained 2020-04-17
+     from https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+   */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .sbml-spec-citation-label {
@@ -2499,8 +2511,16 @@ h2 span.article-date {
   color: #999;
 }
 
-.sbml-spec-citation-link {
-  margin-left: 0.5rem;
+.sbml-spec-citation-text {
+  display: inline;
+  padding-right: 0.5em;
+}
+
+.sbml-spec-citation-text:after {
+  content: ".";
+}
+
+.sbml-spec-citation-downloads {
 }
 
 .sbml-package-table td {
@@ -2825,22 +2845,32 @@ body.dark .twitter-box-inner {
   color: #9a9a9a;
 }
 
-.reference-bibtex { 
+.reference-downloads a {
   margin-left: 0.25em;
-  padding-left: 0.25em;
+}
+
+.reference-bibtex { 
+  display: inline-block;
+  padding-left: 0;
+  margin-right: 0.25em;
 }
 
 .reference-bibtex .fa-file-download {
-  margin-right: 0.25em;
+  margin-right: 0.1em;
 }
 
 .reference-endnote { 
   margin-left: 0.25em;
-  padding-left: 0.25em;
+  padding-left: 0;
 }
 
 .reference-endnote .fa-file-download {
+  margin-right: 0.1em;
+}
+
+.file-download .fa-file-download {
   margin-right: 0.25em;
+  display: inline-block;
 }
 
 .sbml-package-status {
