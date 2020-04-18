@@ -1,26 +1,34 @@
---- # -*- mode: markdown -*-
++++
 #=====================================================================
-title: "All Versions of SBML Level 3"
-date: 2020-03-12
-layout: "single"
+title  = "All Versions of SBML Level 3"
+date   = 2020-03-12
+layout = "single"
 #=====================================================================
----
++++
 
-This page lists the accumulated Versions (and Releases within Versions) of the SBML Level&nbsp;3 Core specification and officially-supported Level&nbsp;3 package specifications.
+This page lists the accumulated Versions (and Releases within Versions) of the SBML Level&nbsp;3 Core specification and Level&nbsp;3 package specifications.
 
 
 ## SBML Level 3 Version 2 Core
 
-The current stable release of SBML Level 3 Version 2 Core is **Release 2**.
+**Release 2** is the current stable release of SBML Level 3 Version 2 Core:
 
 {{< sbml-spec-box package="core" level="3" version="2" release="2" >}}
+
+**Release 1** (for historical reference):
+
+{{< sbml-spec-box package="core" level="3" version="2" release="1" >}}
 
 
 ## SBML Level 3 Version 1 Core
 
-The current stable release of SBML Level 3 Version 1 Core is **Release 2**.
+**Release 2** is the current stable release of SBML Level 3 Version 1 Core:
 
 {{< sbml-spec-box package="core" level="3" version="1" release="2" >}}
+
+**Release 1** (for historical reference):
+
+{{< sbml-spec-box package="core" level="3" version="1" release="1" >}}
 
 
 ## SBML Level 3 Packages
