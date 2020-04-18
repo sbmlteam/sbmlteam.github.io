@@ -44,17 +44,17 @@ not to a paper.
   <span class="reference-icon"><a href="{{ $link }}"><i class="{{ $icon }} fa-2x"></i></a></span><span class="reference-title"><a href="{{ $link }}">{{ $title | markdownify }}</a></span>
   <span class="reference-authors">{{ $authors | markdownify }}</span>
   <span class="reference-pub">{{ $pub | markdownify }}</span>
-  {{- if ne $summary "" -}}
+    {{- if ne $summary "" -}}
     <span class="reference-summary">{{ $summary | markdownify }}</span>    
-  {{ end }}
-  {{- if or (ne $bibtex "") (ne $endnote "") -}}
-    <div class="reference-downloads">
-      {{ if ne $bibtex "" }}
-      <span class="reference-bibtex"><a href="{{ $bibtex }}"><i class="fa-file-download fas fa-1x"></i>BibTeX</a></span>
+    {{- end -}}
+    {{- if or (ne $bibtex "") (ne $endnote "") -}}
+    <span class="reference-downloads">
+      {{- if ne $bibtex "" -}}
+      <a href="{{ $bibtex }}"><span class="reference-bibtex"><i class="fa-file-download fas fa-1x"></i>BibTeX</span></a>
       {{ end }}
-      {{ if ne $endnote "" }}
-      <span class="reference-endnote"><a href="{{ $endnote }}"><i class="fa-file-download fas fa-1x"></i>EndNote</a></span>
-      {{ end }}
-    </div>
-  {{- end -}}
+      {{- if ne $endnote "" -}}
+      <a href="{{ $endnote }}"><span class="reference-endnote"><i class="fa-file-download fas fa-1x"></i>EndNote</span></a>
+      {{- end -}}
+    </span>
+    {{- end -}}
 </div>
