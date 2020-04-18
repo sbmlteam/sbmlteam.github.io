@@ -1,12 +1,9 @@
 # =============================================================================
 # File name   : /data/SBML.toml
-# Description : Data file for simple values used on the SBML site.
+# Description : Data file for SBML specifications and other things
 # Author(s)   : Michael Hucka <mhucka@caltech.edu>
 # Organization: California Institute of Technology
 # Date created: 2020-03-10
-#
-# This file is used for simple, single-value variables.  For more complicated
-# data, see the subdirectories under "SBML" in this directory.
 # =============================================================================
 
 # Data for specifications -----------------------------------------------------
@@ -29,3 +26,254 @@ latest-release = "5.18.0"
 [jsbml]
 download-url = "https://github.com/sbmlteam/jsbml/releases"
 latest-release = "1.4"
+
+[specs]
+  # In order to make data access uniform across all levels/versions of SBML,
+  # this organizes things by packages first, treating the L1 and L2 specs as
+  # consistingly only of a "core" spec.  This avoids having to have special-
+  # case logic when treating L3 versus previous specs.
+  #
+  # Note #1: TOML format doesn't require intermediate table/array levels if
+  # there's no data in them, so in the list below, we don't need "specs.core"
+  # and can go straight to "specs.core.sbml-level-X".
+  #
+  # Note #2: L1 and L2 didn't have the concept of releases or revisions, so
+  # they don't have as many nesting levels as L3.
+
+  [specs.core.sbml-level-1]
+
+    [specs.core.sbml-level-1.version-1]
+    level       = "1"
+    version     = "1"
+    release     = "none"
+    title       = "Systems Biology Markup Language (SBML) Level 1: Structures and Facilities for Basic Model Definitions"
+    date        = "2001-03-02"
+    authors     = "Michael Hucka, Andrew Finney, Herbert Sauro, and Hamid Bolouri"
+    pdf         = "/documents/specifications/sbml-level-1/sbml.level-1.version-1.pdf"
+    issues      = "none"
+    tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+    schema      = "/documents/specifications/sbml-level-1/sbml.level-1.version-1.xsd"
+    schema_type = "XML"
+    publication = "none"
+    citation    = "Michael Hucka, Andrew Finney, Herbert Sauro, Hamid Bolouri. (2001). Systems Biology Markup Language (SBML) Level 1: Structures and Facilities for Basic Model Definitions. Available from COMBINE at http://identifiers.org/combine.specifications/sbml.level-1.version-1"
+    cite_bibtex = "/documents/specifications/sbml-level-1/sbml.level-1.version-1.bib"
+    cite_ris    = "/documents/specifications/sbml-level-1/sbml.level-1.version-1.ris"
+
+    [specs.core.sbml-level-1.version-2]
+    level       = "1"
+    version     = "2"
+    release     = "none"
+    title       = "Systems Biology Markup Language (SBML) Level 1: Structures and Facilities for Basic Model Definitions"
+    date        = "2003-08-28"
+    authors     = "Michael Hucka, Andrew Finney, Herbert Sauro, and Hamid Bolouri"
+    pdf         = "/documents/specifications/sbml-level-1/sbml.level-1.version-2.pdf"
+    issues      = "/documents/specifications/sbml-level-1/errata/sbml.level-1.version-2"
+    tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+    schema      = "/documents/specifications/sbml-level-1/sbml.level-1.version-2.xsd"
+    schema_type = "XML"
+    publication = "none"
+    citation    = "Michael Hucka, Andrew Finney, Herbert Sauro, Hamid Bolouri. (2001). Systems Biology Markup Language (SBML) Level 1: Structures and Facilities for Basic Model Definitions. Available from COMBINE at http://identifiers.org/combine.specifications/sbml.level-1.version-2"
+    cite_bibtex = "/documents/specifications/sbml-level-1/sbml.level-1.version-2.bib"
+    cite_ris    = "/documents/specifications/sbml-level-1/sbml.level-1.version-2.ris"
+      
+  [specs.core.sbml-level-2]
+
+    [specs.core.sbml-level-2.version-1]
+    level       = "2"
+    version     = "1"
+    release     = "none"
+    title       = "Systems Biology Markup Language (SBML) Level 2: Structures and Facilities for Model Definitions"
+    date        = "2015-08-03"
+    authors     = "Michael Hucka, Frank T. Bergmann, Andreas Dräger, Stefan Hoops, Sarah M. Keating, Nicolas Le Novère, Chris J. Myers, Brett G. Olivier, Sven Sahle, James C. Schaff, Lucian P. Smith, Dagmar Waltemath, and Darren J. Wilkinson"
+    pdf         = "/documents/specifications/sbml-level-2/sbml.level-2.version-1.pdf"
+    issues      = ""
+    schema      = ""
+    schema_type = "XML"
+    
+    [specs.core.sbml-level-2.version-2.revision-1]
+    level       = "2"
+    version     = "2"
+    revision    = "1"
+    title       = "Systems Biology Markup Language (SBML) Level 2: Structures and Facilities for Model Definitions"
+    date        = "2007-09-26"
+    authors     = "Michael Hucka, Andrew Finney, and Nicolas Le Novère"
+    pdf         = "/documents/specifications/sbml-level-2/sbml.level-2.version-2.revision-1.pdf"
+    issues      = ""
+    schema      = ""
+    schema_type = "XML"
+
+    [specs.core.sbml-level-2.version-3.release-1]
+    level       = "2"
+    version     = "3"
+    release     = "1"
+    title       = "Systems Biology Markup Language (SBML) Level 2: Structures and Facilities for Model Definitions"
+    date        = "2007-06-16"
+    authors     = "Michael Hucka, Andrew Finney, Stefan Hoops, Sarah Keating and Nicolas Le Novère"
+    pdf         = "/documents/specifications/sbml-level-2/sbml.level-2.version-3.release-1.pdf"
+    issues      = ""
+    schema      = ""
+    schema_type = "XML"
+    publication = ""
+    citation    = ""
+    cite_bibtex = ""
+    cite_ris    = ""
+
+    [specs.core.sbml-level-2.version-3.release-2]
+    level       = "2"
+    version     = "3"
+    release     = "2"
+    title       = "Systems Biology Markup Language (SBML) Level 2: Structures and Facilities for Model Definitions"
+    date        = "2007-09-26"
+    authors     = "Michael Hucka, Andrew Finney, Stefan Hoops, Sarah Keating and Nicolas Le Novère"
+    pdf         = "/documents/specifications/sbml-level-2/sbml.level-2.version-3.release-2.pdf"
+    issues      = ""
+    schema      = ""
+    schema_type = "XML"
+
+    [specs.core.sbml-level-2.version-4.release-1]
+    level       = "2"
+    version     = "4"
+    release     = "1"
+    title       = "Systems Biology Markup Language (SBML) Level 2: Structures and Facilities for Model Definitions"
+    date        = "2008-12-22"
+    authors     = "Michael Hucka, Stefan Hoops, Sarah M. Keating, Nicolas Le Novère, Sven Sahle, and Darren J. Wilkinson"
+    pdf         = "/documents/specifications/sbml-level-2/sbml.level-2.version-4.release-1.pdf"
+    issues      = ""
+    schema      = ""
+    schema_type = "XML"
+    publication = ""
+    citation    = ""
+    cite_bibtex = ""
+    cite_ris    = ""
+    
+    [specs.core.sbml-level-2.version-5.release-1]
+    level       = "2"
+    version     = "5"
+    release     = "1"
+    title       = "Systems Biology Markup Language (SBML) Level 2: Structures and Facilities for Model Definitions"
+    date        = "2015-08-03"
+    authors     = "Michael Hucka, Frank T. Bergmann, Andreas Dräger, Stefan Hoops, Sarah M. Keating, Nicolas Le Novère, Chris J. Myers, Brett G. Olivier, Sven Sahle, James C. Schaff, Lucian P. Smith, Dagmar Waltemath, and Darren J. Wilkinson"
+    pdf         = "/documents/specifications/sbml-level-2/sbml.level-2.version-5.release-1.pdf"
+    issues      = ""
+    schema      = ""
+    schema_type = "XML"
+    
+  [specs.core.sbml-level-3]
+
+    [specs.core.sbml-level-3.version-1.release-1]
+    level       = "3"
+    version     = "1"
+    release     = "1"
+    title       = "The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 1 Core"
+    date        = "2010-10-06"
+    authors     = "Michael Hucka, Frank T. Bergmann, Stefan Hoops, Sarah M. Keating, Sven Sahle, James C. Schaff, Lucian P. Smith, and Darren J. Wilkinson"
+    pdf_main    = "http://co.mbine.org/specifications/sbml.level-3.version-1.core.release-1"
+    pdf_alt     = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-1-core-release-1.pdf"
+    issues      = ""
+    tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+    schema      = ""
+    schema_type = "RNG"
+    publication = "https://doi.org/10.1515/jib-2015-266"
+    citation    = ""
+    cite_bibtex = "/specifications/sbml-level-3/version-1/core/sbml-level-3-version-1-core-release-1.bib"
+    cite_ris    = "/specifications/sbml-level-3/version-1/core/sbml-level-3-version-1-core-release-1.ris"
+
+    [specs.core.sbml-level-3.version-1.release-2]
+    level       = "3"
+    version     = "1"
+    release     = "2"
+    title       = "The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 1 Core"
+    date        = "2016-12-28"
+    authors     = "Michael Hucka, Frank T. Bergmann, Andreas Dräger, Stefan Hoops, Sarah M. Keating, Nicolas Le Novère, Chris J. Myers, Brett G. Olivier, Sven Sahle, James C. Schaff, Lucian P. Smith, Dagmar Waltemath, and Darren J. Wilkinson"
+    pdf_main    = "http://co.mbine.org/specifications/sbml.level-3.version-1.core.release-2"
+    pdf_alt     = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-1-core-release-2.pdf"
+    issues      = ""
+    tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+    schema      = ""
+    schema_type = "RNG"
+    publication =  "https://doi.org/10.1515/jib-2017-0080"
+    citation    = "Hucka, M., Bergmann, F. T., Dräger, A., Hoops, S., Keating, S. M., Le Novère, N., Myers, C. J., Olivier, B. G., Sahle, S., Schaff, J. C., Smith, L. P., Waltemath, D., & Wilkinson, D. J. (2018). The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 1 Core. _Journal of Integrative Bioinformatics_, 15(1)."
+    cite_bibtex = "/specifications/sbml-level-3/version-1/core/sbml-level-3-version-1-core-release-2.bib"
+    cite_ris    = "/specifications/sbml-level-3/version-1/core/sbml-level-3-version-1-core-release-2.ris"
+    
+    [specs.core.sbml-level-3.version-2.release-1]
+    level       = "3"
+    version     = "2"
+    release     = "1"
+    title       = "The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 2 Core"
+    date        = "2017-12-05"
+    authors     = "Michael Hucka, Frank T. Bergmann, Andreas Dräger, Stefan Hoops, Sarah M. Keating, Nicolas Le Novère, Chris J. Myers, Brett G. Olivier, Sven Sahle, James C. Schaff, Lucian P. Smith, Dagmar Waltemath, Darren J. Wilkinson"
+    pdf_main    = "http://co.mbine.org/specifications/sbml.level-3.version-2.core.release-1"
+    pdf_alt     = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-2-core-release-1.pdf"
+    issues      = ""
+    tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+    schema      = ""
+    schema_type = "RNG"
+    publication = "https://doi.org/10.1515/jib-2017-0080"
+    citation    = "Hucka, M., Bergmann, F. T., Dräger, A., Hoops, S., Keating, S. M., Le Novère, N., Myers, C. J., Olivier, B. G., Sahle, S., Schaff, J. C., Smith, L. P., Waltemath, D., & Wilkinson, D. J. (2018). The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 1 Core. _Journal of Integrative Bioinformatics_, 15(1), 20170080."
+    cite_bibtex = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-2-core-release-1.bib"
+    cite_ris    = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-2-core-release-1.ris"
+
+    [specs.core.sbml-level-3.version-2.release-2]
+    level       = "3"
+    version     = "2"
+    release     = "2"
+    title       = "The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 2 Core"
+    date        = "2019-03-29"
+    authors     = "Michael Hucka, Frank T. Bergmann, Claudine Chaouiya, Andreas Dräger, Stefan Hoops, Sarah M. Keating, Matthias König, Nicolas Le Novère, Chris J. Myers, Brett G. Olivier, Sven Sahle, James C. Schaff, Rahuman Sheriff, Lucian P. Smith, Dagmar Waltemath, Darren J. Wilkinson, and Fengkai Zhang"
+    pdf_main    = "http://co.mbine.org/specifications/sbml.level-3.version-2.core.release-2"
+    pdf_alt     = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-2-core-release-2.pdf"
+    issues      = ""
+    tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+    schema      = ""
+    schema_type = "RNG"
+    publication =  "https://doi.org/10.1515/jib-2019-0021"
+    citation    = "Hucka, M., Bergmann, F. T., Chaouiya, C., Dräger, A., Hoops, S., Keating, S. M., König, M., Novère, N. L., Myers, C. J., Olivier, B. G., Sahle, S., Schaff, J. C., Sheriff, R., Smith, L. P., Waltemath, D., Wilkinson, D. J., & Zhang, F. (2019). The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 2 Core Release 2. _Journal of Integrative Bioinformatics_, 16(2), 20190021."
+    cite_bibtex = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-2-core-release-2.bib"
+    cite_ris    = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-2-core-release-2.ris"
+
+  [specs.arrays.sbml-level-3]
+
+    [specs.arrays.sbml-level-3.version-1]
+
+  [specs.comp.sbml-level-3]
+
+    [specs.comp.sbml-level-3.version-1]
+
+  [specs.distrib.sbml-level-3]
+
+    [specs.distrib.sbml-level-3.version-1]
+
+  [specs.dyn.sbml-level-3]
+
+    [specs.dyn.sbml-level-3.version-1]
+
+  [specs.fbc.sbml-level-3]
+
+    [specs.fbc.sbml-level-3.version-1]
+
+  [specs.groups.sbml-level-3]
+
+    [specs.groups.sbml-level-3.version-1]
+
+  [specs.layout.sbml-level-3]
+
+    [specs.layout.sbml-level-3.version-1]
+
+  [specs.math.sbml-level-3]
+
+    [specs.math.sbml-level-3.version-1]
+
+  [specs.multi.sbml-level-3]
+
+    [specs.multi.sbml-level-3.version-1]
+
+  [specs.qual.sbml-level-3]
+
+    [specs.qual.sbml-level-3.version-1]
+
+  [specs.render.sbml-level-3]
+
+    [specs.render.sbml-level-3.version-1]
+
+  [specs.spatial.sbml-level-3]
