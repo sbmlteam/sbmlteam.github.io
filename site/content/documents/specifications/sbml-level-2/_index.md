@@ -6,11 +6,13 @@ layout: "single"
 #=====================================================================
 ---
 
-First, an explanation is in order. The term _Releases_ was introduced in SBML Level&nbsp;2 Version&nbsp;3; the Release approach is used to cope with minor editorial changes to specification documents. Prior to that, in Version&nbsp;2, the same concept existed under the name _Revision_, but only one revision of Level&nbsp;2 Version&nbsp;2 was ever produced. In SBML Level&nbsp;2 Version&nbsp;1, the Release/Revision concept was not used at all.
+An explanation is warranted about release numbering. The term _Releases_ was introduced in SBML Level&nbsp;2 Version&nbsp;3; the Release approach is used to cope with minor editorial changes to specification documents. Prior to that, in Version&nbsp;2, the same concept existed under the name _Revision_, but only one revision of Level&nbsp;2 Version&nbsp;2 was ever produced. In SBML Level&nbsp;2 Version&nbsp;1, the Release/Revision concept was not used at all; there is only "SBML Level&nbsp;2 Version&nbsp;1". To make matters simpler, this page lists all previously issued specifications of SBML Level&nbsp;2, regardless of whether they were Releases of Version&nbsp;5, or past Versions.
 
-To make matters simpler, this page lists all previously issued specifications of SBML Level&nbsp;2, regardless of whether they were Releases of Version&nbsp;5, or past Versions.
+Developers and modelers are **strongly encouraged** to support the **latest** Version of SBML in any new software development and modeling efforts, as well as to update actively-supported software tools they may be involved in developing or maintaining.
 
-Developers and modelers are **strongly encouraged** to support the **latest** Version in any new software development and modeling efforts, as well as to update actively-supported software tools they may be involved in developing or maintaining.
+{{% notice type="info" %}}
+SBML uses a subset of MathML 2.0 to encode mathematical expressions. The XML Schema for this subset of MathML is included in the SBML specification documents themselves; it is is also provided here as a separate download for convenience: [<i class="file-download fa-file-download fas fa-1x"></i> **sbml-mathml.xsd**](/documents/specifications/sbml-level-2/sbml-mathml.xsd).
+{{% /notice %}}
 
 
 ## SBML Level 2 Version 5
