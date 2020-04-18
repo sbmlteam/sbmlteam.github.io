@@ -133,28 +133,15 @@ read the appropriate .toml data file.
     </span>
   </div>
 
-  {{ if and $spec.publication (ne $spec.publication "none") }}
-    <div class="sbml-spec-citation-box">
-      <span class="sbml-spec-citation-label">How to cite the publication: </span>
-      {{ $spec.citation | markdownify }}
-      <span class="sbml-spec-citation-link">
-        <a href="{{ $spec.cite_bibtex }}"><i class="fa-file-download fas fa-1x"></i> BibTeX</a>
-      </span>
-      <span class="sbml-spec-citation-link">
-        <a href="{{ $spec.cite_ris }}"><i class="fa-file-download fas fa-1x"></i> RIS</a>
-      </span>
-    </div>
-  {{ else if $spec.citation }}
-    <div class="sbml-spec-citation-box">
-      <span class="sbml-spec-citation-label">This specification does not have a true publication associated with it. You may cite this document as follows: </span>
-      {{ $spec.citation | markdownify }}.
-      <span class="sbml-spec-citation-link">
-        <a href="{{ $spec.cite_bibtex }}"><i class="fa-file-download fas fa-1x"></i> BibTeX</a>
-      </span>
-      <span class="sbml-spec-citation-link">
-        <a href="{{ $spec.cite_ris }}"><i class="fa-file-download fas fa-1x"></i> RIS</a>
-      </span>
-    </div>
-  {{ end }}
+  {{ if $spec.citation }}
+  <div class="sbml-spec-citation-box">
+    <span class="sbml-spec-citation-label">{{- if and $spec.publication (ne $spec.publication "none") -}}How to cite the publication:{{- else -}}This specification does not have a journal publication associated with it. Suggested citation:{{- end -}}</span>
+    <span class="sbml-spec-citation-text">{{- $spec.citation | markdownify -}}</span>
+    <span class="sbml-spec-citation-downloads">
+      <a href="{{- $spec.cite_bibtex -}}"><span class="reference-bibtex"><i class="fa-file-download fas fa-1x"></i> BibTeX</span></a>
+      <a href="{{- $spec.cite_ris -}}"><span class="reference-endnote"><i class="fa-file-download fas fa-1x"></i> RIS</span></a>
+    </span>
+  </div>
+{{ end }}
 </div>
 
