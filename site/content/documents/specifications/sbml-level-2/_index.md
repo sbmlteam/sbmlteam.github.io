@@ -14,6 +14,10 @@ Developers and modelers are **strongly encouraged** to support the **latest** Ve
 SBML uses a subset of MathML 2.0 to encode mathematical expressions. The XML Schema for this subset of MathML is included in the SBML specification documents themselves; it is is also provided here as a separate download for convenience: [<i class="file-download fa-file-download fas fa-1x"></i> **sbml-mathml.xsd**](/documents/specifications/sbml-level-2/sbml-mathml.xsd).
 {{% /notice %}}
 
+{{% notice type="warning" %}}
+Although [XML Schemas](https://en.wikipedia.org/wiki/XML_schema) are available for SBML Level&nbsp;2, <strong>the schemas only capture the basic syntax</strong> of the format.  Semantics and correct usage are <strong>not</strong> captured by the schemas and can only be understood by reading the specification documents.
+{{% /notice %}}
+
 
 ## SBML Level 2 Version 5
 
