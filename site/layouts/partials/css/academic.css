@@ -2363,9 +2363,12 @@ table.no-borders tr:last-child {
   border-bottom: none;
 }
 
+table.tight-spacing {
+  line-height: 1.3;
+}
+
 table.tight-spacing td {
   padding: 4px;
-  line-height: 1.3;
 }
 
 table.middle-aligned td {
@@ -2895,4 +2898,93 @@ body.dark .twitter-box-inner {
 
 .sbml-package-status-url {
   letter-spacing: -0.05ex;  
+
+  /* The following are to allow URLs to break across lines. Obtained 2020-04-17
+     from https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+   */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: none;
+  -moz-hyphens: none;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+.sbml-package-status-description:after {
+  content: ".";
+}
+
+.sbml-package-status-draft  {
+  color: #DEbD4C;
+}
+
+.sbml-package-status-draft:after  {
+  content: ".";
+}
+
+.sbml-package-status-final  {
+  color: #5fb9a7;
+  font-weight: bold;
+}
+
+.sbml-package-status-final:after  {
+  content: ".";
+}
+
+.sbml-package-status-not-started  {
+  color: #A41010;
+}
+
+.sbml-package-status-not-started:after  {
+  content: ".";
+}
+
+.sbml-package-status-citation:after  {
+  content: ".";
+}
+
+.sbml-package-status-schema:after  {
+  content: " ( ← follow this link).";
+}
+
+.sbml-package-status-libsbml:after  {
+  content: ".";
+}
+
+.sbml-package-status-jsbml:after  {
+  content: ".";
+}
+
+.sbml-package-status-label  {
+  font-weight: bold;
+}
+
+.sbml-package-status-please-cite {
+  font-weight: bold;
+  color: black;
+  color: #641010;
+}
+
+.sbml-package-status-please-cite i[class ^= "fa-"] {
+  display: none;
+  color: #7f6e4a;
+  float: left;
+  margin-right: 0.1em;
+  margin-top: 0.25em;
+}
+
+table.sbml-package-status.tight-spacing,
+table.sbml-package-status.tight-spacing > thead > tr > th,
+table.sbml-package-status.tight-spacing > tbody > tr > th,
+table.sbml-package-status.tight-spacing > tfoot > tr > th,
+table.sbml-package-status.tight-spacing > thead > tr > td,
+table.sbml-package-status.tight-spacing > tbody > tr > td {
+  line-height: 1.2 !important;
+}
+
+.sbml-pkg-diagram {
+  width: 95%;
+  margin: 2em auto;
 }
