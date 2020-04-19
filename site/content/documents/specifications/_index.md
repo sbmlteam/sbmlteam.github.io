@@ -12,15 +12,14 @@ _Levels_ in SBML are used to manage complexity and evolution of the standard.  A
 
 Please inform the [SBML Editors](/about/core) of problems and questions. You can use [email](mailto:sbml-editors@googlegroups.com) or the issue trackers noted below.
 
+{{% notice type="warning" %}}
+Depending on the SBML Level, either [RELAX NG](https://en.wikipedia.org/wiki/RELAX_NG) schemas or [XML Schemas](https://en.wikipedia.org/wiki/XML_schema) are available.  However, the <strong>schemas only capture the basic syntax</strong> of the format.  Semantics and correct usage are <strong>not</strong> captured by the schemas and can only be understood by reading the specification documents.
+{{% /notice %}}
+
 
 ## SBML Level 3
 
-_SBML Level 3_ is the highest _Level_ of SBML and constitutes the most comprehensive format for representing models.  It has an extensible modular architecture consisting of a central set of fixed features (named _SBML Level&nbsp;3 Core_) and optional _Packages_ that can augment the Core by extending existing elements, adding new elements, and adjusting the meaning or scope of elements.
-
-{{% notice type="warning" %}}
-Although [RELAX NG](https://en.wikipedia.org/wiki/RELAX_NG) Schemas are available for SBML Level&nbsp;3, the schemas only capture the basic syntax of the format.  Semantics and correct usage are <strong>not</strong> captured by the schemas and can only be understood by reading the specification documents.
-{{% /notice %}}
-
+_SBML Level 3_ is currently the highest _Level_ of SBML.  It has an extensible modular architecture consisting of a central set of fixed features (named _SBML Level&nbsp;3 Core_) and optional _Packages_ that can augment the Core by extending existing elements, adding new elements, and adjusting the meaning or scope of elements.
 
 
 ### SBML Level 3 Version 2 Core
@@ -34,11 +33,11 @@ Past releases of SBML Level 3 are available from a [separate page](sbml-level-3)
 
 ### SBML Level 3 Packages
 
-SBML Level 3 Core is best suited to representing reaction-based models. SBML Level&nbsp;3 _Packages_ extend the Core with constructs suited to other model types including constraint-based models, reaction-diffusion models, logical network models, rule-based models, and more.  A model expressed using SBML Level&nbsp;3 can declare which packages it uses in order to guide interpretation by software applications.  If an application detects the presence of packages that it does not support, it may inform users if it cannot work with the model.
+SBML Level 3 Core is best suited to representing reaction-based models. SBML Level&nbsp;3 _Packages_ extend the Core with constructs suited to other model types, including constraint-based models, reaction-diffusion models, logical network models, rule-based models, and more.  A model expressed using SBML Level&nbsp;3 can declare which packages it uses in order to guide interpretation by software applications.  If an application detects the presence of packages that it does not support, it may inform users if it cannot work with the model.
 
-The following are the Level&nbsp;3 Packages that have been defined or are in development.
+<img class="sbml-pkg-diagram" src="/img/sbml-level-3-packages.svg">
 
-<img width="95%" src="/img/sbml-level-3-packages.svg">
+Packages are developed by separate groups apart from the SBML Editors. If you use an SBML Level&nbsp;3 Package in your software or your work, **please cite the publication associated with the package** to give credit to the package developers. Citation information is given in the package detail pages, linked below.
 
 {{< sbml-packages-table >}}
 
@@ -49,10 +48,6 @@ The current definition of SBML Level 2 is **Version 5**.  Unlike Level&nbsp;3, S
 
 The separate Levels of SBML are intended to coexist &ndash; SBML Level&nbsp;3 does not render Level&nbsp;2 obsolete. Software tools that cannot support higher levels can keep using lower levels.  Level&nbsp;2-compatible models and software tools still continue to be used today.
 
-{{% notice type="warning" %}}
-Although [XML Schemas](https://en.wikipedia.org/wiki/XML_schema) are available for SBML Level&nbsp;2, the schemas only capture the basic syntax of the format.  Semantics and correct usage are <strong>not</strong> captured by the schemas and can only be understood by reading the specification documents.
-{{% /notice %}}
-
 {{< sbml-spec-box package="core" level="2" version="5" release="1" >}}
 
 Past releases of SBML Level 2 are available from a [separate page](sbml-level-2). 
@@ -61,10 +56,6 @@ Past releases of SBML Level 2 are available from a [separate page](sbml-level-2)
 ## SBML Level 1
 
 The current definition of SBML Level 1 is **Version 2**.
-
-{{% notice type="warning" %}}
-Although [XML Schemas](https://en.wikipedia.org/wiki/XML_schema) are available for SBML Level&nbsp;1, the schemas only capture the basic syntax of the format.  Semantics and correct usage are <strong>not</strong> captured by the schemas and can only be understood by reading the specification documents.
-{{% /notice %}}
 
 {{< sbml-spec-box package="core" level="1" version="2" >}}
 
