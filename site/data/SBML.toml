@@ -17,16 +17,6 @@ HighestSpecLevel = "3"
 HighestSpecVersion = "2"
 HighestSpecRelease = "2"
 
-# Data for software -----------------------------------------------------------
-
-[libsbml]
-download-url = "https://sourceforge.net/projects/sbml/files/libsbml"
-latest-release = "5.18.0"
-
-[jsbml]
-download-url = "https://github.com/sbmlteam/jsbml/releases"
-latest-release = "1.4"
-
 [specs]
   # In order to make data access uniform across all levels/versions of SBML,
   # this organizes things by packages first, treating the L1 and L2 specs as
@@ -39,6 +29,9 @@ latest-release = "1.4"
   #
   # Note #2: L1 and L2 didn't have the concept of releases or revisions, so
   # they don't have as many nesting levels as L3.
+  #
+  # Note #3: the pages for SBML L3 packages are generated using the master
+  # package google spreadsheet. That's why there's no data here for packages.
 
   [specs.core.sbml-level-1]
 
@@ -259,48 +252,13 @@ latest-release = "1.4"
     cite_bibtex = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-2-core-release-2.bib"
     cite_ris    = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-2-core-release-2.ris"
 
-  [specs.arrays.sbml-level-3]
 
-    [specs.arrays.sbml-level-3.version-1]
+# Data for software -----------------------------------------------------------
 
-  [specs.comp.sbml-level-3]
+[libsbml]
+download-url = "https://sourceforge.net/projects/sbml/files/libsbml"
+latest-release = "5.18.0"
 
-    [specs.comp.sbml-level-3.version-1]
-
-  [specs.distrib.sbml-level-3]
-
-    [specs.distrib.sbml-level-3.version-1]
-
-  [specs.dyn.sbml-level-3]
-
-    [specs.dyn.sbml-level-3.version-1]
-
-  [specs.fbc.sbml-level-3]
-
-    [specs.fbc.sbml-level-3.version-1]
-
-  [specs.groups.sbml-level-3]
-
-    [specs.groups.sbml-level-3.version-1]
-
-  [specs.layout.sbml-level-3]
-
-    [specs.layout.sbml-level-3.version-1]
-
-  [specs.math.sbml-level-3]
-
-    [specs.math.sbml-level-3.version-1]
-
-  [specs.multi.sbml-level-3]
-
-    [specs.multi.sbml-level-3.version-1]
-
-  [specs.qual.sbml-level-3]
-
-    [specs.qual.sbml-level-3.version-1]
-
-  [specs.render.sbml-level-3]
-
-    [specs.render.sbml-level-3.version-1]
-
-  [specs.spatial.sbml-level-3]
+[jsbml]
+download-url = "https://github.com/sbmlteam/jsbml/releases"
+latest-release = "1.4"
