@@ -11,16 +11,6 @@ date   = 2020-04-13
 The "qual" specfication is considered stable and in active use.
 
 
-## Notes about LibSBML support
-
-[libSBML](/software/libSBML) implements full support for the SBML Level&nbsp;3 "qual" specificaiton.
-
-
-## Notes about JSBML support
-
-[JSBML](/software/JSBML) implements full support for the SBML Level&nbsp;3 "qual" specificaiton.
-
-
 ## Notes about third-party application support
 
 Some historical developments:

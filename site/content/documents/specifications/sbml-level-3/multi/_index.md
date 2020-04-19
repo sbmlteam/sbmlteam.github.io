@@ -8,8 +8,4 @@ date   = 2020-04-13
 
 ## Notes about specification development
 
-
-## Notes about LibSBML support
-
-
-## Notes about JSBML support
+**2020-04-02**: Release 2 of the "multi" specification has been approved by the SBML Editors and released.

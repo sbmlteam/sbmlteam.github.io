@@ -12,8 +12,3 @@ date   = 2020-04-13
 
 **2012-08-06**: Stuart Moodie released an updated version of the "distrib" proposal.
 
-
-## Notes about LibSBML support
-
-
-## Notes about JSBML support
