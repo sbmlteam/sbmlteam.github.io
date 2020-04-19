@@ -1,0 +1,135 @@
+{{ $label        := .Params.spec }}
+{{ $sheet_url    := index .Site.Data.SBML "PackageSpreadsheetURL" }}
+{{ $download_url := print $sheet_url "/export?format=tsv" }}
+{{ $tsv          := getCSV "	" $download_url }}
+
+{{ $name           := "" }}
+{{ $description    := "" }}
+{{ $status         := "" }}
+{{ $pdf            := "" }}
+{{ $date           := "" }}
+{{ $version        := "" }}
+{{ $release        := "" }}
+{{ $pub_citation   := "" }}
+{{ $pub_doi        := "" }}
+{{ $pub_url        := "" }}
+{{ $app_status     := "" }}
+{{ $libsbml_status := "" }}
+{{ $jsbml_status   := "" }}
+{{ $schema         := "" }}
+{{ $schema_url     := "" }}
+{{ $pwg_name       := "" }}
+{{ $pwg_forum      := "" }}
+
+{{ range $i, $column := after 1 $tsv }}
+  {{ if eq (index $column 0) $label }}
+    {{ $name           = index $column 1 }}
+    {{ $description    = index $column 2 }}
+    {{ $status         = index $column 4 }}
+    {{ $pdf            = index $column 8 }}
+    {{ $date           = index $column 10 }}
+    {{ $version        = index $column 11 }}
+    {{ $release        = index $column 12 }}
+    {{ $pub_citation   = index $column 15 }}
+    {{ $pub_doi        = index $column 16 }}
+    {{ $pub_url        = print "https://doi.org/" $pub_doi }}
+
+    {{ $app_status     = index $column 18 }}
+    
+    {{ $libsbml_status = index $column 31 }}
+    {{ $jsbml_status   = index $column 37 }}
+    
+    {{ $schema         = index $column 44 }}
+    {{ $schema_url     = index $column 45 }}
+    
+    {{ $pwg_name       = index $column 48 }}
+    {{ $pwg_forum      = index $column 49 }}
+  {{ end }}
+{{ end }}
+
+
+
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<div id="page-container">
+  <div class="container">
+
+    <div class="container-fluid">
+      <div class="row">
+        <h1 itemprop="name">SBML Level 3 {{ $name | title }} (&ldquo;{{- $label -}}&rdquo;)</h1>
+      </div>
+    </div>
+
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+
+      <p>This page summarizes the current development status of the SBML Level&nbsp;3 <em>{{- $name -}}</em> Package (known by the label &ldquo;<span class="sbml-package-status-label">{{ $label }}</span>&rdquo;).  If you have any questions, please feel free to contact the <a href="mailto:sbml-editors@googlegroups.com">SBML Editors</a>.</p>
+
+      <p>If you use an SBML Level&nbsp;3 Package in your software or your work, <strong>please cite the publication associated with the package</strong> in addition or instead of the core Level&nbsp;3 specification, to give credit to the package developers.</p>
+
+      <table class="sbml-package-status tight-spacing">
+        <caption>This table is generated automatically from the row for &ldquo;{{- $label -}}&rdquo; in the <a href="http://tinyurl.com/sbml-level-3-package-statuses">SBML Level 3 Package Status spreadsheet</a>.</caption>
+        <colgroup>
+	  <col style="width: 14em">
+        </colgroup>
+        <tr><th>Package purpose:</th><td><span class="sbml-package-status-description">{{ $description }}</span></td></tr>
+        {{ if in $status "Draft" }}
+          <tr><th>Package status:</th><td><span class="sbml-package-status-draft">{{ $status }}</span></td></tr>
+        {{ else if in $status "Final" }}
+          <tr><th>Package status:</th><td><span class="sbml-package-status-final">{{ $status }}</span></td></tr>
+        {{ else }}
+          <tr><th>Package status:</th><td><span class="sbml-package-status-not-started">{{ $status }}</span></td></tr>
+        {{ end }}
+        <tr><th>Latest version:</th><td>Version {{ $version }} Release {{ $release }} ({{ $date }})</td></tr>
+        <tr><th>Specification URL:</th><td><span class="sbml-package-status-url"><a href="{{ $pdf }}">{{ $pdf }}</a></span></td></tr>
+        {{ if ne $pub_citation "" }}
+          <tr><th><span class="sbml-package-status-please-cite"><i class="fa-exclamation fa fa-2x"></i>Please cite this publication if you use this package &rarr;</span></th><td><span class="sbml-package-status-citation"><a href="{{ $pub_url }}">{{ $pub_citation }}</a></span></td></tr>
+          <tr><th>Publication DOI:</th><td><a href="{{ $pub_url }}">{{ $pub_doi }}</a></td></tr>
+        {{ else }}
+          <tr><th>How to cite:</th><td><span class="sbml-package-status-citation">No citable publication yet</span></td></tr>
+          <tr><th>Publication DOI:</th><td>None yet.</td></tr>
+        {{ end }}
+        <tr><th>RELAX NG schema:</th><td><span class="sbml-package-status-schema"><a href="{{ $schema_url }}">{{ $schema }}</a></span></td></tr>
+        <tr><th>LibSBML status:</th><td><span class="sbml-package-status-libsbml">{{ $libsbml_status }}</span></td></tr>
+        <tr><th>JSBML status:</th><td><span class="sbml-package-status-jsbml">{{ $jsbml_status }}</span></td></tr>
+        <tr><th>Working group mailing list:</th><td><span class="sbml-package-status-pwg-name"><a href="{{ $pwg_forum }}">{{ $pwg_name }}</a></span></td></tr>
+      </table>
+
+      {{ with .Content }}
+        <div class="article-style" itemprop="articleBody">{{ . }}</div>
+      {{ end }}
+  
+      {{ partial "tags.html" . }}
+  
+      {{ if ne .Type "page" }}
+        {{ partial "page_author.html" . }}
+        {{ $related := .Site.RegularPages.Related . | first 5 }}
+        {{ with $related }}
+        <div class="article-widget">
+          <div class="hr-light"></div>
+          <h3>{{ i18n "related" }}</h3>
+          <ul>
+            {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      {{ end }}
+  
+      {{ if .Site.Params.section_pager }}
+      <div class="article-widget">
+        {{ partial "section_pager.html" . }}
+      </div>
+      {{ end }}
+  
+      {{ partial "comments.html" . }}
+  
+    </article>
+  </div>
+  <section id="footer-section">
+    {{ partial "footer_container.html" . }}
+    {{ partial "footer.html" . }}
+  </section>
+</div>
+
