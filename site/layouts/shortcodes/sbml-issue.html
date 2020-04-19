@@ -1,0 +1,14 @@
+<!-- Get parameter values. ------------------------------------------------ -->
+
+{{ $id       := .Get "id" }}
+{{ $desc     := .Get "description" }}
+{{ $link     := .Get "link" }}
+{{ $location := .Get "location" }}
+{{ $date     := .Get "date" }}
+
+<tr>
+  <td class="sbml-issue-id"><a href="{{- $link -}}">{{- $id -}}</a></td>
+  <td class="sbml-issue-description">{{- $desc | markdownify -}}</td>
+  <td class="sbml-issue-location">{{- $location | markdownify -}}</td>
+  <td class="sbml-issue-date">{{- $date | markdownify -}}</td>
+</tr>
