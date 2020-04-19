@@ -42,20 +42,19 @@ source utilities.sh
 # The rest below is generic and probably does not need to be changed.
 
 HUGO_SERVER_ARGS="$HUGO_ARGS --cacheDir $HUGO_CACHEDIR --destination $HUGO_OUTPUTDIR"
+if [[ -n $SITE_URL ]]; then
+    HUGO_SERVER_ARGS+=" --bind=$SITE_IP --baseURL=$SITE_URL --port $SITE_PORT"
+fi
 
 case "$1" in
     start)
         check_log_file
 
         cd "$SITE_ROOT"
-        if [ -z $SITE_URL ]; then
-            $HUGO server $HUGO_SERVER_ARGS > $HUGO_LOGFILE 2>&1 &
-        else
-            $HUGO server $HUGO_SERVER_ARGS --bind=$SITE_IP --baseURL=$SITE_URL --port $SITE_PORT > $HUGO_LOGFILE 2>&1 &
-        fi
+        $HUGO server $HUGO_SERVER_ARGS > $HUGO_LOGFILE 2>&1 &
         RETVAL=$?
         PID=`echo $!`
-        if [ -z $PID ]; then
+        if [[ -z $PID ]]; then
             echo "Unable to start hugo process." >&2
         else
             echo $PID > $HUGO_PIDFILE
@@ -66,7 +65,7 @@ case "$1" in
         ;;
 
     stop)
-        if [ ! -e $HUGO_PIDFILE ]; then
+        if [[ ! -e $HUGO_PIDFILE ]]; then
             echo "PID file $HUGO_PIDFILE does not exist." >&2
             exit 2
         fi
@@ -89,15 +88,17 @@ case "$1" in
 
     restart)
         $0 stop
-        echo "Pausing for 2 s." >&2
-        sleep 2
+        if [[ $? -eq 0 ]]; then
+            echo "Pausing for $RESTART_PAUSE s." >&2
+            sleep $RESTART_PAUSE
+        fi
         echo "Restarting server." >&2
         $0 start
         exit $?
         ;;
 
     status)
-        if [ ! -e $HUGO_PIDFILE ]; then
+        if [[ ! -e $HUGO_PIDFILE ]]; then
             echo "PID file $HUGO_PIDFILE does not exist." >&2
             exit 2
         fi
