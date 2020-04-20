@@ -1,0 +1,133 @@
+<!-- Get parameters from the content page Markdown document. -->
+
+{{ $issues  := .Params.issue }}
+{{ $spec_id := .File.BaseFileName }}
+
+<!-- Get general data about this spec from our SBML.toml data file  -->
+
+{{ $id_parts   := split $spec_id "." }}
+{{ $level_id   := index $id_parts 0 }}
+{{ $version_id := index $id_parts 1 }}
+{{ $level_data := index .Site.Data.SBML.specs.core $level_id}}
+
+{{ $spec_data  := "" }}
+{{ $release_id := "" }}
+{{ if gt (len $id_parts) 2 }}
+  <!-- Specs beginning with L2v2 had revision or release numbers. -->
+  {{ $release_id    = index $id_parts 2 }}
+  {{ $version_data := index $level_data $version_id }}
+  {{ $spec_data     = index $version_data $release_id}}
+{{ else }}
+  <!-- Early specs had no release numbers. -->
+  {{ $spec_data  = index $level_data $version_id}}
+{{ end }}
+
+{{ $spec_name := print "SBML Level " $spec_data.level " Version " $spec_data.version }}
+{{ if $release_id }}
+  {{ $spec_name = print $spec_name  " Revision " $spec_data.revision }}
+{{ end }}
+
+{{ $spec_date    := $spec_data.date }}
+{{ $spec_tracker := $spec_data.tracker }}
+
+<!-- Proceed to fill out the page. -->
+
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<div id="page-container">
+  <div class="container">
+
+    <div class="container-fluid">
+      <div class="row">
+        <h1 itemprop="name">Known issues in the specification of {{ $spec_name }}</h1>
+      </div>
+    </div>
+
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+
+      {{ if $issues }}
+        <p>The <a href="/documents/specifications/{{- $level_id -}}">{{ $spec_name }}</a> specification was made available on {{ dateFormat "2 January 2006" $spec_date }}. The following are the errors and other issues discovered in the specification document after it was issued. In the following table, the ID # of each issue refers to the reference number automatically assigned to the issue in the <a href="{{- $spec_tracker -}}">online SBML issue tracking system</a>. The gaps in this numbering are not consequential for SBML and do not necessarily signify deleted or unresolved issues.</p>
+  
+        <table class="sbml-issue-table">
+          <colgroup>
+            <col style="width: 9em">
+            <col style="width: 65%">
+            <col style="width: 10em">
+            <col style="width: 12em">
+          </colgroup>
+          <thead>
+            <tr>
+              <th style="text-align: left">ID#</th>
+              <th style="text-align: left">Description</th>
+              <th style="text-align: center">Page and line number(s)</th>
+              <th style="text-align: center">Date added</th>
+            </tr>
+          </thead>
+    
+          {{ $id       := "" }}
+          {{ $date     := "" }}
+          {{ $link     := "" }}
+          {{ $location := "" }}
+          {{ $desc     := "" }}
+          <tbody>
+            {{ range $issue := $issues }}
+              {{ $id       = index $issue "id" }}
+              {{ $link     = index $issue "link" }}
+              {{ $date     = index $issue "date" }}
+              {{ $location = index $issue "location" }}
+              {{ $desc     = index $issue "description" }}
+              <tr>
+                {{ if $link }}
+                  <td class="sbml-issue-id"><a href="{{- $link -}}">{{- $id -}}</a></td>
+                {{ else }}
+                  <td class="sbml-issue-id">{{- $id -}}</td>
+                {{ end }}
+                <td class="sbml-issue-description">{{- $desc | markdownify -}}</td>
+                <td class="sbml-issue-location">{{- $location | markdownify -}}</td>
+                <td class="sbml-issue-date">{{- $date | markdownify -}}</td>
+              </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      {{ else }}
+        <p>The <a href="/documents/specifications/{{- $level_id -}}">{{ $spec_name }}</a> specification was made available on {{ dateFormat "2 January 2006" $spec_date }}.  No issues in the specification have been formally identified at this time.</p>
+      {{ end }}
+
+      {{ with .Content }}
+        <div class="article-style" itemprop="articleBody">{{ . }}</div>
+      {{ end }}
+
+      {{ partial "tags.html" . }}
+  
+      {{ if ne .Type "page" }}
+        {{ partial "page_author.html" . }}
+        {{ $related := .Site.RegularPages.Related . | first 5 }}
+        {{ with $related }}
+        <div class="article-widget">
+          <div class="hr-light"></div>
+          <h3>{{ i18n "related" }}</h3>
+          <ul>
+            {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      {{ end }}
+  
+      {{ if .Site.Params.section_pager }}
+      <div class="article-widget">
+        {{ partial "section_pager.html" . }}
+      </div>
+      {{ end }}
+  
+      {{ partial "comments.html" . }}
+  
+    </article>
+  </div>
+  <section id="footer-section">
+    {{ partial "footer_container.html" . }}
+    {{ partial "footer.html" . }}
+  </section>
+</div>
