@@ -1,10 +1,9 @@
---- # -*- mode: markdown -*-
-#=====================================================================
-title: "SBML Specifications"
-date: 2019-10-21
-layout: "single"
-#=====================================================================
----
++++
+#============================================================================
+title  = "SBML Specifications"
+layout = "single"
+#============================================================================
++++
 
 {{< toc >}}
 
@@ -13,7 +12,7 @@ _Levels_ in SBML are used to manage complexity and evolution of the standard.  A
 Please inform the [SBML Editors](/about/core) of problems and questions. You can use [email](mailto:sbml-editors@googlegroups.com) or the issue trackers noted below.
 
 {{% notice type="warning" %}}
-Depending on the SBML Level, either [RELAX NG](https://en.wikipedia.org/wiki/RELAX_NG) schemas or [XML Schemas](https://en.wikipedia.org/wiki/XML_schema) are available.  However, the <strong>schemas only capture the basic syntax</strong> of the format.  Semantics and correct usage are <strong>not</strong> captured by the schemas and can only be understood by reading the specification documents.
+Depending on the SBML Level, either [RELAX NG](https://en.wikipedia.org/wiki/RELAX_NG) schemas or [XML Schemas](https://en.wikipedia.org/wiki/XML_schema) are available.  However, the **schemas only capture the basic syntax** of the format.  Semantics and correct usage are **not** captured by the schemas and can only be understood by reading the specification documents.
 {{% /notice %}}
 
 
@@ -24,9 +23,9 @@ _SBML Level 3_ is currently the highest _Level_ of SBML.  It has an extensible m
 
 ### SBML Level 3 Version 2 Core
 
-The most recent definition of SBML Level&nbsp;3 is Version&nbsp;2.
+The most recent definition of SBML Level&nbsp;3 is **Version&nbsp;{{< value "specs.core.sbml-level-3" "highest_version" >}}**.
 
-{{< sbml-spec-box package="core" level="3" version="2" release="2" >}}
+{{< sbml-spec-box package="core" level="3" version="2" release="highest" >}}
 
 Past releases of SBML Level 3 are available from a [separate page](sbml-level-3). 
 
@@ -44,18 +43,18 @@ Packages are developed by separate groups apart from the SBML Editors. If you us
 
 ## SBML Level 2
 
-The current definition of SBML Level 2 is **Version 5**.  Unlike Level&nbsp;3, SBML Level 2 is monolithic and not a modular format.  Its structure is similar to SBML Level&nbsp;3 Core, but there are no packages extending Level 2.
+The current definition of SBML Level 2 is **Version&nbsp;{{< value "specs.core.sbml-level-2" "highest_version" >}}**.  Unlike Level&nbsp;3, SBML Level&nbsp;2 is monolithic and not a modular format.  Its structure is similar to SBML Level&nbsp;3 Core, but there are no packages extending Level&nbsp;2.
 
 The separate Levels of SBML are intended to coexist &ndash; SBML Level&nbsp;3 does not render Level&nbsp;2 obsolete. Software tools that cannot support higher levels can keep using lower levels.  Level&nbsp;2-compatible models and software tools still continue to be used today.
 
-{{< sbml-spec-box package="core" level="2" version="5" release="1" >}}
+{{< sbml-spec-box package="core" level="2" version="5" release="highest" >}}
 
 Past releases of SBML Level 2 are available from a [separate page](sbml-level-2). 
 
 
 ## SBML Level 1
 
-The current definition of SBML Level 1 is **Version 2**.
+The current definition of SBML Level 1 is **Version&nbsp;{{< value "specs.core.sbml-level-1" "highest_version" >}}**.
 
 {{< sbml-spec-box package="core" level="1" version="2" >}}
 
