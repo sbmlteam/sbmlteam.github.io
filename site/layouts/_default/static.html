@@ -41,7 +41,7 @@ for doing this is that Hugo re-roots files in /static to /, and leaving
       {{ partial "page_header.html" (dict "Page" . "static_source" $static_source) }}
   
       <article class="article" itemscope itemtype="http://schema.org/Article">
-        {{ if ne $static_source "" }}
+        {{ if $static_source }}
         <div class="article-style" itemprop="articleBody">
           {{/* Filter out any CSS imports that be in the static files. */}}
           {{ readFile $static_source | replaceRE "@import" "" | safeHTML }}
