@@ -26,9 +26,14 @@ Although [RELAX NG](https://en.wikipedia.org/wiki/RELAX_NG) Schemas are availabl
 
 ## SBML Level 3 Version 1 Core
 
-**Release 2** is the current stable release of SBML Level 3 Version 1 Core:
+**Release 3** is the current stable release of SBML Level 3 Version 1 Core:
+
+{{< sbml-spec-box package="core" level="3" version="1" release="3" >}}
+
+**Release 2** (for historical reference):
 
 {{< sbml-spec-box package="core" level="3" version="1" release="2" >}}
+
 
 **Release 1** (for historical reference):
 
