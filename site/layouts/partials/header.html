@@ -5,8 +5,8 @@ Author(s)   : Michael Hucka <mhucka@caltech.edu>
 Organization: California Institute of Technology 
 Date created: 2020-03-20
 
-This is based on the Hugo Academic theme's header.html.  Its only functional
-difference is that it checks for a variable named "base_url" in the
+This is based on the Hugo Academic theme's header.html.  There are several
+modifications, such as that it checks for a variable named "base_url" in the
 page context, and if found, it uses it to construct a value for the 
 <base> tag in the <head> portion of the page.
 ========================================================================== -->
@@ -15,6 +15,14 @@ page context, and if found, it uses it to construct a value for the
 {{ $base_url := "" }}
 {{ if isset . "base_url" }}
   {{ $base_url = .base_url }}
+{{ end }}
+
+{{ $page_title := $page.Site.Title }}
+{{ $page_subtitle := .Page.Scratch.Get "page_subtitle" }}
+{{ if $page_subtitle }}
+  {{ $page_title = print $page_title ": " $page_subtitle }}
+{{ else if .Title }}
+  {{ $page_title = print $page_title ": " .Title }}
 {{ end }}
 
 <!DOCTYPE html>
@@ -188,7 +196,7 @@ page context, and if found, it uses it to construct a value for the
   {{ end }}
   <meta property="og:site_name" content="{{ $page.Site.Title }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ $page.Site.Title }}">
+  <meta property="og:title" content="{{ $page_title }}">
   <meta property="og:description" content="{{ $desc }}">
   {{- with $og_image }}<meta property="og:image" content="{{ . }}">{{end}}
   <meta property="og:locale" content="{{ $page.Site.LanguageCode | default "en-us" }}">
@@ -203,7 +211,7 @@ page context, and if found, it uses it to construct a value for the
   {{ partial "cookie_consent" $page }}
   {{ partial "head_custom" $page }}
 
-  <title>{{ $page.Site.Title }}</title>
+  <title>{{ $page_title }}</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="{{ if or .IsHome .Params.widgets }}#navbar-main{{ else }}#TableOfContents{{ end }}" data-offset="71" {{ if not ($scr.Get "light") }}class="dark"{{ end }}>
