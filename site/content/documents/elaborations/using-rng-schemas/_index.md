@@ -54,7 +54,7 @@ file:sbml.rng
 ```
 
 
-## The top-level RNG schema file fed to a schema processor
+## Using a schema processor
 
 As noted above, the package schemas are not independent of the SBML Level&nbsp;3 Core schema, and must be combined with the Core schema to be used to validate an SBML file.  The reason for this stems from the use of mandatory attributes in the schema definitions. The problem is as follows. When a mandatory attribute is required on a given element, RNG validators will complain if it is missing; however, unless a model uses ''all'' possible Level&nbsp;3 packages, some attributes are going to be missing for some packages.  Thus, one cannot feed a union-of-all-schemas to an RNG validator as a means of validating any possible combination of packages that may arise in a model: the schema file must contain references to only those packages that ''are actually present within the SBML document'' being validated.  (We note in passing that we have tried many ways of avoiding this catch-22 situation. It has turned out to be an unanticipated and very frustrating repercussion of attempting to use RNG.)
 
@@ -127,7 +127,7 @@ else:
 The majority of Level 3 packages do not extend the MathML subset used by SBML and thus the `pkg-math.rng` need not be altered.  The exceptions are the [arrays](/documents/specifications/sbml-level-3/arrays) and  [multi](/documents/specifications/sbml-level-3/multi)  packages. In these cases the relevant lines in [pkg.rng](https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/pkg-math.rng) need to be uncommented.
 
 
-## Validating an SBML document using RELAX NG schemas
+## SBML validation using RELAX NG schemas
 
 Once the appropriate <code>sbml.rng</code> file has been created, the resulting schema can be used to validate an SBML Level&nbsp;3 document. Several alternative methods are available to accomplish this; the [RELAX NG home page](http://relaxng.org/) lists a variety of different off-the-shelf validators and software systems that can be used.
 
