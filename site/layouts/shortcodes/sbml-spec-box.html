@@ -9,57 +9,17 @@ This shortcode expects to be called with arguments like in this example:
 
   sbml-spec-box  package="core"  level="3"  version="2"  release="2"
 
-The code below is tightly coupled to the structure of the data subdirectory
-/data/SBML/specs/.  In Hugo, the /data directory is like a mini hierarchical
-database, and the values are accessible by using "index" and dotted notation
-to traverse paths.  In our /data subdirectory, there are nested subdirectories
-for every SBML Core and Package specification.  Here's a portion:
-
-     ├── comp
-     │   └── level3
-     │       └── version1
-     │           ├── release1.toml
-     │           ├── release2.toml
-     │           └── release3.toml
-     ├── core
-     │   ├── level1
-     │   ├── level2
-     │   │   ├── version1
-     │   │   │   └── release1.toml
-     │   │   ├── version2
-     │   │   │   └── release1.toml
-     │   │   ├── version3
-     │   │   │   ├── release1.toml
-     │   │   │   └── release2.toml
-     │   │   ├── version4
-     │   │   │   └── release1.toml
-     │   │   └── version5
-     │   │       └── release1.toml
-     │   └── level3
-     │       ├── version1
-     │       └── version2
-     │           ├── release1.toml
-     │           └── release2.toml
-     ...
-
-The TOML files at the leaves of the directory tree contain data about each
-specification.  The parameters for this Hugo shortcode are converted to 
-subdirectory names, which are then used with the Hugo "index" function to
-read the appropriate .toml data file.
+The code below is tightly coupled to the structure of the contents in the file
+/data/SBML.toml.  The lookup into the hierarchical array of data in that file
+is determined using the parameters passed to this shortcode.
 =========================================================================== -->
 
 <!-- Assign arguments to internal variables. -->
 {{ $package  := ( .Get "package" ) }}
 {{ $level    := ( .Get "level" ) }}
 {{ $version  := ( .Get "version" ) }}
-{{ $release  := ( .Get "release" )  | default "none" }}
 {{ $revision := ( .Get "revision" ) | default "none" }}
-
-<!-- Convert argument values like "3" into "level3", for use below. -->
-{{ $level_key    := print "sbml-level-" $level }} 
-{{ $version_key  := print "version-"    $version }}    
-{{ $release_key  := print "release-"    $release }}    
-{{ $revision_key := print "revision-"   $revision }}
+{{ $release  := ( .Get "release" )  | default "highest" }}
                                                     
 <!-- Get array of all level/version/release data for this package. -->
 {{ $package_data := index .Site.Data.SBML.specs $package }}
@@ -71,19 +31,32 @@ read the appropriate .toml data file.
      to something here, accessing it in the HTML code below produces errors.  
      I'm stumped but I don't have more time to figure out what's really going
      on.  Let's just set them to something and more along.) -->
-{{ $spec := "" }}
-{{ $rel_text := "" }}
+{{ $spec         := "" }}
+{{ $rel_text     := "" }}
+{{ $level_key    := print "sbml-level-" $level }} 
+{{ $version_key  := print "version-"    $version }}    
+{{ $release_key  := print "release-"    $release }}    
+{{ $revision_key := print "revision-"   $revision }}
 
 <!-- Drill down to get the entry for the desired release (or in the case
      of SBML Level 2 Version 1, the revision, as it was known then). -->
 {{ $all_versions := ( index $package_data $level_key ) }}
-{{ if and (ne $revision "") (ne $revision "none") }}
+{{ if and $revision (ne $revision "none") }}
+  <!--  Special case for L2v2, which used "revision" instead of "release". -->
   {{ $all_revisions := ( index $all_versions $version_key ) }}
   {{ $spec = ( index $all_revisions $revision_key ) }}
   {{ $rel_text = print "Revision " $spec.revision }}
-{{ else if eq $release "none" }}
+{{ else if eq $release "highest" }}
   {{ $spec = ( index $all_versions $version_key ) }}
-  {{ $rel_text = "" }}
+  <!--  Prior to L2, there were no "releases" or "revisions". -->
+  {{ if or (eq $level "1") (and (eq $level "2") (eq $version "1")) }}
+    {{ $rel_text = "" }}
+  {{ else }}
+    {{ $highest_release := $spec.highest_release }}
+    {{ $release_key = print "release-" $highest_release }}
+    {{ $spec = ( index $spec $release_key ) }}
+    {{ $rel_text = print "Release " $highest_release }}
+  {{ end }}
 {{ else }}
   {{ $all_releases  := ( index $all_versions $version_key ) }}
   {{ $spec = ( index $all_releases $release_key ) }}
@@ -99,7 +72,7 @@ read the appropriate .toml data file.
     {{ $spec.authors }}.
   </div>
   <div class="sbml-spec-description">
-    This is {{ if ne $rel_text "" }}<strong>{{ $rel_text }}</strong> of {{ end }}
+    This is {{ if $rel_text }}<strong>{{ $rel_text }}</strong> of {{ end }}
     the specification for SBML Level {{ $spec.level }} 
     Version {{ $spec.version }}, made available on {{ $spec.date }}.  
   </div>
