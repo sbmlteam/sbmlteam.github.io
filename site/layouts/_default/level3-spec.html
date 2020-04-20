@@ -29,7 +29,7 @@
     {{ $pdf            = index $column 8 }}
     {{ $date           = index $column 10 }}
     {{ $version        = index $column 11 }}
-    {{ $release        = index $column 12 }}
+    {{ $release        = index $column 11 }}
     {{ $pub_citation   = index $column 15 }}
     {{ $pub_doi        = index $column 16 }}
     {{ $pub_url        = print "https://doi.org/" $pub_doi }}
@@ -94,6 +94,8 @@
         <tr><th>JSBML status:</th><td><span class="sbml-package-status-jsbml">{{ $jsbml_status }}</span></td></tr>
         <tr><th>Working group mailing list:</th><td><span class="sbml-package-status-pwg-name"><a href="{{ $pwg_forum }}">{{ $pwg_name }}</a></span></td></tr>
       </table>
+
+      <p><em>About the schemas</em>: for finalized SBML Level 3 Packages, <a href="/software/libsbml">libSBML</a> and <a href="/software/jsbml">JSBML</a> provide built-in validation, and the use of a schema is unnecessary.  For not-yet-finalized Level&nbsp;3 Packages and applications not using libSBML or JSBML, basic <a href="https://relaxng.org">RELAX NG</a> schemas are available to perform syntactic validation using RNG schema processors. Information about the use of these RNG schemas is available in a <a href="/documents/elaborations/using-rng-schemas">separate page</a>.</p>
 
       {{ with .Content }}
         <div class="article-style" itemprop="articleBody">{{ . }}</div>
