@@ -9,7 +9,7 @@ layout = "single"
 This page lists the accumulated Versions (and Releases within Versions) of the SBML Level&nbsp;3 Core specification and Level&nbsp;3 package specifications.
 
 {{% notice type="warning" %}}
-Although [RELAX NG](https://en.wikipedia.org/wiki/RELAX_NG) Schemas are available for SBML Level&nbsp;3, <strong>the schemas only capture the basic syntax</strong> of the format.  Semantics and correct usage are <strong>not</strong> captured by the schemas and can only be understood by reading the specification documents.
+Although [RELAX NG](https://en.wikipedia.org/wiki/RELAX_NG) Schemas are available for SBML Level&nbsp;3, **the schemas only capture the basic syntax** of the format.  Semantics and correct usage are **not** captured by the schemas and can only be understood by reading the specification documents.
 {{% /notice %}}
 
 
@@ -33,7 +33,6 @@ Although [RELAX NG](https://en.wikipedia.org/wiki/RELAX_NG) Schemas are availabl
 **Release 2** (for historical reference):
 
 {{< sbml-spec-box package="core" level="3" version="1" release="2" >}}
-
 
 **Release 1** (for historical reference):
 
