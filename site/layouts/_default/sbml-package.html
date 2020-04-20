@@ -1,4 +1,24 @@
-{{ $label        := .Params.spec }}
+<!-- ==========================================================================
+File name   : sbml-package.html
+Description : Layout for pages that describe SBML Level 3 packages
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology 
+Date created: 2020-03-15
+
+This is based on single.html.  It reads the variable "l3package" from the
+document metadata, and creates a page that features a L3 package status 
+summary table at the top followed by the content of the page.  It gets data 
+for the package directly from the Google spreadsheet we use to track 
+SBML Level 3 package statuses.
+
+Note: if Hugo is *not* running with the flag --ignoreCache, then changes in
+the Google spreadsheet will not be reflected in page contents until after
+a Hugo server restart.  During local website development and editing, 
+the use of --ignoreCache speeds up editing, but beware that changes made to
+the spreadsheet will not be reflected in the output pages you see.
+========================================================================== -->
+
+{{ $label        := .Params.l3package }}
 {{ $sheet_url    := index .Site.Data.SBML "PackageSpreadsheetURL" }}
 {{ $download_url := print $sheet_url "/export?format=tsv" }}
 {{ $tsv          := getCSV "	" $download_url }}
@@ -47,7 +67,8 @@
   {{ end }}
 {{ end }}
 
-
+{{ $package_title := print "SBML Level 3 " ($name | title) }}
+{{ .Page.Scratch.Set "page_subtitle" $package_title }}
 
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
@@ -57,15 +78,13 @@
 
     <div class="container-fluid">
       <div class="row">
-        <h1 itemprop="name">SBML Level 3 {{ $name | title }} (&ldquo;{{- $label -}}&rdquo;)</h1>
+        <h1 itemprop="name">{{ $package_title }} (&ldquo;{{- $label -}}&rdquo;)</h1>
       </div>
     </div>
 
     <article class="article" itemscope itemtype="http://schema.org/Article">
 
-      <p>This page summarizes the current development status of the SBML Level&nbsp;3 <em>{{- $name -}}</em> Package (known by the label &ldquo;<span class="sbml-package-status-label">{{ $label }}</span>&rdquo;).  If you have any questions, please feel free to contact the <a href="mailto:sbml-editors@googlegroups.com">SBML Editors</a>.</p>
-
-      <p>If you use an SBML Level&nbsp;3 Package in your software or your work, <strong>please cite the publication associated with the package</strong> in addition or instead of the core Level&nbsp;3 specification, to give credit to the package developers.</p>
+      <p>This page summarizes the current development status of the SBML Level&nbsp;3 <em>{{- $name -}}</em> Package (known by the label &ldquo;<span class="sbml-package-status-label">{{ $label }}</span>&rdquo;).  If you use this Package in your work, <strong>please cite the publication associated with the package</strong> in addition to the core Level&nbsp;3 specification, to give credit to the package developers.</p>
 
       <table class="sbml-package-status tight-spacing">
         <caption>This table is generated automatically from the row for &ldquo;{{- $label -}}&rdquo; in the <a href="http://tinyurl.com/sbml-level-3-package-statuses">SBML Level 3 Package Status spreadsheet</a>.</caption>
@@ -82,11 +101,14 @@
         {{ end }}
         <tr><th>Latest version:</th><td>Version {{ $version }} Release {{ $release }} ({{ $date }})</td></tr>
         <tr><th>Specification URL:</th><td><span class="sbml-package-status-url"><a href="{{ $pdf }}">{{ $pdf }}</a></span></td></tr>
-        {{ if ne $pub_citation "" }}
+        {{ if $pub_citation }}
           <tr><th><span class="sbml-package-status-please-cite"><i class="fa-exclamation fa fa-2x"></i>Please cite this publication if you use this package &rarr;</span></th><td><span class="sbml-package-status-citation"><a href="{{ $pub_url }}">{{ $pub_citation }}</a></span></td></tr>
-          <tr><th>Publication DOI:</th><td><a href="{{ $pub_url }}">{{ $pub_doi }}</a></td></tr>
         {{ else }}
           <tr><th>How to cite:</th><td><span class="sbml-package-status-citation">No citable publication yet</span></td></tr>
+        {{ end }}
+        {{ if $pub_doi }}
+          <tr><th>Publication DOI:</th><td><a href="{{ $pub_url }}">{{ $pub_doi }}</a></td></tr>
+        {{ else }}
           <tr><th>Publication DOI:</th><td>None yet.</td></tr>
         {{ end }}
         <tr><th>RELAX NG schema:</th><td><span class="sbml-package-status-schema"><a href="{{ $schema_url }}">{{ $schema }}</a></span></td></tr>
@@ -95,7 +117,7 @@
         <tr><th>Working group mailing list:</th><td><span class="sbml-package-status-pwg-name"><a href="{{ $pwg_forum }}">{{ $pwg_name }}</a></span></td></tr>
       </table>
 
-      <p><em>About the schemas</em>: for finalized SBML Level 3 Packages, <a href="/software/libsbml">libSBML</a> and <a href="/software/jsbml">JSBML</a> provide built-in validation, and the use of a schema is unnecessary.  For not-yet-finalized Level&nbsp;3 Packages and applications not using libSBML or JSBML, basic <a href="https://relaxng.org">RELAX NG</a> schemas are available to perform syntactic validation using RNG schema processors. Information about the use of these RNG schemas is available in a <a href="/documents/elaborations/using-rng-schemas">separate page</a>.</p>
+      <p><em>About the schemas</em>: for finalized Level 3 Packages, <a href="/software/libsbml">libSBML</a> and <a href="/software/jsbml">JSBML</a> provide built-in validation, and the use of a schema is unnecessary.  For not-yet-finalized Packages and applications not using libSBML or JSBML, the basic <a href="https://relaxng.org">RELAX&nbsp;NG</a> schemas enable syntactic validation using an RNG schema processor. A <a href="/documents/elaborations/using-rng-schemas">separate page</a> provides more information about the use of schemas.</p>
 
       {{ with .Content }}
         <div class="article-style" itemprop="articleBody">{{ . }}</div>
