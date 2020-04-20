@@ -1,14 +1,7 @@
-+++ # -*- mode: html -*-
++++
 #=====================================================================
 # File:    documents/_index.md
 # Summary: This file defines the content of the /documents page.
-#
-# This page is all HTML makes because it was easier to get the results
-# I wanted that way.  However, I left it as a .md file in order to be
-# consistent with the other files in this site (and thus hopefully
-# less confusing for future maintainers).  Beware that this TOML 
-# block at the beginning of the file is nevertheless not an HTML 
-# comment and you must not turn it into one or things won't work.
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 title =  "Documents"
 date = 2019-04-06
