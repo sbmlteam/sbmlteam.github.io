@@ -11,6 +11,11 @@ other shortcode, "insert-chunk", is used to insert the named chunk a given
 location on the page. The primary use-case for this is to avoid copy-pasting
 content on a page in situations where the same text needs to be repeated in
 multiple places.
+
+Why are there 2 shortcodes, instead of a single one that can be used both to 
+define and retrieve a chunk, depending on the arguments given? Because the
+Hugo syntax for a shortcode that takes a multiline body (needed to define a
+chunk) handles .Inner differently than the syntax for a single-line shortcode.
 =========================================================================== -->
 {{ $name := .Get "name" }}
 {{ $value := .Inner | markdownify }}
