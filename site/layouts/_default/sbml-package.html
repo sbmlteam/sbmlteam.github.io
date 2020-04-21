@@ -19,7 +19,7 @@ the spreadsheet will not be reflected in the output pages you see.
 ========================================================================== -->
 
 {{ $label        := .Params.l3package }}
-{{ $sheet_url    := index .Site.Data.SBML "PackageSpreadsheetURL" }}
+{{ $sheet_url    := index .Site.Data.SBML.spec "package_spreadsheet_url" }}
 {{ $download_url := print $sheet_url "/export?format=tsv" }}
 {{ $tsv          := getCSV "	" $download_url }}
 

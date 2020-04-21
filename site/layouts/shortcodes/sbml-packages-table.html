@@ -8,10 +8,10 @@ Date created: 2020-03-09
 This is used to produce an HTML table describing the statuses of all the SBML
 Level 3 packages.  It pulls the data from the Google spreadsheet we keep for
 this purpose (the "SBML Level 3 Package Status" spreadsheet).  The URL of the
-spreadsheet is kept in the data file /data/urls.json in our site structure.
+spreadsheet is kept in the data file /data/SBML.toml in our site structure.
 =========================================================================== -->
 
-{{ $spreadsheet_url := index .Site.Data.SBML "PackageSpreadsheetURL" }}
+{{ $spreadsheet_url := index .Site.Data.SBML.spec "package_spreadsheet_url" }}
 {{ $download_url    := print $spreadsheet_url "/export?format=tsv" }}
 {{ $tsv             := getCSV "	" $download_url }}
 
