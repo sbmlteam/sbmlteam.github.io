@@ -1,3 +1,6 @@
+<!-- Put "toc = true" in the page file header to show the TOC. -->
+{{ $show_toc := .Params.toc | default false }}
+
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 
@@ -6,9 +9,29 @@
     {{ partial "page_header.html" . }}
 
     <article class="article" itemscope itemtype="http://schema.org/Article">
-      {{ with .Content }}
-      <div class="article-style" itemprop="articleBody">{{ . }}</div>
-      {{ end }}
+      <div class="article-style" itemprop="articleBody">
+        {{ if eq $show_toc true }}
+          <!-- Explanation of what's going on in the code below: Hugo 
+               automatically creates a table of contents from the document
+               Markdown structure and stores it in .TableOfContents. The HTML
+               it produces is hardwired (in Hugo) to be a <nav> element with id
+               TableOfContents.  See https://gohugo.io/content-management/toc/.
+               In order to add a title to this, we have to wrap everything in
+               *another* div so that we can control the placement of the title
+               relative to the nav element. -->
+          <div class="toc">
+            <div class="toc-border">
+              <span class="toc-title">{{ i18n "table_of_contents" }}</span>
+              <div class="toc-contents">
+                {{ $.Page.TableOfContents }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+        {{ with .Content }}
+          {{ . }}
+        {{ end }}
+      </div>
   
       {{ partial "tags.html" . }}
   
