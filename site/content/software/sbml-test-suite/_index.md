@@ -3,10 +3,9 @@
 title  = "SBML Test Suite"
 date   = 2020-03-22
 layout = "single"
+icon   = "/img/sbml-test-suite-logo.svg"
 #=====================================================================
 +++
-
-{{< software-icon file="/img/sbml-test-suite-logo.svg" >}}
 
 The SBML Test Suite is a conformance testing system for [SBML](http://sbml.org).  It allows developers and users to test the degree and correctness of the SBML support provided in a software package. The tests are syntactic and semantic in nature.
 

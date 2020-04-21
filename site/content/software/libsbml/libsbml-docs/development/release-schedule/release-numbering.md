@@ -1,12 +1,12 @@
 +++
 #=====================================================================
-title  = "LibSBML release numbering"
-date   = 2020-04-02
-layout = "single"
+title      = "LibSBML release numbering"
+date       = 2020-04-02
+layout     = "single"
+icon       = "/img/libsbml-logo-and-name.svg"
+icon_width = "25%"
 #=====================================================================
 +++
-
-{{< software-icon width="25%" file="/img/libsbml-logo-and-name.svg" >}}
 
 Prior to libSBML version 4, there had been no formally-defined numbering scheme for libSBML releases.  This needed to change to facilitate modularization and SBML Level 3 packages. Therefore, the following system was introduced in libSBML 4 and subsequent releases:
 

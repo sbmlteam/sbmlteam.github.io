@@ -1,13 +1,10 @@
 +++
 #=====================================================================
-active = true
-title = "JSBML Documentation"
-date = "2020-03-19"
+title  = "JSBML Documentation"
 layout = "single"
+toc    = true
 #=====================================================================
 +++
-
-{{< toc >}}
 
 This page provides information on how to install JSBML, how to use the application programming interface (API), and other information.
 

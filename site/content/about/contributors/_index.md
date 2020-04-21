@@ -6,10 +6,9 @@
 title = "SBML contributors"
 widget = ""
 layout = "single"
+toc    = true
 #=====================================================================
 +++
-
-{{< toc >}}
 
 Many people have helped develop SBML as a community standard. This page lists individuals and groups who have made notable contributions to the evolution of SBML and the SBML-using community, but this short list is not meant to diminish the contributions of the broader community of people and companies developing software systems that use SBML.
 
@@ -166,7 +165,7 @@ The SBML effort has benefitted multiple times from [Google Summer of Code](https
 
 In 2019, we were fortunate to have had two projects involving SBML.
 
-{{% gsoc-table %}}
+{{% gsoc-project-table %}}
   {{< gsoc-project
       name="Kaustubh Trivedi"
       org="[Indian Institute of Technology Roorkee](https://www.iitr.ac.in), Uttarakhand, India"
@@ -181,14 +180,14 @@ In 2019, we were fortunate to have had two projects involving SBML.
       link="https://summerofcode.withgoogle.com/archive/2019/projects/6066046165843968/"
       blog="https://gsoc19-spatial.blogspot.com" 
   >}}
-{{% /gsoc-table %}}
+{{% /gsoc-project-table %}}
 
 
 ### Google Summer of Code 2018
 
 In 2018, we were fortunate to have had another project involving SBML.
 
-{{% gsoc-table %}}
+{{% gsoc-project-table %}}
   {{< gsoc-project
       name="Shalin Shah"
       org="Duke University, USA"
@@ -196,7 +195,7 @@ In 2018, we were fortunate to have had another project involving SBML.
       link="https://github.com/nrnb/GoogleSummerOfCode/issues/96"
       blog="https://ssdoesgsoc.wordpress.com" 
   >}}
-{{% /gsoc-table %}}
+{{% /gsoc-project-table %}}
 
 
 ### Google Summer of Code 2017
@@ -204,7 +203,7 @@ In 2018, we were fortunate to have had another project involving SBML.
 In 2017, we were fortunate to have had 2 projects involving SBML. They are
 listed below in alphabetical order by student's last name.
 
-{{% gsoc-table %}}
+{{% gsoc-project-table %}}
   {{< gsoc-project
       name="Takahiro Yamada"
       org="Keio University, Japan"
@@ -219,7 +218,7 @@ listed below in alphabetical order by student's last name.
       link="https://github.com/NRNB-GSoC2017-SBML2SBGNML-Converters/SBML2SBGNML/wiki"
       blog="https://haleyyew-gsoc.blogspot.co.uk" 
   >}}
-{{% /gsoc-table %}}
+{{% /gsoc-project-table %}}
 
 
 ### Google Summer of Code 2016
@@ -227,7 +226,7 @@ listed below in alphabetical order by student's last name.
 In 2016, we were fortunate to have had 5 projects involving SBML. They are
 listed below in alphabetical order by student's last name.
 
-{{% gsoc-table %}}
+{{% gsoc-project-table %}}
   {{< gsoc-project
       name="Hovakim Grabski"
       org="[Russian-Armenian University](http://international.rau.am/eng/), Armenia"
@@ -263,7 +262,7 @@ listed below in alphabetical order by student's last name.
       link="https://summerofcode.withgoogle.com/projects/#5218407133741056"
       blog="http://romanschulte.blogspot.de"
   >}}
-{{% /gsoc-table %}}
+{{% /gsoc-project-table %}}
 
 
 ### NRNB Academy 2015
@@ -273,7 +272,7 @@ runs a year-long program similar to Google Summer of Code, and in 2015,
 we had the privilege of having a student work on an SBML-related project
 under NRNB's auspices.
 
-{{% gsoc-table %}}
+{{% gsoc-project-table %}}
   {{< gsoc-project
       name="Matthias König"
       org="[Charité Universitätsmedizin Berlin](https://www.charite.de/en/), Germany"
@@ -281,7 +280,7 @@ under NRNB's auspices.
       link="https://docs.google.com/document/d/1a3t1EWuSqc3AOxtNoxPcZFSZqMPsKSMBLFJIS_P7Q4g"
       blog="https://github.com/nrnb/cy3sbml/" 
   >}}
-{{% /gsoc-table %}}
+{{% /gsoc-project-table %}}
 
 
 ### Google Summer of Code 2014
@@ -289,7 +288,7 @@ under NRNB's auspices.
 In 2014, we were fortunate to have 3 SBML-related projects. They are
 listed in alphabetical order by student's last name.
 
-{{% gsoc-table %}}
+{{% gsoc-project-table %}}
   {{< gsoc-project
       name="Victor Kofia"
       org="[Bader Lab](http://baderlab.org/Members), University of Toronto, Canada"
@@ -311,7 +310,7 @@ listed in alphabetical order by student's last name.
       link="http://lhwatanabe.blogspot.com/"
       blog="http://lhwatanabe.blogspot.com"
   >}}
-{{% /gsoc-table %}}
+{{% /gsoc-project-table %}}
 
 
 ## SBML history

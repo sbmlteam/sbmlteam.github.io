@@ -1,12 +1,10 @@
 +++
 #=====================================================================
 title  = "Known libSBML problems and pitfalls"
-date   = 2020-03-27
 layout = "single"
+toc    = true
 #=====================================================================
 +++
-
-{{< toc >}}
 
 This section documents the following known problems, limitations, and
 possible pitfalls in using libSBML.

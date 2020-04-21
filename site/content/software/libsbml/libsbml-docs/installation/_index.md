@@ -3,10 +3,9 @@
 title  = "Downloading and installing libSBML"
 date   = 2020-03-24
 layout = "single"
+toc    = true
 #=====================================================================
 +++
-
-{{< toc >}}
 
 We provide ready-to-use installers for many operating systems and programming languages, so most users don't need to build libSBML themselves (though that's an option too!).  Please use table at right to find the appropriate instructions for your case.
 
@@ -18,7 +17,7 @@ Note: _**stable**_ releases of libSBML contain support for only the accepted par
 For _stable_ releases of libSBML, we provide a unified installer for all versions of MATLAB and all operating systems.  The result is ready to run after installation; it **does not need compilation**, and only requires you tell MATLAB where you placed the files. Here are the steps:
 
 <ol>
-<li><a href="{{< value "libsbml" "download-url" >}}/MATLAB%20Interface">Download the distribution archive file</a>.</li>
+<li><a href="{{< value "libsbml" "download_url" >}}/MATLAB%20Interface">Download the distribution archive file</a>.</li>
 <li>Extract the archive to a folder somewhere on your computer.  (Let's refer to this folder as <span style="background-color: #ffcc99; font-style: italic">folder</span>.)
 </li>
 <li>Start your copy of MATLAB, then do <i>one</i> of the following series of steps.<br>
@@ -93,7 +92,7 @@ After this, you should be able to access the Python language interface for libSB
 
 ### Alternative #4: using the Windows libSBML installer for Python
 
-You can take advantage of executable installers that we make available for Windows. They can be found in a subdirectory named **python**  within each of the Windows subdirectories ([stable]({{< value "libsbml" "download-url" >}}/{{< value "libsbml" "latest-release" >}}/stable/Windows) and [experimental]({{< value "libsbml" "download-url" >}}/{{< value "libsbml" "latest-release" >}}/experimental/Windows)) on SourceForge. There are different installers for different versions of Python.  The following screenshot shows an example.
+You can take advantage of executable installers that we make available for Windows. They can be found in a subdirectory named **python**  within each of the Windows subdirectories ([stable]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}/stable/Windows) and [experimental]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}/experimental/Windows)) on SourceForge. There are different installers for different versions of Python.  The following screenshot shows an example.
 
 <figure>
 <img width="85%" class="screenshot" src="windows-python-installers.png"/>
@@ -110,7 +109,7 @@ After that, you should be able to access the Python language interface for libSB
 
 ## C, C++, C#, Java, JavaScript, Perl, PHP, or Ruby
 
-The installation packages in the libSBML [download location]({{< value "libsbml" "download-url" >}}) contain interfaces for C, C++, C#, Java, JavaScript, Perl, PHP, Python, and Ruby in the same package. (However, there are better ways to get the Python interface, as explained above.) The download area has two subdirectories: one for stable releases of libSBML, and one for experimental releases.
+The installation packages in the libSBML [download location]({{< value "libsbml" "download_url" >}}) contain interfaces for C, C++, C#, Java, JavaScript, Perl, PHP, Python, and Ruby in the same package. (However, there are better ways to get the Python interface, as explained above.) The download area has two subdirectories: one for stable releases of libSBML, and one for experimental releases.
 
 <figure>
 <img width="85%" class="screenshot" src="sourceforge-download.png"/>
@@ -125,9 +124,9 @@ After this, you should be able to access the Python language interface for libSB
 
 We provide installers for the stable version of the libSBML R language interface for Linux, Mac OS X and Windows. Download the version that is appropriate for your situation:
 
-* _For **Linux and Mac OS X**_: Download the [libSBML R source package]({{< value "libsbml" "download-url" >}}/{{< value "libsbml" "latest-release" >}}) from SourceForge.
+* _For **Linux and Mac OS X**_: Download the [libSBML R source package]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}) from SourceForge.
 
-* _For **Windows**_: Download the [64-bit version]({{< value "libsbml" "download-url" >}}/{{< value "libsbml" "latest-release" >}}/stable/Windows/64-bit/R%20interface/) or the [32-bit version]({{< value "libsbml" "download-url" >}}/{{< value "libsbml" "latest-release" >}}/stable/Windows/32-bit/R%20interface/) of the binary installer for R.
+* _For **Windows**_: Download the [64-bit version]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}/stable/Windows/64-bit/R%20interface/) or the [32-bit version]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}/stable/Windows/32-bit/R%20interface/) of the binary installer for R.
 
 Once you have downloaded the appropriate version, one more step is required to install the libSBML R interface. You can do this step in **one of two ways**: either using the R graphical interface, or using a terminal/shell command.
 
@@ -167,5 +166,5 @@ libSBML R interface is probably installed correctly.
 
 If no installation package is available for your platform, or you have special requirements for libSBML's configuration, you can always build libSBML from sources.
 
-1. [Download libSBML]({{< value "libsbml" "download-url" >}}/{{< value "libsbml" "latest-release" >}}) from our SourceForge distribution site.
+1. [Download libSBML]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}) from our SourceForge distribution site.
 2. [Follow the instructions]() for configuring, compiling and installing libSBML manually.

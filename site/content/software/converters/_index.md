@@ -4,6 +4,7 @@ title  = "Converters"
 date   = 2020-04-04
 layout = "single"
 active = true
+toc    = true
 #=====================================================================
 +++
 
@@ -53,8 +54,6 @@ The [Biological Pathways Exchange format (BioPAX)](http://www.biopax.org) is a s
 <!-- -----------------------------------------------------------------
  The rest of this file contains the actual content of the page.
 ------------------------------------------------------------------ -->
-
-{{< toc >}}
 
 SBML is a lingua franca in systems biology. In order to further facilitate exchange of models, many software tools have been developed to convert between SBML and other formats. For the benefit of the SBML-using community, this page provides a list of conversion tools of which we are aware. Please contact sbml-team@googlegroups.com if we have missed any. Note that most of these tools are third-party software, and not the product of the SBML Team.
 

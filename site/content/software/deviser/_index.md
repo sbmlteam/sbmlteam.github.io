@@ -3,10 +3,9 @@
 title  = "Deviser"
 date   = 2020-03-22
 layout = "single"
+icon   = "/img/deviser-logo.png"
 #=====================================================================
 +++
-
-{{< software-icon file="/img/deviser-logo.png" >}}
 
 [_Deviser_](https://github.com/sbmlteam/deviser) stands for _"Design Explorer and Viewer for Iterative SBML Enhancement of Representations"_.  It facilitates the development of SBML Level&nbsp;3 packages by enabling the creation of basic specifications, UML diagrams and code for integration with [LibSBML](http://sbml.org/Software/libSBML).  Its principal authors are [Sarah M. Keating](https://github.com/skeating) and [Frank&nbsp;T. Bergmann](https://www.cos.uni-heidelberg.de/?l=_e), with contributions from [Brett Olivier](https://github.com/bgoli), [Lucian Smith](https://github.com/luciansmith), and [Mike Hucka](http://www.cds.caltech.edu/~mhucka/).
 

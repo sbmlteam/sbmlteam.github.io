@@ -1,12 +1,12 @@
 +++
 #=====================================================================
-title  = "LibSBML development schedule"
-date   = 2020-04-02
-layout = "single"
+title      = "LibSBML development schedule"
+date       = 2020-04-02
+layout     = "single"
+icon       = "/img/libsbml-logo-and-name.svg"
+icon_width = "25%"
 #=====================================================================
 +++
-
-{{< software-icon width="25%" file="/img/libsbml-logo-and-name.svg" >}}
 
 Historically, we have provided two types of releases of libSBML: _full_, and _experimental-only_. They are described below, along with principles followed in numbering the releases.
 

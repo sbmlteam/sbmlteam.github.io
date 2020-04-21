@@ -1,12 +1,12 @@
 +++
 #=====================================================================
-title  = "LibSBML development roadmap"
-date   = 2020-04-02
-layout = "single"
+title      = "LibSBML development roadmap"
+date       = 2020-04-02
+layout     = "single"
+icon       = "/img/libsbml-logo-and-name.svg"
+icon_width = "25%"
 #=====================================================================
 +++
-
-{{< software-icon width="25%" file="/img/libsbml-logo-and-name.svg" >}}
 
 This page provides a roadmap for [libSBML](/software/libsbml) development goals. The LibSBML Team attempts to update this page regularly as new plans are made and existing goals are achieved. This page focuses on high-level descriptions of plans; we also maintain finer-grained lists of tasks in a [Pivotal Tracker project page for libSBML](https://www.pivotaltracker.com/n/projects/248655). The previous roadmap page is available [on a separate page](previous-roadmap).
 

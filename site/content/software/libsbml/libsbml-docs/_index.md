@@ -1,12 +1,11 @@
 +++
 #=====================================================================
-title  = "libSBML documentation"
-date   = 2020-03-24
-layout = "single"
+title      = "libSBML documentation"
+layout     = "single"
+icon       = "/img/libsbml-logo-and-name.svg"
+icon_width = "25%"
 #=====================================================================
 +++
-
-{{< software-icon width="25%" file="/img/libsbml-logo-and-name.svg" >}}
 
 This page provides information on how to install libSBML, how to use the application programming interface (API), and other information.
 

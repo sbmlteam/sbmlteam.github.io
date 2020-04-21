@@ -3,10 +3,9 @@
 title  = "LibSBML coding conventions"
 date   = 2020-04-02
 layout = "single"
+toc    = true
 #=====================================================================
 +++
-
-{{< toc >}}
 
 The following are guidelines that have generally been followed in
 libSBML code. Not every piece of code adheres to them but we are trying

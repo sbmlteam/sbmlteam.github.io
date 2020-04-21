@@ -11,8 +11,6 @@ toc = true
 #=====================================================================
 +++
 
-{{< toc >}}
-
 An intrinsic aspect of SBML's development has been the adoption of a participatory, community-oriented approach. In the early years of SBML, this process was highly informal.  The use of SBML has grown to the point where its original, informal approach to development is no longer sufficient to meet the needs of the SBML community and the continued evolution of SBML.  Beginning in 2003, the SBML Team and SBML Editors developed a more formal organization and systematic process, one that aims to be less ambiguous and subjective and more responsive to the needs of the SBML community.  This page describes the plans for this _SBML Development Process_, and the current status of its implementation.
 
 This SBML Development Process has been followed since mid-2008.

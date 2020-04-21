@@ -1,12 +1,11 @@
 +++
 #=====================================================================
-title  = "libSBML API documentation"
-date   = 2020-03-27
-layout = "single"
+title      = "libSBML API documentation"
+layout     = "single"
+icon       = "/img/libsbml-logo-and-name.svg"
+icon_width = "25%"
 #=====================================================================
 +++
-
-{{< software-icon width="25%" file="/img/libsbml-logo-and-name.svg" >}}
 
 LibSBML provides APIs for programming in C, C++, C#, Java, JavaScript, MATLAB, Perl, PHP, Python, R, and Ruby.  The following are the currently-available API manuals, documenting the APIs for a subset of the languages supported by libSBML:
 

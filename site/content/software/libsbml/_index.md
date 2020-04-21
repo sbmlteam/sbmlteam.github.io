@@ -1,12 +1,11 @@
 +++
 #=====================================================================
-title  = "libSBML"
-date   = 2020-03-24
-layout = "single"
+title      = "libSBML"
+layout     = "single"
+icon       = "/img/libsbml-logo-and-name.svg"
+icon_width = "25%"
 #=====================================================================
 +++
-
-{{< software-icon width="25%" file="/img/libsbml-logo-and-name.svg" >}}
 
 LibSBML is a programming library that helps you read, write, manipulate, translate, and validate SBML files and data streams.  The library supports all Levels and Versions of SBML.  LibSBML is written in ISO standard C++ and C and provides APIs for the languages C, C++, C#, Java, JavaScript, MATLAB, Perl, PHP, Python, R, and Ruby.  It works on Linux, Windows, and MacOS X, and has been known to work on FreeBSD and Solaris in the past.
 

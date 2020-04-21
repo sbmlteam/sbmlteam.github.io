@@ -1,12 +1,11 @@
 +++
 #=====================================================================
-title  = "JSBML"
-date   = 2020-03-19
-layout = "single"
+title      = "JSBML"
+layout     = "single"
+icon       = "/img/jsbml-logo.png"
+icon_width = "15%"
 #=====================================================================
 +++
-
-{{< software-icon width="15%" file="/img/jsbml-logo.png" >}}
 
 JSBML is a community-driven project to create a free, open-source, pure Java library for reading, writing, and manipulating SBML files and data streams. It is an alternative to the mixed Java/native code-based interface provided in [libSBML](/software/libsbml).
 

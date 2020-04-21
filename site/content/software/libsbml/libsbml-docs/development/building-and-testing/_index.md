@@ -1,12 +1,10 @@
 +++
 #=====================================================================
 title  = "Building and testing releases of libSBML"
-date   = 2020-04-02
 layout = "single"
+toc    = true
 #=====================================================================
 +++
-
-{{< toc >}}
 
 This page describes in detail the procedure for building and testing the various binaries and installers that make up the libSBML release. This is done in two main stages: creating and stabilizing the source archives and then building and testing the various installers.
 

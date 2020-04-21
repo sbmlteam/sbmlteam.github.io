@@ -23,32 +23,32 @@ Although [XML Schemas](https://en.wikipedia.org/wiki/XML_schema) are available f
 
 The current definition of SBML Level 2 is **Version 5**.
 
-{{< sbml-spec-box package="core" level="2" version="5" release="1" >}}
+{{< spec-box package="core" level="2" version="5" release="1" >}}
 
 
 ## SBML Level 2 Version 4
 
 **Release 1**
 
-{{< sbml-spec-box package="core" level="2" version="4" release="1" >}}
+{{< spec-box package="core" level="2" version="4" release="1" >}}
 
 
 ## SBML Level 2 Version 3
 
 **Release 2**
 
-{{< sbml-spec-box package="core" level="2" version="3" release="2" >}}
+{{< spec-box package="core" level="2" version="3" release="2" >}}
 
 **Release 1**
 
-{{< sbml-spec-box package="core" level="2" version="3" release="1" >}}
+{{< spec-box package="core" level="2" version="3" release="1" >}}
 
 
 ## SBML Level 2 Version 2
 
 As noted above, SBML Level 2 Version 2 existed in only one Revision.
 
-{{< sbml-spec-box package="core" level="2" version="2" revision="1" >}}
+{{< spec-box package="core" level="2" version="2" revision="1" >}}
 
 
 ## SBML Level 2 Version 1
@@ -59,4 +59,4 @@ As noted above, the use of Releases/Revisions was introduced after Level 2 Versi
 Note that Version 1 has significant limitations and conceptual gaps. The SBML Editors strongly encourage developers to update existing Version 1-supporting tools to support a later version of SBML Level 2 or SBML Level&nbsp3;. Similarly, we courage modelers who have models in Version 1 format to update their models to a later Version.
 {{% /notice %}}
 
-{{< sbml-spec-box package="core" level="2" version="1" >}}
+{{< spec-box package="core" level="2" version="1" >}}

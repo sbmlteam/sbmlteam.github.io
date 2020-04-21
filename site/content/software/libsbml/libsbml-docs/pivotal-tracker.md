@@ -1,13 +1,11 @@
 +++
 #=====================================================================
-active = true
-title = "Pivotal Tracker for libSBML"
-date = "2020-03-21"
-layout = "single"
+title      = "Pivotal Tracker for libSBML"
+layout     = "single"
+icon       = "/img/libsbml-logo-and-name.svg"
+icon_width = "25%"
 #=====================================================================
 +++
-
-{{< software-icon width="25%" file="/img/libsbml-logo-and-name.svg" >}}
 
 The libSBML project uses [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/499447) to plan and coordinate development.  Our trackers are publicly viewable, but not publicly editable.  If you would like to comment on an item in the tracker or have questions or suggestions, please feel free to contact the team directly [via email](mailto:libsbml-team@googlegroups.com).
 
@@ -22,4 +20,4 @@ This is the page for the libSBML project in [Pivotal Tracker](http://pivotaltrac
 This tracker is where we collect ideas for a future libSBML version 6.
 {{% /blurb %}}
 
-{{< fragment "using-pivotal" >}}
+{{< page-fragment "using-pivotal" >}}

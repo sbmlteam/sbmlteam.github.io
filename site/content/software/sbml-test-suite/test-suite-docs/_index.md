@@ -4,10 +4,9 @@ active = true
 title = "SBML Test Suite Documentation"
 date = "2020-03-21"
 layout = "single"
+toc = true
 #=====================================================================
 +++
-
-{{< toc >}}
 
 This page provides information on how to install the SBML Test Suite, how to use it, and other information.
 

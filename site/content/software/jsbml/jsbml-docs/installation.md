@@ -53,7 +53,7 @@ If you are already using Maven in your project, you can add JSBML as a dependenc
       <dependency>
         <groupId>org.sbml.jsbml</groupId>
         <artifactId>jsbml</artifactId>
-        <version>{{< value "jsbml" "latest-release" >}}</version>
+        <version>{{< value "jsbml" "latest_release" >}}</version>
       </dependency>
     </dependencies>
 
@@ -64,7 +64,7 @@ The `jsbml` artifact will include `jsbml-core` plus all SBML Level&nbsp;3 packag
 If you don't use the JSBML artifact and want to include only few Level&nbsp;3 packages (not recommended), below are the exact dependencies for everything:
 
     <properties>
-      <jsbml.version>{{< value "jsbml" "latest-release" >}}</jsbml.version>
+      <jsbml.version>{{< value "jsbml" "latest_release" >}}</jsbml.version>
     </properties>
   
     <dependencies>
