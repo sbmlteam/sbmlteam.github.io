@@ -1,5 +1,0 @@
-{{- $repo := .Get "repo" -}}
-{{- $url  := print "https://api.github.com/repos/" $repo "/releases/latest" -}}
-{{- $github_json := getJSON $url -}}
-{{- $version := replaceRE "[a-zA-Z-]*([0-9]+)(.[0-9]+)?(.[0-9]+)?" "$1$2$3" $github_json.tag_name -}}
-{{- $version -}}
