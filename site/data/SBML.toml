@@ -6,6 +6,16 @@
 # Date created: 2020-03-10
 # =============================================================================
 
+# Data for software -----------------------------------------------------------
+
+[libsbml]
+download-url = "https://sourceforge.net/projects/sbml/files/libsbml"
+latest-release = "5.18.0"
+
+[jsbml]
+download-url = "https://github.com/sbmlteam/jsbml/releases"
+latest-release = "1.4"
+
 # Data for specifications -----------------------------------------------------
 
 # Apart from the URL for the Google spreadsheet for packages, the rest of this
@@ -274,13 +284,3 @@
       citation    = "Michael Hucka, Frank T. Bergmann, Claudine Chaouiya, Andreas Dräger, Stefan Hoops, Sarah M. Keating, Matthias König, Nicolas Le Novère, Chris J. Myers, Brett G. Olivier, Sven Sahle, James C. Schaff, Rahuman Sheriff, Lucian P. Smith, Dagmar Waltemath, Darren J. Wilkinson, and Fengkai Zhang (2019). The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 2 Core Release 2. _Journal of Integrative Bioinformatics_, 16(2), 20190021"
       cite_bibtex = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-2-core-release-2.bib"
       cite_ris    = "/specifications/sbml-level-3/version-2/core/sbml-level-3-version-2-core-release-2.ris"
-
-# Data for software -----------------------------------------------------------
-
-[libsbml]
-download-url = "https://sourceforge.net/projects/sbml/files/libsbml"
-latest-release = "5.18.0"
-
-[jsbml]
-download-url = "https://github.com/sbmlteam/jsbml/releases"
-latest-release = "1.4"
