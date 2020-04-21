@@ -4,10 +4,9 @@ active = true
 title = "Basic installation guide for JSBML"
 date = "2020-03-21"
 layout = "single"
+toc = true
 #=====================================================================
 +++
-
-{{< toc >}}
 
 JSBML is written in Java.  To use it, you will need a Java Runtime Environment (JRE) 1.7 or higher installed on your computer.  To install JSBML, please follow one of the approaches described below.
 
@@ -54,7 +53,7 @@ If you are already using Maven in your project, you can add JSBML as a dependenc
       <dependency>
         <groupId>org.sbml.jsbml</groupId>
         <artifactId>jsbml</artifactId>
-        <version>{{< latest repo="sbmlteam/jsbml" >}}</version>
+        <version>{{< value "jsbml" "latest-release" >}}</version>
       </dependency>
     </dependencies>
 
@@ -65,7 +64,7 @@ The `jsbml` artifact will include `jsbml-core` plus all SBML Level&nbsp;3 packag
 If you don't use the JSBML artifact and want to include only few Level&nbsp;3 packages (not recommended), below are the exact dependencies for everything:
 
     <properties>
-      <jsbml.version>{{< latest repo="sbmlteam/jsbml" >}}</jsbml.version>
+      <jsbml.version>{{< value "jsbml" "latest-release" >}}</jsbml.version>
     </properties>
   
     <dependencies>
