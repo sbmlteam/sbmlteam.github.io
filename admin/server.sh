@@ -51,6 +51,13 @@ case "$1" in
         check_log_file
 
         cd "$SITE_ROOT"
+
+        line=`printf '=%.0s' {1..79}`
+        start_time=$(/bin/date '+%G-%m-%d:%H%M')
+        echo $line > $HUGO_LOGFILE 2>&1 &
+        echo "Starting Hugo on $start_time" > $HUGO_LOGFILE 2>&1 &
+        echo $line > $HUGO_LOGFILE 2>&1 &
+
         $HUGO server $HUGO_SERVER_ARGS > $HUGO_LOGFILE 2>&1 &
         RETVAL=$?
         PID=`echo $!`
