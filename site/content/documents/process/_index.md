@@ -7,6 +7,7 @@ active = true
 title = "SBML Development Process"
 date = 2019-04-07
 layout = "single"
+toc = true
 #=====================================================================
 +++
 

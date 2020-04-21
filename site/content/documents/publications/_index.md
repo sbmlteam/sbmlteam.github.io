@@ -1,12 +1,11 @@
 +++
-#=====================================================================
+#============================================================================
 title  = "Essential publications about SBML"
 date   = 2019-04-06
 layout = "single"
-#=====================================================================
+toc    = true
+#============================================================================
 +++
-
-{{< toc >}}
 
 This page lists published papers and chapters describing SBML, SBML packages, and core SBML-supporting software such as API libraries.  Information about associated standards are not included here; please see the [COMBINE website](http://co.mbine.org) and [FAIRsharing](https://fairsharing.org) for information about related standards.
 

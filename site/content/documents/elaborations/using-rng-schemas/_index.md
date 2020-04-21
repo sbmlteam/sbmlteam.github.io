@@ -1,12 +1,10 @@
 +++
 #=====================================================================
 title  = "RELAX NG schemas and validation for SBML Level 3"
-date   = 2017-01-07
 layout = "single"
+toc    = true
 #=====================================================================
 +++
-
-{{< toc >}}
 
 This page describes the use of [RELAX NG](http://relaxng.org) schemas for validating SBML Level&nbsp;3 files.  Similar to W3C XML Schema, RELAX&nbsp;NG (RNG) provides the ability to define the valid syntax of an XML document.  Importantly, RNG does not require the type of deterministic content that XML Schema requires; the latter requirement is what prevents us from writing a complete XML Schema for SBML Level&nbsp;3, because Level&nbsp;3 has certain features that violate the deterministic content restriction.  Consequently, RELAX&nbsp;NG can be used to do schema-based validation of SBML Level&nbsp;3 documents.
 
