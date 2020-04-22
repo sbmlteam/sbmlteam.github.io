@@ -1,21 +1,21 @@
---- # -*- mode: markdown -*-
-#=====================================================================
-title: "All Versions of SBML Level 2"
-date: 2020-03-10
-layout: "single"
-#=====================================================================
----
++++
+#============================================================================
+title  = "All Versions of SBML Level 2 Revision 1"
+layout = "single"
+toc    = true
+#============================================================================
++++
 
 An explanation is warranted about release numbering. The term _Releases_ was introduced in SBML Level&nbsp;2 Version&nbsp;3; the Release approach is used to cope with minor editorial changes to specification documents. Prior to that, in Version&nbsp;2, the same concept existed under the name _Revision_, but only one revision of Level&nbsp;2 Version&nbsp;2 was ever produced. In SBML Level&nbsp;2 Version&nbsp;1, the Release/Revision concept was not used at all; there is only "SBML Level&nbsp;2 Version&nbsp;1". To make matters simpler, this page lists all previously issued specifications of SBML Level&nbsp;2, regardless of whether they were Releases of Version&nbsp;5, or past Versions.
 
 Developers and modelers are **strongly encouraged** to support the **latest** Version of SBML in any new software development and modeling efforts, as well as to update actively-supported software tools they may be involved in developing or maintaining.
 
 {{% notice type="info" %}}
-SBML uses a subset of MathML 2.0 to encode mathematical expressions. The XML Schema for this subset of MathML is included in the SBML specification documents themselves; it is is also provided here as a separate download for convenience: [<i class="file-download fa-file-download fas fa-1x"></i> **sbml-mathml.xsd**](/documents/specifications/sbml-level-2/sbml-mathml.xsd).
+SBML uses a subset of MathML 2.0 to encode mathematical expressions. The XML Schema for this subset of MathML is included in the SBML specification documents themselves; it is is also provided here as a separate download for convenience: [<i class="file-download fa-file-download fas fa-1x"></i> **sbml-mathml.xsd**](/documents/specifications/level-2/sbml-mathml.xsd).
 {{% /notice %}}
 
 {{% notice type="warning" %}}
-Although [XML Schemas](https://en.wikipedia.org/wiki/XML_schema) are available for SBML Level&nbsp;2, <strong>the schemas only capture the basic syntax</strong> of the format.  Semantics and correct usage are <strong>not</strong> captured by the schemas and can only be understood by reading the specification documents.
+Although [XML Schemas](https://en.wikipedia.org/wiki/XML_schema) are available for SBML Level&nbsp;2, **the schemas only capture the basic syntax** of the format.  Semantics and correct usage are **not** captured by the schemas and can only be understood by reading the specification documents.
 {{% /notice %}}
 
 
@@ -60,3 +60,5 @@ Note that Version 1 has significant limitations and conceptual gaps. The SBML Ed
 {{% /notice %}}
 
 {{< spec-box package="core" level="2" version="1" >}}
+
+###

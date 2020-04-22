@@ -1,32 +1,41 @@
 <!-- Get parameters from the content page Markdown document. -->
 
+{{ $package_id := .Params.package }}
+{{ $level      := .Params.level }}
+{{ $version    := .Params.version}}
+{{ $release    := .Params.release  | default "" }}
+{{ $revision   := .Params.revision | default "" }}
+
 {{ $issue_list := .Params.issue }}
-{{ $spec_id    := .File.BaseFileName }}
 
 <!-- Get general data about this spec from our SBML.toml data file  -->
 
-{{ $id_parts   := split $spec_id "." }}
-{{ $package_id := index $id_parts 0 }}
-{{ $level_id   := index $id_parts 1 }}
-{{ $version_id := index $id_parts 2 }}
+{{ $level_id     := print "level-" $level }}
+{{ $version_id   := print "version-" $version }}
+{{ $release_id   := print "release-" $release }}
+{{ $revision_id  := print "revision-" $revision }}
 
 {{ $package_data := index .Site.Data.SBML.spec $package_id }}
 {{ $level_data   := index $package_data $level_id }}
 {{ $spec_data    := "" }}
-{{ $release_id   := "" }}
 
-{{ if gt (len $id_parts) 3 }}
-  <!-- Specs beginning with L2v2 had revision or release numbers. -->
-  {{ $release_id    = index $id_parts 3 }}
+{{ if $release }}
+  <!-- Specs beginning with L2v3 had release numbers. -->
   {{ $version_data := index $level_data $version_id }}
   {{ $spec_data     = index $version_data $release_id}}
+{{ else if $revision }}
+  <!-- L2v2 (only) had a "revision" designation. -->
+  {{ $revision_data := index $level_data $version_id }}
+  {{ $spec_data      = index $revision_data $revision_id}}
 {{ else }}
   <!-- Early specs had no release numbers. -->
   {{ $spec_data  = index $level_data $version_id}}
 {{ end }}
 
 {{ $spec_name := print "SBML Level " $spec_data.level " Version " $spec_data.version }}
-{{ if $release_id }}
+{{ if $release }}
+  {{ $spec_name = print $spec_name  " Release " $spec_data.release }}
+{{ else if $revision }}
   {{ $spec_name = print $spec_name  " Revision " $spec_data.revision }}
 {{ end }}
 
@@ -134,3 +143,5 @@
     {{ partial "footer.html" . }}
   </section>
 </div>
+
+{{ $spec_name }}

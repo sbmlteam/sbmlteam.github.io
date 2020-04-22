@@ -26,7 +26,7 @@ The most recent definition of SBML Level&nbsp;3 is **Version&nbsp;{{< value "spe
 
 {{< spec-box package="core" level="3" version="2" release="highest" >}}
 
-Past releases of SBML Level 3 are available from a [separate page](sbml-level-3). 
+Past releases of SBML Level 3 are available from a [separate page](level-3). 
 
 
 ### SBML Level 3 Packages
@@ -48,7 +48,7 @@ The separate Levels of SBML are intended to coexist &ndash; SBML Level&nbsp;3 do
 
 {{< spec-box package="core" level="2" version="5" release="highest" >}}
 
-Past releases of SBML Level 2 are available from a [separate page](sbml-level-2). 
+Past releases of SBML Level 2 are available from a [separate page](level-2). 
 
 
 ## SBML Level 1
@@ -57,5 +57,5 @@ The current definition of SBML Level 1 is **Version&nbsp;{{< value "spec.core.le
 
 {{< spec-box package="core" level="1" version="2" >}}
 
-Past releases of SBML Level 1 are available from a [separate page](sbml-level-1).
+Past releases of SBML Level 1 are available from a [separate page](level-1).
 
