@@ -23,4 +23,4 @@ release = 2
 #============================================================================
 +++
 
-
+No separate issues about this particular specification are noted at this time; however, some of the issues in [Level 3 Version 2 Release 1](/documents/specifications/level-3/version-2/core/release-1/issues) also applied to _this_ specification, and were corrected to produce [Level 3 Version 1 Core Release 3](/documents/specifications/level-3/version-1/core/release-3).
