@@ -102,12 +102,12 @@
             {{ end }}
           </tbody>
         </table>
+      {{ else if gt (len .Content) 0 }}
+        {{ with .Content }}
+          <div class="article-style" itemprop="articleBody">{{ . }}</div>
+        {{ end }}
       {{ else }}
-        <p>The <a href="/documents/specifications/{{- $level_id -}}">{{ $spec_name }}</a> specification was made available on {{ dateFormat "2 January 2006" $spec_date }}.  No issues in the specification have been formally identified at this time.</p>
-      {{ end }}
-
-      {{ with .Content }}
-        <div class="article-style" itemprop="articleBody">{{ . }}</div>
+        <p>The <a href="/documents/specifications/{{- $level_id -}}">{{ $spec_name }}</a> specification was made available on {{ dateFormat "2 January 2006" $spec_date }}.  No issues with this specification have been formally identified at this time.</p>
       {{ end }}
 
       {{ partial "tags.html" . }}
