@@ -16,7 +16,7 @@ LibSBML is a library for reading, writing, and manipulating files and
 data streams in SBML format .  It is written in C++ and C and provides APIs for C, C++, C#, Java, JavaScript, MATLAB, Octave, Perl, PHP, Python, R, and Ruby.
 {{% /blurb %}}
 
-{{% blurb title="JSBML" image="/img/jsbml-logo.png" width="105pt" link="jsbml" %}}
+{{% blurb title="JSBML" image="/img/jsbml-logo.png" width="112pt" link="jsbml" %}}
 JSBML is a pure Java library for reading, writing, and manipulating SBML.  It maps all SBML elements to a flexible and extended object hierarchy in Java.  JSBML is an alternative to the mixed Java/native code-based interface provided in [libSBML](/software/libsbml).
 {{% /blurb %}}
 

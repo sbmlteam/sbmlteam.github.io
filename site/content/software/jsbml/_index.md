@@ -3,7 +3,7 @@
 title      = "JSBML"
 layout     = "single"
 icon       = "/img/jsbml-logo.png"
-icon_width = "15%"
+icon_width = "18%"
 #=====================================================================
 +++
 
