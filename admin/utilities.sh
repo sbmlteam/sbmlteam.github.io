@@ -1,6 +1,6 @@
 ## ============================================================================
 ## File name   : utilities.sh
-## Description : Utilities used by server.sh
+## Description : Utilities used by server-control
 ## Author(s)   : Michael Hucka <mhucka@caltech.edu>
 ## Organization: California Institute of Technology
 ## Date created: 2019-05-31

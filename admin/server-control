@@ -35,8 +35,8 @@ fi
 
 # Get our configuration variables and utilities.
 
-source config.cfg
 source utilities.sh
+source server.cfg
 
 # .............................................................................
 # The rest below is generic and probably does not need to be changed.
