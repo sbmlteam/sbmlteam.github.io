@@ -1480,7 +1480,7 @@ body.dark .article-style {
   bottom: 0.25em;
   height: 2.5em; 
   clear: both; 
-  margin-left: auto auto;
+  margin: auto auto;
   line-height: 2.5em;
   vertical-align: middle;
   width: 100%;
@@ -1488,23 +1488,41 @@ body.dark .article-style {
   background: white;
 }
 
+.dark #footer {
+  background-color: {{ .Get "dark_home_section_odd" }};
+}
+
 #footer-section {
   margin-top: 2em;
 }
 
+@media screen and (max-width: 576px) {
+  #footer {
+    max-width: 540px;
+  }
+}
+
 @media screen and (min-width: 576px) {
   #footer {
-    max-width: 520px;
+    max-width: 510px;
   }
 }
+
 @media screen and (min-width: 768px) {
   #footer {
-    min-width: 700px;
+    min-width: 690px;
   }
 }
+
+@media only screen and (min-width: 1001px) {
+  #footer {
+    min-width: 929px;
+  } 
+}
+
 @media screen and (min-width: 1200px) {
   #footer {
-    min-width: 1120px;
+    min-width: 1110px;
   }
 }
 
@@ -2147,7 +2165,7 @@ body.dark,
 }
 
 .dark b, .dark strong {
-  color: #ffffff;
+  color: #eee;
 }
 
 .dark p,
@@ -2333,6 +2351,15 @@ a:visited i[class ^= "fa-"] {
   text-align: center;
 }
 
+.dark i[class ^= "fa-"],
+.dark a i[class ^= "fa-"],
+.dark a:visited i[class ^= "fa-"] {
+  color: #84c5e2;
+  text-shadow: 1px 2px 2px #000;
+  text-align: center;
+}
+
+
 code, pre, .hljs {
   color: #000000;
   background-color: #eeeeee;
@@ -2481,6 +2508,11 @@ h2 span.article-date {
   color: #555;
 }
 
+.dark .sbml-spec-description strong,
+.sbml-spec-description b {
+  color: #ccc;
+}
+
 .sbml-spec-link {
   display: inline-block;
   margin: 0.75em 1em 0.5em 1em;
@@ -2578,6 +2610,10 @@ h2 span.article-date {
   vertical-align: middle;
 }
 
+.alert-box-text strong {
+  color: black;
+}
+
 .alert-box .alert-danger {
   color: #cd0930;
 }
@@ -2601,6 +2637,16 @@ h2 span.article-date {
 .alert-warning {
   color: #7f6e4a;
   background-color: #fffae7;
+}
+
+.dark .alert-box .alert-warning {
+  color: #7f6e30;
+  background-color: #fff0a7;
+}
+
+.dark .alert-box.alert-warning {
+  color: #7f6e30;
+  background-color: #fff0a7;
 }
 
 .alert-box .alert-notice {
@@ -2786,6 +2832,21 @@ body.dark .twitter-box-inner {
   margin-top: 1em;
   border-radius: 0.5em;
   background-color: #f0f4f6; 
+}
+
+.dark .reference.highlight {
+  background-color: {{ .Get "dark_home_section_odd" }};
+  filter: brightness(80%);
+  color: #dfdfdf;
+}
+
+.dark .reference.highlight a {
+  color: #93d4f6;
+
+}
+
+.dark .reference.highlight a:visited {
+  color:  #5593c0;
 }
 
 .reference-authors {
