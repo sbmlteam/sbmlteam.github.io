@@ -7,11 +7,11 @@ icon_width = "18%"
 #=====================================================================
 +++
 
-JSBML is a community-driven project to create a free, open-source, pure Java library for reading, writing, and manipulating SBML files and data streams. It is an alternative to the mixed Java/native code-based interface provided in [libSBML](/software/libsbml).
+JSBML is a community-driven project to create a free, open-source (under [LGPL](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)), pure Java library for reading, writing, and manipulating SBML files and data streams. It is an alternative to the mixed Java/native code-based interface provided in [libSBML](/software/libsbml).
 
 The JSBML project's aim is to provide an SBML parser and library that maps all SBML elements to a flexible and extended type hierarchy. Where possible, JSBML strives to attain 100% API compatibility with the [libSBML](/software/libsbml) Java API, to facilitate a switch from one library to the other. Currently, JSBML supports all constructs for SBML up to the latest Level 3 Version 1 Release 1 specification, including an API to add support for SBML Level 3 packages. JSBML does not currently reimplement some of the more complex functions of libSBML such as consistency-checking and SBML validation; instead, these can be accessed via web services.
 
-{{< software-links download="https://github.com/sbmlteam/jsbml/releases" changes="https://github.com/sbmlteam/jsbml/blob/jsbml-1.4/NEWS.md" tracker="https://github.com/sbmlteam/jsbml/issues/" docs="jsbml-docs" repo="https://github.com/sbmlteam/jsbml" forum="https://groups.google.com/forum/#!forum/jsbml-development">}}
+{{< software-links download="https://github.com/sbmlteam/jsbml/releases" changes="https://github.com/sbmlteam/jsbml/blob/jsbml-1.5/NEWS.md" tracker="https://github.com/sbmlteam/jsbml/issues/" docs="jsbml-docs" repo="https://github.com/sbmlteam/jsbml" forum="https://groups.google.com/forum/#!forum/jsbml-development">}}
 
 
 ## Please cite the papers if you use JSBML
@@ -27,6 +27,7 @@ Article citations are crucial to our ability to justify continued development of
 
 We provide Zenodo DOIs for specific releases, so that you can cite the exact version of the software that you use:
 
+* JSBML release 1.5   &rArr; [10.5281/zenodo.3751775](https://doi.org/10.5281/zenodo.3751775)
 * JSBML release 1.4   &rArr; [10.5281/zenodo.1346189](https://doi.org/10.5281/zenodo.1346189)
 * JSBML release 1.3.1 &rArr; [10.5281/zenodo.1118387](https://doi.org/10.5281/zenodo.1118387)
 * JSBML release 1.2   &rArr; [10.5281/zenodo.200544](http://doi.org/10.5281/zenodo.200544)
@@ -34,11 +35,25 @@ We provide Zenodo DOIs for specific releases, so that you can cite the exact ver
 * JSBML release 1.0   &rArr; [10.5281/zenodo.55635](http://dx.doi.org/10.5281/zenodo.55635)
 * JSBML release 0.8   &rArr; [10.5281/zenodo.55636](http://dx.doi.org/10.5281/zenodo.55636)
 
+## License
+
+JSBML is licensed under the [LGPL v. 2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html) and Copyright (C) 2009-2020 jointly by the following organizations:
+
+1. The University of Tuebingen, Germany
+2. EMBL European Bioinformatics Institute (EMBL-EBI), Hinxton, UK
+3. The California Institute of Technology, Pasadena, CA, USA
+4. The University of California, San Diego, La Jolla, CA, USA
+5. The Babraham Institute, Cambridge, UK
+
+JSBML also uses third-party software libraries; these software libraries have their own copyright statements and distribution terms.  Please see the files [COPYING.txt](https://github.com/sbmlteam/jsbml/blob/master/COPYING.txt) and [LICENSE](https://github.com/sbmlteam/jsbml/blob/master/LICENSE) in the JSBML software distributions for more information.
+
+
 ## Community and help
 
-There is a mailing list and web forum, [jsbml-development@googlegroups.com](https://groups.google.com/forum/#!forum/jsbml-development), devoted to discussions about JSBML.  If you're using JSBML or interested in learning more, feel free to join the group!
+There is a mailing list and web forum, [jsbml-development@googlegroups.com](https://groups.google.com/forum/#!forum/jsbml-development), devoted to discussions about JSBML.  If you're using JSBML or interested in learning more, feel free to join the group!  You can also reach the main developers directly via email at [jsbml-team@googlegroups.com](jsbml-team@googlegroups.com).
 
-You can also reach the main developers directly via email at [jsbml-team@googlegroups.com](jsbml-team@googlegroups.com).
+The separate [documentation](jsbml-docs) pages for JSBML include sections aimed at developers.
+
 
 ## JSBML contributors
 

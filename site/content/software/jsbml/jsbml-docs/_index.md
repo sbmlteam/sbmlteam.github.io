@@ -11,10 +11,10 @@ This page provides information on how to install JSBML, how to use the applicati
 
 ## Installation and configuration
 
-To use JSBML, you must first install it and configure your environment to use it.
+To use JSBML, you must first obtain a copy, install it, and configure your environment to use it.
 
-{{% blurb title="Basic installation guide" icon="hand-point-right" link="installation" %}}
-Visit this page for more information about how to install and configure JSBML. It describes different options: using Maven, downloading a ready-to-use `.jar` file, or compiling the source code.
+{{% blurb title="Getting started &ndash; basic installation guide" icon="hand-point-right" link="installation" %}}
+This page explains how to install and configure JSBML. It describes different options for doing so: using Maven, downloading a ready-to-use `.jar` file, or compiling the source code.
 {{% /blurb %}}
 
 {{% blurb title="Extensions and modules installation guide" icon="plug" link="extensions" %}}
@@ -34,7 +34,7 @@ The use of JSBML presumes familiarity with SBML.  If you are not familiar with S
 The JSBML User's Guide is the best introduction to using JSBML.  This guide includes a general introduction to working with SBML using JSBML and the documentation on the differences between JSBML and [libSBML](/software/libsbml).
 {{% /blurb %}}
 
-{{% blurb title="Class diagram" icon="project-diagram" link="https://github.com/sbmlteam/jsbml/raw/master/doc/common/img/FullTypeHierarchy.pdf" %}}
+{{% blurb title="Java class diagram" icon="project-diagram" link="https://github.com/sbmlteam/jsbml/raw/master/doc/common/img/FullTypeHierarchy.pdf" %}}
 The diagram of the JSBML class hierarchy provides an overview of the object classes in JSBML.
 {{% /blurb %}}
 
