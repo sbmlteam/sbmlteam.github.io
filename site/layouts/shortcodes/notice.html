@@ -1,9 +1,14 @@
-{{ $type := .Get "type" | default "notice"}}
+<!-- Parameters to this shortcode. -->
+{{ $type  := .Get "type" | default "notice"}}
 {{ $width := .Get "width" | default "95%" }}
-<div class='alert-box alert-{{ $type }}' style="width: {{ $width }}">
-  {{ if      eq $type "danger" }}  <i class='fa-hand-paper           fa fa-2x alert-{{ $type }}'></i>
-  {{ else if eq $type "warning" }} <i class='fa-exclamation-triangle fa fa-2x alert-{{ $type }}'></i>
-  {{ else if eq $type "info" }}    <i class='fa-info                 fa fa-2x alert-{{ $type }}'></i>
+
+<!-- Internal variables. -->
+{{ $class := print "alert-" $type }}
+
+<div class='alert-box {{ $class }}' style="width: {{ $width }}">
+  {{ if      eq $type "danger" }}  <i class='fa-hand-paper           fa fa-2x {{ $class }}'></i>
+  {{ else if eq $type "warning" }} <i class='fa-exclamation-triangle fa fa-2x {{ $class }}'></i>
+  {{ else if eq $type "info" }}    <i class='fa-info                 fa fa-2x {{ $class }}'></i>
   {{ end }}
   <div class="alert-box-text">{{ .Inner | markdownify }}</div>
 </div>
