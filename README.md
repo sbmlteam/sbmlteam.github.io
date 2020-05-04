@@ -49,10 +49,16 @@ This site incorporates [Hugo Academic](https://github.com/gcushen/hugo-academic)
 The rest of this content is Copyright (C) 2018&ndash;2019 by the California Institute of Technology (Pasadena, California, USA) and distributed under the [LGPL version&nbsp;2.1](LICENSE.txt).
 
 
+Authors and history
+---------------------------
+
+The design, organization, look and feel, custom Hugo shortcodes, and many other elements of the site and the content were created by [Mike Hucka](https://github.com/mhucka) over time during the years 2018&ndash;2020.  The initial starting point was the [Academic](https://github.com/gcushen/hugo-academic) theme for Hugo, but in the end, very little of the theme wound up being present in the visible parts of the site.
+
+
 Acknowledgments
 ---------------
 
-The SBML.org website uses [Hugo](https://gohugo.io), a framework for creating static websites. Some underlying components of the site were developed by modifying the [Academic](https://github.com/gcushen/hugo-academic) theme; however, the design, organization, graphics, look and feel, custom Hugo shortcodes, and many other elements were created by [Mike Hucka](https://github.com/mhucka) over time during the years 2018&ndash;2020.
+The SBML.org website uses [Hugo](https://gohugo.io), a framework for creating static websites. 
 
 The development of SBML.org was made possible thanks to funding from the [National Institute of General Medical Sciences](https://nigms.nih.gov) (NIGMS) to the California Institute of Technology, under grant number GM070923 (principal investigator: Michael Hucka), as well as general support by the California Institute of Technology.
 
