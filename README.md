@@ -1,55 +1,60 @@
 SBML.org website<img width="28%" align="right" src=".graphics/sbml-logo.svg">
 ================
 
-Repostitory for source files for refreshed SBML.org website 2019.
+This repository contains the source files for the SBML.org website, refreshed in 2019-2020.
 
-*Authors*:      [Michael Hucka](http://github.com/mhucka)<br>
+*Authors*:      [Michael Hucka](https://github.com/mhucka)<br>
 *Repository*:   [https://github.com/caltechlibrary/sbml-org-website](https://github.com/caltechlibrary/sbml-org-website)<br>
 *License*:      except as noted, the contents are licensed with the [LGPL v.&nbsp;2.1](LICENSE.txt)
 
-☀ Introduction
------------------------------
 
-This is the repository for the completely redesigned SBML.org website, created during 2018&ndash;2019.
+Table of contents
+-----------------
+
+* [Introduction](#introduction)
+* [Documentation](#documentation)
+* [Getting help](#getting-help)
+* [Contributing](#contributing)
+* [License](#license)
+* [Authors and history](#authors-and-history)
+* [Acknowledgments](#authors-and-acknowledgments)
+
+
+
+Introduction
+------------
+
+This is the repository for the completely redesigned SBML.org website, introduced in 2020.
 
 <p align="center"><img width="60%" src=".graphics/clarification.svg"></p>
 
-✺ Installation instructions
----------------------------
 
-The following is probably the simplest and most direct way to install this software on your computer:
-```sh
-sudo python3 -m pip install git+https://github.com/caltechlibrary/sbml-org-website.git --upgrade
-```
+Documentation
+-------------
 
-Alternatively, you can clone this GitHub repository and then run `setup.py`:
-```sh
-git clone https://github.com/caltechlibrary/sbml-org-website.git
-cd sbml-org-website
-sudo python3 -m pip install . --upgrade
-```
-
-⁇ Reporting issues
------------------
-
-If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/caltechlibrary/sbml-org-website/issues) for this repository.
+Documentation about this site and the server configuration are kept in the subdirectory [support-docs](support-docs).  Please start with the [README](support-docs/README.md) file in that directory to learn more.
 
 
-☺︎ Acknowledgments
------------------------
+Getting help
+------------
+
+If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/sbmlteam/sbml-org-website/issues) for this repository.  Alternatively, you are welcome to contact the author or the SBML Team [via email](mailto:sbml-team@googlegroups.com) with questions about this repository.
+
+
+License
+-------
+
+This site incorporates [Hugo Academic](https://github.com/gcushen/hugo-academic). Those files are distributed under their [own license](site/themes/academic/LICENSE.md).
+
+The rest of this content is Copyright (C) 2018&ndash;2019 by the California Institute of Technology (Pasadena, California, USA) and distributed under the [LGPL version&nbsp;2.1](LICENSE.txt).
+
+
+Acknowledgments
+---------------
+
+The SBML.org website uses [Hugo](https://gohugo.io), a framework for creating static websites. Some underlying components of the site were developed by modifying the [Academic](https://github.com/gcushen/hugo-academic) theme; however, the design, organization, graphics, look and feel, custom Hugo shortcodes, and many other elements were created by [Mike Hucka](https://github.com/mhucka) over time during the years 2018&ndash;2020.
 
 The development of SBML.org was made possible thanks to funding from the [National Institute of General Medical Sciences](https://nigms.nih.gov) (NIGMS) to the California Institute of Technology, under grant number GM070923 (principal investigator: Michael Hucka), as well as general support by the California Institute of Technology.
-
-The SBML.org website uses [Hugo](https://gohugo.io) and was created by modifying the [Academic](https://github.com/gcushen/hugo-academic) website builder.  [Academic](https://github.com/gcushen/hugo-academic) was created by [George Cushen](https://georgecushen.com).
-
-☮︎ Copyright and license
----------------------
-
-This site incorporates files from the [Hugo Academic](https://github.com/gcushen/hugo-academic) website builder. Those files are distributed under their own license, described in the file [site/themes/academic/LICENSE.md](site/themes/academic/LICENSE.md).
-
-The rest of this content is Copyright (C) 2018&ndash;2019 by the California Institute of Technology (Pasadena, California, USA) and distributed under the [LGPL version&nbsp;2.1](LICENSE.txt).  This is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or any later version.
-
-This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY, WITHOUT EVEN THE IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  The software and documentation provided hereunder is on an "as is" basis, and the California Institute of Technology has no obligations to provide maintenance, support, updates, enhancements or modifications.  In no event shall the California Institute of Technology be liable to any party for direct, indirect, special, incidental or consequential damages, including lost profits, arising out of the use of this software and its documentation, even if the California Institute of Technology has been advised of the possibility of such damage.  See the [GNU Lesser General Public License](LICENSE.txt) for more details.
 
 <br>
 <div align="center">
@@ -62,3 +67,5 @@ This software is distributed in the hope that it will be useful, but WITHOUT ANY
     <img valign="middle" height="130" src=".graphics/caltech-round.png">
   </a>
 </div>
+
+
