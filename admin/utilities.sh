@@ -6,14 +6,21 @@
 ## Date created: 2019-05-31
 ## ============================================================================
 
-check_log_file() {
-    set_ifs
+# This definition is used in a pipe command in the main section.
+# Do NOT merge this with the next function definition for log().
+LOG="logger -t $PROCESS_OWNER -p daemon.info"
 
-    if [ -n $HUGO_LOGFILE ]; then
+log() {
+    $LOG $* >&2
+}
+
+check_log_file() {
+    file=$1
+    if [ -n "$file" ]; then
         # We have a value for the configuration variable.  Does the file exist?
-        if [ ! -e "$HUGO_LOGFILE" ]; then
+        if [ ! -e "$file" ]; then
             # The file doesn't exist.  Is it because the dir doesn't exist?
-            dir=$(dirname "$HUGO_LOGFILE")
+            dir=$(dirname "$file")
             if [ ! -d "$dir" ]; then
                 # Try to create the directory.
                 mkdir "$dir"
@@ -26,13 +33,11 @@ check_log_file() {
                 echo "Unable to write to directory $dir" >&2
                 exit 2
             fi
-        elif [ ! -w "$HUGO_LOGFILE" ]; then
-            echo "Unable to write log file $HUGO_LOGFILE." >&2
+        elif [ ! -w "$file" ]; then
+            echo "Unable to write log file $file." >&2
             exit 2
         fi
     fi
-
-    restore_ifs
 }
 
 set_ifs() {
