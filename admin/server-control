@@ -54,10 +54,10 @@ case "$1" in
 
         line=`printf '=%.0s' {1..79}`
         start_time=$(/bin/date '+%G-%m-%d:%H%M')
-        echo $line > $LOG_FILE 2>&1 &
-        echo "Starting Hugo on $start_time" > $LOG_FILE 2>&1 &
-        echo $line > $LOG_FILE 2>&1 &
-        $HUGO server $HUGO_ARGS 2>&1 | tee $LOG_FILE | $LOG &
+        echo $line >> $LOG_FILE 2>&1 &
+        echo "Starting Hugo on $start_time" >> $LOG_FILE 2>&1 &
+        echo $line >> $LOG_FILE 2>&1 &
+        $HUGO server $HUGO_ARGS 2>&1 | tee -a $LOG_FILE | $LOG &
         RETVAL=$?
         PID=`echo $!`
         if [[ -z $PID ]]; then
