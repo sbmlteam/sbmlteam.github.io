@@ -1,0 +1,27 @@
+## -*- mode: conf -*-
+## ============================================================================
+## File name   : hugo.service
+## Description : systemd configuration file for hugo
+## Author(s)   : Michael Hucka <mhucka@caltech.edu>
+## Organization: California Institute of Technology
+## Date created: 2020-04-23
+## ============================================================================
+
+[Unit]
+Description=CORS proxy service
+After=network-online.target
+
+[Service]
+Type=forking
+User=hugo
+EnvironmentFile=/home/hugo/admin/config.sh
+PIDFile=/var/run/hugo/hugo.pid
+PrivateTmp=yes
+ExecStart=/home/hugo/admin/hugo-helper start
+Restart=on-failure
+RestartSec=10
+StartLimitBurst=5
+StartLimitInterval=30
+
+[Install]
+WantedBy=multi-user.target
