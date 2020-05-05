@@ -1,0 +1,7 @@
+{{ $file  := .Get "file" }}
+{{ $side  := .Get "side" | default "right" }}
+{{ $width := .Get "width" | default "10%" }}
+
+<div class="sbml-software-icon">
+  <img style="width: {{ $width }}" align="{{ $side }}" src="{{ $file }}">
+</div>
