@@ -60,7 +60,7 @@ HUGO_OUTPUTDIR="$(pwd)/../run/hugo_output/"
 # and ADD --ignoreCache. The latter is because without it, you get bad data if
 # the google spreadsheet for SBML package is changed.
 if [[ -n $SITE_URL ]]; then
-    SERVER_ARGS="--ignoreCache --bind=$SITE_IP --baseURL=$SITE_URL --port $SITE_PORT"
+    SERVER_ARGS="--ignoreCache --bind $SITE_IP --baseURL $SITE_URL --port $SITE_PORT"
 else
     SERVER_ARGS="--disableFastRender --noHTTPCache --templateMetrics"
 fi
