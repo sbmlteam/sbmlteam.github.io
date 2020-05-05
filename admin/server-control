@@ -28,96 +28,105 @@
 
 # Make sure we're NOT running as root.
 
-if (( EUID == 0 )); then
-   echo "This script must not be run as root."
+if [[ $EUID -eq 0 ]]; then
+   echo "This script must NOT be run as root."
    exit 1
 fi
 
-# Get our configuration variables and utilities.
 
-source utilities.sh
-source server.cfg
+# Preliminary definitions.
+# .............................................................................
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+
+source $DIR/server.cfg
+source $DIR/utilities.sh
+
 
 # .............................................................................
 # The rest below is generic and probably does not need to be changed.
 
-HUGO_SERVER_ARGS="$HUGO_ARGS --cacheDir $HUGO_CACHEDIR --destination $HUGO_OUTPUTDIR"
-if [[ -n $SITE_URL ]]; then
-    HUGO_SERVER_ARGS+=" --bind=$SITE_IP --baseURL=$SITE_URL --port $SITE_PORT"
-fi
-
 case "$1" in
     start)
-        check_log_file
-
         cd "$SITE_ROOT"
+        check_log_file $LOG_FILE
+        log -s "Starting server process from directory `pwd`"
 
         line=`printf '=%.0s' {1..79}`
         start_time=$(/bin/date '+%G-%m-%d:%H%M')
-        echo $line > $HUGO_LOGFILE 2>&1 &
-        echo "Starting Hugo on $start_time" > $HUGO_LOGFILE 2>&1 &
-        echo $line > $HUGO_LOGFILE 2>&1 &
-
-        $HUGO server $HUGO_SERVER_ARGS > $HUGO_LOGFILE 2>&1 &
+        echo $line > $LOG_FILE 2>&1 &
+        echo "Starting Hugo on $start_time" > $LOG_FILE 2>&1 &
+        echo $line > $LOG_FILE 2>&1 &
+        $HUGO server $HUGO_ARGS 2>&1 | tee $LOG_FILE | $LOG &
         RETVAL=$?
         PID=`echo $!`
         if [[ -z $PID ]]; then
-            echo "Unable to start hugo process." >&2
+            log -s "Failed to start $HUGO process"
+            exit 1
         else
-            echo $PID > $HUGO_PIDFILE
-            echo "Server started successfully with PID $PID." >&2
+            echo $PID > $PID_FILE
+            log -s "Server started successfully with PID $PID."
         fi
-        echo "Log file is $HUGO_LOGFILE" >&2
         exit $RETVAL
         ;;
 
     stop)
-        if [[ ! -e $HUGO_PIDFILE ]]; then
-            echo "PID file $HUGO_PIDFILE does not exist." >&2
+        if [[ ! -e $PID_FILE ]]; then
+            echo "PID file $PID_FILE does not exist."
             exit 2
         fi
-        PID=`cat $HUGO_PIDFILE`
-        if ! kill -TERM  $PID> /dev/null 2>&1 ; then
-            # We don't want to start killing processes by name, because the
-            # user might have more than one server running.  Just give up.
-            if ps -p $PID > /dev/null 2>&1 ; then
-                echo "Could not terminate process $PID." >&2
-                exit 1
-            else
-                echo "Process $PID no longer exists." >&2
-                exit 1
-            fi
-        else
-            echo "Process $PID killed." >&2
+        PID=$(<$PID_FILE)
+        if [[ -z $PID ]]; then
+            echo "Proxy server does not appear to be running"
             exit 0
+        else
+            if ! kill -TERM  $PID> /dev/null 2>&1 ; then
+                # We don't want to start killing processes by name, because
+                # there might be more than one server running.  Just give up.
+                if ps -p $PID > /dev/null 2>&1 ; then
+                    echo "Could not terminate process $PID."
+                    exit 1
+                else
+                    echo "Process $PID no longer exists."
+                    echo "" > $PID_FILE
+                    exit 1
+                fi
+            else
+                log -s "Process $PID killed."
+                exit 0
+            fi
         fi
         ;;
 
     restart)
         $0 stop
         if [[ $? -eq 0 ]]; then
-            echo "Pausing for $RESTART_PAUSE s." >&2
+            log -s "Pausing for $RESTART_PAUSE seconds."
             sleep $RESTART_PAUSE
         fi
-        echo "Restarting server." >&2
         $0 start
         exit $?
         ;;
 
     status)
-        if [[ ! -e $HUGO_PIDFILE ]]; then
-            echo "PID file $HUGO_PIDFILE does not exist." >&2
+        if [[ ! -e $PID_FILE ]]; then
+            echo "PID file $PID_FILE does not exist."
             exit 2
         fi
-        PID=`cat $HUGO_PIDFILE`
-        if ps -p $PID > /dev/null 2>&1 ; then
-            echo "Hugo process $PID running." >&2
+        PID=`cat $PID_FILE`
+        if [[ -z $PID ]]; then
+            echo "Proxy server does not appear to be running"
+            exit 1
+        elif ps -p $PID > /dev/null 2>&1 ; then
+            echo "Process $PID running."
             exit 0
         else
-            echo "Process $PID no longer exists." >&2
+            echo "Process $PID no longer exists."
+            echo "" > $PID_FILE
             exit 1
         fi
         ;;
+
     *)
         echo "Usage: $0 {start|stop|restart|status}." >&2
         exit 3
