@@ -3,6 +3,9 @@ SBML.org website<img width="28%" align="right" src=".graphics/sbml-logo.svg">
 
 This repository contains the source files for the SBML.org website, refreshed in 2019-2020.
 
+<p align="center"><img width="60%" src=".graphics/clarification.svg"></p>
+
+
 *Authors*:      [Michael Hucka](https://github.com/mhucka)<br>
 *Repository*:   [https://github.com/caltechlibrary/sbml-org-website](https://github.com/caltechlibrary/sbml-org-website)<br>
 *License*:      except as noted, the contents are licensed with the [LGPL v.&nbsp;2.1](LICENSE.txt)
@@ -24,9 +27,7 @@ Table of contents
 Introduction
 ------------
 
-This is the repository for the completely redesigned SBML.org website, introduced in 2020.
-
-<p align="center"><img width="60%" src=".graphics/clarification.svg"></p>
+This is the repository for the completely redesigned SBML.org website, introduced in 2020.  The new site is designed as a static site generated using [Hugo](https://gohugo.io) and mostly written in Markdown.  Changes to the site are achieved by editing the files in this git repository and merging the changes into the master branch, whereupon the web server for SBML.org will automatically notice them after a time and update the site pages.
 
 
 Documentation
