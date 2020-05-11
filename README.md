@@ -53,7 +53,7 @@ The rest of this content is Copyright (C) 2018&ndash;2019 by the California Inst
 Authors and history
 ---------------------------
 
-The design, organization, look and feel, custom Hugo shortcodes, and many other elements of the site and the content were created by [Mike Hucka](https://github.com/mhucka) over time during the years 2018&ndash;2020.  The initial starting point was the [Academic](https://github.com/gcushen/hugo-academic) theme for Hugo, but in the end, very little of the theme wound up being present in the visible parts of the site.
+The design, organization, look and feel, custom Hugo shortcodes, and many other elements of the site, and much of its content, were created by [Mike Hucka](https://github.com/mhucka) over time during the years 2018&ndash;2020.  The initial starting point was the [Academic](https://github.com/gcushen/hugo-academic) theme for Hugo, but in the end, very little of the theme wound up being present in the visible parts of the site.
 
 
 Acknowledgments
