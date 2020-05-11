@@ -6,13 +6,24 @@ layout = "single"
 #============================================================================
 +++
 
-SBML.org is the web portal for SBML, the Systems Biology Markup Language.
+SBML.org is the web portal for SBML, the Systems Biology Markup Language.  This page provides information about the SBML.org website.
 
 Site data
 ---------
 
-Site revision: {{< value "site" "revision" >}}<br>
-Last modified: {{< value "site" "timestamp" >}}
+Information about the site revision and modification date/time is generated automatically using [git commit hooks](https://github.com/sbmlteam/sbml-org-website/.githooks).
+
+<table class="no-borders no-striping tight-spacing">
+  <tr>
+    <td align="right"><strong>Date &amp; time of last modification</strong>:</td>
+    <td>{{< value "site" "timestamp" >}}</td>
+  </tr><tr>
+    <td align="right"><strong>Site revision number</strong>:</td>
+    <td>{{< value "site" "revision" >}}</td>
+  </tr>
+</table>
+
+Note that the data populating some pages on the site are generated from external sources, and consequently, it is possible some pages on this site have newer content than what is implied by the timestamp above.
 
 
 Site history
@@ -20,7 +31,7 @@ Site history
 
 The SBML.org website gone through several evolutions.  The design, organization, look and feel, custom [Hugo shortcodes](https://gohugo.io/content-management/shortcodes/), and many other elements of this latest iteration of SBML.org were created by [Mike Hucka](https://www.cds.caltech.edu/~mhucka/) over time during the years 2018&ndash;2020.  It was made public in mid-2020.  The site is generated using [Hugo](https://gohugo.io) and mostly written in Markdown.
 
-The site source files are [available on GitHub](https://github.com/sbmlteam/sbml-org-website).
+The site source files are [available on GitHub](https://github.com/sbmlteam/sbml-org-website).  Everyone is welcome (encouraged, even!) to report problems or offer suggestions using the [issue tracker](https://github.com/sbmlteam/sbml-org-website/issues).
 
 
 Acknowledgments
