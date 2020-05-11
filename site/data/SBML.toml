@@ -1,22 +1,10 @@
 # =============================================================================
 # File name   : /data/SBML.toml
-# Description : Data file for SBML specifications and other things
+# Description : Data file for SBML core specifications
 # Author(s)   : Michael Hucka <mhucka@caltech.edu>
 # Organization: California Institute of Technology
 # Date created: 2020-03-10
 # =============================================================================
-
-# Data for software -----------------------------------------------------------
-
-[libsbml]
-download_url = "https://sourceforge.net/projects/sbml/files/libsbml"
-latest_release = "5.18.0"
-
-[jsbml]
-download_url = "https://github.com/sbmlteam/jsbml/releases"
-latest_release = "1.5"
-
-# Data for specifications -----------------------------------------------------
 
 # Apart from the URL for the Google spreadsheet for packages, the rest of this
 # next data array is currently only for the core specs because we don't have

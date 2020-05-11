@@ -1,7 +1,25 @@
+<!-- ==========================================================================
+File name   : /layouts/shortcodes/value.html
+Description : Return a value from a data array in /site/data
+Author(s)   : Michael Hucka <mhucka@caltech.edu>
+Organization: California Institute of Technology
+Date created: 2020-05-10
+
+This takes 2 arguments.  The first is the name of a data array in /site/data/.
+This is usually a TOML file, such as "/site/data/SBML.toml", although Hugo
+actually allows data to be stored in some other ways too.  (But to keep things
+simple, I've tried to stick with TOML files for this.)
+
+The second argument is an element in that array, possibly in dotted notation
+if the element is nested.
+=========================================================================== -->
 {{- $array := .Get 0 -}}
 {{- $key   := .Get 1 -}}
-{{- $data := .Site.Data.SBML -}}
-{{- range $component := split $array "." -}}
-  {{- $data = index $data $component -}}
+{{- $data  := index .Site.Data $array -}}
+{{- if $data -}}
+  {{ $value := "" }}
+  {{- range $component := split $key "." -}}
+    {{- $value = index $data $component -}}
+  {{- end -}}
+  {{- $value -}}
 {{- end -}}
-{{- index $data $key -}}
