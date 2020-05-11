@@ -24,8 +24,8 @@ setcap 'cap_net_bind_service=+ep' /usr/local/bin/hugo
 This must be performed after every update of the binary.
 
 
-Organizing the Hugo server contents
------------------------------------
+Setting up the Hugo server
+--------------------------
 
 The files for the copy of the SBML site are located in `/home/hugo/sbml/`.  A shell script ([`admin/server-control`](../../admin/server-control)) controls starting/stopping the Hugo server.
 
