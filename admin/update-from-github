@@ -15,26 +15,32 @@
 # the protocol used to create the initial git clone must be https instead of
 # git (or else you will get permission denied errors when this script runs).
 #
-# Don't forget to clone with --recursive!
+# Don't forget to do the first clone of the repo using --recursive!
 #
 # This is intended to be run from cron or a similar system daemon control
 # system (e.g., Jenkins).  Here's an example of a cron entry:
 #
-#    */5 * * * * /var/www/sites/sbml/admin/update-from-github >> /var/log/hugo/github-updates.log 2>&1
+#   */5 * * * * /home/hugo/sbml/admin/update-from-github >> /var/log/hugo/github-updates.log 2>&1
 #
-# Assumptions:
-# - the remote origin is set in the git repo (=> don't need an argument)
-# - this script is in the /admin subdirectory and hasn't been copied somewhere
-# - permissions are set up properly so can clone repo
+# If you want to update a branch, pass the branch name as an argument. For
+# example, if you want to keep the branch 'develop' updated in a local repo
+# instead of defaulting to 'master', you could do this:
+#
+#   */5 * * * * /home/hugo/sbml/admin/update-from-github develop >> /var/log/hugo/github-updates.log 2>&1
+#
+# Assumptions for purposes of the SBML.org site repository:
+# - this script is located in the local repository copy
+# - permissions on this script and other things are set up properly
 # -----------------------------------------------------------------------------
 
 # Because this is run from cron, we may need to include /usr/local/bin/.
 
 PATH=/usr/local/bin:/opt/local/bin:/bin:/usr/bin
 
-# Get the path of our local repo based on where this file is found.
+# Get the path of our local repo, based on the assumption that this file is
+# located somewhere in the repo itself.
 
-REPO="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+REPO=$(git rev-parse --show-toplevel)
 
 # Get info about the remote origin.  The echo to /dev/null is because "git
 # remote update" doesn't accept a --quiet argument.
