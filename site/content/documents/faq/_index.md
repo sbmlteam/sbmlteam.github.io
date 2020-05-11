@@ -474,7 +474,7 @@ _Important_: there is frequent confusion around the purpose of the content of th
 
 SBML Level&nbsp;2 Version&nbsp;4 and SBML Level&nbsp;3 do not require models to have units declared or to have consistent units&mdash;correctness and consistency of units is not a condition for a valid SBML encoding of a model.  This may seem strange, so some words of explanation are warranted.  The decision to relax requirements of unit consistency was made via a [community vote in 2007](http://sbml.org/Forums/index.php?t=msg&th=1124&rid=0#msg_4249) and it represents a change from Level&nbsp;2 Version&nbsp;3.  The realization that this position had to be taken resulted from many people's long experience with encoding models.  There are multiple reasons for the decision, but probably the most convincing argument is the following. There exist models in the published literature that have inconsistent units.  Regardless of what one thinks about such models, if we want to allow SBML to encode them _as published_, SBML _cannot_ require consistency of units as a precondition of a valid SBML encoding.  If an inconsistency were treated as an error of SBML encoding, then it would be impossible for SBML to encode such models.
 
-### Why can't I use the <rem> operator in SBML MathML?
+### Why can't I use the `<rem>` operator in SBML MathML?
 
 When the decision came about to use MathML instead of infix strings, it was decided to keep the MathML subset allowed in SBML documents as small as possible. The allowed subset mirrors closely what was allowed in the infix format. This was done to ensure rapid adoption of MathML.
 
