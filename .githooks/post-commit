@@ -26,8 +26,6 @@ cat <<EOF > $versionfile
 # =============================================================================
 # File name   : /data/site.toml
 # Description : Data file for site data
-# Author(s)   : Michael Hucka <mhucka@caltech.edu>
-# Organization: California Institute of Technology
 #
 #   ╭────────────────────── Notice ── Notice ── Notice ──────────────────────╮
 #   │                                                                        │
@@ -51,6 +49,3 @@ identifier = "$identifier"
 revision = "$count ($identifier on branch $branch)"
 timestamp = "$timestamp"
 EOF
-
-git add $versionfile
-touch $versionfile.needcommit
