@@ -16,7 +16,7 @@
 
 root=$(git rev-parse --show-toplevel)
 count=$(git rev-list HEAD --count)
-branch=$(git branch --show-current)
+branch=$(git rev-parse --abbrev-ref HEAD)
 identifier=$(git describe --always --tags --dirty="-local")
 timestamp=$(git log -1 --date=format:"%Y-%m-%d %T" --format="%ai")
 
