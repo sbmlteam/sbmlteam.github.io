@@ -49,6 +49,3 @@ identifier = "$identifier"
 revision = "$count ($identifier on branch $branch)"
 timestamp = "$timestamp"
 EOF
-
-git add $versionfile
-touch $versionfile.needcommit
