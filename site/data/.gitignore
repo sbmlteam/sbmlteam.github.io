@@ -1,0 +1,21 @@
+# Explanation about site.toml:
+
+# The site.toml file is created automatically.  However, it cannot be
+# committed into the repository because then git merges between branches will
+# always fail with conflicts.  Now, it *is* possible to make automatic merges
+# work despite conflicts by using a custom git merge driver, or doing some
+# other processes using git hooks.  The reason *we* can't do that here is
+# because custom merge drivers and server-side hooks cannot be installed on
+# GitHub.  The only way to make them work would be to always do merges on a
+# local computer and push the results to GitHub.  But, we *want* to be able
+# to let people do pull requests on GitHub and do merges using GitHub's
+# web-based facilities; consequently, git hook-based solutions for handling
+# merge conflicts are not a practical solution for us.  The solution taken
+# here instead is (1) avoid keeping site.toml in git in the first place, so
+# there's never a conflict; (2) don't do anything requires the repository
+# copy on GitHub itself to need a site.toml file; and (3) use client-side git
+# hooks to produce site.toml on the sbml.org servers (since we *can* install
+# git hooks there -- we control those environments, unlike GitHub) and to
+# produce site.toml on local individual users's copies of the repository.
+
+site.toml
