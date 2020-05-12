@@ -1,17 +1,10 @@
 #!/bin/bash
 # ============================================================================
-# File name   : pre-commit
-# Description : git pre-commit hook to save a version number on every commit
+# File name   : post-merge
+# Description : 
 # Author(s)   : Michael Hucka <mhucka@caltech.edu>
 # Organization: California Institute of Technology
 # Date created: 2020-05-04
-#
-# This hook and the companion post-commit hook need to be installed in your
-# local copy of the repository.  One way to do that is to configure git to
-# look for hooks in a local directory:
-#
-#   git config core.hooksPath .githooks
-#
 # ============================================================================
 
 root=$(git rev-parse --show-toplevel)
@@ -51,6 +44,3 @@ identifier = "$identifier"
 revision = "$count ($identifier on branch $branch)"
 timestamp = "$timestamp"
 EOF
-
-git add $versionfile
-touch $versionfile.needcommit
