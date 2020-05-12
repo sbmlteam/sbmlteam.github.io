@@ -37,6 +37,11 @@
 
 PATH=/usr/local/bin:/opt/local/bin:/bin:/usr/bin
 
+# Change to the directory where this file is located.  This is so that it
+# works from cron.
+
+cd $(dirname "${BASH_SOURCE[0]}") > /dev/null 2>&1
+
 # Get the path of our local repo, based on the assumption that this file is
 # located somewhere in the repo itself.
 
