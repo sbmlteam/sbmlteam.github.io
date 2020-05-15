@@ -9,7 +9,7 @@
 # This is intended to be run from cron or a similar system daemon control
 # system (e.g., Jenkins).  Here's an example of a cron entry:
 #
-#   */10 * * * * /home/hugo/sbml/admin/download-spreadsheet >> /var/log/hugo/spreadsheet-updates.log 2>&1
+#   */10 * * * * /home/hugo/sbml/admin/update-spreadsheet-timestamp >> /var/log/hugo/spreadsheet-updates.log 2>&1
 #
 # Assumptions for purposes of the SBML.org site repository:
 # - this script is located in the local repository copy
