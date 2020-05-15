@@ -68,7 +68,7 @@ if [ $LOCAL = $REMOTE ]; then
 elif [ $LOCAL = $BASE ]; then
     # echo "Need to pull"
     git stash
-    git pull --rebase origin $UPSTREAM
+    git pull --rebase origin ${1}
     RETVAL=$?
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
