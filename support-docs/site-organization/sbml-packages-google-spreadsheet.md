@@ -37,5 +37,6 @@ The timestamp is used in a process running on the SBML.org server to determine w
 curl 'https://docs.google.com/spreadsheets/d/1pa01Z72t1UKrjliAXBhxjjN1nnOf00gXcfm4_pWXOxA/export?exportFormat=tsv&range=A18:A18'
 ```
 
-If the last value of the timestamp is different from the most recent value, a copy of the spreadsheet data is downloaded and stored on the SBML.org server to replace the previous copy of the data.
+If the last value of the timestamp is different from the most recent value, a timestamp file is touched, which in turn causes the Hugo server to rebuild the site.
+
 
