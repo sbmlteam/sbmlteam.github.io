@@ -1,0 +1,48 @@
+#!/bin/bash -x
+# ============================================================================
+# File name   : update-spreadsheet-timestamp
+# Description : Script to check the SBML L3 package spreadsheet for changes
+# Author(s)   : Michael Hucka <mhucka@caltech.edu>
+# Organization: California Institute of Technology
+# Date created: 2020-05-15
+#
+# This is intended to be run from cron or a similar system daemon control
+# system (e.g., Jenkins).  Here's an example of a cron entry:
+#
+#   */10 * * * * /home/hugo/sbml/admin/download-spreadsheet >> /var/log/hugo/spreadsheet-updates.log 2>&1
+#
+# Assumptions for purposes of the SBML.org site repository:
+# - this script is located in the local repository copy
+# - permissions on this script and other things are set up properly
+# -----------------------------------------------------------------------------
+
+# Because this is run from cron, we may need to include /usr/local/bin/.
+PATH=/usr/local/bin:/opt/local/bin:/bin:/usr/bin
+
+# Change to the directory where this file is located (which is assumed to be
+# the "admin" directory of the site repository).  This is so that it works
+# from cron.
+cd $(dirname "${BASH_SOURCE[0]}") > /dev/null 2>&1
+
+# Where do we store the timestamp from the SBML L3 package spreadsheet?
+TIMESTAMP_FILE="$(pwd)/../site/static/specifications/sbml-level-3/packages-spreadsheet-timestamp.txt"
+
+# URL for the value we read.
+TIMESTAMP_URL='https://docs.google.com/spreadsheets/d/1pa01Z72t1UKrjliAXBhxjjN1nnOf00gXcfm4_pWXOxA/export?exportFormat=tsv&range=A18:A18'
+
+# Get the previous value, compare it, and refresh the timestamp file if
+# there's a difference.  Simply touching the timestamp file will cause Hugo
+# to regenerate the site, by virtue of its watching for changes in the
+# filesystem, so we don't need to do anything more here.  IMPORTANT: the
+# Hugo server must be running with --ignoreCache or else it will never
+# re-read the spreadsheet data unless the server is restarted completely.
+currentvalue=$(curl $TIMESTAMP_URL)
+if [[ -f $TIMESTAMP_FILE ]]; then
+    lastvalue=$(<$TIMESTAMP_FILE)
+    if [[ $lastvalue == $currentvalue ]]; then
+        exit 0
+    fi
+fi
+
+# If we get here, we rewrite the timestamp file with a new value.
+echo $currentvalue > $TIMESTAMP_FILE
