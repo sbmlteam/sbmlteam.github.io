@@ -47,34 +47,15 @@ cd $(dirname "${BASH_SOURCE[0]}") > /dev/null 2>&1
 
 REPO=$(git rev-parse --show-toplevel)
 
-# Get info about the remote origin.  The echo to /dev/null is because "git
-# remote update" doesn't accept a --quiet argument.
+# The rest is a sledgehammer, but past efforts at smarter scripts failed,
+# and I'm just tired, so tired, of git.
 
 echo "===== ${0##*/} started at $(/bin/date '+%G-%m-%d:%H%M') ====="
 
 cd $REPO
-git remote update > /dev/null
-
-# The following code is based on http://stackoverflow.com/a/3278427/743730
-
-UPSTREAM=${1:-'@{u}'}
-LOCAL=$(git rev-parse @{0})
-REMOTE=$(git rev-parse "$UPSTREAM")
-BASE=$(git merge-base @{0} "$UPSTREAM")
-
-RETVAL=0
-if [ $LOCAL = $REMOTE ]; then
-    echo "Up-to-date"
-elif [ $LOCAL = $BASE ]; then
-    # echo "Need to pull"
-    git stash
-    git pull --rebase origin ${1}
-    RETVAL=$?
-elif [ $REMOTE = $BASE ]; then
-    echo "Need to push"
-else
-    echo "Diverged"
-fi
+git stash
+git pull --rebase origin ${1}
+RETVAL=$?
 
 echo "===== ${0##*/} stopped at $(/bin/date '+%G-%m-%d:%H%M') ====="
 exit $RETVAL
