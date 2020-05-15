@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 # ============================================================================
 # File name   : update-spreadsheet-timestamp
 # Description : Script to check the SBML L3 package spreadsheet for changes
@@ -25,7 +25,8 @@ PATH=/usr/local/bin:/opt/local/bin:/bin:/usr/bin
 cd $(dirname "${BASH_SOURCE[0]}") > /dev/null 2>&1
 
 # Where do we store the timestamp from the SBML L3 package spreadsheet?
-TIMESTAMP_FILE="$(pwd)/../site/static/specifications/sbml-level-3/packages-spreadsheet-timestamp.txt"
+# IMPORTANT: this has to be a file in the site contents, not in /static/.
+TIMESTAMP_FILE="$(pwd)/../site/content/documents/specifications/packages-spreadsheet-timestamp.txt"
 
 # URL for the value we read.
 TIMESTAMP_URL='https://docs.google.com/spreadsheets/d/1pa01Z72t1UKrjliAXBhxjjN1nnOf00gXcfm4_pWXOxA/export?exportFormat=tsv&range=A18:A18'
@@ -36,7 +37,7 @@ TIMESTAMP_URL='https://docs.google.com/spreadsheets/d/1pa01Z72t1UKrjliAXBhxjjN1n
 # filesystem, so we don't need to do anything more here.  IMPORTANT: the
 # Hugo server must be running with --ignoreCache or else it will never
 # re-read the spreadsheet data unless the server is restarted completely.
-currentvalue=$(curl $TIMESTAMP_URL)
+currentvalue=$(curl --silent $TIMESTAMP_URL)
 if [[ -f $TIMESTAMP_FILE ]]; then
     lastvalue=$(<$TIMESTAMP_FILE)
     if [[ $lastvalue == $currentvalue ]]; then
