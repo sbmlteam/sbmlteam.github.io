@@ -19,9 +19,13 @@ The top level of the git repository has the following tree structure (the ordina
 └── ... ordinary files ...
 ```
 
-The `.githooks` directory contains import git hooks that need to be installed by the maintainers of the `develop` and `master` branches of the repository.  Those branches must be merged on a local computer because GitHub will not run the necessary git hooks.  The information about how to set up the git hooks in your local copy of this repository can be found in the [README.md](../../.githooks/README.md) file.
+The `.githooks` directory contains import git hooks that developers can install if they are working with a local copy of the site repository.  The information about how to set up the git hooks in your local copy of this repository can be found in the [README.md](../../.githooks/README.md) file.
 
 The `admin` directory contains configuration and script files used to run a server.  If you want to run a local copy of the server so that you can edit files locally and get immediate live previews of the changes, please see the [README.md](../../admin/README.md) file there for instructions. 
+
+The `support-docs` directory contains documentation about various aspects of the site and how to maintain it.
+
+The `site` directory is described in detail below.
 
 
 Site content hierarchy
