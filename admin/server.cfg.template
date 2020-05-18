@@ -21,15 +21,15 @@ SITE_PORT=
 # System process configuration
 # .............................................................................
 # Note: we don't run Hugo as root. To have Hugo bind to port 80 as a non-root
-# user, it's necessary to use setcap on the hugo binary (our approach) or
-# create a redirection via iptables.  However, that means the hugo binary
-# can't write to /var/log and /var/run unless separate subdirectories are
-# pre-created.  On MacOS, if you create /var/run/hugo and reboot, the
-# directory will get deleted.  That in turn means either you have to figure
-# out how to automate recreating it at every boot, or else you choose to
-# write the log and pid files somewhere else.  For this reason, the default
-# location for the log and pid file is a directory local to the installation
-# of sbml.org.)
+# user, it's necessary to use setcap on the hugo binary or create a
+# redirection from a non-root port to port 80 (e.g., using haproxy or
+# similar).  However, that means the hugo binary can't write to /var/log and
+# /var/run unless separate subdirectories are pre-created.  On MacOS, if you
+# create /var/run/hugo and reboot, the directory will get deleted.  That in
+# turn means either you have to figure out how to automate recreating it at
+# every boot, or else you choose to write the log and pid files somewhere
+# else.  For this reason, the default location for the log and pid file is a
+# location in this site directory tree.)
 
 # Where do we write the pid file on this system?
 PID_FILE="$(pwd)/../run/hugo.pid"
@@ -45,35 +45,42 @@ PROCESS_OWNER=hugo
 # Hugo server configuration
 # .............................................................................
 
+# The executable we use to run Hugo.
 HUGO="/usr/local/bin/hugo"
 
-# Note #1: we don't run Hugo as root. To have Hugo bind to port 80 as a non-root
-# user, it's necessary to use setcap on the hugo binary (our approach) or
-# create a redirection via iptables.  However, that means the hugo binary can't
-# write to /var/log and /var/run unless separate subdirectories are precreated.
-#
+# Note #1: we don't run Hugo as root.  This means the hugo binary can't write
+# to /var/log and /var/run unless separate subdirectories are precreated by
+# root.  Be aware of that if you change the following paths to /var/*.
 # Note #2: the value of HUGO_CACHEDIR must end with a '/'.
 HUGO_CACHEDIR="$(pwd)/../run/hugo_cache/"
 HUGO_OUTPUTDIR="$(pwd)/../run/hugo_output/"
 
-# For production use, REMOVE --disableFastRender --noHTTPCache --templateMetrics
-# and ADD --ignoreCache. The latter is because without it, you get bad data if
-# the google spreadsheet for SBML package is changed.
+# Production mode is detected by setting SITE_URL.  Otherwise, we assume
+# we're running in development mode, and use different arguments.  Note:
+# --ignoreCache is added in production mode because without it, you get bad
+# data if the google spreadsheet for SBML package is changed.  However, its
+# use incurs a significant time cost to rebuild the site because getCSV is
+# called multiple times and so page reloads during development take too long.
+# So when working in development mode, we have to be conscious that the data
+# fetched with getCSV is *not* updated even when a page is edited and Hugo
+# rebuilds the site.  (With --ignoreCache, Hugo only refreshes the getCSV data
+# from the source at the time Hugo starts up, and never again thereafter.)
 if [[ -n $SITE_URL ]]; then
-    SERVER_ARGS="--ignoreCache --bind $SITE_IP --baseURL $SITE_URL --port $SITE_PORT"
+    SERVER_ARGS="--disableLiveReload --ignoreCache --bind $SITE_IP --baseURL $SITE_URL --port $SITE_PORT"
 else
-    SERVER_ARGS="--disableFastRender --noHTTPCache --templateMetrics"
+    SERVER_ARGS="--noHTTPCache --disableFastRender --templateMetrics --debug"
 fi
 
-# Note: you would think that using the --logFile argument would be a smart
+# Note #2: you would think that using the --logFile argument would be a smart
 # way of writing Hugo's output to a log file. YOU WOULD BE WRONG, because
 # Hugo doesn't all its messages to the file given by --logFile.  Some
 # messages are always printed to the terminal.  So, we don't use --logFile
 # here, because it's kind of useless, and instead, our control script
-# redirects output to a log file explicitly.
-HUGO_ARGS="--cacheDir $HUGO_CACHEDIR --destination $HUGO_OUTPUTDIR"
+# (server-control) redirects output to a log file explicitly.
+HUGO_ARGS="--verbose --renderToDisk --cleanDestinationDir"
 HUGO_ARGS+=" "
-HUGO_ARGS+="--verbose --renderToDisk --cleanDestinationDir"
+HUGO_ARGS+="--cacheDir $HUGO_CACHEDIR --destination $HUGO_OUTPUTDIR"
+
 HUGO_ARGS+=" "
 HUGO_ARGS+=$OUTPUT_ARGS
 HUGO_ARGS+=" "
@@ -84,4 +91,4 @@ HUGO_ARGS+=$SERVER_ARGS
 # .............................................................................
 
 # Seconds to wait between stop and start when doing a restart.
-RESTART_PAUSE=5
+RESTART_PAUSE=10

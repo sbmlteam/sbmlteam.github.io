@@ -40,11 +40,41 @@ fi
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 
 source $DIR/server.cfg
-source $DIR/utilities.sh
+
+# This definition is used in a pipe command in the main section.
+# Do NOT merge this with the next function definition for log().
+LOG="logger -t $PROCESS_OWNER -p daemon.info"
+
+log() {
+    $LOG $* >&2
+}
+
+check_log_file() {
+    file=$1
+    if [ ! -e "$file" ]; then
+        # The file doesn't exist.  Is it because the dir doesn't exist?
+        dir=$(dirname "$file")
+        if [ ! -d "$dir" ]; then
+            # Try to create the directory.
+            mkdir "$dir"
+            if [ ! -d "$dir" ]; then
+                echo "Unable to create $dir" >&2
+                exit 2
+            fi
+        fi
+        if [ ! -w "$dir" ]; then
+            echo "Unable to write to directory $dir" >&2
+            exit 2
+        fi
+    elif [ ! -w "$file" ]; then
+        echo "Unable to write log file $file." >&2
+        exit 2
+    fi
+}
 
 
+# Main code.
 # .............................................................................
-# The rest below is generic and probably does not need to be changed.
 
 case "$1" in
     start)

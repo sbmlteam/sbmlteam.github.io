@@ -3,8 +3,33 @@ Site layout
 
 This repository ([sbml-org-website](https://github.com/sbmlteam/sbml-org-website)) contains almost all of the files used to configure and run the server that serves [https://sbml.org](https://sbml.org).  The site is generated with the help of Hugo, a static site generator.  What this means, basically, is that Hugo reads some configuration files and content files written in Markdown, and then produces a bunch of HTML files that constitute the actual site.  Those HTML sites are then made available by a web server listening to the address [https://sbml.org](https://sbml.org).  The Hugo configuration and content are located in the [site](../../site) subdirectory of the repository.
 
-File hierarchy
---------------
+Top-level file hierarchy
+------------------------
+
+The top level of the git repository has the following tree structure (the ordinary files such as `README.md` are omitted here to focus on the subdirectories):
+
+```
+.
+├── .githooks
+├── .graphics
+├── admin
+├── site
+├── support-docs
+│
+└── ... ordinary files ...
+```
+
+The `.githooks` directory contains import git hooks that developers can install if they are working with a local copy of the site repository.  The information about how to set up the git hooks in your local copy of this repository can be found in the [README.md](../../.githooks/README.md) file.
+
+The `admin` directory contains configuration and script files used to run a server.  If you want to run a local copy of the server so that you can edit files locally and get immediate live previews of the changes, please see the [README.md](../../admin/README.md) file there for instructions. 
+
+The `support-docs` directory contains documentation about various aspects of the site and how to maintain it.
+
+The `site` directory is described in detail below.
+
+
+Site content hierarchy
+----------------------
 
 Here are the first two levels of the site files:
 
