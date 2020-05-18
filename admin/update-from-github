@@ -57,6 +57,8 @@ branch=$(git rev-parse --abbrev-ref HEAD)
 changes=$(git rev-list HEAD...origin/$branch --count)
 
 if (( $changes > 0 )); then
+    echo "Remote branch $branch has changes. Pulling them & updating site.toml"
+
     # This is a sledgehammer, but past efforts at being smarter failed, and
     # I'm just tired, so tired, of git.
     git stash
@@ -97,6 +99,8 @@ identifier = "$identifier"
 revision = "$count ($identifier on branch $branch)"
 timestamp = "$timestamp"
 EOF
+else
+    echo "No changes"
 fi
 
 # Done.
