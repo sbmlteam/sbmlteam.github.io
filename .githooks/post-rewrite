@@ -1,17 +1,13 @@
 #!/bin/bash
 # ============================================================================
 # File name   : post-rewrite
-# Description : git post hook to save a version number on every commit
+# Description : git post hook to save a version number
 # Author(s)   : Michael Hucka <mhucka@caltech.edu>
 # Organization: California Institute of Technology
 # Date created: 2020-05-04
 #
-# This hook and the companion hooks need to be installed in your local copy
-# of the repository.  One way to do that is to configure git to look for
-# hooks in a local directory:
-#
-#   git config core.hooksPath .githooks
-#
+# Please read the information in the README.md in the .githooks directory
+# where this file is located.
 # ============================================================================
 
 root=$(git rev-parse --show-toplevel)
@@ -35,10 +31,11 @@ cat <<EOF > $versionfile
 #   │                                                                        │
 #   ╰────────────────────── Notice ── Notice ── Notice ──────────────────────╯
 #
-# See the explanation in the file .githooks/README.md in the top level of the
-# repository.  The post-commit, post-merge and post-rewrite hooks need to be
-# installed in your local copy of the repository if you want to commit any
-# changes to the repository.  One way to do that is to configure git like this:
+# Please see the explanation in the file .githooks/README.md in the top level
+# of the repository.  The post-commit, post-merge and post-rewrite hooks need
+# to be installed in your local copy of the repo if you want the file
+# /site/data/site.toml to be updated locally when you commit changes.  One
+# way to do that is to configure git like this:
 #
 #   git config core.hooksPath .githooks
 #
