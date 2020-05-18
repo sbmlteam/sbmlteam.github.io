@@ -31,7 +31,7 @@ spreadsheet is kept in the data file /data/SBML.toml in our site structure.
     {{ $details_pg  := print "/documents/specifications/level-3/version-1/" $label }}
 
     <!-- Iterate over rows, skipping empty rows & retired packages. -->
-    {{ if and (ne $label "") (ne $label "Label") (not (in $status "Retired")) }}
+    {{ if and (ne $label "") (ne $label "Label") (not (in $label "Time")) (not (in $status "Retired")) }}
       <tr>
         <td class="sbml-ptable-col-name">
           <span class="sbml-ptable-page-link">
