@@ -33,7 +33,7 @@ Depending on how you like to work, there are three ways you can propose changes 
 
 ### _Merging changes to `develop`_
 
-If you are an SBML Team member or an SBML Editor, feel free to review change proposals using the [GitHub facilities for reviewing pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-reviews).  If the changes seem appropriate, worthwhile and error-free, you can go ahead and merge the pull request into the `develop` branch.
+If you are an SBML Team member or an SBML Editor, feel free to review change proposals using the [GitHub facilities for reviewing pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-request-reviews).  If the changes seem appropriate, worthwhile and error-free, you can go ahead and merge the pull request into the `develop` branch.  If you make the merge on GitHub itself, the changes should automatically get reflected on the preview server after a delay of 5&ndash;10 minutes.  If you make the changes on your local computer, push the changes to GitHub; after that, the preview server should pick them after a similar delay.
 
 
 ### _Merging changes to `master`_
