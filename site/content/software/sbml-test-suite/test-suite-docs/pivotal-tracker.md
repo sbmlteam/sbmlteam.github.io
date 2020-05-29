@@ -6,7 +6,7 @@ icon       = "/img/sbml-test-suite-logo.svg"
 #=====================================================================
 +++
 
-The SBML Team uses [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/68714) to plan and coordinate development.  Our trackers are publicly viewable, but not publicly editable.  If you would like to comment on an item in the tracker or have questions or suggestions, please feel free to contact the team directly [via email](mailto:libsbml-team@googlegroups.com).
+The SBML Team uses [Pivotal Tracker](https://www.pivotaltracker.com/n/projects/68714) to plan and coordinate development.  Our trackers are publicly viewable, but not publicly editable.  If you would like to comment on an item in the tracker or have questions or suggestions, please feel free to contact the team directly [via email](mailto:sbml-team@googlegroups.com).
 
 
 ## SBML Test Suite page in Pivotal Tracker
