@@ -7,7 +7,7 @@ icon   = "/img/sbml-test-suite-logo.svg"
 #=====================================================================
 +++
 
-The SBML Test Suite is a conformance testing system for [SBML](http://sbml.org).  It allows developers and users to test the degree and correctness of the SBML support provided in a software package. The tests are syntactic and semantic in nature.
+The SBML Test Suite is a conformance testing system for [SBML](http://sbml.org). It can be used by developers to test their software's implementation of SBML support; it can also be used by modelers to assess the correctness and completeness of SBML support in a given software system.  The collection of test cases includes both syntactic and semantic tests.
 
 {{< software-links download="https://github.com/sbmlteam/sbml-test-suite/releases" changes="https://github.com/sbmlteam/sbml-test-suite/blob/master/NEWS.md"
 docs="test-suite-docs" tracker="https://github.com/sbmlteam/sbml-test-suite/issues/" repo="https://github.com/sbmlteam/sbml-test-suite" >}}
@@ -15,12 +15,13 @@ docs="test-suite-docs" tracker="https://github.com/sbmlteam/sbml-test-suite/issu
 
 ## More about the SBML Test Suite
 
-Computational modeling has become a crucial aspect of biological research, and SBML has become the de facto standard open format for exchanging models between software tools in systems biology. Over 280 software tools have provided support for SBML. However, full support for SBML (especially for numerical simulations of models described by SBML) is a complex undertaking.
-The goal of the SBML Test Suite is to help developers implement correct SBML support, and help users evaluate the completeness of support in a given software tool.  The SBML Test Suite consists of:
-* A collection of SBML models, together with expected results, that can be used to test interpretation of SBML files.  There are 3 sets of tests: **semantic** (for deterministic simulation behavior), **stochastic** (for stochastic simulation behavior), and **syntactic** (for basic parsing).  The sets of test cases can be downloaded separately as [complete archives](http://github.com/sbmlteam/sbml-test-suite/releases).
+Computational modeling has become a crucial aspect of biological research, and SBML has become the de facto standard open format for exchanging models between software tools in systems biology. However, implementing full support for SBML (especially for numerical simulations of models described by SBML) is a complex undertaking.  The goal of the SBML Test Suite is to help developers implement correct SBML support, and help users evaluate the completeness of support in a given software tool.
+
+The SBML Test Suite consists of several parts:
+* A collection of SBML models, together with expected results, that can be used to test interpretation of SBML files.  The tests are grouped into three subsets: **semantic** (for deterministic simulation behavior), **stochastic** (for stochastic simulation behavior), and **syntactic** (for basic parsing).  The test cases can be downloaded separately as [complete archives](http://github.com/sbmlteam/sbml-test-suite/releases).
 * The **SBML Test Runner**, a standalone application that can be used to run an application against the collection of semantic test cases, and report successes and failures.  The image below shows an example run from the SBML Test Runner:<br><br>
-<img src="example-run.png"/><br>
-* An [**online database**](http://sbml.org/facilities/database) of test results provided by software authors for their SBML-compatible software packages.
+<img class="center screenshot" src="example-run.png"/><br>
+* An [**online database**](/facilities/database) of test results provided by software authors for their SBML-compatible software packages.
 
 
 ## SBML Test Suite release DOIs
@@ -37,7 +38,7 @@ Please visit the [SBML Test Suite documentation pages](test-suite-docs) for info
 
 ## Acknowledgments
 
-Funding for the continued development of the core of the SBML Test Suite currently comes from the [National Institute of General Medical Sciences](https://www.nigms.nih.gov) via grant GM070923 (Principal Investigator: Michael Hucka).  Past development of different parts of the Test Suite have been funded by NIH grants GM077671 and GM070923 as well as BBSRC grants BEP&nbsp;17042, BBS/B/16550, and BBC0082001 (Principal Investigator: Darren J. Wilkinson). Additional support for this and other projects of the SBML Team have been provided by the following organizations since the year 2000: the International Joint Research Program of NEDO (Japan); the JST ERATO-SORST Program (Japan); the Japanese Ministry of Agriculture; the Japanese Ministry of Education, Culture, Sports, Science and Technology; the BBSRC e-Science Initiative (UK); the DARPA IPTO Bio-Computation Program (USA); the Army Research Office's Institute for Collaborative Biotechnologies (USA); the Air Force Office of Scientific Research (USA); the California Institute of Technology (USA); the University of Hertfordshire (UK); the Molecular Sciences Institute (USA); the Systems Biology Institute (Japan); and the University of Keio (Japan).
+Funding for the development of the core of the SBML Test Suite came from [National Institute of General Medical Sciences](https://www.nigms.nih.gov) grants R01&nbsp;GM070923 and R01&nbsp;GM077671 (Principal Investigator: Michael Hucka) and BBSRC grants BEP&nbsp;17042, BBS/B/16550, and BBC0082001 (Principal Investigator: Darren J. Wilkinson). Additional support for this and other projects of the SBML Team have been provided by the following organizations since the year 2000: the International Joint Research Program of NEDO (Japan); the JST ERATO-SORST Program (Japan); the Japanese Ministry of Agriculture; the Japanese Ministry of Education, Culture, Sports, Science and Technology; the BBSRC e-Science Initiative (UK); the DARPA IPTO Bio-Computation Program (USA); the Army Research Office's Institute for Collaborative Biotechnologies (USA); the Air Force Office of Scientific Research (USA); the California Institute of Technology (USA); the University of Hertfordshire (UK); the Molecular Sciences Institute (USA); the Systems Biology Institute (Japan); and the University of Keio (Japan).
 
 The SBML Test Suite has been in development for many years, and many people have contributed in various ways large and small.  The following are the primary authors of different parts:
 
@@ -55,13 +56,13 @@ The SBML Test Suite has been in development for many years, and many people have
 
 * *SBML Test Runners*:
 
-  Frank T. Bergmann<sup>d</sup>, Michael Hucka<sup>b</sup>, Kimberley Begley
+  Frank T. Bergmann<sup>d</sup>, Michael Hucka<sup>b</sup>, Kimberly Begley
 
 * *Online SBML Test Suite Database*:
 
   Frank T. Bergmann<sup>d</sup>
 
-Additional contributions are gratefully acknowledged from Ralph Gauges<sup>h</sup>, Chris Myers<sup>i</sup>, Akira Funahashi<sup>j</sup>, Andreas Dräger<sup>k</sup>, Roland Keller<sup>k</sup>, Fedor Kolpakov<sup>l</sup>, Stanley Gu<sup>c</sup>, and others in the SBML community.
+Additional contributions are gratefully acknowledged from Ralph Gauges<sup>h</sup>, Chris Myers<sup>i</sup>, Akira Funahashi<sup>j</sup>, Andreas Dräger<sup>k</sup>, Roland Keller<sup>k</sup>, Fedor Kolpakov<sup>l</sup>, Stanley Gu<sup>c</sup>, Matthias König<sup>m</sup>, and others in the SBML community.
 
 Institutions:
 
@@ -77,3 +78,4 @@ Institutions:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>j</sup> Systems Biology Institute, Tokyo, JP<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>k</sup> University of Tuebingen, Tübingen, DE<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>l</sup> Institute of Systems Biology, Novosibirsk, RU   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>m</sup> Institute for Theoretical Biology, Humboldt Universität zu Berlin, DE
