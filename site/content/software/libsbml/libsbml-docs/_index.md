@@ -1,9 +1,8 @@
 +++
 #=====================================================================
-title      = "libSBML documentation"
-layout     = "single"
-icon       = "/img/libsbml-logo-and-name.svg"
-icon_width = "25%"
+title  = "libSBML documentation"
+layout = "single"
+toc    = true
 #=====================================================================
 +++
 
@@ -12,7 +11,7 @@ This page provides information on how to install libSBML, how to use the applica
 
 ## Installation and configuration
 
-To use libSBML, you must first install it and configure your environment to use it.
+To use libSBML, you must first install the software and configure your environment and application to use it.
 
 {{% blurb title="Downloading and installing libSBML" icon="hand-point-right" link="installation" %}}
 Visit this page for more information about how to download and install the binary versions of libSBML for different operating systems.
@@ -69,3 +68,6 @@ The libSBML team uses [Pivotal Tracker](http://pivotaltracker.com) to plan and c
 A number of other pages describe libSBML development and the team's procedures. Note that these tend to be works in progress and may not be in a polished, finished state.
 {{% /blurb %}}
 
+
+<!-- Leave this hack to make the TOC show up -->
+###
