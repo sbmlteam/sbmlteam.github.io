@@ -23,9 +23,11 @@ The SBML Test Suite test cases are divided into 3 sets and distributed separatel
 
 ## The SBML Test Runner
 
-The SBML Test Runner can be used to run an application against the collection of semantic test cases in the Test Suite, and report successes and failures.  If you have downloaded a release of the standalone version of the SBML Test Runner, your distribution will consist of a few files and a program named `SBML Test Runner`.  It comes complete with the test cases already included, and it can automatically check for updates to the test cases.  The image below shows an example run from the SBML Test Runner:
+The SBML Test Runner can be used to run an application against the collection of semantic test cases in the Test Suite, and report successes and failures.  If you have downloaded a release of the standalone SBML Test Runner, your distribution will consist of a few files and a program named `SBML Test Runner`.  It comes complete with the test cases already included, and it can automatically check for updates to the test cases.  The image below shows an example run from the SBML Test Runner:
 
 <img class="center screenshot" src="../../example-run.png"/>
+
+The SBML Test Runner currently only supports the semantic tests of the test suite; it does not yet support running applications through the stochastic or syntactic tests.
 
 
 ## The SBML Test Suite Database
