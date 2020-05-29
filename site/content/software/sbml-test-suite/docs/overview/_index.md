@@ -1,10 +1,11 @@
 +++
 #=====================================================================
-active     = true
-title      = "General summary and overview of the SBML Test Suite"
-date       = "2020-05-29"
-layout     = "single"
-toc        = true
+active = true
+title  = "General summary and overview of the SBML Test Suite"
+date   = "2020-05-29"
+layout = "single"
+toc    = false
+icon   = "/img/sbml-test-suite-logo.svg"
 #=====================================================================
 +++
 
