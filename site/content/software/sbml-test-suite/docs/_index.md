@@ -20,11 +20,11 @@ If you are new to the Test Suite, start with this page.  It provides a general e
 {{% /blurb %}}
 
 {{% blurb title="Basic principles of running a test" icon="running" link="basics-running-test" %}}
-Testing a software package using the SBML Test Suite requires simulating specially-designed SBML models using the package, and then comparing the simulation output to expected results.
+Testing a software package using the SBML Test Suite requires making the software package read specially-designed SBML models, perform actions on the models, and compare the results of the actions to _expected_ results.
 {{% /blurb %}}
 
 
-## Running the SBML Test Suite
+## The SBML Test Suite in detail
 
 Whether you use the standalone SBML Test Runner to run tests, or whether you write your own test-running framework, the following information is crucial to understanding the test cases and testing principles.
 
