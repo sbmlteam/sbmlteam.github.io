@@ -19,7 +19,7 @@ Whether you are a software developer, or a software user interested in testing s
 If you are new to the Test Suite, start with this page.  It provides a general explanation of the various Test Suite components.
 {{% /blurb %}}
 
-{{% blurb title="Basic principles of running a test" icon="running" link="running-a-test" %}}
+{{% blurb title="Basic principles of running a test" icon="running" link="basics-running-test" %}}
 Testing a software package using the SBML Test Suite requires simulating specially-designed SBML models using the package, and then comparing the simulation output to expected results.
 {{% /blurb %}}
 
@@ -36,7 +36,7 @@ This page explains in more detail the various files included with each SBML Test
 The information about test run parameters is stored in a file named `NNNNN-settings.txt` in each individual test case directory.  This page describes this file and how the values in it are used to assess whether the output of a software application are within acceptable tolerances for the test.
 {{% /blurb %}}
 
-{{% blurb title="Configuring an application test wrapper" icon="dolly-flatbed" link="running-a-test" %}}
+{{% blurb title="Configuring an application test wrapper" icon="cogs" link="running-a-test" %}}
 To use an application with the SBML Test Runner, you need to write a small script or program &ndash; a _wrapper_ &ndash; to interface between the Test Runner and the application.  This page explains how.
 {{% /blurb %}}
 
