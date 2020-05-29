@@ -10,7 +10,7 @@ icon   = "/img/sbml-test-suite-logo.svg"
 The SBML Test Suite is a conformance testing system for [SBML](http://sbml.org). It can be used by developers to test their software's implementation of SBML support; it can also be used by modelers to assess the correctness and completeness of SBML support in a given software system.  The collection of test cases includes both syntactic and semantic tests.
 
 {{< software-links download="https://github.com/sbmlteam/sbml-test-suite/releases" changes="https://github.com/sbmlteam/sbml-test-suite/blob/master/NEWS.md"
-docs="test-suite-docs" tracker="https://github.com/sbmlteam/sbml-test-suite/issues/" repo="https://github.com/sbmlteam/sbml-test-suite" >}}
+docs="docs" tracker="https://github.com/sbmlteam/sbml-test-suite/issues/" repo="https://github.com/sbmlteam/sbml-test-suite" >}}
 
 
 ## More about the SBML Test Suite
