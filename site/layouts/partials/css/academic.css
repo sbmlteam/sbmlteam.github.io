@@ -3065,3 +3065,7 @@ table.sbml-package-status.tight-spacing > tbody > tr > td {
   text-align: center;
 }
 
+ol ol > li {
+  list-style-type: lower-alpha;
+  counter-increment: item;
+}
