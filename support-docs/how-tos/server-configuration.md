@@ -65,7 +65,7 @@ Edit the values in `admin/server.cfg` as needed.
 Start the service
 -----------------
 
-Now, at this point, everything is in place, and what remains is to tell the operating system to install the new service and start it up.  Before going further, it may be helpful to open another window and do a `tail -f /var/log/messages` to keep an eye for system messages.
+Now, at this point, everything is in place, and what remains is to tell the operating system to install the new service and start it up.  Before going further, it may be helpful to open **two** more shell windows and do (1) a `tail -f /var/log/messages` in one of the windows and (2) a `tail -f /var/log/hugo/hugo.log` in the other, to keep an eye for system messages.
 
 1. Enable the new service:
 
@@ -85,3 +85,8 @@ Now, at this point, everything is in place, and what remains is to tell the oper
     systemctl status hugo-sbml
     ```
 
+
+Additional help
+---------------
+
+The tutorial ["How To Use Systemctl to Manage Systemd Services and Units"](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units) by Justin Ellingwood (2015-02-01; backup copy [available here](https://web.archive.org/web/20200817210556/https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units)) is very helpful and explains how to use `systemd`.
