@@ -1,23 +1,23 @@
 ## -*- mode: conf -*-
 ## ============================================================================
-## File name   : hugo.service
-## Description : systemd configuration file for hugo
+## File name   : hugo-sbml.service
+## Description : systemd configuration file for SBML hugo server
 ## Author(s)   : Michael Hucka <mhucka@caltech.edu>
 ## Organization: California Institute of Technology
 ## Date created: 2020-04-23
 ## ============================================================================
 
 [Unit]
-Description=Hugo service
+Description=Hugo server for SBML website
 After=network-online.target
 
 [Service]
 Type=forking
 User=hugo
-EnvironmentFile=/home/hugo/admin/config.sh
+EnvironmentFile=/home/hugo/sbml/admin/config.sh
 PIDFile=/var/run/hugo/hugo.pid
 PrivateTmp=yes
-ExecStart=/home/hugo/admin/hugo-helper start
+ExecStart=/home/hugo/sbml/admin/server-control start
 Restart=on-failure
 RestartSec=10
 StartLimitBurst=5
