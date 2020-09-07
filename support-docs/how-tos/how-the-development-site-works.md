@@ -7,13 +7,13 @@ The SBML Team runs a live development server so that we can all see a preview of
 Operating system basics
 -----------------------
 
-The server is a CentOS system running a Dell desktop computer located in Mike Hucka's office on the Caltech campus.  The computer is set up as a fairly basic CentOS server, and runs only a couple of services.  It allows ssh connections only from Caltech IP addresses.
-
-On our development server, we download and store copies of the Hugo software in `/usr/local/src/HOSTNAME/hugo` and the Hugo binary itself is `/usr/local/bin/hugo`.
+The server is a CentOS system running a Dell desktop computer located in Mike Hucka's office on the Caltech campus.  The computer is set up as a fairly basic CentOS server, and runs only a couple of services.  It allows ssh connections only from Caltech IP addresses.  It runs `haproxy` as a front-end for web connections and to support SSL.
 
 
 Configuring the `hugo` executable
 ----------------------------------
+
+On our development server, we download and store copies of the Hugo software in `/usr/local/src/HOSTNAME/hugo` and the Hugo binary itself is `/usr/local/bin/hugo`.
 
 For security reasons, we do not run the Hugo server as root.  There is a separate system account for running `hugo`.
 
