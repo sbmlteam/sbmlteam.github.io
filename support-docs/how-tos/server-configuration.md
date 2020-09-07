@@ -8,7 +8,7 @@ Install files
 
 1. Install [Hugo](https://github.com/gohugoio/hugo/releases) to a location on the host computer.  We put the executable in `/usr/local/bin/hugo`.
 
-2. If applicable, follow the instructions to enable port access to Hugo mentioned in the section "Configuring the `hugo` executable" in [`how-the-development-site-works.md`](how-the-development-site-works.md).
+2. If applicable, follow the instructions to enable Hugo to access ports below 1024, as mentioned in the section "Configuring the `hugo` executable" in [`how-the-development-site-works.md`](how-the-development-site-works.md).
 
 3. Create a user account named `hugo` for the service on the host system.  Let it have its own group as is typical on CentOS 7 systems.
 
@@ -32,11 +32,11 @@ Install files
     chown hugo:hugo /var/run/hugo
     ```
 
-6. Install the `rsyslogd` configuration file for the SBML hugo server, and tell `rsyslogd` to load it:
+6. Go to the `admin/system` subdirectory of the SBML website files, install the `rsyslogd` configuration file for the SBML hugo server, and tell `rsyslogd` to load it:
 
     ``` shell
     cd /home/hugo/sbml/admin/system
-    cp hugo-rsyslog.conf /etc/rsyslog.d/hugo.conf
+    cp hugo-sbml-rsyslog.conf /etc/rsyslog.d/hugo-sbml.conf
     mkdir /var/log/hugo
     chown hugo:hugo /var/log/hugo
     systemctl restart rsyslog
@@ -45,14 +45,14 @@ Install files
 7. Install the `systemd` script for the SBML Hugo server and tell `systemd` about it:
 
     ``` shell
-    cp hugo.service /etc/systemd/system/
+    cp hugo-sbml.service /etc/systemd/system/
     systemctl daemon-reload
     ```
 
 8. Install the `logrotate` script:
 
     ``` shell
-    cp hugo-logrotate.txt /etc/logrotate.d/hugo
+    cp hugo-sbml-logrotate.txt /etc/logrotate.d/hugo-sbml
     ```
 
 
@@ -70,18 +70,18 @@ Now, at this point, everything is in place, and what remains is to tell the oper
 1. Enable the new service:
 
     ``` shell
-    systemctl enable hugo.service
+    systemctl enable hugo-sbml
     ```
 
 2. Start the service:
 
     ``` shell
-    systemctl start hugo.service
+    systemctl start hugo-sbml
     ```
 
 3. Check the status:
 
     ``` shell
-    systemctl status hugo.service
+    systemctl status hugo-sbml
     ```
 
