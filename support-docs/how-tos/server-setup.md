@@ -1,7 +1,7 @@
 SBML Hugo server configuration
 ==============================
 
-Here are the steps I took to install and set up the SBML Hugo server as a system service on a CentOS 7.7 computer.  (Note: all of the following commands are performed as root.)
+Here are the steps I took to install and set up the SBML Hugo server as a system service on a CentOS 7.8 computer.  (Note: all of the following commands are performed as root.)
 
 Install files
 -------------
@@ -14,50 +14,42 @@ Install files
 
 4. Clone the website git repository, [`sbml-org-website`](https://github.com/sbmlteam/sbml-org-website), to a location on the computer, such as `/home/hugo/sbml`.  Make sure to use the `--recursive` option to `git clone`:
 
-    ``` shell
+    ```shell
     cd /home/hugo
     git clone --recursive https://github.com/sbmlteam/sbml-org-website.git sbml
     ```
 
-5. Staying in the directory where you cloned the website, change the group of the website directory to be owned by user `hugo`:
+5. Change the group of the directory you just cloned to be owned by user `hugo`:
 
-    ``` shell
-    chown -R hugo:hugo .
+    ```shell
+    chown -R hugo:hugo sbml
     ```
 
-6. Create a directory in `/run` where the user `hugo` can write the process id file:
+6. Go to the `admin/system` subdirectory of the SBML website files, copy the `tmpfiles.d` configuration file to the proper location on your system, and (on CentOS 7.8) tell `systemd-tmpfiles` to create the files defined by the configuration:
 
-    ``` shell
-    mkdir /run/hugo
-    chown hugo:hugo /run/hugo
+    ```shell
+    cd sbml/admin/system
+    cp hugo-sbml-tmpfiles.conf /etc/tmpfiles.d/hugo-sbml.conf
+    systemd-tmpfiles --create
     ```
 
-6. Go to the `admin/system` subdirectory of the SBML website files, install the `rsyslogd` configuration file for the SBML hugo server, and tell `rsyslogd` to load it:
+7. Install the `rsyslogd` configuration file for the SBML hugo server, and tell `rsyslogd` to load it:
 
-    ``` shell
-    cd /home/hugo/sbml/admin/system
+    ```shell
     cp hugo-sbml-rsyslog.conf /etc/rsyslog.d/hugo-sbml.conf
-    mkdir /var/log/hugo
-    chown hugo:hugo /var/log/hugo
     systemctl restart rsyslog
     ```
 
-7. Install the `systemd` script for the SBML Hugo server and tell `systemd` about it:
+8. Install the `systemd` script for the SBML Hugo server and tell `systemd` about it:
 
-    ``` shell
+    ```shell
     cp hugo-sbml.service /etc/systemd/system/
     systemctl daemon-reload
     ```
 
-8. Configure `tmpfiles.d` to create certain directories such as `/var/cache/hugo`:
-
-    ``` shell
-    cp hugo-sbml-tmpfiles.conf /etc/tmpfiles.d/hugo-sbml.conf
-    ```
-
 9. Install the `logrotate` script:
 
-    ``` shell
+    ```shell
     cp hugo-sbml-logrotate.txt /etc/logrotate.d/hugo-sbml
     ```
 
@@ -71,23 +63,23 @@ Edit the values in `admin/server.cfg` as needed.
 Start the service
 -----------------
 
-Now, at this point, everything is in place, and what remains is to tell the operating system to install the new service and start it up.  Before going further, it may be helpful to open **two** more shell windows and do (1) a `tail -f /var/log/messages` in one of the windows and (2) a `tail -f /var/log/hugo/hugo.log` in the other, to keep an eye for system messages.
+Now, at this point, everything is in place, and what remains is to tell the operating system to install the new service and start it up.  Before going further, it may be helpful to open **two** more sh windows and do (1) a `tail -f /var/log/messages` in one of the windows and (2) a `tail -f /var/log/hugo/hugo.log` in the other, to keep an eye for system messages.
 
 1. Enable the new service:
 
-    ``` shell
+    ```shell
     systemctl enable hugo-sbml
     ```
 
 2. Start the service:
 
-    ``` shell
+    ```shell
     systemctl start hugo-sbml
     ```
 
 3. Check the status:
 
-    ``` shell
+    ```shell
     systemctl status hugo-sbml
     ```
 
