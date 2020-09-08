@@ -25,11 +25,11 @@ Install files
     chown -R hugo:hugo .
     ```
 
-6. Create a directory in `/var/run` where the user `hugo` can write the process id file:
+6. Create a directory in `/run` where the user `hugo` can write the process id file:
 
     ``` shell
-    mkdir /var/run/hugo
-    chown hugo:hugo /var/run/hugo
+    mkdir /run/hugo
+    chown hugo:hugo /run/hugo
     ```
 
 6. Go to the `admin/system` subdirectory of the SBML website files, install the `rsyslogd` configuration file for the SBML hugo server, and tell `rsyslogd` to load it:
@@ -49,7 +49,13 @@ Install files
     systemctl daemon-reload
     ```
 
-8. Install the `logrotate` script:
+8. Configure `tmpfiles.d` to create certain directories such as `/var/cache/hugo`:
+
+    ``` shell
+    cp hugo-sbml-tmpfiles.conf /etc/tmpfiles.d/hugo-sbml.conf
+    ```
+
+9. Install the `logrotate` script:
 
     ``` shell
     cp hugo-sbml-logrotate.txt /etc/logrotate.d/hugo-sbml
