@@ -54,8 +54,24 @@ First, examine <code><i style="background-color: #ffcc99">NNNNN</i>-model.m</cod
 5. Use the SBML Test Suite to compare the output to the expected results and analyze the implications.
 
 
+### If the type of test is `StochasticTimeCourse`
+
+1. Examine `NNNNN-settings.txt` to determine the variables to be sampled.  (The format of this file is described on a separate page.)
+2. Determine how many times ('n') to repeat the simulation (should be at least 1,000; will probably need to be 10,000+).
+3. Instruct the software to run a stochastic simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) n times.
+4. Collect any requested means and/or standard deviations for all output variables, and save the output.
+5. Compare the simulated means and standard deviations to the expected values, using the formulas described in the DSMTS user guide, which includes the means, standard deviations, n, and the meanRange and sdRange values from `NNNNN-settings.txt`.
+6. Count the number of violations.  0 violations are great, 1-3 violations are probably fine; more may mean that the simulator contains an error, especially if repeated tests reveal the same violations for the same expected values.
+
+
 ### If the type of test is `StatisticalDistribution`
 
+1. Examine `NNNNN-settings.txt` to determine the variables to be sampled.  (The format of this file is described on a separate page.)
+2. Determine how many times ('n') to repeat the simulation (should be at least 1,000; will probably need to be 10,000+).
+3. Instruct the software to run a simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) n times.  (Note that this does not have to be a 'stochastic' simulation, as no reactions are present in these models.  The stochasticity is solely due to assignments from distributions.)
+4. Collect any requested means and/or standard deviations for all output variables, and save the output.
+5. Compare the simulated means and standard deviations to the expected values, using the formulas described in the DSMTS user guide, which includes the means, standard deviations, n, and the meanRange and sdRange values from `NNNNN-settings.txt`.
+6. Count the number of violations.  0 violations are great, 1-3 violations are probably fine; more may mean that the simulator contains an error, especially if repeated tests reveal the same violations for the same expected values.
 
 
 Running multiple test cases
