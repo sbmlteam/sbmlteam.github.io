@@ -137,7 +137,7 @@ h4, h5, h6 {
 }
 
 h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
-  font-size: 1.2rem;
+  font-size: 90%;
 }
 
 a,
@@ -2372,9 +2372,16 @@ code, pre, .hljs {
 /* For img that are screenshots */
 img.screenshot {
   margin: 1rem auto;
-  width: 90%;
+  max-width: 90%;
   box-shadow: 0 4px 6px 0 rgba(0,0,0,0.3);
 }
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 table {
   margin-top: 1rem;
@@ -3058,3 +3065,7 @@ table.sbml-package-status.tight-spacing > tbody > tr > td {
   text-align: center;
 }
 
+ol ol > li {
+  list-style-type: lower-alpha;
+  counter-increment: item;
+}

@@ -108,6 +108,7 @@ case "$1" in
         ;;
 
     stop)
+        log -s "Stopping the server."
         if [[ ! -e $PID_FILE ]]; then
             echo "PID file $PID_FILE does not exist."
             exit 2
