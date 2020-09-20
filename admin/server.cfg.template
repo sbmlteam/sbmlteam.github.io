@@ -9,10 +9,12 @@
 ## The default settings only work for creating a local instance for testing.
 ## ============================================================================
 
+sbmladmin=$(dirname "${BASH_SOURCE[0]}")
+
 # Public site configuration.
 # .............................................................................
 
-SITE_ROOT="$(pwd)/../site"
+SITE_ROOT="$sbmladmin/../site"
 SITE_URL=
 SITE_IP=
 SITE_PORT=
@@ -20,23 +22,30 @@ SITE_PORT=
 
 # System process configuration
 # .............................................................................
-# Note: we don't run Hugo as root. To have Hugo bind to port 80 as a non-root
-# user, it's necessary to use setcap on the hugo binary or create a
-# redirection from a non-root port to port 80 (e.g., using haproxy or
-# similar).  However, that means the hugo binary can't write to /var/log and
-# /var/run unless separate subdirectories are pre-created.  On MacOS, if you
-# create /var/run/hugo and reboot, the directory will get deleted.  That in
-# turn means either you have to figure out how to automate recreating it at
-# every boot, or else you choose to write the log and pid files somewhere
-# else.  For this reason, the default location for the log and pid file is a
-# location in this site directory tree.)
+# For security reasons, don't run Hugo as root on public servers.  This has
+# two implications:
+#
+#  1) to let Hugo bind to port 80 as a non-root user, it's necessary to use
+#     setcap on the hugo binary or create a redirection from a non-root port
+#     to port 80 (e.g., using haproxy or similar).
+#
+#  2) The hugo binary can't write to directories in /var (such as /var/log)
+#     unless special arrangements are made.  The instructions in the file
+#     ../support-docs/how-tos/server-setup.md explain how to do this on CentOS
+#     using standard CentOS 7.x system facilities.
+#
+# The default locations for the log and pid file, as set below, are in this
+# SBML site directory tree, so that things are easier for users who are not
+# doing a full server setup and just want to run their own local instance of
+# the SBML website.  For actual server installations, these need to be changed
+# to more appropriate locations.
 
 # Where do we write the pid file on this system?
-PID_FILE="$(pwd)/../run/hugo.pid"
+PID_FILE="$sbmladmin/../run/hugo.pid"
 
 # Where do we write the Hugo log output?  Note: Hugo doesn't support system
 # logging via rsyslog, so we have to define the output log explicitly.
-LOG_FILE="$(pwd)/../run/hugo.log"
+LOG_FILE="$sbmladmin/../run/hugo.log"
 
 # What is the user identity of the hugo server process?
 PROCESS_OWNER=hugo
@@ -48,14 +57,11 @@ PROCESS_OWNER=hugo
 # The executable we use to run Hugo.
 HUGO="/usr/local/bin/hugo"
 
-# Note #1: we don't run Hugo as root.  This means the hugo binary can't write
-# to /var/log and /var/run unless separate subdirectories are precreated by
-# root.  Be aware of that if you change the following paths to /var/*.
-# Note #2: the value of HUGO_CACHEDIR must end with a '/'.
-HUGO_CACHEDIR="$(pwd)/../run/hugo_cache/"
-HUGO_OUTPUTDIR="$(pwd)/../run/hugo_output/"
+# Note: we don't run Hugo as root.  This means the hugo binary can't write
+# to places in /var unless separate subdirectories are precreated by root.
+HUGO_OUTPUTDIR="$sbmladmin/../run/hugo_output/"
 
-# Production mode is detected by setting SITE_URL.  Otherwise, we assume
+# Production mode is detected by setting SITE_URL above.  Otherwise, we assume
 # we're running in development mode, and use different arguments.  Note:
 # --ignoreCache is added in production mode because without it, you get bad
 # data if the google spreadsheet for SBML package is changed.  However, its
@@ -66,23 +72,24 @@ HUGO_OUTPUTDIR="$(pwd)/../run/hugo_output/"
 # rebuilds the site.  (With --ignoreCache, Hugo only refreshes the getCSV data
 # from the source at the time Hugo starts up, and never again thereafter.)
 if [[ -n $SITE_URL ]]; then
-    SERVER_ARGS="--disableLiveReload --ignoreCache --bind $SITE_IP --baseURL $SITE_URL --port $SITE_PORT"
+    # Site url is set => public server, not local test/development server.
+    SERVER_ARGS="--disableLiveReload --ignoreCache"
+    SERVER_ARGS+=" "
+    SERVER_ARGS+="--baseURL $SITE_URL --bind $SITE_IP --port $SITE_PORT"
 else
     SERVER_ARGS="--noHTTPCache --disableFastRender --templateMetrics --debug"
 fi
 
-# Note #2: you would think that using the --logFile argument would be a smart
+# You would think that using the --logFile argument would be a smart
 # way of writing Hugo's output to a log file. YOU WOULD BE WRONG, because
-# Hugo doesn't all its messages to the file given by --logFile.  Some
+# Hugo doesn't send all its messages to the file given by --logFile.  Some
 # messages are always printed to the terminal.  So, we don't use --logFile
 # here, because it's kind of useless, and instead, our control script
 # (server-control) redirects output to a log file explicitly.
 HUGO_ARGS="--verbose --renderToDisk --cleanDestinationDir"
 HUGO_ARGS+=" "
-HUGO_ARGS+="--cacheDir $HUGO_CACHEDIR --destination $HUGO_OUTPUTDIR"
+HUGO_ARGS+="--destination $HUGO_OUTPUTDIR"
 
-HUGO_ARGS+=" "
-HUGO_ARGS+=$OUTPUT_ARGS
 HUGO_ARGS+=" "
 HUGO_ARGS+=$SERVER_ARGS
 
