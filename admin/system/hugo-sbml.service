@@ -4,7 +4,13 @@
 ## Description : systemd configuration file for SBML hugo server
 ## Author(s)   : Michael Hucka <mhucka@caltech.edu>
 ## Organization: California Institute of Technology
-## Date created: 2020-04-23
+## Date created: 2020-09-21
+##
+## This assumes that /sbin/rotatelogs is the path to the "rotatelogs" program
+## provided by the Apache HTTPD software distribution.  (Note: we *only* use
+## rotatelogs, not the rest, but I haven't found a way to get rotatelogs
+## separately from the whole HTTPD package short of compiling from sources.
+## It's easier and less maintenance to install the httpd package.)
 ## ============================================================================
 
 [Unit]
@@ -12,12 +18,14 @@ Description=Hugo server for SBML website
 After=network-online.target
 
 [Service]
-Type=forking
+Type=simple
 User=hugo
 RuntimeDirectory=hugo
 PIDFile=/run/hugo/hugo.pid
 PrivateTmp=yes
-ExecStart=/home/hugo/sbml/admin/server-control start
+Environment=SERV=/home/hugo/sbml/admin/server-control
+Environment=LDIR=/var/log/hugo
+ExecStart=/bin/bash -c '${SERV} start | /sbin/rotatelogs -L ${LDIR}/hugo.log ${LDIR}/hugo.log 5M'
 Restart=on-failure
 RestartSec=10
 StartLimitBurst=5
