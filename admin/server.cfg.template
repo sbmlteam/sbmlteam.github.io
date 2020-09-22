@@ -45,10 +45,6 @@ SITE_PORT=
 # Where do we write the pid file on this system?
 PID_FILE="$sbmladmin/../run/hugo.pid"
 
-# Where do we write the Hugo log output?  Note: Hugo doesn't support system
-# logging via rsyslog, so we have to define the output log explicitly.
-LOG_FILE="$sbmladmin/../run/hugo.log"
-
 # What is the user identity of the hugo server process?
 PROCESS_OWNER=hugo
 
