@@ -13,6 +13,8 @@ sbmladmin=$(dirname "${BASH_SOURCE[0]}")
 
 # Public site configuration.
 # .............................................................................
+# If you are running a local server for local preview and development, leave
+# SITE_URL, SITE_IP and SITE_PORT undefined.
 
 SITE_ROOT="$sbmladmin/../site"
 SITE_URL=
