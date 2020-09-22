@@ -8,22 +8,17 @@
 ##
 ## Note: we don't run Hugo as root. To have Hugo bind to port 80 as a non-root
 ## user, it's necessary to use setcap on the hugo binary (our approach) or
-## create a redirection via iptables.  However, that means the hugo binary can't
-## write to /var/log and /var/run unless separate subdirectories are precreated.
-## In addition, if you run hugo as non-root and you have it write to ../site,
-## it needs to have permissions to this directory, so make sure to chown and
-## chgrp this entire repository clone on your destination system.
-##
-## Here's the complete sequence I used on a CentOS 7.6 system, assuming that
-## the name of the hugo account is "hugo".
+## create a redirection via iptables.  Here's the sequence of commands I used
+## on CentOS 7.6 & 7.8, assuming that the name of the hugo account is "hugo":
 ##
 ##  sudo useradd -M hugo
 ##  sudo chown -R hugo.hugo ..
 ##  sudo setcap 'cap_net_bind_service=+ep' /usr/local/bin/hugo
-##  sudo mkdir /var/log/hugo /var/run/hugo
-##  sudo chown hugo /var/log/hugo /var/run/hugo
-##  sudo chgrp hugo /var/log/hugo /var/run/hugo
 ##
+## Update 2020-09-21: rather than make this script write to a log file or use
+## logger, the new superior approach is to write log content to stderr and
+## pipe the output to a log rotation program.  Apache "rotatelogs" is one
+## that's easy to find and install (it's in the httpd package for CentOS).
 ## ============================================================================
 
 # Make sure we're NOT running as root.
@@ -41,74 +36,41 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 
 source $DIR/server.cfg
 
-# This definition is used in a pipe command in the main section.
-# Do NOT merge this with the next function definition for log().
-LOG="logger -t $PROCESS_OWNER -p daemon.info"
-
-log() {
-    $LOG $* >&2
-}
-
-check_log_file() {
-    file=$1
-    if [ ! -e "$file" ]; then
-        # The file doesn't exist.  Is it because the dir doesn't exist?
-        dir=$(dirname "$file")
-        if [ ! -d "$dir" ]; then
-            # Try to create the directory.
-            mkdir "$dir"
-            if [ ! -d "$dir" ]; then
-                echo "Unable to create $dir" >&2
-                exit 2
-            fi
-        fi
-        if [ ! -w "$dir" ]; then
-            echo "Unable to write to directory $dir" >&2
-            exit 2
-        fi
-    elif [ ! -w "$file" ]; then
-        echo "Unable to write log file $file." >&2
-        exit 2
-    fi
-}
-
-
 # Main code.
 # .............................................................................
 
 case "$1" in
     start)
         cd "$SITE_ROOT"
-        check_log_file $LOG_FILE
-        log -s "Starting server process from directory `pwd`"
+        echo "Starting server process from directory `pwd`"
 
         line=`printf '=%.0s' {1..79}`
         start_time=$(/bin/date '+%G-%m-%d:%H%M')
-        echo $line >> $LOG_FILE 2>&1 &
-        echo "Starting Hugo on $start_time" >> $LOG_FILE 2>&1 &
-        echo $line >> $LOG_FILE 2>&1 &
+        echo $line
+        echo "Starting Hugo on $start_time"
+        echo $line
         # Problem: we need the PID from the first process in the pipe, but if
         # you use $! you'll get the PID of the last process in the pipe.
         # Solution: writes the PID to file descriptor 3, so that it can be
-        # read from there on the following line.  Genius idea posted by user
+        # read from there on the following line.  Idea posted by user
         # John Kugelman, 2014-07-16, https://stackoverflow.com/a/3786955/743730
         TMPFILE=$(mktemp /tmp/corsproxy.XXXXXX)
         trap 'rm -f -- "$TMPFILE"' INT TERM HUP EXIT
-        ( $HUGO server $HUGO_ARGS 2>&1 & echo $! >&3) 3>$TMPFILE | tee -a $LOG_FILE | $LOG &
+        ( $HUGO server $HUGO_ARGS 2>&1 & echo $! >&3) 3>$TMPFILE &
         sleep 2
         PID=$(<$TMPFILE)
         if [[ -z $PID ]]; then
-            log -s "Failed to start $HUGO process"
+            echo "Failed to start $HUGO process"
             exit 1
         else
             echo $PID > $PID_FILE
-            log -s "Server started successfully with PID $PID."
+            echo "Server started successfully with PID $PID."
         fi
         exit 0
         ;;
 
     stop)
-        log -s "Stopping the server."
+        echo "Stopping the server."
         if [[ ! -e $PID_FILE ]]; then
             echo "PID file $PID_FILE does not exist."
             exit 2
@@ -130,7 +92,7 @@ case "$1" in
                     exit 1
                 fi
             else
-                log -s "Process $PID killed."
+                echo "Process $PID killed."
                 exit 0
             fi
         fi
@@ -139,7 +101,7 @@ case "$1" in
     restart)
         $0 stop
         if [[ $? -eq 0 ]]; then
-            log -s "Pausing for $RESTART_PAUSE seconds."
+            echo "Pausing for $RESTART_PAUSE seconds."
             sleep $RESTART_PAUSE
         fi
         $0 start
