@@ -10,7 +10,7 @@ Operating system basics
 The current server is a CentOS system.  The computer is set up as a fairly basic CentOS server, and runs only a couple of services.  It allows ssh connections only from Caltech IP addresses.  It runs `haproxy` as a front-end for web connections and to support SSL.
 
 
-Configuring the `hugo` executable
+Configuring the Hugo executable
 ----------------------------------
 
 On our development server, we download and store copies of the Hugo software in `/usr/local/src/HOSTNAME/hugo` and the Hugo binary itself is `/usr/local/bin/hugo`.
@@ -33,7 +33,7 @@ The files for the copy of the SBML site are located in `/home/hugo/sbml/`.  A sh
 Operating system files for running the server
 ---------------------------------------------
 
-The server computer is configured to start the SBML Hugo server automatically upon reboot, using standard CentOS 7 operating system facilities.  Doing this involves configuration files for `systemd`, `logrotate`, and others.  The setup is described in [`server-setup.md`](server-setup.md).
+The server computer is configured to start the SBML Hugo server automatically upon reboot, using standard CentOS 7 operating system facilities.  Doing this involves configuration files for `systemd` and others.  The setup is described in [`server-setup.md`](server-setup.md).
 
 
 Auto-updating the site whenever changes are made in GitHub
