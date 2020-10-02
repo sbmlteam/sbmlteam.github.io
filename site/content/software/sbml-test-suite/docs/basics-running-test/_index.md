@@ -14,7 +14,7 @@ Testing a software package using the SBML Test Suite requires making the softwar
 The files comprising a test case
 --------------------------------
 
-Each test case in the [SBML Test Suite](/software/sbml-test-suite) is organized in a folder named with a five digit number (i.e., "<code style="background-color: #ffcc99"><i>NNNNN</i></code>").  The number is used to identify the test for reference purposes, but otherwise has no inherent meaning.  Each folder contains the following files:
+Each test case in the [SBML Test Suite](/software/sbml-test-suite) is organized in a folder named with a five digit number (i.e., "<code style="background-color: #ffcc99"><i>NNNNN</i></code>").  The number is used to identify the test, but otherwise has no inherent meaning.  Each folder contains the following files:
 
 | File                     | Meaning |
 |--------------------------|---------|
@@ -23,7 +23,7 @@ Each test case in the [SBML Test Suite](/software/sbml-test-suite) is organized 
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-model.html</code></nobr> | A brief, nicely-formatted, human-readable description of the purpose of this specific test. |
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-model.m</code></nobr> | A description of the test model in a format used to generate the HTML file.  (In some models, it contains commands used to generate the SBML  file as well, but this is not available for all test case files.)  The format of this file is described elsewhere. |
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-plot.jpg</code></nobr> | A plot of the expected time-course simulation results in [JPEG](http://en.wikipedia.org/wiki/Jpeg) format. |
-| <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-results.csv</code></nobr> | The results expected from simulating the model.  The file format is simple [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values).  Approximately 1/5 of SBML Test Suite cases have results generated from an analytical solution to the model; the rest come from numerical solutions produced agreed-upon by at least two different SBML-compatible tools. |
+| <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-results.csv</code></nobr> | The results expected from simulating the model.  The file format is simple [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values).  Approximately 1/5 of SBML Test Suite cases have results generated from an analytical solution to the model; the rest come from numerical solutions produced and agreed upon by at least two different SBML-compatible tools. |
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-sbml-l<i style="background-color: #aaccaa">X</i>v<i style="background-color: yellow">Y</i>-sedml.xml</code></nobr>  | Files in [SED-ML](http://sed-ml.org/) format for running the test case in software systems that can automate their execution using SED-ML. |
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-antimony.txt</code></nobr> |  (Some models only.) A description of the test model in [Antimony](http://antimony.sourceforge.net/) format used to generate the SBML file. |
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-results.xlsx</code></nobr> | (Some models only.) The results of using an analytical function in Microsoft Excel to produce the results for the model.  This is in turn used to produce the `NNNNN-results.csv` file for those models. |
@@ -34,15 +34,15 @@ It is worth noting that the standalone SBML Test Suite, and the full test case a
 Running a single test case
 --------------------------
 
-First, examine <code><i style="background-color: #ffcc99">NNNNN</i>-model.m</code> to determine what kind of test is being requested. The kind will be expressed by the value of the field named `testType:` in the file.
+First, examine <code><i style="background-color: #ffcc99">NNNNN</i>-model.m</code> to determine what kind of test is being requested. The kind will be expressed by the value of the field named `testType:` in the `.m` file.
 
 ### If the type of test is `TimeCourse`
 
 1. Examine the file `NNNNN-settings.txt` to determine the simulation start time, duration, tolerances, number of output sampling steps, and variables to be sampled/plotted.  (The format of this file is described on a [separate page](../test-case-details).)
 2. Instruct the software you are testing to read the SBML model definition file for this case (i.e., the file `NNNNN-sbml-lXvY.xml`, chosing Level `X` and Version `Y` as appropriate for the software).  _Note:_ if constructs from the SBML Level&nbsp;3 Hierarchical Model Composition (_comp_) package are present, the model may need to be "flattened" first, depending on how the simulation software handles the _comp_ package.
 3. Instruct the software to run a simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) and save the output to a file whose name contains the case number (e.g., `myresultsNNNNN.csv` or even just `NNNNN.csv`).
-4. (If necessary) Convert the output to comma-separated value format.
-5. Use the SBML Test Suite to compare the output to the expected results and analyze the implications.
+4. (If necessary) Convert the output to [comma-separated value format](https://en.wikipedia.org/wiki/Comma-separated_values).
+5. Use the SBML Test Suite to compare the output to the expected results, and use that to assess the implications.
 
 
 ### If the type of test is `FluxBalanceSteadyState`
@@ -51,26 +51,26 @@ First, examine <code><i style="background-color: #ffcc99">NNNNN</i>-model.m</cod
 2. Instruct the software you are testing to read the SBML model definition file for this case (i.e., specifically, the file `NNNNN-sbml-l3v1.xml` &mdash; all flux balance tests are SBML Level 3, because the test requires the use of the SBML Level&nbsp;3 Flux Balance Constraints package).
 3. Instruct the software to run a simulation of the model to steady state, following the restrictions given by the Flux Balance Constraints package components in the model, and save the final values of the requested variables to a file whose name contains the case number (e.g., `myresultsNNNNN.csv` or even just `NNNNN.csv`).
 4. (If necessary) Convert the output to comma-separated value format.
-5. Use the SBML Test Suite to compare the output to the expected results and analyze the implications.
+5. Use the SBML Test Suite to compare the output to the expected results, and use that to assess the implications.
 
 
 ### If the type of test is `StochasticTimeCourse`
 
 1. Examine `NNNNN-settings.txt` to determine the variables to be sampled.  (The format of this file is described on a separate page.)
-2. Determine how many times ('n') to repeat the simulation (should be at least 1,000; will probably need to be 10,000+).
-3. Instruct the software to run a stochastic simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) n times.
+2. Determine how many times (_n_) to repeat the simulation (should be at least 1,000; will probably need to be 10,000+).
+3. Instruct the software to run a stochastic simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) _n_ times.
 4. Collect any requested means and/or standard deviations for all output variables, and save the output.
-5. Compare the simulated means and standard deviations to the expected values, using the formulas described in the DSMTS user guide, which includes the means, standard deviations, n, and the meanRange and sdRange values from `NNNNN-settings.txt`.
+5. Compare the simulated means and standard deviations to the expected values, using the formulas described in the DSMTS user guide, which includes the means, standard deviations, _n_, and the meanRange and sdRange values from `NNNNN-settings.txt`.
 6. Count the number of violations.  0 violations are great, 1-3 violations are probably fine; more may mean that the simulator contains an error, especially if repeated tests reveal the same violations for the same expected values.
 
 
 ### If the type of test is `StatisticalDistribution`
 
 1. Examine `NNNNN-settings.txt` to determine the variables to be sampled.  (The format of this file is described on a separate page.)
-2. Determine how many times ('n') to repeat the simulation (should be at least 1,000; will probably need to be 10,000+).
-3. Instruct the software to run a simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) n times.  (Note that this does not have to be a 'stochastic' simulation, as no reactions are present in these models.  The stochasticity is solely due to assignments from distributions.)
+2. Determine how many times (_n_) to repeat the simulation (should be at least 1,000; will probably need to be 10,000+).
+3. Instruct the software to run a simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) _n_ times.  (Note that this does not have to be a 'stochastic' simulation, as no reactions are present in these models.  The stochasticity is solely due to assignments from distributions.)
 4. Collect any requested means and/or standard deviations for all output variables, and save the output.
-5. Compare the simulated means and standard deviations to the expected values, using the formulas described in the DSMTS user guide, which includes the means, standard deviations, n, and the meanRange and sdRange values from `NNNNN-settings.txt`.
+5. Compare the simulated means and standard deviations to the expected values, using the formulas described in the DSMTS user guide, which includes the means, standard deviations, _n_, and the meanRange and sdRange values from `NNNNN-settings.txt`.
 6. Count the number of violations.  0 violations are great, 1-3 violations are probably fine; more may mean that the simulator contains an error, especially if repeated tests reveal the same violations for the same expected values.
 
 
