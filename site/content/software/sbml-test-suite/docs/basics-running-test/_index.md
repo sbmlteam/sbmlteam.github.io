@@ -28,13 +28,11 @@ Each test case in the [SBML Test Suite](/software/sbml-test-suite) is organized 
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-antimony.txt</code></nobr> |  (Some models only.) A description of the test model in [Antimony](http://antimony.sourceforge.net/) format used to generate the SBML file. |
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-results.xlsx</code></nobr> | (Some models only.) The results of using an analytical function in Microsoft Excel to produce the results for the model.  This is in turn used to produce the `NNNNN-results.csv` file for those models. |
 
-It is worth noting that the standalone SBML Test Suite, and the full test case archive available as a separate download, both contain _every_ Level/Version combination possible (that is, the <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-sbml-l<i style="background-color: #aaccaa">X</i>v<i style="background-color: yellow">Y</i>.xml</code></nobr> files mentioned above) for every test case, rather than just a specific Level/Version combination.
-
 
 Running a single test case
 --------------------------
 
-First, examine <code><i style="background-color: #ffcc99">NNNNN</i>-model.m</code> to determine what kind of test is being requested. The kind will be expressed by the value of the field named `testType:` in the `.m` file.
+First, examine the file <code><i style="background-color: #ffcc99">NNNNN</i>-model.m</code>.  The kind being requested will described by the value of the field named `testType:` in that file.
 
 ### If the type of test is `TimeCourse`
 
@@ -47,9 +45,9 @@ First, examine <code><i style="background-color: #ffcc99">NNNNN</i>-model.m</cod
 
 ### If the type of test is `FluxBalanceSteadyState`
 
-1. Examine `NNNNN-settings.txt` to determine the variables to be sampled/plotted.  (The format of this file is described on a separate page.)
-2. Instruct the software you are testing to read the SBML model definition file for this case (i.e., specifically, the file `NNNNN-sbml-l3v1.xml` &mdash; all flux balance tests are SBML Level 3, because the test requires the use of the SBML Level&nbsp;3 Flux Balance Constraints package).
-3. Instruct the software to run a simulation of the model to steady state, following the restrictions given by the Flux Balance Constraints package components in the model, and save the final values of the requested variables to a file whose name contains the case number (e.g., `myresultsNNNNN.csv` or even just `NNNNN.csv`).
+1. Examine the file `NNNNN-settings.txt` to determine the variables to be sampled/plotted.  (The format of this file is described on a separate page.)
+2. Instruct the software you are testing to read the SBML model definition file for this case, which in this case will be the file `NNNNN-sbml-l3v1.xml` &mdash; all flux balance tests are SBML Level 3, because the test requires the use of the SBML Level&nbsp;3 Flux Balance Constraints (FBC) package.
+3. Instruct the software to run a simulation of the model to steady state, following the restrictions given by the FBC package components in the model, and save the final values of the requested variables to a file whose name contains the case number (e.g., `myresultsNNNNN.csv` or even just `NNNNN.csv`).
 4. (If necessary) Convert the output to comma-separated value format.
 5. Use the SBML Test Suite to compare the output to the expected results, and use that to assess the implications.
 
@@ -57,7 +55,7 @@ First, examine <code><i style="background-color: #ffcc99">NNNNN</i>-model.m</cod
 ### If the type of test is `StochasticTimeCourse`
 
 1. Examine `NNNNN-settings.txt` to determine the variables to be sampled.  (The format of this file is described on a separate page.)
-2. Determine how many times (_n_) to repeat the simulation (should be at least 1,000; will probably need to be 10,000+).
+2. Determine how many times (_n_) to repeat the simulation.  This should be at least 1,000; will probably need to be 10,000+.
 3. Instruct the software to run a stochastic simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) _n_ times.
 4. Collect any requested means and/or standard deviations for all output variables, and save the output.
 5. Compare the simulated means and standard deviations to the expected values, using the formulas described in the DSMTS user guide, which includes the means, standard deviations, _n_, and the meanRange and sdRange values from `NNNNN-settings.txt`.
@@ -67,8 +65,8 @@ First, examine <code><i style="background-color: #ffcc99">NNNNN</i>-model.m</cod
 ### If the type of test is `StatisticalDistribution`
 
 1. Examine `NNNNN-settings.txt` to determine the variables to be sampled.  (The format of this file is described on a separate page.)
-2. Determine how many times (_n_) to repeat the simulation (should be at least 1,000; will probably need to be 10,000+).
-3. Instruct the software to run a simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) _n_ times.  (Note that this does not have to be a 'stochastic' simulation, as no reactions are present in these models.  The stochasticity is solely due to assignments from distributions.)
+2. Determine how many times (_n_) to repeat the simulation.  This should be at least 1,000; will probably need to be 10,000+.
+3. Instruct the software to run a simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) _n_ times.  (Note that this does not have to be a so-called stochastic simulation, because no reactions are present in these models.  The stochasticity is solely due to assignments from distributions.)
 4. Collect any requested means and/or standard deviations for all output variables, and save the output.
 5. Compare the simulated means and standard deviations to the expected values, using the formulas described in the DSMTS user guide, which includes the means, standard deviations, _n_, and the meanRange and sdRange values from `NNNNN-settings.txt`.
 6. Count the number of violations.  0 violations are great, 1-3 violations are probably fine; more may mean that the simulator contains an error, especially if repeated tests reveal the same violations for the same expected values.
@@ -77,9 +75,9 @@ First, examine <code><i style="background-color: #ffcc99">NNNNN</i>-model.m</cod
 Running multiple test cases
 ---------------------------
 
-To run more than one test case, the process above must be repeated for every test case in the suite that your software can handle.  _How_ this is accomplished depends very much on the particular software package being tested and which version of the SBML Test Suite you are using.  The standalone SBML Test Runner provides an automation framework which takes care of looping over all the `NNNNN` folders, and provides methods to include or exclude tests by tag or by package.  It only needs to be given an interface/adaptor program or shell script with which to control the software being tested.
+To run more than one test case, the process for a single test case as described above must be repeated for every test case in the suite that your software can handle.  _How_ this is accomplished depends very much on the particular software package being tested and which version of the SBML Test Suite you are using.  The standalone SBML Test Runner provides an automation framework which takes care of looping over all the `NNNNN` folders, and provides methods to include or exclude tests by tag or by package.  It only needs to be given an interface/adaptor program or shell script with which to control the software being tested.
 
-Many software packages may not be designed to pass all the tests in the suite:  some particular test tag or component may not be supported, or the software might not even read some package information at all.  In those cases, the unsupported tests can be excluded by tag or by package, and marked as 'unsupported' instead of 'failed'.
+Many software packages may not be designed to pass all the tests in the suite:  some particular test tag or component may not be supported, or the software might not even read some package information at all.  In those cases, the unsupported tests can be excluded by tag or by package, and marked as _unsupported_ instead of _failed_.
 
 <!--
 == Gathering the results of many tests for uploading to the Online SBML Test Suite ==
