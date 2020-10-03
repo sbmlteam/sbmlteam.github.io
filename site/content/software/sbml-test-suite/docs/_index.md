@@ -28,7 +28,7 @@ Testing a software package using the SBML Test Suite requires making the softwar
 
 Whether you use the standalone SBML Test Runner to run tests, or whether you write your own test-running framework, the following information is crucial to understanding the test cases and testing principles.
 
-{{% blurb title="Format of test case descriptions" icon="file-alt" link="running-a-test" %}}
+{{% blurb title="Format of test case descriptions" icon="file-alt" link="test-case-details" %}}
 This page explains in more detail the various files included with each SBML Test Suite test case, and how those files are intended to be used. 
 {{% /blurb %}}
 
