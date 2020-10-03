@@ -19,9 +19,9 @@ Each test case in the [SBML Test Suite](/software/sbml-test-suite) is organized 
 | File                     | Meaning |
 |--------------------------|---------|
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-sbml-l<i style="background-color: #aaccaa">X</i>v<i style="background-color: yellow">Y</i>.xml</code></nobr>  | These are the SBML files defining the model that constitutes a particular test. All the files define the same model, but in different SBML Level/Version formats, with the specific Level and Version identified by the numbers <i style="background-color: #aaccaa">X</i> and <i style="background-color: yellow">Y</i>.  Note that some tests apply to features that do not exist in all SBML Levels or Versions and therefore not all test cases come in all formats. |
-| <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-settings.txt</code></nobr> | This is a text file listing the general simulation control values that should be used when running the given model.  The format of this file is described elsewhere. |
+| <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-settings.txt</code></nobr> | This is a text file listing the general simulation control values that should be used when running the given model.  The format of this file is explained [on a separage page](../test-case-details/). |
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-model.html</code></nobr> | A brief, nicely-formatted, human-readable description of the purpose of this specific test. |
-| <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-model.m</code></nobr> | A description of the test model in a format used to generate the HTML file.  (In some models, it contains commands used to generate the SBML  file as well, but this is not available for all test case files.)  The format of this file is described elsewhere. |
+| <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-model.m</code></nobr> | A description of the test model in a format used to generate the HTML file.  (In some models, it contains commands used to generate the SBML  file as well, but this is not available for all test case files.)  The format of this file is explained [on a separage page](../test-case-details/). |
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-plot.jpg</code></nobr> | A plot of the expected time-course simulation results in [JPEG](http://en.wikipedia.org/wiki/Jpeg) format. |
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-results.csv</code></nobr> | The results expected from simulating the model.  The file format is simple [comma-separated values](http://en.wikipedia.org/wiki/Comma-separated_values).  Approximately 1/5 of SBML Test Suite cases have results generated from an analytical solution to the model; the rest come from numerical solutions produced and agreed upon by at least two different SBML-compatible tools. |
 | <nobr><code><i style="background-color: #ffcc99">NNNNN</i>-sbml-l<i style="background-color: #aaccaa">X</i>v<i style="background-color: yellow">Y</i>-sedml.xml</code></nobr>  | Files in [SED-ML](http://sed-ml.org/) format for running the test case in software systems that can automate their execution using SED-ML. |
@@ -36,7 +36,7 @@ First, examine the file <code><i style="background-color: #ffcc99">NNNNN</i>-mod
 
 ### If the type of test is `TimeCourse`
 
-1. Examine the file `NNNNN-settings.txt` to determine the simulation start time, duration, tolerances, number of output sampling steps, and variables to be sampled/plotted.  (The format of this file is described on a [separate page](../test-case-details).)
+1. Examine the file `NNNNN-settings.txt` to determine the simulation start time, duration, tolerances, number of output sampling steps, and variables to be sampled/plotted.  (The format of this file is explained [on a separate page](../test-case-details/).)
 2. Instruct the software you are testing to read the SBML model definition file for this case (i.e., the file `NNNNN-sbml-lXvY.xml`, chosing Level `X` and Version `Y` as appropriate for the software).  _Note:_ if constructs from the SBML Level&nbsp;3 Hierarchical Model Composition (_comp_) package are present, the model may need to be "flattened" first, depending on how the simulation software handles the _comp_ package.
 3. Instruct the software to run a simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) and save the output to a file whose name contains the case number (e.g., `myresultsNNNNN.csv` or even just `NNNNN.csv`).
 4. (If necessary) Convert the output to [comma-separated value format](https://en.wikipedia.org/wiki/Comma-separated_values).
@@ -45,7 +45,7 @@ First, examine the file <code><i style="background-color: #ffcc99">NNNNN</i>-mod
 
 ### If the type of test is `FluxBalanceSteadyState`
 
-1. Examine the file `NNNNN-settings.txt` to determine the variables to be sampled/plotted.  (The format of this file is described on a separate page.)
+1. Examine the file `NNNNN-settings.txt` to determine the variables to be sampled/plotted.  (The format of this file is described [on a separate page](../test-case-details/).)
 2. Instruct the software you are testing to read the SBML model definition file for this case, which in this case will be the file `NNNNN-sbml-l3v1.xml` &mdash; all flux balance tests are SBML Level 3, because the test requires the use of the SBML Level&nbsp;3 Flux Balance Constraints (FBC) package.
 3. Instruct the software to run a simulation of the model to steady state, following the restrictions given by the FBC package components in the model, and save the final values of the requested variables to a file whose name contains the case number (e.g., `myresultsNNNNN.csv` or even just `NNNNN.csv`).
 4. (If necessary) Convert the output to comma-separated value format.
@@ -54,7 +54,7 @@ First, examine the file <code><i style="background-color: #ffcc99">NNNNN</i>-mod
 
 ### If the type of test is `StochasticTimeCourse`
 
-1. Examine `NNNNN-settings.txt` to determine the variables to be sampled.  (The format of this file is described on a separate page.)
+1. Examine `NNNNN-settings.txt` to determine the variables to be sampled.  (The format of this file is described [on a separate page](../test-case-details/).)
 2. Determine how many times (_n_) to repeat the simulation.  This should be at least 1,000; will probably need to be 10,000+.
 3. Instruct the software to run a stochastic simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) _n_ times.
 4. Collect any requested means and/or standard deviations for all output variables, and save the output.
@@ -64,7 +64,7 @@ First, examine the file <code><i style="background-color: #ffcc99">NNNNN</i>-mod
 
 ### If the type of test is `StatisticalDistribution`
 
-1. Examine `NNNNN-settings.txt` to determine the variables to be sampled.  (The format of this file is described on a separate page.)
+1. Examine `NNNNN-settings.txt` to determine the variables to be sampled.  (The format of this file is described [on a separate page](../test-case-details/).)
 2. Determine how many times (_n_) to repeat the simulation.  This should be at least 1,000; will probably need to be 10,000+.
 3. Instruct the software to run a simulation of the model (using the settings determined by reading the file `NNNNN-settings.txt` as described above) _n_ times.  (Note that this does not have to be a so-called stochastic simulation, because no reactions are present in these models.  The stochasticity is solely due to assignments from distributions.)
 4. Collect any requested means and/or standard deviations for all output variables, and save the output.
