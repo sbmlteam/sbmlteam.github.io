@@ -36,7 +36,7 @@ Testing a software package using the SBML Test Suite requires making the softwar
 The information about test run parameters is stored in a file named `NNNNN-settings.txt` in each individual test case folder.  This page describes this file and how the values in it are used to assess whether the output of a software application are within acceptable tolerances for the test.
 {{% /blurb %}}
 
-{{% blurb title="Configuring an application test wrapper" icon="cogs" link="running-a-test" %}}
+{{% blurb title="Configuring an application test wrapper" icon="cogs" link="test-wrappers" %}}
 To use an application with the SBML Test Runner, you need to write a small script or program &ndash; a _wrapper_ &ndash; to interface between the Test Runner and the application.  This page explains how.
 {{% /blurb %}}
 
