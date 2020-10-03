@@ -4,7 +4,7 @@
 <!-- Put "icon" in the page file header to show that icon. -->
 {{ $icon       := .Params.icon       | default "" }}
 {{ $icon_side  := .Params.icon_side  | default "right" }}
-{{ $icon_width := .Params.icon_width | default "10%" }}
+{{ $icon_width := .Params.icon_width | default "4em" }}
 
 <!-- Start constructing the page. -->
 {{ partial "header.html" . }}

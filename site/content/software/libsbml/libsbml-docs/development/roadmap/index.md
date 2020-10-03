@@ -4,7 +4,7 @@ title      = "LibSBML development roadmap"
 date       = 2020-04-02
 layout     = "single"
 icon       = "/img/libsbml-logo-and-name.svg"
-icon_width = "25%"
+icon_width = "11em"
 #=====================================================================
 +++
 
