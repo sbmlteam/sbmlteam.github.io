@@ -1720,6 +1720,7 @@ a.badge:hover {
 .dropdown-menu,
 nav#navbar-main li.nav-item {
   font-size: {{ .Get "font_size_small" }}px;
+  margin-top: 1ex;
 }
 
 .navbar-light .navbar-nav>.nav-item>.nav-link,
@@ -1759,12 +1760,23 @@ nav#navbar-main li.nav-item {
 .navbar-brand,
 .navbar-nav li.nav-item a.nav-link {
   height: inherit;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
 }
 
 .navbar-brand img {
   max-height: 45px;
+}
+
+/* Conditional that switches the display of the logo depending on
+whether body has the class 'dark'. */
+
+body.dark .navbar-brand img.light-logo {
+  display: none;
+}
+
+body:not(.dark) .navbar-brand img.dark-logo {
+  display: none;
 }
 
 .navbar-light .navbar-toggler .icon-bar {
