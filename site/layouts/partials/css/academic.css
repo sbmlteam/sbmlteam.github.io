@@ -2071,7 +2071,6 @@ div.alert a {
   border: 1px dotted #aaa;
   border-radius: 0.5em;
   border-spacing: 0.75em;
-  border-collapse: separate;
   margin-left: 1rem;
   margin-bottom: 1rem;
   padding-top: 0.5rem;
@@ -2087,6 +2086,7 @@ div.alert a {
 
 .toc-contents {
   display: table;
+  margin-top: -1em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2099,12 +2099,10 @@ div.alert a {
   margin-bottom: 0;
 }
 
-#TableOfContents ul li {
-  display: none;
-}
-
 #TableOfContents li {
   display: block;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #TableOfContents a {
