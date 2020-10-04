@@ -69,9 +69,14 @@ HUGO_OUTPUTDIR="$sbmladmin/../run/hugo_output/"
 # fetched with getCSV is *not* updated even when a page is edited and Hugo
 # rebuilds the site.  (With --ignoreCache, Hugo only refreshes the getCSV data
 # from the source at the time Hugo starts up, and never again thereafter.)
+#
+# The --appendPort=false is needed because we put haproxy in front of hugo.
+# Without this argument, Hugo puts the port number into URLs it generates in
+# page headers, which breaks the URLs because the port used by Hugo is not
+# the public port that users actually see on the other side of haproxy.
 if [[ -n $SITE_URL ]]; then
     # Site url is set => public server, not local test/development server.
-    SERVER_ARGS="--disableLiveReload --ignoreCache"
+    SERVER_ARGS="--disableLiveReload --ignoreCache --appendPort=false"
     SERVER_ARGS+=" "
     SERVER_ARGS+="--baseURL $SITE_URL --bind $SITE_IP --port $SITE_PORT"
 else
