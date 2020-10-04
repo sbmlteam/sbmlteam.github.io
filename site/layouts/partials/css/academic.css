@@ -120,20 +120,18 @@ h1 {
 h2 {
   margin-top: 1em;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 h3 {
   font-weight: 500;
-  font-style: oblique;
-  margin-top: 1.5rem;
-  font-size: 1.2rem;
+  margin-top: 1.3rem;
+  font-size: 1.3rem;
 }
 h4, h5, h6 {
   font-weight: 500;
   font-style: oblique;
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #595959;
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
 }
 
 h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
@@ -1722,6 +1720,7 @@ a.badge:hover {
 .dropdown-menu,
 nav#navbar-main li.nav-item {
   font-size: {{ .Get "font_size_small" }}px;
+  margin-top: 1ex;
 }
 
 .navbar-light .navbar-nav>.nav-item>.nav-link,
@@ -1761,12 +1760,23 @@ nav#navbar-main li.nav-item {
 .navbar-brand,
 .navbar-nav li.nav-item a.nav-link {
   height: inherit;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
 }
 
 .navbar-brand img {
   max-height: 45px;
+}
+
+/* Conditional that switches the display of the logo depending on
+whether body has the class 'dark'. */
+
+body.dark .navbar-brand img.light-logo {
+  display: none;
+}
+
+body:not(.dark) .navbar-brand img.dark-logo {
+  display: none;
 }
 
 .navbar-light .navbar-toggler .icon-bar {
@@ -2073,7 +2083,6 @@ div.alert a {
   border: 1px dotted #aaa;
   border-radius: 0.5em;
   border-spacing: 0.75em;
-  border-collapse: separate;
   margin-left: 1rem;
   margin-bottom: 1rem;
   padding-top: 0.5rem;
@@ -2089,6 +2098,7 @@ div.alert a {
 
 .toc-contents {
   display: table;
+  margin-top: -1em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2101,12 +2111,10 @@ div.alert a {
   margin-bottom: 0;
 }
 
-#TableOfContents ul li {
-  display: none;
-}
-
 #TableOfContents li {
   display: block;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #TableOfContents a {

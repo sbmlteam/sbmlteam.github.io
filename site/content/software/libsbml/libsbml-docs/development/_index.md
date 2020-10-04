@@ -3,7 +3,7 @@
 title      = "LibSBML dev notes"
 layout     = "single"
 icon       = "/img/libsbml-logo-and-name.svg"
-icon_width = "25%"
+icon_width = "11em"
 #=====================================================================
 +++
 
