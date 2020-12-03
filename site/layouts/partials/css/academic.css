@@ -97,7 +97,7 @@ ul li, ol li, dl li {
 h1, h2, h3, h4, h5, h6 {
   font-family: '{{ .Get "heading_font" }}', sans-serif;
   font-weight: 400;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   margin-bottom: .5rem;
   line-height: 1.25;
   color: #111111;
@@ -114,24 +114,24 @@ h1, h2, h3, h4, h5, h6 {
   hyphens: manual;
 }
 h1 {
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   font-weight: 600;
 }
 h2 {
-  margin-top: 1em;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
+  margin-top: 1.1em;
 }
 h3 {
+  font-size: 1.2rem;
   font-weight: 500;
-  margin-top: 1.3rem;
-  font-size: 1.3rem;
+  margin-top: 1.25rem;
 }
 h4, h5, h6 {
+  font-size: 1.1rem;
   font-weight: 500;
   font-style: oblique;
-  margin-top: 1.2rem;
-  font-size: 1.2rem;
+  margin-top: 1.25rem;
 }
 
 h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
@@ -209,7 +209,7 @@ pre {
   border-radius: 0.5em;
   font-size: 0.85rem;
   width: 96%;
-  margin: auto auto 1rem auto;
+  margin: 1rem auto 1rem auto;
   padding: 0.25rem !important;
 }
 
@@ -2123,10 +2123,18 @@ div.alert a {
   list-style-position: inside;
   text-indent: -0.8rem;
   padding-left: 0.8rem;
+  line-height: 120%;
+}
+
+#TableOfContents ul li {
+  margin-top: 0.25rem;
 }
 
 #TableOfContents code {
   background-color: {{ .Get "background" }} !important;
+  font-size: 100%;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .dark #TableOfContents code {
@@ -3076,4 +3084,9 @@ table.sbml-package-status.tight-spacing > tbody > tr > td {
 ol ol > li {
   list-style-type: lower-alpha;
   counter-increment: item;
+}
+
+dd {
+  margin-left: 1.5em;
+  margin-right: 1em;
 }
