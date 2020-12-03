@@ -1,0 +1,58 @@
+/* 2020-12-03 added by mhucka@caltech.edu
+   CSS to implement numbered sections
+
+   Originally based on (1) parts of an answer posted to Stack Overflow on 
+   2018-07-02 by user "fralau": https://stackoverflow.com/a/51139662/743730
+   and (2) a GitHub gist by user "patik" posted 2016-12-21 at the URL
+   https://gist.github.com/patik/89ee6092c72a9e39950445c01598517a
+*/
+
+body {
+  counter-reset: h2;
+}
+
+h2 {
+  counter-reset: h3;
+}
+
+h3 {
+  counter-reset: h4;
+}
+
+h4 {
+  counter-reset: h5;
+}
+
+h5 {
+  counter-reset: h6;
+}
+
+article h2:before {
+  content: counter(h2,decimal) ".\0000a0\0000a0";
+  counter-increment: h2;
+}
+
+article h3:before {
+  content: counter(h2,decimal) "." counter(h3,decimal) ".\0000a0\0000a0";
+  counter-increment: h3;
+}
+
+article h4:before {
+  content: counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) ".\0000a0\0000a0";
+  counter-increment: h4;
+}
+
+article h5:before {
+  content: counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) "." counter(h5,decimal) ".\0000a0\0000a0";
+  counter-increment: h5;
+}
+
+article h6:before {
+  content: counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) "." counter(h5,decimal) "." counter(h6,decimal) ".\0000a0\0000a0";
+  counter-increment: h6;
+}
+
+h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {
+  content: "";
+  counter-increment: none;
+}
