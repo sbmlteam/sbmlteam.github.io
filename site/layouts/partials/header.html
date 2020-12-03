@@ -148,6 +148,10 @@ page context, and if found, it uses it to construct a value for the
     <link rel="stylesheet" href="{{ $css_bundle.RelPermalink }}">
   {{ end }}
 
+  {{ if $page.Params.numbered }}
+    <link rel="stylesheet" href="{{ "css/numbered-sections.css" | relLangURL }}">
+  {{ end }}
+
   {{ if not $page.Site.IsServer }}
   {{ if $page.Site.GoogleAnalytics }}
     <script>
