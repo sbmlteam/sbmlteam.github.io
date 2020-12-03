@@ -42,6 +42,7 @@ A **stable release** includes support for SBML Level&nbsp;3 Core and all accepte
 
 We provide Zenodo DOIs for specific releases, so that you can cite the exact version of the software that you use:
 
+* libSBML-5.19.0 &rArr; [10.5281/zenodo.4293358](https://doi.org/10.5281/zenodo.4293358)
 * libSBML-5.18.0 &rArr; [10.5281/zenodo.2645216](https://doi.org/10.5281/zenodo.2645216)
 * libSBML-5.17.0 &rArr; [10.5281/zenodo.1250696](https://doi.org/10.5281/zenodo.)
 * libSBML-5.16.0 &rArr; [10.5281/zenodo.1095483](https://doi.org/10.5281/zenodo.)
@@ -71,11 +72,11 @@ LibSBML's main authors are [Sarah M. Keating](https://github.com/skeating), [Fra
 
 ## Community and help
 
-There is a mailing list and web forum, [libsbml-development@googlegroups.com](https://groups.google.com/forum/#!forum/libsbml-development), devoted to discussions about LIBSBML.  If you're using LIBSBML or interested in learning more, feel free to join the group!
+If you use libSBML in your software, we encourage you to join the [sbml-discuss@googlegroups.com](https://groups.google.com/g/sbml-discuss) mailing list and web forum, where you can ask questions and discuss the development, use, and interoperability of SBML and software that supports SBML.
+
+There is a also list/forum devoted to discussions about LIBSBML: [libsbml-development@googlegroups.com](https://groups.google.com/forum/#!forum/libsbml-development).  If you're using LIBSBML or interested in learning more, feel free to join the group!
 
 You can also reach the main developers directly via email at [libsbml-team@googlegroups.com](libsbml-team@googlegroups.com).
-
-We welcome contributions from anyone interested. It is especially useful to receive patches to enable building libSBML on operating systems or compilers that our outside our test matrix.  The best way to submit a patch is via our [Sourceforge Tracker](https://sourceforge.net/p/sbml/libsbml/) as this provides a transparent record.  However, we are also happy to accept patches via [email](mailto:libsbml-team@googlegroups.com).
 
 
 ## Funding acknowledgments
