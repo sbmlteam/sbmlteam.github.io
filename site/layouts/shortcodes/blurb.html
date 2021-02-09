@@ -51,6 +51,9 @@ case-by-case tweaking.
 {{ if in $icon "github" }} 
   {{ $fas_or_fab = "fab" }} 
 {{ end }}
+{{ if in $icon "stack-overflow" }} 
+  {{ $fas_or_fab = "fab" }} 
+{{ end }}
 {{ $icon  := ( print "fa-" $icon ) }}
 
 <div class="blurb row row-big-gutter align-items-center decorated-text">
