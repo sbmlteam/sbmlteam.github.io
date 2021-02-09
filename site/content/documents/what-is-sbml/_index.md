@@ -23,7 +23,7 @@ Suc &rarr; Suc<sub>vac</sub>
 <em>Can you predict what a set of reactions like this will do when you start the system with different initial quantities? </em></div>
 </div>
 
-The starting point is an appreciation that **computational modeling** of biological systems is no longer a fringe activity&mdash;it's a _requirement_ for us to make sense of our vast and ever-expanding quantities of data.  This reality is acknowledged and reinforced by a vast increase this decade in the number of journals, books and articles having computational and systems biology emphases.
+The starting point is an appreciation that **computational modeling** of biological systems is no longer a fringe activity&mdash;it's a _requirement_ for us to make sense of our vast and ever-expanding quantities of data.  This reality is acknowledged and reinforced by a vast increase over the past two decades in the number of journals, books and articles having computational and systems biology emphases.
 
 At its most basic, computational modeling is no different from modeling as it's practiced by all scientists, whether in biology or elsewhere.  The extra but crucial step is casting the model into a formal, computable form that can be analyzed rigorously using simulation and other mathematical methods.
 
@@ -32,19 +32,27 @@ Different representations of models are useful for different purposes. [Graphica
 Simply put, **SBML is a machine-readable format for representing models**.
 It's oriented towards describing systems where biological entities are involved in, and modified by, processes that occur over time.  An example of this is a network of biochemical reactions.  SBML's framework is suitable for representing models commonly found in research on a number of topics, including cell signaling pathways, metabolic pathways, biochemical reactions, gene regulation, and many others.
 
+
 ## SBML is for software 
 
 SBML does _not_ represent an attempt to define a universal language for representing quantitative models.  It would be impossible to achieve a one-size-fits-all universal language. A more realistic alternative is to acknowledge the diversity of approaches and methods being explored in systems biology, and seek **a common intermediate format**&mdash;a _lingua franca_&mdash;enabling communication of the most essential aspects of the models.
 
+SBML is neutral with respect to programming languages and software encoding; however, it's oriented towards allowing models to be encoded using [XML](http://www.w3.org/XML).  By supporting SBML as a format for reading and writing models, different software tools (including programs for building and editing models, simulation programs, databases, and other systems) can directly communicate and store the _same_ computable representation of those models.  This removes an impediment to sharing results and permits other researchers to start with an **unambiguous representation of the model**, examine it carefully, propose precise corrections and extensions, and apply new techniques and approaches&mdash;in short, _to do better science_.
+
+
+## SBML is for people too
+
+SBML enables research teams to use a single model description throughout a project's life cycle even when projects involve heterogeneous software tools.  An ecosystem of SBML-compatible software tools today allows researchers to use SBML in all aspects of a modeling project, including creation (manual or automated), annotation, comparison, merging, parametrization, simulation/analysis, results comparison, network motif discovery, system identification, omics data integration, visualization, and more.  Such use of a standardized format, along with standard annotation schemes and training in reproducible methods, improves research workflows and is generally recognized as promoting research reproducibility.
+
 The adoption of SBML offers **many benefits**, including: (1) enabling the use of multiple tools without rewriting models for each tool, (2) enabling models to be shared and published in a form other researchers can use even in a different software environment, and (3) ensuring the survival of models (and the intellectual effort put into them) beyond the lifetime of the software used to create them.
 
-SBML is neutral with respect to programming languages and software encoding; however, it's oriented towards allowing models to be encoded using [XML](http://www.w3.org/XML).  By supporting SBML as a format for reading and writing models, different software tools (including programs for building and editing models, simulation programs, databases, and other systems) can directly communicate and store the _same_ computable representation of those models.  This removes an impediment to sharing results and permits other researchers to start with an unambiguous representation of the model, examine it carefully, propose precise corrections and extensions, and apply new techniques and approaches&mdash;in short, _to do better science_.
 
 ## What can _you_ do with it? 
 
 If you're a biologist interested in doing computational modeling, this may be all you need to know about SBML.  Today's modern software packages hide the details of SBML and provide you with interfaces that help you focus on your modeling and analysis tasks.  You can find out about many SBML-compatible software systems from our [SBML Showcase](/showcase).
 
 If you're a software developer or an advanced modeler, you probably want to learn just a little bit more about SBML.  Please go to the [SBML specification documents](/documents/specifications).
+
 
 ## Evolution and growth of SBML 
 
