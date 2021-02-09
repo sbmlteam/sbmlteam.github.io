@@ -14,9 +14,7 @@ The mailing lists are where questions are asked and the latest developments disc
 
 | Google&nbsp;Group&nbsp;&amp;&nbsp;archive                                        | Purpose |
 |----------------------------------------------------------------------------------|---------|
-| [sbml-announce](https://groups.google.com/d/forum/sbml-announce)                 | Low-volume, broadcast-only list for announcements of importance to the SBML community, such as new releases of SBML specifications and upcoming SBML-related events. |
 | [sbml-discuss](https://groups.google.com/d/forum/sbml-discuss)                   | Main list for **SBML** development and community interaction. _Questions about libSBML or JSBML or should be posted to the forums below._ Announcements related to SBML-compatible software are accepted, but no other advertisements are permitted. |
-| [sbml-interoperability](https://groups.google.com/d/forum/sbml-interoperability) | Discussions of use and interoperability of all _software_ that supports SBML. LibSBML questions and other topics are perfectly acceptable here. |
 | [libsbml-development](https://groups.google.com/d/forum/libsbml-development)     | Technical discussions specifically about libSBML and its development, including requests for new features and questions about its operation. |
 | [jsbml-development](https://groups.google.com/d/forum/jsbml-development)         | Technical discussions specifically about JSBML (a pure Java SBML library) and its development. |
 
