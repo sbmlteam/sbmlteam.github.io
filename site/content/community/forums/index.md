@@ -6,17 +6,27 @@ layout = "single"
 ######################################################################
 +++
 
-Discussions about SBML and related topics takes place over several mailing lists implemented as Google Groups.  The forums area provides a web interface to the lists, and you can also subscribe to any lists you find interesting.
+Discussions about SBML and related topics takes place over Google Groups, Stack Overflow, and some legacy mailing lists hosted on SourceForge. 
+
 
 ## General SBML-related forums
 
-The mailing lists are where questions are asked and the latest developments discussed.  Please see the table below for more information about the different lists/groups available. Note: clicking on the links will take you away from SBML.org and to pages at Google.com. SBML.org is not affiliated with Google in any way.
+The Google Groups are where most questions are asked and the latest developments discussed.  Please see the table below for more information about the different lists/groups available. Note: clicking on the links will take you away from SBML.org and to pages at Google.com. SBML.org is not affiliated with Google in any way.
 
 | Google&nbsp;Group&nbsp;&amp;&nbsp;archive                                        | Purpose |
 |----------------------------------------------------------------------------------|---------|
 | [sbml-discuss](https://groups.google.com/d/forum/sbml-discuss)                   | Main list for **SBML** development and community interaction. _Questions about libSBML or JSBML or should be posted to the forums below._ Announcements related to SBML-compatible software are accepted, but no other advertisements are permitted. |
 | [libsbml-development](https://groups.google.com/d/forum/libsbml-development)     | Technical discussions specifically about libSBML and its development, including requests for new features and questions about its operation. |
 | [jsbml-development](https://groups.google.com/d/forum/jsbml-development)         | Technical discussions specifically about JSBML (a pure Java SBML library) and its development. |
+
+
+## Stack Overflow
+
+SBML has its own tag on Stack Overflow, a popular question and answer site for professional and enthusiast programmers.  Note: SBML.org is not affiliated with Stack Overflow in any way.
+
+{{% blurb title="Stack Overflow" icon="stack-overflow" link="https://stackoverflow.com/questions/tagged/sbml" %}}
+  Search for questions tagged with "SBML" on Stack Overflow.
+{{% /blurb %}}
 
 
 ## Mailing lists for SBML Level 3 Package Working Groups
