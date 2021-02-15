@@ -161,17 +161,47 @@ The following is an attempt to credit everyone (other than the SBML Team) who ha
 The SBML effort has benefitted multiple times from [Google Summer of Code](https://developers.google.com/open-source/gsoc/) and [NRNB Academy](http://nrnb.org/gsoc.html).
 
 
-### Google Summer of Code 2019
+### Google Summer of Code 2020
 
-In 2019, we were fortunate to have had two projects involving SBML.
+In 2020, we were fortunate to have had three projects involving SBML. They are
+listed below in alphabetical order by the students' last names.
 
 {{% gsoc-project-table %}}
   {{< gsoc-project
-      name="Kaustubh Trivedi"
-      org="[Indian Institute of Technology Roorkee](https://www.iitr.ac.in), Uttarakhand, India"
-      title="Extending ModelPolisher to a universal annotation tool"
-      link="https://summerofcode.withgoogle.com/archive/2019/projects/5516960685621248/"
-      blog="https://kt-gsoc19.blogspot.com" 
+      name="Medha Bhattacharya"
+      org="[Indira Gandhi Delhi Technical University for Women](), India"
+      title="Development of a system that generates spatial SBML models using deep learning"
+      link="https://summerofcode.withgoogle.com/archive/2020/projects/4913136240427008/"
+      blog="https://gsoc2020mb.blogspot.com"
+  >}}
+  {{< gsoc-project
+      name="Hemil Panchiwala"
+      org="[Indian Institute of Technology](https://iitr.ac.in), Roorkee, India"
+      title="Simulation of systems biology models in Java: support for new features"
+      link="https://summerofcode.withgoogle.com/archive/2020/projects/5760152914886656/"
+      blog="https://gsoc20hemil.blogspot.com"
+  >}}
+  {{< gsoc-project
+      name="Hemant Yadav"
+      org="[Indian Institute of Technology](https://iitr.ac.in), Roorkee, India"
+      title="Implementation of SBML-JSON converter and SBML-JSON scheme"
+      link="https://summerofcode.withgoogle.com/archive/2020/projects/5395464691646464/"
+      blog="https://hemant-gsoc2020.blogspot.com"
+  >}}
+{{% /gsoc-project-table %}}
+
+
+### Google Summer of Code 2019
+
+In 2019, we were fortunate to have had three projects involving SBML.
+
+{{% gsoc-project-table %}}
+  {{< gsoc-project
+      name="Nikhil Ghodke"
+      org="[Vishwakarma Institute of Technology](http://www.vit.edu/index.php), Pune, India"
+      title="New Build System for InSilico"
+      link="https://summerofcode.withgoogle.com/archive/2019/projects/5319454819352576/"
+      blog="https://medium.com/@nikhil.ghodke17"
   >}}
   {{< gsoc-project
       name="Bhavye Jain"
@@ -179,6 +209,13 @@ In 2019, we were fortunate to have had two projects involving SBML.
       title="Validation of spatial systems biology models in Java"
       link="https://summerofcode.withgoogle.com/archive/2019/projects/6066046165843968/"
       blog="https://gsoc19-spatial.blogspot.com" 
+  >}}
+  {{< gsoc-project
+      name="Kaustubh Trivedi"
+      org="[Indian Institute of Technology Roorkee](https://www.iitr.ac.in), Uttarakhand, India"
+      title="Extending ModelPolisher to a universal annotation tool"
+      link="https://summerofcode.withgoogle.com/archive/2019/projects/5516960685621248/"
+      blog="https://kt-gsoc19.blogspot.com" 
   >}}
 {{% /gsoc-project-table %}}
 
