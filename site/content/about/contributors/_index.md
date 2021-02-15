@@ -169,7 +169,7 @@ listed below in alphabetical order by the students' last names.
 {{% gsoc-project-table %}}
   {{< gsoc-project
       name="Medha Bhattacharya"
-      org="[Indira Gandhi Delhi Technical University for Women](), India"
+      org="[Indira Gandhi Delhi Technical University for Women](http://www.igdtuw.ac.in), India"
       title="Development of a system that generates spatial SBML models using deep learning"
       link="https://summerofcode.withgoogle.com/archive/2020/projects/4913136240427008/"
       blog="https://gsoc2020mb.blogspot.com"
