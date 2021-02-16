@@ -272,7 +272,7 @@ listed below in alphabetical order by student's last name.
       blog="http://hgrabski.blogspot.de"
   >}}
   {{< gsoc-project
-      name="Kaito Li"
+      name="Kaito Ii"
       org="[Funahashi Lab](http://fun.bio.keio.ac.jp/), Keio University, Japan"
       title="Interconvertible Layout program for CellDesigner"
       link="https://summerofcode.withgoogle.com/projects/#5659317147533312"
