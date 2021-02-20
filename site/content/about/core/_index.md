@@ -68,15 +68,19 @@ The SBML Scientific Advisory Board is composed of scientists and researchers wit
 
 ## SBML Team
 
-The SBML Team strives to support the SBML community and the development and maintenance of specific SBML infrastructure and facilities. In particular, the team is responsible for (1) maintaining this website, the SBML mailing lists, electronic surveys, and other resources; (2) arranging for the development and support of critical software, including [libSBML](Software/libSBML), the [SBML Validator](Facilities/Validator), and the SBML Test Suite; and (3) organizing [SBML events](Events).
+The SBML Team has been funded to support the SBML community and the development and maintenance of specific SBML infrastructure and facilities. In particular, the team was responsible for (1) maintaining this website, the SBML mailing lists, electronic surveys, and other resources; (2) arranging for the development and support of critical software, including [libSBML](Software/libSBML), the [SBML Validator](Facilities/Validator), and the SBML Test Suite; and (3) organizing [SBML events](Events).
+
+Unfortunately there is no longer any formal funding but the following people contribute their time to maintaining the infrastructure they worked so long to develop.  
 
 Email address for contacting the SBML Team: <sbml-team@googlegroups.com>
 
   - [**Michael Hucka**](http://www.cds.caltech.edu/~mhucka/) works on all aspects of SBML and contributes to [libSBML](Software/libSBML "wikilink"), the SBML Test Suite, and the Online SBML Validator. He also writes grant proposals, organizes workshops, maintains SBML.org, and does other odd jobs.
 
+  - [**Frank Bergmann**](http://frank-fbergmann.blogspot.com/) worked on many software systems and services, including the online SBML validator, the SBML Test Suite, the SBML Test Suite Database, libSBML, and more. He still contributes to these efforts.
+
   - [**Andreas Dräger**](https://uni-tuebingen.de/en/134053) is a junior professor at the [Institute for Bioinformatics and Medical Informatics (IBMI) in Tübingen](https://uni-tuebingen.de/en/148353), and is also a co-developer of [JSBML](Software/JSBML "wikilink") and several upcoming software efforts by the SBML Team.
 
-  - **Sarah M. Keating** is the current lead developer for [libSBML](Software/libSBML "wikilink") and the [ SBMLToolbox](Software/SBMLToolbox "wikilink"). She is also developing the SBML Test Suite, the RELAX NG schemas for SBML, and [DEVISER](http://www.github.com/sbmlteam/deviser).
+  - **Sarah M. Keating** is a Senior Research Software Developer at [UCL](https://www.ucl.ac.uk/isd/services/research-it/research-software-development). She still maintains the development for [libSBML](Software/libSBML "wikilink"), [ SBMLToolbox](Software/SBMLToolbox "wikilink"), and [DEVISER](http://www.github.com/sbmlteam/deviser).
 
   - **Lucian P. Smith** leads the development of the SBML Level 3 [ hierarchical model composition](Community/Wiki/SBML_Level_3_Proposals/Hierarchical_Model_Composition "wikilink") package. He also works on the SBML Test Suite.
 
