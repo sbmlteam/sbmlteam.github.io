@@ -1,7 +1,7 @@
 SBML.org website<img width="28%" align="right" src=".graphics/sbml-logo.svg">
 ================
 
-This repository contains the source files for the SBML.org website, refreshed in 2019-2020.
+This repository contains the source files for the SBML.org website, refreshed in 2019-2021.
 
 <p align="center"><img width="60%" src=".graphics/clarification.svg"></p>
 
@@ -17,10 +17,9 @@ Table of contents
 * [Introduction](#introduction)
 * [Documentation](#documentation)
 * [Getting help](#getting-help)
-* [Contributing](#contributing)
 * [License](#license)
 * [Authors and history](#authors-and-history)
-* [Acknowledgments](#authors-and-acknowledgments)
+* [Acknowledgments](#acknowledgments)
 
 
 
@@ -47,11 +46,11 @@ License
 
 This site incorporates [Hugo Academic](https://github.com/gcushen/hugo-academic). Those files are distributed under their [own license](site/themes/academic/LICENSE.md).
 
-The rest of this content is Copyright (C) 2018&ndash;2019 by the California Institute of Technology (Pasadena, California, USA) and distributed under the [LGPL version&nbsp;2.1](LICENSE.txt).
+The rest of this content is Copyright (C) 2018&ndash;2021 by the California Institute of Technology (Pasadena, California, USA) and distributed under the [LGPL version&nbsp;2.1](LICENSE.txt).
 
 
 Authors and history
----------------------------
+-------------------
 
 The design, organization, look and feel, custom Hugo shortcodes, and many other elements of the site, and much of its content, were created by [Mike Hucka](https://github.com/mhucka) over time during the years 2018&ndash;2020.  The initial starting point was the [Academic](https://github.com/gcushen/hugo-academic) theme for Hugo, but in the end, very little of the theme wound up being present in the visible parts of the site.
 
