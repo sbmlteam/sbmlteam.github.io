@@ -18,8 +18,8 @@ In Section 6.3, the SBML specification states that RDF content in an `<annotatio
 &nbsp;&nbsp;&lt;annotation&gt; 
 &nbsp;&nbsp;&nbsp;&nbsp;<span style="background-color: #999999; color: #ffffff">...</span> 
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;rdf:RDF&nbsp;xmlns:rdf="<nowiki>http://www.w3.org/1999/02/22-rdf-syntax-ns#</nowiki>" 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlns:bqbiol="<nowiki>http://biomodels.net/biology-qualifiers/</nowiki>" 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlns:bqmodel="<nowiki>http://biomodels.net/model-qualifiers/</nowiki>"  &gt; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlns:bqbiol="<nowiki>https://biomodels.net/biology-qualifiers/</nowiki>" 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlns:bqmodel="<nowiki>https://biomodels.net/model-qualifiers/</nowiki>"  &gt; 
 <font color="darkred">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;rdf:Description rdf:about="#<span style="background-color: #9999ff; font-style: italic">SBML_META_ID</span>" &gt; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span style="background-color: #cc9999; font-style: italic">QUALIFIER</span>&gt; 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;rdf:Bag&gt; 
@@ -72,7 +72,7 @@ There are at least two ways to do this.  One approach puts the annotations entir
 <reaction metaid="metaid_0000052" id="vPFK" name="Phosphofructokinase">
   <annotation>
     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  
-             xmlns:bqbiol="http://biomodels.net/biology-qualifiers/"  >
+             xmlns:bqbiol="https://biomodels.net/biology-qualifiers/"  >
 
       <rdf:Description rdf:about="#metaid_0000052">
   
@@ -111,7 +111,7 @@ The following examples illustrates the syntax and approach:
 <species metaid="metaid_0000052" id="S" compartment="ly"> 
   <annotation> 
     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-             xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" > 
+             xmlns:bqbiol="https://biomodels.net/biology-qualifiers/" > 
  
       <rdf:Description rdf:about="#metaid_0000052"> 
         <bqbiol:occursIn> 
@@ -123,7 +123,7 @@ The following examples illustrates the syntax and approach:
  
       <rdf:Statement> 
         <rdf:subject rdf:resource="#metaid_0000052"/> 
-        <rdf:predicate rdf:resource="http://biomodels.net/biology-qualifiers/occursIn"/> 
+        <rdf:predicate rdf:resource="https://biomodels.net/biology-qualifiers/occursIn"/> 
         <rdf:object rdf:resource="http://identifiers.org/go/GO:0005764"/> 
         <bqbiol:isDescribedBy> 
           <rdf:Bag> 
@@ -162,7 +162,7 @@ Certain modeling efforts want to attach [InChI](http://www.iupac.org/inchi/) str
 <species metaid="metaid_M_8" id="M_8" name="1-Methylnicotinamide" compartment="C_1"> 
   <annotation> 
     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  
-             xmlns:bqbiol="http://biomodels.net/biology-qualifiers/"  >
+             xmlns:bqbiol="https://biomodels.net/biology-qualifiers/"  >
 
       <rdf:Description rdf:about="#metaid_M_8"> 
         <bqbiol:is> 
@@ -173,7 +173,7 @@ Certain modeling efforts want to attach [InChI](http://www.iupac.org/inchi/) str
       </rdf:Description> 
 
       <rdf:Description rdf:about="#metaid_M_8"> 
-        <in:inchi xmlns:in="http://biomodels.net/inchi"> 
+        <in:inchi xmlns:in="https://biomodels.net/inchi"> 
            InChI=1/C7H8N2O/c1-9-4-2-3-6(5-9)7(8)10/h2-5H,1H3,(H-,8,10)/p+1 
         </in:inchi> 
       </rdf:Description> 
@@ -185,4 +185,4 @@ Certain modeling efforts want to attach [InChI](http://www.iupac.org/inchi/) str
 
 The essential point of the scheme above is that it puts the InChI string as the content of an element other than the first `rdf:Description` element inside the `rdf:RDF` element.  The SBML Level&nbsp;2 specification only constrains the content of the first `rdf:Description` element, and permits valid XML RDF content beyond it, so the above is valid RDF, but simply outside the scope of the SBML Level&nbsp;2 annotation scheme.  SBML-compliant software tools may not attempt to understand it, but tools with extended support for RDF may be able to.
 
-One last note about the use of the namespace URI `"http://biomodels.net/inchi"`. The use of a namespace-qualified element implies that the entity controlling the namespace has defined (or can define) the content that does into the element.   It may seem reasonable to use `"http://iupac.org/inchi"` for the namespace string, but it turns out that IUPAC, the organization behind InChI, does not define this namespace (or any namespace, as far as we can determine). This introduces the question of just exactly what to use in this situation.  Attempting to use `"http://iupac.org/inchi"` would risk encountering a conflict in the future if IUPAC ever ''does'' define something using the `"http://iupac.org/inchi"` namespace.  Consequently, a different namespace must be used.  The BioModels.net consortium will release a simple schema for this purpose, using the namespace URI `"http://biomodels.net/inchi"`.
+One last note about the use of the namespace URI `"https://biomodels.net/inchi"`. The use of a namespace-qualified element implies that the entity controlling the namespace has defined (or can define) the content that does into the element.   It may seem reasonable to use `"http://iupac.org/inchi"` for the namespace string, but it turns out that IUPAC, the organization behind InChI, does not define this namespace (or any namespace, as far as we can determine). This introduces the question of just exactly what to use in this situation.  Attempting to use `"http://iupac.org/inchi"` would risk encountering a conflict in the future if IUPAC ever ''does'' define something using the `"http://iupac.org/inchi"` namespace.  Consequently, a different namespace must be used.  The BioModels.net consortium will release a simple schema for this purpose, using the namespace URI `"https://biomodels.net/inchi"`.
