@@ -184,11 +184,13 @@ resourceDir = ".resources/"
 # that defines the order in which the links will appear.
 
 [menu]
-  [[menu.main]]
-    name = "News"
-    url = "news"
-    weight = 1
-  
+  # 2022-01-03 removed from nav bar because no one has time to keep the news
+  # updated.
+  # [[menu.main]]
+  #   name = "News"
+  #   url = "news"
+  #   weight = 1
+
   [[menu.main]]
     name = "Docs"
     url = "documents"
