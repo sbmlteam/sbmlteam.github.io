@@ -3,13 +3,6 @@ SBML.org website<img width="28%" align="right" src=".graphics/sbml-logo.svg">
 
 This repository contains the source files for the SBML.org website, refreshed in 2019-2021.
 
-<p align="center"><img width="60%" src=".graphics/clarification.svg"></p>
-
-
-*Authors*:      [Michael Hucka](https://github.com/mhucka)<br>
-*Repository*:   [https://github.com/caltechlibrary/sbml-org-website](https://github.com/caltechlibrary/sbml-org-website)<br>
-*License*:      except as noted, the contents are licensed with the [LGPL v.&nbsp;2.1](LICENSE.txt)
-
 
 Table of contents
 -----------------
