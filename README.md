@@ -39,7 +39,7 @@ License
 
 This site incorporates [Hugo Academic](https://github.com/gcushen/hugo-academic). Those files are distributed under their [own license](site/themes/academic/LICENSE.md).
 
-The rest of this content is Copyright (C) 2018&ndash;2021 by the California Institute of Technology (Pasadena, California, USA) and distributed under the [LGPL version&nbsp;2.1](LICENSE.txt).
+The rest of this content is Copyright (C) 2018&ndash;2022 by the California Institute of Technology (Pasadena, California, USA) and distributed under the [LGPL version&nbsp;2.1](LICENSE.txt).
 
 
 Authors and history
