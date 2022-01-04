@@ -5,9 +5,7 @@
 #          front page of the site.  It uses a specialized template
 #          defined in the ../layouts/ directory.  The template inserts
 #          the content you see below into the overall page structure
-#          and also adds additional elements, such as the links to
-#          recent news articles.  That is why those elements are not
-#          present here.
+#          and also adds additional elements.
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 layout = "home"
 #=====================================================================
@@ -39,4 +37,4 @@ Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a 
 
 <hr>
 
-No matter how you use SBML, we invite you to sign up for news updates via either the [RSS news feed](/news/index.xml) for SBML.org, the [@sbmlnews Twitter feed](https://twitter.com/sbmlnews), or the very low-volume [sbml-announce](https://groups.google.com/forum/#!forum/sbml-announce) mailing list.
+No matter how you use SBML, we invite you to sign up for the SBML discussion group, [sbml-discuss](https://groups.google.com/forum/#!forum/sbml-discuss).
