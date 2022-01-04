@@ -206,10 +206,12 @@ resourceDir = ".resources/"
     url = "facilities"
     weight = 4
   
-  [[menu.main]]
-    name = "Showcase"
-    url = "community/showcase"
-    weight = 5
+  # 2022-01-03 removed from the nav bar because we don't have time to
+  # finish the updates nor keep things updated.
+  # [[menu.main]]
+  #   name = "Showcase"
+  #   url = "community/showcase"
+  #   weight = 5
   
   [[menu.main]]
     name = "Community"
