@@ -1,9 +1,9 @@
 +++
 #=====================================================================
 title   = "JSBML API"
-date    = "2020-03-20"
+date    = "2022-01-05"
 layout  = "static"
-source  = "/static/software/jsbml/1.5.0/apidocs/overview-summary.html"
+source  = "https://github.com/sbmlteam/jsbml/blob/gh-pages/files/doc/api/1.6.1/overview-summary.html"
 use_raw = true
 #=====================================================================
 +++
