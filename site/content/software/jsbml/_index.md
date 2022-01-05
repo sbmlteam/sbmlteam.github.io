@@ -27,6 +27,7 @@ Article citations are crucial to our ability to justify continued development of
 
 We provide Zenodo DOIs for specific releases, so that you can cite the exact version of the software that you use:
 
+* JSBML release 1.6.1 &rArr; [10.5281/zenodo.5820927](https://doi.org/10.5281/zenodo.5820927)
 * JSBML release 1.6   &rArr; [10.5281/zenodo.5789493](https://doi.org/10.5281/zenodo.5789493)
 * JSBML release 1.5   &rArr; [10.5281/zenodo.3751775](https://doi.org/10.5281/zenodo.3751775)
 * JSBML release 1.4   &rArr; [10.5281/zenodo.1346189](https://doi.org/10.5281/zenodo.1346189)
@@ -70,7 +71,7 @@ Alexander Diamantikos<span style="font-size: 5pt"> </span><sup>1</sup>,
 [Marine Dumousseau](http://www.ebi.ac.uk/about/people/marine-dumousseau/)<span style="font-size: 5pt"> </span><sup>2</sup>,
 [Johannes Eichner](http://www.cogsys.cs.uni-tuebingen.de/mitarb/eichner/)<span style="font-size: 5pt"> </span><sup>1</sup>,
 Lisa Falk,
-Sebastian Fr&ouml;hlich<span style="font-size: 5pt"> </span><sup>4</sup>,
+[Sebastian Fr&ouml;hlich](https://www.linkedin.com/in/sebastian-fröhlich-74b34b92/)<span style="font-size: 5pt"> </span><sup>4</sup>,
 [Harold F. G&oacute;mez](http://www.bu.edu/computationalimmunology/people/harold-gomez/)<span style="font-size: 5pt"> </span><sup>5</sup>
 [Thomas M. Hamm](https://uni-tuebingen.de/en/134068)<span style="font-size: 5pt"> </span><sup>1</sup>
 [Michael Hucka](http://www.cds.caltech.edu/~mhucka/)<span style="font-size: 5pt"> </span><sup>6</sup>,
