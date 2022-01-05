@@ -47,7 +47,7 @@ We try to inform users of potential interactions and known problems.  Please let
 This page describes a number of known problems in libSBML and potential interactions with operating environments.
 {{% /blurb %}}
 
-{{% blurb title="Issue tracker" icon="bug" link="https://sourceforge.net/p/sbml/libsbml/" %}}
+{{% blurb title="Issue tracker" icon="bug" link="https://github.com/sbmlteam/libsbml/issues" %}}
 The bug and issue tracker for libSBML lists pending issues and lets you report new ones.
 {{% /blurb %}}
 
