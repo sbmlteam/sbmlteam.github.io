@@ -55,6 +55,7 @@ LibSBML's main authors are [Sarah M. Keating](https://github.com/skeating), [Fra
 
 * Gordon Ball
 * Bill Denney
+* Alessandro Felder
 * Christoph Flamm
 * Akira Funahashi
 * Ralph Gauges
@@ -66,6 +67,7 @@ LibSBML's main authors are [Sarah M. Keating](https://github.com/skeating), [Fra
 * Moriyoshi Koizumi
 * Ben Kovitz
 * Thomas Pfau
+* Jamie J. Quinn
 * Nicolas Rodriguez
 * Fengkai Zhang
 
