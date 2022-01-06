@@ -17,7 +17,7 @@ To use libSBML, you must first install the software and configure your environme
 Visit this page for more information about how to download and install the binary versions of libSBML for different operating systems.
 {{% /blurb %}}
 
-{{% blurb title="Building libSBML from sources" icon="code-branch" link="http://sbml.org/Software/libSBML/5.18.0/docs/cpp-api/libsbml-installation.html" %}}
+{{% blurb title="Building libSBML from sources" icon="code-branch" link="../../../../static/software/libsbml/5.18.0/docs/formatted/cpp-api/libsbml-installation.html" %}}
 If you are unable to find a ready-to-use version of libSBML for your particular operating environment, or you have special requirements for libSBML's configuration, you can build it from the sources.  Visit this page for more information about how to do that.
 {{% /blurb %}}
 
@@ -47,7 +47,7 @@ We try to inform users of potential interactions and known problems.  Please let
 This page describes a number of known problems in libSBML and potential interactions with operating environments.
 {{% /blurb %}}
 
-{{% blurb title="Issue tracker" icon="bug" link="https://sourceforge.net/p/sbml/libsbml/" %}}
+{{% blurb title="Issue tracker" icon="bug" link="https://github.com/sbmlteam/libsbml/issues" %}}
 The bug and issue tracker for libSBML lists pending issues and lets you report new ones.
 {{% /blurb %}}
 
@@ -56,8 +56,8 @@ The bug and issue tracker for libSBML lists pending issues and lets you report n
 
 The following are resources especially relevant to libSBML developers.
 
-{{% blurb title="Software repository for libSBML" image="/img/sourceforge-logo.png" link="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/" %}}
-The libSBML code repository is currently on SourceForge.
+{{% blurb title="Software repository for libSBML" image="github" link="https://github.com/sbmlteam/libsbml" %}}
+The libSBML code repository is currently on GitHub.
 {{% /blurb %}}
 
 {{% blurb title="Pivotal Tracker and libSBML" image="/img/pivotaltracker-logo.svg" link="pivotal-tracker" %}}
