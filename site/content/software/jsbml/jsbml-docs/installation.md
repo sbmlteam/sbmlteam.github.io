@@ -2,7 +2,7 @@
 #=====================================================================
 active = true
 title = "Basic installation guide for JSBML"
-date = "2020-03-21"
+date = "2022-01-05"
 layout = "single"
 toc = true
 #=====================================================================
@@ -27,18 +27,22 @@ The version of the JSBML `.jar` file that includes dependencies is a merged JAR 
 
 If you choose the version of the JSBML `.jar` file that does not include dependencies, you will need to add the following dependencies to your Java class path in some other way.  (More recent versions than the ones shown here may also work, but are untested.)
 
-* biojava-ontology-4.0.0.jar
+* biojava-ontology-6.0.4.jar
+* hamcrest-core-1.3.jar
 * jigsaw-dateParser.jar (a version of [jigsaw](http://jigsaw.w3.org) containing one class to manipulate dates)
-* junit-4.8.jar
-* log4j-1.2-api-2.3.jar 
-* log4j-api-2.3.jar
-* log4j-core-2.3.jar
-* log4j-slf4j-impl-2.3.jar
-* slf4j-api-1.7.21.jar
+* junit-4.13.1.jar
+* log4j-1.2-api-2.17.1.jar
+* log4j-api-2.17.1.jar
+* log4j-core-2.17.1.jar
+* log4j-slf4j-impl-2.17.1.jar
+* mxparser-1.2.2.jar
+* slf4j-api-1.7.30.jar
+* spi-full-0.2.4.jar
 * stax2-api-3.1.4.jar
 * staxmate-2.3.0.jar
 * woodstox-core-5.0.1.jar
-* xstream-1.3.1.jar
+* xpp3_min-1.1.4c.jar
+* xstream-1.4.18.jar
 
 
 ## Using Maven
@@ -157,7 +161,7 @@ In your projects depending on JSBML, just add this dependency:
     <dependency> 
       <groupId>org.sbml.jsbml</groupId> 
       <artifactId>jsbml</artifactId> 
-      <version>1.5-SNAPSHOT</version> 
+      <version>1.6.1-SNAPSHOT</version> 
     </dependency>
 
 ## Using the source distribution
