@@ -38,7 +38,7 @@ The JSBML User's Guide is the best introduction to using JSBML.  This guide incl
 The diagram of the JSBML class hierarchy provides an overview of the object classes in JSBML.
 {{% /blurb %}}
 
-{{% blurb title="API documentation" icon="laptop-code" link="apidocs" %}}
+{{% blurb title="API documentation" icon="laptop-code" link="https://sbmlteam.github.io/jsbml/files/doc/api/1.6.1" %}}
 The JSBML API documentation describes the objects and methods defined by JSBML. The documentation is produced using Javadoc directly from the source code files.
 {{% /blurb %}}
 
