@@ -16,4 +16,8 @@ LibSBML provides APIs for programming in C, C++, C#, Java, JavaScript, MATLAB, P
 * [Python](python)
 * [MATLAB](matlab)
 
-For other languages not listed above, looking at the [C++](c++-api) documentation gives a good sense for what is availble in that language.
+### Other languages and third-party bindings
+
+Above are listed the officially supported languages.  For other languages, looking at the [C++](c++-api) documentation gives a good sense for what is availble in that language.  Additionally, there are bindings for libSBML in other languages maintained by third-party developers:
+
+* [Julia](https://github.com/LCSB-BioCore/SBML.jl)
