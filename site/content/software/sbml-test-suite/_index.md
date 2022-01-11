@@ -18,10 +18,10 @@ docs="docs" tracker="https://github.com/sbmlteam/sbml-test-suite/issues/" repo="
 Computational modeling has become a crucial aspect of biological research, and SBML has become the de facto standard open format for exchanging models between software tools in systems biology. However, implementing full support for SBML (especially for numerical simulations of models described by SBML) is a complex undertaking.  The goal of the SBML Test Suite is to help developers implement correct SBML support, and help users evaluate the completeness of support in a given software tool.
 
 The SBML Test Suite consists of several parts:
-* A collection of SBML models, together with expected results, that can be used to test interpretation of SBML files.  The tests are grouped into three subsets: **semantic** (for deterministic simulation behavior), **stochastic** (for stochastic simulation behavior), and **syntactic** (for basic parsing).  The test cases can be downloaded separately as [complete archives](http://github.com/sbmlteam/sbml-test-suite/releases).
+* A collection of SBML models, together with expected results, that can be used to test interpretation of SBML files.  The tests are grouped into three subsets: **semantic** (for deterministic simulation behavior), **stochastic** (for stochastic simulation behavior), and **syntactic** (for basic parsing).  Each suite of test cases can be downloaded separately as [complete archives](http://github.com/sbmlteam/sbml-test-suite/releases).
 * The **SBML Test Runner**, a standalone application that can be used to run an application against the collection of semantic test cases, and report successes and failures.  The image below shows an example run from the SBML Test Runner:<br><br>
 <img class="center screenshot" src="example-run.png"/><br>
-* An [**online database**](/facilities/database) of test results provided by software authors for their SBML-compatible software packages.
+* An [**online database**](http://raterule.caltech.edu/Facilities/Database) of test results provided by software authors for their SBML-compatible software packages.
 
 
 ## SBML Test Suite release DOIs
