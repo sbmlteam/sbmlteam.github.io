@@ -44,9 +44,9 @@ We provide Zenodo DOIs for specific releases, so that you can cite the exact ver
 
 * libSBML-5.19.0 &rArr; [10.5281/zenodo.4293358](https://doi.org/10.5281/zenodo.4293358)
 * libSBML-5.18.0 &rArr; [10.5281/zenodo.2645216](https://doi.org/10.5281/zenodo.2645216)
-* libSBML-5.17.0 &rArr; [10.5281/zenodo.1250696](https://doi.org/10.5281/zenodo.)
-* libSBML-5.16.0 &rArr; [10.5281/zenodo.1095483](https://doi.org/10.5281/zenodo.)
-* libSBML-5.15.0 &rArr; [10.5281/zenodo.495344](https://doi.org/10.5281/zenodo.)
+* libSBML-5.17.0 &rArr; [10.5281/zenodo.1250696](https://doi.org/10.5281/zenodo.1250696)
+* libSBML-5.16.0 &rArr; [10.5281/zenodo.1095483](https://doi.org/10.5281/zenodo.1095483)
+* libSBML-5.15.0 &rArr; [10.5281/zenodo.495344](https://doi.org/10.5281/zenodo.495344)
 
 
 ## LibSBML authors and contributors
