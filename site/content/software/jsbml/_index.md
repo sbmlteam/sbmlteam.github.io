@@ -7,7 +7,7 @@ icon_width = "18%"
 #=====================================================================
 +++
 
-JSBML is a community-driven project to create a free, open-source (under [LGPL](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)), pure Java library for reading, writing, and manipulating SBML files and data streams. It is an alternative to the mixed Java/native code-based interface provided in [libSBML](/software/libsbml).
+JSBML is a community-driven project to create a free, open-source (under [LGPL](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)), pure Java™ library for reading, writing, and manipulating SBML files and data streams. It is an alternative to the mixed Java/native code-based interface provided in [libSBML](/software/libsbml).
 
 The JSBML project's aim is to provide an SBML parser and library that maps all SBML elements to a flexible and extended type hierarchy. Where possible, JSBML strives to attain 100% API compatibility with the [libSBML](/software/libsbml) Java API, to facilitate a switch from one library to the other. Currently, JSBML supports all constructs for SBML up to the latest Level 3 Version 2 Release 2 specification, including an API to add support for SBML Level 3 packages. JSBML reimplements even complex functions of libSBML such as consistency-checking and SBML validation. In addition, validation can also be accessed via web services.
 
@@ -27,7 +27,7 @@ Article citations are crucial to our ability to justify continued development of
 
 We provide Zenodo DOIs for specific releases, so that you can cite the exact version of the software that you use:
 
-* JSBML release 1.6.1 &rArr; [10.5281/zenodo.5820927](https://doi.org/10.5281/zenodo.5820927)
+* JSBML release 1.6.1 &rArr; [10.5281/zenodo.5833365](https://doi.org/10.5281/zenodo.5833365)
 * JSBML release 1.6   &rArr; [10.5281/zenodo.5789493](https://doi.org/10.5281/zenodo.5789493)
 * JSBML release 1.5   &rArr; [10.5281/zenodo.3751775](https://doi.org/10.5281/zenodo.3751775)
 * JSBML release 1.4   &rArr; [10.5281/zenodo.1346189](https://doi.org/10.5281/zenodo.1346189)
