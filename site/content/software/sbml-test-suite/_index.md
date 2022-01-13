@@ -33,7 +33,7 @@ We provide Zenodo DOIs for specific releases, so that you can cite the exact ver
 
 ## Getting started
 
-Please visit the [SBML Test Suite documentation pages](test-suite-docs) for information about how to get started with using the test suite.
+Please visit the [SBML Test Suite documentation pages](docs) for information about how to get started with using the test suite.
 
 
 ## Acknowledgments
