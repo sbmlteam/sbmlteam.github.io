@@ -17,7 +17,7 @@ To use libSBML, you must first install the software and configure your environme
 Visit this page for more information about how to download and install the binary versions of libSBML for different operating systems.
 {{% /blurb %}}
 
-{{% blurb title="Building libSBML from sources" icon="code-branch" link="../../../../static/software/libsbml/5.18.0/docs/formatted/cpp-api/libsbml-installation.html" %}}
+{{% blurb title="Building libSBML from sources" icon="code-branch" link="../../../../software/libsbml/5.18.0/docs/formatted/cpp-api/libsbml-installation.html" %}}
 If you are unable to find a ready-to-use version of libSBML for your particular operating environment, or you have special requirements for libSBML's configuration, you can build it from the sources.  Visit this page for more information about how to do that.
 {{% /blurb %}}
 
@@ -56,7 +56,7 @@ The bug and issue tracker for libSBML lists pending issues and lets you report n
 
 The following are resources especially relevant to libSBML developers.
 
-{{% blurb title="Software repository for libSBML" image="github" link="https://github.com/sbmlteam/libsbml" %}}
+{{% blurb title="Software repository for libSBML" icon="github" link="https://github.com/sbmlteam/libsbml" %}}
 The libSBML code repository is currently on GitHub.
 {{% /blurb %}}
 
