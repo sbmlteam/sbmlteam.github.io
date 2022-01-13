@@ -47,6 +47,7 @@ We provide Zenodo DOIs for specific releases, so that you can cite the exact ver
 * libSBML-5.17.0 &rArr; [10.5281/zenodo.1250696](https://doi.org/10.5281/zenodo.1250696)
 * libSBML-5.16.0 &rArr; [10.5281/zenodo.1095483](https://doi.org/10.5281/zenodo.1095483)
 * libSBML-5.15.0 &rArr; [10.5281/zenodo.495344](https://doi.org/10.5281/zenodo.495344)
+* These and earlier versions are available at [sourceforge](https://sourceforge.net/projects/sbml/files/libsbml/)
 
 
 ## LibSBML authors and contributors
