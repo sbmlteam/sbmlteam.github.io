@@ -56,7 +56,7 @@ The bug and issue tracker for libSBML lists pending issues and lets you report n
 
 The following are resources especially relevant to libSBML developers.
 
-{{% blurb title="Software repository for libSBML" image="/img/Octicons-mark-github-blue.svg" link="https://github.com/sbmlteam/libsbml" %}}
+{{% blurb title="Software repository for libSBML" icon="github" link="https://github.com/sbmlteam/libsbml" %}}
 The libSBML code repository is currently on GitHub.
 {{% /blurb %}}
 
