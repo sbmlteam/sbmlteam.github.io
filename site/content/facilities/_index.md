@@ -17,6 +17,6 @@ The SBML Test Suite is a conformance testing system for SBML.  It can be used so
 <br>
 The following services have not yet been converted; they are hosted on the old SBML.org website:
 
-{{% blurb title="SBML Test Suite Database" image="/img/Official-sbml-supported-70.jpg" link="http://sbml.org/Facilities/Database" %}}
+{{% blurb title="SBML Test Suite Database" image="/img/Official-sbml-supported-70.jpg" link="http://raterule.caltech.edu/Facilities/Database" %}}
 The SBML Test Suite Database provides author-supplied results of running the SBML Test Suite in different SBML-compatible applications.
 {{% /blurb %}}
