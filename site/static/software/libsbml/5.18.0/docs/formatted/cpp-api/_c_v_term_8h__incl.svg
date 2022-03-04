@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 877;
+var viewWidth = 773;
 var viewHeight = 464;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,317 +54,317 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>CVTerm.h</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-460 872.5,-460 872.5,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-460 769,-460 769,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<polygon fill="#bfbfbf" stroke="#000000" points="566,-436.5 566,-455.5 628,-455.5 628,-436.5 566,-436.5"/>
-<text text-anchor="middle" x="597" y="-443.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CVTerm.h</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="498.5,-436.5 498.5,-455.5 549.5,-455.5 549.5,-436.5 498.5,-436.5"/>
+<text text-anchor="middle" x="524" y="-443.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CVTerm.h</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="extern_8h.html" target="_top" xlink:title="Definitions of LIBSBML_EXTERN and related things. ">
-<polygon fill="#ffffff" stroke="#000000" points="22,-67.5 22,-86.5 140,-86.5 140,-67.5 22,-67.5"/>
-<text text-anchor="middle" x="81" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/extern.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="29,-67.5 29,-86.5 121,-86.5 121,-67.5 29,-67.5"/>
+<text text-anchor="middle" x="75" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/extern.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M565.736,-443.8232C479.1125,-437.6152 237.3147,-419.0405 160,-400 84.3712,-381.3747 0,-406.3885 0,-328.5 0,-328.5 0,-328.5 0,-205.5 0,-159.2987 37.9359,-116.1515 61.8843,-93.5163"/>
-<polygon fill="#191970" stroke="#191970" points="64.3747,-95.9818 69.3947,-86.6517 59.6521,-90.8149 64.3747,-95.9818"/>
+<path fill="none" stroke="#191970" d="M498.4073,-444.1494C422.9102,-438.5078 202.0905,-420.646 133,-400 68.6981,-380.785 0,-395.6115 0,-328.5 0,-328.5 0,-328.5 0,-205.5 0,-160.2112 35.1791,-116.6833 57.3507,-93.7472"/>
+<polygon fill="#191970" stroke="#191970" points="59.9768,-96.0707 64.5716,-86.524 55.0263,-91.1217 59.9768,-96.0707"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="sbmlfwd_8h.html" target="_top" xlink:title="Forward declarations for all opaque C types. ">
-<polygon fill="#ffffff" stroke="#000000" points="190.5,-257.5 190.5,-276.5 317.5,-276.5 317.5,-257.5 190.5,-257.5"/>
-<text text-anchor="middle" x="254" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/sbmlfwd.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="168.5,-257.5 168.5,-276.5 267.5,-276.5 267.5,-257.5 168.5,-257.5"/>
+<text text-anchor="middle" x="218" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/sbmlfwd.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M565.854,-442.0179C487.2398,-431.2192 284.5702,-398.4752 250,-344 239.174,-326.9406 242.5045,-303.2303 247.0616,-286.6421"/>
-<polygon fill="#191970" stroke="#191970" points="250.4603,-287.4999 250.097,-276.9113 243.7779,-285.4154 250.4603,-287.4999"/>
+<path fill="none" stroke="#191970" d="M498.3775,-441.7654C430.1638,-429.8787 247.2688,-393.7909 217,-344 206.6175,-326.9213 208.7025,-303.5301 212.2341,-287.0237"/>
+<polygon fill="#191970" stroke="#191970" points="215.7456,-287.4085 214.7748,-276.8582 208.9544,-285.7111 215.7456,-287.4085"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="operation_return_values_8h.html" target="_top" xlink:title="Enumeration of values returned by operations within libSBML. ">
-<polygon fill="#ffffff" stroke="#000000" points="28.5,-313.5 28.5,-343.5 181.5,-343.5 181.5,-313.5 28.5,-313.5"/>
-<text text-anchor="start" x="36.5" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/operationReturn</text>
-<text text-anchor="middle" x="105" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Values.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="30.5,-313.5 30.5,-343.5 149.5,-343.5 149.5,-313.5 30.5,-313.5"/>
+<text text-anchor="start" x="38.5" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/operationReturn</text>
+<text text-anchor="middle" x="90" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Values.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge10" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M565.923,-444.6206C483.8619,-440.6339 263.0786,-427.5802 196,-400 169.0888,-388.9351 143.5032,-367.5076 126.3556,-350.9829"/>
-<polygon fill="#191970" stroke="#191970" points="128.6634,-348.3423 119.0963,-343.7902 123.7365,-353.3149 128.6634,-348.3423"/>
+<path fill="none" stroke="#191970" d="M498.3134,-444.8129C426.2259,-441.1551 223.4267,-428.5346 164,-400 141.0981,-389.0033 120.8048,-368.1598 107.2894,-351.803"/>
+<polygon fill="#191970" stroke="#191970" points="109.83,-349.375 100.8615,-343.7344 104.355,-353.7367 109.83,-349.375"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="_x_m_l_attributes_8h.html" target="_top" xlink:title="XMLAttributes are a list of name/value pairs for XML elements. ">
-<polygon fill="#ffffff" stroke="#000000" points="378,-380.5 378,-399.5 508,-399.5 508,-380.5 378,-380.5"/>
-<text text-anchor="middle" x="443" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/xml/XMLAttributes.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="334,-380.5 334,-399.5 436,-399.5 436,-380.5 334,-380.5"/>
+<text text-anchor="middle" x="385" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/xml/XMLAttributes.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge12" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M570.5265,-436.3733C545.1403,-427.1419 506.6355,-413.1402 478.578,-402.9375"/>
-<polygon fill="#191970" stroke="#191970" points="479.7222,-399.6293 469.1281,-399.5011 477.3299,-406.2079 479.7222,-399.6293"/>
+<path fill="none" stroke="#191970" d="M500.105,-436.3733C477.4918,-427.2629 443.3458,-413.5062 418.1127,-403.3404"/>
+<polygon fill="#191970" stroke="#191970" points="419.1666,-399.9917 408.5831,-399.5011 416.5507,-406.4845 419.1666,-399.9917"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<polygon fill="#ffffff" stroke="#bfbfbf" points="575.5,-257.5 575.5,-276.5 616.5,-276.5 616.5,-257.5 575.5,-257.5"/>
-<text text-anchor="middle" x="596" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">string</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="505.5,-257.5 505.5,-276.5 540.5,-276.5 540.5,-257.5 505.5,-257.5"/>
+<text text-anchor="middle" x="523" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">string</text>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
 <g id="edge26" class="edge">
 <title>Node1&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M597.2666,-436.3196C597.8286,-414.3766 599.0032,-359.171 598,-313 597.8114,-304.3189 597.4227,-294.7229 597.0378,-286.5513"/>
-<polygon fill="#191970" stroke="#191970" points="600.5308,-286.3229 596.5343,-276.5108 593.5396,-286.6736 600.5308,-286.3229"/>
+<path fill="none" stroke="#191970" d="M524.2666,-436.3196C524.8286,-414.3766 526.0032,-359.171 525,-313 524.8114,-304.3189 524.4227,-294.7229 524.0378,-286.5513"/>
+<polygon fill="#191970" stroke="#191970" points="527.5308,-286.3229 523.5343,-276.5108 520.5396,-286.6736 527.5308,-286.3229"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<polygon fill="#ffffff" stroke="#bfbfbf" points="625.5,-380.5 625.5,-399.5 664.5,-399.5 664.5,-380.5 625.5,-380.5"/>
-<text text-anchor="middle" x="645" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">limits</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="552,-380.5 552,-399.5 586,-399.5 586,-380.5 552,-380.5"/>
+<text text-anchor="middle" x="569" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">limits</text>
 </g>
 <!-- Node1&#45;&gt;Node15 -->
 <g id="edge24" class="edge">
 <title>Node1&#45;&gt;Node15</title>
-<path fill="none" stroke="#191970" d="M605.361,-436.2455C612.175,-428.2958 621.9681,-416.8706 630.1152,-407.3656"/>
-<polygon fill="#191970" stroke="#191970" points="632.8843,-409.513 636.7349,-399.6427 627.5695,-404.9575 632.8843,-409.513"/>
+<path fill="none" stroke="#191970" d="M531.8384,-436.2455C538.162,-428.3761 547.2224,-417.101 554.8136,-407.6542"/>
+<polygon fill="#191970" stroke="#191970" points="557.7158,-409.6302 561.2514,-399.6427 552.2592,-405.2454 557.7158,-409.6302"/>
 </g>
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
-<polygon fill="#ffffff" stroke="#bfbfbf" points="683,-380.5 683,-399.5 735,-399.5 735,-380.5 683,-380.5"/>
-<text text-anchor="middle" x="709" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">iomanip</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="604.5,-380.5 604.5,-399.5 647.5,-399.5 647.5,-380.5 604.5,-380.5"/>
+<text text-anchor="middle" x="626" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">iomanip</text>
 </g>
 <!-- Node1&#45;&gt;Node16 -->
 <g id="edge25" class="edge">
 <title>Node1&#45;&gt;Node16</title>
-<path fill="none" stroke="#191970" d="M616.2535,-436.3733C634.0712,-427.4644 660.7747,-414.1127 680.9594,-404.0203"/>
-<polygon fill="#191970" stroke="#191970" points="682.6187,-407.1038 689.9978,-399.5011 679.4882,-400.8428 682.6187,-407.1038"/>
+<path fill="none" stroke="#191970" d="M541.767,-436.2455C557.7095,-427.4928 581.3259,-414.527 599.4989,-404.5496"/>
+<polygon fill="#191970" stroke="#191970" points="601.3552,-407.5233 608.4366,-399.6427 597.9863,-401.3873 601.3552,-407.5233"/>
 </g>
 <!-- Node17 -->
 <g id="node17" class="node">
 <title>Node17</title>
-<polygon fill="#ffffff" stroke="#bfbfbf" points="753,-380.5 753,-399.5 805,-399.5 805,-380.5 753,-380.5"/>
-<text text-anchor="middle" x="779" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sstream</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="665.5,-380.5 665.5,-399.5 708.5,-399.5 708.5,-380.5 665.5,-380.5"/>
+<text text-anchor="middle" x="687" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sstream</text>
 </g>
 <!-- Node1&#45;&gt;Node17 -->
 <g id="edge27" class="edge">
 <title>Node1&#45;&gt;Node17</title>
-<path fill="none" stroke="#191970" d="M628.2869,-436.3733C660.1555,-426.5676 709.5171,-411.3793 742.9926,-401.0792"/>
-<polygon fill="#191970" stroke="#191970" points="744.3061,-404.3371 752.8346,-398.0509 742.2474,-397.6466 744.3061,-404.3371"/>
+<path fill="none" stroke="#191970" d="M549.8278,-437.1266C578.5398,-427.2624 624.9099,-411.3316 655.6716,-400.7631"/>
+<polygon fill="#191970" stroke="#191970" points="657.1372,-403.9605 665.4574,-397.4011 654.8627,-397.3403 657.1372,-403.9605"/>
 </g>
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
-<polygon fill="#ffffff" stroke="#bfbfbf" points="823.5,-380.5 823.5,-399.5 868.5,-399.5 868.5,-380.5 823.5,-380.5"/>
-<text text-anchor="middle" x="846" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">cstdlib</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="727,-380.5 727,-399.5 765,-399.5 765,-380.5 727,-380.5"/>
+<text text-anchor="middle" x="746" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">cstdlib</text>
 </g>
 <!-- Node1&#45;&gt;Node18 -->
 <g id="edge28" class="edge">
 <title>Node1&#45;&gt;Node18</title>
-<path fill="none" stroke="#191970" d="M628.119,-440.357C668.5495,-432.8187 741.4942,-418.5156 813.2385,-400.0063"/>
-<polygon fill="#191970" stroke="#191970" points="814.5586,-403.2791 823.3505,-397.3669 812.7907,-396.506 814.5586,-403.2791"/>
+<path fill="none" stroke="#191970" d="M549.658,-440.8583C585.2648,-433.5209 651.8049,-419.0806 717.1791,-400.0135"/>
+<polygon fill="#191970" stroke="#191970" points="718.2139,-403.3574 726.8122,-397.167 716.2302,-396.6443 718.2139,-403.3574"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="libsbml-namespace_8h.html" target="_top" xlink:title="Defines C++ namespace of libSBML. ">
-<polygon fill="#ffffff" stroke="#000000" points="301.5,-.5 301.5,-30.5 414.5,-30.5 414.5,-.5 301.5,-.5"/>
-<text text-anchor="start" x="309.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/libsbml</text>
-<text text-anchor="middle" x="358" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&#45;namespace.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="265.5,-.5 265.5,-30.5 354.5,-30.5 354.5,-.5 265.5,-.5"/>
+<text text-anchor="start" x="273.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/libsbml</text>
+<text text-anchor="middle" x="310" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&#45;namespace.h</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M123.9773,-67.4581C168.8041,-57.5056 239.6604,-41.774 291.6722,-30.2262"/>
-<polygon fill="#191970" stroke="#191970" points="292.4781,-33.6326 301.4817,-28.0483 290.9608,-26.799 292.4781,-33.6326"/>
+<path fill="none" stroke="#191970" d="M111.4609,-67.4581C150.0544,-57.3581 211.3899,-41.3065 255.68,-29.7157"/>
+<polygon fill="#191970" stroke="#191970" points="256.6313,-33.0847 265.4193,-27.1669 254.859,-26.3127 256.6313,-33.0847"/>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M273.6471,-257.4856C288.0856,-249.567 307.1737,-237.0141 319,-221 361.2871,-163.7387 366.4434,-138.1 363,-67 362.5891,-58.5154 361.7995,-49.272 360.9671,-40.9881"/>
-<polygon fill="#191970" stroke="#191970" points="364.4206,-40.3662 359.8764,-30.7954 357.4604,-41.1111 364.4206,-40.3662"/>
+<path fill="none" stroke="#191970" d="M233.01,-257.365C244.8639,-249.0453 261.0183,-236.0172 271,-221 310.337,-161.8183 316.7535,-138.0091 314,-67 313.6714,-58.5261 313.0398,-49.2855 312.3738,-41.0009"/>
+<polygon fill="#191970" stroke="#191970" points="315.8413,-40.4706 311.5012,-30.8055 308.8668,-41.0676 315.8413,-40.4706"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="libsbml-config_8h.html" target="_top" xlink:title="Decides whether to #include Unix or Windows configuration variables. ">
-<polygon fill="#ffffff" stroke="#000000" points="197.5,-190.5 197.5,-220.5 310.5,-220.5 310.5,-190.5 197.5,-190.5"/>
-<text text-anchor="start" x="205.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/libsbml</text>
-<text text-anchor="middle" x="254" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&#45;config.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="173.5,-190.5 173.5,-220.5 262.5,-220.5 262.5,-190.5 173.5,-190.5"/>
+<text text-anchor="start" x="181.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/libsbml</text>
+<text text-anchor="middle" x="218" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&#45;config.h</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge5" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M254,-257.3906C254,-250.2234 254,-240.0862 254,-230.671"/>
-<polygon fill="#191970" stroke="#191970" points="257.5001,-230.5446 254,-220.5446 250.5001,-230.5446 257.5001,-230.5446"/>
+<path fill="none" stroke="#191970" d="M218,-257.3906C218,-250.2234 218,-240.0862 218,-230.671"/>
+<polygon fill="#191970" stroke="#191970" points="221.5001,-230.5446 218,-220.5446 214.5001,-230.5446 221.5001,-230.5446"/>
 </g>
 <!-- Node5&#45;&gt;Node3 -->
 <g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M280.1288,-190.3944C293.5432,-181.4054 309.1027,-168.8582 319,-154 342.2089,-119.1579 351.7445,-70.5783 355.5627,-41.1798"/>
-<polygon fill="#191970" stroke="#191970" points="359.0772,-41.2592 356.7627,-30.9203 352.1245,-40.4459 359.0772,-41.2592"/>
+<path fill="none" stroke="#191970" d="M238.198,-190.3324C249.3474,-180.9848 262.5974,-168.1098 271,-154 292.4203,-118.0307 302.5091,-69.7997 306.9227,-40.7764"/>
+<polygon fill="#191970" stroke="#191970" points="310.4187,-41.0496 308.3482,-30.659 303.4872,-40.0729 310.4187,-41.0496"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="libsbml-config-common_8h.html" target="_top" xlink:title="Configuration variables. ">
-<polygon fill="#ffffff" stroke="#000000" points="197.5,-123.5 197.5,-153.5 310.5,-153.5 310.5,-123.5 197.5,-123.5"/>
-<text text-anchor="start" x="205.5" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/libsbml</text>
-<text text-anchor="middle" x="254" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&#45;config&#45;common.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="173.5,-123.5 173.5,-153.5 262.5,-153.5 262.5,-123.5 173.5,-123.5"/>
+<text text-anchor="start" x="181.5" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/libsbml</text>
+<text text-anchor="middle" x="218" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&#45;config&#45;common.h</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge7" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M254,-190.2967C254,-182.5013 254,-172.7991 254,-163.9064"/>
-<polygon fill="#191970" stroke="#191970" points="257.5001,-163.6431 254,-153.6432 250.5001,-163.6432 257.5001,-163.6431"/>
+<path fill="none" stroke="#191970" d="M218,-190.2967C218,-182.5013 218,-172.7991 218,-163.9064"/>
+<polygon fill="#191970" stroke="#191970" points="221.5001,-163.6431 218,-153.6432 214.5001,-163.6432 221.5001,-163.6431"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="libsbml-version_8h.html" target="_top" xlink:title="Define libSBML version numbers for access from client software. ">
-<polygon fill="#ffffff" stroke="#000000" points="66.5,-123.5 66.5,-153.5 179.5,-153.5 179.5,-123.5 66.5,-123.5"/>
+<polygon fill="#ffffff" stroke="#000000" points="66.5,-123.5 66.5,-153.5 155.5,-153.5 155.5,-123.5 66.5,-123.5"/>
 <text text-anchor="start" x="74.5" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/common/libsbml</text>
-<text text-anchor="middle" x="123" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&#45;version.h</text>
+<text text-anchor="middle" x="111" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&#45;version.h</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node7 -->
 <g id="edge8" class="edge">
 <title>Node5&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M224.601,-190.4639C206.0226,-180.9619 181.809,-168.5779 161.6801,-158.283"/>
-<polygon fill="#191970" stroke="#191970" points="163.251,-155.1552 152.7541,-153.7177 160.0635,-161.3874 163.251,-155.1552"/>
+<path fill="none" stroke="#191970" d="M193.9871,-190.4639C179.2225,-181.2188 160.1005,-169.2452 143.9339,-159.1222"/>
+<polygon fill="#191970" stroke="#191970" points="145.636,-156.0584 135.303,-153.7177 141.921,-161.9913 145.636,-156.0584"/>
 </g>
 <!-- Node7&#45;&gt;Node2 -->
 <g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M112.618,-123.2977C106.8487,-114.8498 99.6284,-104.2773 93.5447,-95.369"/>
-<polygon fill="#191970" stroke="#191970" points="96.2547,-93.1311 87.7247,-86.8469 90.4741,-97.0788 96.2547,-93.1311"/>
+<path fill="none" stroke="#191970" d="M102.1011,-123.2977C97.2081,-114.9388 91.0974,-104.4997 85.9176,-95.6509"/>
+<polygon fill="#191970" stroke="#191970" points="88.8365,-93.7089 80.7641,-86.8469 82.7953,-97.2452 88.8365,-93.7089"/>
 </g>
 <!-- Node8&#45;&gt;Node2 -->
 <g id="edge11" class="edge">
 <title>Node8&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M99.3527,-313.3815C88.5163,-283.4716 65.1567,-214.4073 57,-154 55.1563,-140.3461 53.719,-136.3814 57,-123 59.3743,-113.3164 64.1821,-103.4071 68.8753,-95.2776"/>
-<polygon fill="#191970" stroke="#191970" points="71.9119,-97.0214 74.1792,-86.672 65.9528,-93.3486 71.9119,-97.0214"/>
+<path fill="none" stroke="#191970" d="M84.03,-313.4962C71.2793,-279.4964 43.6004,-194.0152 57,-123 58.7441,-113.7566 62.2981,-103.9893 65.7909,-95.844"/>
+<polygon fill="#191970" stroke="#191970" points="69.0628,-97.1052 70.0415,-86.5556 62.6976,-94.1923 69.0628,-97.1052"/>
 </g>
 <!-- Node9&#45;&gt;Node4 -->
 <g id="edge15" class="edge">
 <title>Node9&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M377.9241,-380.5169C334.2658,-372.7977 282.0863,-360.4824 267,-344 252.9586,-328.6592 251.0771,-304.0559 251.8243,-286.7988"/>
-<polygon fill="#191970" stroke="#191970" points="255.3246,-286.9271 252.5936,-276.6903 248.3448,-286.3959 255.3246,-286.9271"/>
+<path fill="none" stroke="#191970" d="M335.504,-380.4254C297.3181,-372.0496 248.7619,-358.9134 235,-344 220.7584,-328.5668 217.4803,-303.9818 217.1404,-286.7542"/>
+<polygon fill="#191970" stroke="#191970" points="220.6411,-286.7051 217.2555,-276.6657 213.6415,-286.6251 220.6411,-286.7051"/>
 </g>
 <!-- Node9&#45;&gt;Node8 -->
 <g id="edge16" class="edge">
 <title>Node9&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M390.5584,-380.4581C337.4915,-370.8024 254.5295,-355.7073 191.6733,-344.2704"/>
-<polygon fill="#191970" stroke="#191970" points="192.2306,-340.8144 181.7655,-342.4677 190.9774,-347.7014 192.2306,-340.8144"/>
+<path fill="none" stroke="#191970" d="M339.2299,-380.4581C291.2386,-370.4531 215.2334,-354.608 159.7638,-343.044"/>
+<polygon fill="#191970" stroke="#191970" points="160.1606,-339.5515 149.6567,-340.9369 158.7319,-346.4042 160.1606,-339.5515"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="_x_m_l_extern_8h.html" target="_top" xlink:title="Defines LIBLAX_EXTERN. ">
-<polygon fill="#ffffff" stroke="#000000" points="356.5,-257.5 356.5,-276.5 473.5,-276.5 473.5,-257.5 356.5,-257.5"/>
-<text text-anchor="middle" x="415" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/xml/XMLExtern.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="316,-257.5 316,-276.5 408,-276.5 408,-257.5 316,-257.5"/>
+<text text-anchor="middle" x="362" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/xml/XMLExtern.h</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge13" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M440.8029,-380.3484C436.223,-360.2295 425.5764,-313.4608 419.4868,-286.7098"/>
-<polygon fill="#191970" stroke="#191970" points="422.8193,-285.5804 417.1869,-276.6068 415.9939,-287.1342 422.8193,-285.5804"/>
+<path fill="none" stroke="#191970" d="M383.1952,-380.3484C379.4332,-360.2295 370.6878,-313.4608 365.6856,-286.7098"/>
+<polygon fill="#191970" stroke="#191970" points="369.0749,-285.793 363.7964,-276.6068 362.1942,-287.0797 369.0749,-285.793"/>
 </g>
 <!-- Node9&#45;&gt;Node11 -->
 <g id="edge17" class="edge">
 <title>Node9&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M484.1147,-380.4805C518.6182,-371.6915 564.2567,-357.9277 577,-344 591.2578,-328.417 595.2508,-303.8618 596.1612,-286.682"/>
-<polygon fill="#191970" stroke="#191970" points="599.6615,-286.7034 596.3912,-276.626 592.6633,-286.5433 599.6615,-286.7034"/>
+<path fill="none" stroke="#191970" d="M436.1005,-381.4932C459.8698,-375.0178 486.655,-363.6994 504,-344 517.9577,-328.1476 522.0102,-303.6459 523.0166,-286.5522"/>
+<polygon fill="#191970" stroke="#191970" points="526.515,-286.6533 523.3115,-276.5544 519.5181,-286.4468 526.515,-286.6533"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<polygon fill="#ffffff" stroke="#bfbfbf" points="446,-319 446,-338 490,-338 490,-319 446,-319"/>
-<text text-anchor="middle" x="468" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">vector</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="390.5,-319 390.5,-338 427.5,-338 427.5,-319 390.5,-319"/>
+<text text-anchor="middle" x="409" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">vector</text>
 </g>
 <!-- Node9&#45;&gt;Node12 -->
 <g id="edge18" class="edge">
 <title>Node9&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M446.9063,-380.3906C450.4446,-371.6862 455.7636,-358.6015 460.175,-347.7494"/>
-<polygon fill="#191970" stroke="#191970" points="463.5152,-348.8268 464.0387,-338.2449 457.0305,-346.1907 463.5152,-348.8268"/>
+<path fill="none" stroke="#191970" d="M388.75,-380.3906C392.1468,-371.6862 397.2531,-358.6015 401.488,-347.7494"/>
+<polygon fill="#191970" stroke="#191970" points="404.8222,-348.8331 405.1971,-338.2449 398.3011,-346.2882 404.8222,-348.8331"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<polygon fill="#ffffff" stroke="#bfbfbf" points="508.5,-319 508.5,-338 567.5,-338 567.5,-319 508.5,-319"/>
-<text text-anchor="middle" x="538" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">stdexcept</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="445.5,-319 445.5,-338 494.5,-338 494.5,-319 445.5,-319"/>
+<text text-anchor="middle" x="470" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">stdexcept</text>
 </g>
 <!-- Node9&#45;&gt;Node13 -->
 <g id="edge19" class="edge">
 <title>Node9&#45;&gt;Node13</title>
-<path fill="none" stroke="#191970" d="M457.8438,-380.3906C473.0418,-370.5519 496.8848,-355.1167 514.6206,-343.6351"/>
-<polygon fill="#191970" stroke="#191970" points="516.768,-346.4144 523.2605,-338.0419 512.9639,-340.5382 516.768,-346.4144"/>
+<path fill="none" stroke="#191970" d="M398.2813,-380.3906C411.7548,-370.6421 432.822,-355.3994 448.6435,-343.9521"/>
+<polygon fill="#191970" stroke="#191970" points="450.7619,-346.7394 456.812,-338.0419 446.6586,-341.0682 450.7619,-346.7394"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
 <g id="a_node14"><a xlink:href="_x_m_l_triple_8h.html" target="_top" xlink:title="Stores an XML namespace triple. ">
-<polygon fill="#ffffff" stroke="#000000" points="276.5,-319 276.5,-338 389.5,-338 389.5,-319 276.5,-319"/>
-<text text-anchor="middle" x="333" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/xml/XMLTriple.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="244.5,-319 244.5,-338 333.5,-338 333.5,-319 244.5,-319"/>
+<text text-anchor="middle" x="289" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">sbml/xml/XMLTriple.h</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node14 -->
 <g id="edge20" class="edge">
 <title>Node9&#45;&gt;Node14</title>
-<path fill="none" stroke="#191970" d="M425.8125,-380.3906C407.8918,-370.3713 379.5905,-354.5483 358.9477,-343.0071"/>
-<polygon fill="#191970" stroke="#191970" points="360.5033,-339.867 350.0668,-338.0419 357.0872,-345.9769 360.5033,-339.867"/>
+<path fill="none" stroke="#191970" d="M370,-380.3906C354.6419,-370.5519 330.5479,-355.1167 312.6255,-343.6351"/>
+<polygon fill="#191970" stroke="#191970" points="314.203,-340.4891 303.8947,-338.0419 310.427,-346.3833 314.203,-340.4891"/>
 </g>
 <!-- Node10&#45;&gt;Node3 -->
 <g id="edge14" class="edge">
 <title>Node10&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M415.3367,-257.4904C416.0696,-228.1449 416.049,-136.7795 391,-67 387.4851,-57.2084 381.8275,-47.3688 376.182,-38.952"/>
-<polygon fill="#191970" stroke="#191970" points="379.0218,-36.9058 370.3934,-30.7575 373.3044,-40.9446 379.0218,-36.9058"/>
+<path fill="none" stroke="#191970" d="M362.6705,-257.0819C364.3473,-227.3248 367.0069,-136.568 343,-67 339.6063,-57.1657 333.9772,-47.3161 328.3206,-38.9032"/>
+<polygon fill="#191970" stroke="#191970" points="331.1515,-36.8446 322.5084,-30.717 325.4438,-40.8971 331.1515,-36.8446"/>
 </g>
 <!-- Node14&#45;&gt;Node4 -->
 <g id="edge22" class="edge">
 <title>Node14&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M320.6563,-318.8906C308.2497,-309.2324 288.9157,-294.1812 274.2587,-282.771"/>
-<polygon fill="#191970" stroke="#191970" points="276.2979,-279.923 266.2571,-276.5419 271.9979,-285.4466 276.2979,-279.923"/>
+<path fill="none" stroke="#191970" d="M277.9063,-318.8906C267.0285,-309.4683 250.2252,-294.9134 237.18,-283.6137"/>
+<polygon fill="#191970" stroke="#191970" points="239.1004,-280.6466 229.2502,-276.7449 234.5173,-285.9377 239.1004,-280.6466"/>
 </g>
 <!-- Node14&#45;&gt;Node10 -->
 <g id="edge21" class="edge">
 <title>Node14&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M345.8125,-318.8906C358.6901,-309.2324 378.7584,-294.1812 393.972,-282.771"/>
-<polygon fill="#191970" stroke="#191970" points="396.3775,-285.3419 402.2775,-276.5419 392.1774,-279.7419 396.3775,-285.3419"/>
+<path fill="none" stroke="#191970" d="M300.4063,-318.8906C311.6969,-309.3786 329.1967,-294.6357 342.6619,-283.2917"/>
+<polygon fill="#191970" stroke="#191970" points="345.0402,-285.8646 350.4329,-276.7449 340.5301,-280.5111 345.0402,-285.8646"/>
 </g>
 <!-- Node14&#45;&gt;Node11 -->
 <g id="edge23" class="edge">
 <title>Node14&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M373.8052,-318.9581C426.789,-306.5684 518.0728,-285.2225 565.4596,-274.1416"/>
-<polygon fill="#191970" stroke="#191970" points="566.482,-277.497 575.4223,-271.8119 564.8881,-270.6809 566.482,-277.497"/>
+<path fill="none" stroke="#191970" d="M325.3058,-318.9581C372.2877,-306.6103 453.1165,-285.3668 495.3979,-274.2544"/>
+<polygon fill="#191970" stroke="#191970" points="496.491,-277.586 505.2729,-271.659 494.7117,-270.816 496.491,-277.586"/>
 </g>
 </g>
 </svg>

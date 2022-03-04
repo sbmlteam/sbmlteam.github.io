@@ -1,0 +1,17 @@
+digraph "CallbackRegistry.cpp"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="CallbackRegistry.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="algorithm",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="sbml/common/operationReturn\lValues.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$operation_return_values_8h.html",tooltip="Enumeration of values returned by operations within libSBML. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="sbml/common/extern.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$extern_8h.html",tooltip="Definitions of LIBSBML_EXTERN and related things. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sbml/common/libsbml\l-namespace.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$libsbml-namespace_8h.html",tooltip="Defines C++ namespace of libSBML. "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="sbml/util/CallbackRegistry.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_callback_registry_8h.html"];
+}
