@@ -19,13 +19,11 @@
   $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  $(document).ready(function() { init_search(); });
 </script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="libSBML C API"/>
 <link href="libsbml-doxygen-stylesheet.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -59,14 +57,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="libsbml-example-files-c.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
-          <div class="left">
-            <form id="FSearchBox" action="search.php" method="get">
-              <img id="MSearchSelect" src="search/mag.png" alt=""/>
-              <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
-                     onfocus="searchBox.OnSearchFieldFocus(true)" 
-                     onblur="searchBox.OnSearchFieldFocus(false)"/>
-            </form>
-          </div><div class="right"></div>
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
         </div>
       </li>
     </ul>
@@ -86,6 +88,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 $(document).ready(function(){initNavTree('dir_224c4a10832b4053571db2c932d86b0d.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <h3>sbml &rarr; common Relation</h3><table class="dirtab"><tr class="dirtab"><th class="dirtab">File in src/sbml/packages/render/sbml</th><th class="dirtab">Includes file in src/sbml/common</th></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_color_definition_8h.html">ColorDefinition.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_default_values_8h.html">DefaultValues.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_ellipse_8h.html">Ellipse.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_global_render_information_8h.html">GlobalRenderInformation.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_global_style_8h.html">GlobalStyle.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_gradient_base_8h.html">GradientBase.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_gradient_stop_8h.html">GradientStop.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_graphical_primitive1_d_8h.html">GraphicalPrimitive1D.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_graphical_primitive2_d_8h.html">GraphicalPrimitive2D.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_image_8h.html">Image.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_linear_gradient_8h.html">LinearGradient.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_line_ending_8h.html">LineEnding.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_list_of_color_definitions_8h.html">ListOfColorDefinitions.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_list_of_curve_elements_8h.html">ListOfCurveElements.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_list_of_drawables_8h.html">ListOfDrawables.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_list_of_global_render_information_8h.html">ListOfGlobalRenderInformation.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_list_of_global_styles_8h.html">ListOfGlobalStyles.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_list_of_gradient_definitions_8h.html">ListOfGradientDefinitions.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_list_of_gradient_stops_8h.html">ListOfGradientStops.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_list_of_line_endings_8h.html">ListOfLineEndings.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_list_of_local_render_information_8h.html">ListOfLocalRenderInformation.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_list_of_local_styles_8h.html">ListOfLocalStyles.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_local_style_8h.html">LocalStyle.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_polygon_8h.html">Polygon.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_radial_gradient_8h.html">RadialGradient.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_rectangle_8h.html">Rectangle.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_rel_abs_vector_8h.html">RelAbsVector.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_render_cubic_bezier_8h.html">RenderCubicBezier.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_render_curve_8h.html">RenderCurve.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_render_group_8h.html">RenderGroup.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_render_information_base_8h.html">RenderInformationBase.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_render_point_8h.html">RenderPoint.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_style_8h.html">Style.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_text_8h.html">Text.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_transformation_8h.html">Transformation.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_transformation2_d_8h.html">Transformation2D.h</a></td><td class="dirtab"><a class="el" href="extern_8h.html">extern.h</a></td></tr></table></div><!-- contents -->
 </div><!-- doc-content -->

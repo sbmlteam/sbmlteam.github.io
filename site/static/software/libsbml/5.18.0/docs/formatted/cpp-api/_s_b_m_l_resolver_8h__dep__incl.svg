@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 634;
+var viewWidth = 508;
 var viewHeight = 140;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,135 +54,135 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>SBMLResolver.h</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-136 629.5,-136 629.5,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-136 503.5,-136 503.5,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<polygon fill="#bfbfbf" stroke="#000000" points="387.5,-112.5 387.5,-131.5 479.5,-131.5 479.5,-112.5 387.5,-112.5"/>
-<text text-anchor="middle" x="433.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLResolver.h</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="312.5,-112.5 312.5,-131.5 385.5,-131.5 385.5,-112.5 312.5,-112.5"/>
+<text text-anchor="middle" x="349" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLResolver.h</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="_s_b_m_l_file_resolver_8h.html" target="_top" xlink:title="A file&#45;based resolver for SBML Documents. ">
-<polygon fill="#ffffff" stroke="#000000" points="338.5,-56.5 338.5,-75.5 446.5,-75.5 446.5,-56.5 338.5,-56.5"/>
-<text text-anchor="middle" x="392.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLFileResolver.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="271.5,-56.5 271.5,-75.5 356.5,-75.5 356.5,-56.5 271.5,-56.5"/>
+<text text-anchor="middle" x="314" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLFileResolver.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M420.2636,-103.9209C413.3789,-94.5176 405.2391,-83.3997 399.5598,-75.6427"/>
-<polygon fill="#191970" stroke="#191970" points="417.6269,-106.2445 426.3583,-112.2455 423.2749,-102.1093 417.6269,-106.2445"/>
+<path fill="none" stroke="#191970" d="M337.5185,-103.6296C331.6804,-94.2887 324.8248,-83.3197 320.0267,-75.6427"/>
+<polygon fill="#191970" stroke="#191970" points="334.6354,-105.6206 342.9035,-112.2455 340.5714,-101.9105 334.6354,-105.6206"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="_s_b_m_l_resolver_registry_8cpp.html" target="_top" xlink:title="SBMLResolverRegistry.cpp">
-<polygon fill="#ffffff" stroke="#000000" points="350,-.5 350,-19.5 489,-19.5 489,-.5 350,-.5"/>
-<text text-anchor="middle" x="419.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLResolverRegistry.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="280,-.5 280,-19.5 388,-19.5 388,-.5 280,-.5"/>
+<text text-anchor="middle" x="334" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLResolverRegistry.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M446.3502,-103.4782C453.9138,-90.2301 461.0123,-71.9877 455.5,-56 450.5417,-41.6192 439.0343,-28.2981 430.3548,-19.7321"/>
-<polygon fill="#191970" stroke="#191970" points="443.269,-101.8043 440.9341,-112.1387 449.204,-105.5159 443.269,-101.8043"/>
+<path fill="none" stroke="#191970" d="M359.5355,-102.9788C365.5137,-89.7129 370.9095,-71.6545 366,-56 361.575,-41.8904 351.1234,-28.3192 343.3618,-19.6212"/>
+<polygon fill="#191970" stroke="#191970" points="356.3333,-101.5578 355.0116,-112.0699 362.6002,-104.6765 356.3333,-101.5578"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="_s_b_m_l_resolver_8cpp.html" target="_top" xlink:title="Implementation of SBMLResolver, the base class of package extensions. ">
-<polygon fill="#ffffff" stroke="#000000" points="502.5,-56.5 502.5,-75.5 604.5,-75.5 604.5,-56.5 502.5,-56.5"/>
-<text text-anchor="middle" x="553.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLResolver.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="413.5,-56.5 413.5,-75.5 494.5,-75.5 494.5,-56.5 413.5,-56.5"/>
+<text text-anchor="middle" x="454" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLResolver.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M463.2624,-108.1109C485.0232,-97.9559 513.9682,-84.4482 533.1405,-75.5011"/>
-<polygon fill="#191970" stroke="#191970" points="461.7105,-104.9727 454.1287,-112.3733 464.6707,-111.316 461.7105,-104.9727"/>
+<path fill="none" stroke="#191970" d="M376.2625,-107.46C395.0522,-97.4388 419.5013,-84.3993 435.92,-75.6427"/>
+<polygon fill="#191970" stroke="#191970" points="374.4661,-104.4514 367.2896,-112.2455 377.7602,-110.6278 374.4661,-104.4514"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="_s_b_m_l_resolver_registry_8h.html" target="_top" xlink:title="Implementation of SBMLResolverRegistry, a registry of available resolvers. ">
-<polygon fill="#ffffff" stroke="#000000" points="192.5,-56.5 192.5,-75.5 320.5,-75.5 320.5,-56.5 192.5,-56.5"/>
-<text text-anchor="middle" x="256.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLResolverRegistry.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="153,-56.5 153,-75.5 253,-75.5 253,-56.5 153,-56.5"/>
+<text text-anchor="middle" x="203" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLResolverRegistry.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M393.4332,-109.3235C360.973,-99.0536 315.9507,-84.8093 286.5303,-75.5011"/>
-<polygon fill="#191970" stroke="#191970" points="392.4826,-112.6937 403.0726,-112.3733 394.5942,-106.0197 392.4826,-112.6937"/>
+<path fill="none" stroke="#191970" d="M314.5565,-108.7888C287.8987,-98.5639 251.62,-84.6488 227.7708,-75.5011"/>
+<polygon fill="#191970" stroke="#191970" points="313.3115,-112.0598 323.9017,-112.3733 315.8184,-105.5241 313.3115,-112.0598"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="_comp_flattening_converter_8cpp.html" target="_top" xlink:title="Implementation of a first flattening converter. ">
-<polygon fill="#ffffff" stroke="#000000" points="181.5,-.5 181.5,-19.5 331.5,-19.5 331.5,-.5 181.5,-.5"/>
-<text text-anchor="middle" x="256.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompFlatteningConverter.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="144.5,-.5 144.5,-19.5 261.5,-19.5 261.5,-.5 144.5,-.5"/>
+<text text-anchor="middle" x="203" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompFlatteningConverter.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M359.7601,-52.5189C334.9917,-42.3201 301.595,-28.5685 279.5742,-19.5011"/>
-<polygon fill="#191970" stroke="#191970" points="358.5413,-55.8021 369.1208,-56.3733 361.2066,-49.3293 358.5413,-55.8021"/>
+<path fill="none" stroke="#191970" d="M285.9266,-51.8368C265.8615,-41.7139 239.4078,-28.3679 221.8326,-19.5011"/>
+<polygon fill="#191970" stroke="#191970" points="284.4138,-54.9938 294.9184,-56.3733 287.5668,-48.7441 284.4138,-54.9938"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="_s_b_m_l_file_resolver_8cpp.html" target="_top" xlink:title="Implementation of SBMLFileResolver, the file system based resolver for SBML Documents. ">
-<polygon fill="#ffffff" stroke="#000000" points="507.5,-.5 507.5,-19.5 625.5,-19.5 625.5,-.5 507.5,-.5"/>
-<text text-anchor="middle" x="566.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLFileResolver.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="406.5,-.5 406.5,-19.5 499.5,-19.5 499.5,-.5 406.5,-.5"/>
+<text text-anchor="middle" x="453" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">SBMLFileResolver.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M432.301,-53.1905C464.179,-42.9309 508.1816,-28.7691 536.9787,-19.5011"/>
-<polygon fill="#191970" stroke="#191970" points="430.8585,-49.9779 422.4117,-56.3733 433.0031,-56.6413 430.8585,-49.9779"/>
+<path fill="none" stroke="#191970" d="M347.4621,-52.5189C372.7769,-42.3201 406.9103,-28.5685 429.4169,-19.5011"/>
+<polygon fill="#191970" stroke="#191970" points="345.8626,-49.3899 337.895,-56.3733 348.4784,-55.8827 345.8626,-49.3899"/>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M401.6396,-47.0437C406.0805,-37.8331 411.2265,-27.1598 414.8509,-19.6427"/>
-<polygon fill="#191970" stroke="#191970" points="398.3934,-45.7178 397.203,-56.2455 404.6988,-48.7579 398.3934,-45.7178"/>
+<path fill="none" stroke="#191970" d="M320.8753,-46.7493C324.1406,-37.6064 327.9001,-27.0798 330.5562,-19.6427"/>
+<polygon fill="#191970" stroke="#191970" points="317.5511,-45.6509 317.4837,-56.2455 324.1433,-48.0053 317.5511,-45.6509"/>
 </g>
 <!-- Node7&#45;&gt;Node3 -->
 <g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M256.5,-46.1575C256.5,-37.155 256.5,-26.9199 256.5,-19.6427"/>
-<polygon fill="#191970" stroke="#191970" points="253.0001,-46.2455 256.5,-56.2455 260.0001,-46.2456 253.0001,-46.2455"/>
+<path fill="none" stroke="#191970" d="M203,-46.1575C203,-37.155 203,-26.9199 203,-19.6427"/>
+<polygon fill="#191970" stroke="#191970" points="199.5001,-46.2455 203,-56.2455 206.5001,-46.2456 199.5001,-46.2455"/>
 </g>
 <!-- Node7&#45;&gt;Node5 -->
 <g id="edge10" class="edge">
 <title>Node7&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M294.1733,-53.057C324.0042,-42.8084 364.9852,-28.729 391.8449,-19.5011"/>
-<polygon fill="#191970" stroke="#191970" points="292.8409,-49.8139 284.5207,-56.3733 295.1154,-56.4341 292.8409,-49.8139"/>
+<path fill="none" stroke="#191970" d="M234.8534,-52.3833C258.6785,-42.1985 290.6568,-28.5284 311.7742,-19.5011"/>
+<polygon fill="#191970" stroke="#191970" points="233.339,-49.2242 225.5197,-56.3733 236.0906,-55.6608 233.339,-49.2242"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="_comp_s_b_m_l_document_plugin_8cpp.html" target="_top" xlink:title="Implementation of CompSBMLDocumentPlugin, the plugin class of comp package for the SBase element...">
-<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-19.5 163,-19.5 163,-.5 0,-.5"/>
-<text text-anchor="middle" x="81.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompSBMLDocumentPlugin.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-19.5 126,-19.5 126,-.5 0,-.5"/>
+<text text-anchor="middle" x="63" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompSBMLDocumentPlugin.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M216.886,-53.3235C184.7925,-43.0536 140.2789,-28.8093 111.191,-19.5011"/>
-<polygon fill="#191970" stroke="#191970" points="215.8254,-56.6589 226.4164,-56.3733 217.9589,-49.9919 215.8254,-56.6589"/>
+<path fill="none" stroke="#191970" d="M169.6351,-52.6541C144.1048,-42.4419 109.5216,-28.6086 86.7528,-19.5011"/>
+<polygon fill="#191970" stroke="#191970" points="168.3485,-55.909 178.9331,-56.3733 170.9483,-49.4096 168.3485,-55.909"/>
 </g>
 </g>
 </svg>

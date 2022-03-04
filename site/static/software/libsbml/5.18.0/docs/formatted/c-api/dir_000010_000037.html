@@ -19,13 +19,11 @@
   $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  $(document).ready(function() { init_search(); });
 </script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="libSBML C API"/>
 <link href="libsbml-doxygen-stylesheet.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -59,14 +57,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="libsbml-example-files-c.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
-          <div class="left">
-            <form id="FSearchBox" action="search.php" method="get">
-              <img id="MSearchSelect" src="search/mag.png" alt=""/>
-              <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
-                     onfocus="searchBox.OnSearchFieldFocus(true)" 
-                     onblur="searchBox.OnSearchFieldFocus(false)"/>
-            </form>
-          </div><div class="right"></div>
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
         </div>
       </li>
     </ul>
@@ -86,6 +88,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 $(document).ready(function(){initNavTree('dir_88ac4bf79705bb8559b852278d35d8da.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <h3>sbml &rarr; validator Relation</h3><table class="dirtab"><tr class="dirtab"><th class="dirtab">File in src/sbml/packages/layout/sbml</th><th class="dirtab">Includes file in src/sbml/packages/layout/validator</th></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_bounding_box_8cpp.html">BoundingBox.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_compartment_glyph_8cpp.html">CompartmentGlyph.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_cubic_bezier_8cpp.html">CubicBezier.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_curve_8cpp.html">Curve.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_dimensions_8cpp.html">Dimensions.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_general_glyph_8cpp.html">GeneralGlyph.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_graphical_object_8cpp.html">GraphicalObject.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_layout_8cpp.html">Layout.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_line_segment_8cpp.html">LineSegment.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_point_8cpp.html">Point.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_reaction_glyph_8cpp.html">ReactionGlyph.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_reference_glyph_8cpp.html">ReferenceGlyph.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_species_glyph_8cpp.html">SpeciesGlyph.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_species_reference_glyph_8cpp.html">SpeciesReferenceGlyph.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_text_glyph_8cpp.html">TextGlyph.cpp</a></td><td class="dirtab"><a class="el" href="_layout_s_b_m_l_error_8h.html">LayoutSBMLError.h</a></td></tr></table></div><!-- contents -->
 </div><!-- doc-content -->

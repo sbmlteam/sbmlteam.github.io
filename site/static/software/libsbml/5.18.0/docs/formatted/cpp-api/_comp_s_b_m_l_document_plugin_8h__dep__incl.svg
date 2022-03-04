@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 780;
+var viewWidth = 629;
 var viewHeight = 140;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,117 +54,117 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>CompSBMLDocumentPlugin.h</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-136 776,-136 776,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-136 624.5,-136 624.5,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<polygon fill="#bfbfbf" stroke="#000000" points="357,-112.5 357,-131.5 509,-131.5 509,-112.5 357,-112.5"/>
-<text text-anchor="middle" x="433" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompSBMLDocumentPlugin.h</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="288.5,-112.5 288.5,-131.5 406.5,-131.5 406.5,-112.5 288.5,-112.5"/>
+<text text-anchor="middle" x="347.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompSBMLDocumentPlugin.h</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="_comp_extension_types_8h.html" target="_top" xlink:title="Include all SBML types of Comp extension in a single header file. ">
-<polygon fill="#ffffff" stroke="#000000" points="85.5,-56.5 85.5,-75.5 208.5,-75.5 208.5,-56.5 85.5,-56.5"/>
-<text text-anchor="middle" x="147" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompExtensionTypes.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="68.5,-56.5 68.5,-75.5 164.5,-75.5 164.5,-56.5 68.5,-56.5"/>
+<text text-anchor="middle" x="116.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompExtensionTypes.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M374.2732,-110.501C321.5365,-100.175 245.026,-85.1939 195.6387,-75.5237"/>
-<polygon fill="#191970" stroke="#191970" points="373.6736,-113.95 384.1598,-112.4369 375.0187,-107.0805 373.6736,-113.95"/>
+<path fill="none" stroke="#191970" d="M298.1951,-110.0473C255.6778,-99.7401 195.0943,-85.0532 155.7851,-75.5237"/>
+<polygon fill="#191970" stroke="#191970" points="297.509,-113.4823 308.0522,-112.4369 299.1583,-106.6793 297.509,-113.4823"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="_comp_extension_8cpp.html" target="_top" xlink:title="Implementation of CompExtension, the core module of comp package. ">
-<polygon fill="#ffffff" stroke="#000000" points="227,-56.5 227,-75.5 333,-75.5 333,-56.5 227,-56.5"/>
-<text text-anchor="middle" x="280" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompExtension.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="182.5,-56.5 182.5,-75.5 266.5,-75.5 266.5,-56.5 182.5,-56.5"/>
+<text text-anchor="middle" x="224.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompExtension.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M397.2721,-108.9231C369.3029,-98.686 331.0607,-84.6889 305.9584,-75.5011"/>
-<polygon fill="#191970" stroke="#191970" points="396.1046,-112.2228 406.6984,-112.3733 398.5106,-105.6493 396.1046,-112.2228"/>
+<path fill="none" stroke="#191970" d="M316.9935,-108.1109C294.6888,-97.9559 265.0201,-84.4482 245.3685,-75.5011"/>
+<polygon fill="#191970" stroke="#191970" points="315.8041,-111.415 326.3555,-112.3733 318.7047,-105.0442 315.8041,-111.415"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="_comp_s_b_m_l_document_plugin_8cpp.html" target="_top" xlink:title="Implementation of CompSBMLDocumentPlugin, the plugin class of comp package for the SBase element...">
-<polygon fill="#ffffff" stroke="#000000" points="351.5,-56.5 351.5,-75.5 514.5,-75.5 514.5,-56.5 351.5,-56.5"/>
-<text text-anchor="middle" x="433" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompSBMLDocumentPlugin.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="284.5,-56.5 284.5,-75.5 410.5,-75.5 410.5,-56.5 284.5,-56.5"/>
+<text text-anchor="middle" x="347.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompSBMLDocumentPlugin.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M433,-102.1575C433,-93.155 433,-82.9199 433,-75.6427"/>
-<polygon fill="#191970" stroke="#191970" points="429.5001,-102.2455 433,-112.2455 436.5001,-102.2456 429.5001,-102.2455"/>
+<path fill="none" stroke="#191970" d="M347.5,-102.1575C347.5,-93.155 347.5,-82.9199 347.5,-75.6427"/>
+<polygon fill="#191970" stroke="#191970" points="344.0001,-102.2455 347.5,-112.2455 351.0001,-102.2456 344.0001,-102.2455"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="_external_model_definition_8cpp.html" target="_top" xlink:title="Implementation of ExternalModelDefinition, the SBase&#45;derived class of the comp package. ">
-<polygon fill="#ffffff" stroke="#000000" points="532.5,-56.5 532.5,-75.5 673.5,-75.5 673.5,-56.5 532.5,-56.5"/>
-<text text-anchor="middle" x="603" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ExternalModelDefinition.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="428.5,-56.5 428.5,-75.5 538.5,-75.5 538.5,-56.5 428.5,-56.5"/>
+<text text-anchor="middle" x="483.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ExternalModelDefinition.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M471.886,-109.1905C503.0312,-98.9309 546.0223,-84.7691 574.1573,-75.5011"/>
-<polygon fill="#191970" stroke="#191970" points="470.6269,-105.9202 462.224,-112.3733 472.8171,-112.5687 470.6269,-105.9202"/>
+<path fill="none" stroke="#191970" d="M380.2399,-108.5189C405.0083,-98.3201 438.405,-84.5685 460.4258,-75.5011"/>
+<polygon fill="#191970" stroke="#191970" points="378.7934,-105.3293 370.8792,-112.3733 381.4587,-111.8021 378.7934,-105.3293"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="_submodel_8cpp.html" target="_top" xlink:title="Implementation of Submodel, the SBase&#45;derived class of the comp package. ">
-<polygon fill="#ffffff" stroke="#000000" points="692,-56.5 692,-75.5 772,-75.5 772,-56.5 692,-56.5"/>
-<text text-anchor="middle" x="732" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Submodel.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="556.5,-56.5 556.5,-75.5 620.5,-75.5 620.5,-56.5 556.5,-56.5"/>
+<text text-anchor="middle" x="588.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Submodel.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M496.8284,-110.6069C547.3827,-101.4984 619.7714,-88.2677 683,-76 685.8979,-75.4377 688.8904,-74.8484 691.9012,-74.2492"/>
-<polygon fill="#191970" stroke="#191970" points="495.923,-107.2135 486.7008,-112.4291 497.1626,-114.1029 495.923,-107.2135"/>
+<path fill="none" stroke="#191970" d="M399.5647,-110.2225C439.9539,-101.0383 497.3222,-87.8892 547.5,-76 550.3517,-75.3243 553.3133,-74.6156 556.2807,-73.9008"/>
+<polygon fill="#191970" stroke="#191970" points="398.6529,-106.8404 389.6768,-112.4688 400.2037,-113.6664 398.6529,-106.8404"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="_comp_flattening_converter_8cpp.html" target="_top" xlink:title="Implementation of a first flattening converter. ">
-<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-19.5 150,-19.5 150,-.5 0,-.5"/>
-<text text-anchor="middle" x="75" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompFlatteningConverter.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-19.5 117,-19.5 117,-.5 0,-.5"/>
+<text text-anchor="middle" x="58.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompFlatteningConverter.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M126.336,-49.928C113.7511,-40.1397 98.0908,-27.9595 87.3977,-19.6427"/>
-<polygon fill="#191970" stroke="#191970" points="124.4162,-52.8688 134.4586,-56.2455 128.7138,-47.3434 124.4162,-52.8688"/>
+<path fill="none" stroke="#191970" d="M98.9707,-49.0751C88.9917,-39.4402 76.8524,-27.7196 68.4871,-19.6427"/>
+<polygon fill="#191970" stroke="#191970" points="96.772,-51.8175 106.3972,-56.2455 101.6342,-46.7817 96.772,-51.8175"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="_comp_validator_8cpp.html" target="_top" xlink:title="CompValidator.cpp">
-<polygon fill="#ffffff" stroke="#000000" points="168,-.5 168,-19.5 270,-19.5 270,-.5 168,-.5"/>
-<text text-anchor="middle" x="219" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompValidator.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="135.5,-.5 135.5,-19.5 215.5,-19.5 215.5,-.5 135.5,-.5"/>
+<text text-anchor="middle" x="175.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CompValidator.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M167.664,-49.928C180.2489,-40.1397 195.9092,-27.9595 206.6023,-19.6427"/>
-<polygon fill="#191970" stroke="#191970" points="165.2862,-47.3434 159.5414,-56.2455 169.5838,-52.8688 165.2862,-47.3434"/>
+<path fill="none" stroke="#191970" d="M134.0307,-49.3607C144.2377,-39.6727 156.7469,-27.7995 165.3408,-19.6427"/>
+<polygon fill="#191970" stroke="#191970" points="131.6206,-46.8227 126.777,-56.2455 136.4396,-51.8998 131.6206,-46.8227"/>
 </g>
 </g>
 </svg>

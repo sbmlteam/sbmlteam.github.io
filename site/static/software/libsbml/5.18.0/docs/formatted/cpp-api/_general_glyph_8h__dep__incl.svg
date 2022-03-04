@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 723;
+var viewWidth = 592;
 var viewHeight = 140;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,147 +54,147 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>GeneralGlyph.h</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-136 718.5,-136 718.5,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-136 587.5,-136 587.5,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<polygon fill="#bfbfbf" stroke="#000000" points="462,-112.5 462,-131.5 549,-131.5 549,-112.5 462,-112.5"/>
-<text text-anchor="middle" x="505.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GeneralGlyph.h</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="377.5,-112.5 377.5,-131.5 446.5,-131.5 446.5,-112.5 377.5,-112.5"/>
+<text text-anchor="middle" x="412" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GeneralGlyph.h</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="_layout_extension_types_8h.html" target="_top" xlink:title="Include all SBML types of layout extension in a single header file. ">
-<polygon fill="#ffffff" stroke="#000000" points="263.5,-56.5 263.5,-75.5 389.5,-75.5 389.5,-56.5 263.5,-56.5"/>
-<text text-anchor="middle" x="326.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">LayoutExtensionTypes.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="215.5,-56.5 215.5,-75.5 314.5,-75.5 314.5,-56.5 215.5,-56.5"/>
+<text text-anchor="middle" x="265" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">LayoutExtensionTypes.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M464.9805,-109.3235C432.1534,-99.0536 386.6224,-84.8093 356.8697,-75.5011"/>
-<polygon fill="#191970" stroke="#191970" points="464.1399,-112.7278 474.7288,-112.3733 466.23,-106.0471 464.1399,-112.7278"/>
+<path fill="none" stroke="#191970" d="M377.3206,-108.7888C350.4802,-98.5639 313.953,-84.6488 289.9404,-75.5011"/>
+<polygon fill="#191970" stroke="#191970" points="376.1389,-112.0839 386.7298,-112.3733 378.6309,-105.5425 376.1389,-112.0839"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="_general_glyph_8cpp.html" target="_top" xlink:title="Implementation of GeneralGlyph for SBML Layout. ">
-<polygon fill="#ffffff" stroke="#000000" points="408,-56.5 408,-75.5 505,-75.5 505,-56.5 408,-56.5"/>
-<text text-anchor="middle" x="456.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GeneralGlyph.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="332.5,-56.5 332.5,-75.5 409.5,-75.5 409.5,-56.5 332.5,-56.5"/>
+<text text-anchor="middle" x="371" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GeneralGlyph.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M490.1878,-104.5004C481.8553,-94.9775 471.8647,-83.5596 464.9373,-75.6427"/>
-<polygon fill="#191970" stroke="#191970" points="487.7457,-107.0245 496.9649,-112.2455 493.0138,-102.415 487.7457,-107.0245"/>
+<path fill="none" stroke="#191970" d="M398.7636,-103.9209C391.8789,-94.5176 383.7391,-83.3997 378.0598,-75.6427"/>
+<polygon fill="#191970" stroke="#191970" points="396.1269,-106.2445 404.8583,-112.2455 401.7749,-102.1093 396.1269,-106.2445"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="_layout_8cpp.html" target="_top" xlink:title="Implementation of Layout for SBML Layout. ">
-<polygon fill="#ffffff" stroke="#000000" points="523,-56.5 523,-75.5 588,-75.5 588,-56.5 523,-56.5"/>
-<text text-anchor="middle" x="555.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Layout.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="427.5,-56.5 427.5,-75.5 480.5,-75.5 480.5,-56.5 427.5,-56.5"/>
+<text text-anchor="middle" x="454" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Layout.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M521.1247,-104.5004C529.6273,-94.9775 539.8218,-83.5596 546.8905,-75.6427"/>
-<polygon fill="#191970" stroke="#191970" points="518.2587,-102.4551 514.2093,-112.2455 523.4803,-107.1172 518.2587,-102.4551"/>
+<path fill="none" stroke="#191970" d="M425.3416,-104.2112C432.4396,-94.7472 440.8903,-83.4797 446.768,-75.6427"/>
+<polygon fill="#191970" stroke="#191970" points="422.5159,-102.1455 419.3158,-112.2455 428.1159,-106.3455 422.5159,-102.1455"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="_reference_glyph_8cpp.html" target="_top" xlink:title="Implementation of ReferenceGlyph for SBML Layout. ">
-<polygon fill="#ffffff" stroke="#000000" points="606.5,-56.5 606.5,-75.5 714.5,-75.5 714.5,-56.5 606.5,-56.5"/>
-<text text-anchor="middle" x="660.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ReferenceGlyph.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="498.5,-56.5 498.5,-75.5 583.5,-75.5 583.5,-56.5 498.5,-56.5"/>
+<text text-anchor="middle" x="541" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ReferenceGlyph.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node10 -->
 <g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M541.6949,-108.9231C570.0297,-98.686 608.7718,-84.6889 634.2022,-75.5011"/>
-<polygon fill="#191970" stroke="#191970" points="540.3612,-105.6835 532.1454,-112.3733 542.7398,-112.267 540.3612,-105.6835"/>
+<path fill="none" stroke="#191970" d="M443.3671,-108.3833C466.8284,-98.1985 498.3185,-84.5284 519.1135,-75.5011"/>
+<polygon fill="#191970" stroke="#191970" points="441.9551,-105.1806 434.1759,-112.3733 444.7426,-111.6017 441.9551,-105.1806"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="_graphical_object_8cpp.html" target="_top" xlink:title="Implementation of GraphicalObject for SBML Layout. ">
-<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-19.5 107,-19.5 107,-.5 0,-.5"/>
-<text text-anchor="middle" x="53.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GraphicalObject.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-19.5 84,-19.5 84,-.5 0,-.5"/>
+<text text-anchor="middle" x="42" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">GraphicalObject.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M269.8135,-54.372C219.4962,-44.0505 146.8742,-29.1537 99.9279,-19.5237"/>
-<polygon fill="#191970" stroke="#191970" points="269.3805,-57.856 279.8798,-56.4369 270.7871,-50.9988 269.3805,-57.856"/>
+<path fill="none" stroke="#191970" d="M217.1426,-53.982C176.1111,-43.6781 117.7924,-29.0331 79.9246,-19.5237"/>
+<polygon fill="#191970" stroke="#191970" points="216.367,-57.3958 226.9183,-56.4369 218.0719,-50.6066 216.367,-57.3958"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="_layout_validator_8cpp.html" target="_top" xlink:title="Implementation of the LayoutValidator class. ">
-<polygon fill="#ffffff" stroke="#000000" points="125,-.5 125,-19.5 230,-19.5 230,-.5 125,-.5"/>
-<text text-anchor="middle" x="177.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">LayoutValidator.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="102.5,-.5 102.5,-19.5 185.5,-19.5 185.5,-.5 102.5,-.5"/>
+<text text-anchor="middle" x="144" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">LayoutValidator.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M291.3488,-52.7888C264.1432,-42.5639 227.1191,-28.6488 202.7798,-19.5011"/>
-<polygon fill="#191970" stroke="#191970" points="290.2939,-56.1313 300.886,-56.3733 292.7566,-49.5788 290.2939,-56.1313"/>
+<path fill="none" stroke="#191970" d="M234.9896,-52.1109C213.0475,-41.9559 183.8612,-28.4482 164.5292,-19.5011"/>
+<polygon fill="#191970" stroke="#191970" points="233.6541,-55.3494 244.1994,-56.3733 236.5942,-48.9968 233.6541,-55.3494"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="_render_list_of_layouts_plugin_8cpp.html" target="_top" xlink:title="Implementation of RenderListOfLayoutsPlugin, the plugin class of the fbc package for the Model elemen...">
-<polygon fill="#ffffff" stroke="#000000" points="248,-.5 248,-19.5 405,-19.5 405,-.5 248,-.5"/>
-<text text-anchor="middle" x="326.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">RenderListOfLayoutsPlugin.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="204,-.5 204,-19.5 326,-19.5 326,-.5 204,-.5"/>
+<text text-anchor="middle" x="265" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">RenderListOfLayoutsPlugin.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M326.5,-46.1575C326.5,-37.155 326.5,-26.9199 326.5,-19.6427"/>
-<polygon fill="#191970" stroke="#191970" points="323.0001,-46.2455 326.5,-56.2455 330.0001,-46.2456 323.0001,-46.2455"/>
+<path fill="none" stroke="#191970" d="M265,-46.1575C265,-37.155 265,-26.9199 265,-19.6427"/>
+<polygon fill="#191970" stroke="#191970" points="261.5001,-46.2455 265,-56.2455 268.5001,-46.2456 261.5001,-46.2455"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="_render_layout_converter_8cpp.html" target="_top" xlink:title="Simple converter to convert Layout + Render from l2 to L3 and vice versa. ">
-<polygon fill="#ffffff" stroke="#000000" points="423.5,-.5 423.5,-19.5 565.5,-19.5 565.5,-.5 423.5,-.5"/>
-<text text-anchor="middle" x="494.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">RenderLayoutConverter.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="344.5,-.5 344.5,-19.5 455.5,-19.5 455.5,-.5 344.5,-.5"/>
+<text text-anchor="middle" x="400" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">RenderLayoutConverter.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node2&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M364.9286,-53.1905C395.7073,-42.9309 438.1926,-28.7691 465.9966,-19.5011"/>
-<polygon fill="#191970" stroke="#191970" points="363.7602,-49.8905 355.3802,-56.3733 365.9739,-56.5313 363.7602,-49.8905"/>
+<path fill="none" stroke="#191970" d="M297.4991,-52.5189C322.0854,-42.3201 355.2366,-28.5685 377.0955,-19.5011"/>
+<polygon fill="#191970" stroke="#191970" points="296.1031,-49.3087 288.2073,-56.3733 298.7852,-55.7745 296.1031,-49.3087"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="_render_utilities_8cpp.html" target="_top" xlink:title="implementation of RenderUtilities, a class of utility functions for the render package ...">
-<polygon fill="#ffffff" stroke="#000000" points="583.5,-.5 583.5,-19.5 683.5,-19.5 683.5,-.5 583.5,-.5"/>
-<text text-anchor="middle" x="633.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">RenderUtilities.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="473.5,-.5 473.5,-19.5 552.5,-19.5 552.5,-.5 473.5,-.5"/>
+<text text-anchor="middle" x="513" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">RenderUtilities.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M388.9578,-54.6071C446.3127,-44.1449 530.2208,-28.8392 583.3272,-19.152"/>
-<polygon fill="#191970" stroke="#191970" points="388.1359,-51.1991 378.9264,-56.4369 389.3921,-58.0855 388.1359,-51.1991"/>
+<path fill="none" stroke="#191970" d="M317.252,-54.2012C363.8231,-43.6851 430.9781,-28.5211 473.2835,-18.9682"/>
+<polygon fill="#191970" stroke="#191970" points="316.3344,-50.8202 307.3509,-56.4369 317.8763,-57.6482 316.3344,-50.8202"/>
 </g>
 </g>
 </svg>

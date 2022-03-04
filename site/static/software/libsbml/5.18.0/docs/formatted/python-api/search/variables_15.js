@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['xmlattributetypemismatch',['XMLAttributeTypeMismatch',['../namespacelibsbml.html#ac2030d794128a562c7ba59e9723c809c',1,'libsbml']]],
+  ['xmlbadcolon',['XMLBadColon',['../namespacelibsbml.html#aa4088450c3b305df3d661ae99a76507f',1,'libsbml']]],
+  ['xmlbadnumber',['XMLBadNumber',['../namespacelibsbml.html#a7ac50a47277c5b565f814a0da8494045',1,'libsbml']]],
+  ['xmlbadutf8content',['XMLBadUTF8Content',['../namespacelibsbml.html#a8c019043bfb057ede07fa770948bd09c',1,'libsbml']]],
+  ['xmlcontentempty',['XMLContentEmpty',['../namespacelibsbml.html#a2f8ce68f6bb142e057bc9b88b8e26569',1,'libsbml']]],
+  ['xmlemptyvaluenotpermitted',['XMLEmptyValueNotPermitted',['../namespacelibsbml.html#a11bafe20412068e904fd3f09c45510bc',1,'libsbml']]],
+  ['xmlerrorcodesupperbound',['XMLErrorCodesUpperBound',['../namespacelibsbml.html#aef2861c81f6e8a09a3a59c2aeddbf9d5',1,'libsbml']]],
+  ['xmlexpectedquotedstring',['XMLExpectedQuotedString',['../namespacelibsbml.html#a013aca20047c589a1912140e12ef60d4',1,'libsbml']]],
+  ['xmlfileoperationerror',['XMLFileOperationError',['../namespacelibsbml.html#acb9a3fe7cd77596f874bd1780c923009',1,'libsbml']]],
+  ['xmlfileunreadable',['XMLFileUnreadable',['../namespacelibsbml.html#a8468943e98427750c4e1b91b6600acf4',1,'libsbml']]],
+  ['xmlfileunwritable',['XMLFileUnwritable',['../namespacelibsbml.html#af4dc7a9c3ea0c0377c31c073585c9b80',1,'libsbml']]],
+  ['xmlnetworkaccesserror',['XMLNetworkAccessError',['../namespacelibsbml.html#a0314342a6182f25221eb4cb7ea96b4d2',1,'libsbml']]],
+  ['xmloutofmemory',['XMLOutOfMemory',['../namespacelibsbml.html#acbd70b8acfaf7288018e329f2bb4b699',1,'libsbml']]],
+  ['xmltagmismatch',['XMLTagMismatch',['../namespacelibsbml.html#a5c011a1f2cfc21a7169dfdfbb1092fed',1,'libsbml']]],
+  ['xmltranscodererror',['XMLTranscoderError',['../namespacelibsbml.html#a3d85052f8914cbc8b346993541a96f88',1,'libsbml']]],
+  ['xmlunexpectedeof',['XMLUnexpectedEOF',['../namespacelibsbml.html#aa0c76f33bce34a9a4130555fb76fe35f',1,'libsbml']]],
+  ['xmlunknownerror',['XMLUnknownError',['../namespacelibsbml.html#a8d52bac01c71c0bc82f44d0dbde5f05d',1,'libsbml']]]
+];

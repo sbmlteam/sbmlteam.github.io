@@ -19,13 +19,11 @@
   $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  $(document).ready(function() { init_search(); });
 </script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="libSBML C++ API"/>
 <link href="libsbml-doxygen-stylesheet.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -59,14 +57,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="libsbml-example-files.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
-          <div class="left">
-            <form id="FSearchBox" action="search.php" method="get">
-              <img id="MSearchSelect" src="search/mag.png" alt=""/>
-              <input type="text" id="MSearchField" name="query" value="Search" size="20" accesskey="S" 
-                     onfocus="searchBox.OnSearchFieldFocus(true)" 
-                     onblur="searchBox.OnSearchFieldFocus(false)"/>
-            </form>
-          </div><div class="right"></div>
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
         </div>
       </li>
     </ul>
@@ -86,6 +88,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 $(document).ready(function(){initNavTree('dir_75ea03fee82884b3113f88b9ca3f5035.html','');});
 </script>
 <div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <h3>common &rarr; sbml Relation</h3><table class="dirtab"><tr class="dirtab"><th class="dirtab">File in src/sbml/packages/comp/common</th><th class="dirtab">Includes file in src/sbml/packages/comp/sbml</th></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_comp_base_8h.html">CompBase.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_deletion_8h.html">Deletion.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_external_model_definition_8h.html">ExternalModelDefinition.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_list_of_deletions_8h.html">ListOfDeletions.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_list_of_external_model_definitions_8h.html">ListOfExternalModelDefinitions.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_list_of_model_definitions_8h.html">ListOfModelDefinitions.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_list_of_ports_8h.html">ListOfPorts.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_list_of_replaced_elements_8h.html">ListOfReplacedElements.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_list_of_submodels_8h.html">ListOfSubmodels.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_model_definition_8h.html">ModelDefinition.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_port_8h.html">Port.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_replaced_by_8h.html">ReplacedBy.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_replaced_element_8h.html">ReplacedElement.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_s_base_ref_8h.html">SBaseRef.h</a></td></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="_comp_extension_types_8h.html">CompExtensionTypes.h</a></td><td class="dirtab"><a class="el" href="_submodel_8h.html">Submodel.h</a></td></tr></table></div><!-- contents -->
 </div><!-- doc-content -->

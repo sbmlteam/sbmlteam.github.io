@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 707;
+var viewWidth = 569;
 var viewHeight = 140;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,132 +54,132 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>FbcSpeciesPlugin.h</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-136 702.5,-136 702.5,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-136 565,-136 565,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<polygon fill="#bfbfbf" stroke="#000000" points="443,-112.5 443,-131.5 548,-131.5 548,-112.5 443,-112.5"/>
-<text text-anchor="middle" x="495.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcSpeciesPlugin.h</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="357,-112.5 357,-131.5 440,-131.5 440,-112.5 357,-112.5"/>
+<text text-anchor="middle" x="398.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcSpeciesPlugin.h</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="_fbc_extension_types_8h.html" target="_top" xlink:title="Includes all SBML types of the fbc package extension in a single header file. ">
-<polygon fill="#ffffff" stroke="#000000" points="316,-56.5 316,-75.5 429,-75.5 429,-56.5 316,-56.5"/>
-<text text-anchor="middle" x="372.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcExtensionTypes.h</text>
+<polygon fill="#ffffff" stroke="#000000" points="253,-56.5 253,-75.5 342,-75.5 342,-56.5 253,-56.5"/>
+<text text-anchor="middle" x="297.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcExtensionTypes.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M464.9935,-108.1109C442.6888,-97.9559 413.0201,-84.4482 393.3685,-75.5011"/>
-<polygon fill="#191970" stroke="#191970" points="463.8041,-111.415 474.3555,-112.3733 466.7047,-105.0442 463.8041,-111.415"/>
+<path fill="none" stroke="#191970" d="M372.0281,-107.3225C353.9875,-97.3198 330.6123,-84.3593 314.8913,-75.6427"/>
+<polygon fill="#191970" stroke="#191970" points="370.4643,-110.4574 380.9071,-112.2455 373.8587,-104.3354 370.4643,-110.4574"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="_fbc_extension_8cpp.html" target="_top" xlink:title="Implementation of FbcExtension, the core module of fbc package. ">
-<polygon fill="#ffffff" stroke="#000000" points="447.5,-56.5 447.5,-75.5 543.5,-75.5 543.5,-56.5 447.5,-56.5"/>
-<text text-anchor="middle" x="495.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcExtension.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="360.5,-56.5 360.5,-75.5 436.5,-75.5 436.5,-56.5 360.5,-56.5"/>
+<text text-anchor="middle" x="398.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcExtension.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="#191970" d="M495.5,-102.1575C495.5,-93.155 495.5,-82.9199 495.5,-75.6427"/>
-<polygon fill="#191970" stroke="#191970" points="492.0001,-102.2455 495.5,-112.2455 499.0001,-102.2456 492.0001,-102.2455"/>
+<path fill="none" stroke="#191970" d="M398.5,-102.1575C398.5,-93.155 398.5,-82.9199 398.5,-75.6427"/>
+<polygon fill="#191970" stroke="#191970" points="395.0001,-102.2455 398.5,-112.2455 402.0001,-102.2456 395.0001,-102.2455"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="_fbc_species_plugin_8cpp.html" target="_top" xlink:title="Implementation of FbcSpeciesPlugin, the plugin class of the fbc package for the Species element...">
-<polygon fill="#ffffff" stroke="#000000" points="562,-56.5 562,-75.5 677,-75.5 677,-56.5 562,-56.5"/>
-<text text-anchor="middle" x="619.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcSpeciesPlugin.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="455,-56.5 455,-75.5 546,-75.5 546,-56.5 455,-56.5"/>
+<text text-anchor="middle" x="500.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcSpeciesPlugin.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M525.9524,-108.2473C548.4722,-98.0771 578.5617,-84.4883 598.4618,-75.5011"/>
-<polygon fill="#191970" stroke="#191970" points="524.4895,-105.0675 516.8164,-112.3733 527.3706,-111.4471 524.4895,-105.0675"/>
+<path fill="none" stroke="#191970" d="M425.234,-107.3225C443.4532,-97.3198 467.0598,-84.3593 482.9366,-75.6427"/>
+<polygon fill="#191970" stroke="#191970" points="423.3484,-104.3649 416.267,-112.2455 426.7173,-110.5009 423.3484,-104.3649"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="_cobra_to_fbc_converter_8cpp.html" target="_top" xlink:title="Implementation of a cobra 2 fbc converter. ">
-<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-19.5 135,-19.5 135,-.5 0,-.5"/>
-<text text-anchor="middle" x="67.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CobraToFbcConverter.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-19.5 105,-19.5 105,-.5 0,-.5"/>
+<text text-anchor="middle" x="52.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CobraToFbcConverter.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M310.572,-54.6296C254.3107,-44.2997 172.2572,-29.2341 119.37,-19.5237"/>
-<polygon fill="#191970" stroke="#191970" points="309.9475,-58.0734 320.4152,-56.4369 311.2117,-51.1885 309.9475,-58.0734"/>
+<path fill="none" stroke="#191970" d="M245.7767,-54.1775C200.6555,-43.8641 136.0335,-29.0934 94.1661,-19.5237"/>
+<polygon fill="#191970" stroke="#191970" points="245.1329,-57.6206 255.6614,-56.4369 246.6927,-50.7966 245.1329,-57.6206"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="_fbc_to_cobra_converter_8cpp.html" target="_top" xlink:title="Implementation of a fbc 2 cobra converter. ">
-<polygon fill="#ffffff" stroke="#000000" points="153,-.5 153,-19.5 288,-19.5 288,-.5 153,-.5"/>
-<text text-anchor="middle" x="220.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcToCobraConverter.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="123,-.5 123,-19.5 228,-19.5 228,-.5 123,-.5"/>
+<text text-anchor="middle" x="175.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcToCobraConverter.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M336.641,-52.7888C308.8877,-42.5639 271.1181,-28.6488 246.2888,-19.5011"/>
-<polygon fill="#191970" stroke="#191970" points="335.7768,-56.2003 346.3703,-56.3733 338.1968,-49.6319 335.7768,-56.2003"/>
+<path fill="none" stroke="#191970" d="M267.2416,-52.1109C245.1181,-41.9559 215.6906,-28.4482 196.1989,-19.5011"/>
+<polygon fill="#191970" stroke="#191970" points="265.979,-55.3824 276.5275,-56.3733 268.8993,-49.0206 265.979,-55.3824"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="_fbc_v1_to_v2_converter_8cpp.html" target="_top" xlink:title="Implementation of a fbc v1 to fbc v2 converter. ">
-<polygon fill="#ffffff" stroke="#000000" points="306.5,-.5 306.5,-19.5 438.5,-19.5 438.5,-.5 306.5,-.5"/>
-<text text-anchor="middle" x="372.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcV1ToV2Converter.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="246,-.5 246,-19.5 349,-19.5 349,-.5 246,-.5"/>
+<text text-anchor="middle" x="297.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcV1ToV2Converter.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="#191970" d="M372.5,-46.1575C372.5,-37.155 372.5,-26.9199 372.5,-19.6427"/>
-<polygon fill="#191970" stroke="#191970" points="369.0001,-46.2455 372.5,-56.2455 376.0001,-46.2456 369.0001,-46.2455"/>
+<path fill="none" stroke="#191970" d="M297.5,-46.1575C297.5,-37.155 297.5,-26.9199 297.5,-19.6427"/>
+<polygon fill="#191970" stroke="#191970" points="294.0001,-46.2455 297.5,-56.2455 301.0001,-46.2456 294.0001,-46.2455"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="_fbc_v2_to_v1_converter_8cpp.html" target="_top" xlink:title="Implementation of a fbc v2 to fbc v1 converter. ">
-<polygon fill="#ffffff" stroke="#000000" points="456.5,-.5 456.5,-19.5 588.5,-19.5 588.5,-.5 456.5,-.5"/>
-<text text-anchor="middle" x="522.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcV2ToV1Converter.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="367,-.5 367,-19.5 470,-19.5 470,-.5 367,-.5"/>
+<text text-anchor="middle" x="418.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcV2ToV1Converter.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node2&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M407.8871,-52.7888C435.2753,-42.5639 472.5479,-28.6488 497.0506,-19.5011"/>
-<polygon fill="#191970" stroke="#191970" points="406.4302,-49.5967 398.2859,-56.3733 408.8785,-56.1546 406.4302,-49.5967"/>
+<path fill="none" stroke="#191970" d="M327.5104,-52.1109C349.4525,-41.9559 378.6388,-28.4482 397.9708,-19.5011"/>
+<polygon fill="#191970" stroke="#191970" points="325.9058,-48.9968 318.3006,-56.3733 328.8459,-55.3494 325.9058,-48.9968"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="_fbc_validator_8cpp.html" target="_top" xlink:title="Base class for SBML Validators. ">
-<polygon fill="#ffffff" stroke="#000000" points="606.5,-.5 606.5,-19.5 698.5,-19.5 698.5,-.5 606.5,-.5"/>
-<text text-anchor="middle" x="652.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcValidator.cpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="488,-.5 488,-19.5 561,-19.5 561,-.5 488,-.5"/>
+<text text-anchor="middle" x="524.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">FbcValidator.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node2&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M430.411,-54.4178C482.5278,-43.9944 558.1108,-28.8778 606.2778,-19.2444"/>
-<polygon fill="#191970" stroke="#191970" points="429.4349,-51.0436 420.3156,-56.4369 430.8078,-57.9077 429.4349,-51.0436"/>
+<path fill="none" stroke="#191970" d="M346.1035,-54.0097C388.5613,-43.5355 449.2662,-28.5599 487.7748,-19.06"/>
+<polygon fill="#191970" stroke="#191970" points="345.1354,-50.6435 336.2648,-56.4369 346.812,-57.4398 345.1354,-50.6435"/>
 </g>
 </g>
 </svg>
