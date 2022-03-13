@@ -11,7 +11,7 @@ layout = "home"
 #=====================================================================
 +++
 
-Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a free and open data format for computational systems biology that's used by thousands of people worldwide.  Here you can find out more about SBML, compatible software, upcoming events, and more.
+Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a free and open data format for computational systems biology that's used by thousands of people worldwide. 
 
 <hr style="margin-top: 1rem">
 
@@ -20,7 +20,7 @@ Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a 
 {{% /blurb %}}
 
 {{% blurb title="How do you use it?" icon="laptop-code" side="right" link="/facilities/showcase/" %}}
-  Many software tools and databases support SBML directly.  You don't write in SBML yourself&mdash;your software does it for you.  The [SBML Showcase](/facilities/showcase) can yelp you find SBML-compatible software, and the [BioModels Database](https://www.ebi.ac.uk/biomodels) can help you find published models.
+  Many software tools and databases support SBML directly.  You don't write in SBML yourself&mdash;your software does it for you.  And in the [BioModels Database](https://www.ebi.ac.uk/biomodels), you can find hundreds of published models in SBML format.
 {{% /blurb %}}
 
 {{% blurb title="Where do you get more information?" icon="book" link="/documents/" %}}
