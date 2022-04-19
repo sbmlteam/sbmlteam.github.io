@@ -49,7 +49,7 @@ The adoption of SBML offers **many benefits**, including: (1) enabling the use o
 
 ## What can _you_ do with it? 
 
-If you're a biologist interested in doing computational modeling, this may be all you need to know about SBML.  Today's modern software packages hide the details of SBML and provide you with interfaces that help you focus on your modeling and analysis tasks.  You can find out about many SBML-compatible software systems from our [SBML Showcase](/showcase).
+If you're a biologist interested in doing computational modeling, this may be all you need to know about SBML.  Today's modern software packages hide the details of SBML and provide you with interfaces that help you focus on your modeling and analysis tasks.
 
 If you're a software developer or an advanced modeler, you probably want to learn just a little bit more about SBML.  Please go to the [SBML specification documents](/documents/specifications).
 
