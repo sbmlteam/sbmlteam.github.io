@@ -38,5 +38,3 @@ SBML is formally defined in the specification documents. Additional helpful expl
 {{% blurb title="SBML Logos" icon="palette" link="logos" %}}
   Get your official SBML logos here! Use them on websites, posters, software—anywhere you want to publicize your support of SBML.
 {{% /blurb %}}
-
-In addition to the above, the [SBML Showcase](../showcase) is a separate section on this site that provides a summary of all SBML-compatible software systems known to us.

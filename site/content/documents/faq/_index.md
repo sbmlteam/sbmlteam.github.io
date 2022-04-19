@@ -70,7 +70,7 @@ While [BioPAX](http://www.biopax.org/) is meant to facilitate the exchange of _b
 
 [CellML](http://www.cellml.org/) is another format to encode quantitative models, based on [XML](http://www.w3.org/XML) like SBML. CellML is being developed by the [Bioengineering Institute](http://www.bioeng.auckland.ac.nz/home/home.php) at the [University of Auckland](http://www.auckland.ac.nz/) and collaborating groups.  The chief differences between CellML and SBML can be perhaps described in the following ways.   While a model encoded in SBML is based on the successive, hierachical, declarations of model constituents, a CellML model is built as a network of components. A component can contain variables, mathematical expressions, metadata etc. In CellML, the biological information is entirely stored in metadata rather than the language elements. In SBML, the language elements were more directly influenced by present-day biochemical network simulation software, and the mathematical expressions are more constrained than what is permitted in CellML's subset of MathML.
 
-A variety of tools exist to translate between SBML and CellML, though not all SBML constructs can be translated to CellML (like events), and while the math remains, semantic information is lost.  Conversely, translators from CellML to SBML that do not use the Hierarchical Model Composition package lose the hierarchical information, and result in a 'flat' model.  Examples of tools providing this service can be found at https://www.ebi.ac.uk/biomodels/tools/converters/, and other tools can be found by searching the [SBML Showcase](/showcase).
+A variety of tools exist to translate between SBML and CellML, though not all SBML constructs can be translated to CellML (like events), and while the math remains, semantic information is lost.  Conversely, translators from CellML to SBML that do not use the Hierarchical Model Composition package lose the hierarchical information, and result in a 'flat' model. Examples of tools providing this service can be found at https://www.ebi.ac.uk/biomodels/tools/converters/.
 
 ### Is SBML just an XML format? 
 
@@ -78,7 +78,7 @@ Yes and no.  The primary encoding of SBML is indeed [XML](http://www.w3.org/XML)
 
 ### Isn't SBML too complicated to write?
 
-Don't write SBML by hand.  Instead, use software tools that provide higher-level interfaces to reading, writing, and manipulating SBML.  Some provide graphical user interfaces, while others provide textual interfaces where you can write models in terms of chemical reactions.  Take a look at our [SBML Showcase](/showcase) for help finding a tool that may be suitable for your needs.
+Don't write SBML by hand.  Instead, use software tools that provide higher-level interfaces to reading, writing, and manipulating SBML.  Some provide graphical user interfaces, while others provide textual interfaces where you can write models in terms of chemical reactions.
 
 ### Where is SBML defined? 
 
@@ -204,7 +204,7 @@ An SBML Level 3 package is an extension of SBML, with its own namespace and spec
 
 ### Is there a list of software that supports SBML?
 
-Please refer to the [SBML Showcase](/showcase).
+For a long time, we maintained a database of tools (the SBML "Showcase"/SBML Matrix). This failed to be updated regularly, and in 2021 we removed it from the site to avoid frustrating users with outdated and misleading information.
 
 ### Where can I find certified SBML software?
 
@@ -216,14 +216,13 @@ However, it is unlikely there will ever be a full "certification" mechanism for 
 
 ### Are software libraries available for programming with SBML?
 
-Yes.  The [SBML Showcase](/showcase) includes information about known
-libraries for programming SBML support.  The SBML Team itself has developed
-several free and open-source packages that can be used to support SBML in
-different environments, including two libraries:
+Yes.  The SBML Team itself has developed several free and open-source packages that can be used to support SBML in different environments, including two libraries:
 
 * [libSBML](/software/libsbml) is a portable, embeddable API library providing language interfaces for C, C#, C++, Java, MATLAB, Octave, Perl, Python, and Ruby.  It runs on Linux, MacOS and Windows.  There is  a recent [paper describing libSBML](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2517632/) too.
 
 * [JSBML](/software/jsbml) is a new pure Java implementation that tries to provide a similar API to [libSBML](/software/libsbml).
+
+Other libraries have been developed by other groups.
 
 ### Which "Level" of SBML should I use in my software?
 

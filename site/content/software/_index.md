@@ -6,7 +6,7 @@ toc    = true
 #============================================================================
 +++
 
-The SBML Team produces software libraries and some specific software tools for working with SBML. (Many more third-party packages also support SBML &ndash; visit the [Showcase](/showcase) to find out more about them!)
+The SBML Team produces software libraries and some specific software tools for working with SBML. (Many more third-party packages also support SBML &ndash; check the software documentation to find out.)
 
 ## Main programming libraries and tools
 ### <!-- Stupid hack needed to make TOC show up properly -->

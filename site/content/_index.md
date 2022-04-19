@@ -19,7 +19,7 @@ Welcome to the portal for the **Systems Biology Markup Language** (**SBML**), a 
   SBML is a software data format for describing models in biology.  It's a little like HTML, but for [formal models instead of web pages](documents/what-is-sbml/).  It's independent of any particular software tool and not limited to any particular field of the life sciences.  It's open and free.
 {{% /blurb %}}
 
-{{% blurb title="How do you use it?" icon="laptop-code" side="right" link="/facilities/showcase/" %}}
+{{% blurb title="How do you use it?" icon="laptop-code" side="right" link="/software/" %}}
   Many software tools and databases support SBML directly.  You don't write in SBML yourself&mdash;your software does it for you.  And in the [BioModels Database](https://www.ebi.ac.uk/biomodels), you can find hundreds of published models in SBML format.
 {{% /blurb %}}
 
