@@ -39,7 +39,7 @@ In common with the syntactic test cases, and as explained in the page describing
 
 ### Running a single test case
 
-First, examine the file <nobr><code><i style="background-color: #ccffcc">NNNNN</i>-model.m</code></nobr>.  (The file format is described on [another page](/software/sbml-test-suite/docs/test-case-details/#the-model-description-file).)  The kind of test being requested will described by the value of the field named `testType:` in that file.
+First, examine the file <nobr><code><i style="background-color: #ccffcc">NNNNN</i>-model.m</code></nobr>.  (The file format is described on [another page](/software/sbml-test-suite/docs/test-case-details/#the-model-description-file).)  The kind of test being requested will be described by the value of the field named `testType:` in that file.
 
 #### If the type of test is `TimeCourse`
 
