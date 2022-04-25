@@ -1,11 +1,12 @@
---- # -*- mode: markdown -*-
++++ # -*- mode: markdown -*-
 #=====================================================================
-title: "Systems Biology Format Converter (SBFC)"
-date: 2020-03-14
-layout: "single"
-icon: "/img/sbfc-logo.png"
+title = "Systems Biology Format Converter (SBFC)"
+aliases = ["/Software/SBFC"]
+date = 2020-03-14
+layout = "single"
+icon = "/img/sbfc-logo.png"
 #=====================================================================
----
++++
 
 The Systems Biology Format Converter (SBFC) is both a framework and an online service for converting between formats used in systems biology.  The framework is written in Java and can be used as a standalone executable or as web service. The SBFC framework currently supports conversion from SBML to [BioPAX](http://www.biopax.org) Levels&nbsp;2 and&nbsp;3, [MATLAB](https://www.mathworks.com/products/matlab.html), [Octave](https://www.gnu.org/software/octave/), [XPP](http://www.math.pitt.edu/~bard/xpp/xpp.html), [GraphViz](https://www.graphviz.org), and [APM](http://apmonitor.com).  SBFC is free software distributed under the terms of the [LGPL](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html). The lead author of SBFC is [Nicholas Rodriguez](https://www.babraham.ac.uk/people/member/278), but it is a collaborative project and we hope that other developers will create new modules to support more formats.
 

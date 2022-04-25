@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 title  = "Deviser"
+aliases = ["/Software/Deviser", "/Software/DEVISER"]
 date   = 2020-03-22
 layout = "single"
 icon   = "/img/deviser-logo.png"

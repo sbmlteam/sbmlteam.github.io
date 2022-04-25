@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 title  = "Converters"
+aliases = ["/Software/Converters", "/Facilities/Converters"]
 date   = 2020-04-04
 layout = "single"
 active = true

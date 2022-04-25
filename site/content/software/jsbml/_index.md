@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 title      = "JSBML"
+aliases = ["/Software/JSBML"]
 layout     = "single"
 icon       = "/img/jsbml-logo.png"
 icon_width = "18%"

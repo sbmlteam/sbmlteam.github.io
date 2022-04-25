@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 title  = "SBMLToolbox"
+aliases = ["/Software/SBMLToolbox", "/Software/SBMLtoolbox"]
 date   = 2020-03-13
 layout = "single"
 icon   = "/img/sbmltoolbox-logo.png"

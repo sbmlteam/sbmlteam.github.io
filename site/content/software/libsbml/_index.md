@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 title      = "libSBML"
+aliases = ["/Software/libSBML"]
 layout     = "single"
 icon       = "/img/libsbml-logo-and-name.svg"
 icon_width = "11em"

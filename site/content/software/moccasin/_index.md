@@ -1,11 +1,12 @@
---- # -*- mode: markdown -*-
++++ # -*- mode: markdown -*-
 #=====================================================================
-title: "MOCCASIN"
-date: 2020-03-12
-layout: "single"
-icon: "/img/moccasin-logo.svg"
+title = "MOCCASIN"
+aliases = ["/Software/MOCCASIN", "/Software/Moccasin"]
+date = 2020-03-12
+layout = "single"
+icon = "/img/moccasin-logo.svg"
 #=====================================================================
----
++++
 
 _MOCCASIN_ stands for _Model ODE Converter for Creating Automated SBML INteroperability_.  It can read certain forms of <nobr>ODE-based</nobr> models written in [MATLAB](https://www.mathworks.com/products/matlab.html) and translate them into SBML format. It is written in [Python](https://www.python.org) by [Sarah M. Keating](https://github.com/skeating),  [Harold F. Gómez](https://bsse.ethz.ch/cobi/group/people/person-detail.MjExMzQw.TGlzdC8yMjA0LC0xMDM3ODQxNDk3.html) and [Mike Hucka](http://www.cds.caltech.edu/~mhucka/), and made available under [LGPL](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html) terms. It does not use or need [MATLAB](https://www.mathworks.com/products/matlab.html) itself.  It offers both a GUI and a command-line interface.
 
