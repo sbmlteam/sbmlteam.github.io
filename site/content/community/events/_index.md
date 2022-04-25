@@ -18,6 +18,11 @@ The _<b>CO</b>mputational <b>M</b>odeling in <b>BI</b>ology <b>NE</b>twork_ (COM
 
 | Date(s)           | Event                                                   | Event type  | Location                                                     |
 |-------------------|---------------------------------------------------------|-------------|--------------------------------------------------------------|
+| Apr. 26–30, 2022	| [HARMONY 2022](http://combine-org.github.io/events)       | Hackathon	| Hybrid: Washington, DC, USA and Virtual                      |
+| Oct. 11–15, 2021	| [COMBINE 2021](http://co.mbine.org/events/COMBINE_2021) | Forum		| Virtual                                                      |
+| Mar. 22–26, 2021	| [HARMONY 2021](http://co.mbine.org/events/HARMONY_2021) | Hackathon	| Virtual							   	                       |
+| Oct. 5–9, 2020	| [COMBINE 2020](http://co.mbine.org/events/COMBINE_2020) | Forum		| Virtual                                                      |
+| Mar. 9–13, 2020	| [HARMONY 2020](http://co.mbine.org/events/HARMONY_2020) | Hackathon	| EMBL-EBI, Cambridgeshire, UK							   	   |
 | Jul. 15–19, 2019	| [COMBINE 2019](http://co.mbine.org/events/COMBINE_2019) | Forum		| Heidelberg Institute for Theoretical Studies, Heidelberg, DE |
 | Mar. 25–29, 2019	| [HARMONY 2019](http://co.mbine.org/events/HARMONY_2019) | Hackathon	| Caltech, Pasadena, CA, US							   		   |
 | Oct. 8–12, 2018	| [COMBINE 2018](http://co.mbine.org/events/COMBINE_2018) | Forum		| Boston University, Boston, MA, US							   |
