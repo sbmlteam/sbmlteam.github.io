@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 title  = "SBML Test Suite"
+aliases = ["/Facilities/SBML_Test_Suite", "/Software/SBML_Test_Suite"]
 date   = 2020-03-22
 layout = "single"
 icon   = "/img/sbml-test-suite-logo.svg"
