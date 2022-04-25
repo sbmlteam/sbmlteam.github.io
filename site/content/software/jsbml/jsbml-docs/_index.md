@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 title  = "JSBML Documentation"
+aliases = ["/Software/JSBML/docs", "/Software/JSBML/Docs"]
 layout = "single"
 toc    = true
 #=====================================================================
