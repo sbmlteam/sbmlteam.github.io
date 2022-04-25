@@ -4,6 +4,7 @@
 # Summary: This file defines the content of the /about page.
 #---------------------------------------------------------------------
 title = "About SBML"
+aliases = ["/About"]
 widget = ""
 layout = "single"
 #=====================================================================

@@ -4,6 +4,7 @@
 # Summary: This file defines the content of the /documents page.
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 title =  "Documents"
+aliases = ["Documents"]
 date = 2019-04-06
 layout = "single"
 #=====================================================================

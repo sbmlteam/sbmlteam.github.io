@@ -4,6 +4,7 @@
 # Summary: This file defines the content of /community/events/
 #---------------------------------------------------------------------
 title  = "Events"
+aliases = ["/Events"]
 widget = ""
 layout = "single"
 #=====================================================================

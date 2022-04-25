@@ -1,8 +1,9 @@
 +++ # -*- mode: html -*-
 ######################################################################
-title  = "Community: Forums"
-date   = 2019-05-11
-layout = "single"
+title   = "Community: Forums"
+aliases = ["/Forums"]
+date    = 2019-05-11
+layout  = "single"
 ######################################################################
 +++
 

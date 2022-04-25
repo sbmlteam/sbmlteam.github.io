@@ -1,8 +1,9 @@
----
-title: "Facilities"
-date: 2021-05-31
-layout: "single"
----
++++
+title  = "Facilities"
+aliases = ["/Facilities"]
+date   = 2021-05-31
+layout = "single"
++++
 
 The following services have been converted to the new website:
 

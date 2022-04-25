@@ -4,6 +4,7 @@
 # Summary: This file defines the content of the /community page.
 #---------------------------------------------------------------------
 title = "Community"
+aliases = ["/Community"]
 widget = ""
 layout = "single"
 #=====================================================================

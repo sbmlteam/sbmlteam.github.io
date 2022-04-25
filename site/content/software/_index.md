@@ -1,6 +1,6 @@
 +++
 #============================================================================
-aliases = ["/Software"]
+aliases = ["/Software", "/Downloads"]
 title  = "SBML software and models"
 layout = "single"
 toc    = true
