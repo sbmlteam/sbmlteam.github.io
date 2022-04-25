@@ -1,9 +1,10 @@
 +++ # -*- mode: html -*-
 #=====================================================================
-title  = "Frequently Asked Questions (and Answers)"
-date   = 2019-04-07
-layout = "single"
-toc    = true
+title   = "Frequently Asked Questions (and Answers)"
+aliases = ["/Documents/FAQ"]
+date    = 2019-04-07
+layout  = "single"
+toc     = true
 #=====================================================================
 +++
 

@@ -1,6 +1,7 @@
 +++
 #============================================================================
 title  = "Essential publications about SBML"
+aliases = ["/Documents/Publications"]
 date   = 2019-04-06
 layout = "single"
 toc    = true

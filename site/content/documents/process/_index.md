@@ -5,6 +5,7 @@
 #---------------------------------------------------------------------
 active = true
 title = "SBML Development Process"
+aliases = ["/Documents/SBML_Development_Process"]
 date = 2019-04-07
 layout = "single"
 toc = true

@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 title  = "Elaborations and Clarifications"
+aliases = ["/Documents/Elaborations"]
 date   = 2019-04-06
 layout = "single"
 #=====================================================================
