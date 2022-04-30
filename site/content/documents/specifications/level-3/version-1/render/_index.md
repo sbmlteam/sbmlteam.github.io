@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 l3package = "render"
+aliases = ["/documents/specifications/sbml-level-3/version-1/render", "/specifications/sbml-level-3/version-1/render"]
 layout    = "sbml-package"
 date      = 2020-04-13
 #=====================================================================

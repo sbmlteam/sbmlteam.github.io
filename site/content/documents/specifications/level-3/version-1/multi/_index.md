@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 l3package = "multi"
+aliases = ["/documents/specifications/sbml-level-3/version-1/multi", "/specifications/sbml-level-3/version-1/multi"]
 layout    = "sbml-package"
 date      = 2020-04-13
 #=====================================================================

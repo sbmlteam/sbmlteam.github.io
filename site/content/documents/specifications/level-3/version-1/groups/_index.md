@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 l3package = "groups"
+aliases = ["/documents/specifications/sbml-level-3/version-1/groups", "/specifications/sbml-level-3/version-1/groups"]
 layout    = "sbml-package"
 date      = 2020-04-13
 #=====================================================================

@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 l3package = "qual"
+aliases = ["/documents/specifications/sbml-level-3/version-1/qual", "/specifications/sbml-level-3/version-1/qual"]
 layout    = "sbml-package"
 date      = 2020-04-13
 #=====================================================================

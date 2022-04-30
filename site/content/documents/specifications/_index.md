@@ -1,7 +1,7 @@
 +++
 #============================================================================
 title  = "SBML Specifications"
-aliases = ["/Documents/Specifications"]
+aliases = ["/Documents/Specifications", "/specifications"]
 layout = "single"
 toc    = true
 #============================================================================

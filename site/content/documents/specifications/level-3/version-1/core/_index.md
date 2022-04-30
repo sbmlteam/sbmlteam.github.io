@@ -1,6 +1,7 @@
 +++
 #============================================================================
 title  = "SBML Level 3 Version 1 Core"
+aliases = ["/documents/specifications/sbml-level-3/version-1/core", "/specifications/sbml-level-3/version-1/core"]
 layout = "single"
 #============================================================================
 +++

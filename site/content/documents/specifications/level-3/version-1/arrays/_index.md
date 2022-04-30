@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 l3package = "arrays"
+aliases = ["/documents/specifications/sbml-level-3/version-1/arrays", "/specifications/sbml-level-3/version-1/arrays"]
 layout    = "sbml-package"
 date      = 2020-04-13
 #=====================================================================

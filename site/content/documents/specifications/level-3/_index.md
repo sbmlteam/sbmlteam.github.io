@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 title  = "All Versions of SBML Level 3"
+aliases = ["/documents/specifications/sbml-level-3", "/specifications/sbml-level-3"]
 date   = 2020-03-12
 layout = "single"
 #=====================================================================

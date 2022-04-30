@@ -1,6 +1,7 @@
 +++
 #=====================================================================
 l3package = "comp"
+aliases = ["/documents/specifications/sbml-level-3/version-1/comp", "/specifications/sbml-level-3/version-1/comp"]
 layout    = "sbml-package"
 date      = 2020-03-12
 #=====================================================================
