@@ -1,7 +1,7 @@
 +++
 #=====================================================================
 title  = "libSBML license"
-aliases = ["/software/libsbml/license.html"]
+aliases = ["https://sbml.org/software/libsbml/license.html"]
 layout = "single"
 toc    = false
 #=====================================================================
