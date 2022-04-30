@@ -1,9 +1,10 @@
-<!-- 
- This file uses only basic HTML formatting because it is also
- included by machine-generated documentation files.  Do not add
- more HTML formatting because it may break the documentation-
- generation system code in ./docs/src/ .
--->
++++
+#=====================================================================
+title  = "libSBML license"
+layout = "single"
+toc    = false
+#=====================================================================
++++
 
 The majority of libSBML is copyrighted as follows:
 
