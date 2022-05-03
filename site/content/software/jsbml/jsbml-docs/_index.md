@@ -49,7 +49,7 @@ The JSBML API documentation describes the objects and methods defined by JSBML. 
 The following are resources especially relevant to JSBML developers.
 
 {{% blurb title="API differences between releases" icon="not-equal" link="difference-reports" %}}
-These reports were generated using [JDiff](http://javadiff.sourceforge.net); they summarize the API differences between versions of JSBML.
+These reports were generated using [JDiff](https://github.com/java-diff-utils/java-diff-utils); they summarize the API differences between versions of JSBML.
 {{% /blurb %}}
 
 {{% blurb title="GitHub repository for JSBML" icon="github" link="https://github.com/sbmlteam/jsbml" %}}

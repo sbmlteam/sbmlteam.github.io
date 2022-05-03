@@ -9,7 +9,7 @@ date      = 2020-04-13
 
 ## Notes about this specification
 
-**2015-09-12**: Version 2 of the Flux Balance Constraints package has been approved by the SBML Editors and is now an officially released specification.  The package can be used in both SBML Level&nbsp;3 Version&nbsp;1 and SBML Level&nbsp;3 Version&nbsp;2.  An [RNG schema for FBC](https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/sbml-fbc-v2/sbml-fbc-v2.rng) is available.
+**2015-09-12**: Version 2 of the Flux Balance Constraints package has been approved by the SBML Editors and is now an officially released specification.  The package can be used in both SBML Level&nbsp;3 Version&nbsp;1 and SBML Level&nbsp;3 Version&nbsp;2.  An [RNG schema for FBC](https://github.com/sbmlteam/sbml-specifications/blob/release/RelaxNG/sbml-fbc-v2/sbml-fbc-v2.rng) is available.
 
 **2015-07-16**: Release Candidate 7 of the Version 2 specification is now available and has been submitted to the SBML Editors for approval. The PDF file is available from SourceForge.net.
 

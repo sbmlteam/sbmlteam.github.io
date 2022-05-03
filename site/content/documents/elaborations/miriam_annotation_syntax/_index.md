@@ -149,8 +149,8 @@ It may seem as though there is duplication of information between the `rdf:Descr
 
 [Sarah Keating](http://sbml.org/About#The_SBML_Team) wrote sample code demonstrating how to add the annotations above using [libSBML](../../../software/libsbml).  The programs are included in the libSBML distribution under the `examples/c++` directory.  Here are direct links to the files:
 
-* Example code for case #1 above: http://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/examples/c++/addingEvidenceCodes_1.cpp
-* Example code for case #2 above: http://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/examples/c++/addingEvidenceCodes_2.cpp
+* Example code for case #1 above: https://github.com/sbmlteam/libsbml/tree/development/examples/c++/addingEvidenceCodes_1.cpp
+* Example code for case #2 above: https://github.com/sbmlteam/libsbml/tree/development/examples/c++/addingEvidenceCodes_2.cpp
 
 ## How do I put InChI strings in annotations?
 

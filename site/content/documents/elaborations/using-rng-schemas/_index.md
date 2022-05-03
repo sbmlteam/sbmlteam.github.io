@@ -18,13 +18,13 @@ We describe a process below for how to create a combined RNG schema that can be 
 
 ## Directory structure in the source repository
 
-The RNG schemas for SBML Level 3 are available from the following subdirectory within the SBML project on SourceForge: 
+The RNG schemas for SBML Level 3 are available from the following subdirectory within the SBML project on Github: 
 
 <p align="center">
-<a href="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/">sbml/trunk/specifications/RelaxNG/</a>
+<a href="https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG">sbml-specifications/RelaxNG/</a>
 </p>
 
-This directory contains two template files [sbml.rng](https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/sbml.rng) and [pkg-math.rng](https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/pkg-math.rng), along with many subdirectories (one subdirectory per SBML Level&nbsp;3 package). The file [sbml.rng](https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/sbml.rng) is the top-level schema template for Level&nbsp;3, to be used in a manner described below, and it is designed to assume that it is physically located in the directory where the subdirectories <code>sbml-core</code>, <code>sbml-mathml</code>, etc., are located.  Similarly, the file [pkg.rng](https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/pkg-math.rng) is the top-level template for including any additional MathML that individual packages may have added and should also be in this directory even if no additional math is to be included.  When you use the schema, please be aware of this dependency on the subdirectory structure and files.
+This directory contains two template files [sbml.rng](https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG/sbml.rng) and [pkg-math.rng](https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG/pkg-math.rng), along with many subdirectories (one subdirectory per SBML Level&nbsp;3 package). The file [sbml.rng](https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG/sbml.rng) is the top-level schema template for Level&nbsp;3, to be used in a manner described below, and it is designed to assume that it is physically located in the directory where the subdirectories <code>sbml-core</code>, <code>sbml-mathml</code>, etc., are located.  Similarly, the file [pkg.rng](https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG/pkg-math.rng) is the top-level template for including any additional MathML that individual packages may have added and should also be in this directory even if no additional math is to be included.  When you use the schema, please be aware of this dependency on the subdirectory structure and files.
 
 The schema for SBML L3V1 Core is located in the <code>sbml-core</code> subdirectory.  There is an RNG schema for the MathML subset supported by SBML L3V1. This is located within the <code>sbml-mathml</code> subdirectory. Note the sbml core schema references the mathml schema and thus both subdirectories need to be present when validating any SBML L3 document.
 
@@ -122,7 +122,7 @@ else:
 
 ### The <code>pkg-math.rng</code> file
 
-The majority of Level 3 packages do not extend the MathML subset used by SBML and thus the `pkg-math.rng` need not be altered.  The exceptions are the [arrays](/documents/specifications/sbml-level-3/arrays) and  [multi](/documents/specifications/sbml-level-3/multi)  packages. In these cases the relevant lines in [pkg.rng](https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/pkg-math.rng) need to be uncommented.
+The majority of Level 3 packages do not extend the MathML subset used by SBML and thus the `pkg-math.rng` need not be altered.  The exceptions are the [arrays](/documents/specifications/sbml-level-3/arrays) and  [multi](/documents/specifications/sbml-level-3/multi)  packages. In these cases the relevant lines in [pkg.rng](https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG/pkg-math.rng) need to be uncommented.
 
 
 ## SBML validation using RELAX NG schemas
@@ -133,7 +133,7 @@ Once the appropriate <code>sbml.rng</code> file has been created, the resulting 
 
 The libSBML validation code allows users to add validators to those currently called by the <code>checkConsistency()</code> function in libSBML.  This facilitates the addition of RNG validation to the existing validation performed by libSBML. 
 
-LibSBML provides two approaches to performing RNG validation; calling an external validator and using the RelaxNG schema validation provided by libxml2.  The [examples](http://sbml.svn.sourceforge.net/viewvc/sbml/trunk/libsbml/examples/c%2B%2B/) included with libSBML illustrate the use of these methods.  Note that the alternative parsers supported by libSBML, Xerces and Expat, do not provide RNG schema validation functionality; the examples will only work with libxml2.
+LibSBML provides two approaches to performing RNG validation; calling an external validator and using the RelaxNG schema validation provided by libxml2.  The [examples](https://github.com/sbmlteam/libsbml/tree/development/examples/c%2B%2B/) included with libSBML illustrate the use of these methods.  Note that the alternative parsers supported by libSBML, Xerces and Expat, do not provide RNG schema validation functionality; the examples will only work with libxml2.
 
 1. The **callExternalValidator** example illustrates calling an external validation engine.
 2. The **rngvalidator** illustrates an example of calling the rng schema validation provided by libxml2.

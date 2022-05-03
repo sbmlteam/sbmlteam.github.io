@@ -21,7 +21,7 @@ version = 2
 
 [[issue]]
 id          = "2945736"
-link        = "https://sourceforge.net/p/sbml/sbml-specifications/158"
+link        = "https://github.com/sbmlteam/sbml-specifications/issues/160"
 location    = "p. 9 Fig. 4" 
 date        = "9 Feb. 2010" 
 description = "The specification document for Level 1 Version 2 states a model may have zero or more compartments, but the XML Schema required _one_ or more. The schema is considered to be in error."

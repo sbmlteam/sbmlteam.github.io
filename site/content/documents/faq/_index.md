@@ -672,15 +672,15 @@ Note that there is a standard MIME type for SBML; see the relevant separate entr
 
 ### How do I report errors and issues in the SBML specifications?
 
-Please use the [issue tracking system](https://sourceforge.net/tracker/?group_id=71971&atid=894711) in the SourceForge project area for SBML.  To view reported issues in the tracker, use the _Category_ pull-down menu to select the desired SBML Level+Version (e.g., "SBML Level 3 Version 1"), and then click "Browse".)
+Please use the [issue tracking system](https://github.com/sbmlteam/sbml-specifications/issues) for the SBML specifications on GitHub.  To view reported issues for particular specifications, click the '[Labels](https://github.com/sbmlteam/sbml-specifications/labels)' button and select the label for the desired specification.)
 
 ### How do I propose changes or additions for SBML Level X?
 
 There are several ways, with the first one below being preferred because it's the quickest and easiest:
 
 1. Start a discussion on the [sbml-discuss](http://sbml.org/Forums/) list/forum.  This is sure to provoke a response :-).  Doing so also helps find out whether the capability is not already in SBML in some other form, because someone will point out if it is.
-2. You can also attend an [SBML event](/community/events), in particular the annual SBML Forum meetings, where proposed changes to SBML are a major discussion topic.
-3. Finally, if you are shy or just want to pose a question in advance of making public statements, you can [send email to the SBML Editors](mailto:sbml-editors@caltech.edu).
+2. You can also attend an [SBML event](/community/events), in particular the annual COMBINE meetings, where proposed changes to SBML are always welcome.
+3. Finally, if you are shy or just want to pose a question in advance of making public statements, you can [send email to the SBML Editors](mailto:sbml-editors@googlegroups.com).
 
 ### SBML development is too slow&mdash;can't it be faster?
 
@@ -688,7 +688,7 @@ This is a can't-win situation.  The archives of the [sbml-discuss mailing list](
 
 ### Where does the funding come from to keep SBML development going?
 
-The initial development of SBML from its inception through the year 2003 was principally funded by the [Japan Science and Technology Agency](http://www.jst.go.jp/EN/) under the [ERATO Kitano Symbiotic Systems Project](http://www.symbio.jst.go.jp/symbio) headed by Hiroaki Kitano.  Many agencies and commercial organizations supported smaller parts of overall SBML development as well as workshops and travel expenses. Many more academic organizations supported people who spent considerable time working on SBML and related projects despite that it was not an official aspect of their research.  Since 2003, the primary source of stable funding has been the [National Institute for General Medical Sciences](http://www.nigms.nih.gov) under grant GM070923 to Michael Hucka (Chair of the SBML Editors).  A more detailed list of funding acknowledgments is available on a [separate page](/about/funding).
+The initial development of SBML from its inception through the year 2003 was principally funded by the [Japan Science and Technology Agency](http://www.jst.go.jp/EN/) under the [ERATO Kitano Symbiotic Systems Project](http://www.symbio.jst.go.jp/symbio) headed by Hiroaki Kitano.  Many agencies and commercial organizations supported smaller parts of overall SBML development as well as workshops and travel expenses. Many more academic organizations supported people who spent considerable time working on SBML and related projects despite that it was not an official aspect of their research.  From 2003-2020, the primary source of stable funding has been the [National Institute for General Medical Sciences](http://www.nigms.nih.gov) under grant GM070923 to Michael Hucka (Chair of the SBML Editors).  Since that time, support has mostly come from volunteers, with particular projects receiving funding from various organizations and groups.  A more detailed list of funding acknowledgments is available on a [separate page](/about/funding).
 
 ## Miscellaneous questions
 
@@ -696,10 +696,6 @@ The initial development of SBML from its inception through the year 2003 was pri
 
 
 [LibSBML](/software/libsbml) includes a demo program that simply echoes whatever SBML is given to it, and in the process of writing the output, it does a pretty reasonable job of pretty-printing the XML.  The reformatting facility is actually built into [libSBML](/software/libsbml) (it's what [libSBML](/software/libsbml) does automatically), not the demo program, which means any application you build with [libSBML](/software/libsbml) will do it too.
-
-### What is the difference between sbml.org and sbml.info?
-
-There is no difference.  They are alternative names for the same website, provided as a convenience to SBML users and web searchers.  We tend to refer to "the SBML site" or "the SBML portal" as being http://sbml.org, but the other address should work just as well.
 
 ### Who runs sbml.org?
 
