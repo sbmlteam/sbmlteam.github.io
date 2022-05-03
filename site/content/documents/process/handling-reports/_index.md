@@ -18,7 +18,9 @@ The following is the intended sequence of events in the life of an issue.
 
 1.  **Preliminary actions**:
     1.  The issue is entered into the tracking system by someone.  The SBML Editors mailing list will be automatically notified of the new issue.
-    2.  The first available person from the SBML Editors or from the SBML Team to examine the report will do a preliminary evaluation of whether the issue is genuine, and should add appropriate labels to the issue to indicate which level/version/package the issue addresses. Spam may be dealt with by deleting the issue. Otherwise, they may change the issue's *Assigned* field to their name (<img class="screenshot" src="sbml-issue-tracker-assigned.png">), signifying that the issue is genuine, and beginning to moderate discussion among the SBML Editors in analyzing and discussing the issue.
+    2.  The first available person from the SBML Editors or from the SBML Team to examine the report will do a preliminary evaluation of whether the issue is genuine, and should add appropriate labels to the issue to indicate which level/version/package the issue addresses. Spam may be dealt with by deleting the issue. Otherwise, they may change the issue's *Assigned* field to their name (see screenshot), signifying that the issue is genuine, and beginning to moderate discussion among the SBML Editors in analyzing and discussing the issue.
+
+<img class="screenshot" src="sbml-issue-tracker-assigned.png">
 
 2.  **Evaluation and discussion**:
     1.  The Editors will begin by investigating whether the issue is new or not. If not, the "Label" is changed to *Closed - Duplicate*, and closing the issue.
