@@ -1,7 +1,7 @@
 +++
 #=====================================================================
 l3package = "distrib"
-aliases = ["/documents/specifications/sbml-level-3/version-1/distrib", "/specifications/sbml-level-3/version-1/distrib"]
+aliases = ["/documents/specifications/sbml-level-3/version-1/distrib", "/specifications/sbml-level-3/version-1/distrib", "/Documents/Specifications/SBML_Level_3/Packages/distrib"]
 layout    = "sbml-package"
 date      = 2020-04-13
 #=====================================================================
