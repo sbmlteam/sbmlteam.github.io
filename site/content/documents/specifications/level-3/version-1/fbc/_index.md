@@ -1,7 +1,7 @@
 +++
 #=====================================================================
 l3package = "fbc"
-aliases = ["/documents/specifications/sbml-level-3/version-1/fbc", "/specifications/sbml-level-3/version-1/fbc", "/Documents/Specifications/SBML_Level_3/Packages/fbc"]
+aliases = ["/documents/specifications/sbml-level-3/version-1/fbc", "/specifications/sbml-level-3/version-1/fbc", "/Documents/Specifications/SBML_Level_3/Packages/fbc", "/Documents/Specifications/Fbc"]
 layout    = "sbml-package"
 date      = 2020-04-13
 #=====================================================================
