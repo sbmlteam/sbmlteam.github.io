@@ -1,7 +1,7 @@
 +++ # -*- mode: html -*-
 ######################################################################
 title   = "Community: Forums"
-aliases = ["/Forums", "/forums"]
+aliases = ["/Forums", "/forums", "/Forums/sbml-announce", "/Forums/sbml-discuss"]
 date    = 2019-05-11
 layout  = "single"
 ######################################################################
