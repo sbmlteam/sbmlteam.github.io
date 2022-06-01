@@ -5,7 +5,7 @@
 #---------------------------------------------------------------------
 title  = "Events"
 aliases = ["/Events", "/Community/Events",
-"/Events/Hackathons/The_2010_SBML-BioModels.net_Hackathon"
+"/Events/Hackathons/The_2010_SBML-BioModels.net_Hackathon",
 "/Events/Other_Events/Alternative_modelling_Frameworks_2008/L3F_Proposal",
 "/Events/Other_Events/SBML_Multicomponent_\%26_Multistate_Workshop_2007",
 "/Events/Other_Events/statistical_models_workshop_2011"]
