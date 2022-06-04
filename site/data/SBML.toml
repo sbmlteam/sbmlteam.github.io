@@ -50,7 +50,7 @@
     cite_ris    = "/documents/specifications/level-1/version-1/sbml.level-1.version-1.ris"
     schema      = "/documents/specifications/level-1/version-1/sbml.level-1.version-1.xsd"
     issue_list  = "none"
-    tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+    tracker     = "https://github.com/sbmlteam/sbml-specifications/issues"
 
     [spec.core.level-1.version-2]
     level       = "1"
@@ -67,7 +67,7 @@
     cite_ris    = "/documents/specifications/level-1/version-2/sbml.level-1.version-2.ris"
     schema      = "/documents/specifications/level-1/version-2/sbml.level-1.version-2.xsd"
     issue_list  = "/documents/specifications/level-1/version-2/issues"
-    tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+    tracker     = "https://github.com/sbmlteam/sbml-specifications/issues?q=label%3A%22Level+1+Version+2%22"
       
   [spec.core.level-2]
   highest_version = 5
@@ -87,7 +87,7 @@
     cite_ris    = "/documents/specifications/level-2/version-1/sbml.level-2.version-1.ris"
     schema      = "/documents/specifications/level-2/version-1/sbml.level-2.version-1.xsd"
     issue_list  = "/documents/specifications/level-2/version-1/issues"
-    tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+    tracker     = "https://github.com/sbmlteam/sbml-specifications/issues"
     
     [spec.core.level-2.version-2.revision-1]
     level       = "2"
@@ -105,7 +105,7 @@
     cite_ris    = "/documents/specifications/level-2/version-2/revision-1/sbml.level-2.version-2.revision-1.ris"
     schema      = "/documents/specifications/level-2/version-2/revision-1/sbml.level-2.version-2.revision-1.xsd"
     issue_list  = "/documents/specifications/level-2/version-2/revision-1/issues"
-    tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+    tracker     = "https://github.com/sbmlteam/sbml-specifications/issues?q=label%3A%22Level+2+Version+2%22"
 
     [spec.core.level-2.version-3]
     highest_release = 2
@@ -125,7 +125,7 @@
       cite_ris    = "/documents/specifications/level-2/version-3/release-1/sbml.level-2.version-3.release-1.ris"
       schema      = "/documents/specifications/level-2/version-3/release-1/sbml.level-2.version-3.release-1.xsd"
       issue_list  = "/documents/specifications/level-2/version-3/release-1/issues"
-      tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+      tracker     = "https://github.com/sbmlteam/sbml-specifications/issues?q=label%3A%22Level+2+Version+3%22"
   
       [spec.core.level-2.version-3.release-2]
       level       = "2"
@@ -142,7 +142,7 @@
       cite_ris    = "/documents/specifications/level-2/version-3/release-2/sbml.level-2.version-3.release-2.ris"
       schema      = "/documents/specifications/level-2/version-3/release-2/sbml.level-2.version-3.release-2.xsd"
       issue_list  = "/documents/specifications/level-2/version-3/release-2/issues"
-      tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+      tracker     = "https://github.com/sbmlteam/sbml-specifications/issues?q=label%3A%22Level+2+Version+3%22"
   
     [spec.core.level-2.version-4]
     highest_release = 1
@@ -162,7 +162,7 @@
       cite_ris    = "/documents/specifications/level-2/version-4/release-1/sbml.level-2.version-4.release-1.ris"
       schema      = "/documents/specifications/level-2/version-4/release-1/sbml.level-2.version-4.release-1.xsd"
       issue_list  = "/documents/specifications/level-2/version-4/release-1/issues"
-      tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+      tracker     = "https://github.com/sbmlteam/sbml-specifications/issues?q=label%3A%22Level+2+Version+4%22"
     
     [spec.core.level-2.version-5]
     highest_release = 1
@@ -182,7 +182,7 @@
       cite_ris    = "/documents/specifications/level-2/version-5/release-1/sbml.level-2.version-5.release-1.ris"
       schema      = "/documents/specifications/level-2/version-5/release-1/sbml.level-2.version-5.release-1.xsd"
       issue_list  = "/documents/specifications/level-2/version-5/release-1/issues"
-      tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+      tracker     = "https://github.com/sbmlteam/sbml-specifications/labels/Level%202%20Version%205%20Core"
     
   [spec.core.level-3]
   highest_version = 2
@@ -204,8 +204,8 @@
       cite_bibtex = "/documents/specifications/level-3/version-1/core/release-1/sbml.level-3.version-1.core.release-1.bib"
       cite_ris    = "/documents/specifications/level-3/version-1/core/release-1/sbml.level-3.version-1.core.release-1.ris"
       issue_list  = "/documents/specifications/level-3/version-1/core/release-1/issues"
-      schema      = "https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/sbml-core/"
-      tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+      schema      = "https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG/sbml-core"
+      tracker     = "https://github.com/sbmlteam/sbml-specifications/issues?q=label%3A%22Level+3+Version+1+Core%22"
   
       [spec.core.level-3.version-1.release-2]
       level       = "3"
@@ -221,8 +221,8 @@
       cite_bibtex = "/documents/specifications/level-3/version-1/core/release-2/sbml.level-3.version-1.core.release-2.bib"
       cite_ris    = "/documents/specifications/level-3/version-1/core/release-2/sbml.level-3.version-1.core.release-2.ris"
       issue_list  = "/documents/specifications/level-3/version-1/core/release-2/issues"
-      schema      = "https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/sbml-core/"
-      tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+      schema      = "https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG/sbml-core"
+      tracker     = "https://github.com/sbmlteam/sbml-specifications/issues?q=label%3A%22Level+3+Version+1+Release+2+Core%22"
   
       [spec.core.level-3.version-1.release-3]
       level       = "3"
@@ -238,8 +238,8 @@
       cite_bibtex = "/documents/specifications/level-3/version-1/core/release-3/sbml.level-3.version-1.core.release-3.bib"
       cite_ris    = "/documents/specifications/level-3/version-1/core/release-3/sbml.level-3.version-1.core.release-3.ris"
       issue_list  = "/documents/specifications/level-3/version-1/core/release-3/issues"
-      schema      = "https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/sbml-core/"
-      tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+      schema      = "https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG/sbml-core"
+      tracker     = "https://github.com/sbmlteam/sbml-specifications/issues?q=label%3A%22Level+3+Version+1+Release+3+Core%22
     
     [spec.core.level-3.version-2]
     highest_release = 2
@@ -258,8 +258,8 @@
       cite_bibtex = "/documents/specifications/level-3/version-2/core/release-1/sbml.level-3.version-2.core.release-1.bib"
       cite_ris    = "/documents/specifications/level-3/version-2/core/release-1/sbml.level-3.version-2.core.release-1.ris"
       issue_list  = "/documents/specifications/level-3/version-2/core/release-1/issues"
-      schema      = "https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/sbml-core/"
-      tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+      schema      = "https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG/sbml-core"
+      tracker     = "https://github.com/sbmlteam/sbml-specifications/issues?q=label%3A%22Level+3+Version+2+Core%22"
   
       [spec.core.level-3.version-2.release-2]
       level       = "3"
@@ -275,5 +275,5 @@
       cite_bibtex = "/documents/specifications/level-3/version-2/core/release-2/sbml.level-3.version-2.core.release-2.bib"
       cite_ris    = "/documents/specifications/level-3/version-2/core/release-2/sbml.level-3.version-2.core.release-2.ris"
       issue_list  = "/documents/specifications/level-3/version-2/core/release-2/issues"
-      schema      = "https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/specifications/RelaxNG/sbml-core/"
-      tracker     = "https://sourceforge.net/tracker/?group_id=71971&atid=894711&category=1552177"
+      schema      = "https://github.com/sbmlteam/sbml-specifications/tree/release/RelaxNG/sbml-core"
+      tracker     = "https://github.com/sbmlteam/sbml-specifications/issues?q=label%3A%22Level+3+Version+2+Core%22"
