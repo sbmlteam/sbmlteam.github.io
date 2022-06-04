@@ -1,7 +1,9 @@
 +++
 #=====================================================================
 l3package = "layout"
-aliases = ["/documents/specifications/sbml-level-3/version-1/core", "/specifications/sbml-level-3/version-1/core", "/Documents/Specifications/SBML_Level_3/Packages/layout"]
+aliases = ["/documents/specifications/sbml-level-3/version-1/core", "/specifications/sbml-level-3/version-1/core",
+"/Documents/Specifications/Layout_Level_1_Version_1",
+"/Documents/Specifications/SBML_Level_3/Packages/layout", "/Documents/Specifications/Layout", "/Documents/Specifications/SBML_Level_3/Packages/Layout_(layout)"]
 layout    = "sbml-package"
 date      = 2020-04-13
 #=====================================================================

@@ -1,6 +1,7 @@
 +++ # -*- mode: html -*-
 #============================================================================
 title  = "About annotations in SBML Level 2 and Level 3"
+aliases = ["/wiki/Biomodels_Qualifiers", "/wiki/MIRIAM_URI_Set"]
 layout = "single"
 toc    = true
 #============================================================================
