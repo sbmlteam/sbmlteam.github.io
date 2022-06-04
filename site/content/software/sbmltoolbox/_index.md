@@ -1,7 +1,7 @@
 +++
 #=====================================================================
 title  = "SBMLToolbox"
-aliases = ["/Software/SBMLToolbox", "/Software/SBMLtoolbox"]
+aliases = ["/Software/SBMLToolbox", "/Software/SBMLtoolbox", "/software/sbmltoolbox"]
 date   = 2020-03-13
 layout = "single"
 icon   = "/img/sbmltoolbox-logo.png"
