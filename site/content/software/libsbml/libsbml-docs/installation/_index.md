@@ -92,7 +92,7 @@ After this, you should be able to access the Python language interface for libSB
 
 ### Alternative #4: using the Windows libSBML installer for Python
 
-You can take advantage of executable installers that we make available for Windows. They can be found in a subdirectory named **python**  within each of the Windows subdirectories ([stable]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}/stable/Windows) and [experimental]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}/experimental/Windows)) on SourceForge. There are different installers for different versions of Python.  The following screenshot shows an example.
+You can take advantage of executable installers that we make available for Windows. They can be found in a subdirectory named **python**  within each of the Windows subdirectories ([stable]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}/stable/Windows) and [experimental]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}/experimental/Windows)) on GitHub. There are different installers for different versions of Python.  The following screenshot shows an example.
 
 <figure>
 <img width="85%" class="screenshot" src="windows-python-installers.png"/>

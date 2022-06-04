@@ -10,7 +10,7 @@ icon_width = "11em"
 
 LibSBML is a programming library that helps you read, write, manipulate, translate, and validate SBML files and data streams.  The library supports all Levels and Versions of SBML.  LibSBML is written in ISO standard C++ and C and provides APIs for the languages C, C++, C#, Java, JavaScript, MATLAB, Perl, PHP, Python, R, and Ruby.  It works on Linux, Windows, and MacOS X, and has been known to work on FreeBSD and Solaris in the past.
 
-{{< software-links download="libsbml-docs/download-and-install" changes="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/NEWS.txt" tracker="https://sourceforge.net/p/sbml/libsbml/" docs="libsbml-docs" repo="https://sourceforge.net/p/sbml/code/HEAD/tree/trunk/libsbml/" forum="https://groups.google.com/forum/#!forum/libsbml-development">}}
+{{< software-links download="libsbml-docs/download-and-install" changes="https://github.com/sbmlteam/libsbml/blob/development/NEWS.txt" tracker="https://github.com/sbmlteam/libsbml/issues" docs="libsbml-docs" repo="https://github.com/sbmlteam/libsbml" forum="https://groups.google.com/forum/#!forum/libsbml-development">}}
 
 
 ## Please cite the paper if you use libSBML
@@ -28,7 +28,7 @@ There are many reasons to prefer libSBML over the direct use of an XML parser. 
 
 * **Object model**.  LibSBML's object model and API are designed around SBML and the operations that are commonly needed when working with SBML.
 
-* **Features**. LibSBML offers powerful features such as reading/writing compressed SBML files, detecting overconstrained models, checking units, an API for SBML `<annotation>` content, and support for the three most popular XML parser libraries: [Xerces](http://xml.apache.org/xerces-c), [Expat](http://expat.sourceforge.net/), and [libxml2](http://xmlsoft.org/).
+* **Features**. LibSBML offers powerful features such as reading/writing compressed SBML files, detecting overconstrained models, checking units, an API for SBML `<annotation>` content, and support for the three most popular XML parser libraries: [Xerces](http://xml.apache.org/xerces-c), [Expat](https://libexpat.github.io/), and [libxml2](http://xmlsoft.org/).
 
 * **Validation**. LibSBML implements all the validation rules defined in the SBML specifications, and performs additional validation of its own.  An API provides control over libSBML's validation behavior.
 
@@ -48,7 +48,7 @@ We provide Zenodo DOIs for specific releases, so that you can cite the exact ver
 * libSBML-5.17.0 &rArr; [10.5281/zenodo.1250696](https://doi.org/10.5281/zenodo.1250696)
 * libSBML-5.16.0 &rArr; [10.5281/zenodo.1095483](https://doi.org/10.5281/zenodo.1095483)
 * libSBML-5.15.0 &rArr; [10.5281/zenodo.495344](https://doi.org/10.5281/zenodo.495344)
-* These and earlier versions are available at [sourceforge](https://sourceforge.net/projects/sbml/files/libsbml/)
+* Recent releases are available at [github](https://github.com/sbmlteam/libsbml/releases), while earlier versions are available at [sourceforge](https://sourceforge.net/projects/sbml/files/libsbml/)
 
 
 ## LibSBML authors and contributors

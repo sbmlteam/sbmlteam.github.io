@@ -192,4 +192,4 @@ Optionally, to run the tests:
 
 ## Past releases of JSBML
 
-In the [download area of the JSBML project on SourceForge](https://sourceforge.net/projects/jsbml/files/jsbml), you can find all past JSBML releases.
+In the [download area of the JSBML project on Github](https://github.com/sbmlteam/jsbml/releases), you can find past JSBML releases.
