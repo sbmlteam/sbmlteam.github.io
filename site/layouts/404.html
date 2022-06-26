@@ -1,6 +1,23 @@
-{{ define "main" }}
-<div class="container">
-        <p>Page not found</p>
-        <p><a href="/">Go to Home Page</a></p>
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<div id="page-container">
+  <div class="container">
+    <article class="article" itemscope itemtype="http://schema.org/Article">
+      
+      <h2 class="center-text">Oh no! That page does not exist ...</h2>
+      <p>We're sorry to report a code 404. The original URL no longer exists on this site. Perhaps it did at one time, but the site has changed since then. Here are some things you can try at this point:</p>
+      <ul>
+        <li>You can try your original URL in the <a href='https://web.archive.org/*/http://sbml.org{{ "/" | relURL }}'>Internet Archive</a>.</li>
+        <li>You can go to the <a href="/">SBML.org home page</a> and look for the page from the top.</li>
+        <li>You can <a href="https://github.com/sbmlteam/sbml-org-website/issues">open a new issue in our tracker on GitHub</a> to report the missing URL.
+        </li>
+      </ul>
+    </article>
+  </div>
+
+  <section id="footer-section">
+    {{ partial "footer_container.html" . }}
+    {{ partial "footer.html" . }}
+  </section>
 </div>
-{{ end }}
