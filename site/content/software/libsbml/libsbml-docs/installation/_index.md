@@ -47,13 +47,13 @@ We provide four ways to obtain the libSBML Python interface. Please use whicheve
 
 ### Alternative #1: using Conda
 
-We provide the libSBML Python interface through [Anaconda Cloud](http://anaconda.org/sbmlteam). To get the **stable** release of libSBML using [conda](http://conda.pydata.org/docs/), run the following command in a terminal:
+We provide the libSBML Python interface through [conda forge](https://conda-forge.org). To get the **stable** release of libSBML using [conda](http://conda.pydata.org/docs/), run the following command in a terminal:
 
-    conda install -c SBMLTeam python-libsbml
+    conda install -c conda-forge python-libsbml
 
 _Alternatively_, if you want to install the **experimental** release of libSBML using [conda](http://conda.pydata.org/docs/), run the following command in a terminal:
 
-    conda install -c SBMLTeam python-libsbml-experimental
+    conda install -c conda-forge python-libsbml-experimental
 
 After this, you should be able to access the Python language interface for libSBML directly from your Python programs by importing it like any other Python module.  In other words, `import libsbml` should work in your Python program.
 
@@ -80,17 +80,7 @@ Note that in either case, **the process may take a long time** because on some o
 After this, you should be able to access the Python language interface for libSBML directly from your Python programs by importing it like any other Python module.  In other words, `import libsbml` should work in your Python program.
 
 
-### Alternative #3: using `apt-get` or `yum` on Linux
-
-If you are running Linux, and you prefer to use the standard over-the-air installation tools provided by your operating system (e.g., `yum` and `apt-get`), you can take advantage of online repositories of installers we provide using the [OpenSUSE Build System](https://build.opensuse.org/) (OBS). You can find instructions for many different flavors of Linux including CentOS, Fedora, Ubuntu, and others, at the following URLs:
-
-* For the stable release: [python-libsbml](http://software.opensuse.org/download.html?project=home%3Afbergman%3Alibsbml&package=python-libsbml)
-* For the experimental release: [python-libsbml-experimental](http://software.opensuse.org/download.html?project=home%3Afbergman%3Alibsbml&package=python-libsbml-experimental)
-
-After this, you should be able to access the Python language interface for libSBML directly from your Python programs by importing it like any other Python module.  In other words, `import libsbml` should work in your Python program.
-
-
-### Alternative #4: using the Windows libSBML installer for Python
+### Alternative #3: using the Windows libSBML installer for Python
 
 You can take advantage of executable installers that we make available for Windows. They can be found in a subdirectory named **python**  within each of the Windows subdirectories ([stable]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}/stable/Windows) and [experimental]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}/experimental/Windows)) on GitHub. There are different installers for different versions of Python.  The following screenshot shows an example.
 
