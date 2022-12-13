@@ -2,6 +2,7 @@
 ######################################################################
 title  = "Election of SBML Editors"
 date   = 2019-05-10
+aliases = ["/Documents/SBML_Development_Process/Election_of_SBML_Editors"]
 layout = "single"
 ######################################################################
 +++
