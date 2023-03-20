@@ -51,6 +51,10 @@ The [Biological Pathways Exchange format (BioPAX)](http://www.biopax.org) is a s
   {{< reference title="SBtab: a flexible table format for data exchange in systems biology" authors="Timo Lubitz Jens Hahn, Frank T. Bergmann, Elad Noor, Edda Klipp, and Wolfram Liebermeister." pub="_Bioinformatics_, 16(32), 2016" link="https://doi.org/10.1093/bioinformatics/btw179" summary="Paper introducing the format [SBtab](https://www.sbtab.net) and software to work with it, including online services at [www.sbtab.net](https://www.sbtab.net) such as a [validator](https://www.sbtab.net/sbtab/default/validator.html) and [converters](https://www.sbtab.net/sbtab/default/converter.html) for SBML, MATLAB, R, and other formats." >}}
 {{% /store-chunk %}}
 
+{{% store-chunk name="sbmltoolkit.jl" %}}
+  {{< reference title="COBREXA.jl: constraint-based reconstruction and exascale analysis" authors="Miroslav Kratochvíl, Laurent Heirendt, St Elmo Wilken, Taneli Pusa, Sylvain Arreckx, Alberto Noronha, Marvin van Aalst, Venkata P Satagopam, Oliver Ebenhöh, Reinhard Schneider, Christophe Trefois, Wei Gu." pub="_Bioinformatics_ 38(4):1171–1172, 2022" link="https://doi.org/10.1093/bioinformatics/btab782" summary="A constraint-based modeling toolkit for the [Julia](https://julialang.org) environment that includes functionality for converting between constraint-based metabolic models using SBML [FBC](https://sbml.org/documents/specifications/level-3/version-1/fbc/) and multiple other formats including MATLAB and JSON." >}}
+{{% /store-chunk %}}
+
 
 <!-- -----------------------------------------------------------------
  The rest of this file contains the actual content of the page.
@@ -77,6 +81,11 @@ Also, please note that the conversion tools listed here differ in their degree o
 {{< chunk name="antimony" >}}
 
 
+### From JSON
+
+{{< chunk name="sbmltoolkit.jl" >}}
+
+
 ### From KEGG
 
 The [KEGG PATHWAY database](https://www.genome.jp/kegg/pathway.html) uses a format called [KGML](https://www.genome.jp/kegg/xml/).
@@ -89,6 +98,8 @@ The [KEGG PATHWAY database](https://www.genome.jp/kegg/pathway.html) uses a form
 ### From MATLAB
 
 {{< chunk name="matlab" >}}
+
+{{< chunk name="sbmltoolkit.jl" >}}
 
 {{< reference title="MOCCASIN: converting MATLAB ODE models to SBML" authors="Harold F. Gómez, Michael Hucka, Sarah M. Keating, German Nudelman, Dagmar Iber and Stuart C. Sealfon." pub="_Bioinformatics_, 32(12): 1905-1906, 2016" link="https://doi.org/10.1093/bioinformatics/btw056" summary="Describes [MOCCASIN](https://github.com/sbmlteam/MOCCASIN) (_Model ODE Converter for Creating Automated SBML INteroperability_), a tool written in Python that can read certain forms of <nobr>ODE-based</nobr> models written in [MATLAB](https://www.mathworks.com/products/matlab.html) and translate them into SBML format." >}}
 
@@ -139,6 +150,11 @@ The [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html) is the 
 {{< chunk name="sbfc" >}}
 
 
+### To JSON
+
+{{< chunk name="sbmltoolkit.jl" >}}
+
+
 ### To LaTeX
 
 [<span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>](https://www.latex-project.org) is a popular typesetting system designed for the production of technical and scientific documentation.
@@ -149,6 +165,8 @@ The [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html) is the 
 ### To MATLAB
 
 {{< chunk name="matlab" >}}
+
+{{< chunk name="sbmltoolkit.jl" >}}
 
 {{< chunk name="sbfc" >}}
 
