@@ -194,6 +194,13 @@ The [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html) is the 
 {{< chunk name="sbtab" >}}
 
 
+### To SciML
+
+[SciML](https://sciml.ai) is a collection of tools for solving equations and modeling systems developed in the [Julia](https://julialang.org) programming language. SciML is the combination of scientific computing techniques with machine learning.
+
+{{< reference title="" authors="Paul F Lang, Anand Jain, Christopher Rackauckas." pub="https://github.com/SciML/SBMLToolkit.jl" link="https://github.com/SciML/SBMLToolkit.jl" summary="[SBMLToolkit.jl](https://github.com/SciML/SBMLToolkit.jl) is a lightweight tool to import SBML into the Julia Scientific Machine Learning (SciML) ecosystem for model simulation, parameter estimation and automated model discovery." >}}
+
+
 ### To XPP
 
 {{< chunk name="xpp" >}}
