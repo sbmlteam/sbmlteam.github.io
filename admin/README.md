@@ -10,7 +10,7 @@ The files in this directory are suitable for running a local web server for site
 In general, after cloning the git repository, it should be enough to do the following (assuming your shell's current directory is the top of the repository copy):
 
 ``` shell
-admin/server start
+admin/server-control start
 tail -f run/hugo.log
 ```
 
