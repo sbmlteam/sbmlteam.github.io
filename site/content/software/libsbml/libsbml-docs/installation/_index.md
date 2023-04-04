@@ -17,7 +17,7 @@ Note: _**stable**_ releases of libSBML contain support for only the accepted par
 For _stable_ releases of libSBML, we provide a unified installer for all versions of MATLAB and all operating systems.  The result is ready to run after installation; it **does not need compilation**, and only requires you tell MATLAB where you placed the files. Here are the steps:
 
 <ol>
-<li><a href="{{< value "libsbml" "download_url" >}}/MATLAB%20Interface">Download the distribution archive file</a>.</li>
+<li><a href="{{< value "libsbml" "download_url" >}}/v{{< value "libsbml" "latest_release" >}}">Download the distribution archive file</a>.</li>
 <li>Extract the archive to a folder somewhere on your computer.  (Let's refer to this folder as <span style="background-color: #ffcc99; font-style: italic">folder</span>.)
 </li>
 <li>Start your copy of MATLAB, then do <i>one</i> of the following series of steps.<br>
@@ -123,5 +123,5 @@ libSBML R interface is probably installed correctly.
 
 If no installation package is available for your platform, or you have special requirements for libSBML's configuration, you can always build libSBML from sources.
 
-1. [Download libSBML]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}) from our SourceForge distribution site.
+1. [Download libSBML]({{< value "libsbml" "download_url" >}}/v{{< value "libsbml" "latest_release" >}}) from our GitHub distribution site.
 2. [Follow the instructions]() for configuring, compiling and installing libSBML manually.
