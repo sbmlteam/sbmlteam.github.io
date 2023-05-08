@@ -41,9 +41,13 @@ Yes.  Totally.
 
 Yes, in the sense that there are no restrictions on its use, anyone may contribute proposals, anyone may participate in discussions, there's no secret handshake to get into the meetings, etc.
 
-### How can I find out about the model in an SBML file?  It's too hard to read the XML 
+### How can I find out about the model in an SBML file? It's too hard to read the XML 
 
-As a first step, you can use the [SBML2LaTeX web service](http://sbml.org/Facilities/SBML2LaTeX) to generate a report summarizing the content of an SBML file.   [SBML2LaTeX](http://www.ra.cs.uni-tuebingen.de/software/SBML2LaTeX/) generates output in PDF, TeX and other formats, and provides a detailed, human-readable summary of every part of an SBML model (including the system of equations implied by the model).  This nice system allows you to understand what an SBML model is about without having to look at the actual XML content.   It's a good debugging tool, too.   There is a link to that system from the [SBML.org facilities page](/facilities).  SBML2LaTeX was developed by Andreas Dr&auml;ger, Hannes Planatscher, Dieudonn&eacute; M. Wouamba and Adrian Schr&ouml;der, and the web service is kindly provided by the University of T&uuml;bingen, Germany, as a service to the SBML community.
+As an initial step, you can utilize the [SBML4Humans](https://sbml4humans.de) or [SBML2LaTeX web service](http://www.ra.cs.uni-tuebingen.de/software/SBML2LaTeX/) services to produce a comprehensive report that summarizes the contents of an SBML file. These systems enable you to grasp the essence of an SBML model without delving into the actual XML content, making them excellent debugging tools.
+
+[SBML4Humans](https://sbml4humans.de) offers an interactive and responsive report for SBML models, enabling individuals of all expertise levels, from beginners to experts, to effortlessly understand a model's content. Developed by [Matthias König](https://livermetabolism.com) and Sankha Das, SBML4Humans is a component of the [sbmlutils](https://github.com/matthiaskoenig/sbmlutils) project.
+
+[SBML2LaTeX](http://www.ra.cs.uni-tuebingen.de/software/SBML2LaTeX/) generates output in PDF, TeX and other formats, and provides a detailed, human-readable summary of every part of an SBML model (including the system of equations implied by the model).   SBML2LaTeX was developed by Andreas Dr&auml;ger, Hannes Planatscher, Dieudonn&eacute; M. Wouamba and Adrian Schr&ouml;der, and the web service is kindly provided by the University of T&uuml;bingen, Germany, as a service to the SBML community. 
 
 ### What kind of models can you represent in SBML? 
 
