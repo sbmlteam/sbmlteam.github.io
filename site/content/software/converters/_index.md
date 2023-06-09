@@ -180,6 +180,12 @@ The [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html) is the 
 {{< reference title="SBML2Modelica: integrating biochemical models within open-standard simulation ecosystems" authors="F. Maggioli, T. Mancini and E. Tronci." pub="_Bioinformatics_, btz860, 2019" link="https://doi.org/10.1093/bioinformatics/btz860" summary="SBML2Modelica is an open-source conversion tool that can generate SBML from Modelica code.  The [project code repository](https://bitbucket.org/mclab/sbml2modelica/src/master/) features a pre-compiled JAR archive, a tool for FMU generation, and an exhaustive set of test cases." >}}
 
 
+### To Neo4j
+
+[Neo4j](https://neo4j.com) is a graph database management system developed by Neo4j, Inc. The data elements Neo4j stores are nodes, edges connecting them, and attributes of nodes and edges.
+
+{{< reference title="" authors="Guillaume Gricourt." pub="https://neo4jsbml.readthedocs.io/en/latest/" link="https://github.com/brsynth/neo4jsbml" summary="[Neo4jSbml](https://github.com/brsynth/neo4jsbml) is a tool written in Python that lets you import SBML models into a Neo4j database." >}}
+
 ### To Octave
 
 [GNU Octave](https://www.gnu.org/software/octave/) is a high-level interpreted language, primarily intended for numerical computations.  It is drop-in compatible with many MATLAB programs.
