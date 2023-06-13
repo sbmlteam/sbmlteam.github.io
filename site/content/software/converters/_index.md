@@ -184,7 +184,8 @@ The [DOT language](https://graphviz.gitlab.io/_pages/doc/info/lang.html) is the 
 
 [Neo4j](https://neo4j.com) is a graph database management system developed by Neo4j, Inc. The data elements Neo4j stores are nodes, edges connecting them, and attributes of nodes and edges.
 
-{{< reference title="" authors="Guillaume Gricourt." pub="https://neo4jsbml.readthedocs.io/en/latest/" link="https://github.com/brsynth/neo4jsbml" summary="[Neo4jSbml](https://github.com/brsynth/neo4jsbml) is a tool written in Python that lets you import SBML models into a Neo4j database." >}}
+{{< reference title="" authors="Guillaume Gricourt, Thomas Duigou,
+Sandra Dérozier and Jean-Loup Faulon." pub="https://neo4jsbml.readthedocs.io/en/latest/" link="https://github.com/brsynth/neo4jsbml" summary="[Neo4jSbml](https://github.com/brsynth/neo4jsbml) is a tool written in Python that lets you import SBML models into a Neo4j database." >}}
 
 ### To Octave
 
