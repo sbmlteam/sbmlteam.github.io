@@ -83,7 +83,7 @@ After this, you should be able to access the Python language interface for libSB
 
 We provide installers for the stable version of the libSBML R language interface for Linux, Mac OS X and Windows. Download the version that is appropriate for your situation:
 
-* _For **Linux and Mac OS X**_: Download the [libSBML R source package]({{< value "libsbml" "download_url" >}}/{{< value "libsbml" "latest_release" >}}) from SourceForge.
+* _For **Linux and Mac OS X**_: Download the [libSBML R source package]({{< value "libsbml" "download_url" >}}/v{{< value "libsbml" "latest_release" >}}) from GitHub.
 
 Once you have downloaded the appropriate version, one more step is required to install the libSBML R interface. You can do this step in **one of two ways**: either using the R graphical interface, or using a terminal/shell command.
 
