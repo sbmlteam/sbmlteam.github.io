@@ -30,5 +30,5 @@ jobs:
         uses: actions/checkout@v4
       - run: sed -i 's/enableGitInfo = true/enableGitInfo = false/' ./site/config.toml
       - run: docker pull klakegg/hugo:0.68.0
-      - run: docker run -e HUGO_DESTINATION=public -v $(pwd)/site:/src klakegg/hugo:0.68.0 hugo -d public
+      - run: docker run -e HUGO_DESTINATION=public -v $(pwd)/site:/src klakegg/hugo:0.68.0 -d public
       - run: ls -l 
