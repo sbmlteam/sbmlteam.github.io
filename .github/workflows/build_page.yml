@@ -24,6 +24,9 @@ concurrency:
 jobs:
   # Build job
   build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -35,3 +38,13 @@ jobs:
       - run: docker pull klakegg/hugo:0.68.0
       - run: docker run -e HUGO_DESTINATION=public -v $(pwd)/site:/src klakegg/hugo:0.68.0 -d public
       - run: ls -l 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: 'site/public'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
