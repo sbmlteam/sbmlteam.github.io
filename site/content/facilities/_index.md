@@ -7,7 +7,7 @@ layout = "single"
 
 The following services have been converted to the new website:
 
-{{% blurb title="Online SBML Validator" image="/img/libsbml-logo.svg" width="100pt" link="/Facilities/Validator" %}}
+{{% blurb title="Online SBML Validator" image="/img/libsbml-logo.svg" width="100pt" link="https://sbml.bioquant.uni-heidelberg.de/validator_servlet/" %}}
 The Online SBML Validator checks the validity of an SBML file. It lets you select an SBML file on your computer or provide a URL for an SBML file located on another computer.
 {{% /blurb %}}
 
@@ -18,6 +18,6 @@ The SBML Test Suite is a conformance testing system for SBML.  It can be used so
 <br>
 The following services have not yet been converted; they are hosted on the old SBML.org website:
 
-{{% blurb title="SBML Test Suite Database" image="/img/Official-sbml-supported-70.jpg" link="http://raterule.caltech.edu/Facilities/Database" %}}
+{{% blurb title="SBML Test Suite Database" image="/img/Official-sbml-supported-70.jpg" link="https://sbml.bioquant.uni-heidelberg.de/" %}}
 The SBML Test Suite Database provides author-supplied results of running the SBML Test Suite in different SBML-compatible applications.
 {{% /blurb %}}
