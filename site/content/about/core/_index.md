@@ -30,6 +30,8 @@ The following are the current SBML Editors (in alphabetical order):
 
   - **Lucian P. Smith** (Ph.D. in Molecular and Cellular Biology) is a member of the Center for Reproducible Biomedical Modeling at the University of Washington, Seattle, and a member of the Roadrunner Team.  He has been involved in the development of [libSBML](/software/libsbml), the [SBML Test Suite](/software/sbml-test-suite), [Antimony](https://github.com/sys-bio/antimony), [PhraSED-ML](https://github.com/sys-bio/phrasedml) and has been a SED-ML editor. (Current term as Editor: 2022&ndash;2024.)
 
+  - **Michael L. Blinov** (Ph.D. in Mathematics) is a member of the Center for [Cell Analysis and Modeling](https://health.uconn.edu/cell-analysis-modeling) at the University of Connecticut School of Medicine, and a member of the [VCell](https://vcell.org) Team.  He leads the development of rule-based features at [VCell](https://vcell.org), tools for simulation, analysis and visualization of multimolecular assemblies [bnglViz](https://bnglviz.github.io/), [MolClustPy](https://molclustpy.github.io/) and [SpringSaLaDpy](https://springsaladpy.github.io/), database of VCell models [http://vcelldb.org](https://www.vcelldb.org/curatedList/bmName=&bmId=&category=publications&owner=&savedLow=&savedHigh=&page=1&orderBy=date_desc=&advanced=false&maxModels=100) and has been a SBGN editor. (Current term as Editor: 2024&ndash;2026.)
+
 The SBML Editors can be reached via email at [sbml-editors@googlegroups.com](mailto:sbml-editors@googlegroups.com).
 
 ### Past SBML Editors
