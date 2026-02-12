@@ -8,7 +8,7 @@ layout = "single"
 The following services have been converted to the new website:
 
 {{% blurb title="Online SBML Validator" image="/img/libsbml-logo.svg" width="100pt" link="https://sbml.bioquant.uni-heidelberg.de/validator_servlet/" %}}
-The Online SBML Validator checks the validity of an SBML file. It lets you select an SBML file on your computer or provide a URL for an SBML file located on another computer.
+The Online SBML Validator checks the validity of an SBML file. It lets you select an SBML file on your computer or provide a URL for an SBML file located on another computer. You can also try the [local validator](./validator/).
 {{% /blurb %}}
 
 {{% blurb title="SBML Test Suite" image="/img/sbml-test-suite-logo.svg" link="/software/sbml-test-suite" %}}
