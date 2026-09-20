@@ -45,7 +45,7 @@ Yes, in the sense that there are no restrictions on its use, anyone may contribu
 
 As an initial step, you can utilize the [SBML4Humans](https://sbml4humans.de) or [SBML2LaTeX web service](http://www.ra.cs.uni-tuebingen.de/software/SBML2LaTeX/) services to produce a comprehensive report that summarizes the contents of an SBML file. These systems enable you to grasp the essence of an SBML model without delving into the actual XML content, making them excellent debugging tools.
 
-[SBML4Humans](https://sbml4humans.de) offers an interactive and responsive report for SBML models, enabling individuals of all expertise levels, from beginners to experts, to effortlessly understand a model's content. Developed by [Matthias König](https://livermetabolism.com) and Sankha Das, SBML4Humans is a component of the [sbmlutils](https://github.com/matthiaskoenig/sbmlutils) project.
+[SBML4Humans](https://sbml4humans.de) offers an interactive and responsive report for SBML models, enabling individuals of all expertise levels, from beginners to experts, to effortlessly understand a model's content. Developed by [Matthias König](https://livermetabolism.com), SBML4Humans is a component of the [sbmlutils](https://matthiaskoenig.github.io/sbmlutils/) project.
 
 [SBML2LaTeX](http://www.ra.cs.uni-tuebingen.de/software/SBML2LaTeX/) generates output in PDF, TeX and other formats, and provides a detailed, human-readable summary of every part of an SBML model (including the system of equations implied by the model).   SBML2LaTeX was developed by Andreas Dr&auml;ger, Hannes Planatscher, Dieudonn&eacute; M. Wouamba and Adrian Schr&ouml;der, and the web service is kindly provided by the University of T&uuml;bingen, Germany, as a service to the SBML community. 
 
@@ -117,7 +117,11 @@ The different projects have some coordination (mainly by virtue of involving a l
 
 ### What papers should I cite if I use SBML? 
 
-The single best paper to cite at this time is the 2003 paper in _Bioinformatics_, even though it describes only Level&nbsp;1 and not the latest Levels/Versions of SBML:
+Please cite the 2020 paper in _Molecular Systems Biology_:
+
+* Keating SM, Waltemath D, König M, Zhang F, Dräger A, Chaouiya C, Bergmann FT, Finney A, Gillespie CS, Helikar T, Hoops S, Malik-Sheriff RS, Moodie SL, Moraru II, Myers CJ, Naldi A, Olivier BG, Sahle S, Schaff JC, Smith LP, Swat MJ, Thieffry D, Watanabe L, Wilkinson DJ, Blinov ML, Begley K, Faeder JR, Gómez HF, Hamm TM, Inagaki Y, Liebermeister W, Lister AL, Lucio D, Mjolsness E, Proctor CJ, Raman K, Rodriguez N, Shaffer CA, Shapiro BE, Stelling J, Swainston N, Tanimura N, Wagner J, Meier-Schellersheim M, Sauro HM, Palsson B, Bolouri H, Kitano H, Funahashi A, Hermjakob H, Doyle JC, Hucka M; SBML Level 3 Community members. SBML Level 3: an extensible format for the exchange and reuse of biological models. <i>Mol Syst Biol.</i> 2020 Aug;16(8):e9110. doi: <a href="https://doi.org/10.15252/msb.20199110">10.15252/msb.20199110</a>.
+
+The second best paper to cite is the 2003 paper in _Bioinformatics_, even though it describes only Level&nbsp;1 and not the latest Levels/Versions of SBML:
 
 * Hucka, M., Finney, A., Sauro, H. M., Bolouri, H., Doyle, J. C., Kitano, H., Arkin, A. P., Bornstein, B. J., Bray, D., Cornish-Bowden, A. , Cuellar, A. A., Dronov, S., Gilles, E. D., Ginkel, M., Gor, V., Goryanin, I. I., Hedley, W. J., Hodgman, T. C., Hofmeyr, J.-H., Hunter, P. J., Juty, N. S., Kasberger, J. L., Kremling, A., Kummer, U., Le Nov&egrave;re, N., Loew, L. M., Lucio, D., Mendes, P., Minch, E., Mjolsness, E. D., Nakayama, Y., Nelson, M. R., Nielsen, P. F., Sakurada, T., Schaff, J. C., Shapiro, B. E., Shimizu, T. S., Spence, H. D., Stelling, J., Takahashi, K., Tomita, M., Wagner, J., Wang, J.  (2003). The Systems Biology Markup Language (SBML): A medium for representation and exchange of biochemical network models.  <a href="https://academic.oup.com/bioinformatics/article/19/4/524/218599"><i>Bioinformatics</i>, vol. 19, no. 4, pp. 524&ndash;531</a>.
 

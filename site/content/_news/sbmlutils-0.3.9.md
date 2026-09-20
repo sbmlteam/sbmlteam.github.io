@@ -15,4 +15,4 @@ summary = "sbmlutils is a set of Python utilities for working with SBML, and it 
 
 The [latest release](https://github.com/matthiaskoenig/sbmlutils/releases/tag/v0.3.9) of `sbmlutils` supports the SBML Level&nbsp;3 _Distributions_ package.  Nicknamed 'distrib', this SBML Level&nbsp;3 package extends the core of SBML Level&nbsp;3 with additional constructs for encoding models that sample values from statistical distributions.
 
-Visit the [`sbmlutils` documentation on _Read the Docs_](https://sbmlutils.readthedocs.io/en/stable/) for more information.
+Visit the [`sbmlutils` documentation](https://matthiaskoenig.github.io/sbmlutils) for more information.
