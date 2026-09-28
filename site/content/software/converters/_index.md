@@ -39,6 +39,10 @@ The [Biological Pathways Exchange format (BioPAX)](http://www.biopax.org) is a s
   {{< reference title="SBML and CellML Translation in Antimony and JSim" authors="Smith L.P., Butterworth E., Bassingthwaighte J., Sauro H." pub="_Bioinformatics_, 10.1093/bioinformatics/btt641, 2013" link="https://doi.org/10.1093/bioinformatics/btt641" summary="Description of two tools that each convert CellML and SBML models, and the challenges discovered. Both [Antimony](http://antimony.sourceforge.net) and [JSim](https://www.physiome.org/jsim/) can be used to convert between SBML and CellML, in addition to each program's native model definition languages." >}}
 {{% /store-chunk %}}
 
+{{% store-chunk name="sbml2cellml" %}}
+  {{< reference type="software" title="sbml2cellml: conversion between SBML and CellML" authors="Matthias König." pub="GitHub, [https://github.com/matthiaskoenig/sbml2cellml](https://github.com/matthiaskoenig/sbml2cellml)" link="https://matthiaskoenig.github.io/sbml2cellml" summary="[sbml2cellml](https://matthiaskoenig.github.io/sbml2cellml) is a Python package that converts between SBML and [CellML&nbsp;2.0](https://www.cellml.org). It provides the sbml2cellml and cellml2sbml command-line tools, validates the resulting CellML with libCellML, and is tested against the SBML Test Suite and curated BioModels models." >}}
+{{% /store-chunk %}}
+
 {{% store-chunk name="sbfc" %}}
   {{< reference title="The System Biology Format Converter" authors="Gaël Jalowicki, Nicolas Rodriguez, Martina Kutmon, Jean-Baptiste Pettit, Lu Li, Arnaud Henry, Kedar Nath Natarajan, Camille Laibe, Chris T. Evelo, and Nicolas Le&nbsp;Novère." pub="_Nature Precedings_, [https://doi.org/10.1038/npre.2011.6363.1](https://doi.org/10.1038/npre.2011.6363.1)" link="https://doi.org/10.1038/npre.2011.6363.1" summary="The Systems Biology Format Converter (SBFC) is written in Java and can be used as a standalone executable or as [an online service](https://www.ebi.ac.uk/biomodels/tools/converters/). The SBFC framework currently supports conversion from SBML to [BioPAX](http://www.biopax.org) Levels&nbsp;2 and&nbsp;3, [MATLAB](https://www.mathworks.com/products/matlab.html), [Octave](https://www.gnu.org/software/octave/), [XPP](http://www.math.pitt.edu/~bard/xpp/xpp.html), [Graphviz](https://www.graphviz.org), and [APM](http://apmonitor.com)." >}}
 {{% /store-chunk %}}
@@ -80,6 +84,8 @@ Also, please note that the conversion tools listed here differ in their degree o
 
 {{< chunk name="antimony" >}}
 
+{{< chunk name="sbml2cellml" >}}
+
 
 ### From JSON
 
@@ -117,7 +123,7 @@ The [KEGG PATHWAY database](https://www.genome.jp/kegg/pathway.html) uses a form
 
 {{< chunk name="xpp" >}}
 
-{{< reference type="software" title="sbmlutils: python utilities for SBML" authors="Matthias König." pub="GitHub" link="https://github.com/matthiaskoenig/sbmlutils" summary="[sbmlutils](https://github.com/matthiaskoenig/sbmlutils) is a collection of python utilities for working with SBML models. It offers a variety of model helper functions for model creation, manipulation, and annotation, as well as interpolation functions to add experimental data to models, and file converters." >}}
+{{< reference type="software" title="sbmlutils: python utilities for SBML" authors="Matthias König." pub="GitHub, [https://github.com/matthiaskoenig/sbmlutils](https://github.com/matthiaskoenig/sbmlutils)" link="https://matthiaskoenig.github.io/sbmlutils" summary="[sbmlutils](https://matthiaskoenig.github.io/sbmlutils) is a collection of python utilities for working with SBML models. It offers a variety of model helper functions for model creation, manipulation, and annotation, as well as interpolation functions to add experimental data to models, and file converters." >}}
 
 
 ## From SBML
@@ -141,6 +147,8 @@ The [Biological Pathways Exchange format (BioPAX)](http://www.biopax.org) is a s
 {{< chunk name="cellml" >}}
 
 {{< chunk name="antimony" >}}
+
+{{< chunk name="sbml2cellml" >}}
 
 
 ### To GraphViz DOT

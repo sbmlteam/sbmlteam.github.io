@@ -77,6 +77,8 @@ The [SBML Specifications](/documents/specifications) are documents that exist in
 
 {{< reference title="SBML Level 3 package: Render, Version 1, Release 1" authors="Bergmann, F. T., Keating, S. M., Gauges, R., Sahle, S., and Wengler, K." pub="_Journal of Integrative Bioinformatics_, 15(1), 20170078, 2017" link="https://doi.org/10.1515/jib-2017-0078" >}}
 
+{{< reference title="SBML Level 3 Package: Flux Balance Constraints version 3" authors="Olivier, B. G., Bergmann, F. T., Keating, S. and König, M." pub="_Journal of Integrative Bioinformatics_, 2026" link="https://doi.org/10.1515/jib-2026-0006" >}}
+
 {{< reference title="SBML Level 3 Package: Flux Balance Constraints version 2" authors="Olivier, B. G. and Bergmann, F. T." pub="_Journal of Integrative Bioinformatics_, 15(1), 20170082, 2017" link="https://doi.org/10.1515/jib-2017-0082" >}}
 
 {{< reference title="The Systems Biology Markup Language (SBML): Language Specification for Level 3 Version 2 Core" authors="Hucka, M., Bergmann, F. T., Dräger, A., Hoops, S., Keating, S. M., Le Novère, N., Myers, C. J., Olivier, B. G., Sahle, S., Schaff, J. C., Smith, L. P., Waltemath, D., and Wilkinson, D. J." pub="_Journal of Integrative Bioinformatics_, 15(1), 20170081, 2017" link="https://doi.org/10.1515/jib-2017-0081" >}}

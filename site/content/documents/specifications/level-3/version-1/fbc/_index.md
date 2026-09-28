@@ -9,6 +9,8 @@ date      = 2020-04-13
 
 ## Notes about this specification
 
+**2026-01-06**: Version 3 of the Flux Balance Constraints package has been approved by the SBML Editors and is now an officially released specification.  The package can be used in both SBML Level&nbsp;3 Version&nbsp;1 and SBML Level&nbsp;3 Version&nbsp;2.  The [Version 3 Release 1 specification (PDF)](https://github.com/sbmlteam/sbml-specifications/blob/release/sbml-level-3/version-1/fbc/spec/sbml-fbc-version-3-release-1.pdf) is available, and the specification has been published in the [_Journal of Integrative Bioinformatics_](https://doi.org/10.1515/jib-2026-0006).
+
 **2015-09-12**: Version 2 of the Flux Balance Constraints package has been approved by the SBML Editors and is now an officially released specification.  The package can be used in both SBML Level&nbsp;3 Version&nbsp;1 and SBML Level&nbsp;3 Version&nbsp;2.  An [RNG schema for FBC](https://github.com/sbmlteam/sbml-specifications/blob/release/RelaxNG/sbml-fbc-v2/sbml-fbc-v2.rng) is available.
 
 **2015-07-16**: Release Candidate 7 of the Version 2 specification is now available and has been submitted to the SBML Editors for approval. The PDF file is available from SourceForge.net.
@@ -25,6 +27,10 @@ date      = 2020-04-13
 
 
 ## Notes about third-party application support
+
+**2026-09-20**: The following also provide support for Version 3 of the 'fbc' package:
+* [sbmlutils](https://matthiaskoenig.github.io/sbmlutils)
+* [sbml4humans](https://matthiaskoenig.github.io/sbml4humans)
 
 **2017-07-17**: The following also provide support for Version 2 of the 'fbc' package:
 * [COBRA Toolbox](https://opencobra.github.io/cobratoolbox/latest/)
